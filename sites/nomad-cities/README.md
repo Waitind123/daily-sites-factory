@@ -1,3 +1,3 @@
 # 游民城市榜
 
-数字游民城市排名 MVP — Next.js + Tailwind
+数字游民城市排名 MVP — Next.js + Tailwind，年费 ¥699
