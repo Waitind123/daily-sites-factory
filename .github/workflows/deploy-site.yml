@@ -19,12 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-          cache-dependency-path: sites/${{ github.event.inputs.site_id || 'auto' }}/package-lock.json
-
       - name: Resolve site id
         id: site
         run: |
@@ -34,6 +28,12 @@ jobs:
             CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
             echo "id=$CHANGED" >> $GITHUB_OUTPUT
           fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: sites/${{ steps.site.outputs.id }}/package-lock.json
 
       - name: Install and build
         working-directory: sites/${{ steps.site.outputs.id }}
