@@ -1,0 +1,51 @@
+name: Deploy site on push
+
+on:
+  push:
+    paths:
+      - "sites/**"
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      site_id:
+        description: "Site folder name under sites/"
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: sites/${{ github.event.inputs.site_id || 'auto' }}/package-lock.json
+
+      - name: Resolve site id
+        id: site
+        run: |
+          if [ -n "${{ github.event.inputs.site_id }}" ]; then
+            echo "id=${{ github.event.inputs.site_id }}" >> $GITHUB_OUTPUT
+          else
+            CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
+            echo "id=$CHANGED" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Install and build
+        working-directory: sites/${{ steps.site.outputs.id }}
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Deploy to Vercel
+        working-directory: sites/${{ steps.site.outputs.id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npx vercel deploy --prod --yes --token=$VERCEL_TOKEN

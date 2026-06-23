@@ -1,0 +1,17 @@
+name: Daily vertical site build
+
+on:
+  schedule:
+    # 北京时间 12:00 = UTC 04:00
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  trigger-note:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Daily build placeholder
+        run: |
+          echo "GitHub Actions 无法自动运行 Cursor Agent。"
+          echo "请使用 Cursor Automation（推荐）或本地 Windows 计划任务。"
+          echo "详见 README.md"
