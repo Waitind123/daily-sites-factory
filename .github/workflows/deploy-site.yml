@@ -18,22 +18,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Resolve site id
         id: site
         run: |
           if [ -n "${{ github.event.inputs.site_id }}" ]; then
-            echo "id=${{ github.event.inputs.site_id }}" >> $GITHUB_OUTPUT
+            SITE_ID="${{ github.event.inputs.site_id }}"
           else
-            CHANGED=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
-            echo "id=$CHANGED" >> $GITHUB_OUTPUT
+            SITE_ID=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
           fi
+          if [ -z "$SITE_ID" ]; then
+            echo "Could not resolve site id" >&2
+            exit 1
+          fi
+          echo "id=$SITE_ID" >> $GITHUB_OUTPUT
+          echo "Resolved site: $SITE_ID"
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: npm
-          cache-dependency-path: sites/${{ steps.site.outputs.id }}/package-lock.json
 
       - name: Install and build
         working-directory: sites/${{ steps.site.outputs.id }}
@@ -42,10 +47,14 @@ jobs:
           npm run build
 
       - name: Deploy to Vercel
+        id: vercel
         working-directory: sites/${{ steps.site.outputs.id }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
-          npx vercel deploy --prod --yes --token=$VERCEL_TOKEN
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN not configured, skipping deploy" >&2
+            exit 1
+          fi
+          DEPLOY_URL=$(npx vercel deploy --prod --yes --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | tail -1)
+          echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
