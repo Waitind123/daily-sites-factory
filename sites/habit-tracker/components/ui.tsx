@@ -1,0 +1,52 @@
+import { features } from "@/lib/data";
+
+export function CheckoutButton({ className = "" }: { className?: string }) {
+  return (
+    <form action="/api/checkout" method="POST">
+      <button
+        type="submit"
+        className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
+      >
+        立即订阅 · $29.9/月
+      </button>
+    </form>
+  );
+}
+
+export function FeatureGrid() {
+  return (
+    <div className="grid gap-6 sm:grid-cols-2">
+      {features.map((f) => (
+        <div key={f.title} className="rounded-xl border border-stone-200 bg-white p-5">
+          <div className="text-2xl mb-2">{f.icon}</div>
+          <h3 className="font-semibold text-stone-900">{f.title}</h3>
+          <p className="mt-1 text-sm text-stone-500">{f.desc}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+import { weekStats } from "@/lib/data";
+
+export function WeekChart() {
+
+  return (
+    <div className="flex items-end justify-between gap-2 h-32 px-2">
+      {weekStats.map((d: { day: string; done: number; total: number }) => {
+        const pct = (d.done / d.total) * 100;
+        return (
+          <div key={d.day} className="flex-1 flex flex-col items-center gap-2">
+            <div className="w-full bg-stone-100 rounded-t-lg relative" style={{ height: "100px" }}>
+              <div
+                className="absolute bottom-0 w-full bg-brand-500 rounded-t-lg transition-all"
+                style={{ height: `${pct}%` }}
+              />
+            </div>
+            <span className="text-xs text-stone-500">{d.day}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
