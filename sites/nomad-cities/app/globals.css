@@ -3,20 +3,78 @@
 @tailwind utilities;
 
 :root {
-  --bg: #fafaf9;
-  --fg: #1c1917;
-  --muted: #78716c;
-  --border: #e7e5e4;
-  --accent: #16a34a;
+  --nuwa-bg: #0a0a0f;
+  --nuwa-surface: rgba(255, 255, 255, 0.03);
+  --nuwa-border: rgba(255, 255, 255, 0.08);
+  --nuwa-text: #fafafa;
+  --nuwa-muted: #a3a3a3;
+  --nuwa-accent: #6366f1;
 }
 
-body {
-  background: var(--bg);
-  color: var(--fg);
+@layer base {
+  body {
+    @apply bg-[#0A0A0F] text-zinc-100 antialiased;
+    font-feature-settings: "salt", "ss01", "cv01";
+  }
+
+  ::selection {
+    @apply bg-indigo-500/30 text-white;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-indigo-400 via-violet-400 to-indigo-300 bg-clip-text text-transparent;
+  }
+
+  .card-glow {
+    @apply rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm;
+  }
+
+  .card-glow-hover {
+    @apply transition-all duration-300 hover:border-indigo-500/30 hover:bg-white/[0.05];
+  }
+
+  .nuwa-label {
+    @apply text-xs font-medium uppercase tracking-widest text-zinc-500;
+  }
+
+  .nuwa-prose {
+    @apply text-zinc-300 leading-relaxed;
+  }
+
+  .nuwa-prose h1,
+  .nuwa-prose h2,
+  .nuwa-prose h3 {
+    @apply text-white font-bold tracking-tight;
+  }
+
+  .nuwa-prose h2 {
+    @apply text-xl mt-10 mb-4;
+  }
+
+  .nuwa-prose p {
+    @apply mb-4 text-zinc-400;
+  }
+
+  .nuwa-prose ul,
+  .nuwa-prose ol {
+    @apply mb-4 pl-5 text-zinc-400 space-y-1;
+  }
+
+  .nuwa-prose ul {
+    @apply list-disc;
+  }
+
+  .nuwa-prose ol {
+    @apply list-decimal;
+  }
+
+  .nuwa-prose a {
+    @apply text-indigo-400 hover:text-indigo-300;
   }
 }

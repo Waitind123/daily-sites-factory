@@ -13,14 +13,14 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 
 export default function LinkedInHeadshotGuidePage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 prose prose-stone">
-      <Link href="/" className="text-sm text-brand-600 no-underline">
+    <article className="nuwa-prose mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      <Link href="/" className="text-sm text-indigo-400 no-underline hover:text-indigo-300">
         ← 返回首页
       </Link>
-      <h1 className="text-3xl font-bold mt-4 not-prose">
+      <h1 className="mt-4 text-3xl font-bold text-white">
         LinkedIn 专业头像怎么拍？AI 证件照完整指南
       </h1>
-      <p className="lead text-stone-600 not-prose">
+      <p className="text-lg text-zinc-400">
         78% 的招聘者会先看 LinkedIn 头像。一张专业头像能让 Profile 浏览量提升 3 倍以上。
         本文教你用 AI 在 30 秒内生成专业证件照，无需去照相馆。
       </p>
@@ -50,16 +50,16 @@ export default function LinkedInHeadshotGuidePage() {
         我们提供 5 次免费 AI 头像生成，无需信用卡。体验满意后再订阅 $9.9/月无限使用。
       </p>
 
-      <div className="not-prose mt-8 flex flex-col sm:flex-row gap-4">
+      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
         <Link
           href="/studio"
-          className="rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold text-center hover:bg-brand-700"
+          className="rounded-xl bg-indigo-600 px-6 py-3 text-center font-semibold text-white hover:bg-indigo-500"
         >
           免费体验 AI 证件照
         </Link>
         <Link
           href="/join"
-          className="rounded-xl border border-stone-300 px-6 py-3 font-semibold text-center hover:bg-stone-50"
+          className="rounded-xl border border-white/15 px-6 py-3 text-center font-semibold text-zinc-300 hover:border-white/30 hover:text-white"
         >
           查看订阅方案
         </Link>

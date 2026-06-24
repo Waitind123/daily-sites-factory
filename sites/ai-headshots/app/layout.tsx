@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Link from "next/link";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
+import { SiteFooter, SiteHeader } from "@/components/nuwa";
 import { metadata as siteMetadata, softwareApplicationJsonLd } from "@/lib/seo";
 import "./globals.css";
 
@@ -12,6 +12,11 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -20,44 +25,26 @@ export default function RootLayout({
       <head>
         <JsonLd data={softwareApplicationJsonLd()} />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-stone-50 text-stone-900`}>
-        <header className="border-b border-stone-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
-              <span className="text-2xl">📸</span>
-              <span>AI 证件照</span>
-            </Link>
-            <nav className="flex items-center gap-4 sm:gap-6 text-sm">
-              <Link href="/guide/linkedin-headshot" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
-                指南
-              </Link>
-              <Link href="/studio" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
-                工作室
-              </Link>
-              <Link
-                href="/join"
-                className="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors font-medium"
-              >
-                加入会员 $9.9/月
-              </Link>
-            </nav>
-          </div>
-        </header>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans`}>
+        <SiteHeader
+          logo={<span className="text-indigo-400">📸</span>}
+          siteName="AI 证件照"
+          navItems={[
+            { href: "/guide/linkedin-headshot", label: "指南", hidden: true },
+            { href: "/studio", label: "工作室", hidden: true },
+          ]}
+          ctaHref="/join"
+          ctaLabel="加入会员"
+        />
         <main>{children}</main>
-        <footer className="border-t border-stone-200 bg-white mt-16">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-stone-500">
-            <p>© {new Date().getFullYear()} AI 证件照 · 照片 24h 自动删除</p>
-            <p className="mt-2">
-              <Link href="/guide/linkedin-headshot" className="text-brand-600 hover:underline">
-                LinkedIn 头像指南
-              </Link>
-              {" · "}
-              <Link href="/sitemap.xml" className="hover:underline">
-                Sitemap
-              </Link>
-            </p>
-          </div>
-        </footer>
+        <SiteFooter
+          siteName="AI 证件照"
+          tagline="照片 24h 自动删除"
+          links={[
+            { href: "/guide/linkedin-headshot", label: "LinkedIn 头像指南" },
+            { href: "/sitemap.xml", label: "Sitemap" },
+          ]}
+        />
       </body>
     </html>
   );

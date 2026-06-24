@@ -43,10 +43,18 @@
   - 支付接口（`/api/checkout`，Polar / Stripe 占位）
   - 演示模式（无支付密钥时模拟支付成功）
   - 移动端适配
-- **风格**：简洁实用，levelsio / Nomad List 风，不要 corporate 模板感
+- **风格**：使用 Nuwa 深色 UI 模板（见 `templates/nuwa-ui/`），运行 `node scripts/sync-nuwa-ui.mjs sites/<id>` 同步组件。UI 参考 nuwa.world，**内容/功能必须原创**
 - **文案**：中文为主，垂直领域专业
 
 **免费体验实现**：复制 `templates/free-trial/lib/trial.ts` 到站点 `lib/trial.ts`，改 `SITE_ID`。
+
+**Nuwa UI 实现**（必须）：
+
+1. 运行 `node scripts/sync-nuwa-ui.mjs sites/<vertical-id>` 同步 globals.css、cn.ts、components/nuwa/
+2. 合并 `templates/nuwa-ui/tailwind.config.snippet.ts` 到站点 tailwind.config.ts
+3. layout.tsx 使用 `SiteHeader` + `SiteFooter`（Inter + JetBrains Mono 字体）
+4. 首页使用 `Hero`、`StatsBar`、`FeatureCard`、`FaqAccordion`、`CtaSection`
+5. 仅复刻 UI 样式，文案/数据/功能逻辑必须原创（不得复制 Nuwa 产品内容）
 
 ### 2b. SEO 三件套（必须，见 `docs/SEO-GUIDE.md`）
 
@@ -168,6 +176,8 @@ daily-sites-factory/
 ├── docs/SEO-GUIDE.md               # SEO 技术+内容+分发指南
 ├── templates/free-trial/         # 可复制 trial 模板
 ├── templates/seo/                # 可复制 SEO 模板
+├── templates/nuwa-ui/            # Nuwa 深色 UI 组件库（参考 nuwa.world）
+├── .cursor/skills/clone-website/ # ai-website-cloner-template skill
 ├── sites/                      # 各日站点
 │   └── <vertical-id>/
 ├── scripts/

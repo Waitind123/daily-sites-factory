@@ -16,23 +16,23 @@ export default function NomadCitiesGuidePage() {
   const top = cities.filter((c) => !c.locked).slice(0, 10);
 
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 prose prose-stone">
-      <Link href="/" className="text-sm text-brand-600 no-underline">
+    <article className="nuwa-prose mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      <Link href="/" className="text-sm text-indigo-400 no-underline hover:text-indigo-300">
         ← 返回首页
       </Link>
-      <h1 className="text-3xl font-bold mt-4 not-prose">
+      <h1 className="mt-4 text-3xl font-bold text-white">
         2026 最佳数字游民城市 Top 10
       </h1>
-      <p className="lead text-stone-600 not-prose">
+      <p className="text-lg text-zinc-400">
         远程工作者选城市看四个指标：月生活成本、网速、安全指数、签证友好度。
         以下是基于真实数据的 2026 年排名（仿 Nomad List，中文 curated）。
       </p>
 
       <h2>Top 10 城市概览</h2>
-      <div className="not-prose overflow-x-auto">
-        <table className="w-full text-sm border border-stone-200 rounded-lg">
-          <thead className="bg-stone-50">
-            <tr>
+      <div className="overflow-x-auto">
+        <table className="card-glow w-full text-sm">
+          <thead>
+            <tr className="border-b border-white/10 text-zinc-500">
               <th className="px-3 py-2 text-left">#</th>
               <th className="px-3 py-2 text-left">城市</th>
               <th className="px-3 py-2 text-left">月成本</th>
@@ -42,14 +42,14 @@ export default function NomadCitiesGuidePage() {
           </thead>
           <tbody>
             {top.map((c) => (
-              <tr key={c.name} className="border-t border-stone-100">
-                <td className="px-3 py-2">{c.rank}</td>
-                <td className="px-3 py-2">
+              <tr key={c.name} className="border-t border-white/5">
+                <td className="px-3 py-2 font-mono text-zinc-600">{c.rank}</td>
+                <td className="px-3 py-2 text-zinc-200">
                   {c.flag} {c.name}
                 </td>
-                <td className="px-3 py-2">¥{c.cost.toLocaleString()}</td>
-                <td className="px-3 py-2">{c.internet} Mbps</td>
-                <td className="px-3 py-2 text-right font-semibold text-brand-600">
+                <td className="px-3 py-2 text-zinc-400">¥{c.cost.toLocaleString()}</td>
+                <td className="px-3 py-2 text-zinc-400">{c.internet} Mbps</td>
+                <td className="px-3 py-2 text-right font-semibold text-indigo-400">
                   {c.score}
                 </td>
               </tr>
@@ -71,16 +71,16 @@ export default function NomadCitiesGuidePage() {
         注册会员前可免费解锁 5 个城市的完整详情。200+ 城市数据、历史趋势、社区交流需订阅会员。
       </p>
 
-      <div className="not-prose mt-8 flex flex-col sm:flex-row gap-4">
+      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
         <Link
           href="/#rankings"
-          className="rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold text-center hover:bg-brand-700"
+          className="rounded-xl bg-indigo-600 px-6 py-3 text-center font-semibold text-white hover:bg-indigo-500"
         >
           查看完整排行榜
         </Link>
         <Link
           href="/join"
-          className="rounded-xl border border-stone-300 px-6 py-3 font-semibold text-center hover:bg-stone-50"
+          className="rounded-xl border border-white/15 px-6 py-3 text-center font-semibold text-zinc-300 hover:border-white/30 hover:text-white"
         >
           加入会员
         </Link>
