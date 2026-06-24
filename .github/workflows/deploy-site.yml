@@ -51,10 +51,13 @@ jobs:
         working-directory: sites/${{ steps.site.outputs.id }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
         run: |
           if [ -z "$VERCEL_TOKEN" ]; then
             echo "VERCEL_TOKEN not configured, skipping deploy" >&2
             exit 1
           fi
-          DEPLOY_URL=$(npx vercel deploy --prod --yes --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | tail -1)
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOY_URL"

@@ -42,14 +42,22 @@ npm run build
 
 优先顺序：
 
-1. **Vercel**（推荐）
+1. **本地 Token 部署**（仓库根目录 `.env.local` 含 `VERCEL_TOKEN` 时）
+   ```bash
+   bash scripts/deploy-vercel.sh <vertical-id>
+   ```
+   或手动：
    ```bash
    cd sites/<vertical-id>
-   npx vercel deploy --prod --yes --token=$VERCEL_TOKEN
+   npx vercel deploy --prod --yes \
+     --scope=baoyu18178053101-6131s-projects \
+     --token=$VERCEL_TOKEN
    ```
-2. 若无 `VERCEL_TOKEN`：提交到 GitHub，触发 `.github/workflows/deploy-site.yml`
+2. **GitHub Actions 自动部署**（push 到 main 后触发）
+   - 需在 GitHub Secrets 配置 `VERCEL_TOKEN`（运行 `bash scripts/setup-github-vercel-secret.sh`）
+   - 工作流：`.github/workflows/deploy-site.yml`
 
-部署成功后必须得到 **可公开访问的 HTTPS URL**。
+部署成功后必须得到 **可公开访问的 HTTPS URL**（优先 `*.vercel.app`）。
 
 ## 5. 更新状态
 
