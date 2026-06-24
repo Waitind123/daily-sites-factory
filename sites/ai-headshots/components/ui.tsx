@@ -52,13 +52,12 @@ export function UploadDemo() {
       </div>
       <p className="font-medium text-stone-700">上传一张正面自拍</p>
       <p className="text-sm text-stone-500 mt-1">JPG / PNG，光线充足，面部清晰</p>
-      <button
-        type="button"
-        disabled
-        className="mt-4 inline-flex items-center gap-2 rounded-lg bg-stone-200 text-stone-500 px-5 py-2.5 text-sm font-medium cursor-not-allowed"
+      <a
+        href="/studio"
+        className="mt-4 inline-flex items-center gap-2 rounded-lg bg-brand-600 text-white px-5 py-2.5 text-sm font-medium hover:bg-brand-700 transition-colors"
       >
-        🔒 会员解锁上传
-      </button>
+        进入 AI 工作室 →
+      </a>
     </div>
   );
 }

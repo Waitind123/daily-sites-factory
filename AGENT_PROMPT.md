@@ -10,8 +10,24 @@
 
 ## 1. 选择垂直方向
 
-1. 读取仓库根目录 `verticals.json` 和 `state.json`
-2. 按 `lastIndex + 1` 轮询选择下一个 vertical（到末尾则回到 0）
+**1a. 痛点发现（优先）**
+
+1. 运行 `node scripts/discover-vertical.mjs sources` 查看搜索来源
+2. 在网上搜索用户真实痛点（HN、Reddit r/SaaS、Indie Hackers、Twitter）
+   - 关键词：`I wish there was`、`looking for alternative`、`would pay for`
+3. 发现高价值方向后追加到队列：
+   ```bash
+   node scripts/discover-vertical.mjs add \
+     --name "方向中文名" \
+     --description "解决什么问题" \
+     --source "HN#123 或 Reddit链接"
+   ```
+4. `discovered-verticals.json` 队列优先于固定池
+
+**1b. 轮询选择**
+
+1. 读取 `verticals.json` 和 `state.json`
+2. 运行 `node scripts/pick-vertical.mjs`（队列有则取队列，否则 `lastIndex + 1` 轮询）
 3. 若该 vertical 在 `sites/<id>/` 已存在且 7 天内部署过，跳过选下一个
 
 ## 2. 开发网站
@@ -102,17 +118,26 @@ npm run build
 
 | 变量 | 用途 |
 |------|------|
-| `VERCEL_TOKEN` | Vercel 部署 |
-| `STRIPE_SECRET_KEY` | 可选，真实支付 |
+| `VERCEL_TOKEN` | Vercel 部署（GitHub Secrets 已配则可省略） |
+| `STRIPE_SECRET_KEY` | 可选，真实支付（需海外主体） |
+| `POLAR_CHECKOUT_URL` | 无公司收美元（推荐 Polar.sh） |
+| `REPLICATE_API_TOKEN` | AI 证件照生成 API |
+
+无公司收款见 `docs/PAYMENTS-NO-COMPANY.md`。
 
 ## 仓库结构
 
 ```
 daily-sites-factory/
-├── verticals.json      # 垂直方向池
-├── state.json          # 轮询状态
-├── sites/              # 各日站点
+├── verticals.json              # 垂直方向池（14 个预设 + 动态追加）
+├── discovered-verticals.json   # 痛点发现队列（Agent 每日搜索后追加）
+├── state.json                  # 轮询状态
+├── docs/PAYMENTS-NO-COMPANY.md # 无公司收款指南
+├── sites/                      # 各日站点
 │   └── <vertical-id>/
-├── AGENT_PROMPT.md     # 本文件
+├── scripts/
+│   ├── discover-vertical.mjs   # 痛点发现队列管理
+│   └── pick-vertical.mjs       # 选择下一个方向
+├── AGENT_PROMPT.md             # 本文件
 └── .github/workflows/
 ```

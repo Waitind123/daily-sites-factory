@@ -14,39 +14,46 @@ export function getStripe() {
 }
 
 export const PRICE_CNY = 69900;
+export const PRICE_USD = 9900;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(
+  origin: string,
+  currency: "cny" | "usd" = "cny"
+) {
   const stripe = getStripe();
 
   if (!stripe) {
     return {
       demo: true as const,
-      url: `${origin}/success?demo=true`,
+      url: `${origin}/success?demo=true&currency=${currency}`,
     };
   }
 
+  const isCny = currency === "cny";
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
-    payment_method_types: ["card", "alipay", "wechat_pay"],
-    payment_method_options: {
-      wechat_pay: { client: "web" },
-    },
+    payment_method_types: isCny
+      ? ["card", "alipay", "wechat_pay"]
+      : ["card"],
+    ...(isCny
+      ? { payment_method_options: { wechat_pay: { client: "web" } } }
+      : {}),
     line_items: [
       {
         price_data: {
-          currency: "cny",
+          currency: isCny ? "cny" : "usd",
           product_data: {
             name: "AI 证件照 · 年费会员",
             description: "无限生成 + 全部风格 + 高清下载，365 天",
           },
-          unit_amount: PRICE_CNY,
+          unit_amount: isCny ? PRICE_CNY : PRICE_USD,
         },
         quantity: 1,
       },
     ],
-    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&currency=${currency}`,
     cancel_url: `${origin}/join`,
-    metadata: { product: "ai-headshots-annual" },
+    metadata: { product: "ai-headshots-annual", currency },
   });
 
   return {
