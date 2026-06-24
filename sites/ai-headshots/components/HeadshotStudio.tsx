@@ -1,8 +1,16 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { styles } from "@/lib/data";
+
+type TrialInfo = {
+  limit: number;
+  used: number;
+  remaining: number;
+  isMember: boolean;
+  canUse: boolean;
+};
 
 export function HeadshotStudio() {
   const [preview, setPreview] = useState<string | null>(null);
@@ -11,7 +19,16 @@ export function HeadshotStudio() {
   const [result, setResult] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [demo, setDemo] = useState(false);
+  const [trial, setTrial] = useState<TrialInfo | null>(null);
+  const [showPaywall, setShowPaywall] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    fetch("/api/trial")
+      .then((r) => r.json())
+      .then(setTrial)
+      .catch(() => null);
+  }, []);
 
   function handleFile(file: File) {
     if (!file.type.startsWith("image/")) {
@@ -27,6 +44,7 @@ export function HeadshotStudio() {
       setPreview(reader.result as string);
       setResult(null);
       setError("");
+      setShowPaywall(false);
     };
     reader.readAsDataURL(file);
   }
@@ -39,6 +57,7 @@ export function HeadshotStudio() {
     setLoading(true);
     setError("");
     setResult(null);
+    setShowPaywall(false);
 
     try {
       const res = await fetch("/api/generate", {
@@ -48,14 +67,29 @@ export function HeadshotStudio() {
       });
       const data = await res.json();
       if (!res.ok) {
-        if (data.code === "NOT_MEMBER") {
-          setError("请先加入会员");
+        if (data.code === "TRIAL_EXHAUSTED") {
+          setShowPaywall(true);
+          setTrial((t) =>
+            t ? { ...t, remaining: 0, canUse: false } : t
+          );
           return;
         }
         throw new Error(data.error || "生成失败");
       }
       setResult(data.url);
       setDemo(data.demo);
+      if (typeof data.remaining === "number") {
+        setTrial((t) =>
+          t
+            ? {
+                ...t,
+                remaining: data.remaining,
+                used: t.limit - data.remaining,
+                canUse: data.remaining > 0,
+              }
+            : t
+        );
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "未知错误");
     } finally {
@@ -73,8 +107,26 @@ export function HeadshotStudio() {
         <p className="text-stone-500 mt-1">上传自拍 → 选风格 → 30 秒出图</p>
       </div>
 
+      {trial && !trial.isMember && (
+        <div className="mb-4 rounded-xl bg-brand-50 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
+          免费体验剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次 · 用尽后需订阅 $9.9/月
+        </div>
+      )}
+
+      {showPaywall && (
+        <div className="mb-4 rounded-xl bg-amber-50 border border-amber-200 p-4 text-center">
+          <p className="font-medium text-amber-900">免费 5 次已用完 🎉</p>
+          <p className="text-sm text-amber-700 mt-1">喜欢的话订阅继续无限生成</p>
+          <Link
+            href="/join"
+            className="inline-block mt-3 rounded-lg bg-brand-600 text-white px-6 py-2 text-sm font-semibold hover:bg-brand-700"
+          >
+            订阅 $9.9/月
+          </Link>
+        </div>
+      )}
+
       <div className="grid sm:grid-cols-2 gap-6">
-        {/* 上传区 */}
         <div
           className="rounded-2xl border-2 border-dashed border-stone-300 bg-stone-50 p-6 text-center cursor-pointer hover:border-brand-400 transition-colors"
           onClick={() => inputRef.current?.click()}
@@ -111,7 +163,6 @@ export function HeadshotStudio() {
           )}
         </div>
 
-        {/* 结果区 */}
         <div className="rounded-2xl border border-stone-200 bg-white p-6 flex flex-col items-center justify-center min-h-[280px]">
           {loading ? (
             <div className="text-center">
@@ -146,7 +197,6 @@ export function HeadshotStudio() {
         </div>
       </div>
 
-      {/* 风格选择 */}
       <div className="mt-6">
         <p className="text-sm font-medium text-stone-700 mb-3">选择风格</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -169,23 +219,13 @@ export function HeadshotStudio() {
       </div>
 
       {error && (
-        <p className="mt-4 text-red-600 text-sm text-center">
-          {error}
-          {error.includes("会员") && (
-            <>
-              {" "}
-              <Link href="/join" className="underline">
-                立即加入
-              </Link>
-            </>
-          )}
-        </p>
+        <p className="mt-4 text-red-600 text-sm text-center">{error}</p>
       )}
 
       <button
         type="button"
         onClick={handleGenerate}
-        disabled={loading || !preview}
+        disabled={loading || !preview || (trial !== null && !trial.canUse && !trial.isMember)}
         className="mt-6 w-full rounded-xl bg-brand-600 py-4 text-lg font-semibold text-white hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
         {loading ? "生成中…" : "生成专业证件照"}

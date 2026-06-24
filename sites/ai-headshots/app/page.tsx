@@ -34,7 +34,7 @@ export default function HomePage() {
                 看看怎么用
               </a>
             </div>
-            <p className="mt-4 text-sm text-stone-400">无免费档 · 付费即享无限生成</p>
+            <p className="mt-4 text-sm text-stone-400">免费体验 5 次 · 之后 $9.9/月</p>
           </div>
           <UploadDemo />
         </div>

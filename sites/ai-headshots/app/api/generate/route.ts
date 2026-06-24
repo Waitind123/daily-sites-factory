@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isMember } from "@/lib/member";
+import { recordTrialUse, useTrial } from "@/lib/trial";
 import {
   demoHeadshotSvg,
   generateHeadshot,
@@ -9,12 +10,16 @@ import {
 export async function POST(request: NextRequest) {
   try {
     const member = await isMember();
-    const demoAllowed =
-      process.env.ALLOW_DEMO_GENERATE === "true" || !isReplicateConfigured();
+    const trial = await useTrial(member);
 
-    if (!member && !demoAllowed) {
+    if (!member && !trial.consumed) {
       return NextResponse.json(
-        { error: "请先加入会员", code: "NOT_MEMBER" },
+        {
+          error: "免费体验 5 次已用完，请订阅继续使用",
+          code: "TRIAL_EXHAUSTED",
+          remaining: 0,
+          limit: trial.limit,
+        },
         { status: 403 }
       );
     }
@@ -29,7 +34,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "图片格式无效" }, { status: 400 });
     }
 
-    // 限制大小 ~4MB base64
     if (image.length > 5_500_000) {
       return NextResponse.json({ error: "图片过大，请压缩后重试" }, { status: 400 });
     }
@@ -44,15 +48,28 @@ export async function POST(request: NextRequest) {
       outputUrl = demoHeadshotSvg(style);
     }
 
-    return NextResponse.json({
-      ok: true,
-      url: outputUrl,
-      style,
-      demo,
-      message: demo
-        ? "演示模式：配置 REPLICATE_API_TOKEN 后生成真实 AI 头像"
-        : "生成成功",
-    });
+    let remaining: number | null = null;
+    const headers = new Headers();
+
+    if (!member) {
+      const recorded = await recordTrialUse();
+      remaining = recorded.remaining;
+      headers.append("Set-Cookie", recorded.cookieHeader);
+    }
+
+    return NextResponse.json(
+      {
+        ok: true,
+        url: outputUrl,
+        style,
+        demo,
+        remaining,
+        message: demo
+          ? "演示模式：配置 REPLICATE_API_TOKEN 后生成真实 AI 头像"
+          : "生成成功",
+      },
+      { headers }
+    );
   } catch (error) {
     console.error("Generate error:", error);
     return NextResponse.json(

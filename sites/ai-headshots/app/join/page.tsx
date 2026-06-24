@@ -9,7 +9,7 @@ export default function JoinPage() {
     <div className="mx-auto max-w-lg px-4 py-12 sm:px-6 sm:py-20">
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold text-stone-900 sm:text-4xl">加入 AI 证件照</h1>
-        <p className="mt-3 text-stone-500">月订阅，无限生成。没有免费档。</p>
+        <p className="mt-3 text-stone-500">免费体验 5 次，之后 $9.9/月订阅。</p>
       </div>
 
       <div className="rounded-2xl border-2 border-brand-600 bg-white p-8 shadow-lg relative overflow-hidden">

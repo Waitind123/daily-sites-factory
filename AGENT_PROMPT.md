@@ -37,12 +37,16 @@
 - **技术栈**：Next.js + TypeScript + Tailwind（默认）
 - **必须包含**：
   - 首页（价值主张清晰）
-  - `/join` 或定价页（**无免费档**，年费 ¥699 或 $99/年）
-  - Stripe 支付接口占位（`/api/checkout`）
-  - 演示模式（无 Stripe 密钥时模拟支付成功）
+  - **免费体验 5 次**（核心功能），用尽后提示订阅（见 `docs/FREE-TRIAL-PATTERN.md`）
+  - `/join` 定价页（订阅制，如 $9.9/月 或 ¥699/年）
+  - `/api/trial` 查询剩余免费次数
+  - 支付接口（`/api/checkout`，Polar / Stripe 占位）
+  - 演示模式（无支付密钥时模拟支付成功）
   - 移动端适配
 - **风格**：简洁实用，levelsio / Nomad List 风，不要 corporate 模板感
 - **文案**：中文为主，垂直领域专业
+
+**免费体验实现**：复制 `templates/free-trial/lib/trial.ts` 到站点 `lib/trial.ts`，改 `SITE_ID`。
 
 ## 3. 构建验证
 
@@ -110,6 +114,7 @@ npm run build
 ## 原则（levelsio）
 
 - 解决真实问题，不做空壳
+- **先免费体验 5 次，再引导订阅**（试用转化，非永久免费档）
 - 第一天就设计收费点
 - 一人可维护，避免过度工程
 - Ship fast — 单站 MVP 控制在合理范围，当天可上线
@@ -133,6 +138,8 @@ daily-sites-factory/
 ├── discovered-verticals.json   # 痛点发现队列（Agent 每日搜索后追加）
 ├── state.json                  # 轮询状态
 ├── docs/PAYMENTS-NO-COMPANY.md # 无公司收款指南
+├── docs/FREE-TRIAL-PATTERN.md    # 免费体验 5 次标准
+├── templates/free-trial/         # 可复制 trial 模板
 ├── sites/                      # 各日站点
 │   └── <vertical-id>/
 ├── scripts/
