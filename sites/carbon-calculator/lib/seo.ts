@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://carbon-calculator.vercel.app",
+  url: "https://carbon-calculator-wine.vercel.app",
   name: "远程碳足迹",
   title: "远程碳足迹 — 混合办公碳排放计算器，$9.9/月",
   description:
