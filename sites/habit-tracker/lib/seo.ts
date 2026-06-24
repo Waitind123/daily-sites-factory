@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://habit-tracker.vercel.app",
+  url: "https://habit-tracker-opal-rho.vercel.app",
   name: "习惯打卡",
   title: "习惯打卡 — 极简习惯追踪，$29.9/月",
   description:
