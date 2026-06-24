@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://startup-ideas.vercel.app",
+  url: "https://startup-ideas-five.vercel.app",
   name: "创业点子库",
   title: "创业点子库 — 每日创业灵感 + 深度市场分析 $9.9/月",
   description:
