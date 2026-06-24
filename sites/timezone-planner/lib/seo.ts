@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://timezone-planner.vercel.app",
+  url: "https://timezone-planner-delta.vercel.app",
   name: "跨时区会议",
   title: "跨时区会议规划 — 远程团队时区重叠可视化，$9.9/月",
   description:
