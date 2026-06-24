@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://price-tracker.vercel.app",
+  url: "https://price-tracker-seven-tan.vercel.app",
   name: "SaaS 价格追踪",
   title: "SaaS 价格追踪 — 竞品定价变动监控与历史分析 $9.9/月",
   description:
