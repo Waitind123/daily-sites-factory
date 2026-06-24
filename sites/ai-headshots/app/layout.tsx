@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import { metadata as siteMetadata, softwareApplicationJsonLd } from "@/lib/seo";
 import "./globals.css";
+
+export const metadata: Metadata = siteMetadata;
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: "AI 证件照 — 30 秒生成专业头像",
-  description: "上传自拍，AI 生成商务、休闲、创意多种风格专业证件照。$9.9/月会员，无限生成。",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-CN">
+      <head>
+        <JsonLd data={softwareApplicationJsonLd()} />
+      </head>
       <body className={`${inter.variable} font-sans antialiased bg-stone-50 text-stone-900`}>
         <header className="border-b border-stone-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
@@ -26,11 +28,11 @@ export default function RootLayout({
               <span>AI 证件照</span>
             </Link>
             <nav className="flex items-center gap-4 sm:gap-6 text-sm">
-              <Link href="/#styles" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
-                风格
+              <Link href="/guide/linkedin-headshot" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
+                指南
               </Link>
-              <Link href="/#how" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
-                怎么用
+              <Link href="/studio" className="text-stone-600 hover:text-stone-900 hidden sm:inline">
+                工作室
               </Link>
               <Link
                 href="/join"
@@ -45,6 +47,15 @@ export default function RootLayout({
         <footer className="border-t border-stone-200 bg-white mt-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-center text-sm text-stone-500">
             <p>© {new Date().getFullYear()} AI 证件照 · 照片 24h 自动删除</p>
+            <p className="mt-2">
+              <Link href="/guide/linkedin-headshot" className="text-brand-600 hover:underline">
+                LinkedIn 头像指南
+              </Link>
+              {" · "}
+              <Link href="/sitemap.xml" className="hover:underline">
+                Sitemap
+              </Link>
+            </p>
           </div>
         </footer>
       </body>

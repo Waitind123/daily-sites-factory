@@ -48,6 +48,32 @@
 
 **免费体验实现**：复制 `templates/free-trial/lib/trial.ts` 到站点 `lib/trial.ts`，改 `SITE_ID`。
 
+### 2b. SEO 三件套（必须，见 `docs/SEO-GUIDE.md`）
+
+**技术 SEO** — 复制 `templates/seo/` 到站点：
+
+| 文件 | 作用 |
+|------|------|
+| `lib/site-seo.ts` + `lib/seo.ts` | 完整 metadata、OG、canonical、keywords |
+| `app/sitemap.ts` | 自动生成 sitemap.xml |
+| `app/robots.ts` | 允许 Google 抓取 |
+| `components/JsonLd.tsx` | JSON-LD 结构化数据 |
+
+**内容 SEO** — 至少 1 篇指南页：
+
+- 路径：`/guide/<长尾关键词-slug>`
+- 800+ 字，含目标关键词，内链到 `/join` 和核心功能页
+- 加入 `lib/seo.ts` 的 `publicPaths` 和 sitemap
+
+**外链分发** — 部署后在报告中输出待发帖清单：
+
+- Product Hunt / Hacker News Show HN
+- Reddit r/SideProject、r/SaaS
+- Twitter/X、Indie Hackers
+- 提交 [Google Search Console](https://search.google.com/search-console) + 提交 sitemap
+
+**Google 靠前显示**：靠长尾词内容页 + 自定义域名 + 外链，新站 `*.vercel.app` 1–3 月才有自然流量，不指望第一天。
+
 ## 3. 构建验证
 
 ```bash
@@ -139,7 +165,9 @@ daily-sites-factory/
 ├── state.json                  # 轮询状态
 ├── docs/PAYMENTS-NO-COMPANY.md # 无公司收款指南
 ├── docs/FREE-TRIAL-PATTERN.md    # 免费体验 5 次标准
+├── docs/SEO-GUIDE.md               # SEO 技术+内容+分发指南
 ├── templates/free-trial/         # 可复制 trial 模板
+├── templates/seo/                # 可复制 SEO 模板
 ├── sites/                      # 各日站点
 │   └── <vertical-id>/
 ├── scripts/
