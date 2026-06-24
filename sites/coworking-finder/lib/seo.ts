@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://coworking-finder.vercel.app",
+  url: "https://coworking-finder-lovat.vercel.app",
   name: "联合办公 Finder",
   title: "联合办公 Finder — 全球 Coworking 空间目录，日票价格 + WiFi 实测",
   description:
