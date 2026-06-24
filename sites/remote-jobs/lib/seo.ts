@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://remote-jobs.vercel.app",
+  url: "https://remote-jobs-azure.vercel.app",
   name: "远程工作板",
   title: "远程工作板 — 全球远程职位聚合，企业发帖 ¥699/年",
   description:
