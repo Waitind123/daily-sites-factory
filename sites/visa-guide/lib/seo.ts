@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://visa-guide.vercel.app",
+  url: "https://visa-guide-tau.vercel.app",
   name: "数字游民签证指南",
   title: "数字游民签证指南 — 28 国远程签证对比数据库",
   description:
