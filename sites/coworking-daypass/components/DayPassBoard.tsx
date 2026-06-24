@@ -1,0 +1,289 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { venues as allVenues, cities, type DayPassVenue } from "@/lib/data";
+
+type TrialInfo = {
+  limit: number;
+  used: number;
+  remaining: number;
+  isMember: boolean;
+  canUse: boolean;
+};
+
+type BookingConfirmation = {
+  ref: string;
+  date: string;
+  venue: string;
+  city: string;
+  neighborhood: string;
+  price: string;
+  hours: string;
+  wifiMbps: number;
+  tips: string[];
+  instantBook: boolean;
+  bookingUrl?: string;
+};
+
+type VenueDetail = DayPassVenue & { unlocked: boolean; booking?: BookingConfirmation };
+
+const TAGS = ["即时预订", "视频会议", "低价", "数字游民"];
+
+export function DayPassBoard() {
+  const [query, setQuery] = useState("");
+  const [city, setCity] = useState("");
+  const [tag, setTag] = useState("");
+  const [trial, setTrial] = useState<TrialInfo | null>(null);
+  const [selected, setSelected] = useState<VenueDetail | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [showPaywall, setShowPaywall] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    fetch("/api/trial")
+      .then((r) => r.json())
+      .then(setTrial)
+      .catch(() => null);
+  }, []);
+
+  const filtered = allVenues.filter((venue) => {
+    const matchCity = !city || venue.city === city;
+    const matchTag = !tag || venue.tags.some((t) => t.toLowerCase().includes(tag.toLowerCase()));
+    if (!query.trim()) return matchCity && matchTag;
+    const haystack = `${venue.name} ${venue.city} ${venue.country} ${venue.tags.join(" ")}`.toLowerCase();
+    return matchCity && matchTag && haystack.includes(query.toLowerCase());
+  });
+
+  async function bookPass(venueId: string) {
+    setLoading(true);
+    setError("");
+    setShowPaywall(false);
+
+    try {
+      const res = await fetch("/api/passes/book", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ venueId }),
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        if (data.code === "TRIAL_EXHAUSTED") {
+          setShowPaywall(true);
+          setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
+          return;
+        }
+        throw new Error(data.error || "预订失败");
+      }
+
+      setSelected(data.venue);
+      if (data.trial) {
+        setTrial(data.trial);
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "预订失败");
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function availabilityColor(spots: number, total: number) {
+    const ratio = spots / total;
+    if (ratio > 0.3) return "text-green-700 bg-green-100";
+    if (ratio > 0.1) return "text-amber-700 bg-amber-100";
+    return "text-red-700 bg-red-100";
+  }
+
+  return (
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+        <div>
+          <h1 className="text-3xl font-bold">今日可订日票</h1>
+          <p className="text-stone-500 mt-1">{filtered.length} 个场地 · 实时库存更新</p>
+        </div>
+        {trial && (
+          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+            {trial.isMember
+              ? "✓ 会员 · 无限预订"
+              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+          </div>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-3 mb-6">
+        <input
+          type="search"
+          placeholder="搜索城市、场地名称…"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="w-full rounded-xl border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+        />
+        <div className="flex flex-wrap gap-2">
+          <select
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            className="rounded-full border border-stone-200 px-3 py-1 text-xs font-medium bg-white text-stone-600"
+          >
+            <option value="">全部城市</option>
+            {cities.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+          {TAGS.map((t) => (
+            <button
+              key={t}
+              type="button"
+              onClick={() => setTag(tag === t ? "" : t)}
+              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                tag === t
+                  ? "bg-brand-600 text-white"
+                  : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+              }`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {showPaywall && (
+        <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p className="font-semibold text-amber-900">免费体验已用完</p>
+            <p className="text-sm text-amber-700 mt-1">订阅 $9.9/月，无限预订日票 + 实时库存 + 预订确认单</p>
+          </div>
+          <Link
+            href="/join"
+            className="shrink-0 rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+          >
+            立即订阅
+          </Link>
+        </div>
+      )}
+
+      {error && (
+        <p className="mb-4 text-sm text-red-600 bg-red-50 rounded-lg px-4 py-2">{error}</p>
+      )}
+
+      <div className="grid lg:grid-cols-5 gap-6">
+        <div className="lg:col-span-2 space-y-3">
+          {filtered.map((venue) => (
+            <button
+              key={venue.id}
+              type="button"
+              onClick={() => bookPass(venue.id)}
+              disabled={loading}
+              className={`w-full text-left rounded-xl border p-4 transition-colors hover:border-brand-300 hover:bg-brand-50/30 ${
+                selected?.id === venue.id ? "border-brand-600 bg-brand-50" : "border-stone-200 bg-white"
+              }`}
+            >
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">{venue.logo}</span>
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-stone-900 truncate">{venue.name}</p>
+                  <p className="text-sm text-stone-500">
+                    {venue.city}, {venue.country}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mt-2">
+                    <span className={`text-xs px-2 py-0.5 rounded font-medium ${availabilityColor(venue.spotsLeftToday, venue.totalSpots)}`}>
+                      今日余 {venue.spotsLeftToday}/{venue.totalSpots}
+                    </span>
+                    <span className="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded">
+                      📶 {venue.wifiMbps} Mbps
+                    </span>
+                    {venue.instantBook && (
+                      <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded">
+                        即时预订
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-sm font-medium text-brand-700 mt-2">{venue.dayPassPrice}</p>
+                </div>
+              </div>
+            </button>
+          ))}
+        </div>
+
+        <div className="lg:col-span-3">
+          {selected?.booking ? (
+            <div className="rounded-xl border border-brand-200 bg-white p-6 sticky top-24">
+              <div className="rounded-lg bg-brand-50 border border-brand-200 p-4 mb-6">
+                <p className="text-sm text-brand-600 font-medium">预订确认单</p>
+                <p className="text-2xl font-bold text-brand-800 mt-1">{selected.booking.ref}</p>
+                <p className="text-sm text-brand-600 mt-1">{selected.booking.date}</p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <span className="text-4xl">{selected.logo}</span>
+                <div>
+                  <h2 className="text-xl font-bold">{selected.booking.venue}</h2>
+                  <p className="text-stone-500">
+                    {selected.booking.neighborhood} · {selected.booking.city}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
+                <div className="rounded-lg bg-stone-50 p-3">
+                  <p className="text-stone-500 text-xs">日票价格</p>
+                  <p className="font-semibold text-brand-700">{selected.booking.price}</p>
+                </div>
+                <div className="rounded-lg bg-stone-50 p-3">
+                  <p className="text-stone-500 text-xs">WiFi 实测</p>
+                  <p className="font-semibold">{selected.booking.wifiMbps} Mbps</p>
+                </div>
+                <div className="rounded-lg bg-stone-50 p-3">
+                  <p className="text-stone-500 text-xs">营业时间</p>
+                  <p className="font-semibold">{selected.booking.hours}</p>
+                </div>
+                <div className="rounded-lg bg-stone-50 p-3">
+                  <p className="text-stone-500 text-xs">预订方式</p>
+                  <p className="font-semibold">{selected.booking.instantBook ? "即时入场" : "需提前预约"}</p>
+                </div>
+              </div>
+
+              {selected.booking.tips.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="font-semibold text-stone-900 mb-2 text-sm">入场贴士</h3>
+                  <ul className="list-disc list-inside text-stone-600 text-sm space-y-1">
+                    {selected.booking.tips.map((tip) => (
+                      <li key={tip}>{tip}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {selected.booking.bookingUrl && (
+                <a
+                  href={selected.booking.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 block w-full text-center rounded-xl bg-brand-600 py-3 font-semibold text-white hover:bg-brand-700 transition-colors"
+                >
+                  前往官网完成付款 →
+                </a>
+              )}
+
+              <p className="mt-4 text-xs text-stone-400 text-center">
+                此为预订指引确认单，实际付款请在场地官网完成
+              </p>
+            </div>
+          ) : selected ? (
+            <div className="rounded-xl border border-stone-200 bg-white p-6 sticky top-24">
+              <p className="text-stone-500">加载预订信息中…</p>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-12 text-center text-stone-400">
+              <p className="text-4xl mb-3">🎫</p>
+              <p>点击左侧场地预订今日日票</p>
+              <p className="text-sm mt-1">非会员免费体验 5 次</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
