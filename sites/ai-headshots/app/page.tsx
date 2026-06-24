@@ -25,7 +25,7 @@ export default function HomePage() {
                 href="/join"
                 className="rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors text-center"
               >
-                加入会员 · ¥699/年
+                加入会员 · $9.9/月
               </Link>
               <a
                 href="#how"
@@ -95,7 +95,7 @@ export default function HomePage() {
 
       <section className="bg-brand-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">照相馆一次 ¥299，我们一年 ¥699</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold">照相馆一次 ¥299，我们只要 $9.9/月</h2>
           <p className="mt-4 text-brand-100 text-lg">
             无限生成、全部风格、高清下载。第一天收费，因为 GPU 算力不免费。
           </p>
@@ -103,7 +103,7 @@ export default function HomePage() {
             href="/join"
             className="inline-block mt-8 bg-white text-brand-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-50 transition-colors"
           >
-            立即加入 ¥699/年
+            立即加入 $9.9/月
           </Link>
         </div>
       </section>

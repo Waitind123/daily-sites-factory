@@ -1,10 +1,11 @@
 import { createCheckoutSession, isDemoMode as isStripeDemo } from "./stripe";
+import { POLAR_CHECKOUT_URL, PRICING } from "./config";
 
 export type Currency = "cny" | "usd";
 
 export function getPaymentMode() {
   if (process.env.STRIPE_SECRET_KEY) return "stripe";
-  if (process.env.POLAR_CHECKOUT_URL) return "polar";
+  if (POLAR_CHECKOUT_URL) return "polar";
   if (process.env.LEMON_SQUEEZY_CHECKOUT_URL) return "lemonsqueezy";
   return "demo";
 }
@@ -13,7 +14,11 @@ export function isDemoMode() {
   return getPaymentMode() === "demo";
 }
 
-export async function createPayment(origin: string, currency: Currency = "cny") {
+export function getPolarCheckoutUrl() {
+  return POLAR_CHECKOUT_URL;
+}
+
+export async function createPayment(origin: string, currency: Currency = "usd") {
   const mode = getPaymentMode();
 
   if (mode === "stripe") {
@@ -21,35 +26,31 @@ export async function createPayment(origin: string, currency: Currency = "cny") 
     return { provider: "stripe" as const, ...result };
   }
 
-  if (mode === "polar" && currency === "usd") {
+  if (mode === "polar") {
     return {
       provider: "polar" as const,
       demo: false as const,
-      url: process.env.POLAR_CHECKOUT_URL!,
+      url: POLAR_CHECKOUT_URL,
     };
   }
 
   if (mode === "lemonsqueezy") {
-    const url =
-      currency === "usd" && process.env.LEMON_SQUEEZY_CHECKOUT_URL_USD
-        ? process.env.LEMON_SQUEEZY_CHECKOUT_URL_USD
-        : process.env.LEMON_SQUEEZY_CHECKOUT_URL!;
+    const url = process.env.LEMON_SQUEEZY_CHECKOUT_URL!;
     return { provider: "lemonsqueezy" as const, demo: false as const, url };
   }
 
-  // demo 或 Polar 未配 USD 时走演示
   return {
     provider: "demo" as const,
     demo: true as const,
-    url: `${origin}/success?demo=true&currency=${currency}`,
+    url: `${origin}/success?demo=true`,
   };
 }
 
 export function getPricing() {
   return {
-    cny: { amount: 699, label: "¥699/年" },
-    usd: { amount: 99, label: "$99/年" },
+    ...PRICING,
     mode: getPaymentMode(),
     stripeDemo: isStripeDemo(),
+    polarUrl: POLAR_CHECKOUT_URL,
   };
 }

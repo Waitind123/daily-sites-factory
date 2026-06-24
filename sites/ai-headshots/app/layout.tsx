@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "AI 证件照 — 30 秒生成专业头像",
-  description: "上传自拍，AI 生成商务、休闲、创意多种风格专业证件照。年费会员 ¥699，无限生成。",
+  description: "上传自拍，AI 生成商务、休闲、创意多种风格专业证件照。$9.9/月会员，无限生成。",
 };
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
                 href="/join"
                 className="bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors font-medium"
               >
-                加入会员 ¥699/年
+                加入会员 $9.9/月
               </Link>
             </nav>
           </div>
