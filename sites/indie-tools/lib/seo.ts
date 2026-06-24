@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://indie-tools.vercel.app",
+  url: "https://indie-tools-rho.vercel.app",
   name: "独立开发者工具箱",
   title: "独立开发者工具箱 — 精选 Indie 工具评测与选型 $9.9/月",
   description:
