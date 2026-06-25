@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://og-image-studio.vercel.app",
+  url: "https://og-image-studio-cyan.vercel.app",
   name: "OG Image Studio",
   title: "OG Image 生成器 — Bannerbear 平替，$9.9/月",
   description:
