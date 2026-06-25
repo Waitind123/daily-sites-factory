@@ -9,46 +9,62 @@ on:
   workflow_dispatch:
     inputs:
       site_id:
-        description: "Site folder name under sites/"
-        required: true
+        description: "Site folder name under sites/ (empty = all sites)"
+        required: false
         type: string
 
 jobs:
-  deploy:
+  resolve:
     runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.list.outputs.sites }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Resolve site id
-        id: site
+      - name: List sites to deploy
+        id: list
         run: |
           if [ -n "${{ github.event.inputs.site_id }}" ]; then
-            SITE_ID="${{ github.event.inputs.site_id }}"
+            SITES='["${{ github.event.inputs.site_id }}"]'
           else
-            SITE_ID=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
+            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
+            if [ -z "$CHANGED" ]; then
+              CHANGED=$(git show --name-only --pretty=format: HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
+            fi
+            if [ -z "$CHANGED" ]; then
+              echo "No sites to deploy" >&2
+              exit 1
+            fi
+            SITES=$(echo "$CHANGED" | jq -R -s -c 'split("\n") | map(select(length > 0))')
           fi
-          if [ -z "$SITE_ID" ]; then
-            echo "Could not resolve site id" >&2
-            exit 1
-          fi
-          echo "id=$SITE_ID" >> $GITHUB_OUTPUT
-          echo "Resolved site: $SITE_ID"
+          echo "sites=$SITES" >> $GITHUB_OUTPUT
+          echo "Deploying: $SITES"
+
+  deploy:
+    needs: resolve
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site_id: ${{ fromJson(needs.resolve.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
 
       - name: Install and build
-        working-directory: sites/${{ steps.site.outputs.id }}
+        working-directory: sites/${{ matrix.site_id }}
         run: |
           npm ci || npm install
           npm run build
 
       - name: Deploy to Vercel
         id: vercel
-        working-directory: sites/${{ steps.site.outputs.id }}
+        working-directory: sites/${{ matrix.site_id }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
@@ -67,4 +83,4 @@ jobs:
         env:
           WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
         run: |
-          node scripts/notify-wecom.mjs "${{ steps.site.outputs.id }}" "${{ steps.vercel.outputs.url }}"
+          node scripts/notify-wecom.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
