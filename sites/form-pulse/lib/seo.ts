@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://form-pulse.vercel.app",
+    url: "https://form-pulse-amber.vercel.app",
     name: "Form Pulse",
     title: "Form Pulse — Typeform alternative for indie devs, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://form-pulse.vercel.app",
+    url: "https://form-pulse-amber.vercel.app",
     name: "极简表单构建器",
     title: "极简表单构建器 — Typeform 平替，独立开发者 $9.9/月",
     description:
