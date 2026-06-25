@@ -4,10 +4,10 @@ export function CityTable({ showLocked = true }: { showLocked?: boolean }) {
   const displayCities = showLocked ? cities : cities.filter((c) => !c.locked);
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-sm">
+    <div className="card-glow overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-stone-100 bg-stone-50 text-left text-stone-500">
+          <tr className="border-b border-white/10 text-left text-zinc-500">
             <th className="px-4 py-3 font-medium">#</th>
             <th className="px-4 py-3 font-medium">城市</th>
             <th className="px-4 py-3 font-medium hidden sm:table-cell">月成本</th>
@@ -21,36 +21,36 @@ export function CityTable({ showLocked = true }: { showLocked?: boolean }) {
           {displayCities.map((city) => (
             <tr
               key={city.name}
-              className={`border-b border-stone-50 hover:bg-stone-50/50 ${city.locked ? "relative" : ""}`}
+              className="border-b border-white/5 transition-colors hover:bg-white/[0.02]"
             >
-              <td className="px-4 py-3 text-stone-400">{city.rank}</td>
+              <td className="px-4 py-3 font-mono text-zinc-600">{city.rank}</td>
               <td className="px-4 py-3">
                 <span className="mr-1.5">{city.flag}</span>
-                <span className="font-medium">{city.name}</span>
-                <span className="ml-1 text-stone-400">{city.country}</span>
+                <span className="font-medium text-zinc-200">{city.name}</span>
+                <span className="ml-1 text-zinc-500">{city.country}</span>
                 {city.locked && (
-                  <span className="ml-2 inline-flex items-center rounded bg-amber-50 px-1.5 py-0.5 text-xs text-amber-700">
+                  <span className="ml-2 inline-flex items-center rounded bg-indigo-500/20 px-1.5 py-0.5 text-xs text-indigo-300">
                     🔒 会员
                   </span>
                 )}
               </td>
-              <td className="px-4 py-3 hidden sm:table-cell text-stone-600">
+              <td className="hidden px-4 py-3 text-zinc-400 sm:table-cell">
                 {city.locked ? "—" : `¥${city.cost.toLocaleString()}`}
               </td>
-              <td className="px-4 py-3 hidden md:table-cell text-stone-600">
+              <td className="hidden px-4 py-3 text-zinc-400 md:table-cell">
                 {city.locked ? "—" : `${city.internet} Mbps`}
               </td>
-              <td className="px-4 py-3 hidden md:table-cell text-stone-600">
+              <td className="hidden px-4 py-3 text-zinc-400 md:table-cell">
                 {city.locked ? "—" : city.safety}
               </td>
-              <td className="px-4 py-3 hidden lg:table-cell text-stone-600">
+              <td className="hidden px-4 py-3 text-zinc-400 lg:table-cell">
                 {city.locked ? "—" : city.visa}
               </td>
               <td className="px-4 py-3 text-right">
                 {city.locked ? (
-                  <span className="text-stone-300">—</span>
+                  <span className="text-zinc-600">—</span>
                 ) : (
-                  <span className="inline-flex items-center rounded-full bg-brand-50 px-2.5 py-0.5 font-semibold text-brand-700">
+                  <span className="inline-flex items-center rounded-full bg-indigo-500/20 px-2.5 py-0.5 font-semibold text-indigo-300">
                     {city.score}
                   </span>
                 )}
@@ -68,7 +68,7 @@ export function CheckoutButton({ className = "" }: { className?: string }) {
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
-        className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
+        className={`w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:bg-indigo-500 active:scale-[0.98] ${className}`}
       >
         立即加入 · ¥699/年
       </button>
@@ -78,12 +78,12 @@ export function CheckoutButton({ className = "" }: { className?: string }) {
 
 export function FeatureGrid() {
   return (
-    <div className="grid gap-6 sm:grid-cols-2">
+    <div className="grid gap-4 sm:grid-cols-2">
       {features.map((f: { icon: string; title: string; desc: string }) => (
-        <div key={f.title} className="rounded-xl border border-stone-200 bg-white p-5">
-          <div className="text-2xl mb-2">{f.icon}</div>
-          <h3 className="font-semibold text-stone-900">{f.title}</h3>
-          <p className="mt-1 text-sm text-stone-500">{f.desc}</p>
+        <div key={f.title} className="card-glow card-glow-hover p-5">
+          <div className="mb-2 text-2xl">{f.icon}</div>
+          <h3 className="font-semibold text-white">{f.title}</h3>
+          <p className="mt-1 text-sm text-zinc-400">{f.desc}</p>
         </div>
       ))}
     </div>
