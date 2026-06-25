@@ -18,9 +18,10 @@
 | **仓库** | 本目录 push 到 GitHub 后填入 |
 | **指令** | 读取并执行 `AGENT_PROMPT.md` 全部步骤 |
 
-**环境变量**（Automation 设置中添加）：
+**Automation 设置**：
 
-- `VERCEL_TOKEN` — [Vercel Account Tokens](https://vercel.com/account/tokens)
+- **Tools**：关闭 Pull Request 工具
+- **GitHub Secrets**：配置 `VERCEL_TOKEN`（[Vercel Account Tokens](https://vercel.com/account/tokens)），由 Actions 部署，不要配在 Automation 环境变量
 
 ### 方式 B：手动触发
 
@@ -43,8 +44,8 @@ powershell -ExecutionPolicy Bypass -File scripts\register-scheduled-task.ps1
 ## 部署到 Vercel
 
 1. 注册 [Vercel](https://vercel.com)
-2. 创建 Token → 填入 Cursor Automation 或 GitHub Secrets
-3. Agent 运行 `npx vercel deploy --prod`
+2. 创建 Token → 填入 **GitHub Secrets**（`VERCEL_TOKEN`）
+3. Agent `npm run build` 通过后 **push 到 `main`** → GitHub Actions 自动 `vercel deploy --prod`
 
 ## 目录
 
