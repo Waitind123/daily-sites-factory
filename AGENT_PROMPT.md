@@ -35,7 +35,7 @@
 在 `sites/<vertical-id>/` 创建完整可运行项目：
 
 - **技术栈**：Next.js + TypeScript + Tailwind（默认）
-- **站点标准壳（必须）**：运行 `node scripts/sync-site-shell.mjs <vertical-id>` 同步：
+- **站点标准壳（必须）**：运行 `node scripts/sync-site-shell.mjs <vertical-id>` 同步后，**必须**通过 `node scripts/verify-site-quality.mjs <vertical-id>`
   - **深色主题**（`#0A0A0F` 背景 + Indigo 强调色）
   - **右上角语言切换**（默认 English，可切中文，cookie 持久化）
   - **底部用户留言板**（`/api/feedback` + `FeedbackSection`）
@@ -81,15 +81,21 @@
 
 **Google 靠前显示**：靠长尾词内容页 + 自定义域名 + 外链，新站 `*.vercel.app` 1–3 月才有自然流量，不指望第一天。
 
-## 3. 构建验证
+## 3. 构建与质量闸门（不通过禁止 push）
 
 ```bash
 cd sites/<vertical-id>
 npm install
 npm run build
+cd ../..
+node scripts/verify-site-quality.mjs <vertical-id>
 ```
 
-构建必须通过，否则修复后再部署。
+**`verify-site-quality.mjs` 失败则必须修复后再提交**（CI 部署前同样执行，失败则中止部署）。
+
+检查项见 `docs/AGENT-LESSONS.md`：全站 i18n、productDemo 区、generateMetadata、API 错误码等。
+
+用户反馈过的问题已写入教训库 — **禁止让用户第二次发现同一类问题**。
 
 ## 4. 部署公网
 

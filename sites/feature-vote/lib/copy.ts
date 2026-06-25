@@ -83,6 +83,11 @@ export const homeCopy = {
       ctaPrimary: "Create a board free",
       ctaSecondary: "View pricing",
     },
+    productDemo: {
+      title: "Live voting board preview",
+      caption: "Public roadmap · voters upvote without login",
+      preview: "▲ 47  Dark mode for dashboard     [Planned]\n▲ 32  Webhook on status change  [In Progress]\n▲ 28  CSV export for ideas        [Open]",
+    },
   },
   zh: {
     badge: "Canny $79/月？· $9.9/月一口价",
@@ -165,6 +170,11 @@ export const homeCopy = {
       subtitle: "免费 5 个投票板 · 之后 $9.9/月 不限量",
       ctaPrimary: "免费创建投票板",
       ctaSecondary: "查看定价",
+    },
+    productDemo: {
+      title: "投票板实时预览",
+      caption: "公开路线图 · 投票者无需登录即可投票",
+      preview: "▲ 47  仪表盘深色模式        [计划中]\n▲ 32  状态变更 Webhook    [开发中]\n▲ 28  想法 CSV 导出        [待讨论]",
     },
   },
 } as const;

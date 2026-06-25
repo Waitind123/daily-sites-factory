@@ -56,6 +56,9 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Verify site quality
+        run: node scripts/verify-site-quality.mjs ${{ matrix.site_id }}
+
       - name: Install and build
         working-directory: sites/${{ matrix.site_id }}
         run: |

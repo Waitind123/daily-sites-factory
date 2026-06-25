@@ -12,6 +12,20 @@ export default async function HomePage() {
     <div>
       <HomeHero />
 
+      {"productDemo" in c && (
+        <section className="py-16 border-b border-border">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">{c.productDemo.title}</h2>
+            <p className="text-center text-sm text-muted mb-6">{c.productDemo.caption}</p>
+            <div className="rounded-2xl border border-brand-600/30 bg-surface p-6 shadow-xl">
+              <pre className="whitespace-pre-wrap rounded-xl bg-background border border-border p-5 font-mono text-sm text-foreground leading-relaxed">
+                {c.productDemo.preview}
+              </pre>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="bg-surface border-y border-border py-12">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="grid sm:grid-cols-3 gap-6 text-center">

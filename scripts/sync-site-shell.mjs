@@ -330,26 +330,61 @@ export default config;
 }
 
 function defaultHero(meta) {
-  return {
-    en: {
-      badge: "Ship fast · indie SaaS",
-      title: meta.name.en,
-      subtitle: `Micro-SaaS for ${meta.name.en} — free trial, then $9.9/mo.`,
-      ctaPrimary: "Try free",
-      ctaPrimaryHref: meta.nav?.[0]?.href || "/join",
-      ctaSecondary: "Subscribe · $9.9/mo",
-      ctaSecondaryHref: "/join",
-      note: "5 free tries · then $9.9/mo",
+  const primaryHref = meta.nav?.[0]?.href || "/join";
+  const mk = (nameEn, nameZh) => ({
+    badge: "Ship fast · indie SaaS",
+    title: nameEn,
+    subtitle: `Micro-SaaS for ${nameEn} — free trial, then $9.9/mo.`,
+    ctaPrimary: "Try free",
+    ctaPrimaryHref: primaryHref,
+    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondaryHref: "/join",
+    note: "5 free tries · then $9.9/mo",
+    stats: [
+      { stat: "$9.9", label: "flat/mo" },
+      { stat: "5", label: "free tries" },
+      { stat: "1 min", label: "to launch" },
+    ],
+    productDemo: {
+      title: "Product preview",
+      caption: "See the core workflow before you sign up",
+      preview: "Demo UI mock — replace with your product screenshot or live widget",
     },
+    closing: {
+      title: "Ready to get started?",
+      subtitle: "5 free tries · then $9.9/mo",
+      ctaPrimary: "Try free",
+      ctaPrimaryHref: primaryHref,
+    },
+  });
+  const en = mk(meta.name.en, meta.name.zh);
+  return {
+    en,
     zh: {
       badge: "快速上线 · 独立 SaaS",
       title: meta.name.zh,
       subtitle: `${meta.name.zh} — 免费体验 5 次，之后 $9.9/月订阅。`,
       ctaPrimary: "免费体验",
-      ctaPrimaryHref: meta.nav?.[0]?.href || "/join",
+      ctaPrimaryHref: primaryHref,
       ctaSecondary: "订阅 · $9.9/月",
       ctaSecondaryHref: "/join",
       note: "免费体验 5 次 · 之后 $9.9/月",
+      stats: [
+        { stat: "$9.9", label: "一口价/月" },
+        { stat: "5", label: "次免费体验" },
+        { stat: "1 分钟", label: "快速上线" },
+      ],
+      productDemo: {
+        title: "产品预览",
+        caption: "注册前先看看核心功能长什么样",
+        preview: "产品演示 mock — 请替换为截图或实时组件",
+      },
+      closing: {
+        title: "准备好开始了吗？",
+        subtitle: "免费体验 5 次 · 之后 $9.9/月",
+        ctaPrimary: "免费体验",
+        ctaPrimaryHref: primaryHref,
+      },
     },
   };
 }
@@ -468,6 +503,8 @@ function syncSite(siteId) {
   copyTemplate("components/FeedbackSection.tsx", join(siteDir, "components", "FeedbackSection.tsx"));
   copyTemplate("components/SiteShell.tsx", join(siteDir, "components", "SiteShell.tsx"));
   copyTemplate("components/HomeHero.tsx", join(siteDir, "components", "HomeHero.tsx"));
+  copyTemplate("lib/api-errors.ts", join(siteDir, "lib", "api-errors.ts"));
+  copyTemplate("lib/copy-app.ts", join(siteDir, "lib", "copy-app.ts"));
   copyTemplate("app/api/feedback/route.ts", join(siteDir, "app", "api", "feedback", "route.ts"));
 
   writeSiteMeta(siteId, siteDir, meta);
