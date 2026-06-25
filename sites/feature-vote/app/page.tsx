@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { FeatureGrid } from "@/components/ui";
-import { testimonials } from "@/lib/votes";
 import { HomeHero } from "@/components/HomeHero";
+import { getLocale } from "@/lib/locale";
+import { getHomeCopy } from "@/lib/copy";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const locale = await getLocale();
+  const c = getHomeCopy(locale);
+
   return (
     <div>
       <HomeHero />
@@ -11,11 +15,7 @@ export default function HomePage() {
       <section className="bg-surface border-y border-border py-12">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="grid sm:grid-cols-3 gap-6 text-center">
-            {[
-              { stat: "$9.9", label: "flat/mo vs Canny $79+" },
-              { stat: "∞", label: "voters, no per-user fees" },
-              { stat: "5 min", label: "to launch a public board" },
-            ].map((item) => (
+            {c.stats.map((item) => (
               <div key={item.label} className="rounded-xl border border-border p-6">
                 <p className="text-3xl font-bold text-brand-500">{item.stat}</p>
                 <p className="text-sm text-muted mt-1">{item.label}</p>
@@ -27,25 +27,9 @@ export default function HomePage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">How it works</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">{c.howItWorks.title}</h2>
           <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              {
-                step: "1",
-                title: "Create a board",
-                desc: "Name your product, get a public voting page in seconds",
-              },
-              {
-                step: "2",
-                title: "Share the link",
-                desc: "Embed on your docs or drop the URL in your changelog",
-              },
-              {
-                step: "3",
-                title: "Build what wins",
-                desc: "See top-voted ideas, update status, close the loop with voters",
-              },
-            ].map((s) => (
+            {c.howItWorks.steps.map((s) => (
               <div key={s.step} className="text-center">
                 <div className="mx-auto w-12 h-12 rounded-full bg-brand-100 text-brand-500 font-bold text-lg flex items-center justify-center mb-4">
                   {s.step}
@@ -60,16 +44,16 @@ export default function HomePage() {
 
       <section className="bg-surface-muted/50 border-t border-border py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">Core features</h2>
-          <FeatureGrid />
+          <h2 className="text-2xl font-bold text-center mb-8">{c.featuresTitle}</h2>
+          <FeatureGrid features={c.features} />
         </div>
       </section>
 
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">What indie hackers say</h2>
+          <h2 className="text-2xl font-bold text-center mb-8">{c.testimonialsTitle}</h2>
           <div className="grid sm:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
+            {c.testimonials.map((t) => (
               <blockquote
                 key={t.name}
                 className="rounded-xl border border-border bg-surface p-6"
@@ -86,22 +70,20 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 text-center">
-        <h2 className="text-2xl font-bold text-foreground">
-          Stop guessing what to build next
-        </h2>
-        <p className="mt-3 text-muted">5 free boards · then $9.9/mo for unlimited</p>
+        <h2 className="text-2xl font-bold text-foreground">{c.closing.title}</h2>
+        <p className="mt-3 text-muted">{c.closing.subtitle}</p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/boards"
             className="rounded-xl bg-brand-600 px-8 py-3.5 font-semibold text-white hover:bg-brand-700 transition-colors"
           >
-            Create a board free
+            {c.closing.ctaPrimary}
           </Link>
           <Link
             href="/join"
             className="rounded-xl border border-border px-8 py-3.5 font-semibold text-foreground hover:bg-surface transition-colors"
           >
-            View pricing
+            {c.closing.ctaSecondary}
           </Link>
         </div>
       </section>
