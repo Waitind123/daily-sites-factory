@@ -234,6 +234,16 @@ const SITE_REGISTRY = {
       },
     },
   },
+  "book-pulse": {
+    emoji: "📅",
+    name: { en: "Book Pulse", zh: "Book Pulse" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/calendly-alternative-indie-hackers",
+    nav: [
+      { href: "/guide/calendly-alternative-indie-hackers", label: { en: "Guide", zh: "指南" } },
+      { href: "/dashboard", label: { en: "Dashboard", zh: "仪表盘" } },
+    ],
+  },
 };
 
 const DARK_REPLACEMENTS = [
