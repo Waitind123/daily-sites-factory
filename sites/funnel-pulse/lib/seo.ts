@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://funnel-pulse.vercel.app",
+    url: "https://funnel-pulse-lyart.vercel.app",
     name: "Funnel Pulse",
     title: "Funnel Pulse — Mixpanel alternative for indie hackers, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://funnel-pulse.vercel.app",
+    url: "https://funnel-pulse-lyart.vercel.app",
     name: "漏斗分析",
     title: "Funnel Pulse — Mixpanel 平替，独立开发者 $9.9/月",
     description:
