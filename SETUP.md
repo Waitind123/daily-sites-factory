@@ -41,7 +41,21 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 
 在 Cursor Automation 中手动添加同名环境变量：**VERCEL_TOKEN**
 
-### 3. 配置 Cursor Automation
+### 4. 企业微信通知（部署 URL 推送）
+
+1. 在企业微信群里添加 **群机器人**，复制 Webhook 地址
+2. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
+   - `WECOM_WEBHOOK_URL` = 机器人 Webhook 完整 URL
+
+每次站点部署成功后，GitHub Actions 会自动推送公网 URL 到群里。
+
+手动测试：
+```bash
+WECOM_WEBHOOK_URL="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx" \
+  node scripts/notify-wecom.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
+```
+
+### 5. 配置 Cursor Automation
 
 1. Cursor → **Settings → Automations → New**
 2. 触发：**每天 12:00**（cron `0 12 * * *`）
