@@ -47,37 +47,52 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 
 #### 方式 A：私信（推荐）
 
-1. 打开 [飞书开放平台](https://open.feishu.cn/app) → **创建企业自建应用**
-2. 在应用里开启 **机器人** 能力
+1. 打开 [飞书开放平台](https://open.feishu.cn/app) → 进入 **我的小龙虾**（或你的自建应用）
+2. 开启 **机器人** 能力
 3. **权限管理** 中申请并开通：
    - `im:message:send_as_bot`（以应用身份发消息）
-   - `contact:user.id:readonly`（按邮箱查 open_id，仅配置时用）
-4. **版本管理与发布** → 创建版本并发布（企业管理员需审核通过）
+   - `contact:user.id:readonly`（按手机/邮箱查 open_id）
+4. **版本管理与发布** → 创建版本并发布
 5. **凭证与基础信息** 复制 `App ID`、`App Secret`
-6. 查你的 `open_id`（把邮箱换成你的飞书登录邮箱）：
+
+**获取你的 open_id**（三选一）：
+
+**A1. 无邮箱账号 → 用手机号查（推荐）**
+
+飞书若提示「暂无邮箱地址」，不要用邮箱，改用绑定的手机号：
 
 ```bash
-FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx \
-  node scripts/feishu-resolve-open-id.mjs your@company.com
+# 在 feishu.config.local 已写好凭证时：
+source feishu.config.local
+node scripts/feishu-resolve-open-id.mjs mobile +86138xxxxxxxx
+# 或省略 +86：node scripts/feishu-resolve-open-id.mjs mobile 138xxxxxxxx
 ```
 
-输出里的 `FEISHU_RECEIVE_ID=ou_xxx` 即为接收人 ID。
+**A2. 给机器人发消息 → 日志里抄 open_id**
 
-7. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加（或在本机运行 `bash scripts/setup-github-feishu-secrets.sh`）：
-   - `FEISHU_APP_ID`
-   - `FEISHU_APP_SECRET`
-   - `FEISHU_RECEIVE_EMAIL` = 你的飞书登录邮箱（**推荐**，不必查 open_id）
-   - 或 `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`
-   - （可选）`FEISHU_RECEIVE_ID_TYPE` = `open_id`（默认即是）
+1. 飞书客户端搜索 **我的小龙虾**，进入对话，随便发一句「hi」
+2. 开放平台 → 该应用 → **运营监控 → 日志检索**
+3. 搜 `im.message.receive_v1`，在请求体里找到 `sender.sender_id.open_id`（形如 `ou_xxx`）
 
-本仓库已预置两个 OpenClaw 应用凭证模板，见 `feishu.config.local.example`：
-- **部署通知**用「我的小龙虾」`cli_a95b97c71eb8dbcd`
-- **OpenClaw 主应用** `cli_a95b90c62b78dcb2` 供其他集成备用
+**A3. 有企业邮箱时**
+
+```bash
+node scripts/feishu-resolve-open-id.mjs email your@company.com
+```
+
+6. 在 GitHub Secrets 添加（或运行 `bash scripts/setup-github-feishu-secrets.sh`）：
+   - `FEISHU_APP_ID`、`FEISHU_APP_SECRET`
+   - `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`（**无邮箱时用这个**）
+   - 仅有企业邮箱时才用 `FEISHU_RECEIVE_EMAIL`
+
+本仓库 OpenClaw 应用：
+- **部署通知** →「我的小龙虾」`cli_a95b97c71eb8dbcd`
+- **OpenClaw 主应用** `cli_a95b90c62b78dcb2`（备用）
 
 手动测试：
 
 ```bash
-FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_EMAIL=your@company.com \
+FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
   node scripts/notify-feishu.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
 ```
 
