@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "发票收据管理",
+  id: "invoice-desk",
   emoji: "🧾",
   name: {
     en: "Invoice Desk",
