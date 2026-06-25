@@ -63,16 +63,21 @@ FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx \
 
 输出里的 `FEISHU_RECEIVE_ID=ou_xxx` 即为接收人 ID。
 
-7. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
+7. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加（或在本机运行 `bash scripts/setup-github-feishu-secrets.sh`）：
    - `FEISHU_APP_ID`
    - `FEISHU_APP_SECRET`
-   - `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`
+   - `FEISHU_RECEIVE_EMAIL` = 你的飞书登录邮箱（**推荐**，不必查 open_id）
+   - 或 `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`
    - （可选）`FEISHU_RECEIVE_ID_TYPE` = `open_id`（默认即是）
+
+本仓库已预置两个 OpenClaw 应用凭证模板，见 `feishu.config.local.example`：
+- **部署通知**用「我的小龙虾」`cli_a95b97c71eb8dbcd`
+- **OpenClaw 主应用** `cli_a95b90c62b78dcb2` 供其他集成备用
 
 手动测试：
 
 ```bash
-FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
+FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_EMAIL=your@company.com \
   node scripts/notify-feishu.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
 ```
 

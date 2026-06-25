@@ -9,6 +9,7 @@
  *   FEISHU_APP_ID
  *   FEISHU_APP_SECRET
  *   FEISHU_RECEIVE_ID          你的 open_id（见 SETUP.md）
+ *   FEISHU_RECEIVE_EMAIL         或直接用飞书登录邮箱（更简单）
  *   FEISHU_RECEIVE_ID_TYPE     可选，默认 open_id
  *
  * 模式 B — 群机器人 Webhook（发到群）:
@@ -24,14 +25,18 @@ const webhook = process.env.FEISHU_WEBHOOK_URL;
 const appId = process.env.FEISHU_APP_ID;
 const appSecret = process.env.FEISHU_APP_SECRET;
 const receiveId = process.env.FEISHU_RECEIVE_ID;
-const receiveIdType = process.env.FEISHU_RECEIVE_ID_TYPE || "open_id";
+const receiveEmail = process.env.FEISHU_RECEIVE_EMAIL;
+const receiveIdType = receiveEmail
+  ? "email"
+  : process.env.FEISHU_RECEIVE_ID_TYPE || "open_id";
+const effectiveReceiveId = receiveEmail || receiveId;
 
-const hasDm = appId && appSecret && receiveId;
+const hasDm = appId && appSecret && effectiveReceiveId;
 const hasWebhook = Boolean(webhook);
 
 if (!hasDm && !hasWebhook) {
   console.error(
-    "飞书未配置：请设置 FEISHU_APP_ID + FEISHU_APP_SECRET + FEISHU_RECEIVE_ID（私信），或 FEISHU_WEBHOOK_URL（群）"
+    "飞书未配置：请设置 FEISHU_APP_ID + FEISHU_APP_SECRET + FEISHU_RECEIVE_ID/FEISHU_RECEIVE_EMAIL（私信），或 FEISHU_WEBHOOK_URL（群）"
   );
   process.exit(0);
 }
@@ -85,7 +90,7 @@ async function sendDm() {
       Authorization: `Bearer ${token}`,
     },
     body: JSON.stringify({
-      receive_id: receiveId,
+      receive_id: effectiveReceiveId,
       msg_type: "post",
       content: JSON.stringify(postBody.content),
     }),

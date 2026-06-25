@@ -116,7 +116,12 @@ npm run build
 node scripts/notify-feishu.mjs <vertical-id> <deploy-url> "<中文站名>"
 ```
 
-需在 GitHub Secrets 配置 `FEISHU_WEBHOOK_URL`（飞书群机器人 Webhook）。
+飞书通知二选一（**私信优先**）：
+
+- **私信（推荐）**：`FEISHU_APP_ID` + `FEISHU_APP_SECRET` + `FEISHU_RECEIVE_EMAIL`（或 `FEISHU_RECEIVE_ID`）
+- **群 Webhook（可选）**：`FEISHU_WEBHOOK_URL`
+
+配置了 App 凭证时发到你个人飞书，不必建群机器人。
 
 ## 5. 更新状态
 
@@ -180,7 +185,8 @@ node scripts/process-feedback.mjs
 |------|----------|------|
 | `FEISHU_APP_ID` | **GitHub Secrets** | 飞书自建应用（私信，推荐） |
 | `FEISHU_APP_SECRET` | **GitHub Secrets** | 飞书自建应用 |
-| `FEISHU_RECEIVE_ID` | **GitHub Secrets** | 你的 open_id（私信接收人） |
+| `FEISHU_RECEIVE_EMAIL` | **GitHub Secrets** | 飞书登录邮箱（私信，推荐） |
+| `FEISHU_RECEIVE_ID` | **GitHub Secrets** | 或 open_id |
 | `FEISHU_WEBHOOK_URL` | **GitHub Secrets** | 可选，群机器人 Webhook |
 | `GITHUB_TOKEN` | **GitHub Secrets** | 用户留言 API 读写 `feedback/*.json` |
 | `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
