@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://page-split.vercel.app",
+    url: "https://page-split-pi.vercel.app",
     name: "Page Split",
     title: "Page Split — VWO alternative for indie hackers, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://page-split.vercel.app",
+    url: "https://page-split-pi.vercel.app",
     name: "落地页 A/B 测试",
     title: "Page Split — VWO 平替，独立开发者 $9.9/月",
     description:
