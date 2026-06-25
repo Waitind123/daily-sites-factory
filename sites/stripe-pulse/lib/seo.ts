@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://stripe-pulse.vercel.app",
+    url: "https://stripe-pulse-two.vercel.app",
     name: "Stripe Pulse",
     title: "Stripe Pulse — ChartMogul alternative for indie devs, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://stripe-pulse.vercel.app",
+    url: "https://stripe-pulse-two.vercel.app",
     name: "Stripe 收入仪表盘",
     title: "Stripe 收入仪表盘 — ChartMogul 平替，独立开发者 $9.9/月",
     description:
