@@ -1,12 +1,12 @@
 {
   "pending": [
     {
-      "id": "uptime-pulse",
-      "name": "站点 Uptime 监控",
-      "description": "UptimeRobot 涨价4倍后，独立开发者需要 .9/月的极简 uptime 监控 + 状态页",
+      "id": "cron-heartbeat",
+      "name": "Cron 任务心跳监控",
+      "description": "Healthchecks.io 太贵或太复杂，独立开发者需要 .9/月的极简 cron 心跳监控 + 漏跑告警",
       "template": "micro-saas",
-      "source": "DEV#uptimerobot-alternative-2025",
-      "discoveredAt": "2026-06-25T04:01:16.541Z"
+      "source": "IH#cronsafe-cron-monitoring-2026",
+      "discoveredAt": "2026-06-25T05:03:59.928Z"
     }
   ],
   "sources": [
@@ -16,5 +16,5 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-25T04:01:16.541Z"
+  "lastDiscoveredAt": "2026-06-25T05:03:59.928Z"
 }
