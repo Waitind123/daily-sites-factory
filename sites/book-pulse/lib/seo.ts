@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://book-pulse.vercel.app",
+    url: "https://book-pulse-lovat.vercel.app",
     name: "Book Pulse",
     title: "Book Pulse — Calendly alternative for indie hackers, $9.9/mo scheduling",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://book-pulse.vercel.app",
+    url: "https://book-pulse-lovat.vercel.app",
     name: "Book Pulse",
     title: "Book Pulse — Calendly 平替，独立开发者 $9.9/月预约页",
     description:
