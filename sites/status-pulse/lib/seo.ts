@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://status-pulse.vercel.app",
+    url: "https://status-pulse-chi.vercel.app",
     name: "Status Pulse",
     title: "Status Pulse — Statuspage.io alternative for indie devs, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://status-pulse.vercel.app",
+    url: "https://status-pulse-chi.vercel.app",
     name: "状态页发布",
     title: "状态页发布 — Statuspage.io 平替，独立开发者 $9.9/月",
     description:
