@@ -61,3 +61,10 @@ jobs:
           DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
+
+      - name: Notify WeCom
+        if: success() && steps.vercel.outputs.url != ''
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+        run: |
+          node scripts/notify-wecom.mjs "${{ steps.site.outputs.id }}" "${{ steps.vercel.outputs.url }}"

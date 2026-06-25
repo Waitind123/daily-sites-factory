@@ -1,0 +1,55 @@
+name: Redeploy all sites
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list-sites:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.list.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          SITES=$(ls -d sites/*/ | xargs -n1 basename | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "sites=$SITES" >> $GITHUB_OUTPUT
+
+  deploy:
+    needs: list-sites
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site_id: ${{ fromJson(needs.list-sites.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install and build
+        working-directory: sites/${{ matrix.site_id }}
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Deploy to Vercel
+        id: vercel
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: |
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
+          echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed ${{ matrix.site_id }} to: $DEPLOY_URL"
+
+      - name: Notify WeCom
+        if: success() && steps.vercel.outputs.url != ''
+        env:
+          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+        run: |
+          node scripts/notify-wecom.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
