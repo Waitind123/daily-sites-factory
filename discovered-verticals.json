@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "status-pulse",
+      "name": "状态页发布",
+      "description": "Statuspage.io $29+/月太贵，独立开发者需要 $9.9/月的极简状态页 + 事件管理 + 订阅通知",
+      "template": "micro-saas",
+      "source": "Indie Hackers status page $15/mo post 2026-03",
+      "discoveredAt": "2026-06-25T18:05:15.015Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-25T16:08:36.918Z",
+  "lastDiscoveredAt": "2026-06-25T18:05:15.015Z",
   "consumed": [
     {
       "id": "reddit-pulse",
