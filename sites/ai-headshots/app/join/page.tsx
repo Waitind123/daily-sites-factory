@@ -1,38 +1,39 @@
-import { FeatureGrid } from "@/components/ui";
-import { getPricing, isDemoMode } from "@/lib/payments";
+import { CheckoutButton, FeatureGrid } from "@/components/ui";
+import { getJoinCopy, getHomeCopy } from "@/lib/copy";
+import { getLocale } from "@/lib/locale";
+import { getPaymentMode } from "@/lib/payments";
+import { isDemoMode } from "@/lib/stripe";
 
-export default function JoinPage() {
+export default async function JoinPage() {
+  const locale = await getLocale();
+  const c = getJoinCopy(locale);
+  const home = getHomeCopy(locale);
   const demo = isDemoMode();
-  const { usd, mode } = getPricing();
+  const mode = getPaymentMode();
 
   return (
-    <div className="mx-auto max-w-lg px-4 py-12 sm:px-6 sm:py-20">
+    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-20">
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-foreground sm:text-4xl">加入 AI 证件照</h1>
-        <p className="mt-3 text-muted">免费体验 5 次，之后 $9.9/月订阅。</p>
+        <h1 className="text-3xl font-bold text-foreground sm:text-4xl">{c.title}</h1>
+        <p className="mt-3 text-muted">{c.subtitle}</p>
       </div>
 
       <div className="rounded-2xl border-2 border-brand-600 bg-surface p-8 shadow-lg relative overflow-hidden">
         <div className="absolute top-0 right-0 bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-xl">
-          月订阅
+          {c.recommended}
         </div>
 
-        <div className="text-center mt-4">
+        <div className="text-center">
+          <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
           <div className="flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-bold text-foreground">${usd.amount}</span>
-            <span className="text-muted text-lg">/月</span>
+            <span className="text-5xl font-bold text-foreground">$9.9</span>
+            <span className="text-muted">{c.perMonth}</span>
           </div>
-          <p className="mt-2 text-sm text-muted">Polar 安全支付 · 信用卡</p>
+          <p className="mt-2 text-sm text-muted">{c.vsPhotoAI}</p>
         </div>
 
         <ul className="mt-8 space-y-3 text-sm">
-          {[
-            "无限次 AI 头像生成",
-            "全部 4 种风格",
-            "高清 PNG 下载",
-            "优先 GPU 队列",
-            "随时取消订阅",
-          ].map((item) => (
+          {c.perks.map((item) => (
             <li key={item} className="flex items-start gap-2">
               <span className="text-brand-500 mt-0.5">✓</span>
               <span className="text-foreground">{item}</span>
@@ -40,36 +41,37 @@ export default function JoinPage() {
           ))}
         </ul>
 
-        <form action="/api/checkout" method="POST" className="mt-8">
-          <input type="hidden" name="currency" value="usd" />
-          <button
-            type="submit"
-            className="w-full rounded-xl bg-brand-600 py-4 text-lg font-semibold text-white hover:bg-brand-700 transition-colors"
-          >
-            订阅 {usd.label}
-          </button>
-        </form>
+        <div className="mt-8">
+          <CheckoutButton label={c.subscribe} />
+        </div>
 
         {mode === "polar" && (
           <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
-            ✅ 已连接 Polar 收款
+            {c.polarConnected}
           </p>
         )}
 
         {demo && (
           <p className="mt-4 text-center text-xs text-amber-600 bg-amber-50 rounded-lg py-2 px-3">
-            演示模式：点击将模拟支付成功
+            {c.demoNote}
           </p>
         )}
 
-        <p className="mt-4 text-center text-xs text-muted">
-          支付由 Polar 处理 · 个人开发者可收款
-        </p>
+        <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
+      </div>
+
+      <div className="mt-8 rounded-xl border border-border bg-background p-6">
+        <h3 className="font-semibold text-foreground mb-3">{c.whyTitle}</h3>
+        <ul className="space-y-2 text-sm text-muted">
+          {c.whyItems.map((item) => (
+            <li key={item}>· {item}</li>
+          ))}
+        </ul>
       </div>
 
       <div className="mt-12">
-        <h2 className="text-xl font-bold text-foreground mb-6 text-center">包含功能</h2>
-        <FeatureGrid />
+        <h2 className="text-xl font-bold text-foreground mb-6 text-center">{c.includedTitle}</h2>
+        <FeatureGrid features={home.features} />
       </div>
     </div>
   );

@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { styles } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getHomeCopy } from "@/lib/copy";
+import { getApiErrorMessage, getStudioCopy } from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -12,7 +14,9 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function HeadshotStudio() {
+export function HeadshotStudio({ locale }: { locale: Locale }) {
+  const t = getStudioCopy(locale);
+  const styles = getHomeCopy(locale).styles;
   const [preview, setPreview] = useState<string | null>(null);
   const [style, setStyle] = useState("corporate");
   const [loading, setLoading] = useState(false);
@@ -32,11 +36,11 @@ export function HeadshotStudio() {
 
   function handleFile(file: File) {
     if (!file.type.startsWith("image/")) {
-      setError("请上传 JPG / PNG 图片");
+      setError(t.invalidType);
       return;
     }
     if (file.size > 4 * 1024 * 1024) {
-      setError("图片不能超过 4MB");
+      setError(t.tooLarge);
       return;
     }
     const reader = new FileReader();
@@ -51,7 +55,7 @@ export function HeadshotStudio() {
 
   async function handleGenerate() {
     if (!preview) {
-      setError("请先上传自拍");
+      setError(t.uploadFirst);
       return;
     }
     setLoading(true);
@@ -69,29 +73,29 @@ export function HeadshotStudio() {
       if (!res.ok) {
         if (data.code === "TRIAL_EXHAUSTED") {
           setShowPaywall(true);
-          setTrial((t) =>
-            t ? { ...t, remaining: 0, canUse: false } : t
+          setTrial((prev) =>
+            prev ? { ...prev, remaining: 0, canUse: false } : prev
           );
           return;
         }
-        throw new Error(data.error || "生成失败");
+        throw new Error(getApiErrorMessage(data.code, locale));
       }
       setResult(data.url);
       setDemo(data.demo);
       if (typeof data.remaining === "number") {
-        setTrial((t) =>
-          t
+        setTrial((prev) =>
+          prev
             ? {
-                ...t,
+                ...prev,
                 remaining: data.remaining,
-                used: t.limit - data.remaining,
+                used: prev.limit - data.remaining,
                 canUse: data.remaining > 0,
               }
-            : t
+            : prev
         );
       }
     } catch (e) {
-      setError(e instanceof Error ? e.message : "未知错误");
+      setError(e instanceof Error ? e.message : getApiErrorMessage(undefined, locale));
     } finally {
       setLoading(false);
     }
@@ -101,27 +105,31 @@ export function HeadshotStudio() {
     <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
       <div className="mb-6">
         <Link href="/" className="text-sm text-muted hover:text-foreground">
-          ← 返回首页
+          {t.backHome}
         </Link>
-        <h1 className="text-2xl sm:text-3xl font-bold mt-2">AI 证件照工作室</h1>
-        <p className="text-muted mt-1">上传自拍 → 选风格 → 30 秒出图</p>
+        <h1 className="text-2xl sm:text-3xl font-bold mt-2">{t.title}</h1>
+        <p className="text-muted mt-1">{t.subtitle}</p>
       </div>
 
       {trial && !trial.isMember && (
         <div className="mb-4 rounded-xl bg-brand-600/10 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
-          免费体验剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次 · 用尽后需订阅 $9.9/月
+          {t.trialRemaining}{" "}
+          <strong>
+            {trial.remaining}/{trial.limit}
+          </strong>{" "}
+          {t.trialSuffix}
         </div>
       )}
 
       {showPaywall && (
         <div className="mb-4 rounded-xl bg-amber-50 border border-amber-200 p-4 text-center">
-          <p className="font-medium text-amber-900">免费 5 次已用完 🎉</p>
-          <p className="text-sm text-amber-700 mt-1">喜欢的话订阅继续无限生成</p>
+          <p className="font-medium text-amber-900">{t.paywallTitle}</p>
+          <p className="text-sm text-amber-700 mt-1">{t.paywallBody}</p>
           <Link
             href="/join"
             className="inline-block mt-3 rounded-lg bg-brand-600 text-white px-6 py-2 text-sm font-semibold hover:bg-brand-700"
           >
-            订阅 $9.9/月
+            {t.paywallCta}
           </Link>
         </div>
       )}
@@ -151,14 +159,14 @@ export function HeadshotStudio() {
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={preview}
-              alt="预览"
+              alt={t.previewAlt}
               className="mx-auto max-h-64 rounded-xl object-cover"
             />
           ) : (
             <>
               <div className="text-4xl mb-3">📷</div>
-              <p className="font-medium">点击或拖拽上传自拍</p>
-              <p className="text-sm text-muted mt-1">JPG / PNG，最大 4MB</p>
+              <p className="font-medium">{t.uploadTitle}</p>
+              <p className="text-sm text-muted mt-1">{t.uploadHint}</p>
             </>
           )}
         </div>
@@ -167,20 +175,20 @@ export function HeadshotStudio() {
           {loading ? (
             <div className="text-center">
               <div className="animate-spin text-4xl mb-3">⚡</div>
-              <p className="font-medium">AI 生成中…</p>
-              <p className="text-sm text-muted mt-1">约 15–30 秒</p>
+              <p className="font-medium">{t.generating}</p>
+              <p className="text-sm text-muted mt-1">{t.generatingHint}</p>
             </div>
           ) : result ? (
             <>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={result}
-                alt="生成结果"
+                alt={t.resultAlt}
                 className="max-h-64 rounded-xl object-cover shadow-lg"
               />
               {demo && (
                 <p className="text-xs text-amber-600 mt-3 bg-amber-50 px-3 py-1 rounded-lg">
-                  演示模式 · 配置 REPLICATE_API_TOKEN 生成真实头像
+                  {t.demoNote}
                 </p>
               )}
               <a
@@ -188,17 +196,17 @@ export function HeadshotStudio() {
                 download="headshot.png"
                 className="mt-4 text-sm text-brand-500 hover:underline"
               >
-                下载图片
+                {t.download}
               </a>
             </>
           ) : (
-            <p className="text-muted text-sm">生成结果将显示在这里</p>
+            <p className="text-muted text-sm">{t.resultPlaceholder}</p>
           )}
         </div>
       </div>
 
       <div className="mt-6">
-        <p className="text-sm font-medium text-foreground mb-3">选择风格</p>
+        <p className="text-sm font-medium text-foreground mb-3">{t.styleLabel}</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {styles.map((s) => (
             <button
@@ -228,7 +236,7 @@ export function HeadshotStudio() {
         disabled={loading || !preview || (trial !== null && !trial.canUse && !trial.isMember)}
         className="mt-6 w-full rounded-xl bg-brand-600 py-4 text-lg font-semibold text-white hover:bg-brand-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
       >
-        {loading ? "生成中…" : "生成专业证件照"}
+        {loading ? t.generatingBtn : t.generate}
       </button>
     </div>
   );

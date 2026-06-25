@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { createPayment } from "@/lib/payments";
 import { memberCookieHeader } from "@/lib/member";
 
@@ -20,10 +21,7 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 
@@ -32,7 +30,5 @@ export async function GET() {
   const pricing = getPricing();
   return NextResponse.json({
     status: "ok",
-    message: "AI 证件照支付接口",
-    ...pricing,
   });
 }
