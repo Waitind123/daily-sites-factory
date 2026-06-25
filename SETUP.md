@@ -35,33 +35,19 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 成功后终端会输出 **GitHub 仓库地址**，形如：
 `https://github.com/你的用户名/daily-sites-factory`
 
-### 2. Vercel Token — 已配置
+### 2. Vercel Token
 
-已写入本地 `.env.local`（不会提交 Git）。
+在 GitHub 仓库 **Settings → Secrets and variables → Actions** 添加 `VERCEL_TOKEN`。
 
-在 Cursor Automation 中手动添加同名环境变量：**VERCEL_TOKEN**
+> 不要配在 Cursor Automation 环境变量里，部署由 push `main` 触发 GitHub Actions 完成。
 
 ### 3. 配置 Cursor Automation
 
-1. Cursor → **Settings → Automations → New**
+1. Cursor → **Settings → Automations**
 2. 触发：**每天 12:00**（cron `0 12 * * *`）
-3. 环境：**Cloud Agent**
-4. 仓库：填入上一步的 GitHub 地址
-5. 分支：`main`
-6. **环境变量**：添加 `VERCEL_TOKEN` = 你的 Token
-7. **指令**（粘贴）：
-
-```
-读取并完整执行仓库根目录 AGENT_PROMPT.md 的所有步骤。
-使用 VERCEL_TOKEN 部署到 Vercel 公网。
-```
-
-参考模板文件：`cursor-automation-prefill.json`
-
-### 4. GitHub Actions Secrets（可选）
-
-在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
-- `VERCEL_TOKEN`
+3. 环境：**Cloud Agent**，仓库 `main`
+4. **Tools → 关闭 Pull Request 工具**
+5. **指令**（粘贴 `cursor-automation-prefill.json` 中的 prompt）
 
 ---
 

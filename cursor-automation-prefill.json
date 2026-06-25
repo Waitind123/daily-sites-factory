@@ -1,6 +1,6 @@
 {
   "name": "每日垂直建站",
-  "description": "每天 12:00 自动选垂直方向、开发网站、部署 Vercel 公网。遵循 levelsio 路径。",
+  "description": "每天 12:00 自动选垂直方向、开发网站、push main 后由 GitHub Actions 部署 Vercel。",
   "workflow": {
     "triggers": [
       {
@@ -12,7 +12,7 @@
     "actions": [],
     "prompts": [
       {
-        "prompt": "你是独立开发者 Agent。读取仓库根目录 AGENT_PROMPT.md，完整执行其中所有步骤：轮询 verticals.json 选择垂直方向 → 在 sites/ 下开发 Next.js 付费站点 → npm run build 验证 → 使用环境变量 VERCEL_TOKEN 执行 npx vercel deploy --prod --yes 部署公网 → 更新 state.json → 输出部署 URL 报告。\n\n原则：levelsio 风格，第一天收费，无免费档，ship fast。"
+        "prompt": "你是独立开发者 Agent，遵循 @levelsio 路径。\n\n读取仓库根目录 AGENT_PROMPT.md，完整执行所有步骤，不可只做规划。\n\n硬性规则：\n- 运行 node scripts/pick-vertical.mjs 选择方向（池耗尽时会自动从网上发现痛点并补充新方向）\n- build 通过后直接 push 到 main，禁止创建 PR，禁止 npx vercel deploy\n- push 后等待 GitHub Actions deploy-site.yml 完成，获取 URL 后更新 state.json 并第二次 push\n- 禁止在上一次 Automation 仍在运行时启动新的 Test run\n\nAutomation 设置（必做）：\n- Tools 中关闭 Pull Request 工具\n- VERCEL_TOKEN 只配 GitHub Secrets，不要配在 Automation 环境变量"
       }
     ],
     "model": "",
@@ -24,11 +24,6 @@
       "repo": "REPLACE_WITH_GITHUB_REPO",
       "branch": "main"
     },
-    "environmentVariables": [
-      {
-        "name": "VERCEL_TOKEN",
-        "value": "REPLACE_WITH_VERCEL_TOKEN"
-      }
-    ]
+    "environmentVariables": []
   }
 }

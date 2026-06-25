@@ -16,11 +16,11 @@
 | **触发** | 每天 12:00（cron: `0 12 * * *`） |
 | **运行环境** | Cloud Agent |
 | **仓库** | 本目录 push 到 GitHub 后填入 |
-| **指令** | 读取并执行 `AGENT_PROMPT.md` 全部步骤 |
+| **指令** | 见 `cursor-automation-prefill.json` |
+| **Tools** | **关闭 Pull Request 工具** |
+| **Secrets** | `VERCEL_TOKEN` 只配 GitHub Secrets |
 
-**环境变量**（Automation 设置中添加）：
-
-- `VERCEL_TOKEN` — [Vercel Account Tokens](https://vercel.com/account/tokens)
+垂直池耗尽时，`pick-vertical.mjs` 会自动从 Hacker News 发现痛点并补充新方向。
 
 ### 方式 B：手动触发
 
