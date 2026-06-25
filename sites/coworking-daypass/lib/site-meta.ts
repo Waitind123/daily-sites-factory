@@ -13,6 +13,7 @@ export const siteMeta = {
         "zh": "预订"
       }
     }
-  ]
+  ],
+  "guideHref": "/guide/book-coworking-day-pass-same-day"
 } as const;
 export type SiteMeta = typeof siteMeta;

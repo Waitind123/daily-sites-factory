@@ -68,12 +68,14 @@ const SITE_REGISTRY = {
     emoji: "🏢",
     name: { en: "Coworking Finder", zh: "联合办公 Finder" },
     jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/find-coworking-space-digital-nomad",
     nav: [{ href: "/spaces", label: { en: "Spaces", zh: "空间" } }],
   },
   "coworking-daypass": {
     emoji: "🎫",
     name: { en: "Coworking Day Pass", zh: "联合办公日票" },
     jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/book-coworking-day-pass-same-day",
     nav: [{ href: "/book", label: { en: "Book", zh: "预订" } }],
   },
   "virtual-cowork-room": {
@@ -350,9 +352,9 @@ function writeSiteMeta(siteId, siteDir, meta) {
     id: siteId,
     emoji: meta.emoji,
     name: meta.name,
-    joinLabel: meta.joinLabel,
+    ...(meta.joinLabel ? { joinLabel: meta.joinLabel } : {}),
     nav: meta.nav,
-    guideHref: meta.guideHref,
+    ...(meta.guideHref ? { guideHref: meta.guideHref } : {}),
   };
   writeFileSync(
     join(siteDir, "lib", "site-meta.ts"),
@@ -396,7 +398,11 @@ export default async function RootLayout({
           locale={locale}
           initialMessages={feedback.messages}
         />
-        <SiteFooter meta={siteMeta} locale={locale} guideHref={siteMeta.guideHref} />
+        <SiteFooter
+          meta={siteMeta}
+          locale={locale}
+          guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
+        />
       </body>
     </html>
   );
