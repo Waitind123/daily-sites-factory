@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://uptime-pulse.vercel.app",
+  url: "https://uptime-pulse-three.vercel.app",
   name: "Uptime Pulse",
   title: "Uptime Pulse — UptimeRobot 平替，独立开发者 $9.9/月",
   description:
