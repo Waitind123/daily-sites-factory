@@ -1,13 +1,11 @@
-# 复制为 feishu.config.local（不会提交 Git），再运行 bash scripts/setup-github-feishu-secrets.sh
+# 复制为 feishu.config.local（不会提交 Git）
 
-# 部署通知用 — OpenClaw「我的小龙虾」
-FEISHU_APP_ID=cli_xxxxxxxx
-FEISHU_APP_SECRET=xxxxxxxx
+# 方式 B — 群 Webhook（最简单，推荐无邮箱账号时用）
+FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx
+# 然后: bash scripts/setup-github-feishu-webhook.sh
 
-# OpenClaw 主应用（智能助手，供其他集成备用，部署通知默认不用）
-FEISHU_OPENCLAW_APP_ID=cli_xxxxxxxx
-FEISHU_OPENCLAW_APP_SECRET=xxxxxxxx
-
-# 接收人（三选一，无邮箱时用 open_id）
+# 方式 A — 私信（需 open_id 或企业邮箱）
+# FEISHU_APP_ID=cli_xxxxxxxx
+# FEISHU_APP_SECRET=xxxxxxxx
+# FEISHU_RECEIVE_ID=ou_xxxxxxxx
 # FEISHU_RECEIVE_EMAIL=your@company.com
-# FEISHU_RECEIVE_ID=ou_xxxxxxxx   ← 无邮箱时用这个
