@@ -110,13 +110,13 @@ npm run build
 
 部署成功后必须得到 **可公开访问的 HTTPS URL**（优先 `*.vercel.app`）。
 
-**企业微信通知（必须）**：
+**飞书通知（必须）**：
 
 ```bash
-node scripts/notify-wecom.mjs <vertical-id> <deploy-url> "<中文站名>"
+node scripts/notify-feishu.mjs <vertical-id> <deploy-url> "<中文站名>"
 ```
 
-需在 GitHub Secrets 配置 `WECOM_WEBHOOK_URL`（企业微信群机器人 Webhook）。
+需在 GitHub Secrets 配置 `FEISHU_WEBHOOK_URL`（飞书群机器人 Webhook）。
 
 ## 5. 更新状态
 
@@ -178,7 +178,7 @@ node scripts/process-feedback.mjs
 
 | 变量 | 配置位置 | 用途 |
 |------|----------|------|
-| `WECOM_WEBHOOK_URL` | **GitHub Secrets** | 部署成功后推送企业微信 |
+| `FEISHU_WEBHOOK_URL` | **GitHub Secrets** | 部署成功后推送飞书 |
 | `GITHUB_TOKEN` | **GitHub Secrets** | 用户留言 API 读写 `feedback/*.json` |
 | `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
 | `STRIPE_SECRET_KEY` | Automation 或站点 `.env` | 可选，真实支付 |

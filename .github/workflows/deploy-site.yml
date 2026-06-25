@@ -78,9 +78,9 @@ jobs:
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
 
-      - name: Notify WeCom
+      - name: Notify Feishu
         if: success() && steps.vercel.outputs.url != ''
         env:
-          WECOM_WEBHOOK_URL: ${{ secrets.WECOM_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
-          node scripts/notify-wecom.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
+          node scripts/notify-feishu.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
