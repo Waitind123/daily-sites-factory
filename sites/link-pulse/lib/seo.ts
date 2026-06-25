@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://link-pulse.vercel.app",
+    url: "https://link-pulse-one.vercel.app",
     name: "Link Pulse",
     title: "Link Pulse — Bitly alternative for indie devs, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://link-pulse.vercel.app",
+    url: "https://link-pulse-one.vercel.app",
     name: "短链点击统计",
     title: "短链点击统计 — Bitly 平替，独立开发者 $9.9/月",
     description:

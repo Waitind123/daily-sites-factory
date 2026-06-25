@@ -1,14 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "link-pulse",
-      "name": "短链点击统计",
-      "description": "Bitly 5/月对独立开发者太贵，需要 .9/月的品牌短链 + 点击分析 + UTM 追踪",
-      "template": "micro-saas",
-      "source": "HN Bitly pricing + Reddit r/SaaS link shortener alternative",
-      "discoveredAt": "2026-06-25T15:03:57.664Z"
-    }
-  ],
+  "pending": [],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -57,6 +48,14 @@
       "template": "micro-saas",
       "source": "Indie Hackers Stripe metrics alternative post 2026-02",
       "discoveredAt": "2026-06-25T14:02:29.981Z"
+    },
+    {
+      "id": "link-pulse",
+      "name": "短链点击统计",
+      "description": "Bitly $35/月对独立开发者太贵，需要 $9.9/月的品牌短链 + 点击分析 + UTM 追踪",
+      "template": "micro-saas",
+      "source": "HN Bitly pricing + Reddit r/SaaS link shortener alternative",
+      "discoveredAt": "2026-06-25T15:03:57.664Z"
     }
   ]
 }
