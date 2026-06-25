@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://churn-pulse.vercel.app",
+    url: "https://churn-pulse-pi.vercel.app",
     name: "Churn Pulse",
     title: "Churn Pulse — Baremetrics alternative for indie devs, $9.9/mo customer health",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://churn-pulse.vercel.app",
+    url: "https://churn-pulse-pi.vercel.app",
     name: "客户健康分",
     title: "客户健康分 — Baremetrics 平替，独立开发者 $9.9/月流失预警",
     description:
