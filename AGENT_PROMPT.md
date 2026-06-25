@@ -10,25 +10,25 @@
 
 ## 1. 选择垂直方向
 
-**1a. 痛点发现（优先）**
+**运行 `node scripts/pick-vertical.mjs` 即可**（脚本自动处理以下逻辑）：
 
-1. 运行 `node scripts/discover-vertical.mjs sources` 查看搜索来源
-2. 在网上搜索用户真实痛点（HN、Reddit r/SaaS、Indie Hackers、Twitter）
-   - 关键词：`I wish there was`、`looking for alternative`、`would pay for`
-3. 发现高价值方向后追加到队列：
-   ```bash
-   node scripts/discover-vertical.mjs add \
-     --name "方向中文名" \
-     --description "解决什么问题" \
-     --source "HN#123 或 Reddit链接"
-   ```
-4. `discovered-verticals.json` 队列优先于固定池
+1. 优先从 `discovered-verticals.json` 队列取方向
+2. 否则按 `lastIndex + 1` 轮询 `verticals.json`（跳过 7 天内已部署的站点）
+3. **池耗尽时自动发现新方向**：当 `verticals.json` 中所有方向均已有 `sites/<id>/` 时，脚本自动执行 `discover-vertical.mjs discover`，从 Hacker News 抓取用户痛点并补充 3 个新方向到队列，然后取出第一个
 
-**1b. 轮询选择**
+输出中 `autoDiscovered: true` 表示本次触发了自动痛点发现。
 
-1. 读取 `verticals.json` 和 `state.json`
-2. 运行 `node scripts/pick-vertical.mjs`（队列有则取队列，否则 `lastIndex + 1` 轮询）
-3. 若该 vertical 在 `sites/<id>/` 已存在且 7 天内部署过，跳过选下一个
+**手动补充方向（可选）**
+
+```bash
+node scripts/discover-vertical.mjs discover --limit 3   # 手动触发痛点发现
+node scripts/discover-vertical.mjs add \
+  --name "方向中文名" \
+  --description "解决什么问题" \
+  --source "HN#123 或 Reddit链接"
+```
+
+痛点搜索来源：`node scripts/discover-vertical.mjs sources`
 
 ## 2. 开发网站
 
@@ -82,28 +82,46 @@ npm install
 npm run build
 ```
 
-构建必须通过，否则修复后再部署。
+构建必须通过，否则修复后再提交。
 
-## 4. 部署公网
+## 4. 提交与部署（唯一路径）
 
-优先顺序：
+**部署只走 GitHub Actions，禁止其他方式。**
 
-1. **本地 Token 部署**（仓库根目录 `.env.local` 含 `VERCEL_TOKEN` 时）
-   ```bash
-   bash scripts/deploy-vercel.sh <vertical-id>
-   ```
-   或手动：
-   ```bash
-   cd sites/<vertical-id>
-   npx vercel deploy --prod --yes \
-     --scope=baoyu18178053101-6131s-projects \
-     --token=$VERCEL_TOKEN
-   ```
-2. **GitHub Actions 自动部署**（push 到 main 后触发）
-   - 需在 GitHub Secrets 配置 `VERCEL_TOKEN`（运行 `bash scripts/setup-github-vercel-secret.sh`）
-   - 工作流：`.github/workflows/deploy-site.yml`
+### 4a. Git 规则（必须遵守）
 
-部署成功后必须得到 **可公开访问的 HTTPS URL**（优先 `*.vercel.app`）。
+- **直接 push 到 `main`**，禁止创建 Pull Request、Draft PR、`cursor/` 功能分支
+- **禁止**执行 `npx vercel deploy`、`bash scripts/deploy-vercel.sh`
+- **禁止**在上一次 Automation 仍在运行时启动新的 Test run
+
+### 4b. 提交流程
+
+**第一次 push**（站点代码）：
+
+```bash
+git add sites/<vertical-id>/ discovered-verticals.json verticals.json
+git commit -m "feat: add <vertical-id> site — <中文名> MVP"
+git push origin main
+```
+
+等待 GitHub Actions 部署完成并拿到 URL 后，**第二次 push**（状态更新）：
+
+```bash
+git add state.json
+git commit -m "chore: update state.json for <vertical-id> deployment"
+git push origin main
+```
+
+### 4c. 等待 GitHub Actions 部署
+
+push 到 `main` 后，工作流 `.github/workflows/deploy-site.yml` 自动 build + 部署。
+
+```bash
+gh run list --workflow=deploy-site.yml --limit 1
+gh run watch --exit-status
+```
+
+从工作流日志获取部署 URL（`Deployed to: https://...vercel.app`）。
 
 ## 5. 更新状态
 
@@ -145,11 +163,19 @@ npm run build
 - 一人可维护，避免过度工程
 - Ship fast — 单站 MVP 控制在合理范围，当天可上线
 
-## 环境变量（Automation 中配置）
+## Automation 配置（必做）
 
-| 变量 | 用途 |
-|------|------|
-| `VERCEL_TOKEN` | Vercel 部署（GitHub Secrets 已配则可省略） |
+在 Cursor Automation 设置中：
+
+1. **Tools → 关闭 Pull Request 工具**（避免无意义红色警告）
+2. **VERCEL_TOKEN 只配 GitHub Secrets**，不要配在 Automation 环境变量
+3. **指令**见 `cursor-automation-prefill.json`
+
+## 环境变量
+
+| 变量 | 配置位置 | 用途 |
+|------|----------|------|
+| `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
 | `STRIPE_SECRET_KEY` | 可选，真实支付（需海外主体） |
 | `POLAR_CHECKOUT_URL` | 无公司收美元（推荐 Polar.sh） |
 | `REPLICATE_API_TOKEN` | AI 证件照生成 API |
