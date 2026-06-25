@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://freelance-proposal.vercel.app",
+  url: "https://freelance-proposal-one.vercel.app",
   name: "报价单通",
   title: "报价单通 — 自由职业极简报价单，HoneyBook 平替",
   description:
