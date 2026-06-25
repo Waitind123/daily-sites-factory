@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://testimonial-wall.vercel.app",
+  url: "https://testimonial-wall-sepia.vercel.app",
   name: "证言墙",
   title: "证言墙 — 独立开发者用户好评收集，Testimonial.to 平替",
   description:
