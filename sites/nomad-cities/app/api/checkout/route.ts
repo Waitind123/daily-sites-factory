@@ -1,30 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
+import { getLocale } from "@/lib/locale";
+import { memberCookieHeader } from "@/lib/member";
 import { createCheckoutSession } from "@/lib/stripe";
 
 export async function POST(request: NextRequest) {
   try {
     const origin = request.headers.get("origin") || request.nextUrl.origin;
-    const result = await createCheckoutSession(origin);
+    const locale = await getLocale();
+    const result = await createCheckoutSession(origin, locale);
 
+    const response = NextResponse.redirect(result.url);
     if (result.demo) {
-      return NextResponse.redirect(result.url);
+      response.headers.append("Set-Cookie", memberCookieHeader());
     }
-
-    return NextResponse.redirect(result.url);
+    return response;
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 
 export async function GET() {
+  const { isDemoMode } = await import("@/lib/stripe");
   return NextResponse.json({
     status: "ok",
-    message: "游民城市榜支付接口",
-    demo: !process.env.STRIPE_SECRET_KEY,
-    price: "¥699/年",
+    price: "$99/yr",
+    demo: isDemoMode(),
   });
 }
