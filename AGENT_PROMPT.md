@@ -48,8 +48,10 @@
   - 支付接口（`/api/checkout`，Polar / Stripe 占位）
   - 演示模式（无支付密钥时模拟支付成功）
   - 移动端适配
-- **风格**：简洁实用，levelsio / Nomad List 风，不要 corporate 模板感
-- **文案**：`lib/copy.ts` 提供 en/zh 双语，**默认显示 English**
+- **风格**：简洁实用，**UI 对标 [nuwa.world](https://nuwa.world/) 与 [photoai.com](https://photoai.com/)**（见 `docs/UI-DESIGN-STANDARD.md`）
+  - 深色背景、大标题、产品演示 mock、stats 条、清晰 CTA
+  - 不要 corporate 模板感 / 纯文字落地页
+- **文案**：`lib/copy.ts` 提供 en/zh 双语，**默认 English**；**切换中文后全站必须零英文**（所有页面、表单、API 错误提示、指南、metadata）
 
 **免费体验实现**：复制 `templates/free-trial/lib/trial.ts` 到站点 `lib/trial.ts`，改 `SITE_ID`。
 

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createBoard, listBoards } from "@/lib/votes";
+import { apiError } from "@/lib/api-errors";
 import { SITE_ID, consumeTrial, incrementTrial } from "@/lib/trial";
 import { isMember } from "@/lib/member";
 
@@ -12,21 +13,14 @@ export async function POST(request: NextRequest) {
     const body = (await request.json()) as { name?: string; description?: string };
 
     if (!body.name?.trim()) {
-      return NextResponse.json({ error: "Board name is required" }, { status: 400 });
+      return apiError("BOARD_NAME_REQUIRED", 400);
     }
 
     const member = await isMember();
     const access = await consumeTrial(SITE_ID, member);
 
     if (!access.consumed && !access.isMember) {
-      return NextResponse.json(
-        {
-          error: "Free trial exhausted. Please subscribe.",
-          code: "TRIAL_EXHAUSTED",
-          remaining: 0,
-        },
-        { status: 403 }
-      );
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
     }
 
     const board = createBoard(body.name.trim(), body.description?.trim() ?? "");
@@ -59,6 +53,6 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Board create error:", error);
-    return NextResponse.json({ error: "Failed to create board" }, { status: 500 });
+    return apiError("BOARD_CREATE_FAILED", 500);
   }
 }

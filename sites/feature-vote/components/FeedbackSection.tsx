@@ -36,7 +36,7 @@ export function FeedbackSection({
       setText("");
       setDone(true);
     } catch {
-      alert(locale === "zh" ? "发送失败，请稍后再试" : "Failed to send. Try again later.");
+      alert(t.feedbackFailed);
     } finally {
       setLoading(false);
     }

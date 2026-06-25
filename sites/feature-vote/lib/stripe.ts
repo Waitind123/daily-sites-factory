@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import type { Locale } from "./i18n-shared";
+import { getStripeProductCopy } from "./copy-app";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !process.env.POLAR_CHECKOUT_URL;
 
@@ -15,7 +17,8 @@ export function getStripe() {
 
 export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(origin: string, locale: Locale = "en") {
+  const product = getStripeProductCopy(locale);
   const polarUrl = process.env.POLAR_CHECKOUT_URL;
   if (polarUrl) {
     return { demo: false as const, url: polarUrl };
@@ -38,8 +41,8 @@ export async function createCheckoutSession(origin: string) {
         price_data: {
           currency: "usd",
           product_data: {
-            name: "Feature Vote · Monthly",
-            description: "Unlimited boards, voters & ideas. Public roadmap & embed widget.",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
           recurring: { interval: "month" },

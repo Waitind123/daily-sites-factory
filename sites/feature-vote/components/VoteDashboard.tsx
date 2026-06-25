@@ -3,7 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Board } from "@/lib/votes";
-import { sampleIdeas } from "@/lib/votes";
+import type { Locale } from "@/lib/i18n-shared";
+import {
+  getApiErrorMessage,
+  getBoardsCopy,
+  getSampleIdeas,
+  getStatusLabel,
+} from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -13,7 +19,9 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function VoteDashboard() {
+export function VoteDashboard({ locale }: { locale: Locale }) {
+  const t = getBoardsCopy(locale);
+  const sampleIdeas = getSampleIdeas(locale);
   const [trial, setTrial] = useState<TrialInfo | null>(null);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -52,10 +60,10 @@ export function VoteDashboard() {
       if (!res.ok) {
         if (data.code === "TRIAL_EXHAUSTED") {
           setShowPaywall(true);
-          setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
+          setTrial((prev) => (prev ? { ...prev, remaining: 0, canUse: false } : prev));
           return;
         }
-        throw new Error(data.error || "Failed to create board");
+        throw new Error(getApiErrorMessage(data.code, locale));
       }
 
       setCreated(data.board);
@@ -64,7 +72,7 @@ export function VoteDashboard() {
       setDescription("");
       if (data.trial) setTrial(data.trial);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to create board");
+      setError(err instanceof Error ? err.message : getApiErrorMessage("BOARD_CREATE_FAILED", locale));
     } finally {
       setLoading(false);
     }
@@ -74,18 +82,16 @@ export function VoteDashboard() {
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Feedback Boards</h1>
-          <p className="mt-1 text-muted text-sm">
-            Create a board, share the link, let users vote on what to build next.
-          </p>
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground">{t.title}</h1>
+          <p className="mt-1 text-muted text-sm">{t.subtitle}</p>
         </div>
         {trial && (
           <div className="rounded-lg border border-border bg-surface px-4 py-2 text-sm">
             {trial.isMember ? (
-              <span className="text-brand-500 font-medium">✓ Member · unlimited boards</span>
+              <span className="text-brand-500 font-medium">{t.memberBadge}</span>
             ) : (
               <span className="text-muted">
-                Free boards:{" "}
+                {t.freeBoards}{" "}
                 <strong className="text-foreground">
                   {trial.remaining}/{trial.limit}
                 </strong>
@@ -97,40 +103,37 @@ export function VoteDashboard() {
 
       {showPaywall && (
         <div className="mb-6 rounded-xl border border-brand-600/50 bg-brand-600/10 p-5">
-          <p className="font-semibold text-foreground">Free trial used up</p>
-          <p className="mt-1 text-sm text-muted">
-            You&apos;ve created 5 boards. Subscribe for unlimited boards, embed widgets, and voter
-            notifications.
-          </p>
+          <p className="font-semibold text-foreground">{t.paywallTitle}</p>
+          <p className="mt-1 text-sm text-muted">{t.paywallBody}</p>
           <Link
             href="/join"
             className="mt-4 inline-block rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            Subscribe · $9.9/mo
+            {t.paywallCta}
           </Link>
         </div>
       )}
 
       <form onSubmit={handleCreate} className="rounded-xl border border-border bg-surface p-6 mb-8">
-        <h2 className="font-semibold text-lg mb-4">New feedback board</h2>
+        <h2 className="font-semibold text-lg mb-4">{t.formTitle}</h2>
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">Board name</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{t.boardName}</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. My SaaS Feedback"
+              placeholder={t.boardNamePlaceholder}
               className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-600"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">Description</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{t.description}</label>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="What kind of feedback are you collecting?"
+              placeholder={t.descriptionPlaceholder}
               rows={2}
               className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-600"
             />
@@ -141,15 +144,15 @@ export function VoteDashboard() {
             disabled={loading}
             className="rounded-lg bg-brand-600 px-6 py-2.5 font-semibold text-white hover:bg-brand-700 disabled:opacity-50"
           >
-            {loading ? "Creating…" : "Create board"}
+            {loading ? t.creating : t.createBoard}
           </button>
         </div>
       </form>
 
       {created && (
         <div className="mb-8 rounded-xl border border-emerald-600/50 bg-emerald-600/10 p-5">
-          <p className="font-semibold text-foreground">Board created!</p>
-          <p className="mt-2 text-sm text-muted">Share this public link with your users:</p>
+          <p className="font-semibold text-foreground">{t.createdTitle}</p>
+          <p className="mt-2 text-sm text-muted">{t.createdHint}</p>
           <code className="mt-2 block rounded-lg bg-background border border-border p-3 text-sm text-brand-500 break-all">
             {typeof window !== "undefined"
               ? `${window.location.origin}/boards/${created.slug}`
@@ -159,14 +162,14 @@ export function VoteDashboard() {
             href={`/boards/${created.slug}`}
             className="mt-3 inline-block text-sm text-brand-500 hover:underline"
           >
-            Open board →
+            {t.openBoard}
           </Link>
         </div>
       )}
 
       {boards.length > 0 && (
         <div className="mb-8">
-          <h2 className="font-semibold text-lg mb-4">Your boards</h2>
+          <h2 className="font-semibold text-lg mb-4">{t.yourBoards}</h2>
           <div className="space-y-3">
             {boards.map((b) => (
               <Link
@@ -183,7 +186,7 @@ export function VoteDashboard() {
       )}
 
       <div className="rounded-xl border border-border bg-surface-muted/30 p-6">
-        <h3 className="font-semibold text-foreground mb-4">Example ideas on a board</h3>
+        <h3 className="font-semibold text-foreground mb-4">{t.exampleTitle}</h3>
         <div className="space-y-3">
           {sampleIdeas.map((idea) => (
             <div
@@ -192,7 +195,7 @@ export function VoteDashboard() {
             >
               <span className="text-sm text-foreground">{idea.title}</span>
               <div className="flex items-center gap-3 text-sm">
-                <span className="text-muted capitalize">{idea.status.replace("_", " ")}</span>
+                <span className="text-muted">{getStatusLabel(idea.status, locale)}</span>
                 <span className="font-semibold text-brand-500">▲ {idea.votes}</span>
               </div>
             </div>

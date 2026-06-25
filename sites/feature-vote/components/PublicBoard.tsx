@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from "react";
 import type { Board, Idea } from "@/lib/votes";
-import { statusColor, statusLabel } from "@/lib/votes";
+import { statusColor } from "@/lib/votes";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getPublicBoardCopy, getStatusLabel } from "@/lib/copy-app";
 
-export function PublicBoard({ board }: { board: Board }) {
+export function PublicBoard({ board, locale }: { board: Board; locale: Locale }) {
+  const t = getPublicBoardCopy(locale);
   const [ideas, setIdeas] = useState<Idea[]>([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -32,13 +35,13 @@ export function PublicBoard({ board }: { board: Board }) {
         body: JSON.stringify({ boardId: board.id, title, description }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to submit idea");
+      if (!res.ok) throw new Error(getApiErrorMessage(data.code, locale));
       setIdeas((list) => [data.idea, ...list].sort((a, b) => b.votes - a.votes));
       setTitle("");
       setDescription("");
-      setMessage("Idea submitted! Others can now upvote it.");
+      setMessage(t.submitted);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to submit");
+      setError(err instanceof Error ? err.message : getApiErrorMessage("IDEA_SUBMIT_FAILED", locale));
     } finally {
       setLoading(false);
     }
@@ -72,24 +75,24 @@ export function PublicBoard({ board }: { board: Board }) {
       <div className="mb-8">
         <h1 className="text-2xl sm:text-3xl font-bold text-foreground">{board.name}</h1>
         {board.description && <p className="mt-2 text-muted">{board.description}</p>}
-        <p className="mt-2 text-xs text-muted">Powered by Feature Vote · vote on what matters</p>
+        <p className="mt-2 text-xs text-muted">{t.poweredBy}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="rounded-xl border border-border bg-surface p-6 mb-8">
-        <h2 className="font-semibold text-lg mb-4">Suggest a feature</h2>
+        <h2 className="font-semibold text-lg mb-4">{t.suggestTitle}</h2>
         <div className="space-y-4">
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Feature title"
+            placeholder={t.titlePlaceholder}
             className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-600"
             required
           />
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Why do you need this? (optional)"
+            placeholder={t.descPlaceholder}
             rows={2}
             className="w-full rounded-lg border border-border bg-background px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-600"
           />
@@ -100,13 +103,13 @@ export function PublicBoard({ board }: { board: Board }) {
             disabled={loading}
             className="rounded-lg bg-brand-600 px-6 py-2.5 font-semibold text-white hover:bg-brand-700 disabled:opacity-50"
           >
-            {loading ? "Submitting…" : "Submit idea"}
+            {loading ? t.submitting : t.submitIdea}
           </button>
         </div>
       </form>
 
       {ideas.length === 0 ? (
-        <p className="text-center text-muted py-12">No ideas yet. Be the first to suggest one!</p>
+        <p className="text-center text-muted py-12">{t.empty}</p>
       ) : (
         <div className="space-y-8">
           {(["open", "planned", "in_progress", "shipped"] as const).map((status) => {
@@ -114,8 +117,10 @@ export function PublicBoard({ board }: { board: Board }) {
             if (list.length === 0) return null;
             return (
               <section key={status}>
-                <h2 className={`text-sm font-semibold uppercase tracking-wide mb-3 ${statusColor(status)}`}>
-                  {statusLabel(status)}
+                <h2
+                  className={`text-sm font-semibold uppercase tracking-wide mb-3 ${statusColor(status)}`}
+                >
+                  {getStatusLabel(status, locale)}
                 </h2>
                 <div className="space-y-3">
                   {list.map((idea) => (
