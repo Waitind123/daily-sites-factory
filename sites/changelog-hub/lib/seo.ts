@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://changelog-hub.vercel.app",
+  url: "https://changelog-hub-henna.vercel.app",
   name: "Indie Changelog",
   title: "Indie Changelog 发布台 — Beamer 平替，$9.9/月",
   description:
