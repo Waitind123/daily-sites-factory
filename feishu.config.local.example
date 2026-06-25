@@ -8,8 +8,6 @@ FEISHU_APP_SECRET=xxxxxxxx
 FEISHU_OPENCLAW_APP_ID=cli_xxxxxxxx
 FEISHU_OPENCLAW_APP_SECRET=xxxxxxxx
 
-# 接收部署通知的飞书登录邮箱（推荐，不必查 open_id）
-FEISHU_RECEIVE_EMAIL=your@company.com
-
-# 或用 open_id（二选一）
-# FEISHU_RECEIVE_ID=ou_xxxxxxxx
+# 接收人（三选一，无邮箱时用 open_id）
+# FEISHU_RECEIVE_EMAIL=your@company.com
+# FEISHU_RECEIVE_ID=ou_xxxxxxxx   ← 无邮箱时用这个
