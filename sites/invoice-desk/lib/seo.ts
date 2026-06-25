@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://invoice-desk-pulse.vercel.app",
+    url: "https://invoice-desk-three.vercel.app",
     name: "Invoice Desk",
     title: "Invoice Desk — HoneyBook alternative for freelancers, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://invoice-desk-pulse.vercel.app",
+    url: "https://invoice-desk-three.vercel.app",
     name: "发票收据管理",
     title: "发票收据管理 — HoneyBook 平替，自由职业者 $9.9/月",
     description:
