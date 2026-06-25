@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://reddit-pulse.vercel.app",
+    url: "https://reddit-pulse-six.vercel.app",
     name: "Reddit Pulse",
     title: "Reddit Pulse — GummySearch alternative for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://reddit-pulse.vercel.app",
+    url: "https://reddit-pulse-six.vercel.app",
     name: "Reddit 痛点挖掘",
     title: "Reddit Pulse — GummySearch 平替，独立开发者 $9.9/月",
     description:
