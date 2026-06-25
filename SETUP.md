@@ -43,20 +43,48 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 
 ### 4. 飞书通知（部署 URL 推送）
 
-1. 在飞书群里：**设置 → 群机器人 → 添加机器人 → 自定义机器人**，复制 Webhook 地址  
-   形如 `https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx`
+**不必建群机器人**——推荐用自建应用**私信发给你本人**；群 Webhook 为可选。
 
-2. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
-   - `FEISHU_WEBHOOK_URL` = 机器人 Webhook 完整 URL
+#### 方式 A：私信（推荐）
 
-每次站点部署成功后，GitHub Actions 会自动把公网 URL 推到飞书群。
+1. 打开 [飞书开放平台](https://open.feishu.cn/app) → **创建企业自建应用**
+2. 在应用里开启 **机器人** 能力
+3. **权限管理** 中申请并开通：
+   - `im:message:send_as_bot`（以应用身份发消息）
+   - `contact:user.id:readonly`（按邮箱查 open_id，仅配置时用）
+4. **版本管理与发布** → 创建版本并发布（企业管理员需审核通过）
+5. **凭证与基础信息** 复制 `App ID`、`App Secret`
+6. 查你的 `open_id`（把邮箱换成你的飞书登录邮箱）：
+
+```bash
+FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx \
+  node scripts/feishu-resolve-open-id.mjs your@company.com
+```
+
+输出里的 `FEISHU_RECEIVE_ID=ou_xxx` 即为接收人 ID。
+
+7. 在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
+   - `FEISHU_APP_ID`
+   - `FEISHU_APP_SECRET`
+   - `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`
+   - （可选）`FEISHU_RECEIVE_ID_TYPE` = `open_id`（默认即是）
 
 手动测试：
 
 ```bash
-FEISHU_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/xxx" \
+FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
   node scripts/notify-feishu.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
 ```
+
+#### 方式 B：群机器人 Webhook（可选）
+
+1. 飞书群：**设置 → 群机器人 → 自定义机器人** → 复制 Webhook  
+   形如 `https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx`
+2. GitHub Secrets 添加 `FEISHU_WEBHOOK_URL`
+
+未配置 App 私信凭证时，脚本会自动使用 Webhook。
+
+每次站点部署成功后，GitHub Actions 会把公网 URL 推送到飞书（私信优先）。
 
 ### 5. 配置 Cursor Automation
 

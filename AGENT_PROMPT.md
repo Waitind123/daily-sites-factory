@@ -178,7 +178,10 @@ node scripts/process-feedback.mjs
 
 | 变量 | 配置位置 | 用途 |
 |------|----------|------|
-| `FEISHU_WEBHOOK_URL` | **GitHub Secrets** | 部署成功后推送飞书 |
+| `FEISHU_APP_ID` | **GitHub Secrets** | 飞书自建应用（私信，推荐） |
+| `FEISHU_APP_SECRET` | **GitHub Secrets** | 飞书自建应用 |
+| `FEISHU_RECEIVE_ID` | **GitHub Secrets** | 你的 open_id（私信接收人） |
+| `FEISHU_WEBHOOK_URL` | **GitHub Secrets** | 可选，群机器人 Webhook |
 | `GITHUB_TOKEN` | **GitHub Secrets** | 用户留言 API 读写 `feedback/*.json` |
 | `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
 | `STRIPE_SECRET_KEY` | Automation 或站点 `.env` | 可选，真实支付 |
