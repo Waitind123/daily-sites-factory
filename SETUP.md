@@ -96,15 +96,21 @@ FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
   node scripts/notify-feishu.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
 ```
 
-#### 方式 B：群机器人 Webhook（可选）
+#### 方式 B：群机器人 Webhook（最简单，无需邮箱 / open_id）
 
 1. 飞书群：**设置 → 群机器人 → 自定义机器人** → 复制 Webhook  
    形如 `https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx`
-2. GitHub Secrets 添加 `FEISHU_WEBHOOK_URL`
+2. 写入 `feishu.config.local`：
+   ```
+   FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx
+   ```
+3. 本机运行（需 `gh` 已登录且有仓库 admin 权限）：
+   ```bash
+   bash scripts/setup-github-feishu-webhook.sh
+   ```
+   或手动在 GitHub **Settings → Secrets → Actions** 添加 `FEISHU_WEBHOOK_URL`。
 
-未配置 App 私信凭证时，脚本会自动使用 Webhook。
-
-每次站点部署成功后，GitHub Actions 会把公网 URL 推送到飞书（私信优先）。
+未配置 App 私信凭证时，脚本自动使用 Webhook。每次部署成功会推送到该群。
 
 ### 5. 配置 Cursor Automation
 
