@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 出差如何当天订到联合办公日票：完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 10 分钟
       </p>
 
@@ -55,7 +55,7 @@ export default function GuidePage() {
         传统目录网站（如 Coworker.com）只告诉你空间存在，不显示今日是否有位。你需要的是实时库存数据。好的日票预订工具会标注「今日余 X/Y 位」，并用颜色区分充裕（绿色）、紧张（黄色）和即将满座（红色）。
       </p>
       <p>
-        使用 <Link href="/passes" className="text-brand-600 hover:underline">日票通</Link> 可以一键查看 40+ 城市的当日库存，每个场地标注 WiFi 实测速度和是否支持即时预订。
+        使用 <Link href="/passes" className="text-brand-500 hover:underline">日票通</Link> 可以一键查看 40+ 城市的当日库存，每个场地标注 WiFi 实测速度和是否支持即时预订。
       </p>
 
       <h3>第 3 步：验证 WiFi 和视频通话友好度（1 分钟）</h3>
@@ -98,31 +98,31 @@ export default function GuidePage() {
       <h2>四、常见踩坑和避坑清单</h2>
       <table className="w-full text-sm border-collapse not-prose my-6">
         <thead>
-          <tr className="bg-stone-100">
-            <th className="border border-stone-200 px-4 py-2 text-left">踩坑场景</th>
-            <th className="border border-stone-200 px-4 py-2 text-left">避坑方法</th>
+          <tr className="bg-surface-muted">
+            <th className="border border-border px-4 py-2 text-left">踩坑场景</th>
+            <th className="border border-border px-4 py-2 text-left">避坑方法</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">到了才发现满座</td>
-            <td className="border border-stone-200 px-4 py-2">预订前查实时库存，选余量 &gt; 30% 的场地</td>
+            <td className="border border-border px-4 py-2">到了才发现满座</td>
+            <td className="border border-border px-4 py-2">预订前查实时库存，选余量 &gt; 30% 的场地</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">WiFi 不够开 Zoom</td>
-            <td className="border border-stone-200 px-4 py-2">选 WiFi ≥ 100 Mbps 且标注「视频会议友好」的场地</td>
+            <td className="border border-border px-4 py-2">WiFi 不够开 Zoom</td>
+            <td className="border border-border px-4 py-2">选 WiFi ≥ 100 Mbps 且标注「视频会议友好」的场地</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">日票比网上贵</td>
-            <td className="border border-stone-200 px-4 py-2">用确认单上的官网链接付款，不走前台临时价</td>
+            <td className="border border-border px-4 py-2">日票比网上贵</td>
+            <td className="border border-border px-4 py-2">用确认单上的官网链接付款，不走前台临时价</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">周末不接受 walk-in</td>
-            <td className="border border-stone-200 px-4 py-2">标注「需提前预约」的场地提前 24h 在线订</td>
+            <td className="border border-border px-4 py-2">周末不接受 walk-in</td>
+            <td className="border border-border px-4 py-2">标注「需提前预约」的场地提前 24h 在线订</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">找不到入口/前台</td>
-            <td className="border border-stone-200 px-4 py-2">看确认单中的入场贴士和地址详情</td>
+            <td className="border border-border px-4 py-2">找不到入口/前台</td>
+            <td className="border border-border px-4 py-2">看确认单中的入场贴士和地址详情</td>
           </tr>
         </tbody>
       </table>
@@ -140,7 +140,7 @@ export default function GuidePage() {
         与其落地后慌乱搜索，不如现在就收藏这篇指南，并在下次出差前查好目的地的日票库存。免费体验 5 次，感受实时库存和预订确认单的效率差异。
       </p>
 
-      <div className="not-prose mt-10 p-6 bg-brand-50 rounded-xl border border-brand-200 text-center">
+      <div className="not-prose mt-10 p-6 bg-brand-600/10 rounded-xl border border-brand-200 text-center">
         <p className="font-semibold text-brand-900 mb-4">免费体验 5 次日票预订</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
@@ -151,7 +151,7 @@ export default function GuidePage() {
           </Link>
           <Link
             href="/join"
-            className="inline-block border border-brand-600 text-brand-700 px-6 py-3 rounded-xl font-semibold hover:bg-brand-100 transition-colors"
+            className="inline-block border border-brand-600 text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-100 transition-colors"
           >
             订阅 $9.9/月
           </Link>

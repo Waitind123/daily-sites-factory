@@ -17,10 +17,10 @@ export function FeatureGrid() {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
-        <div key={f.title} className="rounded-xl border border-stone-200 bg-white p-5">
+        <div key={f.title} className="rounded-xl border border-border bg-surface p-5">
           <div className="text-2xl mb-2">{f.icon}</div>
-          <h3 className="font-semibold text-stone-900">{f.title}</h3>
-          <p className="mt-1 text-sm text-stone-500">{f.desc}</p>
+          <h3 className="font-semibold text-foreground">{f.title}</h3>
+          <p className="mt-1 text-sm text-muted">{f.desc}</p>
         </div>
       ))}
     </div>
@@ -31,10 +31,10 @@ export function JobPreviewTable() {
   const preview = jobs.slice(0, 5);
 
   return (
-    <div className="overflow-x-auto rounded-xl border border-stone-200 bg-white shadow-sm">
+    <div className="overflow-x-auto rounded-xl border border-border bg-surface shadow-sm">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-stone-100 bg-stone-50 text-left text-stone-500">
+          <tr className="border-b border-border bg-background text-left text-muted">
             <th className="px-4 py-3 font-medium">职位</th>
             <th className="px-4 py-3 font-medium hidden sm:table-cell">地点</th>
             <th className="px-4 py-3 font-medium hidden md:table-cell">类型</th>
@@ -43,15 +43,15 @@ export function JobPreviewTable() {
         </thead>
         <tbody>
           {preview.map((job) => (
-            <tr key={job.id} className="border-b border-stone-50 hover:bg-stone-50/50">
+            <tr key={job.id} className="border-b border-stone-50 hover:bg-background/50">
               <td className="px-4 py-3">
                 <span className="mr-2">{job.logo}</span>
                 <span className="font-medium">{job.title}</span>
-                <span className="block text-stone-400 text-xs mt-0.5">{job.company}</span>
+                <span className="block text-muted text-xs mt-0.5">{job.company}</span>
               </td>
-              <td className="px-4 py-3 hidden sm:table-cell text-stone-600">{job.location}</td>
-              <td className="px-4 py-3 hidden md:table-cell text-stone-600">{job.type}</td>
-              <td className="px-4 py-3 text-right font-medium text-brand-700">{job.salary}</td>
+              <td className="px-4 py-3 hidden sm:table-cell text-muted">{job.location}</td>
+              <td className="px-4 py-3 hidden md:table-cell text-muted">{job.type}</td>
+              <td className="px-4 py-3 text-right font-medium text-brand-500">{job.salary}</td>
             </tr>
           ))}
         </tbody>

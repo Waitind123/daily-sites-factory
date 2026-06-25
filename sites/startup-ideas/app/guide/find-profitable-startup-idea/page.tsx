@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         如何找到能赚钱的创业点子：独立开发者验证指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 10 分钟
       </p>
 
@@ -111,11 +111,11 @@ export default function GuidePage() {
       </p>
       <p>
         我们的{" "}
-        <Link href="/ideas" className="text-brand-600 hover:underline">
+        <Link href="/ideas" className="text-brand-500 hover:underline">
           创业点子库
         </Link>{" "}
         每个分析都含建议定价，可直接参考。非会员可免费体验 5 次深度分析，之后{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           $9.9/月
         </Link>{" "}
         无限阅读。
@@ -170,7 +170,7 @@ export default function GuidePage() {
       <h2>六、下一步行动</h2>
       <p>
         1. 浏览我们的{" "}
-        <Link href="/ideas" className="text-brand-600 hover:underline">
+        <Link href="/ideas" className="text-brand-500 hover:underline">
           8+ 精选创业点子
         </Link>
         ，每个含深度市场分析
@@ -185,9 +185,9 @@ export default function GuidePage() {
         4. 有付费用户后迭代，没付费用户就 pivot——别恋战
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
-        <p className="font-semibold text-stone-900 mb-2">准备好找方向了？</p>
-        <p className="text-sm text-stone-600 mb-4">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
+        <p className="font-semibold text-foreground mb-2">准备好找方向了？</p>
+        <p className="text-sm text-muted mb-4">
           免费体验 5 次深度分析 · 含竞品定价、MRR 预估、MVP 路线图
         </p>
         <Link

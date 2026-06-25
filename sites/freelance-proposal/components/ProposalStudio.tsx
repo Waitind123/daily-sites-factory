@@ -98,10 +98,10 @@ export function ProposalStudio() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">创建报价单</h1>
-          <p className="text-stone-500 mt-1">30 秒生成专业报价 + 合同 + 发票</p>
+          <p className="text-muted mt-1">30 秒生成专业报价 + 合同 + 发票</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限生成"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -115,7 +115,7 @@ export function ProposalStudio() {
             key={tpl.id}
             type="button"
             onClick={() => applyTemplate(tpl.id)}
-            className="rounded-full border border-stone-200 bg-white px-4 py-1.5 text-sm font-medium text-stone-600 hover:border-brand-400 hover:bg-brand-50 transition-colors"
+            className="rounded-full border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted hover:border-brand-400 hover:bg-brand-600/10 transition-colors"
           >
             {tpl.icon} {tpl.name}
           </button>
@@ -145,14 +145,14 @@ export function ProposalStudio() {
 
       <div className="grid lg:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="rounded-xl border border-stone-200 bg-white p-5 space-y-4">
-            <h2 className="font-semibold text-stone-900">你的信息</h2>
+          <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
+            <h2 className="font-semibold text-foreground">你的信息</h2>
             <input
               required
               placeholder="你的姓名"
               value={form.freelancerName}
               onChange={(e) => setForm({ ...form, freelancerName: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <input
               required
@@ -160,18 +160,18 @@ export function ProposalStudio() {
               placeholder="你的邮箱"
               value={form.freelancerEmail}
               onChange={(e) => setForm({ ...form, freelancerEmail: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
 
-          <div className="rounded-xl border border-stone-200 bg-white p-5 space-y-4">
-            <h2 className="font-semibold text-stone-900">客户信息</h2>
+          <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
+            <h2 className="font-semibold text-foreground">客户信息</h2>
             <input
               required
               placeholder="客户公司/姓名"
               value={form.clientName}
               onChange={(e) => setForm({ ...form, clientName: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <input
               required
@@ -179,18 +179,18 @@ export function ProposalStudio() {
               placeholder="客户邮箱"
               value={form.clientEmail}
               onChange={(e) => setForm({ ...form, clientEmail: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
 
-          <div className="rounded-xl border border-stone-200 bg-white p-5 space-y-4">
-            <h2 className="font-semibold text-stone-900">项目详情</h2>
+          <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
+            <h2 className="font-semibold text-foreground">项目详情</h2>
             <input
               required
               placeholder="项目标题"
               value={form.projectTitle}
               onChange={(e) => setForm({ ...form, projectTitle: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <textarea
               required
@@ -198,19 +198,19 @@ export function ProposalStudio() {
               placeholder="交付物（每行一项）"
               value={form.deliverables}
               onChange={(e) => setForm({ ...form, deliverables: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <input
               placeholder="项目周期"
               value={form.timeline}
               onChange={(e) => setForm({ ...form, timeline: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <div className="flex gap-3">
               <select
                 value={form.currency}
                 onChange={(e) => setForm({ ...form, currency: e.target.value })}
-                className="rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
                 <option value="USD">USD $</option>
                 <option value="CNY">CNY ¥</option>
@@ -223,21 +223,21 @@ export function ProposalStudio() {
                 placeholder="报价金额"
                 value={form.amount}
                 onChange={(e) => setForm({ ...form, amount: Number(e.target.value) })}
-                className="flex-1 rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="flex-1 rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <input
               placeholder="付款条款"
               value={form.paymentTerms}
               onChange={(e) => setForm({ ...form, paymentTerms: e.target.value })}
-              className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
-            <label className="flex items-center gap-2 text-sm text-stone-600">
+            <label className="flex items-center gap-2 text-sm text-muted">
               <input
                 type="checkbox"
                 checked={form.includeContract}
                 onChange={(e) => setForm({ ...form, includeContract: e.target.checked })}
-                className="rounded border-stone-300"
+                className="rounded border-border"
               />
               包含标准合同条款
             </label>
@@ -254,49 +254,49 @@ export function ProposalStudio() {
 
         <div>
           {result ? (
-            <div className="rounded-xl border border-brand-200 bg-white p-6 sticky top-24">
+            <div className="rounded-xl border border-brand-200 bg-surface p-6 sticky top-24">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <p className="text-sm text-brand-600 font-medium">报价单已生成</p>
+                  <p className="text-sm text-brand-500 font-medium">报价单已生成</p>
                   <p className="text-lg font-bold text-brand-800">{result.id}</p>
                 </div>
                 <button
                   type="button"
                   onClick={copyMarkdown}
-                  className="rounded-lg border border-stone-200 px-3 py-1.5 text-xs font-medium text-stone-600 hover:bg-stone-50"
+                  className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-muted hover:bg-background"
                 >
                   复制 Markdown
                 </button>
               </div>
 
-              <div className="rounded-lg bg-stone-50 border border-stone-200 p-4 max-h-[500px] overflow-y-auto">
-                <pre className="text-xs text-stone-700 whitespace-pre-wrap font-sans leading-relaxed">
+              <div className="rounded-lg bg-background border border-border p-4 max-h-[500px] overflow-y-auto">
+                <pre className="text-xs text-foreground whitespace-pre-wrap font-sans leading-relaxed">
                   {result.markdown}
                 </pre>
               </div>
 
               <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-lg bg-brand-50 p-3">
-                  <p className="text-brand-600 text-xs">报价金额</p>
+                <div className="rounded-lg bg-brand-600/10 p-3">
+                  <p className="text-brand-500 text-xs">报价金额</p>
                   <p className="font-bold text-brand-800">
                     {currencySymbol}
                     {result.project.amount.toLocaleString()} {result.project.currency}
                   </p>
                 </div>
-                <div className="rounded-lg bg-brand-50 p-3">
-                  <p className="text-brand-600 text-xs">发票号</p>
+                <div className="rounded-lg bg-brand-600/10 p-3">
+                  <p className="text-brand-500 text-xs">发票号</p>
                   <p className="font-bold text-brand-800">{result.invoice.number}</p>
                 </div>
               </div>
 
               {result.contractClauses.length > 0 && (
-                <p className="mt-3 text-xs text-stone-500">
+                <p className="mt-3 text-xs text-muted">
                   ✓ 已包含 {result.contractClauses.length} 条合同条款
                 </p>
               )}
             </div>
           ) : (
-            <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-12 text-center text-stone-400 sticky top-24">
+            <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted sticky top-24">
               <p className="text-4xl mb-3">📄</p>
               <p>填写左侧表单，一键生成报价单</p>
               <p className="text-sm mt-1">非会员免费体验 5 次</p>

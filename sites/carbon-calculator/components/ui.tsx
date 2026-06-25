@@ -17,10 +17,10 @@ export function FeatureGrid() {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
-        <div key={f.title} className="rounded-xl border border-stone-200 bg-white p-5">
+        <div key={f.title} className="rounded-xl border border-border bg-surface p-5">
           <div className="text-2xl mb-2">{f.icon}</div>
-          <h3 className="font-semibold text-stone-900">{f.title}</h3>
-          <p className="mt-1 text-sm text-stone-500">{f.desc}</p>
+          <h3 className="font-semibold text-foreground">{f.title}</h3>
+          <p className="mt-1 text-sm text-muted">{f.desc}</p>
         </div>
       ))}
     </div>
@@ -37,18 +37,18 @@ export function ComparisonChart() {
       {sampleComparison.map((d) => (
         <div key={d.label}>
           <div className="flex justify-between text-sm mb-1">
-            <span className="text-stone-600">{d.label}</span>
-            <span className="font-medium text-stone-900">{d.kg.toLocaleString()} kg/年</span>
+            <span className="text-muted">{d.label}</span>
+            <span className="font-medium text-foreground">{d.kg.toLocaleString()} kg/年</span>
           </div>
-          <div className="h-3 bg-stone-100 rounded-full overflow-hidden">
+          <div className="h-3 bg-surface-muted rounded-full overflow-hidden">
             <div
-              className="h-full bg-brand-500 rounded-full transition-all"
+              className="h-full bg-brand-600/100 rounded-full transition-all"
               style={{ width: `${(d.kg / maxKg) * 100}%` }}
             />
           </div>
         </div>
       ))}
-      <p className="text-xs text-stone-400">示例：15km 地铁通勤 · 每周到岗 2 天 · 中国电网</p>
+      <p className="text-xs text-muted">示例：15km 地铁通勤 · 每周到岗 2 天 · 中国电网</p>
     </div>
   );
 }

@@ -79,10 +79,10 @@ export function CoworkingBoard() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">全球联合办公空间</h1>
-          <p className="text-stone-500 mt-1">{filtered.length} 个空间 · 40+ 城市</p>
+          <p className="text-muted mt-1">{filtered.length} 个空间 · 40+ 城市</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限查看"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -96,13 +96,13 @@ export function CoworkingBoard() {
           placeholder="搜索空间、城市、国家…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full rounded-xl border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full rounded-xl border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
         />
         <div className="flex flex-wrap gap-2">
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="rounded-full border border-stone-200 px-3 py-1 text-xs font-medium bg-white text-stone-600"
+            className="rounded-full border border-border px-3 py-1 text-xs font-medium bg-surface text-muted"
           >
             <option value="">全部城市</option>
             {cities.map((c) => (
@@ -119,7 +119,7 @@ export function CoworkingBoard() {
               className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
                 tag === t
                   ? "bg-brand-600 text-white"
-                  : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                  : "bg-surface-muted text-muted hover:bg-stone-200"
               }`}
             >
               {t}
@@ -155,19 +155,19 @@ export function CoworkingBoard() {
               type="button"
               onClick={() => unlockSpace(space.id)}
               disabled={loading}
-              className={`w-full text-left rounded-xl border p-4 transition-colors hover:border-brand-300 hover:bg-brand-50/30 ${
-                selected?.id === space.id ? "border-brand-600 bg-brand-50" : "border-stone-200 bg-white"
+              className={`w-full text-left rounded-xl border p-4 transition-colors hover:border-brand-300 hover:bg-brand-600/10/30 ${
+                selected?.id === space.id ? "border-brand-600 bg-brand-600/10" : "border-border bg-surface"
               }`}
             >
               <div className="flex items-start gap-3">
                 <span className="text-2xl">{space.logo}</span>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-stone-900 truncate">{space.name}</p>
-                  <p className="text-sm text-stone-500">
+                  <p className="font-semibold text-foreground truncate">{space.name}</p>
+                  <p className="text-sm text-muted">
                     {space.city}, {space.country}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
-                    <span className="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded">
+                    <span className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded">
                       📶 {space.wifiMbps} Mbps
                     </span>
                     {space.videoCallReady && (
@@ -176,7 +176,7 @@ export function CoworkingBoard() {
                       </span>
                     )}
                   </div>
-                  <p className="text-sm font-medium text-brand-700 mt-2">{space.dayPassPrice}</p>
+                  <p className="text-sm font-medium text-brand-500 mt-2">{space.dayPassPrice}</p>
                 </div>
               </div>
             </button>
@@ -185,50 +185,50 @@ export function CoworkingBoard() {
 
         <div className="lg:col-span-3">
           {selected ? (
-            <div className="rounded-xl border border-stone-200 bg-white p-6 sticky top-24">
+            <div className="rounded-xl border border-border bg-surface p-6 sticky top-24">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">{selected.logo}</span>
                 <div>
                   <h2 className="text-xl font-bold">{selected.name}</h2>
-                  <p className="text-stone-500">
+                  <p className="text-muted">
                     {selected.neighborhood} · {selected.city}, {selected.country}
                   </p>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-amber-500">★ {selected.rating}</span>
-                    <span className="text-stone-400 text-sm">({selected.reviews} 评价)</span>
+                    <span className="text-muted text-sm">({selected.reviews} 评价)</span>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">日票价格</p>
-                  <p className="font-semibold text-brand-700">{selected.dayPassPrice}</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">日票价格</p>
+                  <p className="font-semibold text-brand-500">{selected.dayPassPrice}</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">月票价格</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">月票价格</p>
                   <p className="font-semibold">{selected.monthlyPrice}</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">WiFi 实测</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">WiFi 实测</p>
                   <p className="font-semibold">{selected.wifiMbps} Mbps</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">营业时间</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">营业时间</p>
                   <p className="font-semibold">{selected.hours}</p>
                 </div>
               </div>
 
               <div className="mt-6 space-y-4 text-sm">
                 <div>
-                  <h3 className="font-semibold text-stone-900 mb-1">空间介绍</h3>
-                  <p className="text-stone-600">{selected.description}</p>
+                  <h3 className="font-semibold text-foreground mb-1">空间介绍</h3>
+                  <p className="text-muted">{selected.description}</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-stone-900 mb-1">设施</h3>
+                  <h3 className="font-semibold text-foreground mb-1">设施</h3>
                   <div className="flex flex-wrap gap-2">
                     {selected.amenities.map((a) => (
-                      <span key={a} className="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">
+                      <span key={a} className="text-xs bg-surface-muted text-muted px-2 py-1 rounded">
                         {a}
                       </span>
                     ))}
@@ -236,8 +236,8 @@ export function CoworkingBoard() {
                 </div>
                 {selected.insiderTips && (
                   <div>
-                    <h3 className="font-semibold text-stone-900 mb-1">内部贴士</h3>
-                    <ul className="list-disc list-inside text-stone-600 space-y-1">
+                    <h3 className="font-semibold text-foreground mb-1">内部贴士</h3>
+                    <ul className="list-disc list-inside text-muted space-y-1">
                       {selected.insiderTips.map((tip) => (
                         <li key={tip}>{tip}</li>
                       ))}
@@ -258,7 +258,7 @@ export function CoworkingBoard() {
               )}
             </div>
           ) : (
-            <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-12 text-center text-stone-400">
+            <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-3">👈</p>
               <p>点击左侧空间查看完整详情</p>
               <p className="text-sm mt-1">非会员免费体验 5 次</p>

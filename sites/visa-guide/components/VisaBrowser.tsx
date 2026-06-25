@@ -76,7 +76,7 @@ export function VisaBrowser() {
   return (
     <div>
       {trial && !trial.isMember && (
-        <div className="mb-6 rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-wrap items-center justify-between gap-2">
+        <div className="mb-6 rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-wrap items-center justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费详情查询
           </span>
@@ -103,7 +103,7 @@ export function VisaBrowser() {
         <select
           value={region}
           onChange={(e) => setRegion(e.target.value as VisaRegion | "all")}
-          className="rounded-lg border border-stone-300 px-3 py-2 text-sm bg-white"
+          className="rounded-lg border border-border px-3 py-2 text-sm bg-surface"
         >
           <option value="all">全部地区</option>
           {(Object.keys(regionLabels) as VisaRegion[]).map((r) => (
@@ -115,7 +115,7 @@ export function VisaBrowser() {
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as "income" | "processing")}
-          className="rounded-lg border border-stone-300 px-3 py-2 text-sm bg-white"
+          className="rounded-lg border border-border px-3 py-2 text-sm bg-surface"
         >
           <option value="income">按收入门槛排序</option>
           <option value="processing">按审批时长排序</option>
@@ -126,7 +126,7 @@ export function VisaBrowser() {
         {filtered.map((visa) => (
           <div
             key={visa.id}
-            className="rounded-xl border border-stone-200 bg-white p-5 hover:border-brand-300 transition-colors"
+            className="rounded-xl border border-border bg-surface p-5 hover:border-brand-300 transition-colors"
           >
             <div className="flex items-start justify-between gap-2">
               <div>
@@ -134,15 +134,15 @@ export function VisaBrowser() {
                 <h3 className="font-semibold text-lg mt-1">
                   {visa.country}
                 </h3>
-                <p className="text-sm text-brand-600">{visa.programName}</p>
+                <p className="text-sm text-brand-500">{visa.programName}</p>
               </div>
               <div className="text-right text-sm">
-                <p className="font-bold text-stone-900">${visa.incomeUsd.toLocaleString()}/月</p>
-                <p className="text-stone-400">{visa.duration}</p>
+                <p className="font-bold text-foreground">${visa.incomeUsd.toLocaleString()}/月</p>
+                <p className="text-muted">{visa.duration}</p>
               </div>
             </div>
 
-            <p className="text-sm text-stone-500 mt-3 line-clamp-2">{visa.preview}</p>
+            <p className="text-sm text-muted mt-3 line-clamp-2">{visa.preview}</p>
 
             <div className="flex flex-wrap gap-2 mt-3">
               {visa.schengen && (
@@ -155,7 +155,7 @@ export function VisaBrowser() {
                   永居路径
                 </span>
               )}
-              <span className="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full">
+              <span className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded-full">
                 {visa.processingDays}
               </span>
             </div>
@@ -177,7 +177,7 @@ export function VisaBrowser() {
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto p-6"
+            className="bg-surface rounded-2xl max-w-lg w-full max-h-[85vh] overflow-y-auto p-6"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between mb-4">
@@ -189,53 +189,53 @@ export function VisaBrowser() {
               </div>
               <button
                 onClick={() => setSelected(null)}
-                className="text-stone-400 hover:text-stone-600 text-2xl leading-none"
+                className="text-muted hover:text-muted text-2xl leading-none"
               >
                 ×
               </button>
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-sm mb-6">
-              <div className="bg-stone-50 rounded-lg p-3">
-                <p className="text-stone-400">月收入门槛</p>
+              <div className="bg-background rounded-lg p-3">
+                <p className="text-muted">月收入门槛</p>
                 <p className="font-bold">${selected.incomeUsd.toLocaleString()}</p>
               </div>
-              <div className="bg-stone-50 rounded-lg p-3">
-                <p className="text-stone-400">停留时长</p>
+              <div className="bg-background rounded-lg p-3">
+                <p className="text-muted">停留时长</p>
                 <p className="font-bold">{selected.duration}</p>
               </div>
-              <div className="bg-stone-50 rounded-lg p-3">
-                <p className="text-stone-400">税务</p>
+              <div className="bg-background rounded-lg p-3">
+                <p className="text-muted">税务</p>
                 <p className="font-bold">{selected.taxNote}</p>
               </div>
-              <div className="bg-stone-50 rounded-lg p-3">
-                <p className="text-stone-400">审批</p>
+              <div className="bg-background rounded-lg p-3">
+                <p className="text-muted">审批</p>
                 <p className="font-bold">{selected.processingDays}</p>
               </div>
             </div>
 
             <h3 className="font-semibold mb-2">申请条件</h3>
-            <ul className="text-sm text-stone-600 space-y-1 mb-4">
+            <ul className="text-sm text-muted space-y-1 mb-4">
               {selected.requirements.map((r) => (
                 <li key={r} className="flex gap-2">
-                  <span className="text-brand-600">•</span>
+                  <span className="text-brand-500">•</span>
                   {r}
                 </li>
               ))}
             </ul>
 
             <h3 className="font-semibold mb-2">材料清单</h3>
-            <ul className="text-sm text-stone-600 space-y-1 mb-4">
+            <ul className="text-sm text-muted space-y-1 mb-4">
               {selected.documents.map((d) => (
                 <li key={d} className="flex gap-2">
-                  <span className="text-brand-600">✓</span>
+                  <span className="text-brand-500">✓</span>
                   {d}
                 </li>
               ))}
             </ul>
 
             <h3 className="font-semibold mb-2">实操建议</h3>
-            <ul className="text-sm text-stone-600 space-y-1 mb-4">
+            <ul className="text-sm text-muted space-y-1 mb-4">
               {selected.tips.map((t) => (
                 <li key={t} className="flex gap-2">
                   <span className="text-amber-500">💡</span>
@@ -248,11 +248,11 @@ export function VisaBrowser() {
               href={selected.officialUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-brand-600 hover:underline"
+              className="text-sm text-brand-500 hover:underline"
             >
               官方申请入口 →
             </a>
-            <p className="text-xs text-stone-400 mt-4">
+            <p className="text-xs text-muted mt-4">
               数据更新于 {selected.updatedAt} · 申请前请以官方最新政策为准
             </p>
           </div>

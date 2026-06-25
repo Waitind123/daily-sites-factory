@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         独立开发者技术栈选型指南：2026 年 indie hacker 工具推荐
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -61,7 +61,7 @@ export default function GuidePage() {
         卖数字产品（模板、课程）而非纯 SaaS？选 Lemon Squeezy，hosted checkout 零代码。
       </p>
       <p>
-        <Link href="/tools" className="text-brand-600 hover:underline">
+        <Link href="/tools" className="text-brand-500 hover:underline">
           查看支付工具深度对比 →
         </Link>
       </p>
@@ -166,20 +166,20 @@ export default function GuidePage() {
       <p>
         1. 用上面的决策树确定你的 6 个工具<br />
         2. 在 Vercel 创建项目，git push 部署<br />
-        3. 接入 Polar/Stripe，<Link href="/join" className="text-brand-600 hover:underline">设计 $9.9/月定价页</Link><br />
+        3. 接入 Polar/Stripe，<Link href="/join" className="text-brand-500 hover:underline">设计 $9.9/月定价页</Link><br />
         4. 本周末 ship MVP，Show HN 获取第一批用户
       </p>
       <p>
         需要每个工具的定价对比、替代方案和接入指南？
-        <Link href="/tools" className="text-brand-600 hover:underline font-semibold">
+        <Link href="/tools" className="text-brand-500 hover:underline font-semibold">
           浏览独立开发者工具箱完整目录
         </Link>
         ，免费体验 5 次深度评测。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
-        <p className="font-semibold text-stone-900">不想一个个调研？</p>
-        <p className="text-sm text-stone-600 mt-2">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
+        <p className="font-semibold text-foreground">不想一个个调研？</p>
+        <p className="text-sm text-muted mt-2">
           我们已评测 40+ indie 工具，含定价对比和 5 分钟接入指南
         </p>
         <Link

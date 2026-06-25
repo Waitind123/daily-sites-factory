@@ -17,21 +17,21 @@ export default function NomadCitiesGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 prose prose-stone">
-      <Link href="/" className="text-sm text-brand-600 no-underline">
+      <Link href="/" className="text-sm text-brand-500 no-underline">
         ← 返回首页
       </Link>
       <h1 className="text-3xl font-bold mt-4 not-prose">
         2026 最佳数字游民城市 Top 10
       </h1>
-      <p className="lead text-stone-600 not-prose">
+      <p className="lead text-muted not-prose">
         远程工作者选城市看四个指标：月生活成本、网速、安全指数、签证友好度。
         以下是基于真实数据的 2026 年排名（仿 Nomad List，中文 curated）。
       </p>
 
       <h2>Top 10 城市概览</h2>
       <div className="not-prose overflow-x-auto">
-        <table className="w-full text-sm border border-stone-200 rounded-lg">
-          <thead className="bg-stone-50">
+        <table className="w-full text-sm border border-border rounded-lg">
+          <thead className="bg-background">
             <tr>
               <th className="px-3 py-2 text-left">#</th>
               <th className="px-3 py-2 text-left">城市</th>
@@ -42,14 +42,14 @@ export default function NomadCitiesGuidePage() {
           </thead>
           <tbody>
             {top.map((c) => (
-              <tr key={c.name} className="border-t border-stone-100">
+              <tr key={c.name} className="border-t border-border">
                 <td className="px-3 py-2">{c.rank}</td>
                 <td className="px-3 py-2">
                   {c.flag} {c.name}
                 </td>
                 <td className="px-3 py-2">¥{c.cost.toLocaleString()}</td>
                 <td className="px-3 py-2">{c.internet} Mbps</td>
-                <td className="px-3 py-2 text-right font-semibold text-brand-600">
+                <td className="px-3 py-2 text-right font-semibold text-brand-500">
                   {c.score}
                 </td>
               </tr>
@@ -80,7 +80,7 @@ export default function NomadCitiesGuidePage() {
         </Link>
         <Link
           href="/join"
-          className="rounded-xl border border-stone-300 px-6 py-3 font-semibold text-center hover:bg-stone-50"
+          className="rounded-xl border border-border px-6 py-3 font-semibold text-center hover:bg-background"
         >
           加入会员
         </Link>

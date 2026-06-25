@@ -87,18 +87,18 @@ export function HabitTracker() {
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $29.9/月 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限打卡
         </div>
       )}
@@ -117,11 +117,11 @@ export function HabitTracker() {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-lg font-bold">今日习惯</h2>
-          <p className="text-sm text-stone-500">
+          <p className="text-sm text-muted">
             已完成 {doneCount}/{habits.length}
           </p>
         </div>
-        <div className="text-3xl font-bold text-brand-600">
+        <div className="text-3xl font-bold text-brand-500">
           {habits.length ? Math.round((doneCount / habits.length) * 100) : 0}%
         </div>
       </div>
@@ -132,17 +132,17 @@ export function HabitTracker() {
             key={habit.id}
             className={`rounded-xl border p-4 flex items-center justify-between transition-colors ${
               habit.doneToday
-                ? "border-brand-200 bg-brand-50"
-                : "border-stone-200 bg-white"
+                ? "border-brand-200 bg-brand-600/10"
+                : "border-border bg-surface"
             }`}
           >
             <div className="flex items-center gap-3">
               <span className="text-2xl">{habit.icon}</span>
               <div>
-                <p className={`font-medium ${habit.doneToday ? "text-brand-700" : "text-stone-900"}`}>
+                <p className={`font-medium ${habit.doneToday ? "text-brand-500" : "text-foreground"}`}>
                   {habit.name}
                 </p>
-                <p className="text-xs text-stone-400">🔥 连续 {habit.streak} 天</p>
+                <p className="text-xs text-muted">🔥 连续 {habit.streak} 天</p>
               </div>
             </div>
             <button
@@ -151,7 +151,7 @@ export function HabitTracker() {
               onClick={() => checkIn(habit.id)}
               className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
                 habit.doneToday
-                  ? "bg-brand-100 text-brand-600 cursor-default"
+                  ? "bg-brand-100 text-brand-500 cursor-default"
                   : "bg-brand-600 text-white hover:bg-brand-700 disabled:opacity-50"
               }`}
             >

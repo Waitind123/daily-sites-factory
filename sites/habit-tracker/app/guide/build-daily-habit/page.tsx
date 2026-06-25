@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         如何养成每日习惯：21 天法则真的有用吗？
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 9 分钟
       </p>
 
@@ -49,11 +49,11 @@ export default function GuidePage() {
       </ul>
       <p>
         先从 1 个习惯开始，坚持 2 周再加第二个。我们的{" "}
-        <Link href="/track" className="text-brand-600 hover:underline">
+        <Link href="/track" className="text-brand-500 hover:underline">
           打卡页面
         </Link>{" "}
         默认提供阅读、运动、冥想、喝水、日记 5 个模板，你可以直接选用或自定义。非会员可免费体验 5 次打卡，之后{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           $29.9/月
         </Link>{" "}
         无限习惯。
@@ -95,27 +95,27 @@ export default function GuidePage() {
       <h2>六、常见误区与避坑</h2>
       <table className="w-full text-sm border-collapse not-prose my-6">
         <thead>
-          <tr className="bg-stone-100">
-            <th className="border border-stone-200 px-3 py-2 text-left">误区</th>
-            <th className="border border-stone-200 px-3 py-2 text-left">正确做法</th>
+          <tr className="bg-surface-muted">
+            <th className="border border-border px-3 py-2 text-left">误区</th>
+            <th className="border border-border px-3 py-2 text-left">正确做法</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-stone-200 px-3 py-2">新年一口气定 10 个目标</td>
-            <td className="border border-stone-200 px-3 py-2">从 1 个开始，21 天后加第 2 个</td>
+            <td className="border border-border px-3 py-2">新年一口气定 10 个目标</td>
+            <td className="border border-border px-3 py-2">从 1 个开始，21 天后加第 2 个</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-3 py-2">断了就「从明天重新开始」</td>
-            <td className="border border-stone-200 px-3 py-2">断了立刻当天补打卡或接受归零</td>
+            <td className="border border-border px-3 py-2">断了就「从明天重新开始」</td>
+            <td className="border border-border px-3 py-2">断了立刻当天补打卡或接受归零</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-3 py-2">买课程/书代替行动</td>
-            <td className="border border-stone-200 px-3 py-2">3 秒打卡 &gt; 300 页自律书</td>
+            <td className="border border-border px-3 py-2">买课程/书代替行动</td>
+            <td className="border border-border px-3 py-2">3 秒打卡 &gt; 300 页自律书</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-3 py-2">等「有动力了」再开始</td>
-            <td className="border border-stone-200 px-3 py-2">动力来自行动，不是等待</td>
+            <td className="border border-border px-3 py-2">等「有动力了」再开始</td>
+            <td className="border border-border px-3 py-2">动力来自行动，不是等待</td>
           </tr>
         </tbody>
       </table>
@@ -123,20 +123,20 @@ export default function GuidePage() {
       <h2>七、今天就开始</h2>
       <p>
         习惯养成没有完美时机。你不需要等周一、等月初、等买了新 App。现在打开{" "}
-        <Link href="/track" className="text-brand-600 hover:underline">
+        <Link href="/track" className="text-brand-500 hover:underline">
           习惯打卡
         </Link>
         ，选一个最小的习惯，点一下。这就是第 1 天。
       </p>
       <p>
         免费体验 5 次，感受 Streak 的推力。觉得有用就{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           订阅 $29.9/月
         </Link>
         —— 比一杯 Starbucks 还便宜，但可能改变接下来 365 天的你。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
         <p className="font-semibold text-brand-800 mb-4">准备好养成第一个习惯了吗？</p>
         <Link
           href="/track"

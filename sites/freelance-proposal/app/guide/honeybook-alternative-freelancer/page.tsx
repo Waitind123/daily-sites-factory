@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 自由职业者 HoneyBook 替代方案：完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -62,7 +62,7 @@ export default function GuidePage() {
         专注做一件事：快速生成专业报价单 + 合同条款 + 发票。没有 CRM、没有自动化、没有邮件序列。30 秒填表，一键生成 Markdown 格式的完整报价文档。适合只需要报价功能的开发者、设计师、顾问和内容创作者。
       </p>
       <p>
-        使用 <Link href="/create" className="text-brand-600 hover:underline">报价单通</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
+        使用 <Link href="/create" className="text-brand-500 hover:underline">报价单通</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
       </p>
 
       <h2>三、如何选择：决策框架</h2>
@@ -129,12 +129,12 @@ export default function GuidePage() {
         如果你只需要报价功能，现在就可以用报价单通免费体验 5 次。填好项目信息，30 秒生成一份包含报价、合同条款和发票的完整文档，发给客户试试效果。
       </p>
       <p>
-        如果 5 次体验后觉得值，<Link href="/join" className="text-brand-600 hover:underline">$9.9/月订阅</Link>即可无限使用。比 HoneyBook 便宜 70%，比 Dubsado 简单 100 倍。
+        如果 5 次体验后觉得值，<Link href="/join" className="text-brand-500 hover:underline">$9.9/月订阅</Link>即可无限使用。比 HoneyBook 便宜 70%，比 Dubsado 简单 100 倍。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
         <p className="font-semibold text-brand-800 text-lg">免费体验 5 次报价单生成</p>
-        <p className="text-brand-600 text-sm mt-2">30 秒生成 · 含合同条款 · 自动发票</p>
+        <p className="text-brand-500 text-sm mt-2">30 秒生成 · 含合同条款 · 自动发票</p>
         <Link
           href="/create"
           className="inline-block mt-4 bg-brand-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"

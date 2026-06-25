@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         中国 indie 线下聚会组织指南：从 0 到 50 人 RSVP 管理
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 15 分钟
       </p>
 
@@ -120,7 +120,7 @@ export default function GuidePage() {
         容量设置的核心原则：<strong>场地实际容量 × 0.9 = RSVP 上限</strong>。预留 10% buffer 应对 no-show。例如 20 人场地开放 18 个确认名额 + 5-8 个候补。
       </p>
       <p>
-        使用专业 RSVP 工具（如 <Link href="/events" className="text-brand-600 hover:underline">Meetup 组织助手</Link>）的好处：
+        使用专业 RSVP 工具（如 <Link href="/events" className="text-brand-500 hover:underline">Meetup 组织助手</Link>）的好处：
       </p>
       <ul>
         <li>满员自动关闭 RSVP，不用半夜检查 Google Forms</li>
@@ -230,10 +230,10 @@ export default function GuidePage() {
 
       <h2>七、立即开始</h2>
       <p>
-        不要等「完美方案」再办第一场。levelsio 的路径是：本周末定场地 → 发 RSVP 链接 → 来几个人算几个。工具选最轻的，<Link href="/join" className="text-brand-600 hover:underline">$9.9/月</Link> 的 RSVP 管理比免费 Google Forms 省下的时间，第一场活动就值回票价。
+        不要等「完美方案」再办第一场。levelsio 的路径是：本周末定场地 → 发 RSVP 链接 → 来几个人算几个。工具选最轻的，<Link href="/join" className="text-brand-500 hover:underline">$9.9/月</Link> 的 RSVP 管理比免费 Google Forms 省下的时间，第一场活动就值回票价。
       </p>
       <p>
-        <Link href="/events" className="text-brand-600 hover:underline font-semibold">
+        <Link href="/events" className="text-brand-500 hover:underline font-semibold">
           免费体验 5 次活动管理 →
         </Link>
       </p>

@@ -109,18 +109,18 @@ export function LandingStudio() {
   return (
     <div className="space-y-8">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费生成
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $9.9/月 无限生成 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限生成 + HTML 导出
         </div>
       )}
@@ -131,7 +131,7 @@ export function LandingStudio() {
             key={ex.name}
             type="button"
             onClick={() => fillExample(i)}
-            className="rounded-full px-3 py-1.5 text-sm font-medium bg-white border border-stone-200 text-stone-600 hover:bg-stone-50 transition-colors"
+            className="rounded-full px-3 py-1.5 text-sm font-medium bg-surface border border-border text-muted hover:bg-background transition-colors"
           >
             示例：{ex.name}
           </button>
@@ -141,66 +141,66 @@ export function LandingStudio() {
       <div className="grid lg:grid-cols-2 gap-8">
         <form onSubmit={handleGenerate} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">产品名称 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">产品名称 *</label>
             <input
               required
               value={productName}
               onChange={(e) => setProductName(e.target.value)}
               placeholder="TaskFlow"
-              className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">一句话标语 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">一句话标语 *</label>
             <input
               required
               value={tagline}
               onChange={(e) => setTagline(e.target.value)}
               placeholder="独立开发者的极简项目管理"
-              className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">产品描述 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">产品描述 *</label>
             <textarea
               required
               rows={3}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="解决什么问题，目标用户是谁..."
-              className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
+              className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-1">核心功能（每行一个）</label>
+            <label className="block text-sm font-medium text-foreground mb-1">核心功能（每行一个）</label>
             <textarea
               rows={4}
               value={features}
               onChange={(e) => setFeatures(e.target.value)}
               placeholder={"无限项目\nGitHub 同步\n时间追踪"}
-              className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
+              className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
             />
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">CTA 按钮文案</label>
+              <label className="block text-sm font-medium text-foreground mb-1">CTA 按钮文案</label>
               <input
                 value={ctaText}
                 onChange={(e) => setCtaText(e.target.value)}
-                className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">目标用户</label>
+              <label className="block text-sm font-medium text-foreground mb-1">目标用户</label>
               <input
                 value={audience}
                 onChange={(e) => setAudience(e.target.value)}
-                className="w-full rounded-lg border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-stone-700 mb-2">页面风格</label>
+            <label className="block text-sm font-medium text-foreground mb-2">页面风格</label>
             <div className="grid grid-cols-2 gap-2">
               {styleOptions.map((s) => (
                 <button
@@ -209,12 +209,12 @@ export function LandingStudio() {
                   onClick={() => setStyle(s.id)}
                   className={`rounded-lg border p-3 text-left text-sm transition-colors ${
                     style === s.id
-                      ? "border-brand-600 bg-brand-50 ring-1 ring-brand-600"
-                      : "border-stone-200 hover:bg-stone-50"
+                      ? "border-brand-600 bg-brand-600/10 ring-1 ring-brand-600"
+                      : "border-border hover:bg-background"
                   }`}
                 >
                   <span className="font-semibold">{s.label}</span>
-                  <p className="text-xs text-stone-500 mt-0.5">{s.desc}</p>
+                  <p className="text-xs text-muted mt-0.5">{s.desc}</p>
                 </button>
               ))}
             </div>
@@ -241,7 +241,7 @@ export function LandingStudio() {
           )}
 
           {!result && !loading && !error && (
-            <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-12 text-center text-stone-400">
+            <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-4">🎨</p>
               <p>填写左侧表单，点击生成</p>
               <p className="text-sm mt-2">或选择上方示例快速体验</p>
@@ -249,7 +249,7 @@ export function LandingStudio() {
           )}
 
           {loading && (
-            <div className="rounded-xl border border-stone-200 bg-white p-12 text-center text-stone-400">
+            <div className="rounded-xl border border-border bg-surface p-12 text-center text-muted">
               正在生成 landing page...
             </div>
           )}
@@ -257,7 +257,7 @@ export function LandingStudio() {
           {result && (
             <div className="space-y-4">
               <div
-                className="rounded-xl border border-stone-200 overflow-hidden"
+                className="rounded-xl border border-border overflow-hidden"
                 style={{
                   background:
                     result.preview.style === "dark"
@@ -316,7 +316,7 @@ export function LandingStudio() {
                 <button
                   type="button"
                   onClick={copyHtml}
-                  className="flex-1 min-w-[120px] rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-50"
+                  className="flex-1 min-w-[120px] rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-background"
                 >
                   {copied ? "已复制 ✓" : "复制 HTML"}
                 </button>
@@ -329,15 +329,15 @@ export function LandingStudio() {
                 </button>
               </div>
 
-              <div className="rounded-xl border border-stone-200 bg-white p-4 text-sm">
+              <div className="rounded-xl border border-border bg-surface p-4 text-sm">
                 <h3 className="font-semibold mb-2">SEO Meta</h3>
-                <p className="text-stone-600"><strong>Title:</strong> {result.meta.title}</p>
-                <p className="text-stone-600 mt-1"><strong>Description:</strong> {result.meta.description}</p>
+                <p className="text-muted"><strong>Title:</strong> {result.meta.title}</p>
+                <p className="text-muted mt-1"><strong>Description:</strong> {result.meta.description}</p>
               </div>
 
-              <div className="rounded-xl border border-brand-200 bg-brand-50 p-4 text-sm">
+              <div className="rounded-xl border border-brand-200 bg-brand-600/10 p-4 text-sm">
                 <h3 className="font-semibold text-brand-800 mb-2">💡 优化建议</h3>
-                <ul className="space-y-1 text-brand-700">
+                <ul className="space-y-1 text-brand-500">
                   {result.tips.map((tip) => (
                     <li key={tip}>· {tip}</li>
                   ))}
@@ -346,7 +346,7 @@ export function LandingStudio() {
 
               {!trial?.isMember && (
                 <div className="text-center pt-2">
-                  <p className="text-sm text-stone-500 mb-2">订阅解锁无限生成 + 托管部署</p>
+                  <p className="text-sm text-muted mb-2">订阅解锁无限生成 + 托管部署</p>
                   <Link
                     href="/join"
                     className="inline-block bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700"

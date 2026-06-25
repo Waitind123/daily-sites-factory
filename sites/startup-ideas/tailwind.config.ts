@@ -10,12 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          50: "#fff7ed",
-          100: "#ffedd5",
-          500: "#f97316",
-          600: "#ea580c",
-          700: "#c2410c",
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          500: "#6366f1",
+          600: "#6366f1",
+          700: "#4f46e5",
         },
+        background: "var(--bg)",
+        foreground: "var(--fg)",
+        muted: "var(--muted)",
+        border: "var(--border)",
+        surface: "var(--surface)",
+        "surface-muted": "var(--surface-muted)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],

@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         Indie 开发者竞品定价监控指南：如何自动追踪 SaaS 价格变动
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -173,11 +173,11 @@ export default function GuidePage() {
         <Link href="/join">$9.9/月无限追踪 + 邮件提醒</Link>。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
-        <h3 className="text-xl font-bold text-stone-900 mb-2">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
+        <h3 className="text-xl font-bold text-foreground mb-2">
           停止手动截图，开始自动追踪
         </h3>
-        <p className="text-stone-600 mb-4">
+        <p className="text-muted mb-4">
           免费体验 5 次 · 追踪 6+ 主流 SaaS 定价变动
         </p>
         <Link

@@ -152,18 +152,18 @@ export function TimezonePlanner() {
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $9.9/月 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限规划 + ICS 导出 + 团队模板
         </div>
       )}
@@ -179,26 +179,26 @@ export function TimezonePlanner() {
         </div>
       )}
 
-      <form onSubmit={handlePlan} className="rounded-2xl border border-stone-200 bg-white p-6 space-y-5">
+      <form onSubmit={handlePlan} className="rounded-2xl border border-border bg-surface p-6 space-y-5">
         <div>
-          <label className="block text-sm font-medium text-stone-700 mb-3">团队成员</label>
+          <label className="block text-sm font-medium text-foreground mb-3">团队成员</label>
           <div className="space-y-3">
             {participants.map((p) => (
               <div
                 key={p.id}
-                className="flex flex-col sm:flex-row gap-2 sm:items-center rounded-lg border border-stone-200 p-3 bg-stone-50"
+                className="flex flex-col sm:flex-row gap-2 sm:items-center rounded-lg border border-border p-3 bg-background"
               >
                 <input
                   type="text"
                   value={p.name}
                   onChange={(e) => updateParticipant(p.id, "name", e.target.value)}
-                  className="w-full sm:w-24 rounded-lg border border-stone-300 px-2 py-1.5 text-sm"
+                  className="w-full sm:w-24 rounded-lg border border-border px-2 py-1.5 text-sm"
                   placeholder="名称"
                 />
                 <select
                   value={p.timezone}
                   onChange={(e) => updateParticipant(p.id, "timezone", e.target.value)}
-                  className="flex-1 rounded-lg border border-stone-300 px-2 py-1.5 text-sm bg-white"
+                  className="flex-1 rounded-lg border border-border px-2 py-1.5 text-sm bg-surface"
                 >
                   {CITY_PRESETS.map((c) => (
                     <option key={c.id} value={c.timezone}>
@@ -213,27 +213,27 @@ export function TimezonePlanner() {
                     max={23}
                     value={p.workStart}
                     onChange={(e) => updateParticipant(p.id, "workStart", Number(e.target.value))}
-                    className="w-14 rounded-lg border border-stone-300 px-2 py-1.5 text-sm text-center"
+                    className="w-14 rounded-lg border border-border px-2 py-1.5 text-sm text-center"
                   />
-                  <span className="text-stone-400">–</span>
+                  <span className="text-muted">–</span>
                   <input
                     type="number"
                     min={1}
                     max={24}
                     value={p.workEnd}
                     onChange={(e) => updateParticipant(p.id, "workEnd", Number(e.target.value))}
-                    className="w-14 rounded-lg border border-stone-300 px-2 py-1.5 text-sm text-center"
+                    className="w-14 rounded-lg border border-border px-2 py-1.5 text-sm text-center"
                   />
-                  <span className="text-xs text-stone-400 hidden sm:inline">本地</span>
+                  <span className="text-xs text-muted hidden sm:inline">本地</span>
                 </div>
-                <div className="text-xs text-stone-500 sm:w-20 text-right">
+                <div className="text-xs text-muted sm:w-20 text-right">
                   现在 {getCurrentTimeInZone(p.timezone)}
                 </div>
                 {participants.length > 2 && (
                   <button
                     type="button"
                     onClick={() => removeParticipant(p.id)}
-                    className="text-stone-400 hover:text-red-500 text-sm"
+                    className="text-muted hover:text-red-500 text-sm"
                   >
                     ✕
                   </button>
@@ -252,7 +252,7 @@ export function TimezonePlanner() {
                   key={c.id}
                   type="button"
                   onClick={() => addParticipant(c.id)}
-                  className="rounded-full border border-stone-200 px-3 py-1 text-xs hover:border-brand-400 hover:bg-brand-50 transition-colors"
+                  className="rounded-full border border-border px-3 py-1 text-xs hover:border-brand-400 hover:bg-brand-600/10 transition-colors"
                 >
                   + {c.flag} {c.name}
                 </button>
@@ -261,7 +261,7 @@ export function TimezonePlanner() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-stone-700 mb-2">会议时长</label>
+          <label className="block text-sm font-medium text-foreground mb-2">会议时长</label>
           <div className="flex gap-2">
             {durationOptions.map((d) => (
               <button
@@ -270,8 +270,8 @@ export function TimezonePlanner() {
                 onClick={() => setDuration(d.value)}
                 className={`rounded-lg border px-4 py-2 text-sm transition-colors ${
                   duration === d.value
-                    ? "border-brand-600 bg-brand-50 text-brand-800 font-medium"
-                    : "border-stone-200 hover:border-stone-300"
+                    ? "border-brand-600 bg-brand-600/10 text-brand-800 font-medium"
+                    : "border-border hover:border-border"
                 }`}
               >
                 {d.label}
@@ -291,7 +291,7 @@ export function TimezonePlanner() {
 
       {result && (
         <div className="space-y-4">
-          <div className="rounded-xl border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600">
+          <div className="rounded-xl border border-border bg-background p-4 text-sm text-muted">
             扫描未来 <strong>{result.daysScanned}</strong> 天 · 找到{" "}
             <strong>{result.slots.length}</strong> 个推荐时段 · 日均重叠约{" "}
             <strong>{result.totalOverlapHours}</strong> 小时
@@ -311,23 +311,23 @@ export function TimezonePlanner() {
                 return (
                   <div
                     key={slot.startUtc}
-                    className="rounded-xl border border-stone-200 bg-white p-4 sm:p-5"
+                    className="rounded-xl border border-border bg-surface p-4 sm:p-5"
                   >
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="text-lg font-bold text-stone-900">#{i + 1}</span>
+                          <span className="text-lg font-bold text-foreground">#{i + 1}</span>
                           <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${misery.color}`}>
                             痛苦指数 {slot.miseryScore} · {misery.text}
                           </span>
                         </div>
-                        <p className="text-sm text-stone-500 mt-1">{slot.fairnessNote}</p>
+                        <p className="text-sm text-muted mt-1">{slot.fairnessNote}</p>
                       </div>
                       {trial?.isMember && (
                         <button
                           type="button"
                           onClick={() => exportIcs(slot)}
-                          className="text-sm text-brand-600 hover:underline shrink-0"
+                          className="text-sm text-brand-500 hover:underline shrink-0"
                         >
                           导出 ICS
                         </button>

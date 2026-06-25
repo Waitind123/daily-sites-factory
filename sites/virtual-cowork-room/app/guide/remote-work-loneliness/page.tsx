@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         如何克服远程办公孤独感：Body Doubling 与虚拟共工完全指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 10 分钟
       </p>
 
@@ -59,7 +59,7 @@ export default function GuidePage() {
       <h2>三、虚拟共工室如何工作？</h2>
       <p>
         我们的{" "}
-        <Link href="/room" className="text-brand-600 hover:underline">
+        <Link href="/room" className="text-brand-500 hover:underline">
           虚拟共工室
         </Link>{" "}
         提供四种共工模式：
@@ -75,7 +75,7 @@ export default function GuidePage() {
       </p>
       <p>
         非会员可免费体验 5 次共工会话。体验后如果觉得有效，{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           $9.9/月
         </Link>{" "}
         即可无限使用。比 Focusmate 的 $5/周（1v1 视频）便宜，比咖啡馆日票更安静。
@@ -163,9 +163,9 @@ export default function GuidePage() {
         如果 5 次免费体验后你觉得有价值，$9.9/月解锁无限会话。没有年付绑架，没有功能分级——一个价格，全部功能。这就是 levelsio 风格的定价：简单、直接、第一天就收费。
       </p>
 
-      <div className="not-prose mt-10 rounded-2xl bg-brand-50 border border-brand-200 p-8 text-center">
-        <h3 className="text-xl font-bold text-stone-900 mb-2">准备好告别远程孤独了吗？</h3>
-        <p className="text-stone-600 mb-6">免费体验 5 次共工会话，感受 Body Doubling 的力量</p>
+      <div className="not-prose mt-10 rounded-2xl bg-brand-600/10 border border-brand-200 p-8 text-center">
+        <h3 className="text-xl font-bold text-foreground mb-2">准备好告别远程孤独了吗？</h3>
+        <p className="text-muted mb-6">免费体验 5 次共工会话，感受 Body Doubling 的力量</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/room"
@@ -175,7 +175,7 @@ export default function GuidePage() {
           </Link>
           <Link
             href="/join"
-            className="inline-block rounded-xl border border-brand-300 px-8 py-3 text-brand-700 font-semibold hover:bg-brand-100 transition-colors"
+            className="inline-block rounded-xl border border-brand-300 px-8 py-3 text-brand-500 font-semibold hover:bg-brand-100 transition-colors"
           >
             订阅 $9.9/月
           </Link>

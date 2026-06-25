@@ -100,10 +100,10 @@ export function DayPassBoard() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">今日可订日票</h1>
-          <p className="text-stone-500 mt-1">{filtered.length} 个场地 · 实时库存更新</p>
+          <p className="text-muted mt-1">{filtered.length} 个场地 · 实时库存更新</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限预订"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -117,13 +117,13 @@ export function DayPassBoard() {
           placeholder="搜索城市、场地名称…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full rounded-xl border border-stone-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full rounded-xl border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
         />
         <div className="flex flex-wrap gap-2">
           <select
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className="rounded-full border border-stone-200 px-3 py-1 text-xs font-medium bg-white text-stone-600"
+            className="rounded-full border border-border px-3 py-1 text-xs font-medium bg-surface text-muted"
           >
             <option value="">全部城市</option>
             {cities.map((c) => (
@@ -140,7 +140,7 @@ export function DayPassBoard() {
               className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
                 tag === t
                   ? "bg-brand-600 text-white"
-                  : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+                  : "bg-surface-muted text-muted hover:bg-stone-200"
               }`}
             >
               {t}
@@ -176,22 +176,22 @@ export function DayPassBoard() {
               type="button"
               onClick={() => bookPass(venue.id)}
               disabled={loading}
-              className={`w-full text-left rounded-xl border p-4 transition-colors hover:border-brand-300 hover:bg-brand-50/30 ${
-                selected?.id === venue.id ? "border-brand-600 bg-brand-50" : "border-stone-200 bg-white"
+              className={`w-full text-left rounded-xl border p-4 transition-colors hover:border-brand-300 hover:bg-brand-600/10/30 ${
+                selected?.id === venue.id ? "border-brand-600 bg-brand-600/10" : "border-border bg-surface"
               }`}
             >
               <div className="flex items-start gap-3">
                 <span className="text-2xl">{venue.logo}</span>
                 <div className="flex-1 min-w-0">
-                  <p className="font-semibold text-stone-900 truncate">{venue.name}</p>
-                  <p className="text-sm text-stone-500">
+                  <p className="font-semibold text-foreground truncate">{venue.name}</p>
+                  <p className="text-sm text-muted">
                     {venue.city}, {venue.country}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     <span className={`text-xs px-2 py-0.5 rounded font-medium ${availabilityColor(venue.spotsLeftToday, venue.totalSpots)}`}>
                       今日余 {venue.spotsLeftToday}/{venue.totalSpots}
                     </span>
-                    <span className="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded">
+                    <span className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded">
                       📶 {venue.wifiMbps} Mbps
                     </span>
                     {venue.instantBook && (
@@ -200,7 +200,7 @@ export function DayPassBoard() {
                       </span>
                     )}
                   </div>
-                  <p className="text-sm font-medium text-brand-700 mt-2">{venue.dayPassPrice}</p>
+                  <p className="text-sm font-medium text-brand-500 mt-2">{venue.dayPassPrice}</p>
                 </div>
               </div>
             </button>
@@ -209,46 +209,46 @@ export function DayPassBoard() {
 
         <div className="lg:col-span-3">
           {selected?.booking ? (
-            <div className="rounded-xl border border-brand-200 bg-white p-6 sticky top-24">
-              <div className="rounded-lg bg-brand-50 border border-brand-200 p-4 mb-6">
-                <p className="text-sm text-brand-600 font-medium">预订确认单</p>
+            <div className="rounded-xl border border-brand-200 bg-surface p-6 sticky top-24">
+              <div className="rounded-lg bg-brand-600/10 border border-brand-200 p-4 mb-6">
+                <p className="text-sm text-brand-500 font-medium">预订确认单</p>
                 <p className="text-2xl font-bold text-brand-800 mt-1">{selected.booking.ref}</p>
-                <p className="text-sm text-brand-600 mt-1">{selected.booking.date}</p>
+                <p className="text-sm text-brand-500 mt-1">{selected.booking.date}</p>
               </div>
 
               <div className="flex items-start gap-4">
                 <span className="text-4xl">{selected.logo}</span>
                 <div>
                   <h2 className="text-xl font-bold">{selected.booking.venue}</h2>
-                  <p className="text-stone-500">
+                  <p className="text-muted">
                     {selected.booking.neighborhood} · {selected.booking.city}
                   </p>
                 </div>
               </div>
 
               <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">日票价格</p>
-                  <p className="font-semibold text-brand-700">{selected.booking.price}</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">日票价格</p>
+                  <p className="font-semibold text-brand-500">{selected.booking.price}</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">WiFi 实测</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">WiFi 实测</p>
                   <p className="font-semibold">{selected.booking.wifiMbps} Mbps</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">营业时间</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">营业时间</p>
                   <p className="font-semibold">{selected.booking.hours}</p>
                 </div>
-                <div className="rounded-lg bg-stone-50 p-3">
-                  <p className="text-stone-500 text-xs">预订方式</p>
+                <div className="rounded-lg bg-background p-3">
+                  <p className="text-muted text-xs">预订方式</p>
                   <p className="font-semibold">{selected.booking.instantBook ? "即时入场" : "需提前预约"}</p>
                 </div>
               </div>
 
               {selected.booking.tips.length > 0 && (
                 <div className="mt-6">
-                  <h3 className="font-semibold text-stone-900 mb-2 text-sm">入场贴士</h3>
-                  <ul className="list-disc list-inside text-stone-600 text-sm space-y-1">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm">入场贴士</h3>
+                  <ul className="list-disc list-inside text-muted text-sm space-y-1">
                     {selected.booking.tips.map((tip) => (
                       <li key={tip}>{tip}</li>
                     ))}
@@ -267,16 +267,16 @@ export function DayPassBoard() {
                 </a>
               )}
 
-              <p className="mt-4 text-xs text-stone-400 text-center">
+              <p className="mt-4 text-xs text-muted text-center">
                 此为预订指引确认单，实际付款请在场地官网完成
               </p>
             </div>
           ) : selected ? (
-            <div className="rounded-xl border border-stone-200 bg-white p-6 sticky top-24">
-              <p className="text-stone-500">加载预订信息中…</p>
+            <div className="rounded-xl border border-border bg-surface p-6 sticky top-24">
+              <p className="text-muted">加载预订信息中…</p>
             </div>
           ) : (
-            <div className="rounded-xl border border-dashed border-stone-300 bg-stone-50 p-12 text-center text-stone-400">
+            <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-3">🎫</p>
               <p>点击左侧场地预订今日日票</p>
               <p className="text-sm mt-1">非会员免费体验 5 次</p>

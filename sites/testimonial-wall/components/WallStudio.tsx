@@ -106,10 +106,10 @@ export function WallStudio() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">创建证言墙</h1>
-          <p className="text-stone-500 mt-1">输入好评，一键生成可嵌入的 Wall of Love</p>
+          <p className="text-muted mt-1">输入好评，一键生成可嵌入的 Wall of Love</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限生成"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -118,11 +118,11 @@ export function WallStudio() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8">
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <h2 className="font-semibold text-lg mb-4">产品信息</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 产品名称 *
               </label>
               <input
@@ -130,21 +130,21 @@ export function WallStudio() {
                 value={form.productName}
                 onChange={(e) => setForm({ ...form, productName: e.target.value })}
                 placeholder="例：我的 SaaS"
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 标语
               </label>
               <input
                 value={form.tagline}
                 onChange={(e) => setForm({ ...form, tagline: e.target.value })}
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 布局
               </label>
               <select
@@ -155,7 +155,7 @@ export function WallStudio() {
                     layout: e.target.value as "grid" | "carousel" | "masonry",
                   })
                 }
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
                 <option value="grid">网格</option>
                 <option value="carousel">轮播</option>
@@ -163,26 +163,26 @@ export function WallStudio() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 主题色
               </label>
               <input
                 type="color"
                 value={form.accentColor}
                 onChange={(e) => setForm({ ...form, accentColor: e.target.value })}
-                className="w-full h-10 rounded-lg border border-stone-300 cursor-pointer"
+                className="w-full h-10 rounded-lg border border-border cursor-pointer"
               />
             </div>
           </div>
         </section>
 
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">用户好评</h2>
             <button
               type="button"
               onClick={addTestimonial}
-              className="text-sm text-brand-600 hover:text-brand-700 font-medium"
+              className="text-sm text-brand-500 hover:text-brand-500 font-medium"
             >
               + 添加一条
             </button>
@@ -191,17 +191,17 @@ export function WallStudio() {
             {form.testimonials.map((t, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-stone-100 bg-stone-50 p-4 space-y-3"
+                className="rounded-xl border border-border bg-background p-4 space-y-3"
               >
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-stone-500">
+                  <span className="text-sm font-medium text-muted">
                     好评 #{i + 1}
                   </span>
                   {form.testimonials.length > 1 && (
                     <button
                       type="button"
                       onClick={() => removeTestimonial(i)}
-                      className="text-xs text-stone-400 hover:text-red-500"
+                      className="text-xs text-muted hover:text-red-500"
                     >
                       删除
                     </button>
@@ -213,13 +213,13 @@ export function WallStudio() {
                     value={t.name}
                     onChange={(e) => updateTestimonial(i, "name", e.target.value)}
                     placeholder="姓名"
-                    className="rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                    className="rounded-lg border border-border px-3 py-2 text-sm"
                   />
                   <input
                     value={t.role}
                     onChange={(e) => updateTestimonial(i, "role", e.target.value)}
                     placeholder="职位 / 角色"
-                    className="rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                    className="rounded-lg border border-border px-3 py-2 text-sm"
                   />
                 </div>
                 <textarea
@@ -228,16 +228,16 @@ export function WallStudio() {
                   onChange={(e) => updateTestimonial(i, "text", e.target.value)}
                   placeholder="用户好评内容"
                   rows={2}
-                  className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                  className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-stone-500">评分</span>
+                  <span className="text-sm text-muted">评分</span>
                   {[1, 2, 3, 4, 5].map((n) => (
                     <button
                       key={n}
                       type="button"
                       onClick={() => updateTestimonial(i, "rating", n)}
-                      className={`text-lg ${t.rating >= n ? "text-brand-600" : "text-stone-300"}`}
+                      className={`text-lg ${t.rating >= n ? "text-brand-500" : "text-muted/60"}`}
                     >
                       ★
                     </button>
@@ -253,9 +253,9 @@ export function WallStudio() {
         )}
 
         {showPaywall && (
-          <div className="rounded-xl border-2 border-brand-600 bg-brand-50 p-6 text-center">
+          <div className="rounded-xl border-2 border-brand-600 bg-brand-600/10 p-6 text-center">
             <p className="font-semibold text-brand-800">免费体验已用完</p>
-            <p className="text-sm text-brand-700 mt-1">
+            <p className="text-sm text-brand-500 mt-1">
               订阅 $9.9/月，无限生成证言墙和嵌入代码
             </p>
             <Link
@@ -280,15 +280,15 @@ export function WallStudio() {
         <div className="mt-12 space-y-6">
           <h2 className="text-2xl font-bold">生成结果</h2>
 
-          <div className="rounded-2xl border border-stone-200 bg-white overflow-hidden">
-            <div className="border-b border-stone-200 flex">
+          <div className="rounded-2xl border border-border bg-surface overflow-hidden">
+            <div className="border-b border-border flex">
               <button
                 type="button"
                 onClick={() => setActiveTab("embed")}
                 className={`px-4 py-3 text-sm font-medium ${
                   activeTab === "embed"
-                    ? "text-brand-600 border-b-2 border-brand-600"
-                    : "text-stone-500"
+                    ? "text-brand-500 border-b-2 border-brand-600"
+                    : "text-muted"
                 }`}
               >
                 嵌入代码
@@ -298,8 +298,8 @@ export function WallStudio() {
                 onClick={() => setActiveTab("email")}
                 className={`px-4 py-3 text-sm font-medium ${
                   activeTab === "email"
-                    ? "text-brand-600 border-b-2 border-brand-600"
-                    : "text-stone-500"
+                    ? "text-brand-500 border-b-2 border-brand-600"
+                    : "text-muted"
                 }`}
               >
                 收集邮件模板
@@ -318,17 +318,17 @@ export function WallStudio() {
                       : result.collectionEmailTemplate
                   )
                 }
-                className="mt-3 text-sm text-brand-600 hover:text-brand-700 font-medium"
+                className="mt-3 text-sm text-brand-500 hover:text-brand-500 font-medium"
               >
                 复制到剪贴板
               </button>
             </div>
           </div>
 
-          <div className="rounded-2xl border border-stone-200 bg-white p-6">
+          <div className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="font-semibold mb-4">预览</h3>
             <div
-              className="rounded-xl border border-stone-100 overflow-hidden"
+              className="rounded-xl border border-border overflow-hidden"
               dangerouslySetInnerHTML={{ __html: result.embedHtml }}
             />
           </div>

@@ -74,18 +74,18 @@ export function EventBrowser() {
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费活动管理
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $9.9/月 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限管理活动和 RSVP
         </div>
       )}
@@ -99,7 +99,7 @@ export function EventBrowser() {
             className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
               cityFilter === city
                 ? "bg-brand-600 text-white"
-                : "bg-white border border-stone-200 text-stone-600 hover:bg-stone-50"
+                : "bg-surface border border-border text-muted hover:bg-background"
             }`}
           >
             {city}
@@ -116,7 +116,7 @@ export function EventBrowser() {
             className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
               catFilter === cat
                 ? "bg-stone-800 text-white"
-                : "bg-white border border-stone-200 text-stone-600 hover:bg-stone-50"
+                : "bg-surface border border-border text-muted hover:bg-background"
             }`}
           >
             {cat}
@@ -128,10 +128,10 @@ export function EventBrowser() {
         {events.map((event) => (
           <article
             key={event.id}
-            className="rounded-xl border border-stone-200 bg-white p-5 hover:border-brand-300 transition-colors"
+            className="rounded-xl border border-border bg-surface p-5 hover:border-brand-300 transition-colors"
           >
             <div className="flex items-start justify-between gap-2 mb-2">
-              <span className="text-xs font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded">
+              <span className="text-xs font-medium text-brand-500 bg-brand-600/10 px-2 py-0.5 rounded">
                 {event.category} · {event.city}
               </span>
               <CapacityBadge
@@ -139,17 +139,17 @@ export function EventBrowser() {
                 capacity={event.capacity}
               />
             </div>
-            <h3 className="font-bold text-lg text-stone-900">{event.title}</h3>
-            <p className="text-sm text-stone-500 mt-1">
+            <h3 className="font-bold text-lg text-foreground">{event.title}</h3>
+            <p className="text-sm text-muted mt-1">
               {event.date} {event.time} · {event.venue}
             </p>
-            <p className="text-sm text-stone-600 mt-3 line-clamp-2">{event.preview}</p>
-            <div className="flex items-center justify-between mt-4 pt-3 border-t border-stone-100">
-              <div className="text-xs text-stone-400">组织者 {event.organizer}</div>
+            <p className="text-sm text-muted mt-3 line-clamp-2">{event.preview}</p>
+            <div className="flex items-center justify-between mt-4 pt-3 border-t border-border">
+              <div className="text-xs text-muted">组织者 {event.organizer}</div>
               <button
                 type="button"
                 onClick={() => viewManagement(event)}
-                className="text-sm font-semibold text-brand-600 hover:text-brand-700"
+                className="text-sm font-semibold text-brand-500 hover:text-brand-500"
               >
                 管理 RSVP →
               </button>
@@ -164,32 +164,32 @@ export function EventBrowser() {
           onClick={closeModal}
         >
           <div
-            className="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
+            className="bg-surface rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4 mb-4">
               <div>
-                <span className="text-xs font-medium text-brand-600">
+                <span className="text-xs font-medium text-brand-500">
                   {selected.category} · {selected.city}
                 </span>
                 <h2 className="text-2xl font-bold mt-1">{selected.title}</h2>
-                <p className="text-stone-500 mt-1">
+                <p className="text-muted mt-1">
                   {selected.date} {selected.time} · {selected.venue}
                 </p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
-                className="text-stone-400 hover:text-stone-600 text-2xl leading-none"
+                className="text-muted hover:text-muted text-2xl leading-none"
               >
                 ×
               </button>
             </div>
 
-            <p className="text-stone-600 mb-6">{selected.description}</p>
+            <p className="text-muted mb-6">{selected.description}</p>
 
             {loading && (
-              <div className="text-center py-12 text-stone-400">加载 RSVP 管理面板...</div>
+              <div className="text-center py-12 text-muted">加载 RSVP 管理面板...</div>
             )}
 
             {error && (
@@ -207,7 +207,7 @@ export function EventBrowser() {
               <div className="space-y-6 text-sm">
                 <section>
                   <h3 className="font-bold text-base mb-2">📊 概览</h3>
-                  <p className="text-stone-600">{management.summary}</p>
+                  <p className="text-muted">{management.summary}</p>
                   <div className="grid grid-cols-3 gap-3 mt-3">
                     <div className="rounded-lg bg-green-50 p-3 text-center">
                       <p className="text-lg font-bold text-green-700">{management.confirmedCount}</p>
@@ -229,7 +229,7 @@ export function EventBrowser() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
-                        <tr className="border-b border-stone-200">
+                        <tr className="border-b border-border">
                           <th className="py-2 pr-4 font-medium">姓名</th>
                           <th className="py-2 pr-4 font-medium">状态</th>
                           <th className="py-2 font-medium">备注</th>
@@ -237,7 +237,7 @@ export function EventBrowser() {
                       </thead>
                       <tbody>
                         {management.attendees.map((a) => (
-                          <tr key={a.id} className="border-b border-stone-100">
+                          <tr key={a.id} className="border-b border-border">
                             <td className="py-2 pr-4">{a.name}</td>
                             <td className="py-2 pr-4">
                               <span
@@ -246,7 +246,7 @@ export function EventBrowser() {
                                     ? "bg-green-100 text-green-700"
                                     : a.status === "waitlist"
                                       ? "bg-amber-100 text-amber-700"
-                                      : "bg-stone-100 text-stone-600"
+                                      : "bg-surface-muted text-muted"
                                 }`}
                               >
                                 {a.status === "confirmed"
@@ -256,7 +256,7 @@ export function EventBrowser() {
                                     : a.status}
                               </span>
                             </td>
-                            <td className="py-2 text-stone-500">{a.notes || "—"}</td>
+                            <td className="py-2 text-muted">{a.notes || "—"}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -266,7 +266,7 @@ export function EventBrowser() {
 
                 <section>
                   <h3 className="font-bold text-base mb-2">⏳ 候补管理建议</h3>
-                  <ul className="space-y-1 text-stone-600">
+                  <ul className="space-y-1 text-muted">
                     {management.waitlistTips.map((tip) => (
                       <li key={tip}>· {tip}</li>
                     ))}
@@ -275,30 +275,30 @@ export function EventBrowser() {
 
                 <section>
                   <h3 className="font-bold text-base mb-2">📧 提醒模板</h3>
-                  <div className="rounded-lg bg-stone-50 border border-stone-200 p-4 text-stone-600 font-mono text-xs">
+                  <div className="rounded-lg bg-background border border-border p-4 text-muted font-mono text-xs">
                     {management.reminderTemplate}
                   </div>
                 </section>
 
                 <section>
                   <h3 className="font-bold text-base mb-2">✅ 签到指南</h3>
-                  <ul className="space-y-1 text-stone-600">
+                  <ul className="space-y-1 text-muted">
                     {management.checkInNotes.map((note) => (
                       <li key={note}>· {note}</li>
                     ))}
                   </ul>
                 </section>
 
-                <section className="rounded-xl bg-brand-50 border border-brand-200 p-4">
+                <section className="rounded-xl bg-brand-600/10 border border-brand-200 p-4">
                   <h3 className="font-bold text-base mb-2">💡 容量建议</h3>
-                  <p className="text-stone-700">{management.capacityAdvice}</p>
+                  <p className="text-foreground">{management.capacityAdvice}</p>
                 </section>
               </div>
             )}
 
             {!trial?.isMember && management && (
-              <div className="mt-6 pt-6 border-t border-stone-200 text-center">
-                <p className="text-sm text-stone-500 mb-3">
+              <div className="mt-6 pt-6 border-t border-border text-center">
+                <p className="text-sm text-muted mb-3">
                   喜欢这种管理面板？订阅解锁无限活动和 RSVP 管理
                 </p>
                 <Link

@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --fg: #f4f4f5;
+  --muted: #a1a1aa;
+  --border: #27272a;
+  --surface: #18181b;
+  --surface-muted: #111113;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

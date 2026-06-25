@@ -71,18 +71,18 @@ export function ToolBrowser() {
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费深度评测
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $9.9/月 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限查阅深度评测
         </div>
       )}
@@ -96,7 +96,7 @@ export function ToolBrowser() {
             className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
               filter === cat
                 ? "bg-brand-600 text-white"
-                : "bg-white border border-stone-200 text-stone-600 hover:bg-stone-50"
+                : "bg-surface border border-border text-muted hover:bg-background"
             }`}
           >
             {cat}
@@ -108,25 +108,25 @@ export function ToolBrowser() {
         {tools.map((tool) => (
           <article
             key={tool.id}
-            className="rounded-xl border border-stone-200 bg-white p-5 hover:border-brand-300 transition-colors"
+            className="rounded-xl border border-border bg-surface p-5 hover:border-brand-300 transition-colors"
           >
             <div className="flex items-start justify-between gap-2 mb-2">
-              <span className="text-xs font-medium text-brand-600 bg-brand-50 px-2 py-0.5 rounded">
+              <span className="text-xs font-medium text-brand-500 bg-brand-600/10 px-2 py-0.5 rounded">
                 {tool.category}
               </span>
               <IndieScoreBadge score={tool.indieScore} />
             </div>
-            <h3 className="font-bold text-lg text-stone-900">{tool.name}</h3>
-            <p className="text-sm text-stone-500 mt-1">{tool.tagline}</p>
-            <p className="text-sm text-stone-600 mt-3 line-clamp-2">{tool.preview}</p>
-            <div className="flex items-center justify-between mt-4 pt-3 border-t border-stone-100">
-              <div className="text-xs text-stone-400">
+            <h3 className="font-bold text-lg text-foreground">{tool.name}</h3>
+            <p className="text-sm text-muted mt-1">{tool.tagline}</p>
+            <p className="text-sm text-muted mt-3 line-clamp-2">{tool.preview}</p>
+            <div className="flex items-center justify-between mt-4 pt-3 border-t border-border">
+              <div className="text-xs text-muted">
                 {tool.pricing} · {tool.website}
               </div>
               <button
                 type="button"
                 onClick={() => viewReview(tool)}
-                className="text-sm font-semibold text-brand-600 hover:text-brand-700"
+                className="text-sm font-semibold text-brand-500 hover:text-brand-500"
               >
                 深度评测 →
               </button>
@@ -141,28 +141,28 @@ export function ToolBrowser() {
           onClick={closeModal}
         >
           <div
-            className="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
+            className="bg-surface rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4 mb-4">
               <div>
-                <span className="text-xs font-medium text-brand-600">{selected.category}</span>
+                <span className="text-xs font-medium text-brand-500">{selected.category}</span>
                 <h2 className="text-2xl font-bold mt-1">{selected.name}</h2>
-                <p className="text-stone-500 mt-1">{selected.tagline}</p>
+                <p className="text-muted mt-1">{selected.tagline}</p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
-                className="text-stone-400 hover:text-stone-600 text-2xl leading-none"
+                className="text-muted hover:text-muted text-2xl leading-none"
               >
                 ×
               </button>
             </div>
 
-            <p className="text-stone-600 mb-6">{selected.preview}</p>
+            <p className="text-muted mb-6">{selected.preview}</p>
 
             {loading && (
-              <div className="text-center py-12 text-stone-400">加载深度评测中...</div>
+              <div className="text-center py-12 text-muted">加载深度评测中...</div>
             )}
 
             {error && (
@@ -180,7 +180,7 @@ export function ToolBrowser() {
               <div className="space-y-6 text-sm">
                 <section>
                   <h3 className="font-bold text-base mb-2">📝 综述</h3>
-                  <p className="text-stone-600">{review.summary}</p>
+                  <p className="text-muted">{review.summary}</p>
                 </section>
                 <section>
                   <h3 className="font-bold text-base mb-2">🎯 最适合</h3>
@@ -188,7 +188,7 @@ export function ToolBrowser() {
                     {review.bestFor.map((item) => (
                       <li
                         key={item}
-                        className="bg-brand-50 text-brand-700 px-2 py-1 rounded text-xs"
+                        className="bg-brand-600/10 text-brand-500 px-2 py-1 rounded text-xs"
                       >
                         {item}
                       </li>
@@ -197,14 +197,14 @@ export function ToolBrowser() {
                 </section>
                 <section>
                   <h3 className="font-bold text-base mb-2">💰 定价详情</h3>
-                  <p className="text-stone-600">{review.pricingDetail}</p>
+                  <p className="text-muted">{review.pricingDetail}</p>
                 </section>
                 <section>
                   <h3 className="font-bold text-base mb-2">🔄 替代方案</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
-                        <tr className="border-b border-stone-200">
+                        <tr className="border-b border-border">
                           <th className="py-2 pr-4 font-medium">工具</th>
                           <th className="py-2 pr-4 font-medium">定价</th>
                           <th className="py-2 font-medium">何时选择</th>
@@ -212,10 +212,10 @@ export function ToolBrowser() {
                       </thead>
                       <tbody>
                         {review.alternatives.map((alt) => (
-                          <tr key={alt.name} className="border-b border-stone-100">
+                          <tr key={alt.name} className="border-b border-border">
                             <td className="py-2 pr-4">{alt.name}</td>
-                            <td className="py-2 pr-4 text-brand-600">{alt.pricing}</td>
-                            <td className="py-2 text-stone-500">{alt.when}</td>
+                            <td className="py-2 pr-4 text-brand-500">{alt.pricing}</td>
+                            <td className="py-2 text-muted">{alt.when}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -225,7 +225,7 @@ export function ToolBrowser() {
                 <section className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <h3 className="font-bold text-base mb-2">✅ 优点</h3>
-                    <ul className="space-y-1 text-stone-600">
+                    <ul className="space-y-1 text-muted">
                       {review.pros.map((p) => (
                         <li key={p}>· {p}</li>
                       ))}
@@ -233,7 +233,7 @@ export function ToolBrowser() {
                   </div>
                   <div>
                     <h3 className="font-bold text-base mb-2">⚠️ 缺点</h3>
-                    <ul className="space-y-1 text-stone-600">
+                    <ul className="space-y-1 text-muted">
                       {review.cons.map((c) => (
                         <li key={c}>· {c}</li>
                       ))}
@@ -242,22 +242,22 @@ export function ToolBrowser() {
                 </section>
                 <section>
                   <h3 className="font-bold text-base mb-2">⚡ 接入步骤</h3>
-                  <ol className="list-decimal list-inside space-y-1 text-stone-600">
+                  <ol className="list-decimal list-inside space-y-1 text-muted">
                     {review.setupTips.map((step) => (
                       <li key={step}>{step}</li>
                     ))}
                   </ol>
                 </section>
-                <section className="rounded-xl bg-brand-50 border border-brand-200 p-4">
+                <section className="rounded-xl bg-brand-600/10 border border-brand-200 p-4">
                   <h3 className="font-bold text-base mb-2">🏆 结论</h3>
-                  <p className="text-stone-700">{review.verdict}</p>
+                  <p className="text-foreground">{review.verdict}</p>
                 </section>
               </div>
             )}
 
             {!trial?.isMember && review && (
-              <div className="mt-6 pt-6 border-t border-stone-200 text-center">
-                <p className="text-sm text-stone-500 mb-3">
+              <div className="mt-6 pt-6 border-t border-border text-center">
+                <p className="text-sm text-muted mb-3">
                   喜欢这种评测？订阅解锁全部 {tools.length}+ 个工具
                 </p>
                 <Link

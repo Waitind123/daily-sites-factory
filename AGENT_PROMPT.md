@@ -35,6 +35,11 @@
 在 `sites/<vertical-id>/` 创建完整可运行项目：
 
 - **技术栈**：Next.js + TypeScript + Tailwind（默认）
+- **站点标准壳（必须）**：运行 `node scripts/sync-site-shell.mjs <vertical-id>` 同步：
+  - **深色主题**（`#0A0A0F` 背景 + Indigo 强调色）
+  - **右上角语言切换**（默认 English，可切中文，cookie 持久化）
+  - **底部用户留言板**（`/api/feedback` + `FeedbackSection`）
+  - 首页 Hero 使用 `components/HomeHero.tsx` + `lib/copy.ts`（en/zh 双语）
 - **必须包含**：
   - 首页（价值主张清晰）
   - **免费体验 5 次**（核心功能），用尽后提示订阅（见 `docs/FREE-TRIAL-PATTERN.md`）
@@ -44,7 +49,7 @@
   - 演示模式（无支付密钥时模拟支付成功）
   - 移动端适配
 - **风格**：简洁实用，levelsio / Nomad List 风，不要 corporate 模板感
-- **文案**：中文为主，垂直领域专业
+- **文案**：`lib/copy.ts` 提供 en/zh 双语，**默认显示 English**
 
 **免费体验实现**：复制 `templates/free-trial/lib/trial.ts` 到站点 `lib/trial.ts`，改 `SITE_ID`。
 
@@ -128,7 +133,23 @@ npm run build
 
 保留最近 30 条 history，旧的删除。
 
-## 6. 输出报告
+## 6. 处理用户留言
+
+每次运行开始时执行：
+
+```bash
+node scripts/process-feedback.mjs
+```
+
+对每条未回复留言：
+
+1. 用 `node scripts/process-feedback.mjs reply <siteId> <msgId> "回复"` 回复用户
+2. 若建议合理（功能缺失、体验问题），在对应 `sites/<siteId>/` 修改代码并随本次部署 push
+3. 改进完成后在回复中说明已上线
+
+留言数据存储在仓库 `feedback/<siteId>.json`（生产环境需 GitHub Secrets 配置 `GITHUB_TOKEN`）。
+
+## 7. 输出报告
 
 运行结束时输出 Markdown 摘要：
 
@@ -145,14 +166,13 @@ npm run build
 - 一人可维护，避免过度工程
 - Ship fast — 单站 MVP 控制在合理范围，当天可上线
 
-## 环境变量（Automation 中配置）
-
-| 变量 | 用途 |
-|------|------|
-| `VERCEL_TOKEN` | Vercel 部署（GitHub Secrets 已配则可省略） |
-| `STRIPE_SECRET_KEY` | 可选，真实支付（需海外主体） |
-| `POLAR_CHECKOUT_URL` | 无公司收美元（推荐 Polar.sh） |
-| `REPLICATE_API_TOKEN` | AI 证件照生成 API |
+| 变量 | 配置位置 | 用途 |
+|------|----------|------|
+| `GITHUB_TOKEN` | **GitHub Secrets** | 用户留言 API 读写 `feedback/*.json` |
+| `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
+| `STRIPE_SECRET_KEY` | Automation 或站点 `.env` | 可选，真实支付 |
+| `POLAR_CHECKOUT_URL` | Automation 或站点 `.env` | 无公司收美元 |
+| `REPLICATE_API_TOKEN` | Automation 或站点 `.env` | AI 证件照 API |
 
 无公司收款见 `docs/PAYMENTS-NO-COMPANY.md`。
 
@@ -172,7 +192,11 @@ daily-sites-factory/
 │   └── <vertical-id>/
 ├── scripts/
 │   ├── discover-vertical.mjs   # 痛点发现队列管理
-│   └── pick-vertical.mjs       # 选择下一个方向
+│   ├── pick-vertical.mjs       # 选择下一个方向
+│   ├── sync-site-shell.mjs     # 同步深色主题 / i18n / 留言板
+│   └── process-feedback.mjs    # 读取并回复用户留言
+├── feedback/                   # 各站用户留言（按 siteId 分文件）
+├── templates/site-shell/       # 站点标准壳模板
 ├── AGENT_PROMPT.md             # 本文件
 └── .github/workflows/
 ```

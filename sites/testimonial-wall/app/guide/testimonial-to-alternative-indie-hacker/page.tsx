@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 独立开发者 Testimonial.to 替代方案：完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -65,7 +65,7 @@ export default function GuidePage() {
         专注做一件事：快速生成可嵌入的 Wall of Love + 收集邮件模板。没有视频证言、没有 Chrome 扩展、没有 10 平台导入。纯 HTML/CSS 嵌入，零第三方 JS，不影响页面性能。适合只需要文字证言、追求极简和性价比的独立开发者。
       </p>
       <p>
-        使用 <Link href="/build" className="text-brand-600 hover:underline">证言墙</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
+        使用 <Link href="/build" className="text-brand-500 hover:underline">证言墙</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
       </p>
 
       <h2>三、如何选择：决策框架</h2>
@@ -133,13 +133,13 @@ export default function GuidePage() {
       </p>
       <p>
         如果你只需要文字证言、追求极简嵌入、预算敏感——
-        <Link href="/join" className="text-brand-600 hover:underline">证言墙 $9.9/月</Link>
+        <Link href="/join" className="text-brand-500 hover:underline">证言墙 $9.9/月</Link>
         可能是目前性价比最高的选择。免费体验 5 次，无风险试用。
       </p>
 
-      <div className="not-prose mt-12 rounded-2xl bg-brand-50 border border-brand-200 p-8 text-center">
+      <div className="not-prose mt-12 rounded-2xl bg-brand-600/10 border border-brand-200 p-8 text-center">
         <h3 className="text-xl font-bold text-brand-900">准备好搭建你的证言墙了吗？</h3>
-        <p className="text-brand-700 mt-2">免费体验 5 次 · 之后 $9.9/月</p>
+        <p className="text-brand-500 mt-2">免费体验 5 次 · 之后 $9.9/月</p>
         <Link
           href="/build"
           className="inline-block mt-4 bg-brand-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-700"

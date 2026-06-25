@@ -7,24 +7,24 @@ export default function JoinPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-20">
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-stone-900 sm:text-4xl">加入 OG Image Studio</h1>
-        <p className="mt-3 text-stone-500">
+        <h1 className="text-3xl font-bold text-foreground sm:text-4xl">加入 OG Image Studio</h1>
+        <p className="mt-3 text-muted">
           一个价格，全部功能。Bannerbear 的 1/5 价格。
         </p>
       </div>
 
-      <div className="rounded-2xl border-2 border-brand-600 bg-white p-8 shadow-lg relative overflow-hidden">
+      <div className="rounded-2xl border-2 border-brand-600 bg-surface p-8 shadow-lg relative overflow-hidden">
         <div className="absolute top-0 right-0 bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-xl">
           推荐
         </div>
 
         <div className="text-center">
-          <p className="text-sm font-medium text-brand-600 mb-2">月度会员</p>
+          <p className="text-sm font-medium text-brand-500 mb-2">月度会员</p>
           <div className="flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-bold text-stone-900">$9.9</span>
-            <span className="text-stone-500">/月</span>
+            <span className="text-5xl font-bold text-foreground">$9.9</span>
+            <span className="text-muted">/月</span>
           </div>
-          <p className="mt-2 text-sm text-stone-400">
+          <p className="mt-2 text-sm text-muted">
             vs Bannerbear $49/月 · 随时取消
           </p>
         </div>
@@ -39,8 +39,8 @@ export default function JoinPage() {
             "自定义品牌色和副标题",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
-              <span className="text-brand-600 mt-0.5">✓</span>
-              <span className="text-stone-700">{item}</span>
+              <span className="text-brand-500 mt-0.5">✓</span>
+              <span className="text-foreground">{item}</span>
             </li>
           ))}
         </ul>
@@ -55,14 +55,14 @@ export default function JoinPage() {
           </p>
         )}
 
-        <p className="mt-4 text-center text-xs text-stone-400">
+        <p className="mt-4 text-center text-xs text-muted">
           Stripe / Polar 安全支付 · 支持信用卡
         </p>
       </div>
 
-      <div className="mt-8 rounded-xl border border-stone-200 bg-stone-50 p-6">
-        <h3 className="font-semibold text-stone-700 mb-3">免费体验 5 次，之后订阅，因为：</h3>
-        <ul className="space-y-2 text-sm text-stone-500">
+      <div className="mt-8 rounded-xl border border-border bg-background p-6">
+        <h3 className="font-semibold text-foreground mb-3">免费体验 5 次，之后订阅，因为：</h3>
+        <ul className="space-y-2 text-sm text-muted">
           <li>· 模板和字体渲染需要持续维护</li>
           <li>· 付费用户 = 认真 ship 产品的 indie hacker</li>
           <li>· 一人维护，简单定价才能持续运营</li>
@@ -70,7 +70,7 @@ export default function JoinPage() {
       </div>
 
       <div className="mt-12">
-        <h2 className="text-xl font-bold text-stone-900 mb-6 text-center">包含功能</h2>
+        <h2 className="text-xl font-bold text-foreground mb-6 text-center">包含功能</h2>
         <FeatureGrid />
       </div>
     </div>

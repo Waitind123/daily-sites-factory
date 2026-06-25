@@ -107,10 +107,10 @@ export function OgStudio() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">生成 OG 分享图</h1>
-          <p className="text-stone-500 mt-1">输入标题，选择模板，一键导出 1200×630 社交分享图</p>
+          <p className="text-muted mt-1">输入标题，选择模板，一键导出 1200×630 社交分享图</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限生成"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -119,11 +119,11 @@ export function OgStudio() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8">
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <h2 className="font-semibold text-lg mb-4">内容</h2>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 主标题 *
               </label>
               <input
@@ -131,59 +131,59 @@ export function OgStudio() {
                 value={form.title}
                 onChange={(e) => setForm({ ...form, title: e.target.value })}
                 placeholder="例：我的 SaaS 产品发布了"
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 副标题
               </label>
               <input
                 value={form.subtitle}
                 onChange={(e) => setForm({ ...form, subtitle: e.target.value })}
                 placeholder="例：帮助 indie hacker 快速 ship 产品"
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div className="grid sm:grid-cols-3 gap-4">
               <div>
-                <label className="block text-sm font-medium text-stone-700 mb-1">
+                <label className="block text-sm font-medium text-foreground mb-1">
                   产品标签
                 </label>
                 <input
                   value={form.badge}
                   onChange={(e) => setForm({ ...form, badge: e.target.value })}
                   placeholder="SaaS"
-                  className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                  className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-stone-700 mb-1">
+                <label className="block text-sm font-medium text-foreground mb-1">
                   作者
                 </label>
                 <input
                   value={form.author}
                   onChange={(e) => setForm({ ...form, author: e.target.value })}
                   placeholder="你的名字"
-                  className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                  className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-stone-700 mb-1">
+                <label className="block text-sm font-medium text-foreground mb-1">
                   品牌色
                 </label>
                 <input
                   type="color"
                   value={form.accentColor}
                   onChange={(e) => setForm({ ...form, accentColor: e.target.value })}
-                  className="w-full h-10 rounded-lg border border-stone-300 cursor-pointer"
+                  className="w-full h-10 rounded-lg border border-border cursor-pointer"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <h2 className="font-semibold text-lg mb-4">模板</h2>
           <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {templateOptions.map((t) => (
@@ -193,12 +193,12 @@ export function OgStudio() {
                 onClick={() => setForm({ ...form, template: t.id })}
                 className={`rounded-xl border-2 p-4 text-left transition-colors ${
                   form.template === t.id
-                    ? "border-brand-600 bg-brand-50"
-                    : "border-stone-200 hover:border-stone-300"
+                    ? "border-brand-600 bg-brand-600/10"
+                    : "border-border hover:border-border"
                 }`}
               >
                 <p className="font-semibold text-sm">{t.name}</p>
-                <p className="text-xs text-stone-500 mt-1">{t.desc}</p>
+                <p className="text-xs text-muted mt-1">{t.desc}</p>
               </button>
             ))}
           </div>
@@ -209,9 +209,9 @@ export function OgStudio() {
         )}
 
         {showPaywall && (
-          <div className="rounded-xl border-2 border-brand-600 bg-brand-50 p-6 text-center">
+          <div className="rounded-xl border-2 border-brand-600 bg-brand-600/10 p-6 text-center">
             <p className="font-semibold text-brand-800">免费体验已用完</p>
-            <p className="text-sm text-brand-700 mt-1">
+            <p className="text-sm text-brand-500 mt-1">
               订阅 $9.9/月，无限生成 OG 图和 meta 标签
             </p>
             <Link
@@ -236,8 +236,8 @@ export function OgStudio() {
         <div className="mt-12 space-y-6">
           <h2 className="text-2xl font-bold">生成结果</h2>
 
-          <div className="rounded-2xl border border-stone-200 bg-white overflow-hidden">
-            <div className="aspect-[1200/630] bg-stone-100 flex items-center justify-center p-4">
+          <div className="rounded-2xl border border-border bg-surface overflow-hidden">
+            <div className="aspect-[1200/630] bg-surface-muted flex items-center justify-center p-4">
               <img
                 src={result.dataUrl}
                 alt="OG preview"
@@ -250,21 +250,21 @@ export function OgStudio() {
             <button
               type="button"
               onClick={downloadSvg}
-              className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-50"
+              className="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-background"
             >
               下载 SVG
             </button>
             <button
               type="button"
               onClick={() => copyText(result.dataUrl)}
-              className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-50"
+              className="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-background"
             >
               复制 Data URL
             </button>
           </div>
 
-          <div className="rounded-2xl border border-stone-200 bg-white overflow-hidden">
-            <div className="border-b border-stone-200 flex overflow-x-auto">
+          <div className="rounded-2xl border border-border bg-surface overflow-hidden">
+            <div className="border-b border-border flex overflow-x-auto">
               {(
                 [
                   { tab: "preview" as const, label: "HTML" },
@@ -279,8 +279,8 @@ export function OgStudio() {
                   onClick={() => setActiveTab(tab)}
                   className={`px-4 py-3 text-sm font-medium whitespace-nowrap ${
                     activeTab === tab
-                      ? "text-brand-600 border-b-2 border-brand-600"
-                      : "text-stone-500"
+                      ? "text-brand-500 border-b-2 border-brand-600"
+                      : "text-muted"
                   }`}
                 >
                   {label}
@@ -294,7 +294,7 @@ export function OgStudio() {
               <button
                 type="button"
                 onClick={() => copyText(getActiveContent())}
-                className="mt-3 text-sm text-brand-600 hover:text-brand-700 font-medium"
+                className="mt-3 text-sm text-brand-500 hover:text-brand-500 font-medium"
               >
                 复制到剪贴板
               </button>

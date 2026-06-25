@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 中国开发者如何找到远程工作：完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 8 分钟
       </p>
 
@@ -44,11 +44,11 @@ export default function GuidePage() {
       </p>
       <p>
         我们的{" "}
-        <Link href="/jobs" className="text-brand-600 hover:underline">
+        <Link href="/jobs" className="text-brand-500 hover:underline">
           远程工作板
         </Link>{" "}
         就属于第三类：200+ 职位每日更新，覆盖 Stripe、GitLab、Notion 等远程友好公司，以及国内支持远程的创业公司。非会员可免费体验 5 次查看完整详情，之后{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           ¥699/年
         </Link>{" "}
         无限查看。
@@ -77,27 +77,27 @@ export default function GuidePage() {
       </p>
       <table className="w-full text-sm border-collapse not-prose my-6">
         <thead>
-          <tr className="bg-stone-100">
-            <th className="border border-stone-200 px-4 py-2 text-left">级别</th>
-            <th className="border border-stone-200 px-4 py-2 text-left">美国远程（年）</th>
-            <th className="border border-stone-200 px-4 py-2 text-left">欧洲远程（年）</th>
+          <tr className="bg-surface-muted">
+            <th className="border border-border px-4 py-2 text-left">级别</th>
+            <th className="border border-border px-4 py-2 text-left">美国远程（年）</th>
+            <th className="border border-border px-4 py-2 text-left">欧洲远程（年）</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">Mid-level Engineer</td>
-            <td className="border border-stone-200 px-4 py-2">$120k–$160k</td>
-            <td className="border border-stone-200 px-4 py-2">€60k–€90k</td>
+            <td className="border border-border px-4 py-2">Mid-level Engineer</td>
+            <td className="border border-border px-4 py-2">$120k–$160k</td>
+            <td className="border border-border px-4 py-2">€60k–€90k</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">Senior Engineer</td>
-            <td className="border border-stone-200 px-4 py-2">$160k–$220k</td>
-            <td className="border border-stone-200 px-4 py-2">€80k–€120k</td>
+            <td className="border border-border px-4 py-2">Senior Engineer</td>
+            <td className="border border-border px-4 py-2">$160k–$220k</td>
+            <td className="border border-border px-4 py-2">€80k–€120k</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">Staff Engineer</td>
-            <td className="border border-stone-200 px-4 py-2">$200k–$280k</td>
-            <td className="border border-stone-200 px-4 py-2">€100k–€150k</td>
+            <td className="border border-border px-4 py-2">Staff Engineer</td>
+            <td className="border border-border px-4 py-2">$200k–$280k</td>
+            <td className="border border-border px-4 py-2">€100k–€150k</td>
           </tr>
         </tbody>
       </table>
@@ -120,11 +120,11 @@ export default function GuidePage() {
       </p>
       <p>
         现在就去{" "}
-        <Link href="/jobs" className="text-brand-600 hover:underline font-medium">
+        <Link href="/jobs" className="text-brand-500 hover:underline font-medium">
           浏览最新远程职位
         </Link>
         ，免费体验 5 次查看完整详情。如果你是 HR 想招远程人才，{" "}
-        <Link href="/join" className="text-brand-600 hover:underline font-medium">
+        <Link href="/join" className="text-brand-500 hover:underline font-medium">
           ¥699/年无限发帖
         </Link>
         。

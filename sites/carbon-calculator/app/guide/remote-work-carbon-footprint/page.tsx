@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         远程办公碳足迹怎么算？混合办公 ESG 基线完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 10 分钟
       </p>
 
@@ -61,7 +61,7 @@ export default function GuidePage() {
       <p>
         排放因子因国家电网结构而异。中国电网平均约 0.57 kg CO₂/kWh，欧盟约 0.28，美国约 0.39。
         我们的{" "}
-        <Link href="/calculate" className="text-brand-600 hover:underline">
+        <Link href="/calculate" className="text-brand-500 hover:underline">
           碳足迹计算器
         </Link>{" "}
         支持四个电网区域，非会员可免费体验 5 次。
@@ -101,7 +101,7 @@ export default function GuidePage() {
       <p>
         使用我们的计算器，输入通勤距离和到岗天数后，三场景结果和减排百分比会自动生成。
         会员可{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           导出 PDF/CSV 报告
         </Link>{" "}
         ，直接嵌入 ESG 披露文件。
@@ -130,7 +130,7 @@ export default function GuidePage() {
         </li>
         <li>
           <strong>运行计算</strong>：在{" "}
-          <Link href="/calculate" className="text-brand-600 hover:underline">
+          <Link href="/calculate" className="text-brand-500 hover:underline">
             计算器
           </Link>{" "}
           输入参数，获取三场景对比
@@ -172,7 +172,7 @@ export default function GuidePage() {
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/calculate"
-            className="inline-block bg-white text-brand-700 px-6 py-3 rounded-xl font-semibold hover:bg-brand-50 transition-colors"
+            className="inline-block bg-surface text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-600/10 transition-colors"
           >
             开始计算
           </Link>

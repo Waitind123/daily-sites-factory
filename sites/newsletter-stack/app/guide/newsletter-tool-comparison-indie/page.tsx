@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         Indie 开发者 Newsletter 工具选型指南：Substack vs Beehiiv vs ConvertKit 怎么选
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -175,8 +175,8 @@ export default function GuidePage() {
         <li>其他情况 → <strong>Beehiiv</strong></li>
       </ol>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
-        <p className="font-semibold text-stone-800 mb-3">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
+        <p className="font-semibold text-foreground mb-3">
           想一键对比全部 6 个平台的定价、功能和迁移指南？
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -188,7 +188,7 @@ export default function GuidePage() {
           </Link>
           <Link
             href="/join"
-            className="inline-block border border-brand-300 text-brand-700 px-6 py-3 rounded-xl font-semibold hover:bg-brand-50"
+            className="inline-block border border-brand-300 text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-600/10"
           >
             订阅 $9.9/月 无限对比
           </Link>

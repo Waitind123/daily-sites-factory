@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 中国护照数字游民签证完全指南：28 国远程工作签证对比
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -177,9 +177,9 @@ export default function GuidePage() {
         我们的 <Link href="/visas">签证数据库</Link> 覆盖 28+ 国最新政策，含收入门槛、材料清单、税务速查和实操建议。免费体验 5 次详情查询，之后 $9.9/月无限查阅。
       </p>
 
-      <div className="not-prose mt-10 rounded-2xl bg-brand-50 border border-brand-200 p-6 text-center">
-        <p className="font-semibold text-stone-900 mb-2">准备好选签证了？</p>
-        <p className="text-sm text-stone-600 mb-4">
+      <div className="not-prose mt-10 rounded-2xl bg-brand-600/10 border border-brand-200 p-6 text-center">
+        <p className="font-semibold text-foreground mb-2">准备好选签证了？</p>
+        <p className="text-sm text-muted mb-4">
           浏览 28 国对比数据库，一张表看清收入门槛和材料清单
         </p>
         <Link
@@ -188,8 +188,8 @@ export default function GuidePage() {
         >
           免费体验 5 次查询
         </Link>
-        <p className="text-xs text-stone-400 mt-3">
-          或 <Link href="/join" className="text-brand-600 hover:underline">订阅 $9.9/月</Link> 无限查阅
+        <p className="text-xs text-muted mt-3">
+          或 <Link href="/join" className="text-brand-500 hover:underline">订阅 $9.9/月</Link> 无限查阅
         </p>
       </div>
     </article>

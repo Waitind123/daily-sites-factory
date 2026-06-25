@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 数字游民如何找到合适的联合办公空间：完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 9 分钟
       </p>
 
@@ -41,27 +41,27 @@ export default function GuidePage() {
       </p>
       <table className="w-full text-sm border-collapse not-prose my-6">
         <thead>
-          <tr className="bg-stone-100">
-            <th className="border border-stone-200 px-4 py-2 text-left">停留时间</th>
-            <th className="border border-stone-200 px-4 py-2 text-left">推荐方案</th>
-            <th className="border border-stone-200 px-4 py-2 text-left">预算参考</th>
+          <tr className="bg-surface-muted">
+            <th className="border border-border px-4 py-2 text-left">停留时间</th>
+            <th className="border border-border px-4 py-2 text-left">推荐方案</th>
+            <th className="border border-border px-4 py-2 text-left">预算参考</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">1–3 天（出差）</td>
-            <td className="border border-stone-200 px-4 py-2">日票</td>
-            <td className="border border-stone-200 px-4 py-2">$10–25/天</td>
+            <td className="border border-border px-4 py-2">1–3 天（出差）</td>
+            <td className="border border-border px-4 py-2">日票</td>
+            <td className="border border-border px-4 py-2">$10–25/天</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">1–4 周（旅行办公）</td>
-            <td className="border border-stone-200 px-4 py-2">周票或 10 次卡</td>
-            <td className="border border-stone-200 px-4 py-2">$80–150/周</td>
+            <td className="border border-border px-4 py-2">1–4 周（旅行办公）</td>
+            <td className="border border-border px-4 py-2">周票或 10 次卡</td>
+            <td className="border border-border px-4 py-2">$80–150/周</td>
           </tr>
           <tr>
-            <td className="border border-stone-200 px-4 py-2">1 个月以上</td>
-            <td className="border border-stone-200 px-4 py-2">月票</td>
-            <td className="border border-stone-200 px-4 py-2">$120–300/月</td>
+            <td className="border border-border px-4 py-2">1 个月以上</td>
+            <td className="border border-border px-4 py-2">月票</td>
+            <td className="border border-border px-4 py-2">$120–300/月</td>
           </tr>
         </tbody>
       </table>
@@ -105,11 +105,11 @@ export default function GuidePage() {
       </p>
       <p>
         我们的{" "}
-        <Link href="/spaces" className="text-brand-600 hover:underline">
+        <Link href="/spaces" className="text-brand-500 hover:underline">
           联合办公 Finder
         </Link>{" "}
         解决这个问题：每个空间标注实测 WiFi 速度、日票/月票价格、视频会议友好度和内部贴士（最佳时段、隐藏福利）。非会员可免费体验 5 次查看完整详情，之后{" "}
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           $9.9/月
         </Link>{" "}
         无限查看。
@@ -136,15 +136,15 @@ export default function GuidePage() {
       <h2>开始找空间</h2>
       <p>
         别再落地后盲目 Google 了。浏览我们的{" "}
-        <Link href="/spaces" className="text-brand-600 hover:underline font-semibold">
+        <Link href="/spaces" className="text-brand-500 hover:underline font-semibold">
           全球联合办公目录
         </Link>
         ，按城市筛选，查看 WiFi 数据和内部贴士，10 分钟搞定下周的工位。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
         <p className="font-semibold text-brand-900">免费体验 5 次空间详情</p>
-        <p className="text-sm text-brand-700 mt-2">之后 $9.9/月无限查看 · 随时取消</p>
+        <p className="text-sm text-brand-500 mt-2">之后 $9.9/月无限查看 · 随时取消</p>
         <Link
           href="/join"
           className="inline-block mt-4 bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"

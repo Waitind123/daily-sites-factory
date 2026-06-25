@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 独立开发者 Beamer 替代方案：Changelog 工具完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -68,7 +68,7 @@ export default function GuidePage() {
         专注做一件事：快速生成可发布的 Changelog 公开页 + 嵌入 Widget + 状态页片段 + RSS。没有 in-app 通知、没有 MAU 计费、没有 A/B 测试。纯 HTML 导出，零 vendor lock-in。适合只需要 changelog 和基础状态页、追求极简和性价比的独立开发者。
       </p>
       <p>
-        使用 <Link href="/publish" className="text-brand-600 hover:underline">Indie Changelog</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
+        使用 <Link href="/publish" className="text-brand-500 hover:underline">Indie Changelog</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
       </p>
 
       <h2>三、如何选择：决策框架</h2>
@@ -130,11 +130,11 @@ export default function GuidePage() {
         如果你 MRR 还在四位数以下、每月更新不超过 10 次、不需要 MAU 分群，没有理由付 $49/月。选一个 $9.9 的工具，把省下的钱投入获客或产品开发。
       </p>
 
-      <div className="not-prose mt-12 rounded-2xl border-2 border-brand-600 bg-brand-50 p-8 text-center">
-        <h3 className="text-xl font-bold text-stone-900 mb-2">
+      <div className="not-prose mt-12 rounded-2xl border-2 border-brand-600 bg-brand-600/10 p-8 text-center">
+        <h3 className="text-xl font-bold text-foreground mb-2">
           准备好发布你的 Changelog 了吗？
         </h3>
-        <p className="text-stone-600 mb-6">
+        <p className="text-muted mb-6">
           免费体验 5 次，10 分钟从零到可发布的更新页
         </p>
         <Link
@@ -143,8 +143,8 @@ export default function GuidePage() {
         >
           免费开始
         </Link>
-        <p className="mt-4 text-sm text-stone-500">
-          或 <Link href="/join" className="text-brand-600 hover:underline">直接订阅 $9.9/月</Link>
+        <p className="mt-4 text-sm text-muted">
+          或 <Link href="/join" className="text-brand-500 hover:underline">直接订阅 $9.9/月</Link>
         </p>
       </div>
     </article>

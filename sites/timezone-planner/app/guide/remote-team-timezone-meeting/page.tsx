@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         远程团队跨时区会议怎么排？全球调度完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 10 分钟
       </p>
 
@@ -65,7 +65,7 @@ export default function GuidePage() {
       </ul>
       <p>
         我们的{" "}
-        <Link href="/planner" className="text-brand-600 hover:underline">
+        <Link href="/planner" className="text-brand-500 hover:underline">
           跨时区会议规划器
         </Link>{" "}
         自动完成上述计算，非会员可免费体验 5 次。
@@ -101,7 +101,7 @@ export default function GuidePage() {
       </ul>
       <p>
         会员可使用我们的 ICS 导出功能，将轮换后的会议时间直接导入 Google Calendar 或 Outlook。
-        <Link href="/join" className="text-brand-600 hover:underline">
+        <Link href="/join" className="text-brand-500 hover:underline">
           订阅 $9.9/月
         </Link>{" "}
         解锁无限规划和日历导出。

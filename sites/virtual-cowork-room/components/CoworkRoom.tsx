@@ -107,19 +107,19 @@ export function CoworkRoom() {
     return (
       <div className="space-y-6">
         <div className="rounded-2xl border border-brand-200 bg-gradient-to-b from-brand-50 to-white p-8 text-center">
-          <p className="text-sm font-medium text-brand-600 mb-2">
+          <p className="text-sm font-medium text-brand-500 mb-2">
             {sessionState === "active" ? `${room.icon} ${room.name}` : "☕ 休息时间"}
           </p>
-          <p className="text-6xl sm:text-7xl font-bold text-stone-900 tabular-nums tracking-tight">
+          <p className="text-6xl sm:text-7xl font-bold text-foreground tabular-nums tracking-tight">
             {formatTime(secondsLeft)}
           </p>
           <div className="mt-6 mx-auto max-w-xs h-2 bg-stone-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-brand-500 rounded-full transition-all duration-1000"
+              className="h-full bg-brand-600/100 rounded-full transition-all duration-1000"
               style={{ width: `${progress}%` }}
             />
           </div>
-          <p className="mt-4 text-sm text-stone-500">
+          <p className="mt-4 text-sm text-muted">
             {sound && sound.id !== "none" ? `${sound.icon} ${sound.name} 环境音` : "🔇 静音模式"}
             {" · "}
             {virtualCoworkers.length + room.activeUsers} 人正在共工
@@ -130,10 +130,10 @@ export function CoworkRoom() {
           {virtualCoworkers.map((c) => (
             <div
               key={c.id}
-              className="flex items-center gap-2 rounded-full border border-stone-200 bg-white px-3 py-1.5 text-sm"
+              className="flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-sm"
             >
               <span>{c.avatar}</span>
-              <span className="text-stone-600">{c.name}</span>
+              <span className="text-muted">{c.name}</span>
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
             </div>
           ))}
@@ -143,7 +143,7 @@ export function CoworkRoom() {
           <button
             type="button"
             onClick={endSession}
-            className="rounded-xl border border-stone-300 px-6 py-2.5 text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors"
+            className="rounded-xl border border-border px-6 py-2.5 text-sm font-medium text-muted hover:bg-surface-muted transition-colors"
           >
             结束会话
           </button>
@@ -157,7 +157,7 @@ export function CoworkRoom() {
       <div className="text-center space-y-6 py-8">
         <div className="text-5xl">🎉</div>
         <h2 className="text-2xl font-bold">专注完成！</h2>
-        <p className="text-stone-500">
+        <p className="text-muted">
           你完成了 {room.duration} 分钟的 {room.name} 会话。继续保持！
         </p>
         <button
@@ -174,18 +174,18 @@ export function CoworkRoom() {
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
           </span>
-          <Link href="/join" className="font-semibold text-brand-700 hover:underline">
+          <Link href="/join" className="font-semibold text-brand-500 hover:underline">
             订阅 $9.9/月 →
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
-        <div className="rounded-xl border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+        <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
           ✓ 会员已激活 · 无限共工会话
         </div>
       )}
@@ -211,16 +211,16 @@ export function CoworkRoom() {
               onClick={() => setSelectedRoom(r.id)}
               className={`rounded-xl border p-4 text-left transition-colors ${
                 selectedRoom === r.id
-                  ? "border-brand-500 bg-brand-50 ring-2 ring-brand-200"
-                  : "border-stone-200 bg-white hover:border-stone-300"
+                  ? "border-brand-500 bg-brand-600/10 ring-2 ring-brand-200"
+                  : "border-border bg-surface hover:border-border"
               }`}
             >
               <div className="flex items-center justify-between">
                 <span className="text-2xl">{r.icon}</span>
-                <span className="text-xs text-stone-400">{r.activeUsers} 人在线</span>
+                <span className="text-xs text-muted">{r.activeUsers} 人在线</span>
               </div>
               <p className="font-semibold mt-2">{r.name}</p>
-              <p className="text-xs text-stone-500 mt-1">{r.duration} 分钟 · {r.description}</p>
+              <p className="text-xs text-muted mt-1">{r.duration} 分钟 · {r.description}</p>
             </button>
           ))}
         </div>
@@ -237,7 +237,7 @@ export function CoworkRoom() {
               className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 selectedSound === s.id
                   ? "bg-brand-600 text-white"
-                  : "bg-white border border-stone-200 text-stone-600 hover:border-stone-300"
+                  : "bg-surface border border-border text-muted hover:border-border"
               }`}
             >
               {s.icon} {s.name}
@@ -246,16 +246,16 @@ export function CoworkRoom() {
         </div>
       </div>
 
-      <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
-        <p className="text-sm text-stone-500 text-center mb-3">当前共工室在线</p>
+      <div className="rounded-xl border border-border bg-background p-4">
+        <p className="text-sm text-muted text-center mb-3">当前共工室在线</p>
         <div className="flex flex-wrap gap-2 justify-center">
           {virtualCoworkers.map((c) => (
             <div
               key={c.id}
-              className="flex items-center gap-1.5 rounded-full bg-white border border-stone-200 px-3 py-1 text-xs"
+              className="flex items-center gap-1.5 rounded-full bg-surface border border-border px-3 py-1 text-xs"
             >
               <span>{c.avatar}</span>
-              <span className="text-stone-600">{c.name}</span>
+              <span className="text-muted">{c.name}</span>
             </div>
           ))}
         </div>

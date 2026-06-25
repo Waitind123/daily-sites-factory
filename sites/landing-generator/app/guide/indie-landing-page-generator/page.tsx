@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         Indie 开发者 Landing Page 生成指南：30 秒上线落地页
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -179,7 +179,7 @@ export default function GuidePage() {
       <h2>七、立即开始</h2>
       <p>
         如果你还在拖 landing page，现在就用{" "}
-        <Link href="/studio" className="text-brand-600 font-semibold">
+        <Link href="/studio" className="text-brand-500 font-semibold">
           Landing 生成器
         </Link>{" "}
         生成第一版。免费体验 5 次，30 秒出稿。不满意可以换风格重新生成，比从零写 HTML 快 100 倍。
@@ -188,7 +188,7 @@ export default function GuidePage() {
         记住 levelsio 的核心：<strong>ship fast，第一天收费，先验证再优化</strong>。完美的 landing page 不存在，存在的只有已经上线的那版。
       </p>
 
-      <div className="not-prose mt-10 rounded-xl bg-brand-50 border border-brand-200 p-6 text-center">
+      <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
         <p className="font-semibold text-brand-800 mb-4">免费体验 5 次 · 之后 $9.9/月</p>
         <Link
           href="/studio"
@@ -196,7 +196,7 @@ export default function GuidePage() {
         >
           立即生成 Landing Page
         </Link>
-        <p className="mt-3 text-sm text-brand-600">
+        <p className="mt-3 text-sm text-brand-500">
           或{" "}
           <Link href="/join" className="underline">
             查看订阅方案

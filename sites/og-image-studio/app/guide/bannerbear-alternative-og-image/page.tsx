@@ -12,10 +12,10 @@ export const metadata: Metadata = buildSiteMetadata(siteConfig, {
 export default function GuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 prose prose-stone">
-      <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 not-prose mb-4">
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground not-prose mb-4">
         2026 独立开发者 Bannerbear 替代方案：OG Image 生成器完整指南
       </h1>
-      <p className="text-stone-500 not-prose mb-8">
+      <p className="text-muted not-prose mb-8">
         更新于 2026 年 6 月 · 阅读约 12 分钟
       </p>
 
@@ -73,7 +73,7 @@ export default function GuidePage() {
         专注做一件事：快速生成 1200×630 的 OG 社交分享图，附带 meta 标签和 Next.js 代码片段导出。5 种模板覆盖 SaaS 发布、博客、社交媒体等常见场景。纯 SVG 渲染，无需 Puppeteer 或外部 API。适合只需要 OG 图、追求极简和性价比的独立开发者。
       </p>
       <p>
-        使用 <Link href="/studio" className="text-brand-600 hover:underline">OG Image Studio</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
+        使用 <Link href="/studio" className="text-brand-500 hover:underline">OG Image Studio</Link> 可以免费体验 5 次，感受生成速度后再决定是否订阅。
       </p>
 
       <h2>三、OG 图的技术标准</h2>
@@ -137,15 +137,15 @@ export default function GuidePage() {
       </p>
       <p>
         如果你处于 indie stage，每月只需要几十张 OG 图，完全没必要为 Bannerbear 的 $49/月买单。
-        <Link href="/studio" className="text-brand-600 hover:underline"> OG Image Studio</Link> 提供 5 次免费体验，30 秒内生成你的第一张 OG 图。
+        <Link href="/studio" className="text-brand-500 hover:underline"> OG Image Studio</Link> 提供 5 次免费体验，30 秒内生成你的第一张 OG 图。
       </p>
       <p>
-        准备好提升分享点击率了吗？<Link href="/join" className="text-brand-600 hover:underline">订阅 $9.9/月</Link>，无限生成 OG 图和 meta 标签导出。
+        准备好提升分享点击率了吗？<Link href="/join" className="text-brand-500 hover:underline">订阅 $9.9/月</Link>，无限生成 OG 图和 meta 标签导出。
       </p>
 
-      <div className="not-prose mt-12 rounded-2xl border-2 border-brand-600 bg-brand-50 p-8 text-center">
-        <h3 className="text-xl font-bold text-stone-900 mb-2">免费体验 5 次 OG 图生成</h3>
-        <p className="text-stone-600 mb-6">30 秒出图，无需注册，立即感受 Bannerbear 平替方案</p>
+      <div className="not-prose mt-12 rounded-2xl border-2 border-brand-600 bg-brand-600/10 p-8 text-center">
+        <h3 className="text-xl font-bold text-foreground mb-2">免费体验 5 次 OG 图生成</h3>
+        <p className="text-muted mb-6">30 秒出图，无需注册，立即感受 Bannerbear 平替方案</p>
         <Link
           href="/studio"
           className="inline-block bg-brand-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"

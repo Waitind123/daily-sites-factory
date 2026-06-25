@@ -100,15 +100,15 @@ export function HeadshotStudio() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
       <div className="mb-6">
-        <Link href="/" className="text-sm text-stone-500 hover:text-stone-700">
+        <Link href="/" className="text-sm text-muted hover:text-foreground">
           ← 返回首页
         </Link>
         <h1 className="text-2xl sm:text-3xl font-bold mt-2">AI 证件照工作室</h1>
-        <p className="text-stone-500 mt-1">上传自拍 → 选风格 → 30 秒出图</p>
+        <p className="text-muted mt-1">上传自拍 → 选风格 → 30 秒出图</p>
       </div>
 
       {trial && !trial.isMember && (
-        <div className="mb-4 rounded-xl bg-brand-50 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
+        <div className="mb-4 rounded-xl bg-brand-600/10 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
           免费体验剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次 · 用尽后需订阅 $9.9/月
         </div>
       )}
@@ -128,7 +128,7 @@ export function HeadshotStudio() {
 
       <div className="grid sm:grid-cols-2 gap-6">
         <div
-          className="rounded-2xl border-2 border-dashed border-stone-300 bg-stone-50 p-6 text-center cursor-pointer hover:border-brand-400 transition-colors"
+          className="rounded-2xl border-2 border-dashed border-border bg-background p-6 text-center cursor-pointer hover:border-brand-400 transition-colors"
           onClick={() => inputRef.current?.click()}
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => {
@@ -158,17 +158,17 @@ export function HeadshotStudio() {
             <>
               <div className="text-4xl mb-3">📷</div>
               <p className="font-medium">点击或拖拽上传自拍</p>
-              <p className="text-sm text-stone-500 mt-1">JPG / PNG，最大 4MB</p>
+              <p className="text-sm text-muted mt-1">JPG / PNG，最大 4MB</p>
             </>
           )}
         </div>
 
-        <div className="rounded-2xl border border-stone-200 bg-white p-6 flex flex-col items-center justify-center min-h-[280px]">
+        <div className="rounded-2xl border border-border bg-surface p-6 flex flex-col items-center justify-center min-h-[280px]">
           {loading ? (
             <div className="text-center">
               <div className="animate-spin text-4xl mb-3">⚡</div>
               <p className="font-medium">AI 生成中…</p>
-              <p className="text-sm text-stone-500 mt-1">约 15–30 秒</p>
+              <p className="text-sm text-muted mt-1">约 15–30 秒</p>
             </div>
           ) : result ? (
             <>
@@ -186,19 +186,19 @@ export function HeadshotStudio() {
               <a
                 href={result}
                 download="headshot.png"
-                className="mt-4 text-sm text-brand-600 hover:underline"
+                className="mt-4 text-sm text-brand-500 hover:underline"
               >
                 下载图片
               </a>
             </>
           ) : (
-            <p className="text-stone-400 text-sm">生成结果将显示在这里</p>
+            <p className="text-muted text-sm">生成结果将显示在这里</p>
           )}
         </div>
       </div>
 
       <div className="mt-6">
-        <p className="text-sm font-medium text-stone-700 mb-3">选择风格</p>
+        <p className="text-sm font-medium text-foreground mb-3">选择风格</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {styles.map((s) => (
             <button
@@ -207,8 +207,8 @@ export function HeadshotStudio() {
               onClick={() => setStyle(s.id)}
               className={`rounded-xl border p-3 text-left transition-colors ${
                 style === s.id
-                  ? "border-brand-600 bg-brand-50"
-                  : "border-stone-200 hover:border-brand-300"
+                  ? "border-brand-600 bg-brand-600/10"
+                  : "border-border hover:border-brand-300"
               }`}
             >
               <span className="text-xl">{s.preview}</span>

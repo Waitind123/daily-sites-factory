@@ -130,10 +130,10 @@ export function ChangelogStudio() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
           <h1 className="text-3xl font-bold">发布 Changelog</h1>
-          <p className="text-stone-500 mt-1">输入版本更新，一键生成公开页 + 嵌入 Widget + RSS</p>
+          <p className="text-muted mt-1">输入版本更新，一键生成公开页 + 嵌入 Widget + RSS</p>
         </div>
         {trial && (
-          <div className="text-sm rounded-lg bg-brand-50 text-brand-700 px-4 py-2 font-medium">
+          <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
               ? "✓ 会员 · 无限生成"
               : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
@@ -142,11 +142,11 @@ export function ChangelogStudio() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8">
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <h2 className="font-semibold text-lg mb-4">产品信息</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 产品名称 *
               </label>
               <input
@@ -154,28 +154,28 @@ export function ChangelogStudio() {
                 value={form.productName}
                 onChange={(e) => setForm({ ...form, productName: e.target.value })}
                 placeholder="例：我的 SaaS"
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 标语
               </label>
               <input
                 value={form.tagline}
                 onChange={(e) => setForm({ ...form, tagline: e.target.value })}
-                className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-stone-700 mb-1">
+              <label className="block text-sm font-medium text-foreground mb-1">
                 主题色
               </label>
               <input
                 type="color"
                 value={form.accentColor}
                 onChange={(e) => setForm({ ...form, accentColor: e.target.value })}
-                className="w-full h-10 rounded-lg border border-stone-300 cursor-pointer"
+                className="w-full h-10 rounded-lg border border-border cursor-pointer"
               />
             </div>
             <div className="flex items-center gap-2 pt-6">
@@ -186,22 +186,22 @@ export function ChangelogStudio() {
                 onChange={(e) =>
                   setForm({ ...form, includeStatusPage: e.target.checked })
                 }
-                className="rounded border-stone-300"
+                className="rounded border-border"
               />
-              <label htmlFor="statusPage" className="text-sm text-stone-700">
+              <label htmlFor="statusPage" className="text-sm text-foreground">
                 同时生成状态页片段
               </label>
             </div>
           </div>
         </section>
 
-        <section className="rounded-2xl border border-stone-200 bg-white p-6">
+        <section className="rounded-2xl border border-border bg-surface p-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">版本更新</h2>
             <button
               type="button"
               onClick={addEntry}
-              className="text-sm text-brand-600 hover:text-brand-700 font-medium"
+              className="text-sm text-brand-500 hover:text-brand-500 font-medium"
             >
               + 添加版本
             </button>
@@ -210,17 +210,17 @@ export function ChangelogStudio() {
             {form.entries.map((entry, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-stone-100 bg-stone-50 p-4 space-y-3"
+                className="rounded-xl border border-border bg-background p-4 space-y-3"
               >
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-stone-500">
+                  <span className="text-sm font-medium text-muted">
                     版本 #{i + 1}
                   </span>
                   {form.entries.length > 1 && (
                     <button
                       type="button"
                       onClick={() => removeEntry(i)}
-                      className="text-xs text-stone-400 hover:text-red-500"
+                      className="text-xs text-muted hover:text-red-500"
                     >
                       删除
                     </button>
@@ -232,12 +232,12 @@ export function ChangelogStudio() {
                     value={entry.version}
                     onChange={(e) => updateEntry(i, "version", e.target.value)}
                     placeholder="v1.0.0"
-                    className="rounded-lg border border-stone-300 px-3 py-2 text-sm font-mono"
+                    className="rounded-lg border border-border px-3 py-2 text-sm font-mono"
                   />
                   <select
                     value={entry.tag}
                     onChange={(e) => updateEntry(i, "tag", e.target.value)}
-                    className="rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                    className="rounded-lg border border-border px-3 py-2 text-sm"
                   >
                     <option value="feature">新功能</option>
                     <option value="fix">修复</option>
@@ -248,7 +248,7 @@ export function ChangelogStudio() {
                     type="date"
                     value={entry.date}
                     onChange={(e) => updateEntry(i, "date", e.target.value)}
-                    className="rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                    className="rounded-lg border border-border px-3 py-2 text-sm"
                   />
                 </div>
                 <input
@@ -256,7 +256,7 @@ export function ChangelogStudio() {
                   value={entry.title}
                   onChange={(e) => updateEntry(i, "title", e.target.value)}
                   placeholder="更新标题"
-                  className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                  className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
                 <textarea
                   required
@@ -264,7 +264,7 @@ export function ChangelogStudio() {
                   onChange={(e) => updateEntry(i, "description", e.target.value)}
                   placeholder="更新详情描述"
                   rows={2}
-                  className="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm"
+                  className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
               </div>
             ))}
@@ -276,9 +276,9 @@ export function ChangelogStudio() {
         )}
 
         {showPaywall && (
-          <div className="rounded-xl border-2 border-brand-600 bg-brand-50 p-6 text-center">
+          <div className="rounded-xl border-2 border-brand-600 bg-brand-600/10 p-6 text-center">
             <p className="font-semibold text-brand-800">免费体验已用完</p>
-            <p className="text-sm text-brand-700 mt-1">
+            <p className="text-sm text-brand-500 mt-1">
               订阅 $9.9/月，无限生成 Changelog 页、Widget 和 RSS
             </p>
             <Link
@@ -303,8 +303,8 @@ export function ChangelogStudio() {
         <div className="mt-12 space-y-6">
           <h2 className="text-2xl font-bold">生成结果</h2>
 
-          <div className="rounded-2xl border border-stone-200 bg-white overflow-hidden">
-            <div className="border-b border-stone-200 flex overflow-x-auto">
+          <div className="rounded-2xl border border-border bg-surface overflow-hidden">
+            <div className="border-b border-border flex overflow-x-auto">
               {(
                 [
                   { tab: "page" as const, label: "公开页 HTML" },
@@ -321,8 +321,8 @@ export function ChangelogStudio() {
                   onClick={() => setActiveTab(tab)}
                   className={`px-4 py-3 text-sm font-medium whitespace-nowrap ${
                     activeTab === tab
-                      ? "text-brand-600 border-b-2 border-brand-600"
-                      : "text-stone-500"
+                      ? "text-brand-500 border-b-2 border-brand-600"
+                      : "text-muted"
                   }`}
                 >
                   {label}
@@ -336,7 +336,7 @@ export function ChangelogStudio() {
               <button
                 type="button"
                 onClick={() => copyText(getActiveContent())}
-                className="mt-3 text-sm text-brand-600 hover:text-brand-700 font-medium"
+                className="mt-3 text-sm text-brand-500 hover:text-brand-500 font-medium"
               >
                 复制到剪贴板
               </button>
@@ -344,12 +344,12 @@ export function ChangelogStudio() {
           </div>
 
           {activeTab === "page" && (
-            <div className="rounded-2xl border border-stone-200 bg-white p-6">
+            <div className="rounded-2xl border border-border bg-surface p-6">
               <h3 className="font-semibold mb-4">公开页预览</h3>
               <iframe
                 srcDoc={result.publicPageHtml}
                 title="Changelog preview"
-                className="w-full h-96 rounded-xl border border-stone-100"
+                className="w-full h-96 rounded-xl border border-border"
                 sandbox=""
               />
             </div>
