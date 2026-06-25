@@ -4,7 +4,7 @@ import { buildSiteMetadata } from "./site-seo";
 export { buildSiteMetadata } from "./site-seo";
 
 export const siteConfig = {
-  url: "https://feature-vote.vercel.app",
+  url: "https://feature-vote-ten.vercel.app",
   name: "Feature Vote",
   title: "Feature Vote — Canny 平替，独立开发者 $9.9/月",
   description:
