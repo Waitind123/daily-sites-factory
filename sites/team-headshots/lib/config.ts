@@ -5,5 +5,5 @@ export const POLAR_CHECKOUT_URL =
 
 export const PRICING = {
   usd: { amount: 9.9, interval: "month" as const, label: "$9.9/月" },
-  siteUrl: "https://team-headshots.vercel.app",
+  siteUrl: "https://team-headshots-phi.vercel.app",
 };

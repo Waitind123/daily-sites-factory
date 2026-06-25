@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://team-headshots.vercel.app",
+    url: "https://team-headshots-phi.vercel.app",
     name: "Team Headshots",
     title: "Team Headshots — Consistent LinkedIn portraits for your whole team, $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://team-headshots.vercel.app",
+    url: "https://team-headshots-phi.vercel.app",
     name: "团队 AI 头像",
     title: "团队 AI 头像 — 全团队统一领英证件照，$9.9/月",
     description:
