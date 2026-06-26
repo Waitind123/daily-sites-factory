@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://seo-rank-tracker.vercel.app",
+    url: "https://seo-rank-tracker-lemon.vercel.app",
     name: "Rank Pulse",
     title: "Rank Pulse — SEMrush alternative for indie devs, $9.9/mo flat",
     description:
@@ -22,7 +22,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://seo-rank-tracker.vercel.app",
+    url: "https://seo-rank-tracker-lemon.vercel.app",
     name: "SEO 排名追踪",
     title: "SEO 排名追踪 — SEMrush 平替，独立开发者 $9.9/月",
     description:
