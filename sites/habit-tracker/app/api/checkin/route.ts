@@ -1,25 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
+import { apiError } from "@/lib/api-errors";
 
 export async function POST(request: NextRequest) {
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $29.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   const body = await request.json().catch(() => ({}));
   if (!body.habitId) {
-    return NextResponse.json({ error: "缺少 habitId" }, { status: 400 });
+    return apiError("MISSING_HABIT_ID", 400);
   }
 
   let remaining = access.isMember ? -1 : access.remaining;

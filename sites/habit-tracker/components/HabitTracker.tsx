@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { defaultHabits } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getTrackCopy, getApiErrorMessage } from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -12,15 +13,25 @@ type TrialStatus = {
   canUse: boolean;
 };
 
-type HabitState = {
+type HabitTemplate = {
   id: string;
   name: string;
   icon: string;
   streak: number;
+};
+
+type HabitState = HabitTemplate & {
   doneToday: boolean;
 };
 
-export function HabitTracker() {
+export function HabitTracker({
+  locale,
+  defaultHabits,
+}: {
+  locale: Locale;
+  defaultHabits: readonly HabitTemplate[];
+}) {
+  const t = getTrackCopy(locale);
   const [trial, setTrial] = useState<TrialStatus | null>(null);
   const [habits, setHabits] = useState<HabitState[]>([]);
   const [loading, setLoading] = useState<string | null>(null);
@@ -42,10 +53,8 @@ export function HabitTracker() {
         /* fall through */
       }
     }
-    setHabits(
-      defaultHabits.map((h) => ({ ...h, doneToday: false }))
-    );
-  }, [loadTrial]);
+    setHabits(defaultHabits.map((h) => ({ ...h, doneToday: false })));
+  }, [loadTrial, defaultHabits]);
 
   useEffect(() => {
     if (habits.length) {
@@ -66,7 +75,7 @@ export function HabitTracker() {
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "打卡失败");
+      setError(getApiErrorMessage(data.code || data.error, locale));
       setLoading(null);
       return;
     }
@@ -89,26 +98,26 @@ export function HabitTracker() {
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
+            <strong>{t.freeRemaining(trial.remaining, trial.limit)}</strong>
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $29.9/月 →
+            {t.subscribeCta}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限打卡
+          {t.memberBadge}
         </div>
       )}
 
       {error && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
           {error}
-          {error.includes("订阅") && (
+          {error.includes(locale === "zh" ? "订阅" : "subscribe") && (
             <Link href="/join" className="ml-2 font-semibold underline">
-              立即订阅
+              {t.subscribeNow}
             </Link>
           )}
         </div>
@@ -116,10 +125,8 @@ export function HabitTracker() {
 
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-lg font-bold">今日习惯</h2>
-          <p className="text-sm text-muted">
-            已完成 {doneCount}/{habits.length}
-          </p>
+          <h2 className="text-lg font-bold">{t.todayHabits}</h2>
+          <p className="text-sm text-muted">{t.completed(doneCount, habits.length)}</p>
         </div>
         <div className="text-3xl font-bold text-brand-500">
           {habits.length ? Math.round((doneCount / habits.length) * 100) : 0}%
@@ -142,7 +149,7 @@ export function HabitTracker() {
                 <p className={`font-medium ${habit.doneToday ? "text-brand-500" : "text-foreground"}`}>
                   {habit.name}
                 </p>
-                <p className="text-xs text-muted">🔥 连续 {habit.streak} 天</p>
+                <p className="text-xs text-muted">{t.streakLabel(habit.streak)}</p>
               </div>
             </div>
             <button
@@ -155,7 +162,7 @@ export function HabitTracker() {
                   : "bg-brand-600 text-white hover:bg-brand-700 disabled:opacity-50"
               }`}
             >
-              {habit.doneToday ? "已完成 ✓" : loading === habit.id ? "..." : "打卡"}
+              {habit.doneToday ? t.done : loading === habit.id ? t.loading : t.checkIn}
             </button>
           </div>
         ))}

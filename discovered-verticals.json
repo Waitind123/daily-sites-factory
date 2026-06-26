@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "wcag-alt-text-生成器",
+      "name": "WCAG Alt-Text 生成器",
+      "description": "Web 代理商需要批量生成 WCAG 合规 alt-text，ADA 诉讼增加，.9/月替代手动写 alt",
+      "template": "micro-saas",
+      "source": "Indie Hackers WCAG alt-text validation post 2026-05",
+      "discoveredAt": "2026-06-26T04:01:59.796Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-26T02:06:08.342Z",
+  "lastDiscoveredAt": "2026-06-26T04:01:59.796Z",
   "consumed": [
     {
       "id": "reddit-pulse",

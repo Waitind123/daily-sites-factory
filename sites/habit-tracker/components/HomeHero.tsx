@@ -1,10 +1,10 @@
 import { getLocale } from "@/lib/locale";
-import { homeCopy } from "@/lib/copy";
+import { getHomeCopy } from "@/lib/copy";
 import Link from "next/link";
 
 export async function HomeHero() {
   const locale = await getLocale();
-  const c = homeCopy[locale];
+  const c = getHomeCopy(locale);
 
   return (
     <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">

@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import { getStripeProductCopy } from "./copy-app";
+import type { Locale } from "./i18n-shared";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
 
@@ -13,10 +15,11 @@ export function getStripe() {
   });
 }
 
-export const PRICE_USD = 2990;
+export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(origin: string, locale: Locale = "en") {
   const stripe = getStripe();
+  const product = getStripeProductCopy(locale);
 
   if (!stripe) {
     return {
@@ -34,8 +37,8 @@ export async function createCheckoutSession(origin: string) {
           currency: "usd",
           recurring: { interval: "month" },
           product_data: {
-            name: "习惯打卡 · 月度会员",
-            description: "无限习惯、连续天数统计、数据导出、每日提醒",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
         },

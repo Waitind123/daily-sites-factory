@@ -1,19 +1,32 @@
-import { features } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getHomeCopy } from "@/lib/copy";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type FeatureItem = {
+  readonly icon: string;
+  readonly title: string;
+  readonly desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label = "Subscribe · $9.9/mo",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $29.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly FeatureItem[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,13 +40,17 @@ export function FeatureGrid() {
   );
 }
 
-import { weekStats } from "@/lib/data";
-
-export function WeekChart() {
+export function WeekChart({ locale }: { locale: Locale }) {
+  const c = getHomeCopy(locale);
+  const stats = c.weekStats.map((d, i) => ({
+    day: c.weekDays[i],
+    done: d.done,
+    total: d.total,
+  }));
 
   return (
     <div className="flex items-end justify-between gap-2 h-32 px-2">
-      {weekStats.map((d: { day: string; done: number; total: number }) => {
+      {stats.map((d) => {
         const pct = (d.done / d.total) * 100;
         return (
           <div key={d.day} className="flex-1 flex flex-col items-center gap-2">
