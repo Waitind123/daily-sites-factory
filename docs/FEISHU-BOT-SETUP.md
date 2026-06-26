@@ -31,13 +31,23 @@ scripts/feishu-handle-command.mjs 执行并回复群消息
 
 ### 2. 部署 feishu-bot 到 Vercel
 
-**Windows（PowerShell）** — 在项目根目录：
+**Windows（CMD，推荐）** — 在项目根目录：
+
+```cmd
+cd C:\Users\ziweiqin\Projects\daily-sites-factory
+set VERCEL_TOKEN=你的vercel_token
+scripts\deploy-feishu-bot.cmd
+```
+
+**Windows（PowerShell）** — 同上目录：
 
 ```powershell
-cd C:\Users\ziweiqin\Projects\daily-sites-factory   # 按你实际克隆路径改
+cd C:\Users\ziweiqin\Projects\daily-sites-factory
 $env:VERCEL_TOKEN = "你的vercel_token"
 powershell -ExecutionPolicy Bypass -File scripts\deploy-feishu-bot.ps1
 ```
+
+> **注意**：`$env:VERCEL_TOKEN = "..."` 是 PowerShell 语法，在 CMD 里会报错「文件名、目录名或卷标语法不正确」。CMD 请用 `set VERCEL_TOKEN=...`。
 
 **Mac / Linux：**
 
@@ -89,3 +99,28 @@ bash scripts/deploy-feishu-bot.sh
 | 自建应用事件 | 双向 ↔ 群 | 你发指令，Agent 执行并回复 |
 
 两种可同时使用。
+
+## 常见问题（Windows）
+
+### `git pull` 失败：`Failed to connect to github.com port 443 via 127.0.0.1`
+
+说明 Git 走了本机代理（127.0.0.1），但代理/VPN 没开或端口不对。
+
+**任选一种：**
+
+1. 打开你的 VPN/代理软件，再执行 `git pull`
+2. 临时取消 Git 代理后重试：
+   ```cmd
+   git config --global --unset http.proxy
+   git config --global --unset https.proxy
+   git pull
+   ```
+3. 无法 pull 时，在浏览器打开 [GitHub 仓库](https://github.com/Waitind123/daily-sites-factory)，下载 ZIP，解压后把 `scripts\deploy-feishu-bot.cmd` 复制到你本地项目对应目录
+
+### 仓库已存在，不必再 `git clone`
+
+```cmd
+cd C:\Users\ziweiqin\Projects\daily-sites-factory
+```
+
+直接进入该目录即可。
