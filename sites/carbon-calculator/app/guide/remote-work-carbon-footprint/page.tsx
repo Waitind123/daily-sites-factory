@@ -3,7 +3,9 @@ import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
 import { siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+export const metadata: Metadata = buildSiteMetadata(
+  { ...siteConfig, keywords: [...siteConfig.keywords] },
+  {
   title: "远程办公碳足迹怎么算 — 混合办公 ESG 基线完整指南",
   description:
     "手把手教你计算远程 vs 通勤碳排放：GHG Protocol 方法论、Scope 3 披露要点、混合办公政策数据支撑。含免费计算器。",

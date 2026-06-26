@@ -1,19 +1,31 @@
-import { features } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = {
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label,
+}: {
+  className?: string;
+  label: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,18 +39,24 @@ export function FeatureGrid() {
   );
 }
 
-import { sampleComparison } from "@/lib/data";
-
-export function ComparisonChart() {
-  const maxKg = Math.max(...sampleComparison.map((d) => d.kg));
+export function ComparisonChart({
+  locale: _locale,
+  data,
+  note,
+}: {
+  locale: Locale;
+  data: readonly { label: string; kg: number }[];
+  note: string;
+}) {
+  const maxKg = Math.max(...data.map((d) => d.kg));
 
   return (
     <div className="space-y-4">
-      {sampleComparison.map((d) => (
+      {data.map((d) => (
         <div key={d.label}>
           <div className="flex justify-between text-sm mb-1">
             <span className="text-muted">{d.label}</span>
-            <span className="font-medium text-foreground">{d.kg.toLocaleString()} kg/年</span>
+            <span className="font-medium text-foreground">{d.kg.toLocaleString()} kg</span>
           </div>
           <div className="h-3 bg-surface-muted rounded-full overflow-hidden">
             <div
@@ -48,7 +66,7 @@ export function ComparisonChart() {
           </div>
         </div>
       ))}
-      <p className="text-xs text-muted">示例：15km 地铁通勤 · 每周到岗 2 天 · 中国电网</p>
+      <p className="text-xs text-muted">{note}</p>
     </div>
   );
 }

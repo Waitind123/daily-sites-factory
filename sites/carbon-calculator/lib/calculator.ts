@@ -86,13 +86,26 @@ function scenario(
   };
 }
 
-export function calculateCarbon(input: CalcInput): CalcResult {
+export type ScenarioLabels = {
+  current: string;
+  fullOffice: string;
+  fullRemote: string;
+};
+
+export function calculateCarbon(
+  input: CalcInput,
+  labels: ScenarioLabels = {
+    current: "Current hybrid",
+    fullOffice: "Full office",
+    fullRemote: "Fully remote",
+  }
+): CalcResult {
   const clampedDays = Math.min(5, Math.max(0, input.officeDaysPerWeek));
   const safeInput = { ...input, officeDaysPerWeek: clampedDays };
 
-  const current = scenario("当前混合办公", clampedDays, safeInput);
-  const fullOffice = scenario("全勤通勤", 5, safeInput);
-  const fullRemote = scenario("完全远程", 0, safeInput);
+  const current = scenario(labels.current, clampedDays, safeInput);
+  const fullOffice = scenario(labels.fullOffice, 5, safeInput);
+  const fullRemote = scenario(labels.fullRemote, 0, safeInput);
 
   const savingsVsOfficeKg = fullOffice.annualKg - current.annualKg;
   const savingsVsOfficePercent =
