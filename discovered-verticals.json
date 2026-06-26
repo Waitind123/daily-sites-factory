@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "coworking-pass",
+      "name": "联合办公日票预订",
+      "description": "Croissant/Deskpass 订阅太贵，出差数字游民需要 .9/月的当日联合办公日票比价+即时预订",
+      "template": "micro-saas",
+      "source": "Nomada.tools coworking directory + Reddit r/digitalnomad day pass 2026",
+      "discoveredAt": "2026-06-26T00:02:16.831Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-25T23:01:55.712Z",
+  "lastDiscoveredAt": "2026-06-26T00:02:16.831Z",
   "consumed": [
     {
       "id": "reddit-pulse",
