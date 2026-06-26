@@ -1,0 +1,25 @@
+name: Feishu command
+
+on:
+  repository_dispatch:
+    types: [feishu_command]
+
+jobs:
+  handle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Handle Feishu command
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ github.event.client_payload.chat_id }}
+          FEISHU_MESSAGE_ID: ${{ github.event.client_payload.message_id }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/feishu-handle-command.mjs "${{ github.event.client_payload.text }}"

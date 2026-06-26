@@ -65,6 +65,15 @@ jobs:
           npm ci || npm install
           npm run build
 
+      - name: Visitor smoke test (guest, local)
+        working-directory: sites/${{ matrix.site_id }}
+        run: |
+          npx next start -p 3099 &
+          echo $! > /tmp/next-${{ matrix.site_id }}.pid
+          sleep 10
+          node ../../scripts/verify-site-visitor.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
+          kill $(cat /tmp/next-${{ matrix.site_id }}.pid) 2>/dev/null || true
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
