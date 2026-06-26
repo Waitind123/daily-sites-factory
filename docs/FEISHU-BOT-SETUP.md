@@ -31,14 +31,21 @@ scripts/feishu-handle-command.mjs 执行并回复群消息
 
 ### 2. 部署 feishu-bot 到 Vercel
 
-```bash
-cd services/feishu-bot
-npm install
-npx vercel link --yes --scope=baoyu18178053101-6131s-projects
-npx vercel deploy --prod
+**Windows（PowerShell）** — 在项目根目录：
+
+```powershell
+cd C:\Users\ziweiqin\Projects\daily-sites-factory   # 按你实际克隆路径改
+$env:VERCEL_TOKEN = "你的vercel_token"
+powershell -ExecutionPolicy Bypass -File scripts\deploy-feishu-bot.ps1
 ```
 
-记下部署 URL，填回飞书事件回调地址。
+**Mac / Linux：**
+
+```bash
+bash scripts/deploy-feishu-bot.sh
+```
+
+记下输出的 `https://xxx.vercel.app/api/feishu/event`，填回飞书「事件与回调」。
 
 ### 3. Vercel 环境变量
 
