@@ -1,19 +1,33 @@
-import { features, todayStats, virtualCoworkers } from "@/lib/data";
+import { todayStats, virtualCoworkers } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getRoomCopy } from "@/lib/copy-app";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type FeatureItem = {
+  readonly icon: string;
+  readonly title: string;
+  readonly desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label = "Subscribe · $9.9/mo",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly FeatureItem[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,20 +41,22 @@ export function FeatureGrid() {
   );
 }
 
-export function LiveStats() {
+export function LiveStats({ locale }: { locale: Locale }) {
+  const stats = getRoomCopy(locale).liveStats;
+
   return (
     <div className="grid grid-cols-3 gap-4 text-center">
       <div className="rounded-xl border border-border bg-surface p-4">
         <p className="text-2xl font-bold text-brand-500">{todayStats.activeSessions}</p>
-        <p className="text-xs text-muted mt-1">正在共工</p>
+        <p className="text-xs text-muted mt-1">{stats.active}</p>
       </div>
       <div className="rounded-xl border border-border bg-surface p-4">
         <p className="text-2xl font-bold text-brand-500">{todayStats.totalFocusHours}</p>
-        <p className="text-xs text-muted mt-1">今日专注小时</p>
+        <p className="text-xs text-muted mt-1">{stats.focusHours}</p>
       </div>
       <div className="rounded-xl border border-border bg-surface p-4">
         <p className="text-2xl font-bold text-brand-500">{todayStats.avgSessionMin}</p>
-        <p className="text-xs text-muted mt-1">平均分钟/场</p>
+        <p className="text-xs text-muted mt-1">{stats.avgMin}</p>
       </div>
     </div>
   );
@@ -49,7 +65,7 @@ export function LiveStats() {
 export function CoworkerAvatars() {
   return (
     <div className="flex flex-wrap gap-2 justify-center">
-      {virtualCoworkers.slice(0, 8).map((c: { id: string; avatar: string; name: string }) => (
+      {virtualCoworkers.slice(0, 8).map((c) => (
         <div
           key={c.id}
           className="w-10 h-10 rounded-full bg-brand-600/10 border-2 border-brand-200 flex items-center justify-center text-lg relative"

@@ -2,7 +2,14 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { roomTypes, ambientSounds, virtualCoworkers } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import {
+  getRoomCopy,
+  getRoomTypesCopy,
+  getAmbientSoundsCopy,
+  getApiErrorMessage,
+} from "@/lib/copy-app";
+import { roomTypeMeta, ambientSoundIcons, virtualCoworkers } from "@/lib/data";
 
 type TrialStatus = {
   limit: number;
@@ -20,9 +27,13 @@ function formatTime(seconds: number) {
   return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
 }
 
-export function CoworkRoom() {
+export function CoworkRoom({ locale }: { locale: Locale }) {
+  const c = getRoomCopy(locale);
+  const roomTypes = getRoomTypesCopy(locale);
+  const ambientSounds = getAmbientSoundsCopy(locale);
+
   const [trial, setTrial] = useState<TrialStatus | null>(null);
-  const [selectedRoom, setSelectedRoom] = useState(roomTypes[1].id);
+  const [selectedRoom, setSelectedRoom] = useState<string>(roomTypes[1].id);
   const [selectedSound, setSelectedSound] = useState("cafe");
   const [sessionState, setSessionState] = useState<SessionState>("idle");
   const [secondsLeft, setSecondsLeft] = useState(0);
@@ -70,22 +81,23 @@ export function CoworkRoom() {
     setLoading(true);
     setError(null);
 
-    const room = roomTypes.find((r) => r.id === selectedRoom)!;
+    const roomCopy = roomTypes.find((r) => r.id === selectedRoom)!;
     const res = await fetch("/api/session/start", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ roomId: room.id, sound: selectedSound }),
+      body: JSON.stringify({ roomId: roomCopy.id, sound: selectedSound }),
     });
 
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "无法开始会话");
+      setError(getApiErrorMessage(data.code, locale));
       setLoading(false);
       return;
     }
 
-    const durationSec = room.duration * 60;
+    const meta = roomTypeMeta.find((r) => r.id === roomCopy.id)!;
+    const durationSec = meta.duration * 60;
     setTotalSeconds(durationSec);
     setSecondsLeft(durationSec);
     setSessionState("active");
@@ -99,16 +111,20 @@ export function CoworkRoom() {
     setSecondsLeft(0);
   }
 
-  const room = roomTypes.find((r) => r.id === selectedRoom)!;
+  const roomCopy = roomTypes.find((r) => r.id === selectedRoom)!;
+  const roomMeta = roomTypeMeta.find((r) => r.id === selectedRoom)!;
   const progress = totalSeconds > 0 ? ((totalSeconds - secondsLeft) / totalSeconds) * 100 : 0;
   const sound = ambientSounds.find((s) => s.id === selectedSound);
+  const soundIcon = ambientSoundIcons[selectedSound] ?? "🔇";
 
   if (sessionState === "active" || sessionState === "break") {
     return (
       <div className="space-y-6">
         <div className="rounded-2xl border border-brand-200 bg-gradient-to-b from-brand-50 to-white p-8 text-center">
           <p className="text-sm font-medium text-brand-500 mb-2">
-            {sessionState === "active" ? `${room.icon} ${room.name}` : "☕ 休息时间"}
+            {sessionState === "active"
+              ? `${roomMeta.icon} ${roomCopy.name}`
+              : `☕ ${c.breakTime}`}
           </p>
           <p className="text-6xl sm:text-7xl font-bold text-foreground tabular-nums tracking-tight">
             {formatTime(secondsLeft)}
@@ -120,20 +136,22 @@ export function CoworkRoom() {
             />
           </div>
           <p className="mt-4 text-sm text-muted">
-            {sound && sound.id !== "none" ? `${sound.icon} ${sound.name} 环境音` : "🔇 静音模式"}
+            {sound && sound.id !== "none"
+              ? `${soundIcon} ${sound.name} ${c.ambientSuffix}`
+              : `🔇 ${c.silentMode}`}
             {" · "}
-            {virtualCoworkers.length + room.activeUsers} 人正在共工
+            {virtualCoworkers.length + roomMeta.activeUsers} {c.coworkingNow}
           </p>
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center">
-          {virtualCoworkers.map((c) => (
+          {virtualCoworkers.map((coworker) => (
             <div
-              key={c.id}
+              key={coworker.id}
               className="flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-sm"
             >
-              <span>{c.avatar}</span>
-              <span className="text-muted">{c.name}</span>
+              <span>{coworker.avatar}</span>
+              <span className="text-muted">{coworker.name}</span>
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
             </div>
           ))}
@@ -145,7 +163,7 @@ export function CoworkRoom() {
             onClick={endSession}
             className="rounded-xl border border-border px-6 py-2.5 text-sm font-medium text-muted hover:bg-surface-muted transition-colors"
           >
-            结束会话
+            {c.endSession}
           </button>
         </div>
       </div>
@@ -156,16 +174,16 @@ export function CoworkRoom() {
     return (
       <div className="text-center space-y-6 py-8">
         <div className="text-5xl">🎉</div>
-        <h2 className="text-2xl font-bold">专注完成！</h2>
+        <h2 className="text-2xl font-bold">{c.sessionDone}</h2>
         <p className="text-muted">
-          你完成了 {room.duration} 分钟的 {room.name} 会话。继续保持！
+          {c.sessionDoneBody(roomMeta.duration, roomCopy.name)}
         </p>
         <button
           type="button"
           onClick={() => setSessionState("idle")}
           className="rounded-xl bg-brand-600 px-8 py-3 text-white font-semibold hover:bg-brand-700 transition-colors"
         >
-          开始新会话
+          {c.startNew}
         </button>
       </div>
     );
@@ -176,58 +194,68 @@ export function CoworkRoom() {
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
+            {c.freeSessions}{" "}
+            <strong>
+              {trial.remaining}/{trial.limit}
+            </strong>
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 →
+            {c.subscribeCta}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限共工会话
+          {c.memberBadge}
         </div>
       )}
 
       {error && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
           {error}
-          {error.includes("订阅") && (
+          {error.includes(locale === "zh" ? "订阅" : "subscribe") && (
             <Link href="/join" className="ml-2 font-semibold underline">
-              立即订阅
+              {c.subscribeNow}
             </Link>
           )}
         </div>
       )}
 
       <div>
-        <h2 className="text-lg font-bold mb-3">选择共工模式</h2>
+        <h2 className="text-lg font-bold mb-3">{c.chooseMode}</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          {roomTypes.map((r) => (
-            <button
-              key={r.id}
-              type="button"
-              onClick={() => setSelectedRoom(r.id)}
-              className={`rounded-xl border p-4 text-left transition-colors ${
-                selectedRoom === r.id
-                  ? "border-brand-500 bg-brand-600/10 ring-2 ring-brand-200"
-                  : "border-border bg-surface hover:border-border"
-              }`}
-            >
-              <div className="flex items-center justify-between">
-                <span className="text-2xl">{r.icon}</span>
-                <span className="text-xs text-muted">{r.activeUsers} 人在线</span>
-              </div>
-              <p className="font-semibold mt-2">{r.name}</p>
-              <p className="text-xs text-muted mt-1">{r.duration} 分钟 · {r.description}</p>
-            </button>
-          ))}
+          {roomTypes.map((r) => {
+            const meta = roomTypeMeta.find((m) => m.id === r.id)!;
+            return (
+              <button
+                key={r.id}
+                type="button"
+                onClick={() => setSelectedRoom(r.id)}
+                className={`rounded-xl border p-4 text-left transition-colors ${
+                  selectedRoom === r.id
+                    ? "border-brand-500 bg-brand-600/10 ring-2 ring-brand-200"
+                    : "border-border bg-surface hover:border-border"
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl">{meta.icon}</span>
+                  <span className="text-xs text-muted">
+                    {meta.activeUsers} {c.online}
+                  </span>
+                </div>
+                <p className="font-semibold mt-2">{r.name}</p>
+                <p className="text-xs text-muted mt-1">
+                  {meta.duration} {c.minutes} · {r.description}
+                </p>
+              </button>
+            );
+          })}
         </div>
       </div>
 
       <div>
-        <h2 className="text-lg font-bold mb-3">环境音</h2>
+        <h2 className="text-lg font-bold mb-3">{c.ambientSounds}</h2>
         <div className="flex flex-wrap gap-2">
           {ambientSounds.map((s) => (
             <button
@@ -240,22 +268,22 @@ export function CoworkRoom() {
                   : "bg-surface border border-border text-muted hover:border-border"
               }`}
             >
-              {s.icon} {s.name}
+              {ambientSoundIcons[s.id]} {s.name}
             </button>
           ))}
         </div>
       </div>
 
       <div className="rounded-xl border border-border bg-background p-4">
-        <p className="text-sm text-muted text-center mb-3">当前共工室在线</p>
+        <p className="text-sm text-muted text-center mb-3">{c.roomOnline}</p>
         <div className="flex flex-wrap gap-2 justify-center">
-          {virtualCoworkers.map((c) => (
+          {virtualCoworkers.map((coworker) => (
             <div
-              key={c.id}
+              key={coworker.id}
               className="flex items-center gap-1.5 rounded-full bg-surface border border-border px-3 py-1 text-xs"
             >
-              <span>{c.avatar}</span>
-              <span className="text-muted">{c.name}</span>
+              <span>{coworker.avatar}</span>
+              <span className="text-muted">{coworker.name}</span>
             </div>
           ))}
         </div>
@@ -267,7 +295,7 @@ export function CoworkRoom() {
         onClick={startSession}
         className="w-full rounded-xl bg-brand-600 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors disabled:opacity-50"
       >
-        {loading ? "进入中..." : `开始 ${room.duration} 分钟共工 →`}
+        {loading ? c.entering : c.startSession(roomMeta.duration)}
       </button>
     </div>
   );

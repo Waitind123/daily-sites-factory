@@ -1,27 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
-import { roomTypes } from "@/lib/data";
+import { roomTypeMeta } from "@/lib/data";
 
 export async function POST(request: NextRequest) {
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   const body = await request.json().catch(() => ({}));
-  const room = roomTypes.find((r) => r.id === body.roomId);
+  const room = roomTypeMeta.find((r) => r.id === body.roomId);
   if (!room) {
-    return NextResponse.json({ error: "无效的共工模式" }, { status: 400 });
+    return apiError("INVALID_ROOM", 400);
   }
 
   let remaining = access.isMember ? -1 : access.remaining;
@@ -33,7 +27,6 @@ export async function POST(request: NextRequest) {
       ok: true,
       sessionId: `session_${Date.now()}`,
       roomId: room.id,
-      roomName: room.name,
       duration: room.duration,
       sound: body.sound || "cafe",
       startedAt: new Date().toISOString(),
@@ -47,7 +40,6 @@ export async function POST(request: NextRequest) {
     ok: true,
     sessionId: `session_${Date.now()}`,
     roomId: room.id,
-    roomName: room.name,
     duration: room.duration,
     sound: body.sound || "cafe",
     startedAt: new Date().toISOString(),

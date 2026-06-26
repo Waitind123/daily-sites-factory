@@ -1,15 +1,18 @@
 import { CoworkRoom } from "@/components/CoworkRoom";
+import { getRoomCopy } from "@/lib/copy-app";
+import { getLocale } from "@/lib/locale";
 
-export default function RoomPage() {
+export default async function RoomPage() {
+  const locale = await getLocale();
+  const c = getRoomCopy(locale);
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="mb-8">
-        <h1 className="text-2xl sm:text-3xl font-bold">虚拟共工室</h1>
-        <p className="mt-2 text-muted">
-          选择模式和环境音，和全球远程工作者一起专注
-        </p>
+        <h1 className="text-2xl sm:text-3xl font-bold">{c.title}</h1>
+        <p className="mt-2 text-muted">{c.subtitle}</p>
       </div>
-      <CoworkRoom />
+      <CoworkRoom locale={locale} />
     </div>
   );
 }

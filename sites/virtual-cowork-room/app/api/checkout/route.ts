@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createCheckoutSession } from "@/lib/stripe";
+import { apiError } from "@/lib/api-errors";
+import { getLocale } from "@/lib/locale";
 import { memberCookieHeader } from "@/lib/member";
+import { createCheckoutSession } from "@/lib/stripe";
 
 export async function POST(request: NextRequest) {
   try {
     const origin = request.headers.get("origin") || request.nextUrl.origin;
-    const result = await createCheckoutSession(origin);
+    const locale = await getLocale();
+    const result = await createCheckoutSession(origin, locale);
 
     const response = NextResponse.redirect(result.url);
     if (result.demo) {
@@ -14,10 +17,7 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 
@@ -25,8 +25,7 @@ export async function GET() {
   const { isDemoMode } = await import("@/lib/stripe");
   return NextResponse.json({
     status: "ok",
-    message: "远程共工室支付接口",
-    price: "$9.9/月",
+    price: "$9.9/mo",
     demo: isDemoMode(),
   });
 }

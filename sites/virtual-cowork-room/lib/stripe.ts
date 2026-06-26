@@ -1,13 +1,15 @@
 import Stripe from "stripe";
+import type { Locale } from "./i18n-shared";
+import { getStripeProductCopy } from "./copy-app";
 
-const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
+const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !process.env.POLAR_CHECKOUT_URL;
 
 export function isDemoMode() {
   return DEMO_MODE;
 }
 
 export function getStripe() {
-  if (DEMO_MODE) return null;
+  if (DEMO_MODE || process.env.POLAR_CHECKOUT_URL) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
@@ -15,7 +17,13 @@ export function getStripe() {
 
 export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(origin: string, locale: Locale = "en") {
+  const product = getStripeProductCopy(locale);
+  const polarUrl = process.env.POLAR_CHECKOUT_URL;
+  if (polarUrl) {
+    return { demo: false as const, url: polarUrl };
+  }
+
   const stripe = getStripe();
 
   if (!stripe) {
@@ -32,12 +40,12 @@ export async function createCheckoutSession(origin: string) {
       {
         price_data: {
           currency: "usd",
-          recurring: { interval: "month" },
           product_data: {
-            name: "远程共工室 · 月度会员",
-            description: "无限共工会话、番茄钟、白噪音、虚拟同伴陪伴",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
+          recurring: { interval: "month" },
         },
         quantity: 1,
       },

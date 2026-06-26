@@ -1,13 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
-import { siteConfig } from "@/lib/seo";
+import { getSiteConfig } from "@/lib/seo";
+import { getLocale } from "@/lib/locale";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
-  title: "如何克服远程办公孤独感 — Body Doubling 与虚拟共工",
-  description:
-    "远程工作者孤独感是真实问题。本文介绍 body doubling 原理、虚拟共工室如何帮助提升专注力，以及 5 个实操技巧。",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const cfg = getSiteConfig(locale);
+  return buildSiteMetadata(
+    { ...cfg, keywords: [...cfg.keywords] },
+    locale === "zh"
+      ? {
+          title: "如何克服远程办公孤独感 — Body Doubling 与虚拟共工",
+          description:
+            "远程工作者孤独感是真实问题。本文介绍 body doubling 原理、虚拟共工室如何帮助提升专注力，以及 5 个实操技巧。",
+        }
+      : {
+          title: "How to Beat Remote Work Loneliness — Body Doubling & Virtual Cowork",
+          description:
+            "Remote loneliness hurts focus and execution. Learn how body doubling works, why virtual cowork rooms help, and 5 practical tips.",
+        }
+  );
+}
 
 export default function GuidePage() {
   return (
