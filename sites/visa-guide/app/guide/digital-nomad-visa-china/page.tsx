@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
-import { siteConfig } from "@/lib/seo";
+import { getSiteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+const guideConfig = getSiteConfig("zh");
+
+export const metadata: Metadata = buildSiteMetadata(
+  { ...guideConfig, keywords: [...guideConfig.keywords] },
+  {
   title: "2026 中国护照数字游民签证完全指南 — 28 国对比",
   description:
     "中国护照持有者如何申请数字游民签证？葡萄牙 D8、泰国 DTV、西班牙、格鲁吉亚等国家门槛、材料清单、税务政策完整对比。",
-});
+  }
+);
 
 export default function GuidePage() {
   return (

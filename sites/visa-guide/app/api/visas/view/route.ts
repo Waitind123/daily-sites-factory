@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { visaPrograms } from "@/lib/data";
@@ -9,7 +10,7 @@ export async function POST(request: NextRequest) {
   const visa = visaPrograms.find((v) => v.id === body.visaId);
 
   if (!visa) {
-    return NextResponse.json({ error: "未找到该签证项目" }, { status: 404 });
+    return apiError("VISA_NOT_FOUND", 404);
   }
 
   if (member) {
@@ -23,14 +24,7 @@ export async function POST(request: NextRequest) {
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月 解锁全部签证详情",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   const recorded = await recordTrialUse();
