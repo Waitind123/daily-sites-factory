@@ -1,5 +1,7 @@
 import { ChangelogStudio } from "@/components/ChangelogStudio";
+import { getLocale } from "@/lib/locale";
 
-export default function PublishPage() {
-  return <ChangelogStudio />;
+export default async function PublishPage() {
+  const locale = await getLocale();
+  return <ChangelogStudio locale={locale} />;
 }

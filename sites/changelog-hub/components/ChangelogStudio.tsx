@@ -2,11 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import {
-  sampleEntries,
-  type ChangelogEntry,
-  type GeneratedChangelog,
-} from "@/lib/changelog";
+import type { ChangelogEntry, GeneratedChangelog } from "@/lib/changelog";
+import type { Locale } from "@/lib/i18n-shared";
+import { getStudioCopy, getApiErrorMessage } from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -16,7 +14,9 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function ChangelogStudio() {
+export function ChangelogStudio({ locale }: { locale: Locale }) {
+  const c = getStudioCopy(locale);
+
   const [trial, setTrial] = useState<TrialInfo | null>(null);
   const [loading, setLoading] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
@@ -24,12 +24,18 @@ export function ChangelogStudio() {
   const [result, setResult] = useState<GeneratedChangelog | null>(null);
   const [activeTab, setActiveTab] = useState<"page" | "widget" | "status" | "rss">("page");
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<{
+    productName: string;
+    tagline: string;
+    accentColor: string;
+    includeStatusPage: boolean;
+    entries: ChangelogEntry[];
+  }>({
     productName: "",
-    tagline: "产品更新日志",
+    tagline: c.taglineDefault,
     accentColor: "#2563eb",
     includeStatusPage: true,
-    entries: sampleEntries.map((e) => ({ ...e })),
+    entries: c.sampleEntries.map((e) => ({ ...e })),
   });
 
   useEffect(() => {
@@ -39,11 +45,7 @@ export function ChangelogStudio() {
       .catch(() => null);
   }, []);
 
-  function updateEntry(
-    index: number,
-    field: keyof ChangelogEntry,
-    value: string
-  ) {
+  function updateEntry(index: number, field: keyof ChangelogEntry, value: string) {
     setForm((f) => {
       const next = [...f.entries];
       next[index] = { ...next[index], [field]: value };
@@ -95,13 +97,15 @@ export function ChangelogStudio() {
           setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
           return;
         }
-        throw new Error(data.error || "生成失败");
+        throw new Error(
+          getApiErrorMessage(data.code || data.error, locale) || c.generateFailed
+        );
       }
 
       setResult(data.changelog);
       if (data.trial) setTrial(data.trial);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "生成失败");
+      setError(err instanceof Error ? err.message : c.generateFailed);
     } finally {
       setLoading(false);
     }
@@ -125,41 +129,48 @@ export function ChangelogStudio() {
     }
   }
 
+  const tabs = [
+    { tab: "page" as const, label: c.tabPage },
+    { tab: "widget" as const, label: c.tabWidget },
+    ...(result?.statusPageHtml ? [{ tab: "status" as const, label: c.tabStatus }] : []),
+    { tab: "rss" as const, label: c.tabRss },
+  ];
+
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">发布 Changelog</h1>
-          <p className="text-muted mt-1">输入版本更新，一键生成公开页 + 嵌入 Widget + RSS</p>
+          <h1 className="text-3xl font-bold">{c.title}</h1>
+          <p className="text-muted mt-1">{c.subtitle}</p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
-              ? "✓ 会员 · 无限生成"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+              ? c.memberBadge
+              : c.freeRemaining(trial.remaining, trial.limit)}
           </div>
         )}
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8">
         <section className="rounded-2xl border border-border bg-surface p-6">
-          <h2 className="font-semibold text-lg mb-4">产品信息</h2>
+          <h2 className="font-semibold text-lg mb-4">{c.productInfo}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                产品名称 *
+                {c.productName}
               </label>
               <input
                 required
                 value={form.productName}
                 onChange={(e) => setForm({ ...form, productName: e.target.value })}
-                placeholder="例：我的 SaaS"
+                placeholder={c.productNamePlaceholder}
                 className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                标语
+                {c.tagline}
               </label>
               <input
                 value={form.tagline}
@@ -169,7 +180,7 @@ export function ChangelogStudio() {
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                主题色
+                {c.accentColor}
               </label>
               <input
                 type="color"
@@ -189,7 +200,7 @@ export function ChangelogStudio() {
                 className="rounded border-border"
               />
               <label htmlFor="statusPage" className="text-sm text-foreground">
-                同时生成状态页片段
+                {c.includeStatusPage}
               </label>
             </div>
           </div>
@@ -197,13 +208,13 @@ export function ChangelogStudio() {
 
         <section className="rounded-2xl border border-border bg-surface p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-lg">版本更新</h2>
+            <h2 className="font-semibold text-lg">{c.releases}</h2>
             <button
               type="button"
               onClick={addEntry}
               className="text-sm text-brand-500 hover:text-brand-500 font-medium"
             >
-              + 添加版本
+              {c.addRelease}
             </button>
           </div>
           <div className="space-y-4">
@@ -213,16 +224,14 @@ export function ChangelogStudio() {
                 className="rounded-xl border border-border bg-background p-4 space-y-3"
               >
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-muted">
-                    版本 #{i + 1}
-                  </span>
+                  <span className="text-sm font-medium text-muted">{c.releaseN(i + 1)}</span>
                   {form.entries.length > 1 && (
                     <button
                       type="button"
                       onClick={() => removeEntry(i)}
                       className="text-xs text-muted hover:text-red-500"
                     >
-                      删除
+                      {c.remove}
                     </button>
                   )}
                 </div>
@@ -231,7 +240,7 @@ export function ChangelogStudio() {
                     required
                     value={entry.version}
                     onChange={(e) => updateEntry(i, "version", e.target.value)}
-                    placeholder="v1.0.0"
+                    placeholder={c.versionPlaceholder}
                     className="rounded-lg border border-border px-3 py-2 text-sm font-mono"
                   />
                   <select
@@ -239,10 +248,10 @@ export function ChangelogStudio() {
                     onChange={(e) => updateEntry(i, "tag", e.target.value)}
                     className="rounded-lg border border-border px-3 py-2 text-sm"
                   >
-                    <option value="feature">新功能</option>
-                    <option value="fix">修复</option>
-                    <option value="improvement">优化</option>
-                    <option value="breaking">破坏性变更</option>
+                    <option value="feature">{c.tagFeature}</option>
+                    <option value="fix">{c.tagFix}</option>
+                    <option value="improvement">{c.tagImprovement}</option>
+                    <option value="breaking">{c.tagBreaking}</option>
                   </select>
                   <input
                     type="date"
@@ -255,14 +264,14 @@ export function ChangelogStudio() {
                   required
                   value={entry.title}
                   onChange={(e) => updateEntry(i, "title", e.target.value)}
-                  placeholder="更新标题"
+                  placeholder={c.titlePlaceholder}
                   className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
                 <textarea
                   required
                   value={entry.description}
                   onChange={(e) => updateEntry(i, "description", e.target.value)}
-                  placeholder="更新详情描述"
+                  placeholder={c.descPlaceholder}
                   rows={2}
                   className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
@@ -277,15 +286,13 @@ export function ChangelogStudio() {
 
         {showPaywall && (
           <div className="rounded-xl border-2 border-brand-600 bg-brand-600/10 p-6 text-center">
-            <p className="font-semibold text-brand-800">免费体验已用完</p>
-            <p className="text-sm text-brand-500 mt-1">
-              订阅 $9.9/月，无限生成 Changelog 页、Widget 和 RSS
-            </p>
+            <p className="font-semibold text-brand-800">{c.paywallTitle}</p>
+            <p className="text-sm text-brand-500 mt-1">{c.paywallBody}</p>
             <Link
               href="/join"
               className="inline-block mt-4 bg-brand-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-brand-700"
             >
-              立即订阅
+              {c.paywallCta}
             </Link>
           </div>
         )}
@@ -295,26 +302,17 @@ export function ChangelogStudio() {
           disabled={loading}
           className="w-full sm:w-auto rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white hover:bg-brand-700 disabled:opacity-50 transition-colors"
         >
-          {loading ? "生成中…" : "生成 Changelog"}
+          {loading ? c.generating : c.generateCta}
         </button>
       </form>
 
       {result && (
         <div className="mt-12 space-y-6">
-          <h2 className="text-2xl font-bold">生成结果</h2>
+          <h2 className="text-2xl font-bold">{c.resultTitle}</h2>
 
           <div className="rounded-2xl border border-border bg-surface overflow-hidden">
             <div className="border-b border-border flex overflow-x-auto">
-              {(
-                [
-                  { tab: "page" as const, label: "公开页 HTML" },
-                  { tab: "widget" as const, label: "嵌入 Widget" },
-                  ...(result.statusPageHtml
-                    ? [{ tab: "status" as const, label: "状态页" }]
-                    : []),
-                  { tab: "rss" as const, label: "RSS Feed" },
-                ]
-              ).map(({ tab, label }) => (
+              {tabs.map(({ tab, label }) => (
                 <button
                   key={tab}
                   type="button"
@@ -338,14 +336,14 @@ export function ChangelogStudio() {
                 onClick={() => copyText(getActiveContent())}
                 className="mt-3 text-sm text-brand-500 hover:text-brand-500 font-medium"
               >
-                复制到剪贴板
+                {c.copyClipboard}
               </button>
             </div>
           </div>
 
           {activeTab === "page" && (
             <div className="rounded-2xl border border-border bg-surface p-6">
-              <h3 className="font-semibold mb-4">公开页预览</h3>
+              <h3 className="font-semibold mb-4">{c.previewTitle}</h3>
               <iframe
                 srcDoc={result.publicPageHtml}
                 title="Changelog preview"

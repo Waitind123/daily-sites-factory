@@ -2,27 +2,21 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateChangelog, type ChangelogInput } from "@/lib/changelog";
 import { SITE_ID, consumeTrial, incrementTrial } from "@/lib/trial";
 import { isMember } from "@/lib/member";
+import { apiError } from "@/lib/api-errors";
 
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as ChangelogInput;
 
     if (!body.productName?.trim()) {
-      return NextResponse.json({ error: "请填写产品名称" }, { status: 400 });
+      return apiError("product_name_required", 400);
     }
 
     const member = await isMember();
     const access = await consumeTrial(SITE_ID, member);
 
     if (!access.consumed && !access.isMember) {
-      return NextResponse.json(
-        {
-          error: "免费体验已用完，请订阅",
-          code: "TRIAL_EXHAUSTED",
-          remaining: 0,
-        },
-        { status: 403 }
-      );
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
     }
 
     const changelog = generateChangelog(body);
@@ -55,6 +49,6 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error("Changelog generate error:", error);
-    return NextResponse.json({ error: "生成失败，请稍后重试" }, { status: 500 });
+    return apiError("generate_failed", 500);
   }
 }
