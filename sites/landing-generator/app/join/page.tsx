@@ -1,41 +1,38 @@
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
+import { getJoinCopy } from "@/lib/copy-app";
+import { getHomeCopy } from "@/lib/copy";
+import { getLocale } from "@/lib/locale";
 import { isDemoMode } from "@/lib/stripe";
 
-export default function JoinPage() {
+export default async function JoinPage() {
+  const locale = await getLocale();
+  const c = getJoinCopy(locale);
+  const home = getHomeCopy(locale);
   const demo = isDemoMode();
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-20">
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-foreground sm:text-4xl">加入 Landing 生成器</h1>
-        <p className="mt-3 text-muted">
-          一个价格，无限生成。没有按次收费，没有隐藏费用。
-        </p>
+        <h1 className="text-3xl font-bold text-foreground sm:text-4xl">{c.title}</h1>
+        <p className="mt-3 text-muted">{c.subtitle}</p>
       </div>
 
       <div className="rounded-2xl border-2 border-brand-600 bg-surface p-8 shadow-lg relative overflow-hidden">
         <div className="absolute top-0 right-0 bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-xl">
-          唯一方案
+          {c.recommended}
         </div>
 
         <div className="text-center">
-          <p className="text-sm font-medium text-brand-500 mb-2">月度会员</p>
+          <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
           <div className="flex items-baseline justify-center gap-1">
             <span className="text-5xl font-bold text-foreground">$9.9</span>
-            <span className="text-muted">/月</span>
+            <span className="text-muted">{c.perMonth}</span>
           </div>
-          <p className="mt-2 text-sm text-muted">约 $0.33/天 · 随时取消</p>
+          <p className="mt-2 text-sm text-muted">{c.vsCompetitor}</p>
         </div>
 
         <ul className="mt-8 space-y-3 text-sm">
-          {[
-            "无限 Landing Page 生成",
-            "4 种风格模板（极简/醒目/暗色/渐变）",
-            "HTML 一键导出 + 下载",
-            "SEO meta 标签自动生成",
-            "优化建议 + 部署指南",
-            "移动端响应式布局",
-          ].map((item) => (
+          {c.perks.map((item) => (
             <li key={item} className="flex items-start gap-2">
               <span className="text-brand-500 mt-0.5">✓</span>
               <span className="text-foreground">{item}</span>
@@ -44,32 +41,30 @@ export default function JoinPage() {
         </ul>
 
         <div className="mt-8">
-          <CheckoutButton />
+          <CheckoutButton label={c.subscribe} />
         </div>
 
         {demo && (
           <p className="mt-4 text-center text-xs text-amber-600 bg-amber-50 rounded-lg py-2 px-3">
-            演示模式：未配置 Stripe 密钥，点击支付将模拟成功
+            {c.demoNote}
           </p>
         )}
 
-        <p className="mt-4 text-center text-xs text-muted">
-          Stripe / Polar 安全支付 · 支持信用卡
-        </p>
+        <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
       </div>
 
       <div className="mt-8 rounded-xl border border-border bg-background p-6">
-        <h3 className="font-semibold text-foreground mb-3">免费体验 5 次，之后订阅，因为：</h3>
+        <h3 className="font-semibold text-foreground mb-3">{c.whyTitle}</h3>
         <ul className="space-y-2 text-sm text-muted">
-          <li>· Carrd Pro $19/年 只能用一个模板，我们 4 种风格无限切换</li>
-          <li>· Webflow 免费版不能绑自定义域名，我们导出 HTML 随便部署</li>
-          <li>· 一人维护，$9.9 才能持续更新模板和 SEO 优化</li>
+          {c.whyItems.map((item) => (
+            <li key={item}>· {item}</li>
+          ))}
         </ul>
       </div>
 
       <div className="mt-12">
-        <h2 className="text-xl font-bold text-foreground mb-6 text-center">包含功能</h2>
-        <FeatureGrid />
+        <h2 className="text-xl font-bold text-foreground mb-6 text-center">{c.includedTitle}</h2>
+        <FeatureGrid features={home.features} />
       </div>
     </div>
   );

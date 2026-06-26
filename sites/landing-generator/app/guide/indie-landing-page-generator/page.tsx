@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
-import { siteConfig } from "@/lib/seo";
+import { getSiteConfig } from "@/lib/seo";
+import { getLocale } from "@/lib/locale";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
-  title: "Indie 开发者 Landing Page 生成指南 — 30 秒上线落地页",
-  description:
-    "手把手教你为 indie 产品快速创建 landing page：工具对比（Carrd vs Webflow vs AI 生成器）、SEO 优化、部署到 Vercel。levelsio 第一天收费思路。",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const cfg = getSiteConfig(locale);
+  return buildSiteMetadata({ ...cfg, keywords: [...cfg.keywords] }, {
+    title:
+      locale === "zh"
+        ? "Indie 开发者 Landing Page 生成指南 — 30 秒上线落地页"
+        : "Indie landing page generator guide — ship in 30 seconds",
+    description:
+      locale === "zh"
+        ? "手把手教你为 indie 产品快速创建 landing page：工具对比（Carrd vs Webflow vs AI 生成器）、SEO 优化、部署到 Vercel。levelsio 第一天收费思路。"
+        : "How to create indie landing pages fast: Carrd vs Webflow vs AI generators, SEO tips, deploy to Vercel. levelsio day-1 monetization playbook.",
+  });
+}
 
 export default function GuidePage() {
   return (

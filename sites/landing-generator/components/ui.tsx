@@ -1,19 +1,29 @@
-import { features, stats } from "@/lib/generator";
+import type { Locale } from "@/lib/i18n-shared";
+import { getStudioCopy } from "@/lib/copy-app";
+import { stats } from "@/lib/generator";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = { icon: string; title: string; desc: string };
+
+export function CheckoutButton({
+  label,
+  className = "",
+}: {
+  label: string;
+  className?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,11 +37,12 @@ export function FeatureGrid() {
   );
 }
 
-export function StatsBar() {
+export function StatsBar({ locale }: { locale: Locale }) {
+  const c = getStudioCopy(locale);
   const items = [
-    { label: "风格模板", value: `${stats.styles}` },
-    { label: "平均生成时间", value: stats.avgTime },
-    { label: "导出格式", value: stats.exports },
+    { label: c.stats.styles, value: `${stats.styles}` },
+    { label: c.stats.avgTime, value: stats.avgTime },
+    { label: c.stats.exports, value: stats.exports },
   ];
   return (
     <div className="grid grid-cols-3 gap-4 text-center">
@@ -45,13 +56,9 @@ export function StatsBar() {
   );
 }
 
-export function StyleBadge({ style }: { style: string }) {
-  const labels: Record<string, string> = {
-    minimal: "极简",
-    bold: "醒目",
-    dark: "暗色",
-    gradient: "渐变",
-  };
+export function StyleBadge({ style, locale }: { style: string; locale: Locale }) {
+  const c = getStudioCopy(locale);
+  const labels = c.styleBadge as Record<string, string>;
   return (
     <span className="text-xs font-medium text-brand-500 bg-brand-600/10 px-2 py-0.5 rounded">
       {labels[style] || style}

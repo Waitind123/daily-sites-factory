@@ -4,11 +4,12 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import {
   examplePrompts,
-  styleOptions,
   type GeneratedLanding,
   type LandingStyle,
 } from "@/lib/generator";
 import { StyleBadge } from "@/components/ui";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getStudioCopy } from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -18,15 +19,18 @@ type TrialStatus = {
   canUse: boolean;
 };
 
-export function LandingStudio() {
+const STYLE_IDS: LandingStyle[] = ["minimal", "bold", "dark", "gradient"];
+
+export function LandingStudio({ locale }: { locale: Locale }) {
+  const c = getStudioCopy(locale);
   const [trial, setTrial] = useState<TrialStatus | null>(null);
   const [productName, setProductName] = useState("");
   const [tagline, setTagline] = useState("");
   const [description, setDescription] = useState("");
   const [features, setFeatures] = useState("");
-  const [ctaText, setCtaText] = useState("立即开始");
+  const [ctaText, setCtaText] = useState<string>(c.defaultCta);
   const [style, setStyle] = useState<LandingStyle>("minimal");
-  const [audience, setAudience] = useState("独立开发者");
+  const [audience, setAudience] = useState<string>(c.defaultAudience);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<GeneratedLanding | null>(null);
@@ -77,7 +81,7 @@ export function LandingStudio() {
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "生成失败");
+      setError(getApiErrorMessage(data.code, locale));
       setLoading(false);
       await loadTrial();
       return;
@@ -106,22 +110,24 @@ export function LandingStudio() {
     URL.revokeObjectURL(url);
   }
 
+  const trialExhausted = error === getApiErrorMessage("TRIAL_EXHAUSTED", locale);
+
   return (
     <div className="space-y-8">
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费生成
+            <strong>{trial.remaining}/{trial.limit}</strong> {c.trialRemaining}
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 无限生成 →
+            {c.subscribeUnlock}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限生成 + HTML 导出
+          {c.memberActive}
         </div>
       )}
 
@@ -133,7 +139,7 @@ export function LandingStudio() {
             onClick={() => fillExample(i)}
             className="rounded-full px-3 py-1.5 text-sm font-medium bg-surface border border-border text-muted hover:bg-background transition-colors"
           >
-            示例：{ex.name}
+            {c.examplePrefix}{ex.name}
           </button>
         ))}
       </div>
@@ -141,49 +147,49 @@ export function LandingStudio() {
       <div className="grid lg:grid-cols-2 gap-8">
         <form onSubmit={handleGenerate} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">产品名称 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{c.productName}</label>
             <input
               required
               value={productName}
               onChange={(e) => setProductName(e.target.value)}
-              placeholder="TaskFlow"
+              placeholder={c.productNamePlaceholder}
               className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">一句话标语 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{c.tagline}</label>
             <input
               required
               value={tagline}
               onChange={(e) => setTagline(e.target.value)}
-              placeholder="独立开发者的极简项目管理"
+              placeholder={c.taglinePlaceholder}
               className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">产品描述 *</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{c.description}</label>
             <textarea
               required
               rows={3}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="解决什么问题，目标用户是谁..."
+              placeholder={c.descriptionPlaceholder}
               className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-1">核心功能（每行一个）</label>
+            <label className="block text-sm font-medium text-foreground mb-1">{c.features}</label>
             <textarea
               rows={4}
               value={features}
               onChange={(e) => setFeatures(e.target.value)}
-              placeholder={"无限项目\nGitHub 同步\n时间追踪"}
+              placeholder={c.featuresPlaceholder}
               className="w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
             />
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-foreground mb-1">CTA 按钮文案</label>
+              <label className="block text-sm font-medium text-foreground mb-1">{c.ctaText}</label>
               <input
                 value={ctaText}
                 onChange={(e) => setCtaText(e.target.value)}
@@ -191,7 +197,7 @@ export function LandingStudio() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-foreground mb-1">目标用户</label>
+              <label className="block text-sm font-medium text-foreground mb-1">{c.audience}</label>
               <input
                 value={audience}
                 onChange={(e) => setAudience(e.target.value)}
@@ -200,21 +206,21 @@ export function LandingStudio() {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-foreground mb-2">页面风格</label>
+            <label className="block text-sm font-medium text-foreground mb-2">{c.styleLabel}</label>
             <div className="grid grid-cols-2 gap-2">
-              {styleOptions.map((s) => (
+              {STYLE_IDS.map((id) => (
                 <button
-                  key={s.id}
+                  key={id}
                   type="button"
-                  onClick={() => setStyle(s.id)}
+                  onClick={() => setStyle(id)}
                   className={`rounded-lg border p-3 text-left text-sm transition-colors ${
-                    style === s.id
+                    style === id
                       ? "border-brand-600 bg-brand-600/10 ring-1 ring-brand-600"
                       : "border-border hover:bg-background"
                   }`}
                 >
-                  <span className="font-semibold">{s.label}</span>
-                  <p className="text-xs text-muted mt-0.5">{s.desc}</p>
+                  <span className="font-semibold">{c.styleOptions[id].label}</span>
+                  <p className="text-xs text-muted mt-0.5">{c.styleOptions[id].desc}</p>
                 </button>
               ))}
             </div>
@@ -224,7 +230,7 @@ export function LandingStudio() {
             disabled={loading}
             className="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white hover:bg-brand-700 transition-colors disabled:opacity-50"
           >
-            {loading ? "生成中..." : "生成 Landing Page"}
+            {loading ? c.generating : c.generate}
           </button>
         </form>
 
@@ -232,9 +238,9 @@ export function LandingStudio() {
           {error && (
             <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
               {error}
-              {error.includes("订阅") && (
+              {trialExhausted && (
                 <Link href="/join" className="block mt-2 font-semibold underline">
-                  立即订阅 $9.9/月
+                  {c.subscribeNow}
                 </Link>
               )}
             </div>
@@ -243,14 +249,14 @@ export function LandingStudio() {
           {!result && !loading && !error && (
             <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-4">🎨</p>
-              <p>填写左侧表单，点击生成</p>
-              <p className="text-sm mt-2">或选择上方示例快速体验</p>
+              <p>{c.emptyTitle}</p>
+              <p className="text-sm mt-2">{c.emptySubtitle}</p>
             </div>
           )}
 
           {loading && (
             <div className="rounded-xl border border-border bg-surface p-12 text-center text-muted">
-              正在生成 landing page...
+              {c.loading}
             </div>
           )}
 
@@ -270,7 +276,7 @@ export function LandingStudio() {
                 }}
               >
                 <div className="p-8 text-center">
-                  <StyleBadge style={result.preview.style} />
+                  <StyleBadge style={result.preview.style} locale={locale} />
                   <h2
                     className="text-2xl font-bold mt-3"
                     style={{
@@ -318,25 +324,25 @@ export function LandingStudio() {
                   onClick={copyHtml}
                   className="flex-1 min-w-[120px] rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-background"
                 >
-                  {copied ? "已复制 ✓" : "复制 HTML"}
+                  {copied ? c.copied : c.copyHtml}
                 </button>
                 <button
                   type="button"
                   onClick={downloadHtml}
                   className="flex-1 min-w-[120px] rounded-lg bg-brand-600 text-white px-4 py-2 text-sm font-medium hover:bg-brand-700"
                 >
-                  下载 HTML
+                  {c.downloadHtml}
                 </button>
               </div>
 
               <div className="rounded-xl border border-border bg-surface p-4 text-sm">
-                <h3 className="font-semibold mb-2">SEO Meta</h3>
+                <h3 className="font-semibold mb-2">{c.seoMeta}</h3>
                 <p className="text-muted"><strong>Title:</strong> {result.meta.title}</p>
                 <p className="text-muted mt-1"><strong>Description:</strong> {result.meta.description}</p>
               </div>
 
               <div className="rounded-xl border border-brand-200 bg-brand-600/10 p-4 text-sm">
-                <h3 className="font-semibold text-brand-800 mb-2">💡 优化建议</h3>
+                <h3 className="font-semibold text-brand-800 mb-2">{c.tipsTitle}</h3>
                 <ul className="space-y-1 text-brand-500">
                   {result.tips.map((tip) => (
                     <li key={tip}>· {tip}</li>
@@ -346,12 +352,12 @@ export function LandingStudio() {
 
               {!trial?.isMember && (
                 <div className="text-center pt-2">
-                  <p className="text-sm text-muted mb-2">订阅解锁无限生成 + 托管部署</p>
+                  <p className="text-sm text-muted mb-2">{c.subscribeUpsell}</p>
                   <Link
                     href="/join"
                     className="inline-block bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700"
                   >
-                    订阅 $9.9/月
+                    {c.subscribeButton}
                   </Link>
                 </div>
               )}
