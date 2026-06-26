@@ -1,28 +1,58 @@
 import type { Metadata } from "next";
 import { buildSiteMetadata } from "./site-seo";
+import type { Locale } from "./i18n-shared";
 
 export { buildSiteMetadata } from "./site-seo";
 
-export const siteConfig = {
-  url: "https://remote-jobs-azure.vercel.app",
-  name: "远程工作板",
-  title: "远程工作板 — 全球远程职位聚合，企业发帖 ¥699/年",
-  description:
-    "免费体验 5 次查看完整职位详情。200+ 远程岗位每日更新，透明薪资，React/Go/PM 智能筛选。企业 ¥699/年无限发帖。",
-  keywords: [
-    "远程工作",
-    "remote jobs",
-    "远程职位",
-    "在家办公",
-    "数字游民工作",
-    "远程招聘",
-    "work from home jobs",
-  ],
-};
+const siteConfigByLocale = {
+  en: {
+    url: "https://remote-jobs-azure.vercel.app",
+    name: "Remote Jobs",
+    title: "Remote Jobs — Curated remote board for indie hackers, $9.9/mo",
+    description:
+      "5 free job detail views. We Work Remotely $149/yr? $9.9/mo flat: 200+ remote roles, transparent salaries, stack filters, unlimited company posts.",
+    keywords: [
+      "remote jobs",
+      "remote work board",
+      "We Work Remotely alternative",
+      "indie hacker jobs",
+      "remote developer jobs",
+      "work from home",
+      "remote job board",
+    ],
+    locale: "en_US",
+  },
+  zh: {
+    url: "https://remote-jobs-azure.vercel.app",
+    name: "远程工作板",
+    title: "远程工作板 — 独立开发者远程职位聚合，$9.9/月",
+    description:
+      "免费体验 5 次查看职位详情。We Work Remotely $149/年太贵？$9.9/月一口价：200+ 远程岗位、透明薪资、技术栈筛选、企业无限发帖。",
+    keywords: [
+      "远程工作",
+      "remote jobs",
+      "远程职位",
+      "在家办公",
+      "数字游民工作",
+      "远程招聘",
+      "work from home jobs",
+    ],
+    locale: "zh_CN",
+  },
+} as const;
+
+export const siteConfig = siteConfigByLocale.zh;
 
 export const SITE_URL = siteConfig.url;
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig);
+export function getSiteConfig(locale: Locale) {
+  return siteConfigByLocale[locale];
+}
+
+export async function buildLocaleMetadata(locale: Locale): Promise<Metadata> {
+  const cfg = getSiteConfig(locale);
+  return buildSiteMetadata({ ...cfg, keywords: [...cfg.keywords] });
+}
 
 export const publicPaths = [
   { path: "/", priority: 1, changeFrequency: "weekly" as const },
@@ -32,20 +62,26 @@ export const publicPaths = [
   { path: "/guide/find-remote-job-china", priority: 0.85, changeFrequency: "monthly" as const },
 ];
 
-export function softwareApplicationJsonLd() {
+export function softwareApplicationJsonLd(locale: Locale = "en") {
+  const cfg = getSiteConfig(locale);
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: siteConfig.name,
+    name: cfg.name,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {
       "@type": "Offer",
-      price: "699",
-      priceCurrency: "CNY",
+      price: "9.9",
+      priceCurrency: "USD",
       priceValidUntil: "2027-12-31",
     },
-    description: siteConfig.description,
-    url: siteConfig.url,
+    description: cfg.description,
+    url: cfg.url,
   };
 }
+
+export const metadata = buildSiteMetadata({
+  ...siteConfigByLocale.en,
+  keywords: [...siteConfigByLocale.en.keywords],
+});

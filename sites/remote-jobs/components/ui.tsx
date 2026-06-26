@@ -1,19 +1,33 @@
-import { features, jobs } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getJobsCopy } from "@/lib/copy-app";
+import { jobs } from "@/lib/data";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type FeatureItem = {
+  readonly icon: string;
+  readonly title: string;
+  readonly desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label = "Subscribe · $9.9/mo",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即加入 · ¥699/年
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly FeatureItem[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,7 +41,8 @@ export function FeatureGrid() {
   );
 }
 
-export function JobPreviewTable() {
+export function JobPreviewTable({ locale }: { locale: Locale }) {
+  const t = getJobsCopy(locale);
   const preview = jobs.slice(0, 5);
 
   return (
@@ -35,10 +50,10 @@ export function JobPreviewTable() {
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-border bg-background text-left text-muted">
-            <th className="px-4 py-3 font-medium">职位</th>
-            <th className="px-4 py-3 font-medium hidden sm:table-cell">地点</th>
-            <th className="px-4 py-3 font-medium hidden md:table-cell">类型</th>
-            <th className="px-4 py-3 font-medium text-right">薪资</th>
+            <th className="px-4 py-3 font-medium">{t.jobTitle}</th>
+            <th className="px-4 py-3 font-medium hidden sm:table-cell">{t.location}</th>
+            <th className="px-4 py-3 font-medium hidden md:table-cell">{t.type}</th>
+            <th className="px-4 py-3 font-medium text-right">{t.salary}</th>
           </tr>
         </thead>
         <tbody>

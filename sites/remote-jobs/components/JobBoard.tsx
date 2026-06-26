@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getJobsCopy } from "@/lib/copy-app";
 import { jobs as allJobs, type Job } from "@/lib/data";
 
 type TrialInfo = {
@@ -16,7 +18,8 @@ type JobDetail = Job & { unlocked: boolean };
 
 const TAGS = ["React", "Go", "Remote", "Product", "Design"];
 
-export function JobBoard() {
+export function JobBoard({ locale }: { locale: Locale }) {
+  const t = getJobsCopy(locale);
   const [query, setQuery] = useState("");
   const [tag, setTag] = useState("");
   const [trial, setTrial] = useState<TrialInfo | null>(null);
@@ -33,7 +36,7 @@ export function JobBoard() {
   }, []);
 
   const filtered = allJobs.filter((job) => {
-    const matchTag = !tag || job.tags.some((t) => t.toLowerCase().includes(tag.toLowerCase()));
+    const matchTag = !tag || job.tags.some((item) => item.toLowerCase().includes(tag.toLowerCase()));
     if (!query.trim()) return matchTag;
     const haystack = `${job.title} ${job.company} ${job.tags.join(" ")}`.toLowerCase();
     return matchTag && haystack.includes(query.toLowerCase());
@@ -55,10 +58,10 @@ export function JobBoard() {
       if (!res.ok) {
         if (data.code === "TRIAL_EXHAUSTED") {
           setShowPaywall(true);
-          setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
+          setTrial((prev) => (prev ? { ...prev, remaining: 0, canUse: false } : prev));
           return;
         }
-        throw new Error(data.error || "加载失败");
+        throw new Error(getApiErrorMessage(data.code, locale));
       }
 
       setSelected(data.job);
@@ -66,7 +69,7 @@ export function JobBoard() {
         setTrial(data.trial);
       }
     } catch (e) {
-      setError(e instanceof Error ? e.message : "加载失败");
+      setError(e instanceof Error ? e.message : getApiErrorMessage(undefined, locale));
     } finally {
       setLoading(false);
     }
@@ -76,14 +79,16 @@ export function JobBoard() {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">远程职位</h1>
-          <p className="text-muted mt-1">{filtered.length} 个开放岗位</p>
+          <h1 className="text-3xl font-bold">{t.title}</h1>
+          <p className="text-muted mt-1">
+            {filtered.length} {t.openCount}
+          </p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
-              ? "✓ 会员 · 无限查看"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+              ? t.memberBadge
+              : `${t.freeViews} ${trial.remaining}/${trial.limit}`}
           </div>
         )}
       </div>
@@ -91,24 +96,24 @@ export function JobBoard() {
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <input
           type="search"
-          placeholder="搜索职位、公司、技能…"
+          placeholder={t.searchPlaceholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="flex-1 rounded-xl border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
         />
         <div className="flex flex-wrap gap-2">
-          {TAGS.map((t) => (
+          {TAGS.map((item) => (
             <button
-              key={t}
+              key={item}
               type="button"
-              onClick={() => setTag(tag === t ? "" : t)}
+              onClick={() => setTag(tag === item ? "" : item)}
               className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-                tag === t
+                tag === item
                   ? "bg-brand-600 text-white"
                   : "bg-surface-muted text-muted hover:bg-stone-200"
               }`}
             >
-              {t}
+              {item}
             </button>
           ))}
         </div>
@@ -117,14 +122,14 @@ export function JobBoard() {
       {showPaywall && (
         <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="font-semibold text-amber-900">免费体验已用完</p>
-            <p className="text-sm text-amber-700 mt-1">订阅 ¥699/年，无限查看职位详情 + 企业无限发帖</p>
+            <p className="font-semibold text-amber-900">{t.paywallTitle}</p>
+            <p className="text-sm text-amber-700 mt-1">{t.paywallBody}</p>
           </div>
           <Link
             href="/join"
             className="shrink-0 rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            立即订阅
+            {t.paywallCta}
           </Link>
         </div>
       )}
@@ -151,9 +156,9 @@ export function JobBoard() {
                   <p className="font-semibold text-foreground truncate">{job.title}</p>
                   <p className="text-sm text-muted">{job.company}</p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
-                    {job.tags.slice(0, 3).map((t) => (
-                      <span key={t} className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded">
-                        {t}
+                    {job.tags.slice(0, 3).map((item) => (
+                      <span key={item} className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded">
+                        {item}
                       </span>
                     ))}
                   </div>
@@ -171,19 +176,21 @@ export function JobBoard() {
                 <span className="text-4xl">{selected.logo}</span>
                 <div>
                   <h2 className="text-xl font-bold">{selected.title}</h2>
-                  <p className="text-muted">{selected.company} · {selected.location}</p>
+                  <p className="text-muted">
+                    {selected.company} · {selected.location}
+                  </p>
                   <p className="text-brand-500 font-semibold mt-1">{selected.salary}</p>
                 </div>
               </div>
 
               <div className="mt-6 space-y-4 text-sm">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">职位描述</h3>
+                  <h3 className="font-semibold text-foreground mb-1">{t.description}</h3>
                   <p className="text-muted">{selected.description}</p>
                 </div>
                 {selected.requirements && (
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">要求</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{t.requirements}</h3>
                     <ul className="list-disc list-inside text-muted space-y-1">
                       {selected.requirements.map((r) => (
                         <li key={r}>{r}</li>
@@ -200,15 +207,15 @@ export function JobBoard() {
                   rel="noopener noreferrer"
                   className="mt-6 block w-full text-center rounded-xl bg-brand-600 py-3 font-semibold text-white hover:bg-brand-700 transition-colors"
                 >
-                  立即申请 →
+                  {t.applyNow}
                 </a>
               )}
             </div>
           ) : (
             <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-3">👈</p>
-              <p>点击左侧职位查看完整详情</p>
-              <p className="text-sm mt-1">非会员免费体验 5 次</p>
+              <p>{t.selectJob}</p>
+              <p className="text-sm mt-1">{t.freeTrialNote}</p>
             </div>
           )}
         </div>
