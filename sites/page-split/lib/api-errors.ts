@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import type { ApiErrorCode } from "./copy-app";
 
-export function apiError(code: ApiErrorCode, status: number, extra?: Record<string, unknown>) {
+/** API 只返回 code，文案由客户端按 locale 从 copy-app.ts 翻译 */
+export function apiError(code: string, status: number, extra?: Record<string, unknown>) {
   return NextResponse.json({ code, error: code, ...extra }, { status });
 }
