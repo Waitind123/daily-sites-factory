@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { getIdeaById } from "@/lib/data";
@@ -6,26 +7,19 @@ import { getIdeaById } from "@/lib/data";
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => ({}));
   if (!body.ideaId) {
-    return NextResponse.json({ error: "缺少 ideaId" }, { status: 400 });
+    return apiError("MISSING_IDEA_ID", 400);
   }
 
   const idea = getIdeaById(body.ideaId);
   if (!idea) {
-    return NextResponse.json({ error: "点子不存在" }, { status: 404 });
+    return apiError("IDEA_NOT_FOUND", 404);
   }
 
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   let remaining = access.isMember ? -1 : access.remaining;

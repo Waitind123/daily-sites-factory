@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
-import { siteConfig } from "@/lib/seo";
+import { getSiteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+const zhConfig = getSiteConfig("zh");
+
+export const metadata: Metadata = buildSiteMetadata(
+  { ...zhConfig, keywords: [...zhConfig.keywords] },
+  {
   title: "如何找到能赚钱的创业点子 — 独立开发者验证指南",
   description:
     "从 Reddit、HN 到 MVP 验证：手把手教 indie hacker 找到有人愿意付费的创业方向。含竞品分析框架和 5 步验证法。",

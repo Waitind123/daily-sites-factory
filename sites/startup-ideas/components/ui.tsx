@@ -1,19 +1,31 @@
-import { features } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type FeatureItem = {
+  readonly icon: string;
+  readonly title: string;
+  readonly desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label = "Subscribe · $9.9/mo",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly FeatureItem[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,15 +39,49 @@ export function FeatureGrid() {
   );
 }
 
-export function DifficultyBadge({ difficulty }: { difficulty: string }) {
-  const colors: Record<string, string> = {
-    低: "bg-green-100 text-green-700",
-    中: "bg-amber-100 text-amber-700",
-    高: "bg-red-100 text-red-700",
-  };
+const difficultyColors: Record<string, Record<Locale, string>> = {
+  low: {
+    en: "bg-green-100 text-green-700",
+    zh: "bg-green-100 text-green-700",
+  },
+  medium: {
+    en: "bg-amber-100 text-amber-700",
+    zh: "bg-amber-100 text-amber-700",
+  },
+  high: {
+    en: "bg-red-100 text-red-700",
+    zh: "bg-red-100 text-red-700",
+  },
+};
+
+const difficultyLabels: Record<string, Record<Locale, string>> = {
+  low: { en: "Low", zh: "低" },
+  medium: { en: "Medium", zh: "中" },
+  high: { en: "High", zh: "高" },
+};
+
+const difficultyKey: Record<string, keyof typeof difficultyLabels> = {
+  低: "low",
+  中: "medium",
+  高: "high",
+  Low: "low",
+  Medium: "medium",
+  High: "high",
+};
+
+export function DifficultyBadge({
+  difficulty,
+  locale,
+}: {
+  difficulty: string;
+  locale: Locale;
+}) {
+  const key = difficultyKey[difficulty] || "medium";
+  const label = difficultyLabels[key][locale];
+  const colors = difficultyColors[key][locale];
   return (
-    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${colors[difficulty] || "bg-surface-muted text-muted"}`}>
-      难度 {difficulty}
+    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${colors}`}>
+      {locale === "en" ? `Difficulty ${label}` : `难度 ${label}`}
     </span>
   );
 }
