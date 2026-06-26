@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://coworking-pass.vercel.app",
+    url: "https://coworking-pass-five.vercel.app",
     name: "Coworking Pass",
     title: "Coworking Pass — Day pass booking for digital nomads, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://coworking-pass.vercel.app",
+    url: "https://coworking-pass-five.vercel.app",
     name: "联合办公日票",
     title: "联合办公日票 — 数字游民日票预订，$9.9/月",
     description:
