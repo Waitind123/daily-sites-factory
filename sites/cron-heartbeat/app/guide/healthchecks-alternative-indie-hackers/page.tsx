@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
-import { siteConfig } from "@/lib/seo";
+import { getSiteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+const cfg = getSiteConfig("en");
+
+export const metadata: Metadata = buildSiteMetadata({ ...cfg, keywords: [...cfg.keywords] }, {
   title: "2026 Healthchecks.io Alternative for Indie Hackers — Cron Monitoring Guide",
   description:
     "Cron jobs fail silently in production. Compare heartbeat monitoring tools for indie developers: Healthchecks.io, Cronitor, CronSafe. Find a $9.9/mo flat-rate alternative.",

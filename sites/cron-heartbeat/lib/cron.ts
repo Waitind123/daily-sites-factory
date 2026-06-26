@@ -68,14 +68,14 @@ export const sampleJobs = [
 
 const CRON_FIELD = /^(\*|[0-9,\-/]+)$/;
 
-export function validateCronExpression(expr: string): { valid: boolean; error?: string } {
+export function validateCronExpression(expr: string): { valid: boolean } {
   const parts = expr.trim().split(/\s+/);
   if (parts.length < 5 || parts.length > 6) {
-    return { valid: false, error: "Use 5 or 6 fields: minute hour day month weekday" };
+    return { valid: false };
   }
   for (const part of parts) {
     if (!CRON_FIELD.test(part)) {
-      return { valid: false, error: `Invalid cron field: ${part}` };
+      return { valid: false };
     }
   }
   return { valid: true };
