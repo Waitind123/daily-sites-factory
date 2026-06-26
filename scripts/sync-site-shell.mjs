@@ -74,6 +74,16 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/ideas", label: { en: "Ideas", zh: "点子" } }],
   },
+  "seo-rank-tracker": {
+    emoji: "📈",
+    name: { en: "Rank Pulse", zh: "SEO 排名追踪" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/semrush-alternative-indie-hackers",
+    nav: [
+      { href: "/guide/semrush-alternative-indie-hackers", label: { en: "Guide", zh: "指南" } },
+      { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
+    ],
+  },
   "coworking-finder": {
     emoji: "🏢",
     name: { en: "Coworking Finder", zh: "联合办公 Finder" },
