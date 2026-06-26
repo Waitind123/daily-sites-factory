@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import { getStripeProductCopy } from "./copy-app";
+import { getLocale } from "./locale";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
 
@@ -17,6 +19,8 @@ export const PRICE_USD = 990;
 
 export async function createCheckoutSession(origin: string) {
   const stripe = getStripe();
+  const locale = await getLocale();
+  const product = getStripeProductCopy(locale);
 
   if (!stripe) {
     return {
@@ -34,8 +38,8 @@ export async function createCheckoutSession(origin: string) {
           currency: "usd",
           recurring: { interval: "month" },
           product_data: {
-            name: "Meetup 组织助手 · 月度会员",
-            description: "无限活动管理、RSVP 候补队列、签到视图、提醒邮件模板",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
         },

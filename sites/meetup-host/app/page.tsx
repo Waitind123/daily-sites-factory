@@ -1,25 +1,54 @@
 import Link from "next/link";
 import { FeatureGrid, StatsBar } from "@/components/ui";
-import { meetupEvents, testimonials } from "@/lib/data";
+import { getPublicEvents } from "@/lib/data";
 import { HomeHero } from "@/components/HomeHero";
+import { getLocale } from "@/lib/locale";
+import { getHomeCopy } from "@/lib/copy";
 
-export default function HomePage() {
-  const upcoming = meetupEvents.slice(0, 3);
+export default async function HomePage() {
+  const locale = await getLocale();
+  const c = getHomeCopy(locale);
+  const upcoming = getPublicEvents(locale).slice(0, 3);
 
   return (
     <div>
       <HomeHero />
 
-<section className="bg-surface border-y border-border py-12">
+      <section className="border-b border-border py-8">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-xl font-bold mb-6 text-center">平台对比</h2>
-          <StatsBar />
+          <div className="grid grid-cols-3 gap-4 text-center">
+            {c.stats.map((s) => (
+              <div key={s.label} className="rounded-xl border border-border bg-surface p-4">
+                <p className="text-2xl font-bold text-brand-500">{s.stat}</p>
+                <p className="text-xs text-muted mt-1">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 border-b border-border">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">{c.productDemo.title}</h2>
+          <p className="text-center text-sm text-muted mb-6">{c.productDemo.caption}</p>
+          <div className="rounded-2xl border border-brand-600/30 bg-surface p-6 shadow-xl">
+            <pre className="whitespace-pre-wrap rounded-xl bg-background border border-border p-5 font-mono text-sm text-foreground leading-relaxed">
+              {c.productDemo.preview}
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface border-y border-border py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-xl font-bold mb-6 text-center">{c.compareTitle}</h2>
+          <StatsBar locale={locale} />
         </div>
       </section>
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">近期活动示例</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">{c.previewTitle}</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {upcoming.map((e) => (
               <div key={e.id} className="rounded-xl border border-border bg-surface p-5">
@@ -37,11 +66,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-16 sm:py-20 border-b border-border">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">{c.howItWorks.title}</h2>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {c.howItWorks.steps.map((step) => (
+              <div key={step.step} className="text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-brand-600/10 text-brand-500 font-bold mb-4">
+                  {step.step}
+                </div>
+                <h3 className="font-semibold text-lg">{step.title}</h3>
+                <p className="text-sm text-muted mt-2">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-surface border-y border-border py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-10">组织者怎么说</h2>
+          <h2 className="text-2xl font-bold text-center mb-10">{c.testimonialsTitle}</h2>
           <div className="grid sm:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
+            {c.testimonials.map((t) => (
               <blockquote
                 key={t.name}
                 className="rounded-xl border border-border p-5 bg-background"
@@ -59,25 +105,29 @@ export default function HomePage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-10">核心功能</h2>
-          <FeatureGrid />
+          <h2 className="text-2xl font-bold text-center mb-10">{c.featuresTitle}</h2>
+          <FeatureGrid features={c.features} />
         </div>
       </section>
 
       <section className="bg-brand-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">
-            Meetup.com 太贵，Google Forms 太笨
-          </h2>
-          <p className="mt-4 text-brand-100 text-lg">
-            组织者每年花 $170+ 在 Meetup Pro，还要手动管候补表格。我们只要 $9.9/月，专注 RSVP + 候补 + 签到。
-          </p>
-          <Link
-            href="/join"
-            className="inline-block mt-8 bg-surface text-brand-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-600/10 transition-colors"
-          >
-            立即订阅 $9.9/月
-          </Link>
+          <h2 className="text-3xl sm:text-4xl font-bold">{c.closing.title}</h2>
+          <p className="mt-4 text-brand-100 text-lg">{c.closing.subtitle}</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/join"
+              className="inline-block bg-surface text-brand-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-600/10 transition-colors"
+            >
+              {c.closing.ctaPrimary}
+            </Link>
+            <Link
+              href="/events"
+              className="inline-block border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition-colors"
+            >
+              {c.closing.ctaSecondary}
+            </Link>
+          </div>
         </div>
       </section>
     </div>

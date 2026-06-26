@@ -1,19 +1,29 @@
-import { features, stats } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getEventsCopy } from "@/lib/copy-app";
+import { meetupEvents } from "@/lib/data";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = { icon: string; title: string; desc: string };
+
+export function CheckoutButton({
+  label,
+  className = "",
+}: {
+  label: string;
+  className?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,7 +37,15 @@ export function FeatureGrid() {
   );
 }
 
-export function CapacityBadge({ confirmed, capacity }: { confirmed: number; capacity: number }) {
+export function CapacityBadge({
+  confirmed,
+  capacity,
+  peopleLabel,
+}: {
+  confirmed: number;
+  capacity: number;
+  peopleLabel: string;
+}) {
   const pct = Math.round((confirmed / capacity) * 100);
   const color =
     pct >= 100
@@ -37,17 +55,22 @@ export function CapacityBadge({ confirmed, capacity }: { confirmed: number; capa
         : "bg-green-100 text-green-700";
   return (
     <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${color}`}>
-      {confirmed}/{capacity} 人
+      {confirmed}/{capacity} {peopleLabel}
     </span>
   );
 }
 
-export function StatsBar() {
-  const { eventCount, cityCount, avgCapacity } = stats;
+export function StatsBar({ locale }: { locale: Locale }) {
+  const c = getEventsCopy(locale);
+  const eventCount = meetupEvents.length;
+  const cityCount = c.cities.length - 1;
+  const avgCapacity = Math.round(
+    meetupEvents.reduce((sum, e) => sum + e.capacity, 0) / meetupEvents.length
+  );
   const items = [
-    { label: "示例活动", value: `${eventCount}` },
-    { label: "覆盖城市", value: `${cityCount}` },
-    { label: "平均容量", value: `${avgCapacity}` },
+    { label: c.statsEvents, value: `${eventCount}` },
+    { label: c.statsCities, value: `${cityCount}` },
+    { label: c.statsCapacity, value: `${avgCapacity}` },
   ];
   return (
     <div className="grid grid-cols-3 gap-4 text-center">

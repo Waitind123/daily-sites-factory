@@ -283,22 +283,213 @@ export const testimonials = [
   },
 ];
 
-export const categories = ["全部", "社交", "创业", "商业", "设计", "共工"];
+import type { Locale } from "./i18n-shared";
 
-export const cities = ["全部", "上海", "北京", "深圳", "杭州", "成都"];
+const meetupEventsEn: MeetupEvent[] = [
+  {
+    id: "sh-indie-coffee",
+    title: "Shanghai Indie Coffee Chat",
+    city: "Shanghai",
+    venue: "WeWork Jing'an",
+    date: "2026-07-05",
+    time: "14:00-17:00",
+    capacity: 20,
+    category: "Social",
+    description:
+      "First Saturday monthly — indie devs meet offline. Side projects, payments, ship progress.",
+    organizer: "Ken",
+    preview: "18/20 confirmed, 4 waitlist. Recent no-show 15% — send T-24h reminder.",
+    management: {
+      summary:
+        "Shanghai's most active indie meetup. Venue caps at 20, usually full in 48h. Waitlist needs auto-notify or seats go wasted.",
+      confirmedCount: 18,
+      waitlistCount: 4,
+      noShowRate: "15%",
+      attendees: [
+        { id: "a1", name: "Amy", email: "amy@example.com", status: "confirmed", rsvpAt: "2026-06-20", notes: "SaaS payments tool" },
+        { id: "a2", name: "Zhou", email: "zhou@example.com", status: "confirmed", rsvpAt: "2026-06-21" },
+        { id: "a3", name: "Kevin", email: "kevin@example.com", status: "confirmed", rsvpAt: "2026-06-22", notes: "Remote full-stack" },
+        { id: "a4", name: "Yu", email: "yu@example.com", status: "waitlist", rsvpAt: "2026-06-23", notes: "Waitlist #1" },
+        { id: "a5", name: "Mark", email: "mark@example.com", status: "waitlist", rsvpAt: "2026-06-23", notes: "Waitlist #2" },
+      ],
+      waitlistTips: [
+        "Auto-email waitlist #1 on cancel, pass to next if no confirm in 24h",
+        "Track attendance history, prioritize reliable attendees",
+        "T-24h and T-2h reminders cut no-show rate by 40%",
+      ],
+      reminderTemplate:
+        "Hi {name}, reminder: tomorrow 14:00 Shanghai Indie Coffee Chat @ WeWork Jing'an. Cancel if you can't make it so waitlist friends get a chance. Reply YES to confirm.",
+      checkInNotes: [
+        "Open check-in view on event day, one-tap mark attended/absent",
+        "2 consecutive no-shows → manual review for next RSVP",
+        "Post check-in thank-you email + next event preview",
+      ],
+      capacityAdvice: "20-seat venue: open 22 RSVP slots (10% no-show buffer)",
+    },
+  },
+  {
+    id: "bj-build-in-public",
+    title: "Beijing Build in Public Night",
+    city: "Beijing",
+    venue: "Zhongguancun Startup Alley",
+    date: "2026-07-12",
+    time: "19:00-21:30",
+    capacity: 30,
+    category: "Startup",
+    description: "Thursday nights — show what you shipped this week. 5-min demo + feedback.",
+    organizer: "David",
+    preview: "24/30 confirmed. Last week 3 no-shows, 6 waitlist didn't get seat notifications.",
+    management: {
+      summary:
+        "Build in Public needs punctual starts. No-shows affect demo order and venue. Reliable RSVP tracking and waitlist backfill required.",
+      confirmedCount: 24,
+      waitlistCount: 6,
+      noShowRate: "12%",
+      attendees: [
+        { id: "b1", name: "Jason", email: "jason@example.com", status: "confirmed", rsvpAt: "2026-06-18", notes: "AI writing tool demo" },
+        { id: "b2", name: "Xiaowen", email: "xw@example.com", status: "confirmed", rsvpAt: "2026-06-19" },
+        { id: "b3", name: "Pete", email: "pete@example.com", status: "confirmed", rsvpAt: "2026-06-20", notes: "Remote team SaaS" },
+        { id: "b4", name: "Jie", email: "jie@example.com", status: "waitlist", rsvpAt: "2026-06-21", notes: "Waitlist #1" },
+      ],
+      waitlistTips: [
+        "Demo slots limited — confirm demo intent when waitlist converts",
+        "Set RSVP deadline (6h before event) to reduce last-minute cancels",
+        "Sort waitlist by attendance rate",
+      ],
+      reminderTemplate:
+        "Hi {name}, tonight 19:00 Build in Public @ Zhongguancun. Bring laptop for 5-min demo. Can't make it? Cancel here → {cancel_link}",
+      checkInNotes: [
+        "Check-in sets demo order by arrival time",
+        "Mark no-show and auto-notify waitlist",
+        "One-click export attendee list after event",
+      ],
+      capacityAdvice: "30-seat venue + demos: cap at 28 confirmed + 10 waitlist",
+    },
+  },
+  {
+    id: "sz-saas-founders",
+    title: "Shenzhen SaaS Founders Lunch",
+    city: "Shenzhen",
+    venue: "Nanshan Tech Park Co-working",
+    date: "2026-07-08",
+    time: "12:00-14:00",
+    capacity: 12,
+    category: "Business",
+    description: "Small-circle lunch on payments, acquisition, pricing. Launched founders only.",
+    organizer: "Chris",
+    preview: "12/12 full, 8 waitlist. High-quality circle needs strict RSVP vetting.",
+    management: {
+      summary:
+        "12-seat table, every attendee vetted. Waitlist pressure after full — must automate notifications or 2h of manual WeChat messages.",
+      confirmedCount: 12,
+      waitlistCount: 8,
+      noShowRate: "8%",
+      attendees: [
+        { id: "c1", name: "David", email: "david@example.com", status: "confirmed", rsvpAt: "2026-06-15", notes: "B2B SaaS $3K MRR" },
+        { id: "c2", name: "Fang", email: "fang@example.com", status: "confirmed", rsvpAt: "2026-06-16", notes: "EdTech SaaS" },
+        { id: "c3", name: "Alex", email: "alex@example.com", status: "waitlist", rsvpAt: "2026-06-17", notes: "Waitlist #1, AI tool" },
+      ],
+      waitlistTips: [
+        "Add vetting questions: product link + MRR range",
+        "Waitlist convert needs 12h payment/deposit confirm (optional)",
+        "Close RSVP when full to avoid overbooking",
+      ],
+      reminderTemplate:
+        "Hi {name}, tomorrow 12:00 Shenzhen SaaS Founders Lunch @ Nanshan. Prepare 1-min intro + biggest challenge. Directions → {venue_link}",
+      checkInNotes: [
+        "Verify identity at check-in (prevent impersonation)",
+        "Log discussion topics for better matching next time",
+        "Follow-up email within 24h after event",
+      ],
+      capacityAdvice: "12-seat lunch: strict cap, waitlist max 15",
+    },
+  },
+  {
+    id: "hz-design-critique",
+    title: "Hangzhou Design Critique Tea",
+    city: "Hangzhou",
+    venue: "Xixi Impression City WeWork",
+    date: "2026-07-19",
+    time: "15:00-18:00",
+    capacity: 15,
+    category: "Design",
+    description: "Designers + devs critique UI/UX. Bring your landing page or app screenshots.",
+    organizer: "Mia",
+    preview: "9/15 confirmed. RSVP open, expected full in 3 days.",
+    management: {
+      summary:
+        "Design critique needs portfolio links upfront. RSVP form should include work URL for organizer to schedule review order.",
+      confirmedCount: 9,
+      waitlistCount: 2,
+      noShowRate: "10%",
+      attendees: [
+        { id: "d1", name: "Luna", email: "luna@example.com", status: "confirmed", rsvpAt: "2026-06-22", notes: "Portfolio: luna.design" },
+        { id: "d2", name: "Haoran", email: "hr@example.com", status: "confirmed", rsvpAt: "2026-06-23" },
+        { id: "d3", name: "Emma", email: "emma@example.com", status: "waitlist", rsvpAt: "2026-06-24", notes: "Waitlist #1" },
+      ],
+      waitlistTips: [
+        "Add required「portfolio link」field to RSVP form",
+        "Schedule critique slots by submission order",
+        "Auto-close form when full",
+      ],
+      reminderTemplate:
+        "Hi {name}, Saturday 15:00 Hangzhou Design Critique @ Xixi. Ensure portfolio link is accessible. Cancel if needed → {cancel_link}",
+      checkInNotes: [
+        "Screen-share portfolio links after check-in",
+        "Record critique feedback summary",
+        "Share group photo and feedback doc after event",
+      ],
+      capacityAdvice: "15-person critique, 10 min each, 30 min free networking",
+    },
+  },
+  {
+    id: "cd-remote-workers",
+    title: "Chengdu Remote Workers Cowork",
+    city: "Chengdu",
+    venue: "Café near Taikoo Li",
+    date: "2026-07-26",
+    time: "10:00-18:00",
+    capacity: 25,
+    category: "Cowork",
+    description: "All-day quiet cowork + lunch together. Escape WFH loneliness.",
+    organizer: "Chuan",
+    preview: "16/25 confirmed. All-day events have higher no-show — consider small deposit.",
+    management: {
+      summary:
+        "All-day cowork has scattered arrival times. Flexible check-in (on arrival), not fixed roll call. Deposit significantly reduces no-show.",
+      confirmedCount: 16,
+      waitlistCount: 3,
+      noShowRate: "20%",
+      attendees: [
+        { id: "e1", name: "Lin", email: "lin@example.com", status: "confirmed", rsvpAt: "2026-06-20" },
+        { id: "e2", name: "Vivian", email: "viv@example.com", status: "confirmed", rsvpAt: "2026-06-21", notes: "ETA 10:30" },
+        { id: "e3", name: "Liu", email: "liu@example.com", status: "waitlist", rsvpAt: "2026-06-22", notes: "Waitlist #1" },
+      ],
+      waitlistTips: [
+        "All-day events: suggest ¥20 deposit, refund on arrival",
+        "Allow「expected arrival time」field for seat planning",
+        "Waitlist convert notice must state full-day commitment",
+      ],
+      reminderTemplate:
+        "Hi {name}, tomorrow 10:00 Chengdu Remote Cowork @ Taikoo Li café. Quiet work all day, lunch at 12:30. ¥20 deposit refunded on arrival.",
+      checkInNotes: [
+        "Check in on arrival, log actual arrival time",
+        "No-show forfeits deposit to organizer for venue subsidy",
+        "Group photo before end of day",
+      ],
+      capacityAdvice: "25-seat café cowork: deposit + 30 RSVP slots (expect 20% no-show)",
+    },
+  },
+];
 
-export function getEventById(id: string): MeetupEvent | undefined {
-  return meetupEvents.find((e) => e.id === id);
+function eventsForLocale(locale: Locale): MeetupEvent[] {
+  return locale === "en" ? meetupEventsEn : meetupEvents;
 }
 
-export function getPublicEvents(): Omit<MeetupEvent, "management">[] {
-  return meetupEvents.map(({ management: _m, ...rest }) => rest);
+export function getEventById(id: string, locale: Locale = "zh"): MeetupEvent | undefined {
+  return eventsForLocale(locale).find((e) => e.id === id);
 }
 
-export const stats = {
-  eventCount: meetupEvents.length,
-  cityCount: cities.length - 1,
-  avgCapacity: Math.round(
-    meetupEvents.reduce((sum, e) => sum + e.capacity, 0) / meetupEvents.length
-  ),
-};
+export function getPublicEvents(locale: Locale = "zh"): Omit<MeetupEvent, "management">[] {
+  return eventsForLocale(locale).map(({ management: _m, ...rest }) => rest);
+}

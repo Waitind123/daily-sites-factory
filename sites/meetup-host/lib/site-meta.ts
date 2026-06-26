@@ -13,6 +13,7 @@ export const siteMeta = {
         "zh": "活动"
       }
     }
-  ]
+  ],
+  "guideHref": "/guide/organize-indie-meetup-china"
 } as const;
 export type SiteMeta = typeof siteMeta;
