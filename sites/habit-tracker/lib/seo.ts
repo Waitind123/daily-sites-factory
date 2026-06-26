@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://habit-tracker.vercel.app",
+    url: "https://habit-tracker-opal-rho.vercel.app",
     name: "Habit Tracker",
     title: "Habit Tracker — Minimal daily check-in, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://habit-tracker.vercel.app",
+    url: "https://habit-tracker-opal-rho.vercel.app",
     name: "习惯打卡",
     title: "习惯打卡 — 极简习惯追踪，$9.9/月",
     description:
