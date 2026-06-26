@@ -91,6 +91,31 @@ bash scripts/deploy-feishu-bot.sh
 2. 在群里发：`@我的小龙虾 帮助`
 3. 应收到指令列表回复
 
+### 飞书显示「请求 3 秒超时」
+
+按顺序排查：
+
+1. **先预热**（避免 Vercel 冷启动超过 3 秒）  
+   浏览器打开：https://feishu-bot-navy.vercel.app/api/feishu/event  
+   看到 `{"ok":true,...}` 后，**立刻**回飞书点「保存」验证（10 秒内）。
+
+2. **关闭事件加密（推荐初次配置）**  
+   飞书 → 事件与回调 → 若启用了 **Encrypt Key / 加密**，先**关闭**，保存后再验证。  
+   若必须开加密，把同一 **Encrypt Key** 填到 Vercel 环境变量 `FEISHU_ENCRYPT_KEY`，Redeploy 后再验证。
+
+3. **重新部署**（已优化 Edge + 香港节点，响应更快）  
+   ```cmd
+   cd C:\Users\ziweiqin\Projects\daily-sites-factory
+   set VERCEL_TOKEN=你的token
+   scripts\deploy-feishu-bot.cmd
+   ```
+
+4. 仍超时：在 CMD 手动模拟验证（应秒回 `challenge`）  
+   ```cmd
+   curl -X POST https://feishu-bot-navy.vercel.app/api/feishu/event -H "Content-Type: application/json" -d "{\"type\":\"url_verification\",\"challenge\":\"abc123\"}"
+   ```  
+   若本地 curl 成功但飞书仍超时，多半是飞书服务器到 Vercel 网络问题，可多试几次或换时段再点验证。
+
 ## 与仅 Webhook 的区别
 
 | 方式 | 方向 | 用途 |

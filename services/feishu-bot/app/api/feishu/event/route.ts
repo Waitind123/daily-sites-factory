@@ -1,16 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
-import { decryptFeishuEvent, handleFeishuEvent } from "@/lib/feishu";
+import { decryptFeishuEvent } from "@/lib/feishu-crypto";
+import { handleFeishuEvent } from "@/lib/feishu";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
+
+async function parseBody(req: NextRequest): Promise<Record<string, unknown>> {
+  let body = (await req.json()) as Record<string, unknown>;
+
+  if (body.encrypt) {
+    const encryptKey = process.env.FEISHU_ENCRYPT_KEY;
+    if (!encryptKey) {
+      throw new Error("FEISHU_ENCRYPT_KEY required when Feishu encryption is enabled");
+    }
+    const decrypted = await decryptFeishuEvent(encryptKey, String(body.encrypt));
+    body = JSON.parse(decrypted) as Record<string, unknown>;
+  }
+
+  return body;
+}
 
 export async function POST(req: NextRequest) {
   try {
-    let body = await req.json();
+    const body = await parseBody(req);
 
-    const encryptKey = process.env.FEISHU_ENCRYPT_KEY;
-    if (body.encrypt && encryptKey) {
-      const decrypted = decryptFeishuEvent(encryptKey, body.encrypt);
-      body = JSON.parse(decrypted);
+    // Feishu URL verify must respond within ~3s — answer immediately.
+    if (body.type === "url_verification" && body.challenge) {
+      return NextResponse.json({ challenge: body.challenge });
     }
 
     const token = process.env.FEISHU_VERIFICATION_TOKEN;

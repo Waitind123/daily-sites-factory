@@ -1,15 +1,3 @@
-import { createCipheriv, createDecipheriv, createHash } from "crypto";
-
-export function decryptFeishuEvent(encryptKey: string, encrypted: string) {
-  const key = createHash("sha256").update(encryptKey).digest();
-  const buf = Buffer.from(encrypted, "base64");
-  const iv = buf.subarray(0, 16);
-  const data = buf.subarray(16);
-  const decipher = createDecipheriv("aes-256-cbc", key, iv);
-  decipher.setAutoPadding(true);
-  return Buffer.concat([decipher.update(data), decipher.final()]).toString("utf8");
-}
-
 export async function getTenantToken() {
   const appId = process.env.FEISHU_APP_ID!;
   const appSecret = process.env.FEISHU_APP_SECRET!;
