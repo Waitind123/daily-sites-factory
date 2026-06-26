@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { templates, type GeneratedProposal } from "@/lib/generator";
+import type { GeneratedProposal } from "@/lib/generator";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getStudioCopy, getTemplates } from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -12,7 +14,10 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function ProposalStudio() {
+export function ProposalStudio({ locale }: { locale: Locale }) {
+  const t = getStudioCopy(locale);
+  const templates = getTemplates(locale);
+
   const [trial, setTrial] = useState<TrialInfo | null>(null);
   const [loading, setLoading] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
@@ -26,10 +31,10 @@ export function ProposalStudio() {
     clientEmail: "",
     projectTitle: "",
     deliverables: "",
-    timeline: "2-4 周",
+    timeline: t.defaultTimeline as string,
     amount: 3000,
     currency: "USD",
-    paymentTerms: "50% 预付，50% 交付后 7 天内",
+    paymentTerms: t.defaultPayment as string,
     includeContract: true,
   });
 
@@ -41,7 +46,7 @@ export function ProposalStudio() {
   }, []);
 
   function applyTemplate(templateId: string) {
-    const tpl = templates.find((t) => t.id === templateId);
+    const tpl = templates.find((item) => item.id === templateId);
     if (!tpl) return;
     setForm((f) => ({
       ...f,
@@ -63,23 +68,23 @@ export function ProposalStudio() {
       const res = await fetch("/api/proposals/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, locale }),
       });
       const data = await res.json();
 
       if (!res.ok) {
         if (data.code === "TRIAL_EXHAUSTED") {
           setShowPaywall(true);
-          setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
+          setTrial((prev) => (prev ? { ...prev, remaining: 0, canUse: false } : prev));
           return;
         }
-        throw new Error(data.error || "生成失败");
+        throw new Error(data.error || getApiErrorMessage(locale, "GENERATE_FAILED"));
       }
 
       setResult(data.proposal);
       if (data.trial) setTrial(data.trial);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "生成失败");
+      setError(err instanceof Error ? err.message : getApiErrorMessage(locale, "GENERATE_FAILED"));
     } finally {
       setLoading(false);
     }
@@ -97,14 +102,14 @@ export function ProposalStudio() {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">创建报价单</h1>
-          <p className="text-muted mt-1">30 秒生成专业报价 + 合同 + 发票</p>
+          <h1 className="text-3xl font-bold">{t.title}</h1>
+          <p className="text-muted mt-1">{t.subtitle}</p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
-              ? "✓ 会员 · 无限生成"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+              ? t.memberBadge
+              : t.freeRemaining(trial.remaining, trial.limit)}
           </div>
         )}
       </div>
@@ -125,16 +130,14 @@ export function ProposalStudio() {
       {showPaywall && (
         <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="font-semibold text-amber-900">免费体验已用完</p>
-            <p className="text-sm text-amber-700 mt-1">
-              订阅 $9.9/月，无限生成报价单 · 比 HoneyBook 便宜 70%
-            </p>
+            <p className="font-semibold text-amber-900">{t.paywallTitle}</p>
+            <p className="text-sm text-amber-700 mt-1">{t.paywallBody}</p>
           </div>
           <Link
             href="/join"
             className="shrink-0 rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            立即订阅
+            {t.paywallCta}
           </Link>
         </div>
       )}
@@ -146,10 +149,10 @@ export function ProposalStudio() {
       <div className="grid lg:grid-cols-2 gap-8">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
-            <h2 className="font-semibold text-foreground">你的信息</h2>
+            <h2 className="font-semibold text-foreground">{t.yourInfo}</h2>
             <input
               required
-              placeholder="你的姓名"
+              placeholder={t.namePlaceholder}
               value={form.freelancerName}
               onChange={(e) => setForm({ ...form, freelancerName: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -157,7 +160,7 @@ export function ProposalStudio() {
             <input
               required
               type="email"
-              placeholder="你的邮箱"
+              placeholder={t.emailPlaceholder}
               value={form.freelancerEmail}
               onChange={(e) => setForm({ ...form, freelancerEmail: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -165,10 +168,10 @@ export function ProposalStudio() {
           </div>
 
           <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
-            <h2 className="font-semibold text-foreground">客户信息</h2>
+            <h2 className="font-semibold text-foreground">{t.clientInfo}</h2>
             <input
               required
-              placeholder="客户公司/姓名"
+              placeholder={t.clientNamePlaceholder}
               value={form.clientName}
               onChange={(e) => setForm({ ...form, clientName: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -176,7 +179,7 @@ export function ProposalStudio() {
             <input
               required
               type="email"
-              placeholder="客户邮箱"
+              placeholder={t.clientEmailPlaceholder}
               value={form.clientEmail}
               onChange={(e) => setForm({ ...form, clientEmail: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -184,10 +187,10 @@ export function ProposalStudio() {
           </div>
 
           <div className="rounded-xl border border-border bg-surface p-5 space-y-4">
-            <h2 className="font-semibold text-foreground">项目详情</h2>
+            <h2 className="font-semibold text-foreground">{t.projectDetails}</h2>
             <input
               required
-              placeholder="项目标题"
+              placeholder={t.projectTitlePlaceholder}
               value={form.projectTitle}
               onChange={(e) => setForm({ ...form, projectTitle: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -195,13 +198,13 @@ export function ProposalStudio() {
             <textarea
               required
               rows={4}
-              placeholder="交付物（每行一项）"
+              placeholder={t.deliverablesPlaceholder}
               value={form.deliverables}
               onChange={(e) => setForm({ ...form, deliverables: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
             />
             <input
-              placeholder="项目周期"
+              placeholder={t.timelinePlaceholder}
               value={form.timeline}
               onChange={(e) => setForm({ ...form, timeline: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -212,22 +215,22 @@ export function ProposalStudio() {
                 onChange={(e) => setForm({ ...form, currency: e.target.value })}
                 className="rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
-                <option value="USD">USD $</option>
-                <option value="CNY">CNY ¥</option>
-                <option value="EUR">EUR €</option>
+                <option value="USD">{t.currencies.USD}</option>
+                <option value="CNY">{t.currencies.CNY}</option>
+                <option value="EUR">{t.currencies.EUR}</option>
               </select>
               <input
                 required
                 type="number"
                 min={1}
-                placeholder="报价金额"
+                placeholder={t.amountPlaceholder}
                 value={form.amount}
                 onChange={(e) => setForm({ ...form, amount: Number(e.target.value) })}
                 className="flex-1 rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <input
-              placeholder="付款条款"
+              placeholder={t.paymentTermsPlaceholder}
               value={form.paymentTerms}
               onChange={(e) => setForm({ ...form, paymentTerms: e.target.value })}
               className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -239,7 +242,7 @@ export function ProposalStudio() {
                 onChange={(e) => setForm({ ...form, includeContract: e.target.checked })}
                 className="rounded border-border"
               />
-              包含标准合同条款
+              {t.includeContract}
             </label>
           </div>
 
@@ -248,7 +251,9 @@ export function ProposalStudio() {
             disabled={loading}
             className="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors disabled:opacity-50"
           >
-            {loading ? "生成中…" : `生成报价单 · ${currencySymbol}${form.amount.toLocaleString()}`}
+            {loading
+              ? t.generating
+              : t.generateCta(currencySymbol, form.amount.toLocaleString())}
           </button>
         </form>
 
@@ -257,7 +262,7 @@ export function ProposalStudio() {
             <div className="rounded-xl border border-brand-200 bg-surface p-6 sticky top-24">
               <div className="flex items-center justify-between mb-4">
                 <div>
-                  <p className="text-sm text-brand-500 font-medium">报价单已生成</p>
+                  <p className="text-sm text-brand-500 font-medium">{t.generated}</p>
                   <p className="text-lg font-bold text-brand-800">{result.id}</p>
                 </div>
                 <button
@@ -265,7 +270,7 @@ export function ProposalStudio() {
                   onClick={copyMarkdown}
                   className="rounded-lg border border-border px-3 py-1.5 text-xs font-medium text-muted hover:bg-background"
                 >
-                  复制 Markdown
+                  {t.copyMarkdown}
                 </button>
               </div>
 
@@ -277,29 +282,29 @@ export function ProposalStudio() {
 
               <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
                 <div className="rounded-lg bg-brand-600/10 p-3">
-                  <p className="text-brand-500 text-xs">报价金额</p>
+                  <p className="text-brand-500 text-xs">{t.amountLabel}</p>
                   <p className="font-bold text-brand-800">
                     {currencySymbol}
                     {result.project.amount.toLocaleString()} {result.project.currency}
                   </p>
                 </div>
                 <div className="rounded-lg bg-brand-600/10 p-3">
-                  <p className="text-brand-500 text-xs">发票号</p>
+                  <p className="text-brand-500 text-xs">{t.invoiceLabel}</p>
                   <p className="font-bold text-brand-800">{result.invoice.number}</p>
                 </div>
               </div>
 
               {result.contractClauses.length > 0 && (
                 <p className="mt-3 text-xs text-muted">
-                  ✓ 已包含 {result.contractClauses.length} 条合同条款
+                  {t.clausesIncluded(result.contractClauses.length)}
                 </p>
               )}
             </div>
           ) : (
             <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted sticky top-24">
               <p className="text-4xl mb-3">📄</p>
-              <p>填写左侧表单，一键生成报价单</p>
-              <p className="text-sm mt-1">非会员免费体验 5 次</p>
+              <p>{t.emptyTitle}</p>
+              <p className="text-sm mt-1">{t.emptyHint}</p>
             </div>
           )}
         </div>

@@ -1,3 +1,5 @@
+import type { Locale } from "./i18n-shared";
+
 export type ProposalInput = {
   freelancerName: string;
   freelancerEmail: string;
@@ -37,105 +39,27 @@ export type GeneratedProposal = {
   markdown: string;
 };
 
-export const templates = [
-  {
-    id: "web-dev",
-    name: "网站开发",
-    icon: "💻",
-    defaults: {
-      projectTitle: "网站设计与开发",
-      deliverables: "响应式网站设计\n前端开发（Next.js）\nCMS 集成\n2 轮修改",
-      timeline: "4-6 周",
-      paymentTerms: "50% 预付，50% 交付后 7 天内",
-    },
-  },
-  {
-    id: "design",
-    name: "UI/UX 设计",
-    icon: "🎨",
-    defaults: {
-      projectTitle: "UI/UX 设计项目",
-      deliverables: "用户调研\n线框图\n高保真设计稿\n设计规范文档",
-      timeline: "2-3 周",
-      paymentTerms: "100% 预付",
-    },
-  },
-  {
-    id: "consulting",
-    name: "技术咨询",
-    icon: "🧠",
-    defaults: {
-      projectTitle: "技术咨询服务",
-      deliverables: "架构评审\n技术方案文档\n2 次线上会议\n邮件支持 30 天",
-      timeline: "按小时计费，预计 20 小时",
-      paymentTerms: "月结，Net 15",
-    },
-  },
-  {
-    id: "content",
-    name: "内容创作",
-    icon: "✍️",
-    defaults: {
-      projectTitle: "内容创作服务",
-      deliverables: "10 篇 SEO 文章（800+ 字）\n关键词研究\n1 轮修改",
-      timeline: "3 周",
-      paymentTerms: "50% 预付，50% 交付后",
-    },
-  },
-];
+const contractClausesByLocale = {
+  en: [
+    "Intellectual property: upon full payment, client receives full usage rights to final deliverables.",
+    "Revisions: quote includes 2 reasonable revision rounds; extra scope billed at $80/hour.",
+    "Cancellation: full refund before project start; after start, billed for completed work.",
+    "Confidentiality: both parties keep project information confidential for 2 years.",
+    "Disputes: friendly negotiation first; unresolved disputes go to arbitration.",
+  ],
+  zh: [
+    "知识产权：项目交付并收到全款后，客户获得最终交付物的完整使用权。",
+    "修改范围：报价包含 2 轮合理修改，超出范围按 $80/小时计费。",
+    "取消政策：项目启动前取消全额退款；启动后取消按已完成工作量结算。",
+    "保密条款：双方对项目相关信息保密，期限 2 年。",
+    "争议解决：优先友好协商，协商不成提交仲裁。",
+  ],
+} as const;
 
-export const features = [
-  {
-    icon: "📄",
-    title: "一键生成报价单",
-    desc: "填写项目信息，30 秒生成专业 PDF 级报价文档",
-  },
-  {
-    icon: "📋",
-    title: "内置合同条款",
-    desc: "标准自由职业合同模板，保护双方权益",
-  },
-  {
-    icon: "🧾",
-    title: "自动发票",
-    desc: "报价确认后一键生成发票，含付款条款",
-  },
-  {
-    icon: "💰",
-    title: "多币种支持",
-    desc: "USD / CNY / EUR，适合国内外客户",
-  },
-  {
-    icon: "⚡",
-    title: "比 HoneyBook 快 10 倍",
-    desc: "无复杂配置，打开即用，专注报价核心流程",
-  },
-  {
-    icon: "🔒",
-    title: "数据本地生成",
-    desc: "报价内容在浏览器生成，不上传敏感客户信息",
-  },
-];
-
-export const testimonials = [
-  {
-    name: "张明",
-    role: "独立开发者 · 全栈",
-    text: "HoneyBook 涨到 $36/月，我只用报价功能。报价单通 $9.9 完全够用，5 分钟出报价。",
-  },
-  {
-    name: "Sarah Lin",
-    role: "Freelance Designer",
-    text: "Finally a tool that does proposals without 50 features I'll never use. Clean and fast.",
-  },
-  {
-    name: "王浩",
-    role: "技术顾问",
-    text: "合同条款模板省了我找律师的时间，客户签字率明显提高了。",
-  },
-];
-
-export function generateProposal(input: ProposalInput): GeneratedProposal {
+export function generateProposal(
+  input: ProposalInput,
+  locale: Locale = "en"
+): GeneratedProposal {
   const id = `PROP-${Date.now().toString(36).toUpperCase()}`;
   const now = new Date();
   const validUntil = new Date(now);
@@ -147,13 +71,7 @@ export function generateProposal(input: ProposalInput): GeneratedProposal {
     .filter(Boolean);
 
   const contractClauses = input.includeContract
-    ? [
-        "知识产权：项目交付并收到全款后，客户获得最终交付物的完整使用权。",
-        "修改范围：报价包含 2 轮合理修改，超出范围按 $80/小时计费。",
-        "取消政策：项目启动前取消全额退款；启动后取消按已完成工作量结算。",
-        "保密条款：双方对项目相关信息保密，期限 2 年。",
-        "争议解决：优先友好协商，协商不成提交仲裁。",
-      ]
+    ? [...contractClausesByLocale[locale]]
     : [];
 
   const invoiceNumber = `INV-${Date.now().toString(36).toUpperCase()}`;
@@ -174,44 +92,94 @@ export function generateProposal(input: ProposalInput): GeneratedProposal {
   const currencySymbol =
     input.currency === "CNY" ? "¥" : input.currency === "EUR" ? "€" : "$";
 
-  const markdown = `# 项目报价单
+  const dateLocale = locale === "zh" ? "zh-CN" : "en-US";
+  const labels =
+    locale === "zh"
+      ? {
+          title: "项目报价单",
+          quoteId: "报价编号",
+          date: "日期",
+          validUntil: "有效期至",
+          provider: "服务提供方",
+          name: "姓名",
+          email: "邮箱",
+          client: "客户",
+          company: "公司/姓名",
+          overview: "项目概述",
+          deliverables: "交付物",
+          timeline: "项目周期",
+          amount: "报价金额",
+          payment: "付款条款",
+          contract: "合同条款",
+          invoice: "发票信息",
+          invoiceNo: "发票号",
+          due: "到期日",
+          item: "项目",
+          total: "合计",
+          footer: "本报价由自由职业报价单生成 · 接受本报价即表示同意上述条款",
+        }
+      : {
+          title: "Project Proposal",
+          quoteId: "Quote ID",
+          date: "Date",
+          validUntil: "Valid until",
+          provider: "Service provider",
+          name: "Name",
+          email: "Email",
+          client: "Client",
+          company: "Company / name",
+          overview: "Project overview",
+          deliverables: "Deliverables",
+          timeline: "Timeline",
+          amount: "Quote amount",
+          payment: "Payment terms",
+          contract: "Contract clauses",
+          invoice: "Invoice",
+          invoiceNo: "Invoice #",
+          due: "Due date",
+          item: "Item",
+          total: "Total",
+          footer: "Generated by Freelance Proposal · Accepting this quote agrees to the terms above",
+        };
 
-**报价编号：** ${id}  
-**日期：** ${now.toLocaleDateString("zh-CN")}  
-**有效期至：** ${validUntil.toLocaleDateString("zh-CN")}
+  const markdown = `# ${labels.title}
+
+**${labels.quoteId}:** ${id}  
+**${labels.date}:** ${now.toLocaleDateString(dateLocale)}  
+**${labels.validUntil}:** ${validUntil.toLocaleDateString(dateLocale)}
 
 ---
 
-## 服务提供方
-- **姓名：** ${input.freelancerName}
-- **邮箱：** ${input.freelancerEmail}
+## ${labels.provider}
+- **${labels.name}:** ${input.freelancerName}
+- **${labels.email}:** ${input.freelancerEmail}
 
-## 客户
-- **公司/姓名：** ${input.clientName}
-- **邮箱：** ${input.clientEmail}
+## ${labels.client}
+- **${labels.company}:** ${input.clientName}
+- **${labels.email}:** ${input.clientEmail}
 
 ---
 
-## 项目概述
+## ${labels.overview}
 **${input.projectTitle}**
 
-### 交付物
+### ${labels.deliverables}
 ${deliverablesList.map((d) => `- ${d}`).join("\n")}
 
-### 项目周期
+### ${labels.timeline}
 ${input.timeline}
 
-### 报价金额
+### ${labels.amount}
 **${currencySymbol}${input.amount.toLocaleString()} ${input.currency}**
 
-### 付款条款
+### ${labels.payment}
 ${input.paymentTerms}
 
 ${
   contractClauses.length > 0
     ? `---
 
-## 合同条款
+## ${labels.contract}
 
 ${contractClauses.map((c, i) => `${i + 1}. ${c}`).join("\n\n")}`
     : ""
@@ -219,19 +187,19 @@ ${contractClauses.map((c, i) => `${i + 1}. ${c}`).join("\n\n")}`
 
 ---
 
-## 发票信息
+## ${labels.invoice}
 
-**发票号：** ${invoiceNumber}  
-**到期日：** ${dueDate.toLocaleDateString("zh-CN")}
+**${labels.invoiceNo}:** ${invoiceNumber}  
+**${labels.due}:** ${dueDate.toLocaleDateString(dateLocale)}
 
-| 项目 | 金额 |
+| ${labels.item} | ${labels.amount} |
 |------|------|
 ${lineItems.map((item) => `| ${item.description} | ${currencySymbol}${item.amount.toLocaleString()} |`).join("\n")}
-| **合计** | **${currencySymbol}${input.amount.toLocaleString()}** |
+| **${labels.total}** | **${currencySymbol}${input.amount.toLocaleString()}** |
 
 ---
 
-*本报价由报价单通生成 · 接受本报价即表示同意上述条款*
+*${labels.footer}*
 `;
 
   return {

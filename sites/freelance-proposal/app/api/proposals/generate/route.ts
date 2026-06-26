@@ -3,10 +3,13 @@ import { generateProposal, type ProposalInput } from "@/lib/generator";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { FREE_TRIAL_LIMIT } from "@/lib/trial-core";
+import { apiError } from "@/lib/api-errors";
+import type { Locale } from "@/lib/i18n-shared";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+    const locale: Locale = body.locale === "zh" ? "zh" : "en";
 
     const input: ProposalInput = {
       freelancerName: String(body.freelancerName || "").trim(),
@@ -15,10 +18,10 @@ export async function POST(request: NextRequest) {
       clientEmail: String(body.clientEmail || "").trim(),
       projectTitle: String(body.projectTitle || "").trim(),
       deliverables: String(body.deliverables || "").trim(),
-      timeline: String(body.timeline || "2-4 周").trim(),
+      timeline: String(body.timeline || "").trim(),
       amount: Number(body.amount) || 0,
       currency: String(body.currency || "USD"),
-      paymentTerms: String(body.paymentTerms || "50% 预付，50% 交付后").trim(),
+      paymentTerms: String(body.paymentTerms || "").trim(),
       includeContract: body.includeContract !== false,
     };
 
@@ -31,24 +34,17 @@ export async function POST(request: NextRequest) {
       !input.deliverables ||
       input.amount <= 0
     ) {
-      return NextResponse.json({ error: "请填写完整项目信息" }, { status: 400 });
+      return apiError("VALIDATION_FAILED", 400);
     }
 
     const member = await isMember();
     const access = await useTrial(member);
 
     if (!access.consumed && !access.isMember) {
-      return NextResponse.json(
-        {
-          error: "免费体验已用完，请订阅",
-          code: "TRIAL_EXHAUSTED",
-          remaining: 0,
-        },
-        { status: 403 }
-      );
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
     }
 
-    const proposal = generateProposal(input);
+    const proposal = generateProposal(input, locale);
 
     if (member) {
       return NextResponse.json({ proposal, trial: null });
@@ -70,6 +66,6 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("Proposal generate error:", error);
-    return NextResponse.json({ error: "生成失败" }, { status: 500 });
+    return apiError("GENERATE_FAILED", 500);
   }
 }
