@@ -41,6 +41,20 @@
 
 ---
 
+### L004 — 飞书只能收通知不能对话（2026-06）
+
+**永久方案**：`services/feishu-bot` + `feishu-command.yml` + `feishu-handle-command.mjs`
+
+---
+
+### L005 — 上线前未测访客核心功能（2026-06）
+
+**永久规则**：`verify-site-visitor.mjs` 模拟未登录用户访问 `/`、`/join`、`/api/trial` 等
+
+**自动检查**：`deploy-site.yml` 本地启动 next → 访客测试 → 通过才 Vercel 部署
+
+---
+
 ## Agent 每次建站 / 改站 必跑（不通过禁止 push）
 
 ```bash
@@ -48,6 +62,7 @@ cd sites/<site-id>
 npm run build
 cd ../..
 node scripts/verify-site-quality.mjs <site-id>
+node scripts/verify-site-visitor.mjs http://127.0.0.1:3099 <site-id>
 ```
 
 CI 在 `deploy-site.yml` 部署前同样执行；**失败则部署中止**。

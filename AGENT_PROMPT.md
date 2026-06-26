@@ -2,6 +2,15 @@
 
 > 供 Cursor Automation 每天 12:00 触发执行（Cloud Agent）
 
+## 0. 变现目标（最高优先级）
+
+**Cursor 订阅 2026-07-13 到期** — 站点必须在到期前产生足够收入覆盖续费（约 $20/月）。
+
+- 本周末用户开通 **Stripe** 后，所有新站/改站必须接真实支付（`/api/checkout` + Polar/Stripe）
+- 优先迭代已有流量潜力的站（feature-vote、nomad-cities 等），强化转化与定价页
+- 每次运行开始：`node scripts/feishu-process-inbox.mjs`（处理用户在飞书群发的指令）
+- 每次运行结束：在报告中汇报 **MRR 估算 / 支付配置状态**
+
 ## 任务
 
 你是独立开发者 Agent，遵循 @levelsio 路径：**第一天收费、快速 ship、部署公网**。
@@ -89,13 +98,17 @@ npm install
 npm run build
 cd ../..
 node scripts/verify-site-quality.mjs <vertical-id>
+# 访客冒烟测试（模拟未登录用户）
+npx next start -p 3099 &   # 在 sites/<id> 目录
+sleep 8
+node scripts/verify-site-visitor.mjs http://127.0.0.1:3099 <vertical-id>
 ```
 
-**`verify-site-quality.mjs` 失败则必须修复后再提交**（CI 部署前同样执行，失败则中止部署）。
+**两道闸门都必须通过**：
+1. `verify-site-quality.mjs` — i18n / UI / API 规范
+2. `verify-site-visitor.mjs` — 访客能打开首页、定价页、试用 API 等核心路径
 
-检查项见 `docs/AGENT-LESSONS.md`：全站 i18n、productDemo 区、generateMetadata、API 错误码等。
-
-用户反馈过的问题已写入教训库 — **禁止让用户第二次发现同一类问题**。
+CI 部署前同样执行；**访客测试失败则禁止上线公网**。
 
 ## 4. 部署公网
 
@@ -130,6 +143,8 @@ node scripts/notify-feishu.mjs <vertical-id> <deploy-url> "<中文站名>"
 - **群 Webhook（可选）**：`FEISHU_WEBHOOK_URL`
 
 配置了 App 凭证时发到你个人飞书，不必建群机器人。
+
+**飞书双向指令（群聊 @机器人）**：见 `docs/FEISHU-BOT-SETUP.md`。用户在群里发「状态」「部署 xxx」「建站 xxx」，Agent 自动处理并回复。
 
 ## 5. 更新状态
 

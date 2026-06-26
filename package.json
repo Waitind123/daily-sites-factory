@@ -7,6 +7,8 @@
     "discover-verticals": "node scripts/discover-vertical.mjs discover --limit 3",
     "sync-site-shell": "node scripts/sync-site-shell.mjs",
     "verify-site": "node scripts/verify-site-quality.mjs",
+    "verify-visitor": "node scripts/verify-site-visitor.mjs",
+    "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
     "notify-feishu": "node scripts/notify-feishu.mjs"
   }
 }
