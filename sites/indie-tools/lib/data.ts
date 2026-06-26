@@ -1,8 +1,19 @@
+import type { Locale } from "./i18n-shared";
+import { localizeToolFields } from "./tools-locale";
+
+export type ToolCategory =
+  | "payments"
+  | "email"
+  | "hosting"
+  | "auth"
+  | "analytics"
+  | "database";
+
 export type IndieTool = {
   id: string;
   name: string;
   tagline: string;
-  category: string;
+  category: ToolCategory;
   pricing: string;
   website: string;
   indieScore: number;
@@ -24,7 +35,7 @@ export const indieTools: IndieTool[] = [
     id: "polar",
     name: "Polar",
     tagline: "开发者优先的 Merchant of Record，SaaS 收款 + 税务合规",
-    category: "支付",
+    category: "payments",
     pricing: "4% + $0.40/笔",
     website: "polar.sh",
     indieScore: 9,
@@ -66,7 +77,7 @@ export const indieTools: IndieTool[] = [
     id: "resend",
     name: "Resend",
     tagline: "开发者友好的事务邮件 API，React Email 模板",
-    category: "邮件",
+    category: "email",
     pricing: "免费 3000 封/月",
     website: "resend.com",
     indieScore: 9,
@@ -108,7 +119,7 @@ export const indieTools: IndieTool[] = [
     id: "vercel",
     name: "Vercel",
     tagline: "Next.js 一键部署，全球 CDN，Preview 环境",
-    category: "托管",
+    category: "hosting",
     pricing: "免费 Hobby / Pro $20/月",
     website: "vercel.com",
     indieScore: 10,
@@ -150,7 +161,7 @@ export const indieTools: IndieTool[] = [
     id: "clerk",
     name: "Clerk",
     tagline: "5 分钟接入 Auth，社交登录 + MFA + 用户管理",
-    category: "认证",
+    category: "auth",
     pricing: "免费 10K MAU",
     website: "clerk.com",
     indieScore: 8,
@@ -192,7 +203,7 @@ export const indieTools: IndieTool[] = [
     id: "plausible",
     name: "Plausible",
     tagline: "隐私友好、轻量、无 cookie 的网站分析",
-    category: "分析",
+    category: "analytics",
     pricing: "$9/月 10K PV",
     website: "plausible.io",
     indieScore: 8,
@@ -234,7 +245,7 @@ export const indieTools: IndieTool[] = [
     id: "supabase",
     name: "Supabase",
     tagline: "开源 Firebase 替代，Postgres + Auth + Storage + Realtime",
-    category: "数据库",
+    category: "database",
     pricing: "免费 / Pro $25/月",
     website: "supabase.com",
     indieScore: 9,
@@ -276,7 +287,7 @@ export const indieTools: IndieTool[] = [
     id: "lemon-squeezy",
     name: "Lemon Squeezy",
     tagline: "Hosted checkout + MoR，适合数字产品和订阅",
-    category: "支付",
+    category: "payments",
     pricing: "5% + $0.50/笔",
     website: "lemonsqueezy.com",
     indieScore: 8,
@@ -318,7 +329,7 @@ export const indieTools: IndieTool[] = [
     id: "posthog",
     name: "PostHog",
     tagline: "开源产品分析 + Feature Flags + Session Replay",
-    category: "分析",
+    category: "analytics",
     pricing: "免费 1M events/月",
     website: "posthog.com",
     indieScore: 8,
@@ -358,78 +369,32 @@ export const indieTools: IndieTool[] = [
   },
 ];
 
-export const features = [
-  {
-    icon: "🧰",
-    title: "精选 40+ 工具",
-    desc: "只收录 indie hacker 真正在用的工具，不是 5000 链接的垃圾目录",
-  },
-  {
-    icon: "💰",
-    title: "定价实对比",
-    desc: "每个工具含真实定价、隐藏费用、免费额度，帮你算清 MVP 成本",
-  },
-  {
-    icon: "🔄",
-    title: "替代方案",
-    desc: "Polar vs Stripe vs Lemon Squeezy？告诉你什么场景选什么",
-  },
-  {
-    icon: "⚡",
-    title: "5 分钟接入指南",
-    desc: "每个工具含 setup checklist，复制就能用",
-  },
-  {
-    icon: "📊",
-    title: "Indie 评分",
-    desc: "基于社区口碑和实战体验的 1-10 分，不是厂商软文",
-  },
-  {
-    icon: "🎯",
-    title: "按场景选型",
-    desc: "「第一天收费用什么？」「事务邮件选谁？」直接给答案",
-  },
+export const categoryKeys: ToolCategory[] = [
+  "payments",
+  "email",
+  "hosting",
+  "auth",
+  "analytics",
+  "database",
 ];
 
-export const testimonials = [
-  {
-    name: "小林",
-    role: "全栈 indie dev",
-    text: "省了整整一周调研支付方案的时间。Polar vs LS 对比表直接帮我做了决定。",
-  },
-  {
-    name: "Amy",
-    role: "副业 SaaS 创始人",
-    text: "工具目录太多太杂，这里每个都有深度评测和 setup 步骤，$9.9 值。",
-  },
-  {
-    name: "老周",
-    role: "连续创业者",
-    text: "第三个产品的技术栈直接抄这里的推荐，从 0 到收款只花了周末。",
-  },
-];
-
-export const categories = [
-  "全部",
-  "支付",
-  "邮件",
-  "托管",
-  "认证",
-  "分析",
-  "数据库",
-];
-
-export function getToolById(id: string): IndieTool | undefined {
-  return indieTools.find((t) => t.id === id);
+export function getToolById(id: string, locale: Locale = "en"): IndieTool | undefined {
+  const tool = indieTools.find((t) => t.id === id);
+  if (!tool) return undefined;
+  return localizeToolFields(tool, locale);
 }
 
-export function getPublicTools(): Omit<IndieTool, "review">[] {
-  return indieTools.map(({ review: _r, ...rest }) => rest);
+export function getPublicTools(locale: Locale = "en"): Omit<IndieTool, "review">[] {
+  return indieTools.map(({ review: _r, ...rest }) => {
+    const localized = localizeToolFields({ ...rest, review: _r }, locale);
+    const { review: _rv, ...pub } = localized;
+    return pub;
+  });
 }
 
 export const stats = {
   toolCount: indieTools.length,
-  categoryCount: categories.length - 1,
+  categoryCount: categoryKeys.length,
   avgScore: (
     indieTools.reduce((sum, t) => sum + t.indieScore, 0) / indieTools.length
   ).toFixed(1),

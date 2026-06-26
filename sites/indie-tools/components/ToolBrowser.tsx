@@ -2,7 +2,18 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { categories, getPublicTools, type IndieTool } from "@/lib/data";
+import {
+  categoryKeys,
+  getPublicTools,
+  type IndieTool,
+  type ToolCategory,
+} from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import {
+  getApiErrorMessage,
+  getCategoryLabel,
+  getToolsCopy,
+} from "@/lib/copy-app";
 import { IndieScoreBadge } from "@/components/ui";
 
 type TrialStatus = {
@@ -15,17 +26,20 @@ type TrialStatus = {
 
 type ToolListItem = Omit<IndieTool, "review">;
 
-export function ToolBrowser() {
+export function ToolBrowser({ locale }: { locale: Locale }) {
+  const c = getToolsCopy(locale);
   const [trial, setTrial] = useState<TrialStatus | null>(null);
-  const [filter, setFilter] = useState("全部");
+  const [filter, setFilter] = useState<ToolCategory | "all">("all");
   const [selected, setSelected] = useState<ToolListItem | null>(null);
   const [review, setReview] = useState<IndieTool["review"] | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [errorCode, setErrorCode] = useState<string | null>(null);
 
-  const tools = getPublicTools().filter(
-    (t) => filter === "全部" || t.category === filter
+  const tools = getPublicTools(locale).filter(
+    (t) => filter === "all" || t.category === filter
   );
+
+  const filterOptions: (ToolCategory | "all")[] = ["all", ...categoryKeys];
 
   const loadTrial = useCallback(async () => {
     const res = await fetch("/api/trial");
@@ -39,7 +53,7 @@ export function ToolBrowser() {
   async function viewReview(tool: ToolListItem) {
     setSelected(tool);
     setReview(null);
-    setError(null);
+    setErrorCode(null);
     setLoading(true);
 
     const res = await fetch("/api/tools/view", {
@@ -51,7 +65,7 @@ export function ToolBrowser() {
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "加载失败");
+      setErrorCode(data.code || c.loadFailed);
       setLoading(false);
       await loadTrial();
       return;
@@ -65,30 +79,35 @@ export function ToolBrowser() {
   function closeModal() {
     setSelected(null);
     setReview(null);
-    setError(null);
+    setErrorCode(null);
   }
+
+  const errorMessage = errorCode ? getApiErrorMessage(errorCode, locale) : null;
 
   return (
     <div className="space-y-6">
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费深度评测
+            <strong>
+              {trial.remaining}/{trial.limit}
+            </strong>{" "}
+            {c.trialRemaining}
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 →
+            {c.subscribeUnlock}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限查阅深度评测
+          {c.memberActive}
         </div>
       )}
 
       <div className="flex flex-wrap gap-2">
-        {categories.map((cat) => (
+        {filterOptions.map((cat) => (
           <button
             key={cat}
             type="button"
@@ -99,7 +118,7 @@ export function ToolBrowser() {
                 : "bg-surface border border-border text-muted hover:bg-background"
             }`}
           >
-            {cat}
+            {getCategoryLabel(locale, cat)}
           </button>
         ))}
       </div>
@@ -112,9 +131,9 @@ export function ToolBrowser() {
           >
             <div className="flex items-start justify-between gap-2 mb-2">
               <span className="text-xs font-medium text-brand-500 bg-brand-600/10 px-2 py-0.5 rounded">
-                {tool.category}
+                {getCategoryLabel(locale, tool.category)}
               </span>
-              <IndieScoreBadge score={tool.indieScore} />
+              <IndieScoreBadge score={tool.indieScore} label={c.indieScore} />
             </div>
             <h3 className="font-bold text-lg text-foreground">{tool.name}</h3>
             <p className="text-sm text-muted mt-1">{tool.tagline}</p>
@@ -128,7 +147,7 @@ export function ToolBrowser() {
                 onClick={() => viewReview(tool)}
                 className="text-sm font-semibold text-brand-500 hover:text-brand-500"
               >
-                深度评测 →
+                {c.deepReview}
               </button>
             </div>
           </article>
@@ -146,7 +165,9 @@ export function ToolBrowser() {
           >
             <div className="flex items-start justify-between gap-4 mb-4">
               <div>
-                <span className="text-xs font-medium text-brand-500">{selected.category}</span>
+                <span className="text-xs font-medium text-brand-500">
+                  {getCategoryLabel(locale, selected.category)}
+                </span>
                 <h2 className="text-2xl font-bold mt-1">{selected.name}</h2>
                 <p className="text-muted mt-1">{selected.tagline}</p>
               </div>
@@ -154,23 +175,24 @@ export function ToolBrowser() {
                 type="button"
                 onClick={closeModal}
                 className="text-muted hover:text-muted text-2xl leading-none"
+                aria-label={c.close}
               >
-                ×
+                {c.close}
               </button>
             </div>
 
             <p className="text-muted mb-6">{selected.preview}</p>
 
             {loading && (
-              <div className="text-center py-12 text-muted">加载深度评测中...</div>
+              <div className="text-center py-12 text-muted">{c.loading}</div>
             )}
 
-            {error && (
+            {errorMessage && (
               <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
-                {error}
-                {error.includes("订阅") && (
+                {errorMessage}
+                {errorCode === "TRIAL_EXHAUSTED" && (
                   <Link href="/join" className="block mt-2 font-semibold underline">
-                    立即订阅 $9.9/月
+                    {c.subscribeCta}
                   </Link>
                 )}
               </div>
@@ -179,11 +201,11 @@ export function ToolBrowser() {
             {review && (
               <div className="space-y-6 text-sm">
                 <section>
-                  <h3 className="font-bold text-base mb-2">📝 综述</h3>
+                  <h3 className="font-bold text-base mb-2">📝 {c.reviewSummary}</h3>
                   <p className="text-muted">{review.summary}</p>
                 </section>
                 <section>
-                  <h3 className="font-bold text-base mb-2">🎯 最适合</h3>
+                  <h3 className="font-bold text-base mb-2">🎯 {c.reviewBestFor}</h3>
                   <ul className="flex flex-wrap gap-2">
                     {review.bestFor.map((item) => (
                       <li
@@ -196,18 +218,18 @@ export function ToolBrowser() {
                   </ul>
                 </section>
                 <section>
-                  <h3 className="font-bold text-base mb-2">💰 定价详情</h3>
+                  <h3 className="font-bold text-base mb-2">💰 {c.reviewPricing}</h3>
                   <p className="text-muted">{review.pricingDetail}</p>
                 </section>
                 <section>
-                  <h3 className="font-bold text-base mb-2">🔄 替代方案</h3>
+                  <h3 className="font-bold text-base mb-2">🔄 {c.reviewAlternatives}</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="border-b border-border">
-                          <th className="py-2 pr-4 font-medium">工具</th>
-                          <th className="py-2 pr-4 font-medium">定价</th>
-                          <th className="py-2 font-medium">何时选择</th>
+                          <th className="py-2 pr-4 font-medium">{c.altTool}</th>
+                          <th className="py-2 pr-4 font-medium">{c.altPricing}</th>
+                          <th className="py-2 font-medium">{c.altWhen}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -224,7 +246,7 @@ export function ToolBrowser() {
                 </section>
                 <section className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <h3 className="font-bold text-base mb-2">✅ 优点</h3>
+                    <h3 className="font-bold text-base mb-2">✅ {c.reviewPros}</h3>
                     <ul className="space-y-1 text-muted">
                       {review.pros.map((p) => (
                         <li key={p}>· {p}</li>
@@ -232,16 +254,16 @@ export function ToolBrowser() {
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold text-base mb-2">⚠️ 缺点</h3>
+                    <h3 className="font-bold text-base mb-2">⚠️ {c.reviewCons}</h3>
                     <ul className="space-y-1 text-muted">
-                      {review.cons.map((c) => (
-                        <li key={c}>· {c}</li>
+                      {review.cons.map((item) => (
+                        <li key={item}>· {item}</li>
                       ))}
                     </ul>
                   </div>
                 </section>
                 <section>
-                  <h3 className="font-bold text-base mb-2">⚡ 接入步骤</h3>
+                  <h3 className="font-bold text-base mb-2">⚡ {c.reviewSetup}</h3>
                   <ol className="list-decimal list-inside space-y-1 text-muted">
                     {review.setupTips.map((step) => (
                       <li key={step}>{step}</li>
@@ -249,7 +271,7 @@ export function ToolBrowser() {
                   </ol>
                 </section>
                 <section className="rounded-xl bg-brand-600/10 border border-brand-200 p-4">
-                  <h3 className="font-bold text-base mb-2">🏆 结论</h3>
+                  <h3 className="font-bold text-base mb-2">🏆 {c.reviewVerdict}</h3>
                   <p className="text-foreground">{review.verdict}</p>
                 </section>
               </div>
@@ -258,13 +280,13 @@ export function ToolBrowser() {
             {!trial?.isMember && review && (
               <div className="mt-6 pt-6 border-t border-border text-center">
                 <p className="text-sm text-muted mb-3">
-                  喜欢这种评测？订阅解锁全部 {tools.length}+ 个工具
+                  {c.subscribeUpsell} {tools.length}+
                 </p>
                 <Link
                   href="/join"
                   className="inline-block bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700"
                 >
-                  订阅 $9.9/月
+                  {c.subscribeButton}
                 </Link>
               </div>
             )}

@@ -1,19 +1,31 @@
-import { features, stats } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = {
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label,
+}: {
+  className?: string;
+  label: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,7 +39,13 @@ export function FeatureGrid() {
   );
 }
 
-export function IndieScoreBadge({ score }: { score: number }) {
+export function IndieScoreBadge({
+  score,
+  label,
+}: {
+  score: number;
+  label: string;
+}) {
   const color =
     score >= 9
       ? "bg-green-100 text-green-700"
@@ -36,17 +54,28 @@ export function IndieScoreBadge({ score }: { score: number }) {
         : "bg-amber-100 text-amber-700";
   return (
     <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${color}`}>
-      Indie {score}/10
+      {label} {score}/10
     </span>
   );
 }
 
-export function StatsBar() {
-  const { toolCount, categoryCount, avgScore } = stats;
+export function StatsBar({
+  locale,
+  toolCount,
+  categoryCount,
+  avgScore,
+  labels,
+}: {
+  locale: Locale;
+  toolCount: number;
+  categoryCount: number;
+  avgScore: string;
+  labels: { tools: string; categories: string; avgScore: string };
+}) {
   const items = [
-    { label: "精选工具", value: `${toolCount}+` },
-    { label: "分类", value: `${categoryCount}` },
-    { label: "平均评分", value: avgScore },
+    { label: labels.tools, value: `${toolCount}+` },
+    { label: labels.categories, value: `${categoryCount}` },
+    { label: labels.avgScore, value: avgScore },
   ];
   return (
     <div className="grid grid-cols-3 gap-4 text-center">

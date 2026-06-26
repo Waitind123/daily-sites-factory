@@ -7,12 +7,20 @@ export const siteMeta = {
   },
   "nav": [
     {
+      "href": "/guide/indie-developer-tool-stack",
+      "label": {
+        "en": "Guide",
+        "zh": "指南"
+      }
+    },
+    {
       "href": "/tools",
       "label": {
         "en": "Tools",
         "zh": "工具"
       }
     }
-  ]
+  ],
+  "guideHref": "/guide/indie-developer-tool-stack"
 } as const;
 export type SiteMeta = typeof siteMeta;
