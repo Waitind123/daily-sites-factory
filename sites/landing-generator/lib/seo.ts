@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://landing-generator.vercel.app",
+    url: "https://landing-generator-opal.vercel.app",
     name: "Landing Generator",
     title: "Landing Generator — AI landing page HTML in 30s $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://landing-generator.vercel.app",
+    url: "https://landing-generator-opal.vercel.app",
     name: "Landing Page 生成器",
     title: "Landing Page 生成器 — AI 一键生成落地页 HTML $9.9/月",
     description:
