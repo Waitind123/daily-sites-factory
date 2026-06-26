@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import type { Locale } from "./i18n-shared";
+import { getStripeProductCopy } from "./copy-app";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !process.env.POLAR_CHECKOUT_URL;
 
@@ -15,13 +17,14 @@ export function getStripe() {
 
 export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(origin: string, locale: Locale = "en") {
   const polarUrl = process.env.POLAR_CHECKOUT_URL;
   if (polarUrl) {
     return { demo: false as const, url: polarUrl };
   }
 
   const stripe = getStripe();
+  const product = getStripeProductCopy(locale);
 
   if (!stripe) {
     return {
@@ -38,8 +41,8 @@ export async function createCheckoutSession(origin: string) {
         price_data: {
           currency: "usd",
           product_data: {
-            name: "证言墙 · 月度会员",
-            description: "无限生成证言墙 + 嵌入代码 + 收集邮件模板",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
           recurring: { interval: "month" },

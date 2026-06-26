@@ -1,5 +1,5 @@
-import { WallStudio } from "@/components/WallStudio";
+import { redirect } from "next/navigation";
 
 export default function BuildPage() {
-  return <WallStudio />;
+  redirect("/wall");
 }

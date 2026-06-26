@@ -2,39 +2,43 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import type { Locale } from "@/lib/i18n-shared";
+import { getSuccessCopy } from "@/lib/copy-app";
 
 export function SuccessClient({
+  locale,
   isDemo,
   sessionId,
 }: {
+  locale: Locale;
   isDemo: boolean;
   sessionId?: string;
 }) {
+  const t = getSuccessCopy(locale);
+
   useEffect(() => {
     fetch("/api/member/activate", { method: "POST" });
   }, []);
 
   return (
     <div className="mx-auto max-w-lg px-4 py-16 text-center">
-      <div className="text-6xl mb-6">🎉</div>
-      <h1 className="text-3xl font-bold">欢迎加入证言墙！</h1>
-      <p className="text-muted mt-4">
-        {isDemo ? "演示支付成功。" : "支付成功，"}你已是会员，可无限生成证言墙和嵌入代码。
-      </p>
+      <div className="text-6xl mb-6">⭐</div>
+      <h1 className="text-3xl font-bold">{t.title}</h1>
+      <p className="text-muted mt-4">{isDemo ? t.demoPaid : t.paidBody}</p>
       {sessionId && (
         <p className="text-xs text-muted mt-2 font-mono break-all">
-          订单: {sessionId}
+          {t.order} {sessionId}
         </p>
       )}
       <div className="mt-8 space-y-3">
         <Link
-          href="/build"
+          href="/wall"
           className="block w-full bg-brand-600 text-white py-4 rounded-xl font-semibold hover:bg-brand-700 transition-colors"
         >
-          创建证言墙
+          {t.openStudio}
         </Link>
         <Link href="/" className="block text-sm text-muted hover:underline">
-          返回首页
+          {t.backHome}
         </Link>
       </div>
     </div>

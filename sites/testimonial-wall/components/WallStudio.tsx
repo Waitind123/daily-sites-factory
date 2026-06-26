@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { sampleTestimonials, type GeneratedWall } from "@/lib/generator";
+import type { GeneratedWall } from "@/lib/generator";
+import type { Locale } from "@/lib/i18n-shared";
+import { getStudioCopy, getApiErrorMessage } from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -12,7 +14,16 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function WallStudio() {
+type TestimonialForm = {
+  name: string;
+  role: string;
+  text: string;
+  rating: number;
+};
+
+export function WallStudio({ locale }: { locale: Locale }) {
+  const c = getStudioCopy(locale);
+
   const [trial, setTrial] = useState<TrialInfo | null>(null);
   const [loading, setLoading] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
@@ -20,12 +31,18 @@ export function WallStudio() {
   const [result, setResult] = useState<GeneratedWall | null>(null);
   const [activeTab, setActiveTab] = useState<"embed" | "email">("embed");
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<{
+    productName: string;
+    tagline: string;
+    layout: "grid" | "carousel" | "masonry";
+    accentColor: string;
+    testimonials: TestimonialForm[];
+  }>({
     productName: "",
-    tagline: "用户真实好评",
-    layout: "grid" as "grid" | "carousel" | "masonry",
+    tagline: c.taglineDefault,
+    layout: "grid",
     accentColor: "#e11d48",
-    testimonials: sampleTestimonials.map((t) => ({ ...t })),
+    testimonials: c.sampleTestimonials.map((t) => ({ ...t })),
   });
 
   useEffect(() => {
@@ -37,7 +54,7 @@ export function WallStudio() {
 
   function updateTestimonial(
     index: number,
-    field: "name" | "role" | "text" | "rating",
+    field: keyof TestimonialForm,
     value: string | number
   ) {
     setForm((f) => {
@@ -50,10 +67,7 @@ export function WallStudio() {
   function addTestimonial() {
     setForm((f) => ({
       ...f,
-      testimonials: [
-        ...f.testimonials,
-        { name: "", role: "", text: "", rating: 5 },
-      ],
+      testimonials: [...f.testimonials, { name: "", role: "", text: "", rating: 5 }],
     }));
   }
 
@@ -80,18 +94,22 @@ export function WallStudio() {
       const data = await res.json();
 
       if (!res.ok) {
-        if (data.code === "TRIAL_EXHAUSTED") {
+        if (data.code === "TRIAL_EXHAUSTED" || data.code === "trial_exhausted") {
           setShowPaywall(true);
           setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
           return;
         }
-        throw new Error(data.error || "生成失败");
+        const msg =
+          data.code && getApiErrorMessage(data.code, locale) !== data.code
+            ? getApiErrorMessage(data.code, locale)
+            : data.error || c.generateFailed;
+        throw new Error(msg);
       }
 
       setResult(data.wall);
       if (data.trial) setTrial(data.trial);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "生成失败");
+      setError(err instanceof Error ? err.message : c.generateFailed);
     } finally {
       setLoading(false);
     }
@@ -105,37 +123,37 @@ export function WallStudio() {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">创建证言墙</h1>
-          <p className="text-muted mt-1">输入好评，一键生成可嵌入的 Wall of Love</p>
+          <h1 className="text-3xl font-bold">{c.title}</h1>
+          <p className="text-muted mt-1">{c.subtitle}</p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
-              ? "✓ 会员 · 无限生成"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+              ? c.memberBadge
+              : c.freeRemaining(trial.remaining, trial.limit)}
           </div>
         )}
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-8">
         <section className="rounded-2xl border border-border bg-surface p-6">
-          <h2 className="font-semibold text-lg mb-4">产品信息</h2>
+          <h2 className="font-semibold text-lg mb-4">{c.productInfo}</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                产品名称 *
+                {c.productName}
               </label>
               <input
                 required
                 value={form.productName}
                 onChange={(e) => setForm({ ...form, productName: e.target.value })}
-                placeholder="例：我的 SaaS"
+                placeholder={c.productNamePlaceholder}
                 className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                标语
+                {c.tagline}
               </label>
               <input
                 value={form.tagline}
@@ -145,7 +163,7 @@ export function WallStudio() {
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                布局
+                {c.layout}
               </label>
               <select
                 value={form.layout}
@@ -157,14 +175,14 @@ export function WallStudio() {
                 }
                 className="w-full rounded-lg border border-border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
               >
-                <option value="grid">网格</option>
-                <option value="carousel">轮播</option>
-                <option value="masonry">瀑布流</option>
+                <option value="grid">{c.layoutGrid}</option>
+                <option value="carousel">{c.layoutCarousel}</option>
+                <option value="masonry">{c.layoutMasonry}</option>
               </select>
             </div>
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
-                主题色
+                {c.accentColor}
               </label>
               <input
                 type="color"
@@ -178,13 +196,13 @@ export function WallStudio() {
 
         <section className="rounded-2xl border border-border bg-surface p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-lg">用户好评</h2>
+            <h2 className="font-semibold text-lg">{c.testimonials}</h2>
             <button
               type="button"
               onClick={addTestimonial}
               className="text-sm text-brand-500 hover:text-brand-500 font-medium"
             >
-              + 添加一条
+              {c.addTestimonial}
             </button>
           </div>
           <div className="space-y-4">
@@ -195,7 +213,7 @@ export function WallStudio() {
               >
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-medium text-muted">
-                    好评 #{i + 1}
+                    {c.testimonialN(i + 1)}
                   </span>
                   {form.testimonials.length > 1 && (
                     <button
@@ -203,7 +221,7 @@ export function WallStudio() {
                       onClick={() => removeTestimonial(i)}
                       className="text-xs text-muted hover:text-red-500"
                     >
-                      删除
+                      {c.remove}
                     </button>
                   )}
                 </div>
@@ -212,13 +230,13 @@ export function WallStudio() {
                     required
                     value={t.name}
                     onChange={(e) => updateTestimonial(i, "name", e.target.value)}
-                    placeholder="姓名"
+                    placeholder={c.namePlaceholder}
                     className="rounded-lg border border-border px-3 py-2 text-sm"
                   />
                   <input
                     value={t.role}
                     onChange={(e) => updateTestimonial(i, "role", e.target.value)}
-                    placeholder="职位 / 角色"
+                    placeholder={c.rolePlaceholder}
                     className="rounded-lg border border-border px-3 py-2 text-sm"
                   />
                 </div>
@@ -226,12 +244,12 @@ export function WallStudio() {
                   required
                   value={t.text}
                   onChange={(e) => updateTestimonial(i, "text", e.target.value)}
-                  placeholder="用户好评内容"
+                  placeholder={c.textPlaceholder}
                   rows={2}
                   className="w-full rounded-lg border border-border px-3 py-2 text-sm"
                 />
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-muted">评分</span>
+                  <span className="text-sm text-muted">{c.rating}</span>
                   {[1, 2, 3, 4, 5].map((n) => (
                     <button
                       key={n}
@@ -254,15 +272,13 @@ export function WallStudio() {
 
         {showPaywall && (
           <div className="rounded-xl border-2 border-brand-600 bg-brand-600/10 p-6 text-center">
-            <p className="font-semibold text-brand-800">免费体验已用完</p>
-            <p className="text-sm text-brand-500 mt-1">
-              订阅 $9.9/月，无限生成证言墙和嵌入代码
-            </p>
+            <p className="font-semibold text-brand-800">{c.paywallTitle}</p>
+            <p className="text-sm text-brand-500 mt-1">{c.paywallBody}</p>
             <Link
               href="/join"
               className="inline-block mt-4 bg-brand-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-brand-700"
             >
-              立即订阅
+              {c.paywallCta}
             </Link>
           </div>
         )}
@@ -272,13 +288,13 @@ export function WallStudio() {
           disabled={loading}
           className="w-full sm:w-auto rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white hover:bg-brand-700 disabled:opacity-50 transition-colors"
         >
-          {loading ? "生成中…" : "生成证言墙"}
+          {loading ? c.generating : c.generateCta}
         </button>
       </form>
 
       {result && (
         <div className="mt-12 space-y-6">
-          <h2 className="text-2xl font-bold">生成结果</h2>
+          <h2 className="text-2xl font-bold">{c.resultTitle}</h2>
 
           <div className="rounded-2xl border border-border bg-surface overflow-hidden">
             <div className="border-b border-border flex">
@@ -291,7 +307,7 @@ export function WallStudio() {
                     : "text-muted"
                 }`}
               >
-                嵌入代码
+                {c.tabEmbed}
               </button>
               <button
                 type="button"
@@ -302,7 +318,7 @@ export function WallStudio() {
                     : "text-muted"
                 }`}
               >
-                收集邮件模板
+                {c.tabEmail}
               </button>
             </div>
             <div className="p-4">
@@ -320,13 +336,13 @@ export function WallStudio() {
                 }
                 className="mt-3 text-sm text-brand-500 hover:text-brand-500 font-medium"
               >
-                复制到剪贴板
+                {c.copyClipboard}
               </button>
             </div>
           </div>
 
           <div className="rounded-2xl border border-border bg-surface p-6">
-            <h3 className="font-semibold mb-4">预览</h3>
+            <h3 className="font-semibold mb-4">{c.previewTitle}</h3>
             <div
               className="rounded-xl border border-border overflow-hidden"
               dangerouslySetInnerHTML={{ __html: result.embedHtml }}
