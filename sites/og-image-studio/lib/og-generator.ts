@@ -212,37 +212,3 @@ export const metadata = {
   return { svg, dataUrl, width: W, height: H, metaTagsHtml, nextJsSnippet, htmlImgTag };
 }
 
-export const templateOptions: { id: OgTemplate; name: string; desc: string }[] = [
-  { id: "minimal", name: "极简", desc: "干净留白，适合 SaaS 落地页" },
-  { id: "product", name: "产品", desc: "带产品标签，适合 Product Hunt 发布" },
-  { id: "blog", name: "博客", desc: "文章卡片风格，适合技术博客" },
-  { id: "gradient", name: "渐变", desc: "品牌色渐变，适合社交媒体" },
-  { id: "dark", name: "暗色", desc: "开发者风格，适合 dev tools" },
-];
-
-export const features = [
-  { icon: "🖼️", title: "5 种模板", desc: "极简、产品、博客、渐变、暗色，覆盖 indie 常见场景" },
-  { icon: "⚡", title: "即时生成", desc: "纯 SVG 渲染，无需 Puppeteer，毫秒级出图" },
-  { icon: "📋", title: "Meta 标签导出", desc: "一键复制 og:image、twitter:card 完整 HTML" },
-  { icon: "💻", title: "Next.js 片段", desc: "直接粘贴到 metadata.openGraph 配置" },
-  { icon: "🎨", title: "自定义品牌色", desc: "主题色、副标题、产品标签随心配" },
-  { icon: "📐", title: "标准 1200×630", desc: "符合 Twitter、LinkedIn、Facebook 推荐尺寸" },
-];
-
-export const testimonials = [
-  {
-    name: "小林",
-    role: "Indie Hacker",
-    text: "Product Hunt 发布前 10 分钟搞定 OG 图，比 Bannerbear 省 $49/月。",
-  },
-  {
-    name: "Amy",
-    role: "SaaS 创始人",
-    text: "博客每篇文章都能快速生成分享图，SEO 点击率明显提升。",
-  },
-  {
-    name: "老王",
-    role: "全栈开发者",
-    text: "导出的 meta 标签直接粘贴，不用折腾 @vercel/og 配置了。",
-  },
-];

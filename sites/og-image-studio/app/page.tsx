@@ -1,39 +1,78 @@
 import Link from "next/link";
 import { FeatureGrid } from "@/components/ui";
-import { testimonials } from "@/lib/og-generator";
 import { HomeHero } from "@/components/HomeHero";
+import { getLocale } from "@/lib/locale";
+import { getHomeCopy } from "@/lib/copy";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const locale = await getLocale();
+  const c = getHomeCopy(locale);
+
   return (
     <div>
       <HomeHero />
 
-<section className="bg-surface border-y border-border py-12">
+      <section className="border-b border-border py-8">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="grid sm:grid-cols-3 gap-6 text-center">
-            {[
-              { stat: "$9.9", label: "月费 vs Bannerbear $49" },
-              { stat: "30s", label: "从标题到可分享 OG 图" },
-              { stat: "1200×630", label: "Twitter/LinkedIn 标准尺寸" },
-            ].map((item) => (
-              <div key={item.label} className="rounded-xl border border-border p-6">
-                <p className="text-3xl font-bold text-brand-500">{item.stat}</p>
-                <p className="text-sm text-muted mt-1">{item.label}</p>
+          <div className="grid grid-cols-3 gap-4 text-center">
+            {c.stats.map((s) => (
+              <div key={s.label} className="rounded-xl border border-border bg-surface p-4">
+                <p className="text-2xl font-bold text-brand-500">{s.stat}</p>
+                <p className="text-xs text-muted mt-1">{s.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      <section className="py-16 border-b border-border">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">{c.productDemo.title}</h2>
+          <p className="text-center text-sm text-muted mb-6">{c.productDemo.caption}</p>
+          <div className="rounded-2xl border border-brand-600/30 bg-surface p-6 shadow-xl">
+            <pre className="whitespace-pre-wrap rounded-xl bg-background border border-border p-5 font-mono text-sm text-foreground leading-relaxed">
+              {c.productDemo.preview}
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface border-y border-border py-12">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-xl font-bold mb-4">{c.comparisonTitle}</h2>
+              <div className="rounded-xl border border-border bg-background p-5 space-y-3 text-sm">
+                <p className="text-muted">{c.sampleNote}</p>
+                <p className="font-medium text-foreground">{c.sampleDeliverable}</p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-4">{c.audienceTitle}</h2>
+              <div className="space-y-3">
+                {c.audiences.map((item) => (
+                  <div
+                    key={item.title}
+                    className="flex items-start gap-3 rounded-lg border border-border px-4 py-3 bg-background"
+                  >
+                    <span className="text-xl">{item.icon}</span>
+                    <div>
+                      <p className="font-medium text-foreground">{item.title}</p>
+                      <p className="text-sm text-muted">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">三步生成分享图</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">{c.howItWorks.title}</h2>
           <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { step: "1", title: "输入标题", desc: "主标题、副标题、品牌色，选择 5 种模板之一" },
-              { step: "2", title: "即时预览", desc: "纯 SVG 渲染，毫秒出图，无需 Puppeteer 或 API 密钥" },
-              { step: "3", title: "导出使用", desc: "下载 SVG、复制 meta 标签或 Next.js metadata 片段" },
-            ].map((s) => (
+            {c.howItWorks.steps.map((s) => (
               <div key={s.step} className="text-center">
                 <div className="mx-auto w-12 h-12 rounded-full bg-brand-100 text-brand-500 font-bold text-lg flex items-center justify-center mb-4">
                   {s.step}
@@ -46,25 +85,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-surface-muted/50 border-t border-border py-16">
+      <section className="bg-surface border-y border-border py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">核心功能</h2>
-          <FeatureGrid />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">独立开发者怎么说</h2>
+          <h2 className="text-2xl font-bold text-center mb-10">{c.testimonialsTitle}</h2>
           <div className="grid sm:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <blockquote
-                key={t.name}
-                className="rounded-xl border border-border bg-surface p-6"
-              >
-                <p className="text-muted text-sm leading-relaxed">&ldquo;{t.text}&rdquo;</p>
-                <footer className="mt-4 text-sm">
-                  <strong className="text-foreground">{t.name}</strong>
+            {c.testimonials.map((t) => (
+              <blockquote key={t.name} className="rounded-xl border border-border p-5 bg-background">
+                <p className="text-foreground text-sm">&ldquo;{t.text}&rdquo;</p>
+                <footer className="mt-3 text-sm">
+                  <span className="font-medium">{t.name}</span>
                   <span className="text-muted"> · {t.role}</span>
                 </footer>
               </blockquote>
@@ -73,26 +102,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 text-center">
-        <h2 className="text-2xl font-bold text-foreground">
-          好产品需要好看的分享图
-        </h2>
-        <p className="mt-3 text-muted">
-          Product Hunt 发布、博客 SEO、Twitter 推广——OG 图决定点击率。$9.9/月，比 Bannerbear 便宜 80%。
-        </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/studio"
-            className="rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white hover:bg-brand-700 transition-colors"
-          >
-            开始生成
-          </Link>
-          <Link
-            href="/guide/bannerbear-alternative-og-image"
-            className="rounded-xl border border-border px-8 py-3.5 text-base font-semibold text-foreground hover:bg-surface-muted transition-colors"
-          >
-            阅读 Bannerbear 替代指南
-          </Link>
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-10">{c.featuresTitle}</h2>
+          <FeatureGrid features={c.features} />
+        </div>
+      </section>
+
+      <section className="bg-brand-600 text-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold">{c.closing.title}</h2>
+          <p className="mt-4 text-brand-100 text-lg">{c.closing.subtitle}</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/studio"
+              className="inline-block bg-surface text-brand-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-600/10 transition-colors"
+            >
+              {c.closing.ctaPrimary}
+            </Link>
+            <Link
+              href="/guide/bannerbear-alternative-og-image"
+              className="inline-block border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-surface/10 transition-colors"
+            >
+              {c.closing.ctaSecondary}
+            </Link>
+          </div>
         </div>
       </section>
     </div>
