@@ -5,7 +5,7 @@ import {
   getTrialCookieName,
 } from "./trial-core";
 
-export const SITE_ID = "wcag-alt-text-生成器";
+export const SITE_ID = "wcag-alt-text";
 
 export { FREE_TRIAL_LIMIT, getTrialCookieName };
 

@@ -29,9 +29,9 @@ jobs:
           if [ -n "${{ github.event.inputs.site_id }}" ]; then
             SITES='["${{ github.event.inputs.site_id }}"]'
           else
-            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
+            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | sed 's/^"\|"$//g' | grep '^sites/' | cut -d/ -f2 | sort -u)
             if [ -z "$CHANGED" ]; then
-              CHANGED=$(git show --name-only --pretty=format: HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
+              CHANGED=$(git show --name-only --pretty=format: HEAD | sed 's/^"\|"$//g' | grep '^sites/' | cut -d/ -f2 | sort -u)
             fi
             if [ -z "$CHANGED" ]; then
               echo "No sites to deploy" >&2

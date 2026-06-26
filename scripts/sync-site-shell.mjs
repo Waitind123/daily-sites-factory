@@ -58,7 +58,7 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/join", label: { en: "Pricing", zh: "定价" } }],
   },
-  "wcag-alt-text-生成器": {
+  "wcag-alt-text": {
     emoji: "♿",
     name: { en: "AltText Pro", zh: "无障碍 Alt 文本" },
     jsonLd: "softwareApplicationJsonLd",

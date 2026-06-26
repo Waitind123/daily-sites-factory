@@ -1,5 +1,5 @@
 export const siteMeta = {
-  "id": "wcag-alt-text-生成器",
+  "id": "wcag-alt-text",
   "emoji": "♿",
   "name": {
     "en": "AltText Pro",
