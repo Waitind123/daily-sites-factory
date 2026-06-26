@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import { getStripeProductCopy } from "./copy-app";
+import { getLocale } from "./locale";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
 
@@ -17,6 +19,8 @@ export const PRICE_USD = 990;
 
 export async function createCheckoutSession(origin: string) {
   const stripe = getStripe();
+  const locale = await getLocale();
+  const product = getStripeProductCopy(locale);
 
   if (!stripe) {
     return {
@@ -34,8 +38,8 @@ export async function createCheckoutSession(origin: string) {
           currency: "usd",
           recurring: { interval: "month" },
           product_data: {
-            name: "SaaS 价格追踪 · 月度会员",
-            description: "无限竞品定价追踪、变动提醒、历史分析、策略建议",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
         },

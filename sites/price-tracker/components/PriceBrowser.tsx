@@ -2,8 +2,10 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { categories, getPublicProducts, type SaasProduct } from "@/lib/data";
+import { getPublicProducts, type SaasProduct } from "@/lib/data";
 import { ChangeBadge, ImpactBadge } from "@/components/ui";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getTrackCopy } from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -15,16 +17,17 @@ type TrialStatus = {
 
 type ProductListItem = Omit<SaasProduct, "tracking">;
 
-export function PriceBrowser() {
+export function PriceBrowser({ locale }: { locale: Locale }) {
+  const c = getTrackCopy(locale);
   const [trial, setTrial] = useState<TrialStatus | null>(null);
-  const [filter, setFilter] = useState("全部");
+  const [filter, setFilter] = useState<string>(c.all);
   const [selected, setSelected] = useState<ProductListItem | null>(null);
   const [tracking, setTracking] = useState<SaasProduct["tracking"] | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const products = getPublicProducts().filter(
-    (p) => filter === "全部" || p.category === filter
+  const products = getPublicProducts(locale).filter(
+    (p) => filter === c.all || p.category === filter
   );
 
   const loadTrial = useCallback(async () => {
@@ -51,7 +54,7 @@ export function PriceBrowser() {
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "加载失败");
+      setError(getApiErrorMessage(data.code, locale));
       setLoading(false);
       await loadTrial();
       return;
@@ -73,22 +76,25 @@ export function PriceBrowser() {
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费深度追踪
+            <strong>
+              {trial.remaining}/{trial.limit}
+            </strong>{" "}
+            {c.trialRemaining}
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 →
+            {c.subscribeUnlock}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限追踪 + 邮件变动提醒
+          {c.memberActive}
         </div>
       )}
 
       <div className="flex flex-wrap gap-2">
-        {categories.map((cat) => (
+        {c.categories.map((cat) => (
           <button
             key={cat}
             type="button"
@@ -128,7 +134,8 @@ export function PriceBrowser() {
                     key={tier.name}
                     className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded"
                   >
-                    {tier.name} ${tier.monthly}/月
+                    {tier.name} ${tier.monthly}
+                    {c.perMonth}
                   </span>
                 ))}
             </div>
@@ -139,7 +146,7 @@ export function PriceBrowser() {
                 onClick={() => viewTracking(product)}
                 className="text-sm font-semibold text-brand-500 hover:text-brand-500"
               >
-                查看变动历史 →
+                {c.viewHistory}
               </button>
             </div>
           </article>
@@ -159,31 +166,31 @@ export function PriceBrowser() {
               <div>
                 <span className="text-xs font-medium text-brand-500">{selected.category}</span>
                 <h2 className="text-2xl font-bold mt-1">{selected.name}</h2>
-                <p className="text-muted mt-1">{selected.website} · {selected.billingModel}</p>
+                <p className="text-muted mt-1">
+                  {selected.website} · {selected.billingModel}
+                </p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
                 className="text-muted hover:text-muted text-2xl leading-none"
               >
-                ×
+                {c.close}
               </button>
             </div>
 
             <p className="text-muted mb-6">{selected.preview}</p>
 
-            {loading && (
-              <div className="text-center py-12 text-muted">加载定价变动历史中...</div>
-            )}
+            {loading && <div className="text-center py-12 text-muted">{c.loading}</div>}
 
             {error && (
               <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
                 {error}
-                {error.includes("订阅") && (
+                {error.includes("$9.9") || error.includes("订阅") ? (
                   <Link href="/join" className="block mt-2 font-semibold underline">
-                    立即订阅 $9.9/月
+                    {c.subscribeCta}
                   </Link>
-                )}
+                ) : null}
               </div>
             )}
 
@@ -191,17 +198,18 @@ export function PriceBrowser() {
               <div className="space-y-6 text-sm">
                 <section className="rounded-xl bg-brand-600/10 border border-brand-200 p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-base">📊 追踪摘要</h3>
-                    <ChangeBadge count={tracking.changesLast90Days} />
+                    <h3 className="font-bold text-base">{c.summaryTitle}</h3>
+                    <ChangeBadge count={tracking.changesLast90Days} locale={locale} />
                   </div>
                   <p className="text-foreground">{tracking.summary}</p>
                   <p className="text-xs text-muted mt-2">
-                    上次检查: {tracking.lastChecked} · 频率: {tracking.checkFrequency}
+                    {c.lastChecked}: {tracking.lastChecked} · {c.frequency}:{" "}
+                    {tracking.checkFrequency}
                   </p>
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-3">📈 变动历史</h3>
+                  <h3 className="font-bold text-base mb-3">{c.historyTitle}</h3>
                   <div className="space-y-3">
                     {tracking.history.map((change) => (
                       <div
@@ -210,7 +218,7 @@ export function PriceBrowser() {
                       >
                         <div className="flex items-center justify-between gap-2 mb-1">
                           <span className="text-xs text-muted">{change.date}</span>
-                          <ImpactBadge impact={change.impact} />
+                          <ImpactBadge impact={change.impact} locale={locale} />
                         </div>
                         <p className="font-medium text-foreground">{change.summary}</p>
                         {change.before && change.after && (
@@ -224,14 +232,14 @@ export function PriceBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">💰 当前定价</h3>
+                  <h3 className="font-bold text-base mb-2">{c.pricingTitle}</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="border-b border-border">
-                          <th className="py-2 pr-4 font-medium">计划</th>
-                          <th className="py-2 pr-4 font-medium">月费</th>
-                          <th className="py-2 font-medium">核心功能</th>
+                          <th className="py-2 pr-4 font-medium">{c.planCol}</th>
+                          <th className="py-2 pr-4 font-medium">{c.monthlyCol}</th>
+                          <th className="py-2 font-medium">{c.featuresCol}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -240,13 +248,13 @@ export function PriceBrowser() {
                             <td className="py-2 pr-4 font-medium">{tier.name}</td>
                             <td className="py-2 pr-4 text-brand-500">
                               {tier.monthly === null
-                                ? "联系销售"
+                                ? c.contactSales
                                 : tier.monthly === 0
-                                  ? "免费"
-                                  : `$${tier.monthly}/月`}
+                                  ? c.freeTier
+                                  : `$${tier.monthly}${c.perMonth}`}
                             </td>
                             <td className="py-2 text-muted">
-                              {tier.features.slice(0, 2).join("、")}
+                              {tier.features.slice(0, 2).join(locale === "zh" ? "、" : ", ")}
                             </td>
                           </tr>
                         ))}
@@ -256,7 +264,7 @@ export function PriceBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">🎯 竞争分析</h3>
+                  <h3 className="font-bold text-base mb-2">{c.competitiveTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {tracking.competitiveNotes.map((note) => (
                       <li key={note}>· {note}</li>
@@ -265,7 +273,7 @@ export function PriceBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">💡 策略建议</h3>
+                  <h3 className="font-bold text-base mb-2">{c.strategyTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {tracking.alertRecommendations.map((rec) => (
                       <li key={rec}>· {rec}</li>
@@ -274,7 +282,7 @@ export function PriceBrowser() {
                 </section>
 
                 <section className="rounded-xl bg-background border border-border p-4">
-                  <h3 className="font-bold text-base mb-2">🏆 市场定位</h3>
+                  <h3 className="font-bold text-base mb-2">{c.positionTitle}</h3>
                   <p className="text-foreground">{tracking.marketPosition}</p>
                 </section>
               </div>
@@ -282,14 +290,12 @@ export function PriceBrowser() {
 
             {!trial?.isMember && tracking && (
               <div className="mt-6 pt-6 border-t border-border text-center">
-                <p className="text-sm text-muted mb-3">
-                  订阅解锁全部 {products.length}+ 个产品无限追踪 + 邮件提醒
-                </p>
+                <p className="text-sm text-muted mb-3">{c.subscribeUpsell}</p>
                 <Link
                   href="/join"
                   className="inline-block bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700"
                 >
-                  订阅 $9.9/月
+                  {c.subscribeButton}
                 </Link>
               </div>
             )}

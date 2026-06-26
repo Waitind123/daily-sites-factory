@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { createCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 
@@ -14,18 +15,14 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 
 export async function GET() {
   return NextResponse.json({
     status: "ok",
-    message: "SaaS 价格追踪支付接口",
-    price: "$9.9/月",
+    price: "$9.9/mo",
     demo: (await import("@/lib/stripe")).isDemoMode(),
   });
 }

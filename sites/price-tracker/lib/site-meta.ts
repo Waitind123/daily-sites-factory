@@ -13,6 +13,7 @@ export const siteMeta = {
         "zh": "追踪"
       }
     }
-  ]
+  ],
+  "guideHref": "/guide/saas-pricing-monitoring-indie"
 } as const;
 export type SiteMeta = typeof siteMeta;

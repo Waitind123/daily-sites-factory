@@ -1,3 +1,5 @@
+import type { Locale } from "./i18n-shared";
+
 export type PriceTier = {
   name: string;
   monthly: number | null;
@@ -332,71 +334,199 @@ export const saasProducts: SaasProduct[] = [
   },
 ];
 
-export const features = [
+export const saasProductsEn: SaasProduct[] = [
   {
-    icon: "📊",
-    title: "定价历史追踪",
-    desc: "自动记录竞品每次涨价、降价、新套餐、功能门控变动",
+    id: "notion",
+    name: "Notion",
+    category: "Productivity",
+    website: "notion.so",
+    pricingUrl: "notion.so/pricing",
+    billingModel: "Per seat",
+    preview: "Plus plan $10→$12/mo (+20%), 3 pricing changes in 90 days",
+    currentPricing: [
+      { name: "Free", monthly: 0, annual: 0, features: ["Unlimited blocks", "10 guests", "Basic collab"] },
+      { name: "Plus", monthly: 12, annual: 96, features: ["Unlimited uploads", "30-day history", "100 guests"] },
+      { name: "Business", monthly: 18, annual: 180, features: ["SAML SSO", "Advanced permissions", "Bulk export"] },
+      { name: "Enterprise", monthly: null, annual: null, features: ["Audit log", "SCIM", "Dedicated support"] },
+    ],
+    tracking: {
+      summary:
+        "Notion raised Plus and Business plans 20% in Q1 2026. Free tier AI limits cut to push upgrades — classic feature gating + gentle price hike combo.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Daily",
+      changesLast90Days: 3,
+      history: [
+        { date: "2026-04-15", type: "price_increase", summary: "Plus $10/mo → $12/mo (+20%)", impact: "high", before: "$10/mo", after: "$12/mo" },
+        { date: "2026-05-01", type: "feature_change", summary: "Free AI from unlimited to 20 uses/mo", impact: "medium", before: "Unlimited AI", after: "20/mo" },
+        { date: "2026-06-10", type: "price_increase", summary: "Business $15/mo → $18/mo (+20%)", impact: "high", before: "$15/mo", after: "$18/mo" },
+      ],
+      competitiveNotes: ["Plus now 20% above Coda Pro ($10/mo)", "Obsidian Sync $10/mo, different scope", "Enterprise may shift to Confluence"],
+      alertRecommendations: ["If you're a Notion competitor, \"we didn't raise\" is timely messaging", "Watch Free→Plus conversion 30 days post-hike", "Business hike may churn SMB customers"],
+      marketPosition: "Market leader with pricing power, but watch low-cost alternatives",
+    },
   },
   {
-    icon: "🔔",
-    title: "变动邮件提醒",
-    desc: "竞品调价后 24h 内收到摘要，不再靠销售电话才知道",
+    id: "linear",
+    name: "Linear",
+    category: "Project Mgmt",
+    website: "linear.app",
+    pricingUrl: "linear.app/pricing",
+    billingModel: "Per seat",
+    preview: "Standard $8→$10/mo, AI gating moved to Business tier",
+    currentPricing: [
+      { name: "Free", monthly: 0, annual: 0, features: ["250 issues", "Unlimited members", "2 teams"] },
+      { name: "Standard", monthly: 10, annual: 96, features: ["Unlimited issues", "Unlimited teams", "Advanced integrations"] },
+      { name: "Plus", monthly: 16, annual: 168, features: ["SAML SSO", "Audit log", "Priority support"] },
+      { name: "Enterprise", monthly: null, annual: null, features: ["SCIM", "Dedicated CSM", "SLA"] },
+    ],
+    tracking: {
+      summary:
+        "Linear raised Standard 25% ($8→$10) in May 2026 and moved AI auto-classify to Plus. Classic feature upshift + price hike under Jira/Height pressure.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Daily",
+      changesLast90Days: 2,
+      history: [
+        { date: "2026-05-20", type: "price_increase", summary: "Standard $8/mo → $10/mo (+25%)", impact: "high", before: "$8/mo", after: "$10/mo" },
+        { date: "2026-06-01", type: "feature_change", summary: "AI auto-classify moved from Standard to Plus", impact: "medium", before: "Standard incl. AI", after: "Plus incl. AI" },
+      ],
+      competitiveNotes: ["Still above Jira Standard ($8.15/seat)", "Height holds $8.99/mo", "Generous Free tier drives acquisition"],
+      alertRecommendations: ["$8-10/mo is indie team sweet spot for PM tools", "AI gating is 2026's dominant pricing trend", "Watch Linear Free→paid conversion"],
+      marketPosition: "Premium positioning, room to raise but must balance growth",
+    },
   },
   {
-    icon: "📈",
-    title: "趋势分析",
-    desc: "90 天变动次数、市场定位、竞争建议一目了然",
+    id: "cursor",
+    name: "Cursor",
+    category: "Dev Tools",
+    website: "cursor.com",
+    pricingUrl: "cursor.com/pricing",
+    billingModel: "Per seat + usage",
+    preview: "Pro stable at $20/mo, new Ultra tier at $200/mo",
+    currentPricing: [
+      { name: "Hobby", monthly: 0, annual: 0, features: ["2000 completions/mo", "50 slow requests", "Basic models"] },
+      { name: "Pro", monthly: 20, annual: 192, features: ["Unlimited completions", "500 fast requests", "All models"] },
+      { name: "Business", monthly: 40, annual: 384, features: ["Team admin", "Privacy mode", "SSO"] },
+      { name: "Ultra", monthly: 200, annual: null, features: ["10x Pro usage", "Priority queue", "Early access"] },
+    ],
+    tracking: {
+      summary:
+        "Cursor launched Ultra at $200/mo in June 2026 for power users. Pro price stable but Hobby free completions cut 5000→2000. Classic free-tier shrink + premium tier launch.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Daily",
+      changesLast90Days: 2,
+      history: [
+        { date: "2026-06-01", type: "new_tier", summary: "New Ultra plan $200/mo, 10x Pro usage", impact: "high", after: "$200/mo" },
+        { date: "2026-06-15", type: "feature_change", summary: "Hobby completions 5000/mo → 2000/mo", impact: "medium", before: "5000/mo", after: "2000/mo" },
+      ],
+      competitiveNotes: ["GitHub Copilot Pro $10/mo", "Windsurf $15/mo direct competitor", "Ultra targets enterprise power users"],
+      alertRecommendations: ["AI coding price war — watch Copilot response", "Free cut signals conversion push", "$15-20/mo is mainstream indie pricing band"],
+      marketPosition: "Rapid growth — premium tier lifts ARPU",
+    },
   },
   {
-    icon: "🎯",
-    title: "竞品对比",
-    desc: "同品类工具定价并排对比，找甜蜜价位",
+    id: "figma",
+    name: "Figma",
+    category: "Design",
+    website: "figma.com",
+    pricingUrl: "figma.com/pricing",
+    billingModel: "Per seat",
+    preview: "Professional $15/mo stable, Dev Mode now paid add-on",
+    currentPricing: [
+      { name: "Starter", monthly: 0, annual: 0, features: ["3 files", "Unlimited collaborators", "Basic prototypes"] },
+      { name: "Professional", monthly: 15, annual: 144, features: ["Unlimited files", "Dev Mode", "Advanced prototypes"] },
+      { name: "Organization", monthly: 45, annual: 540, features: ["Design systems", "Branching", "Analytics"] },
+      { name: "Enterprise", monthly: 75, annual: 900, features: ["SCIM", "Audit", "Dedicated support"] },
+    ],
+    tracking: {
+      summary:
+        "Figma's biggest 2026 move: Dev Mode split from Professional into $12/editor/mo add-on. Post-Adobe acquisition, more aggressive monetization of developers.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Daily",
+      changesLast90Days: 1,
+      history: [
+        { date: "2026-03-01", type: "feature_change", summary: "Dev Mode from free to $12/editor/mo add-on", impact: "high", before: "Pro incl. Dev Mode", after: "Dev Mode $12/mo add-on" },
+      ],
+      competitiveNotes: ["Sketch $10/mo, weaker collab", "Penpot open-source free", "Dev Mode fee impacts design-dev workflow"],
+      alertRecommendations: ["Feature-split pricing is 2026 trend", "Watch Penpot/Sketch user migration", "Dev Mode fee may push devs to alt annotation tools"],
+      marketPosition: "Dominant position with strong pricing power",
+    },
   },
   {
-    icon: "⚡",
-    title: "每日自动检查",
-    desc: "不用每周手动开 5 个标签页截图对比",
+    id: "vercel",
+    name: "Vercel",
+    category: "Deploy",
+    website: "vercel.com",
+    pricingUrl: "vercel.com/pricing",
+    billingModel: "Usage + seats",
+    preview: "Pro $20/mo, bandwidth overage $40→$55/TB",
+    currentPricing: [
+      { name: "Hobby", monthly: 0, annual: 0, features: ["Personal projects", "100GB bandwidth", "Serverless"] },
+      { name: "Pro", monthly: 20, annual: 240, features: ["Commercial use", "1TB bandwidth", "Analytics"] },
+      { name: "Enterprise", monthly: null, annual: null, features: ["SLA", "SSO", "Dedicated support"] },
+    ],
+    tracking: {
+      summary:
+        "Vercel Q2 2026 raised bandwidth overage ($40→$55/TB) and cut Pro Serverless hours 1000h→800h. Significant impact on high-traffic indie projects.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Daily",
+      changesLast90Days: 2,
+      history: [
+        { date: "2026-04-01", type: "price_increase", summary: "Bandwidth overage $40/TB → $55/TB (+37.5%)", impact: "high", before: "$40/TB", after: "$55/TB" },
+        { date: "2026-05-15", type: "feature_change", summary: "Pro Serverless hours 1000h → 800h", impact: "medium", before: "1000h/mo", after: "800h/mo" },
+      ],
+      competitiveNotes: ["Cloudflare Pages more generous bandwidth", "Railway from $5/mo for small projects", "Netlify Pro $19/mo includes more bandwidth"],
+      alertRecommendations: ["High-traffic projects: evaluate Cloudflare Pages migration", "Bandwidth hikes are 2026 infra trend", "Watch for Vercel usage warning features"],
+      marketPosition: "Developer default, but usage pricing pressure rising",
+    },
   },
   {
-    icon: "💡",
-    title: "策略建议",
-    desc: "每次变动附带「你应该怎么做」的 actionable 建议",
+    id: "stripe",
+    name: "Stripe",
+    category: "Payments",
+    website: "stripe.com",
+    pricingUrl: "stripe.com/pricing",
+    billingModel: "Transaction fees",
+    preview: "Standard 2.9%+$0.30 stable, Billing adds 0.7% platform fee",
+    currentPricing: [
+      { name: "Payments", monthly: null, annual: null, features: ["2.9% + $0.30/txn", "Global cards", "Fraud detection"] },
+      { name: "Billing", monthly: null, annual: null, features: ["0.7% subscription revenue", "Usage billing", "Invoicing"] },
+      { name: "Connect", monthly: null, annual: null, features: ["Platform splits", "Multi-account", "KYC"] },
+    ],
+    tracking: {
+      summary:
+        "Stripe added 0.7% platform fee on Billing in 2026 (previously payment fees only). $10K MRR SaaS pays $70/mo extra. Core payment rates stable.",
+      lastChecked: "2026-06-24",
+      checkFrequency: "Weekly",
+      changesLast90Days: 1,
+      history: [
+        { date: "2026-02-01", type: "new_tier", summary: "Stripe Billing adds 0.7% platform fee", impact: "high", after: "0.7% of subscription revenue" },
+      ],
+      competitiveNotes: ["Lemon Squeezy 5% + $0.50 incl. tax", "Paddle 5% + $0.50 MoR", "Polar.sh 4% + $0.40 indie-friendly"],
+      alertRecommendations: ["High MRR: compare Lemon Squeezy/Paddle total cost", "0.7% Billing fee may push indies to Polar", "Stable payment rates, but add-on fees are hidden hikes"],
+      marketPosition: "Infrastructure monopoly — add-on fees are profit growth",
+    },
   },
 ];
 
-export const testimonials = [
-  {
-    name: "阿杰",
-    role: "SaaS 创始人",
-    text: "竞品降价 3 周后我才知道，丢了一单。现在每天自动追踪，$9.9/月太值了。",
-  },
-  {
-    name: "Mia",
-    role: "产品负责人",
-    text: "定价会议前不用手动截图了。打开就有 90 天历史，老板问「他们涨了多少」秒答。",
-  },
-  {
-    name: "Kevin",
-    role: "Indie Hacker",
-    text: "RivalPeek $49/月 0 客户，这个 $9.9/月 功能够用。levelsio 思路对了。",
-  },
-];
-
-export const categories = ["全部", "生产力", "项目管理", "开发工具", "设计工具", "部署平台", "支付"];
-
-export const stats = {
-  productCount: saasProducts.length,
-  avgChanges90d: Math.round(
-    saasProducts.reduce((sum, p) => sum + p.tracking.changesLast90Days, 0) / saasProducts.length
-  ),
-  categories: categories.length - 1,
-};
-
-export function getProductById(id: string): SaasProduct | undefined {
-  return saasProducts.find((p) => p.id === id);
+function productsForLocale(locale: Locale): SaasProduct[] {
+  return locale === "en" ? saasProductsEn : saasProducts;
 }
 
-export function getPublicProducts(): Omit<SaasProduct, "tracking">[] {
-  return saasProducts.map(({ tracking: _t, ...rest }) => rest);
+export function getProductById(id: string, locale: Locale = "zh"): SaasProduct | undefined {
+  return productsForLocale(locale).find((p) => p.id === id);
+}
+
+export function getPublicProducts(locale: Locale = "zh"): Omit<SaasProduct, "tracking">[] {
+  return productsForLocale(locale).map(({ tracking: _t, ...rest }) => rest);
+}
+
+export function getStats(locale: Locale = "zh") {
+  const products = productsForLocale(locale);
+  return {
+    productCount: products.length,
+    avgChanges90d: Math.round(
+      products.reduce((sum, p) => sum + p.tracking.changesLast90Days, 0) / products.length
+    ),
+    categories: 6,
+  };
 }

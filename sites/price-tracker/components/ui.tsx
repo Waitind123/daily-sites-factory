@@ -1,19 +1,29 @@
-import { features, stats } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getTrackCopy } from "@/lib/copy-app";
+import { getStats } from "@/lib/data";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = { icon: string; title: string; desc: string };
+
+export function CheckoutButton({
+  label,
+  className = "",
+}: {
+  label: string;
+  className?: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,26 +37,28 @@ export function FeatureGrid() {
   );
 }
 
-export function ChangeBadge({ count }: { count: number }) {
+export function ChangeBadge({ count, locale }: { count: number; locale: Locale }) {
+  const c = getTrackCopy(locale);
   const color =
     count >= 3
       ? "bg-red-100 text-red-700"
       : count >= 1
         ? "bg-amber-100 text-amber-700"
         : "bg-green-100 text-green-700";
+  const label =
+    locale === "zh" ? `90${c.changes90d} ${count} 次` : `${count} ${c.changes90d}`;
   return (
-    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${color}`}>
-      90天 {count} 次变动
-    </span>
+    <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${color}`}>{label}</span>
   );
 }
 
-export function StatsBar() {
-  const { productCount, avgChanges90d, categories } = stats;
+export function StatsBar({ locale }: { locale: Locale }) {
+  const c = getTrackCopy(locale);
+  const stats = getStats(locale);
   const items = [
-    { label: "追踪产品", value: `${productCount}` },
-    { label: "平均变动/90天", value: `${avgChanges90d}` },
-    { label: "覆盖品类", value: `${categories}` },
+    { label: c.statsProducts, value: `${stats.productCount}` },
+    { label: c.statsAvgChanges, value: `${stats.avgChanges90d}` },
+    { label: c.statsCategories, value: `${stats.categories}` },
   ];
   return (
     <div className="grid grid-cols-3 gap-4 text-center">
@@ -60,13 +72,20 @@ export function StatsBar() {
   );
 }
 
-export function ImpactBadge({ impact }: { impact: "high" | "medium" | "low" }) {
+export function ImpactBadge({
+  impact,
+  locale,
+}: {
+  impact: "high" | "medium" | "low";
+  locale: Locale;
+}) {
+  const c = getTrackCopy(locale);
   const styles = {
     high: "bg-red-100 text-red-700",
     medium: "bg-amber-100 text-amber-700",
     low: "bg-surface-muted text-muted",
   };
-  const labels = { high: "高影响", medium: "中影响", low: "低影响" };
+  const labels = { high: c.impactHigh, medium: c.impactMedium, low: c.impactLow };
   return (
     <span className={`text-xs font-medium px-2 py-0.5 rounded ${styles[impact]}`}>
       {labels[impact]}

@@ -1,31 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { isMember } from "@/lib/member";
+import { getLocale } from "@/lib/locale";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { getProductById } from "@/lib/data";
 
 export async function POST(request: NextRequest) {
+  const locale = await getLocale();
   const body = await request.json().catch(() => ({}));
   if (!body.productId) {
-    return NextResponse.json({ error: "缺少 productId" }, { status: 400 });
+    return apiError("MISSING_PRODUCT_ID", 400);
   }
 
-  const product = getProductById(body.productId);
+  const product = getProductById(body.productId, locale);
   if (!product) {
-    return NextResponse.json({ error: "产品不存在" }, { status: 404 });
+    return apiError("PRODUCT_NOT_FOUND", 404);
   }
 
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   let remaining = access.isMember ? -1 : access.remaining;
