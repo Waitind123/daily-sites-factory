@@ -3,11 +3,14 @@ import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
 import { siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+export const metadata: Metadata = buildSiteMetadata(
+  { ...siteConfig, keywords: [...siteConfig.keywords] },
+  {
   title: "远程团队跨时区会议怎么排 — 全球调度完整指南",
   description:
     "手把手教你安排跨时区会议：时区重叠计算、公平轮换策略、痛苦指数、async-first 原则。含免费规划工具。",
-});
+  }
+);
 
 export default function GuidePage() {
   return (

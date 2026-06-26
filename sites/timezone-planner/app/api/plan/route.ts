@@ -2,20 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { planMeeting, type Participant } from "@/lib/timezone";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
+import { apiError } from "@/lib/api-errors";
 
 export async function POST(request: NextRequest) {
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   const body = await request.json().catch(() => ({}));
@@ -23,16 +17,16 @@ export async function POST(request: NextRequest) {
   const durationMinutes = Number(body.durationMinutes) || 60;
 
   if (!Array.isArray(rawParticipants) || rawParticipants.length < 2) {
-    return NextResponse.json({ error: "至少需要 2 名团队成员" }, { status: 400 });
+    return apiError("MIN_PARTICIPANTS", 400);
   }
 
   if (rawParticipants.length > 10) {
-    return NextResponse.json({ error: "最多支持 10 名成员" }, { status: 400 });
+    return apiError("MAX_PARTICIPANTS", 400);
   }
 
   const participants: Participant[] = rawParticipants.map((p, i) => ({
     id: p.id || String(i),
-    name: String(p.name || `成员${i + 1}`).slice(0, 30),
+    name: String(p.name || `member${i + 1}`).slice(0, 30),
     timezone: String(p.timezone || "UTC"),
     workStart: Math.max(0, Math.min(23, Number(p.workStart) || 9)),
     workEnd: Math.max(1, Math.min(24, Number(p.workEnd) || 18)),
@@ -40,7 +34,7 @@ export async function POST(request: NextRequest) {
 
   for (const p of participants) {
     if (p.workEnd <= p.workStart) {
-      return NextResponse.json({ error: `${p.name} 的工作时间无效` }, { status: 400 });
+      return apiError("INVALID_WORK_HOURS", 400, { name: p.name });
     }
   }
 

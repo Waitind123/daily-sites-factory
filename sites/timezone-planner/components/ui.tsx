@@ -1,19 +1,31 @@
-import { features } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type Feature = {
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label,
+}: {
+  className?: string;
+  label: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -29,8 +41,19 @@ export function FeatureGrid() {
 
 import { sampleTeam } from "@/lib/data";
 import { getUtcOffset } from "@/lib/timezone";
+import { getOverlapPreviewCopy } from "@/lib/copy-app";
 
-export function OverlapPreview() {
+export function OverlapPreview({
+  locale,
+  overlapSlot,
+  note,
+}: {
+  locale: Locale;
+  overlapSlot: string;
+  note: string;
+}) {
+  const preview = getOverlapPreviewCopy(locale);
+
   return (
     <div className="space-y-3">
       {sampleTeam.map((city) => (
@@ -48,12 +71,12 @@ export function OverlapPreview() {
         </div>
       ))}
       <div className="flex items-center gap-3">
-        <span className="w-16 text-sm font-medium text-brand-500">重叠</span>
+        <span className="w-16 text-sm font-medium text-brand-500">{preview.overlapLabel}</span>
         <div className="flex-1 h-8 bg-brand-100 border-2 border-brand-500 border-dashed rounded-lg flex items-center justify-center text-xs font-medium text-brand-500">
-          14:00–17:00 UTC · 约 3 小时/天
+          {overlapSlot}
         </div>
       </div>
-      <p className="text-xs text-muted">示例：上海 + 伦敦 + 纽约三地团队</p>
+      <p className="text-xs text-muted">{note}</p>
     </div>
   );
 }

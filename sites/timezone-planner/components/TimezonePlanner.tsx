@@ -10,7 +10,13 @@ import {
   getCurrentTimeInZone,
   getUtcOffset,
 } from "@/lib/timezone";
-import { durationOptions } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import {
+  getApiErrorMessage,
+  getDurationOptions,
+  getMiseryLabel,
+  getPlannerCopy,
+} from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -20,14 +26,10 @@ type TrialStatus = {
   canUse: boolean;
 };
 
-function miseryLabel(score: number): { text: string; color: string } {
-  if (score === 0) return { text: "舒适", color: "text-green-700 bg-green-50 border-green-200" };
-  if (score <= 3) return { text: "可接受", color: "text-blue-700 bg-blue-50 border-blue-200" };
-  if (score <= 6) return { text: "稍辛苦", color: "text-amber-700 bg-amber-50 border-amber-200" };
-  return { text: "需轮换", color: "text-red-700 bg-red-50 border-red-200" };
-}
+export function TimezonePlanner({ locale }: { locale: Locale }) {
+  const t = getPlannerCopy(locale);
+  const durationOptions = getDurationOptions(locale);
 
-export function TimezonePlanner() {
   const [trial, setTrial] = useState<TrialStatus | null>(null);
   const [participants, setParticipants] = useState<Participant[]>([
     {
@@ -55,8 +57,9 @@ export function TimezonePlanner() {
   const [duration, setDuration] = useState(60);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showSubscribeLink, setShowSubscribeLink] = useState(false);
   const [result, setResult] = useState<PlanResult | null>(null);
-  const [now, setNow] = useState(new Date());
+  const [, setNow] = useState(new Date());
 
   const loadTrial = useCallback(async () => {
     const res = await fetch("/api/trial");
@@ -100,6 +103,7 @@ export function TimezonePlanner() {
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setShowSubscribeLink(false);
     setResult(null);
 
     const res = await fetch("/api/plan", {
@@ -111,7 +115,10 @@ export function TimezonePlanner() {
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "规划失败");
+      setError(
+        getApiErrorMessage(data.code, locale, { name: data.name as string | undefined })
+      );
+      setShowSubscribeLink(data.code === "TRIAL_EXHAUSTED");
       setLoading(false);
       return;
     }
@@ -123,7 +130,8 @@ export function TimezonePlanner() {
 
   function exportIcs(slot: MeetingSlot) {
     if (!trial?.isMember) {
-      setError("ICS 导出需要会员，请订阅 $9.9/月");
+      setError(t.icsMemberOnly);
+      setShowSubscribeLink(true);
       return;
     }
     const start = slot.startUtc.replace(/[-:]/g, "").replace(/\.\d{3}/, "");
@@ -131,11 +139,11 @@ export function TimezonePlanner() {
     const ics = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//TimezonePlanner//CN",
+      "PRODID:-//TimezonePlanner//EN",
       "BEGIN:VEVENT",
       `DTSTART:${start}`,
       `DTEND:${end}`,
-      "SUMMARY:跨时区团队会议",
+      `SUMMARY:${t.icsSummary}`,
       `DESCRIPTION:${slot.fairnessNote}`,
       "END:VEVENT",
       "END:VCALENDAR",
@@ -154,26 +162,26 @@ export function TimezonePlanner() {
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费体验
+            <strong>{t.freeRemaining(trial.remaining, trial.limit)}</strong>
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 →
+            {t.subscribeCta}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限规划 + ICS 导出 + 团队模板
+          {t.memberBadge}
         </div>
       )}
 
       {error && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
           {error}
-          {error.includes("订阅") && (
+          {showSubscribeLink && (
             <Link href="/join" className="ml-2 font-semibold underline">
-              立即订阅
+              {t.subscribeNow}
             </Link>
           )}
         </div>
@@ -181,7 +189,7 @@ export function TimezonePlanner() {
 
       <form onSubmit={handlePlan} className="rounded-2xl border border-border bg-surface p-6 space-y-5">
         <div>
-          <label className="block text-sm font-medium text-foreground mb-3">团队成员</label>
+          <label className="block text-sm font-medium text-foreground mb-3">{t.teamLabel}</label>
           <div className="space-y-3">
             {participants.map((p) => (
               <div
@@ -193,7 +201,7 @@ export function TimezonePlanner() {
                   value={p.name}
                   onChange={(e) => updateParticipant(p.id, "name", e.target.value)}
                   className="w-full sm:w-24 rounded-lg border border-border px-2 py-1.5 text-sm"
-                  placeholder="名称"
+                  placeholder={t.namePlaceholder}
                 />
                 <select
                   value={p.timezone}
@@ -224,10 +232,10 @@ export function TimezonePlanner() {
                     onChange={(e) => updateParticipant(p.id, "workEnd", Number(e.target.value))}
                     className="w-14 rounded-lg border border-border px-2 py-1.5 text-sm text-center"
                   />
-                  <span className="text-xs text-muted hidden sm:inline">本地</span>
+                  <span className="text-xs text-muted hidden sm:inline">{t.localHours}</span>
                 </div>
                 <div className="text-xs text-muted sm:w-20 text-right">
-                  现在 {getCurrentTimeInZone(p.timezone)}
+                  {t.nowLabel(getCurrentTimeInZone(p.timezone))}
                 </div>
                 {participants.length > 2 && (
                   <button
@@ -243,9 +251,7 @@ export function TimezonePlanner() {
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2">
-            {CITY_PRESETS.filter(
-              (c) => !participants.some((p) => p.name === c.name)
-            )
+            {CITY_PRESETS.filter((c) => !participants.some((p) => p.name === c.name))
               .slice(0, 8)
               .map((c) => (
                 <button
@@ -261,7 +267,7 @@ export function TimezonePlanner() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-foreground mb-2">会议时长</label>
+          <label className="block text-sm font-medium text-foreground mb-2">{t.durationLabel}</label>
           <div className="flex gap-2">
             {durationOptions.map((d) => (
               <button
@@ -285,29 +291,25 @@ export function TimezonePlanner() {
           disabled={loading}
           className="w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white hover:bg-brand-700 transition-colors disabled:opacity-50"
         >
-          {loading ? "扫描中..." : "找出最佳会议时间"}
+          {loading ? t.scanning : t.findSlots}
         </button>
       </form>
 
       {result && (
         <div className="space-y-4">
           <div className="rounded-xl border border-border bg-background p-4 text-sm text-muted">
-            扫描未来 <strong>{result.daysScanned}</strong> 天 · 找到{" "}
-            <strong>{result.slots.length}</strong> 个推荐时段 · 日均重叠约{" "}
-            <strong>{result.totalOverlapHours}</strong> 小时
+            {t.scanSummary(result.daysScanned, result.slots.length, result.totalOverlapHours)}
           </div>
 
           {result.slots.length === 0 ? (
             <div className="rounded-xl border border-amber-200 bg-amber-50 p-6 text-center text-amber-800">
-              <p className="font-medium">未找到全员可用的时段</p>
-              <p className="text-sm mt-2">
-                尝试放宽工作时间，或减少参与人数。跨 12+ 小时时区的团队建议 async-first。
-              </p>
+              <p className="font-medium">{t.noSlotsTitle}</p>
+              <p className="text-sm mt-2">{t.noSlotsHint}</p>
             </div>
           ) : (
             <div className="space-y-3">
               {result.slots.map((slot, i) => {
-                const misery = miseryLabel(slot.miseryScore);
+                const misery = getMiseryLabel(slot.miseryScore, locale);
                 return (
                   <div
                     key={slot.startUtc}
@@ -317,8 +319,10 @@ export function TimezonePlanner() {
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="text-lg font-bold text-foreground">#{i + 1}</span>
-                          <span className={`text-xs font-medium px-2 py-0.5 rounded-full border ${misery.color}`}>
-                            痛苦指数 {slot.miseryScore} · {misery.text}
+                          <span
+                            className={`text-xs font-medium px-2 py-0.5 rounded-full border ${misery.color}`}
+                          >
+                            {t.miseryScore(slot.miseryScore, misery.text)}
                           </span>
                         </div>
                         <p className="text-sm text-muted mt-1">{slot.fairnessNote}</p>
@@ -329,7 +333,7 @@ export function TimezonePlanner() {
                           onClick={() => exportIcs(slot)}
                           className="text-sm text-brand-500 hover:underline shrink-0"
                         >
-                          导出 ICS
+                          {t.exportIcs}
                         </button>
                       )}
                     </div>
