@@ -2,8 +2,10 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { categories, getPublicTools, type NewsletterTool } from "@/lib/data";
+import { getPublicTools, type NewsletterTool } from "@/lib/data";
 import { MigrationBadge } from "@/components/ui";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getCategories, getCompareCopy } from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -15,16 +17,18 @@ type TrialStatus = {
 
 type ToolListItem = Omit<NewsletterTool, "comparison">;
 
-export function CompareBrowser() {
+export function CompareBrowser({ locale }: { locale: Locale }) {
+  const c = getCompareCopy(locale);
   const [trial, setTrial] = useState<TrialStatus | null>(null);
-  const [filter, setFilter] = useState("全部");
+  const [filter, setFilter] = useState<string>(c.allCategories);
   const [selected, setSelected] = useState<ToolListItem | null>(null);
   const [comparison, setComparison] = useState<NewsletterTool["comparison"] | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const tools = getPublicTools().filter(
-    (t) => filter === "全部" || t.category === filter
+  const categories = getCategories(locale);
+  const tools = getPublicTools(locale).filter(
+    (t) => filter === c.allCategories || t.category === filter
   );
 
   const loadTrial = useCallback(async () => {
@@ -36,6 +40,10 @@ export function CompareBrowser() {
     loadTrial();
   }, [loadTrial]);
 
+  useEffect(() => {
+    setFilter(c.allCategories);
+  }, [c.allCategories]);
+
   async function viewComparison(tool: ToolListItem) {
     setSelected(tool);
     setComparison(null);
@@ -45,13 +53,13 @@ export function CompareBrowser() {
     const res = await fetch("/api/tools/compare", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ toolId: tool.id }),
+      body: JSON.stringify({ toolId: tool.id, locale }),
     });
 
     const data = await res.json();
 
     if (!res.ok) {
-      setError(data.error || "加载失败");
+      setError(getApiErrorMessage(data.code ?? data.error, locale));
       setLoading(false);
       await loadTrial();
       return;
@@ -73,17 +81,25 @@ export function CompareBrowser() {
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
-            剩余 <strong>{trial.remaining}/{trial.limit}</strong> 次免费深度对比
+            {locale === "zh" ? (
+              <>
+                剩余 <strong>{trial.remaining}/{trial.limit}</strong> {c.trialRemaining}
+              </>
+            ) : (
+              <>
+                <strong>{trial.remaining}/{trial.limit}</strong> {c.trialRemaining}
+              </>
+            )}
           </span>
           <Link href="/join" className="font-semibold text-brand-500 hover:underline">
-            订阅 $9.9/月 →
+            {c.subscribeCta}
           </Link>
         </div>
       )}
 
       {trial?.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800">
-          ✓ 会员已激活 · 无限对比 + 联盟优惠码 + 定价变动提醒
+          {c.memberBadge}
         </div>
       )}
 
@@ -131,7 +147,7 @@ export function CompareBrowser() {
                 onClick={() => viewComparison(tool)}
                 className="text-sm font-semibold text-brand-500 hover:text-brand-500"
               >
-                深度对比 →
+                {c.deepCompare}
               </button>
             </div>
           </article>
@@ -151,12 +167,15 @@ export function CompareBrowser() {
               <div>
                 <span className="text-xs font-medium text-brand-500">{selected.category}</span>
                 <h2 className="text-2xl font-bold mt-1">{selected.name}</h2>
-                <p className="text-muted mt-1">{selected.website} · {selected.startingPrice}</p>
+                <p className="text-muted mt-1">
+                  {selected.website} · {selected.startingPrice}
+                </p>
               </div>
               <button
                 type="button"
                 onClick={closeModal}
                 className="text-muted hover:text-muted text-2xl leading-none"
+                aria-label="Close"
               >
                 ×
               </button>
@@ -164,16 +183,14 @@ export function CompareBrowser() {
 
             <p className="text-muted mb-6">{selected.preview}</p>
 
-            {loading && (
-              <div className="text-center py-12 text-muted">加载深度对比报告中...</div>
-            )}
+            {loading && <div className="text-center py-12 text-muted">{c.loading}</div>}
 
             {error && (
               <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
                 {error}
-                {error.includes("订阅") && (
+                {(error.includes("订阅") || error.toLowerCase().includes("subscribe")) && (
                   <Link href="/join" className="block mt-2 font-semibold underline">
-                    立即订阅 $9.9/月
+                    {c.subscribeNow}
                   </Link>
                 )}
               </div>
@@ -183,17 +200,18 @@ export function CompareBrowser() {
               <div className="space-y-6 text-sm">
                 <section className="rounded-xl bg-brand-600/10 border border-brand-200 p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-base">📊 对比摘要</h3>
-                    <MigrationBadge difficulty={comparison.migrationDifficulty} />
+                    <h3 className="font-bold text-base">{c.summaryTitle}</h3>
+                    <MigrationBadge difficulty={comparison.migrationDifficulty} locale={locale} />
                   </div>
                   <p className="text-foreground">{comparison.summary}</p>
                   <p className="text-xs text-muted mt-2">
-                    更新: {comparison.lastUpdated} · 模式: {comparison.pricingModel} · 交易费: {comparison.transactionFee}
+                    {c.updated}: {comparison.lastUpdated} · {c.model}: {comparison.pricingModel} ·{" "}
+                    {c.fees}: {comparison.transactionFee}
                   </p>
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">✅ 优点</h3>
+                  <h3 className="font-bold text-base mb-2">{c.prosTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {comparison.pros.map((pro) => (
                       <li key={pro}>· {pro}</li>
@@ -202,7 +220,7 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">❌ 缺点</h3>
+                  <h3 className="font-bold text-base mb-2">{c.consTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {comparison.cons.map((con) => (
                       <li key={con}>· {con}</li>
@@ -211,10 +229,13 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">🎯 最适合</h3>
+                  <h3 className="font-bold text-base mb-2">{c.bestForTitle}</h3>
                   <div className="flex flex-wrap gap-2">
                     {comparison.bestFor.map((item) => (
-                      <span key={item} className="text-xs bg-brand-600/10 text-brand-500 px-2 py-1 rounded-full">
+                      <span
+                        key={item}
+                        className="text-xs bg-brand-600/10 text-brand-500 px-2 py-1 rounded-full"
+                      >
                         {item}
                       </span>
                     ))}
@@ -222,7 +243,7 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-3">📈 定价历史</h3>
+                  <h3 className="font-bold text-base mb-3">{c.pricingHistoryTitle}</h3>
                   <div className="space-y-2">
                     {comparison.pricingHistory.map((item) => (
                       <div key={item.date + item.change} className="rounded-lg border border-border p-3">
@@ -234,14 +255,14 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">💰 功能矩阵</h3>
+                  <h3 className="font-bold text-base mb-2">{c.featureMatrixTitle}</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
                       <thead>
                         <tr className="border-b border-border">
-                          <th className="py-2 pr-4 font-medium">功能</th>
-                          <th className="py-2 pr-4 font-medium">支持</th>
-                          <th className="py-2 font-medium">备注</th>
+                          <th className="py-2 pr-4 font-medium">{c.featureCol}</th>
+                          <th className="py-2 pr-4 font-medium">{c.supportCol}</th>
+                          <th className="py-2 font-medium">{c.noteCol}</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -258,7 +279,7 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">🔄 迁移指南</h3>
+                  <h3 className="font-bold text-base mb-2">{c.migrationTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {comparison.migrationTips.map((tip) => (
                       <li key={tip}>· {tip}</li>
@@ -267,7 +288,7 @@ export function CompareBrowser() {
                 </section>
 
                 <section>
-                  <h3 className="font-bold text-base mb-2">🏆 竞品对比</h3>
+                  <h3 className="font-bold text-base mb-2">{c.competitorsTitle}</h3>
                   <ul className="space-y-1 text-muted">
                     {comparison.competitorNotes.map((note) => (
                       <li key={note}>· {note}</li>
@@ -277,7 +298,7 @@ export function CompareBrowser() {
 
                 {comparison.affiliateOffer && (
                   <section className="rounded-xl bg-amber-50 border border-amber-200 p-4">
-                    <h3 className="font-bold text-base mb-2">🏷️ 联盟优惠</h3>
+                    <h3 className="font-bold text-base mb-2">{c.affiliateTitle}</h3>
                     <p className="text-foreground">{comparison.affiliateOffer}</p>
                   </section>
                 )}
@@ -286,14 +307,12 @@ export function CompareBrowser() {
 
             {!trial?.isMember && comparison && (
               <div className="mt-6 pt-6 border-t border-border text-center">
-                <p className="text-sm text-muted mb-3">
-                  订阅解锁全部 {tools.length} 个工具无限对比 + 联盟优惠码
-                </p>
+                <p className="text-sm text-muted mb-3">{c.subscribeUnlock}</p>
                 <Link
                   href="/join"
                   className="inline-block bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700"
                 >
-                  订阅 $9.9/月
+                  {c.subscribeNow}
                 </Link>
               </div>
             )}

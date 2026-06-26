@@ -1,3 +1,7 @@
+import type { Locale } from "./i18n-shared";
+import { categoryKeyByZh, categoryLabels, categoryKeys } from "./copy-app";
+import { toolsEn } from "./data-en";
+
 export type PricingTier = {
   name: string;
   monthly: number | null;
@@ -462,10 +466,32 @@ export const stats = {
   categories: categories.length - 1,
 };
 
-export function getToolById(id: string): NewsletterTool | undefined {
-  return newsletterTools.find((t) => t.id === id);
+function localizeTool(tool: NewsletterTool, locale: Locale): NewsletterTool {
+  if (locale === "zh") return tool;
+  const en = toolsEn[tool.id];
+  if (!en) return tool;
+  return {
+    ...tool,
+    category: categoryLabels.en[en.categoryKey],
+    preview: en.preview,
+    freeTier: en.freeTier,
+    comparison: en.comparison,
+  };
 }
 
-export function getPublicTools(): Omit<NewsletterTool, "comparison">[] {
-  return newsletterTools.map(({ comparison: _c, ...rest }) => rest);
+export function getToolById(id: string, locale: Locale = "en"): NewsletterTool | undefined {
+  const tool = newsletterTools.find((t) => t.id === id);
+  return tool ? localizeTool(tool, locale) : undefined;
+}
+
+export function getPublicTools(locale: Locale = "en"): Omit<NewsletterTool, "comparison">[] {
+  return newsletterTools.map(({ comparison: _c, ...rest }) => {
+    const localized = localizeTool({ ...rest, comparison: _c }, locale);
+    const { comparison: _drop, ...pub } = localized;
+    return pub;
+  });
+}
+
+export function getCategoryKey(category: string): (typeof categoryKeys)[number] {
+  return categoryKeyByZh[category] ?? "all";
 }

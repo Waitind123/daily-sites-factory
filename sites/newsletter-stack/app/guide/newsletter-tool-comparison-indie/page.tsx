@@ -3,7 +3,9 @@ import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
 import { siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+export const metadata: Metadata = buildSiteMetadata(
+  { ...siteConfig, keywords: [...siteConfig.keywords] },
+  {
   title: "Indie 开发者 Newsletter 工具选型指南 — Substack vs Beehiiv vs ConvertKit 怎么选",
   description:
     "手把手教你选择 Newsletter 工具：Substack、Beehiiv、ConvertKit、Mailchimp、Buttondown、Ghost 深度对比。按订阅者阶段推荐，含迁移指南和真实成本计算。",

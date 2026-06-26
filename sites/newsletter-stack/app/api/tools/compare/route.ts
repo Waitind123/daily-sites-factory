@@ -2,30 +2,26 @@ import { NextRequest, NextResponse } from "next/server";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { getToolById } from "@/lib/data";
+import { apiError } from "@/lib/api-errors";
+import type { Locale } from "@/lib/i18n-shared";
 
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => ({}));
   if (!body.toolId) {
-    return NextResponse.json({ error: "缺少 toolId" }, { status: 400 });
+    return apiError("TOOL_ID_REQUIRED", 400);
   }
 
-  const tool = getToolById(body.toolId);
+  const locale: Locale = body.locale === "zh" ? "zh" : "en";
+  const tool = getToolById(body.toolId, locale);
   if (!tool) {
-    return NextResponse.json({ error: "工具不存在" }, { status: 404 });
+    return apiError("TOOL_NOT_FOUND", 404);
   }
 
   const member = await isMember();
   const access = await useTrial(member);
 
   if (!access.consumed && !access.isMember) {
-    return NextResponse.json(
-      {
-        error: "免费体验已用完，请订阅 $9.9/月",
-        code: "TRIAL_EXHAUSTED",
-        remaining: 0,
-      },
-      { status: 403 }
-    );
+    return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
   }
 
   let remaining = access.isMember ? -1 : access.remaining;

@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { getStripeProductCopy } from "./copy-app";
 
 const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
 
@@ -15,8 +16,9 @@ export function getStripe() {
 
 export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
+export async function createCheckoutSession(origin: string, locale: "en" | "zh" = "en") {
   const stripe = getStripe();
+  const product = getStripeProductCopy(locale);
 
   if (!stripe) {
     return {
@@ -34,8 +36,8 @@ export async function createCheckoutSession(origin: string) {
           currency: "usd",
           recurring: { interval: "month" },
           product_data: {
-            name: "Newsletter 工具对比 · 月度会员",
-            description: "无限深度对比、迁移指南、定价变动提醒、联盟优惠码",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
         },
