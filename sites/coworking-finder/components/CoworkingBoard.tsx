@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import type { Locale } from "@/lib/i18n-shared";
+import { getApiErrorMessage, getSpacesCopy } from "@/lib/copy-app";
 import { spaces as allSpaces, cities, type CoworkingSpace } from "@/lib/data";
 
 type TrialInfo = {
@@ -14,9 +16,8 @@ type TrialInfo = {
 
 type SpaceDetail = CoworkingSpace & { unlocked: boolean };
 
-const TAGS = ["数字游民", "日票", "视频会议", "低价", "创业"];
-
-export function CoworkingBoard() {
+export function CoworkingBoard({ locale }: { locale: Locale }) {
+  const c = getSpacesCopy(locale);
   const [query, setQuery] = useState("");
   const [city, setCity] = useState("");
   const [tag, setTag] = useState("");
@@ -60,7 +61,7 @@ export function CoworkingBoard() {
           setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
           return;
         }
-        throw new Error(data.error || "加载失败");
+        throw new Error(getApiErrorMessage(data.code, locale));
       }
 
       setSelected(data.space);
@@ -68,7 +69,7 @@ export function CoworkingBoard() {
         setTrial(data.trial);
       }
     } catch (e) {
-      setError(e instanceof Error ? e.message : "加载失败");
+      setError(e instanceof Error ? e.message : getApiErrorMessage("LOAD_FAILED", locale));
     } finally {
       setLoading(false);
     }
@@ -78,14 +79,16 @@ export function CoworkingBoard() {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">全球联合办公空间</h1>
-          <p className="text-muted mt-1">{filtered.length} 个空间 · 40+ 城市</p>
+          <h1 className="text-3xl font-bold">{c.title}</h1>
+          <p className="text-muted mt-1">
+            {filtered.length} {c.spacesCount} · {c.citiesLabel}
+          </p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
             {trial.isMember
-              ? "✓ 会员 · 无限查看"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+              ? c.memberBadge
+              : `${trial.remaining}/${trial.limit} ${c.freeTrial}`}
           </div>
         )}
       </div>
@@ -93,7 +96,7 @@ export function CoworkingBoard() {
       <div className="flex flex-col gap-3 mb-6">
         <input
           type="search"
-          placeholder="搜索空间、城市、国家…"
+          placeholder={c.searchPlaceholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="w-full rounded-xl border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -104,14 +107,14 @@ export function CoworkingBoard() {
             onChange={(e) => setCity(e.target.value)}
             className="rounded-full border border-border px-3 py-1 text-xs font-medium bg-surface text-muted"
           >
-            <option value="">全部城市</option>
-            {cities.map((c) => (
-              <option key={c} value={c}>
-                {c}
+            <option value="">{c.allCities}</option>
+            {cities.map((cityName) => (
+              <option key={cityName} value={cityName}>
+                {cityName}
               </option>
             ))}
           </select>
-          {TAGS.map((t) => (
+          {c.tags.map((t) => (
             <button
               key={t}
               type="button"
@@ -131,14 +134,14 @@ export function CoworkingBoard() {
       {showPaywall && (
         <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="font-semibold text-amber-900">免费体验已用完</p>
-            <p className="text-sm text-amber-700 mt-1">订阅 $9.9/月，无限查看空间详情 + WiFi 数据 + 内部贴士</p>
+            <p className="font-semibold text-amber-900">{c.paywallTitle}</p>
+            <p className="text-sm text-amber-700 mt-1">{c.paywallBody}</p>
           </div>
           <Link
             href="/join"
             className="shrink-0 rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            立即订阅
+            {c.paywallCta}
           </Link>
         </div>
       )}
@@ -172,7 +175,7 @@ export function CoworkingBoard() {
                     </span>
                     {space.videoCallReady && (
                       <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">
-                        视频会议
+                        {c.videoCall}
                       </span>
                     )}
                   </div>
@@ -195,37 +198,39 @@ export function CoworkingBoard() {
                   </p>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-amber-500">★ {selected.rating}</span>
-                    <span className="text-muted text-sm">({selected.reviews} 评价)</span>
+                    <span className="text-muted text-sm">
+                      ({selected.reviews} {c.reviews})
+                    </span>
                   </div>
                 </div>
               </div>
 
               <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">日票价格</p>
+                  <p className="text-muted text-xs">{c.dayPass}</p>
                   <p className="font-semibold text-brand-500">{selected.dayPassPrice}</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">月票价格</p>
+                  <p className="text-muted text-xs">{c.monthlyPass}</p>
                   <p className="font-semibold">{selected.monthlyPrice}</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">WiFi 实测</p>
+                  <p className="text-muted text-xs">{c.wifiTested}</p>
                   <p className="font-semibold">{selected.wifiMbps} Mbps</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">营业时间</p>
+                  <p className="text-muted text-xs">{c.hours}</p>
                   <p className="font-semibold">{selected.hours}</p>
                 </div>
               </div>
 
               <div className="mt-6 space-y-4 text-sm">
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">空间介绍</h3>
+                  <h3 className="font-semibold text-foreground mb-1">{c.description}</h3>
                   <p className="text-muted">{selected.description}</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">设施</h3>
+                  <h3 className="font-semibold text-foreground mb-1">{c.amenities}</h3>
                   <div className="flex flex-wrap gap-2">
                     {selected.amenities.map((a) => (
                       <span key={a} className="text-xs bg-surface-muted text-muted px-2 py-1 rounded">
@@ -236,7 +241,7 @@ export function CoworkingBoard() {
                 </div>
                 {selected.insiderTips && (
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">内部贴士</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{c.insiderTips}</h3>
                     <ul className="list-disc list-inside text-muted space-y-1">
                       {selected.insiderTips.map((tip) => (
                         <li key={tip}>{tip}</li>
@@ -253,15 +258,15 @@ export function CoworkingBoard() {
                   rel="noopener noreferrer"
                   className="mt-6 block w-full text-center rounded-xl bg-brand-600 py-3 font-semibold text-white hover:bg-brand-700 transition-colors"
                 >
-                  访问官网预订 →
+                  {c.bookWebsite}
                 </a>
               )}
             </div>
           ) : (
             <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-3">👈</p>
-              <p>点击左侧空间查看完整详情</p>
-              <p className="text-sm mt-1">非会员免费体验 5 次</p>
+              <p>{c.emptyTitle}</p>
+              <p className="text-sm mt-1">{c.emptySubtitle}</p>
             </div>
           )}
         </div>

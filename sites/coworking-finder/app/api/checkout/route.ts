@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { createCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 
@@ -14,10 +15,7 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 

@@ -3,7 +3,9 @@ import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
 import { siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+export const metadata: Metadata = buildSiteMetadata(
+  { ...siteConfig, keywords: [...siteConfig.keywords] },
+  {
   title: "2026 数字游民如何找到合适的联合办公空间 — 完整指南",
   description:
     "从城市选择、日票预订到 WiFi 测试，手把手教你找到靠谱的 coworking 空间。含清迈、巴厘岛、里斯本热门空间对比和避坑清单。",

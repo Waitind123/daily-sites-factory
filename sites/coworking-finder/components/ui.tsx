@@ -1,19 +1,33 @@
-import { features, spaces } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getSpacesCopy } from "@/lib/copy-app";
+import { spaces } from "@/lib/data";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
+type FeatureItem = {
+  readonly icon: string;
+  readonly title: string;
+  readonly desc: string;
+};
+
+export function CheckoutButton({
+  className = "",
+  label,
+}: {
+  className?: string;
+  label: string;
+}) {
   return (
     <form action="/api/checkout" method="POST">
       <button
         type="submit"
         className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
       >
-        立即订阅 · $9.9/月
+        {label}
       </button>
     </form>
   );
 }
 
-export function FeatureGrid() {
+export function FeatureGrid({ features }: { features: readonly FeatureItem[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -27,7 +41,8 @@ export function FeatureGrid() {
   );
 }
 
-export function SpacePreviewTable() {
+export function SpacePreviewTable({ locale }: { locale: Locale }) {
+  const c = getSpacesCopy(locale);
   const preview = spaces.filter((s) => s.featured).slice(0, 5);
 
   return (
@@ -35,10 +50,10 @@ export function SpacePreviewTable() {
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-border bg-background text-left text-muted">
-            <th className="px-4 py-3 font-medium">空间</th>
-            <th className="px-4 py-3 font-medium hidden sm:table-cell">城市</th>
-            <th className="px-4 py-3 font-medium hidden md:table-cell">WiFi</th>
-            <th className="px-4 py-3 font-medium text-right">日票</th>
+            <th className="px-4 py-3 font-medium">{c.tableSpace}</th>
+            <th className="px-4 py-3 font-medium hidden sm:table-cell">{c.tableCity}</th>
+            <th className="px-4 py-3 font-medium hidden md:table-cell">{c.tableWifi}</th>
+            <th className="px-4 py-3 font-medium text-right">{c.tableDayPass}</th>
           </tr>
         </thead>
         <tbody>
