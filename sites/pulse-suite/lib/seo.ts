@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://pulse-suite.vercel.app",
+    url: "https://pulse-suite-ochre.vercel.app",
     name: "Pulse Suite",
     title: "Pulse Suite — Uptime monitoring + status pages for indie devs, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://pulse-suite.vercel.app",
+    url: "https://pulse-suite-ochre.vercel.app",
     name: "监控状态一体",
     title: "监控状态一体 — Uptime 监控 + 状态页，独立开发者 $9.9/月",
     description:
