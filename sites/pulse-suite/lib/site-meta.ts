@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "监控-状态页一体",
+  id: "pulse-suite",
   emoji: "📡",
   name: {
     en: "Pulse Suite",
