@@ -1,8 +1,8 @@
-# Stripe Pulse
+# Link Pulse
 
-ChartMogul 平替 — 独立开发者 $9.9/月 Stripe 收入仪表盘
+Bitly 平替 — 独立开发者 $9.9/月短链点击统计
 
-- MRR / ARR / 流失率
-- 客户变动追踪
-- 免费体验 5 次同步
-- 2 分钟连接 Stripe
+- 品牌短链 + 自定义 slug
+- 点击分析 + UTM 追踪
+- 免费体验 5 条短链
+- 30 秒上线营销活动
