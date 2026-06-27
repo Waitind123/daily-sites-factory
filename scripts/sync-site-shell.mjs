@@ -42,6 +42,16 @@ const SITE_REGISTRY = {
       { href: "/studio", label: { en: "Studio", zh: "工作室" } },
     ],
   },
+  "reddit-leads": {
+    emoji: "🔍",
+    name: { en: "Reddit Leads", zh: "Reddit 线索挖掘" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/reddit-lead-generation-indie-hackers",
+    nav: [
+      { href: "/guide/reddit-lead-generation-indie-hackers", label: { en: "Guide", zh: "指南" } },
+      { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
+    ],
+  },
   "remote-jobs": {
     emoji: "💼",
     name: { en: "Remote Jobs", zh: "远程工作板" },
