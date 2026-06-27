@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://pain-radar.vercel.app",
+    url: "https://pain-radar-lyart.vercel.app",
     name: "Pain Radar",
     title: "Pain Radar — Cross-platform pain point scanner for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://pain-radar.vercel.app",
+    url: "https://pain-radar-lyart.vercel.app",
     name: "跨平台痛点雷达",
     title: "跨平台痛点雷达 — 独立开发者 HN+Reddit+PH 扫描，$9.9/月",
     description:
