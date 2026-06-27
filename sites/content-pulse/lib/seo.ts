@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://content-pulse.vercel.app",
+    url: "https://content-pulse-murex.vercel.app",
     name: "Content Pulse",
     title: "Content Pulse — Buffer alternative for indie devs, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://content-pulse.vercel.app",
+    url: "https://content-pulse-murex.vercel.app",
     name: "内容多平台分发",
     title: "内容多平台分发 — Buffer 平替，独立开发者 $9.9/月",
     description:
