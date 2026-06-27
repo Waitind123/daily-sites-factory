@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://visa-tracker.vercel.app",
+    url: "https://visa-tracker-lilac.vercel.app",
     name: "Visa Tracker",
     title: "Visa Tracker — Digital nomad visa policy & expiry alerts, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://visa-tracker.vercel.app",
+    url: "https://visa-tracker-lilac.vercel.app",
     name: "签证追踪器",
     title: "签证追踪器 — 数字游民签证政策与到期提醒，$9.9/月",
     description:
