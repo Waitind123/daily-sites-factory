@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://incident-ai.vercel.app",
+    url: "https://incident-ai-seven.vercel.app",
     name: "Incident AI",
     title: "Incident AI — AI incident communication for indie devs, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://incident-ai.vercel.app",
+    url: "https://incident-ai-seven.vercel.app",
     name: "AI 事件摘要",
     title: "AI 事件摘要 — Statuspage 平替，独立开发者 $9.9/月",
     description:
