@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "监控-状态页一体",
+      "name": "监控+状态页一体",
+      "description": "Statuspage 9/月不含监控，UptimeRobot 无状态页，独立开发者需要 .9/月的监控+状态页一体工具",
+      "template": "micro-saas",
+      "source": "MicroGaps 2026-02 uptime monitoring status page gap",
+      "discoveredAt": "2026-06-27T21:04:27.923Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-27T19:04:26.808Z",
+  "lastDiscoveredAt": "2026-06-27T21:04:27.923Z",
   "consumed": [
     {
       "id": "reddit-pulse",
