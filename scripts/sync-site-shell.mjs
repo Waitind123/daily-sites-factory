@@ -68,6 +68,16 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/join", label: { en: "Pricing", zh: "定价" } }],
   },
+  "guilt-free-habits": {
+    emoji: "🌱",
+    name: { en: "Guilt-Free Habits", zh: "无罪恶感习惯" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/streak-anxiety-habit-tracker-alternative",
+    nav: [
+      { href: "/guide/streak-anxiety-habit-tracker-alternative", label: { en: "Guide", zh: "指南" } },
+      { href: "/track", label: { en: "Track", zh: "追踪" } },
+    ],
+  },
   "wcag-alt-text": {
     emoji: "♿",
     name: { en: "AltText Pro", zh: "无障碍 Alt 文本" },
