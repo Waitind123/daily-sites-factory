@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://ai-waitlist.vercel.app",
+    url: "https://ai-waitlist-orpin.vercel.app",
     name: "AI Waitlist",
     title: "AI Waitlist — AI-powered waitlist validation for indie devs, $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://ai-waitlist.vercel.app",
+    url: "https://ai-waitlist-orpin.vercel.app",
     name: "AI 等候名单验证",
     title: "AI 等候名单验证 — AI 驱动报名质量评分，独立开发者 $9.9/月",
     description:
