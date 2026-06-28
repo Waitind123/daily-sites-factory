@@ -207,7 +207,7 @@ export function RankDashboard({ locale }: { locale: Locale }) {
           <p className="mt-1 text-sm text-muted">{t.paywallBody}</p>
           <Link
             href="/join"
-            className="mt-3 inline-block rounded-lg bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-500"
+            className="mt-3 inline-block rounded-lg bg-brand-600 px-5 py-2 text-sm font-semibold text-white hover:bg-brand-600/100"
           >
             {t.paywallCta}
           </Link>
@@ -250,7 +250,7 @@ export function RankDashboard({ locale }: { locale: Locale }) {
         <button
           type="submit"
           disabled={loading}
-          className="mt-4 rounded-lg bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-500 disabled:opacity-50"
+          className="mt-4 rounded-lg bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-600/100 disabled:opacity-50"
         >
           {loading ? t.creating : t.createDashboard}
         </button>
