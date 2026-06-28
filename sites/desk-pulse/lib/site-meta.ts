@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "极简客服工单",
+  id: "desk-pulse",
   emoji: "🎫",
   name: {
     en: "Desk Pulse",
