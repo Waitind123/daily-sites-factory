@@ -9,12 +9,12 @@ import { buildLocaleMetadata, softwareApplicationJsonLd } from "@/lib/seo";
 import { siteMeta } from "@/lib/site-meta";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildLocaleMetadata(locale);
 }
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default async function RootLayout({
   children,
@@ -35,7 +35,11 @@ export default async function RootLayout({
           locale={locale}
           initialMessages={feedback.messages}
         />
-        <SiteFooter meta={siteMeta} locale={locale} guideHref={siteMeta.guideHref} />
+        <SiteFooter
+          meta={siteMeta}
+          locale={locale}
+          guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
+        />
       </body>
     </html>
   );
