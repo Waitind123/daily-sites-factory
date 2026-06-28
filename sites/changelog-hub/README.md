@@ -1,13 +1,13 @@
-# 证言墙
+# Changelog Hub
 
-独立开发者用户好评收集工具 — Testimonial.to 平替，$9.9/月。
+Indie Changelog 发布台 — Beamer/AnnounceKit 平替，$9.9/月。
 
 ## 功能
 
-- 免费体验 5 次生成证言墙
-- Wall of Love HTML 嵌入代码
-- 收集好评邮件模板
-- 三种布局：网格 / 轮播 / 瀑布流
+- 免费体验 5 次生成 Changelog 页面
+- 公开 Changelog 页面 HTML
+- 轻量嵌入 Widget
+- 状态页片段 + RSS Feed
 - Stripe / Polar 订阅支付
 
 ## 开发
