@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://gummysearch-alt.vercel.app",
+    url: "https://gummyspy.vercel.app",
     name: "GummySpy",
     title: "GummySpy — GummySearch replacement with competitor ad spy, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://gummysearch-alt.vercel.app",
+    url: "https://gummyspy.vercel.app",
     name: "GummySearch 替代品",
     title: "GummySearch 替代品 — 受众痛点 + 竞品广告情报，$9.9/月",
     description:
