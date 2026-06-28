@@ -1,3 +1,3 @@
-export const SITE_ID = "gummysearch-替代品";
+export const SITE_ID = "gummyspy";
 
 export { FREE_TRIAL_LIMIT, getTrialStatus, consumeTrial, incrementTrial } from "./trial-core";

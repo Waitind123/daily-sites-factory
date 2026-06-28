@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "gummysearch-替代品",
+  id: "gummyspy",
   emoji: "🔎",
   name: {
     en: "GummySpy",
