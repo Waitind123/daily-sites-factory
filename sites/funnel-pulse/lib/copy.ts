@@ -3,7 +3,7 @@ import type { Locale } from "./i18n-shared";
 export const homeCopy = {
   en: {
     badge: "Mixpanel $500/mo? · $9.9/mo flat",
-    title: "Funnel analytics for indie hackers",
+    title: "Funnel Pulse — funnel analytics for indie hackers",
     subtitle:
       "See where users drop off, fix the leakiest step, grow MRR. No enterprise onboarding. 5 free funnels, then $9.9/mo.",
     ctaPrimary: "Create a funnel free",
@@ -74,7 +74,7 @@ export const homeCopy = {
       {
         name: "Chris P.",
         role: "Bootstrapped dev",
-        text: "Plausible has no funnels. Mixpanel is overkill. This is the sweet spot for solo founders.",
+        text: "Amplitude ramps fast with MAU pricing. Funnel Pulse is the sweet spot for solo founders.",
       },
     ],
     closing: {
@@ -92,7 +92,7 @@ export const homeCopy = {
   },
   zh: {
     badge: "Mixpanel $500/月？· $9.9/月一口价",
-    title: "独立开发者的漏斗分析",
+    title: "Funnel Pulse — 独立开发者漏斗分析",
     subtitle:
       "看清用户在哪一步流失、修复最大漏洞、提升 MRR。无需企业级接入流程。免费体验 5 个漏斗，之后 $9.9/月。",
     ctaPrimary: "免费创建漏斗",
@@ -163,7 +163,7 @@ export const homeCopy = {
       {
         name: "Chris P.",
         role: "自举创业者",
-        text: "Plausible 没有漏斗，Mixpanel 又太重。这是独立开发者的甜蜜点。",
+        text: "Amplitude 按 MAU 涨价太快。Funnel Pulse 是独立开发者的甜蜜点。",
       },
     ],
     closing: {
