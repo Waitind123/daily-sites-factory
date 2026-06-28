@@ -19,3 +19,5 @@ npm run dev
 ## 部署
 
 通过 GitHub Actions 自动部署到 Vercel。
+
+**Ship date:** 2026-06-28 · Bannerbear $49/mo alternative · $9.9/mo

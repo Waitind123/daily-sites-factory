@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "cron-heartbeat",
+      "name": "Cron 任务心跳监控",
+      "description": "Healthchecks.io 免费版仅 20 个检查、Pro $20/月太贵，独立开发者需要 $9.9/月的极简 cron 心跳监控 + 漏跑告警",
+      "template": "micro-saas",
+      "source": "HN Show HN cron monitoring + Reddit r/selfhosted healthchecks alternative 2026",
+      "discoveredAt": "2026-06-28T12:03:37.860Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-28T09:02:42.165Z",
+  "lastDiscoveredAt": "2026-06-28T12:03:37.860Z",
   "consumed": [
     {
       "id": "incident-ai",
