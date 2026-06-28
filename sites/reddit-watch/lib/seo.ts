@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://reddit-watch.vercel.app",
+    url: "https://reddit-watch-rho.vercel.app",
     name: "Reddit Watch",
     title: "Reddit Watch — 24/7 keyword monitoring for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://reddit-watch.vercel.app",
+    url: "https://reddit-watch-rho.vercel.app",
     name: "Reddit 线索监控",
     title: "Reddit 线索监控 — 全天候关键词提醒，$9.9/月",
     description:
