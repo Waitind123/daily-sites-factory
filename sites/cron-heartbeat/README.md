@@ -1,13 +1,13 @@
-# OG Image Studio
+# Cron Heartbeat
 
-独立开发者 OG 社交分享图生成器 — Bannerbear 平替，$9.9/月。
+独立开发者 Cron 心跳监控 — Healthchecks.io 平替，$9.9/月。
 
 ## 功能
 
-- 5 种 OG 图模板（极简、产品、博客、渐变、暗色）
-- 标准 1200×630 尺寸
-- Meta 标签和 Next.js 代码片段导出
-- 免费体验 5 次，之后订阅
+- 一行 curl 集成 cron 任务心跳上报
+- 漏跑检测与逐级告警（Slack / 邮件 / Webhook）
+- 免费体验 5 个任务，之后订阅
+- 中英文双语
 
 ## 开发
 
