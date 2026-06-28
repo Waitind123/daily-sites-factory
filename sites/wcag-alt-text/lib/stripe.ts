@@ -47,7 +47,7 @@ export async function createCheckoutSession(origin: string, locale: Locale = "en
     ],
     success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${origin}/join`,
-    metadata: { product: "habit-tracker-monthly" },
+    metadata: { product: "wcag-alt-text-monthly" },
   });
 
   return {

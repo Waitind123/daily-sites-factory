@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n-shared";
 import type { ImageType } from "@/lib/alt-text-engine";
-import { getGenerateCopy, getApiErrorMessage } from "@/lib/copy-app";
+import { getGenerateCopy, getApiErrorMessage, translateTip } from "@/lib/copy-app";
 
 type TrialStatus = {
   limit: number;
@@ -224,7 +224,7 @@ export function AltTextGenerator({ locale }: { locale: Locale }) {
               <p className="text-sm font-medium mb-2">{t.tips}</p>
               <ul className="text-sm text-muted space-y-1 list-disc list-inside">
                 {result.tips.map((tip) => (
-                  <li key={tip}>{tip}</li>
+                  <li key={tip}>{translateTip(tip, locale)}</li>
                 ))}
               </ul>
             </div>
