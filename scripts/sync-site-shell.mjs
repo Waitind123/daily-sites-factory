@@ -52,6 +52,16 @@ const SITE_REGISTRY = {
       { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
     ],
   },
+  "reddit-watch": {
+    emoji: "🔔",
+    name: { en: "Reddit Watch", zh: "Reddit 线索监控" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/subwatch-alternative-reddit-monitoring",
+    nav: [
+      { href: "/guide/subwatch-alternative-reddit-monitoring", label: { en: "Guide", zh: "指南" } },
+      { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
+    ],
+  },
   "remote-jobs": {
     emoji: "💼",
     name: { en: "Remote Jobs", zh: "远程工作板" },
