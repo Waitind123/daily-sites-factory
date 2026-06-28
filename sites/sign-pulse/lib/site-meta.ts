@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "pandadocs-替代品",
+  id: "sign-pulse",
   emoji: "✍️",
   name: {
     en: "Sign Pulse",
