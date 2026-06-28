@@ -2,7 +2,7 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "IdeaProof $49/mo · Twitter noise · $9.9/mo",
+    badge: "BigIdeasDB $9/mo · IdeaProof $49/mo · $9.9/mo",
     title: "Curated startup ideas with deep market analysis",
     subtitle:
       "8+ validated micro-SaaS directions. 5 free deep analyses, then $9.9/mo unlimited.",
@@ -90,7 +90,7 @@ export const homeCopy = {
       },
     ],
     closing: {
-      title: "IdeaProof is too expensive. Twitter inspiration is too scattered.",
+      title: "BigIdeasDB is too expensive. Twitter inspiration is too scattered.",
       subtitle:
         "Just $9.9/mo. Curated ideas + deep analysis to ship the right thing. Day-one pricing because research has real costs.",
       ctaPrimary: "Browse ideas",
@@ -112,7 +112,7 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "IdeaProof $49/月 · Twitter 灵感太散 · $9.9/月",
+    badge: "BigIdeasDB $9/月 · IdeaProof $49/月 · $9.9/月",
     title: "精选创业点子 + 深度市场分析",
     subtitle: "8+ 可落地微 SaaS 方向。免费体验 5 次深度分析，之后 $9.9/月无限阅读。",
     ctaPrimary: "免费体验",
@@ -199,7 +199,7 @@ export const homeCopy = {
       },
     ],
     closing: {
-      title: "IdeaProof 太贵，Twitter 灵感太散",
+      title: "BigIdeasDB 太贵，Twitter 灵感太散",
       subtitle:
         "只要 $9.9/月。精选点子 + 深度分析，帮你 ship 对的 thing。第一天收费，因为 research 也有成本。",
       ctaPrimary: "浏览点子",
