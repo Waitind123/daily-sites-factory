@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "wcag-alt-text",
+      "name": "WCAG Alt-Text 生成器",
+      "description": "ADA 诉讼增加，Web 代理商需要 $9.9/月的批量 WCAG 合规 alt-text 生成，替代 AltText.ai 按图计费",
+      "template": "micro-saas",
+      "source": "AccessiBe FTC $1M fine 2026 + Indie Hackers accessibility tools",
+      "discoveredAt": "2026-06-28T00:03:52.266Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-27T22:11:50.758Z",
+  "lastDiscoveredAt": "2026-06-28T00:03:52.266Z",
   "consumed": [
     {
       "id": "incident-ai",
