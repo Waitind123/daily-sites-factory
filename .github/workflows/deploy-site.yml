@@ -131,13 +131,14 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
-          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT || secrets.GITHUB_TOKEN }}
+          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT }}
         run: |
           if [ -z "$ANALYTICS_PAT" ] || [ -z "$VERCEL_TOKEN" ]; then
-            echo "无 PAT 或 VERCEL_TOKEN，跳过 Vercel 埋点环境变量"
+            echo "::warning::请在仓库 Secrets 添加 ANALYTICS_GITHUB_PAT（不能用 GITHUB_TOKEN 这个名字）"
             exit 0
           fi
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$ANALYTICS_PAT" | npx vercel env add ANALYTICS_GITHUB_PAT production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "$ANALYTICS_PAT" | npx vercel env add GITHUB_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "Waitind123/daily-sites-factory" | npx vercel env add GITHUB_REPO production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
 

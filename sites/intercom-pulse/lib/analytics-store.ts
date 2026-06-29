@@ -44,7 +44,10 @@ export interface RollupFile {
 }
 
 const REPO = process.env.GITHUB_REPO || "Waitind123/daily-sites-factory";
-const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+const TOKEN =
+  process.env.ANALYTICS_GITHUB_PAT ||
+  process.env.GITHUB_TOKEN ||
+  process.env.GH_TOKEN;
 const ROLLUP_PATH = "analytics/rollup.json";
 
 function repoRoot() {
@@ -142,12 +145,11 @@ export async function loadRollup(): Promise<RollupFile> {
 async function saveRollup(data: RollupFile) {
   data.updatedAt = new Date().toISOString();
   const content = JSON.stringify(data, null, 2) + "\n";
-  try {
-    const remote = await githubGet(ROLLUP_PATH);
-    await githubPut(ROLLUP_PATH, content, remote?.sha);
-  } catch {
-    writeLocal(data);
+  if (!TOKEN) {
+    throw new Error("GITHUB_TOKEN not configured on Vercel");
   }
+  const remote = await githubGet(ROLLUP_PATH);
+  await githubPut(ROLLUP_PATH, content, remote?.sha);
 }
 
 function recomputeTotals(site: SiteRollup) {
