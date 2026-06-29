@@ -60,6 +60,8 @@ function repoRoot() {
 }
 
 function localRollupPath() {
+  const bundled = join(process.cwd(), "data", "rollup.json");
+  if (existsSync(bundled)) return bundled;
   return join(repoRoot(), ROLLUP_PATH);
 }
 

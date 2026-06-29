@@ -30,7 +30,7 @@ Vercel 环境变量：
 | `GITHUB_REPO` | `Waitind123/daily-sites-factory` |
 | `ANALYTICS_ADMIN_TOKEN` | 可选，保护 `/api/seo-scan` |
 
-公开 URL 示例：`https://factory-dashboard.vercel.app`
+公开 URL 示例：`https://daily-sites-analytics.vercel.app`
 
 ## 各站点埋点
 
@@ -40,7 +40,7 @@ Vercel 环境变量：
    ```
 2. 各站点 Vercel 环境变量（可选，默认指向 factory-dashboard）：
    ```
-   NEXT_PUBLIC_FACTORY_ANALYTICS_URL=https://factory-dashboard.vercel.app
+   NEXT_PUBLIC_FACTORY_ANALYTICS_URL=https://daily-sites-analytics.vercel.app
    ```
 3. 在试用/结账/付费成功处调用：
    ```ts
@@ -54,7 +54,7 @@ Vercel 环境变量：
 手动或 cron 触发全站 SEO 检查：
 
 ```bash
-curl -X POST https://factory-dashboard.vercel.app/api/seo-scan \
+curl -X POST https://daily-sites-analytics.vercel.app/api/seo-scan \
   -H "Authorization: Bearer $ANALYTICS_ADMIN_TOKEN"
 ```
 

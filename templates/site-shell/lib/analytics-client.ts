@@ -1,7 +1,8 @@
 "use client";
 
-const HUB =
-  process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || "https://factory-dashboard.vercel.app";
+import { DASHBOARD_URL } from "./dashboard-url";
+
+const HUB = process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || DASHBOARD_URL;
 
 function visitorId() {
   if (typeof window === "undefined") return "";

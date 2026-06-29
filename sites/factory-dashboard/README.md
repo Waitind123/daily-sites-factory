@@ -1,8 +1,8 @@
-# Factory Dashboard
+# 全站数据看板
 
-全站运营看板：PV / UV / SEO / 付费转化。
+**正确地址（请收藏）：** https://daily-sites-analytics.vercel.app
 
-- 生产地址：https://factory-dashboard.vercel.app
+> ⚠️ `factory-dashboard.vercel.app` 是别人的 Vue 模板项目，不是我们的看板。
+
 - 文档：`docs/FACTORY-DASHBOARD.md`
-
-内部工具站，不参与产品站点质量闸门。
+- 内部工具站，不参与产品站点质量闸门

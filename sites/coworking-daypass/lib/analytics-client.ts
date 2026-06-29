@@ -1,7 +1,7 @@
 "use client";
 
 const HUB =
-  process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || "https://factory-dashboard.vercel.app";
+  process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || "https://daily-sites-analytics.vercel.app";
 
 function visitorId() {
   if (typeof window === "undefined") return "";
