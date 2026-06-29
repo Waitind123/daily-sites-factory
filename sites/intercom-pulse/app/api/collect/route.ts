@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { recordEvent, type EventType } from "@/lib/analytics-store";
+import { apiError } from "@/lib/api-errors";
 
 const ALLOWED_ORIGINS = /\.vercel\.app$/;
 
@@ -12,7 +13,7 @@ export async function POST(req: NextRequest) {
     const siteId = String(body.siteId || "").trim();
     const type = String(body.type || "pageview") as EventType;
     if (!siteId || !["pageview", "trial", "checkout", "purchase"].includes(type)) {
-      return NextResponse.json({ error: "invalid payload" }, { status: 400 });
+      return apiError("invalid_payload", 400);
     }
 
     await recordEvent({
@@ -25,11 +26,8 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ ok: true }, { headers: { "Access-Control-Allow-Origin": corsOrigin } });
-  } catch (err) {
-    return NextResponse.json(
-      { error: err instanceof Error ? err.message : "unknown" },
-      { status: 500, headers: { "Access-Control-Allow-Origin": corsOrigin } }
-    );
+  } catch {
+    return apiError("analytics_failed", 500);
   }
 }
 
