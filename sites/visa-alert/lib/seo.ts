@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://visa-alert.vercel.app",
+    url: "https://visa-alert-one.vercel.app",
     name: "Visa Alert",
     title: "Visa Alert — Digital nomad visa policy change notifications, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://visa-alert.vercel.app",
+    url: "https://visa-alert-one.vercel.app",
     name: "签证政策提醒",
     title: "签证政策提醒 — 数字游民签证政策变更通知，$9.9/月",
     description:
