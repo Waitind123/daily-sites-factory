@@ -22,6 +22,8 @@ export function PriceBrowser({ locale }: { locale: Locale }) {
   const [trial, setTrial] = useState<TrialStatus | null>(null);
   const [filter, setFilter] = useState<string>(c.all);
   const [selected, setSelected] = useState<ProductListItem | null>(null);
+  const [scanUrl, setScanUrl] = useState("");
+  const [scanName, setScanName] = useState<string | null>(null);
   const [tracking, setTracking] = useState<SaasProduct["tracking"] | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -39,7 +41,47 @@ export function PriceBrowser({ locale }: { locale: Locale }) {
     loadTrial();
   }, [loadTrial]);
 
+  async function scanCustomPricing() {
+    if (!scanUrl.trim()) return;
+    setSelected(null);
+    setScanName(null);
+    setTracking(null);
+    setError(null);
+    setLoading(true);
+
+    const res = await fetch("/api/prices/scan", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url: scanUrl.trim() }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      setError(getApiErrorMessage(data.code, locale));
+      setLoading(false);
+      await loadTrial();
+      return;
+    }
+
+    setScanName(data.name);
+    setTracking(data.tracking);
+    setSelected({
+      id: "custom",
+      name: data.name,
+      category: data.category,
+      website: data.hostname,
+      pricingUrl: scanUrl.trim(),
+      billingModel: locale === "zh" ? "自定义" : "Custom",
+      preview: data.preview,
+      currentPricing: [],
+    });
+    await loadTrial();
+    setLoading(false);
+  }
+
   async function viewTracking(product: ProductListItem) {
+    setScanName(null);
     setSelected(product);
     setTracking(null);
     setError(null);
@@ -67,12 +109,35 @@ export function PriceBrowser({ locale }: { locale: Locale }) {
 
   function closeModal() {
     setSelected(null);
+    setScanName(null);
     setTracking(null);
     setError(null);
   }
 
   return (
     <div className="space-y-6">
+      <div className="rounded-2xl border border-brand-600/30 bg-surface p-5 sm:p-6">
+        <h2 className="font-bold text-lg text-foreground mb-2">{c.scanTitle}</h2>
+        <p className="text-xs text-muted mb-4">{c.scanHint}</p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <input
+            type="url"
+            value={scanUrl}
+            onChange={(e) => setScanUrl(e.target.value)}
+            placeholder={c.scanPlaceholder}
+            className="flex-1 rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-500"
+          />
+          <button
+            type="button"
+            onClick={scanCustomPricing}
+            disabled={loading || !scanUrl.trim()}
+            className="rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700 disabled:opacity-50 transition-colors"
+          >
+            {loading && scanName === null && !tracking ? c.scanLoading : c.scanButton}
+          </button>
+        </div>
+      </div>
+
       {trial && !trial.isMember && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>

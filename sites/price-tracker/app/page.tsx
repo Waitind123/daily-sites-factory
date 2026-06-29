@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FeatureGrid, StatsBar } from "@/components/ui";
 import { getPublicProducts } from "@/lib/data";
 import { HomeHero } from "@/components/HomeHero";
+import { EmailAlertPreview } from "@/components/EmailAlertPreview";
 import { getLocale } from "@/lib/locale";
 import { getHomeCopy } from "@/lib/copy";
 
@@ -38,6 +39,8 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      <EmailAlertPreview locale={locale} />
 
       <section className="bg-surface border-y border-border py-12">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
