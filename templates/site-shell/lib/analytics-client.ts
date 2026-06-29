@@ -1,8 +1,8 @@
 "use client";
 
-import { DASHBOARD_URL } from "./dashboard-url";
+import { ANALYTICS_API_URL } from "./analytics-api-url";
 
-const HUB = process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || DASHBOARD_URL;
+const HUB = process.env.NEXT_PUBLIC_FACTORY_ANALYTICS_URL || ANALYTICS_API_URL;
 
 function visitorId() {
   if (typeof window === "undefined") return "";

@@ -1,0 +1,45 @@
+name: 单独部署看板到 Vercel
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - sites/factory-dashboard/**
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sync dashboard data
+        run: |
+          node scripts/extract-site-urls.mjs
+          node scripts/sync-dashboard-data.mjs
+
+      - name: Build
+        working-directory: sites/factory-dashboard
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Deploy to Vercel
+        working-directory: sites/factory-dashboard
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN 未配置，跳过。看板请用 GitHub Pages。" >&2
+            exit 0
+          fi
+          npx vercel link --yes --project=daily-sites-analytics --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || \
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN"
+          npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN"

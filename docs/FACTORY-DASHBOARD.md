@@ -30,7 +30,11 @@ Vercel 环境变量：
 | `GITHUB_REPO` | `Waitind123/daily-sites-factory` |
 | `ANALYTICS_ADMIN_TOKEN` | 可选，保护 `/api/seo-scan` |
 
-公开 URL 示例：`https://daily-sites-analytics.vercel.app`
+看板首页（GitHub Pages，稳定可用）：
+
+**https://waitind123.github.io/daily-sites-factory/**
+
+埋点 API（Vercel，需单独部署）：`https://daily-sites-analytics.vercel.app`
 
 ## 各站点埋点
 

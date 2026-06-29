@@ -30,6 +30,8 @@ for (const id of targets) {
 
   for (const rel of [
     "lib/analytics-client.ts",
+    "lib/dashboard-url.ts",
+    "lib/analytics-api-url.ts",
     "components/AnalyticsBeacon.tsx",
     "components/CheckoutButton.tsx",
   ]) {
