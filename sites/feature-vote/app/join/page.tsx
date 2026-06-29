@@ -52,6 +52,19 @@ export default async function JoinPage() {
         <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
       </div>
 
+      <div className="mt-8 rounded-xl border border-border bg-background overflow-hidden">
+        <h3 className="font-semibold text-foreground px-6 pt-6 pb-3">{c.compareTitle}</h3>
+        <div className="divide-y divide-border text-sm">
+          {c.compareRows.map((row) => (
+            <div key={row.label} className="grid grid-cols-3 gap-2 px-6 py-3">
+              <span className="text-muted">{row.label}</span>
+              <span className="font-medium text-brand-500">{row.us}</span>
+              <span className="text-muted">{row.them}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="mt-8 rounded-xl border border-border bg-background p-6">
         <h3 className="font-semibold text-foreground mb-3">{c.whyTitle}</h3>
         <ul className="space-y-2 text-sm text-muted">

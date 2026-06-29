@@ -205,6 +205,13 @@ export const joinCopy = {
       "Solo-maintained — flat pricing keeps it sustainable",
     ],
     includedTitle: "Included",
+    compareTitle: "Feature Vote vs Canny",
+    compareRows: [
+      { label: "Monthly price", us: "$9.9 flat", them: "$79+ (scales with users)" },
+      { label: "Per-voter fees", us: "None", them: "Yes, after 25 users" },
+      { label: "Public roadmap", us: "Included", them: "Growth plan+" },
+      { label: "Setup time", us: "5 minutes", them: "Days of config" },
+    ],
   },
   zh: {
     title: "订阅功能投票板",
@@ -231,6 +238,13 @@ export const joinCopy = {
       "一人维护 — 一口价才能持续运营",
     ],
     includedTitle: "包含功能",
+    compareTitle: "功能投票板 vs Canny",
+    compareRows: [
+      { label: "月费", us: "$9.9 一口价", them: "$79+（随用户数涨）" },
+      { label: "按投票人收费", us: "无", them: "25 人后按人头" },
+      { label: "公开路线图", us: "包含", them: "成长版及以上" },
+      { label: "上线时间", us: "5 分钟", them: "需多天配置" },
+    ],
   },
 } as const;
 

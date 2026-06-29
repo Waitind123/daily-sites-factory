@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "saas替代品目录",
+      "name": "SaaS替代品目录",
+      "description": "发现开源/独立SaaS替代品高度碎片化，独立开发者需要 .9/月的动态替代品目录+自托管Docker配置",
+      "template": "micro-saas",
+      "source": "HN#47171363 AltStack",
+      "discoveredAt": "2026-06-29T01:04:13.725Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-06-28T23:01:56.015Z",
+  "lastDiscoveredAt": "2026-06-29T01:04:13.725Z",
   "consumed": [
     {
       "id": "incident-ai",
