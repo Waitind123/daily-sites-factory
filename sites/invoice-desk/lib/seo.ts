@@ -24,8 +24,8 @@ const siteConfigByLocale = {
   },
   zh: {
     url: "https://invoice-desk-three.vercel.app",
-    name: "发票收据管理",
-    title: "发票收据管理 — HoneyBook 平替，自由职业者 $9.9/月",
+    name: "极简发票工具",
+    title: "极简发票工具 — HN Show HN 平替，独立开发者 $9.9/月",
     description:
       "免费体验 5 张发票。HoneyBook 要 $66/月？$9.9/月一口价：专业发票、自动收据、待收追踪，60 秒完成开账。",
     keywords: [

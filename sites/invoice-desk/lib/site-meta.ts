@@ -3,7 +3,7 @@ export const siteMeta = {
   emoji: "🧾",
   name: {
     en: "Invoice Desk",
-    zh: "发票收据管理",
+    zh: "极简发票工具",
   },
   nav: [
     {

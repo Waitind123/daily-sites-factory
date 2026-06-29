@@ -2,10 +2,10 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HoneyBook $66/mo? · $9.9/mo flat",
-    title: "Invoices & receipts for solo freelancers",
+    badge: "Sidepay $20/yr? · $9.9/mo unlimited",
+    title: "Minimal invoicing for solo devs — no HoneyBook bloat",
     subtitle:
-      "Create professional invoices, send to clients, mark paid and auto-generate receipts. 5 free invoices, then $9.9/mo. No agency bloat.",
+      "HN Show HN proved freelancers want $20/yr invoicing, not $66/mo CRM. Create invoices, track paid/unpaid, auto receipts. 5 free, then $9.9/mo.",
     ctaPrimary: "Create invoice free",
     ctaPrimaryHref: "/invoices",
     ctaSecondary: "Subscribe · $9.9/mo",
@@ -91,10 +91,10 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HoneyBook 要 $66/月？· $9.9/月一口价",
-    title: "自由职业者发票与收据管理",
+    badge: "Sidepay $20/年？· $9.9/月不限量",
+    title: "独立开发者极简发票 — 不交 HoneyBook 税",
     subtitle:
-      "创建专业发票、发送给客户、标记已付并自动生成收据。免费体验 5 张发票，之后 $9.9/月。无代理商臃肿功能。",
+      "HN Show HN 证明自由职业者要 $20/年开票工具，不是 $66/月 CRM。创建发票、追踪待收、自动生成收据。免费体验 5 张，之后 $9.9/月。",
     ctaPrimary: "免费开发票",
     ctaPrimaryHref: "/invoices",
     ctaSecondary: "订阅 · $9.9/月",
@@ -176,7 +176,7 @@ export const homeCopy = {
       title: "发票控制台实时预览",
       caption: "发票 · 待收 · 收据 · 付款状态",
       preview:
-        "🧾 发票收据管理                      最近收款：2 小时前\n─────────────────────────────────────────────────────\n  INV-K7X2M9    网站改版 · Acme 公司\n  $3,200.00     到期 6月10日 · 状态：已发送\n─────────────────────────────────────────────────────\n  待收：$5,400    本月已收：$8,200\n─────────────────────────────────────────────────────\n  最近：\n  INV-M3P1Q8    Logo 设计包      $800   ✓ 已付\n  INV-R9T4N2    API 咨询        $2,400   已发送\n─────────────────────────────────────────────────────\n  [ 复制发票 ]  [ 标记已付 ]  [ + 新建发票 ]",
+        "🧾 极简发票工具                        最近收款：2 小时前\n─────────────────────────────────────────────────────\n  INV-K7X2M9    网站改版 · Acme 公司\n  $3,200.00     到期 6月10日 · 状态：已发送\n─────────────────────────────────────────────────────\n  待收：$5,400    本月已收：$8,200\n─────────────────────────────────────────────────────\n  最近：\n  INV-M3P1Q8    Logo 设计包      $800   ✓ 已付\n  INV-R9T4N2    API 咨询        $2,400   已发送\n─────────────────────────────────────────────────────\n  [ 复制发票 ]  [ 标记已付 ]  [ + 新建发票 ]",
     },
   },
 } as const;
