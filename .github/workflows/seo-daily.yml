@@ -51,5 +51,5 @@ jobs:
             const r=require('./analytics/rollup.json');
             const sites=Object.entries(r.sites||{});
             const avg=sites.length?Math.round(sites.reduce((a,[,s])=>a+(s.seo?.score||0),0)/sites.length):0;
-            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({msg_type:'text',content:{text:'📊 SEO 全自动日报\\n均分: '+avg+'/100 · '+sites.length+' 站\\nIndexNow 已提交\\n看板: https://daily-sites-analytics.vercel.app'}})}).catch(()=>{});
+            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({msg_type:'text',content:{text:'📊 SEO 全自动日报\\n均分: '+avg+'/100 · '+sites.length+' 站\\nIndexNow 已提交\\n看板: https://waitind123.github.io/daily-sites-factory/'}})}).catch(()=>{});
           "

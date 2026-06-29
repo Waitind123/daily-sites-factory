@@ -5,18 +5,16 @@ import { siteMeta } from "@/lib/site-meta";
 
 export function CheckoutButton({
   className = "",
-  label,
+  label = "Subscribe · $9.9/mo",
 }: {
   className?: string;
-  label: string;
+  label?: string;
 }) {
   return (
     <form
       action="/api/checkout"
       method="POST"
-      onSubmit={function handleCheckout() {
-        trackFactoryEvent(siteMeta.id, "checkout");
-      }}
+      onSubmit={() => trackFactoryEvent(siteMeta.id, "checkout")}
     >
       <button
         type="submit"
