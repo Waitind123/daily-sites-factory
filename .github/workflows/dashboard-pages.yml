@@ -1,4 +1,4 @@
-name: 部署看板到 GitHub Pages
+name: 更新静态看板（jsDelivr）
 
 on:
   push:
@@ -8,25 +8,19 @@ on:
       - sites/factory-dashboard/**
       - scripts/build-static-dashboard.mjs
       - scripts/sync-dashboard-data.mjs
-      - templates/site-shell/lib/dashboard-url.ts
-      - templates/site-shell/lib/analytics-api-url.ts
+      - .github/workflows/dashboard-pages.yml
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: dashboard-pages
+  group: dashboard-static
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-commit:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -40,26 +34,25 @@ jobs:
           node scripts/sync-dashboard-data.mjs || true
           node scripts/build-static-dashboard.mjs
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dashboard-public
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit dashboard HTML
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard-public/index.html
+          git diff --staged --quiet && echo "看板无变化" && exit 0
+          git commit -m "chore: update static dashboard [skip ci]"
+          git push
 
       - name: Feishu notify
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
           if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
-          URL="${{ steps.deployment.outputs.page_url }}"
+          URL="https://cdn.jsdelivr.net/gh/Waitind123/daily-sites-factory@main/dashboard-public/index.html"
           node -e "
             fetch(process.env.FEISHU_WEBHOOK_URL,{
               method:'POST',
               headers:{'Content-Type':'application/json'},
-              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已上线\\n'+process.argv[1]+'\\n请收藏此地址'}})
+              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已更新\\n'+process.argv[1]+'\\n请收藏此地址'}})
             }).catch(()=>{});
           " "$URL"

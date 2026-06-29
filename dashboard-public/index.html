@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>全站运营看板 · Daily Sites Factory</title>
+  <meta name="description" content="56+ 站点 PV、UV、SEO、付费转化一览"/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#f4f4f5;min-height:100vh}
+    header{border-bottom:1px solid #27272a;background:#09090bcc;backdrop-filter:blur(8px);position:sticky;top:0;z-index:10;padding:1.25rem 1.5rem}
+    .wrap{max-width:80rem;margin:0 auto}
+    .kicker{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#818cf8}
+    h1{font-size:1.5rem;font-weight:700;margin-top:.25rem}
+    .meta{text-align:right;font-size:.75rem;color:#71717a}
+    main{padding:2rem 1.5rem}
+    .summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:2rem}
+    .sum-card{border:1px solid #27272a;border-radius:1rem;padding:1.25rem;background:linear-gradient(135deg,#18181b,#09090b)}
+    .sum-card .big{font-size:1.75rem;font-weight:700}
+    .sum-card .lbl{font-size:.8rem;color:#71717a;margin-top:.25rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+    .card{border:1px solid #27272a;border-radius:1rem;padding:1.25rem;background:#18181b99}
+    .card:hover{border-color:#6366f180}
+    .card-head{display:flex;justify-content:space-between;gap:.75rem;align-items:flex-start}
+    .card h2{font-size:1.05rem}
+    .id{font-size:.7rem;color:#71717a;font-family:ui-monospace,monospace;margin-top:.15rem}
+    .badge{font-size:.7rem;padding:.2rem .5rem;border-radius:999px;font-weight:600}
+    .badge.good{background:#10b98126;color:#34d399}
+    .badge.mid{background:#f59e0b26;color:#fbbf24}
+    .badge.bad{background:#ef444426;color:#f87171}
+    .metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin:1rem 0}
+    .metric{background:#09090bcc;border-radius:.75rem;padding:.5rem .25rem;text-align:center}
+    .val{font-weight:700;font-size:1rem}
+    .lbl{font-size:.6rem;color:#71717a;text-transform:uppercase;margin-top:.1rem}
+    .funnel,.seo-hint{font-size:.75rem;color:#a1a1aa;margin:.5rem 0}
+    a{color:#818cf8;font-size:.85rem;text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{text-align:center;padding:2rem;color:#52525b;font-size:.75rem}
+  </style>
+</head>
+<body>
+  <header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <div><p class="kicker">Daily Sites Factory</p><h1>全站运营看板</h1></div>
+    <div class="meta"><p>PV · UV · SEO · 转化漏斗</p><p>更新 2026/6/29 01:48:05</p></div>
+  </div></header>
+  <main class="wrap">
+    <div class="summary">
+      <div class="sum-card"><div class="big">56</div><div class="lbl">站点数</div></div>
+      <div class="sum-card"><div class="big">0</div><div class="lbl">总 PV</div></div>
+      <div class="sum-card"><div class="big">0</div><div class="lbl">总 UV</div></div>
+      <div class="sum-card"><div class="big">0%</div><div class="lbl">总付费转化</div></div>
+    </div>
+    <div class="grid">
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>功能投票板</h2>
+          <p class="id">feature-vote</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://feature-vote-ten.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>Intercom 替代品</h2>
+          <p class="id">intercom-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://intercom-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>线下 Meetup 组织</h2>
+          <p class="id">meetup-host</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://meetup-host.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>PandaDocs 替代品</h2>
+          <p class="id">sign-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://sign-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>远程工作板</h2>
+          <p class="id">remote-jobs</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://remote-jobs-azure.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>自由职业极简报价单</h2>
+          <p class="id">quote-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://quote-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>AI 证件照</h2>
+          <p class="id">ai-headshots</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://ai-headshots-navy.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>极简客服工单</h2>
+          <p class="id">desk-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://desk-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>数字游民签证指南</h2>
+          <p class="id">visa-guide</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://visa-guide-tau.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>数字游民城市榜</h2>
+          <p class="id">nomad-cities</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://nomad-cities.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>漏斗分析</h2>
+          <p class="id">funnel-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://funnel-pulse-lyart.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>落地页 A/B 测试</h2>
+          <p class="id">page-split</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://page-split-pi.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>Cron 任务心跳监控</h2>
+          <p class="id">cron-heartbeat</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://cron-heartbeat.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>OG 图生成器</h2>
+          <p class="id">og-image-studio</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://og-image-studio-cyan.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>Indie Changelog 发布台</h2>
+          <p class="id">changelog-hub</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://changelog-hub-henna.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>独立开发者证言墙</h2>
+          <p class="id">testimonial-wall</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://testimonial-wall-sepia.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>SEO 排名追踪</h2>
+          <p class="id">seo-rank-tracker</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://seo-rank-tracker-lemon.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>Indie 漏斗分析</h2>
+          <p class="id">tracetics-lite</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://tracetics-lite.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>独立开发者工具箱</h2>
+          <p class="id">indie-tools</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://indie-tools-rho.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>Reddit 线索监控</h2>
+          <p class="id">reddit-watch</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://reddit-watch-rho.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>GummySearch 替代品</h2>
+          <p class="id">gummyspy</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://gummyspy.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>联合办公 Finder</h2>
+          <p class="id">coworking-finder</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://coworking-finder-lovat.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>创业点子库</h2>
+          <p class="id">startup-ideas</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://startup-ideas-five.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>WCAG Alt-Text 生成器</h2>
+          <p class="id">wcag-alt-text</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://wcag-alt-text.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>习惯打卡</h2>
+          <p class="id">habit-tracker</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://habit-tracker-opal-rho.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>AI 事件摘要</h2>
+          <p class="id">incident-ai</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://incident-ai-seven.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>监控+状态页一体</h2>
+          <p class="id">pulse-suite</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://pulse-suite-ochre.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>状态页发布</h2>
+          <p class="id">status-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://status-pulse-chi.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>发布日志转社交帖</h2>
+          <p class="id">release-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://release-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>ai-waitlist</h2>
+          <p class="id">ai-waitlist</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://ai-waitlist-orpin.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>book-pulse</h2>
+          <p class="id">book-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://book-pulse-lovat.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>carbon-calculator</h2>
+          <p class="id">carbon-calculator</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://carbon-calculator-wine.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>churn-pulse</h2>
+          <p class="id">churn-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://churn-pulse-pi.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>content-pulse</h2>
+          <p class="id">content-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://content-pulse-murex.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>coworking-daypass</h2>
+          <p class="id">coworking-daypass</p>
+        </div>
+        <span class="badge good">SEO 80</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://coworking-daypass.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>coworking-pass</h2>
+          <p class="id">coworking-pass</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://coworking-pass-five.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>docs-pulse</h2>
+          <p class="id">docs-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://docs-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>email-pulse</h2>
+          <p class="id">email-pulse</p>
+        </div>
+        <span class="badge bad">SEO 0</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✗ sitemap · 0 指南页</p>
+      <a href="https://email-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>form-pulse</h2>
+          <p class="id">form-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://form-pulse-amber.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>freelance-proposal</h2>
+          <p class="id">freelance-proposal</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://freelance-proposal-one.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>guilt-free-habits</h2>
+          <p class="id">guilt-free-habits</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://guilt-free-habits.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>invoice-desk</h2>
+          <p class="id">invoice-desk</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://invoice-desk-three.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>landing-generator</h2>
+          <p class="id">landing-generator</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://landing-generator-opal.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>link-pulse</h2>
+          <p class="id">link-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://link-pulse-one.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>newsletter-stack</h2>
+          <p class="id">newsletter-stack</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://newsletter-stack.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>pain-radar</h2>
+          <p class="id">pain-radar</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://pain-radar-lyart.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>price-tracker</h2>
+          <p class="id">price-tracker</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://price-tracker-seven-tan.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>reddit-leads</h2>
+          <p class="id">reddit-leads</p>
+        </div>
+        <span class="badge good">SEO 80</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://reddit-leads-beta.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>reddit-pulse</h2>
+          <p class="id">reddit-pulse</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://reddit-pulse-six.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>stripe-pulse</h2>
+          <p class="id">stripe-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://stripe-pulse-two.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>team-headshots</h2>
+          <p class="id">team-headshots</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://team-headshots-phi.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>timezone-planner</h2>
+          <p class="id">timezone-planner</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://timezone-planner-delta.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>uptime-pulse</h2>
+          <p class="id">uptime-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://uptime-pulse-three.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>virtual-cowork-room</h2>
+          <p class="id">virtual-cowork-room</p>
+        </div>
+        <span class="badge good">SEO 100</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://virtual-cowork-room.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>visa-tracker</h2>
+          <p class="id">visa-tracker</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://visa-tracker-lilac.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article>
+    <article class="card">
+      <div class="card-head">
+        <div>
+          <h2>waitlist-pulse</h2>
+          <p class="id">waitlist-pulse</p>
+        </div>
+        <span class="badge good">SEO 90</span>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="val">0</div><div class="lbl">PV</div></div><div class="metric"><div class="val">0</div><div class="lbl">UV</div></div><div class="metric"><div class="val">0</div><div class="lbl">试用</div></div><div class="metric"><div class="val">0</div><div class="lbl">结账</div></div><div class="metric"><div class="val">0</div><div class="lbl">付费</div></div>
+      </div>
+      <p class="funnel">访问→结账 0% · 访问→付费 0%</p>
+      <p class="seo-hint">✓ sitemap · 1 指南页</p>
+      <a href="https://waitlist-pulse.vercel.app" target="_blank" rel="noreferrer">打开站点 →</a>
+    </article></div>
+  </main>
+  <footer>由 GitHub Actions 每日自动更新 · daily-sites-factory</footer>
+</body>
+</html>
