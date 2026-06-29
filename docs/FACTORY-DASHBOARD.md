@@ -30,9 +30,9 @@ Vercel 环境变量：
 | `GITHUB_REPO` | `Waitind123/daily-sites-factory` |
 | `ANALYTICS_ADMIN_TOKEN` | 可选，保护 `/api/seo-scan` |
 
-看板首页（GitHub Pages）：
+看板（挂在 intercom-pulse 静态目录）：
 
-**https://waitind123.github.io/daily-sites-factory/**
+**https://intercom-pulse.vercel.app/factory-dashboard/**
 
 埋点 API（Vercel，需单独部署）：`https://daily-sites-analytics.vercel.app`
 

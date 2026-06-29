@@ -1,2 +1,2 @@
-/** 看板地址 — GitHub Pages 正式渲染（非 jsDelivr 源码） */
-export const DASHBOARD_URL = "https://waitind123.github.io/daily-sites-factory/";
+/** 看板地址 — 挂在已部署站点 public 目录，浏览器正常渲染 */
+export const DASHBOARD_URL = "https://intercom-pulse.vercel.app/factory-dashboard/";
