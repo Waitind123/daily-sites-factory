@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "saas-早期用户市场",
+  id: "beta-match",
   emoji: "🧪",
   name: {
     en: "Beta Match",

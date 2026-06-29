@@ -159,7 +159,7 @@ const SITE_REGISTRY = {
       { href: "/visas", label: { en: "Policies", zh: "政策" } },
     ],
   },
-  "saas-早期用户市场": {
+  "beta-match": {
     emoji: "🧪",
     name: { en: "Beta Match", zh: "早期用户市场" },
     jsonLd: "softwareApplicationJsonLd",
