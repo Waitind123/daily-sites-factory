@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://beta-match.vercel.app",
+    url: "https://beta-match-tau.vercel.app",
     name: "Beta Match",
     title: "Beta Match — Find your first 10 beta testers, $9.9/mo flat",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://beta-match.vercel.app",
+    url: "https://beta-match-tau.vercel.app",
     name: "早期用户市场",
     title: "早期用户市场 — 找到前 10 个内测用户，$9.9/月",
     description:
