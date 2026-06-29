@@ -120,7 +120,10 @@ jobs:
           kill $(cat /tmp/next-e2e-${{ matrix.site_id }}.pid) 2>/dev/null || true
 
       - name: Vercel deploy guard (daily limit)
-        run: node ../../scripts/vercel-deploy-guard.mjs
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: node scripts/vercel-deploy-guard.mjs
 
       - name: Deploy to Vercel
         id: vercel
@@ -137,7 +140,6 @@ jobs:
           LOG=/tmp/vercel-${{ matrix.site_id }}.log
           if ! npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee "$LOG"; then
             if grep -q 'api-deployments-free-per-day' "$LOG"; then
-              node ../../scripts/vercel-deploy-guard.mjs || true
               echo "Vercel daily limit reached — skip, retry tomorrow" >&2
               exit 0
             fi

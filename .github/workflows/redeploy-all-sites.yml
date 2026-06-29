@@ -36,7 +36,7 @@ jobs:
           npm run build
 
       - name: Vercel deploy guard (daily limit)
-        run: node ../../scripts/vercel-deploy-guard.mjs
+        run: node scripts/vercel-deploy-guard.mjs
 
       - name: Deploy to Vercel
         id: vercel
