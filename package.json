@@ -6,9 +6,14 @@
     "pick-vertical": "node scripts/pick-vertical.mjs",
     "discover-verticals": "node scripts/discover-vertical.mjs discover --limit 3",
     "sync-site-shell": "node scripts/sync-site-shell.mjs",
+    "sync-analytics": "node scripts/sync-analytics-beacon.mjs",
     "verify-site": "node scripts/verify-site-quality.mjs",
     "verify-visitor": "node scripts/verify-site-visitor.mjs",
+    "verify-visitor-e2e": "node scripts/verify-site-visitor-e2e.mjs",
     "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
     "notify-feishu": "node scripts/notify-feishu.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
   }
 }

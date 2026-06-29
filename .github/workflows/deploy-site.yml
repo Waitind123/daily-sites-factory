@@ -74,6 +74,18 @@ jobs:
           node ../../scripts/verify-site-visitor.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
           kill $(cat /tmp/next-${{ matrix.site_id }}.pid) 2>/dev/null || true
 
+      - name: Playwright visitor E2E (real browser)
+        if: matrix.site_id != 'factory-dashboard'
+        run: |
+          npm install --no-save playwright@1.52.0
+          npx playwright install chromium --with-deps
+          cd sites/${{ matrix.site_id }}
+          npx next start -p 3099 &
+          echo $! > /tmp/next-e2e-${{ matrix.site_id }}.pid
+          sleep 10
+          node ../../scripts/verify-site-visitor-e2e.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
+          kill $(cat /tmp/next-e2e-${{ matrix.site_id }}.pid) 2>/dev/null || true
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}

@@ -98,17 +98,22 @@ npm install
 npm run build
 cd ../..
 node scripts/verify-site-quality.mjs <vertical-id>
-# 访客冒烟测试（模拟未登录用户）
+# L1 访客 HTTP 冒烟
 npx next start -p 3099 &   # 在 sites/<id> 目录
 sleep 8
 node scripts/verify-site-visitor.mjs http://127.0.0.1:3099 <vertical-id>
+# L2 Playwright 真实浏览器 E2E（CI 自动跑）
+npm run verify-visitor-e2e -- http://127.0.0.1:3099 <vertical-id>
 ```
 
-**两道闸门都必须通过**：
+**三道闸门都必须通过**：
 1. `verify-site-quality.mjs` — i18n / UI / API 规范
-2. `verify-site-visitor.mjs` — 访客能打开首页、定价页、试用 API 等核心路径
+2. `verify-site-visitor.mjs` — HTTP 冒烟（路由 2xx、trial API）
+3. `verify-site-visitor-e2e.mjs` — **Playwright 无头浏览器**，验证 DOM 渲染与可见文案
 
-CI 部署前同样执行；**访客测试失败则禁止上线公网**。
+详见 `docs/VISITOR-TESTING.md`。CI 部署前同样执行；**任一失败则禁止上线公网**。
+
+全站 PV/UV/SEO/转化看板：`sites/factory-dashboard`（见 `docs/FACTORY-DASHBOARD.md`）。新站部署后运行 `node scripts/sync-analytics-beacon.mjs <id>` 接入埋点。
 
 ## 4. 部署公网
 
