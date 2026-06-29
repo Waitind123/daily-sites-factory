@@ -159,6 +159,16 @@ const SITE_REGISTRY = {
       { href: "/visas", label: { en: "Policies", zh: "政策" } },
     ],
   },
+  "saas-早期用户市场": {
+    emoji: "🧪",
+    name: { en: "Beta Match", zh: "早期用户市场" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/find-first-10-beta-users-saas",
+    nav: [
+      { href: "/guide/find-first-10-beta-users-saas", label: { en: "Guide", zh: "指南" } },
+      { href: "/listings", label: { en: "Listings", zh: "招募" } },
+    ],
+  },
   "indie-tools": {
     emoji: "🧰",
     name: { en: "Indie Tools", zh: "独立开发者工具箱" },
