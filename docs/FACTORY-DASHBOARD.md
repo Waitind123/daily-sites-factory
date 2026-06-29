@@ -30,9 +30,9 @@ Vercel 环境变量：
 | `GITHUB_REPO` | `Waitind123/daily-sites-factory` |
 | `ANALYTICS_ADMIN_TOKEN` | 可选，保护 `/api/seo-scan` |
 
-看板首页（jsDelivr，稳定可用）：
+看板首页（GitHub Pages）：
 
-**https://cdn.jsdelivr.net/gh/Waitind123/daily-sites-factory@main/dashboard-public/index.html**
+**https://waitind123.github.io/daily-sites-factory/**
 
 埋点 API（Vercel，需单独部署）：`https://daily-sites-analytics.vercel.app`
 

@@ -1,4 +1,4 @@
-name: 更新静态看板（jsDelivr）
+name: 更新静态看板
 
 on:
   push:
@@ -12,15 +12,20 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: dashboard-static
   cancel-in-progress: false
 
 jobs:
-  build-commit:
+  deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -33,26 +38,30 @@ jobs:
           node scripts/extract-site-urls.mjs || true
           node scripts/sync-dashboard-data.mjs || true
           node scripts/build-static-dashboard.mjs
+          touch dashboard-public/.nojekyll
 
-      - name: Commit dashboard HTML
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard-public/index.html
-          git diff --staged --quiet && echo "看板无变化" && exit 0
-          git commit -m "chore: update static dashboard [skip ci]"
-          git push
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard-public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Feishu notify
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
           if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
-          URL="https://cdn.jsdelivr.net/gh/Waitind123/daily-sites-factory@main/dashboard-public/index.html"
+          URL="${{ steps.deployment.outputs.page_url }}"
           node -e "
             fetch(process.env.FEISHU_WEBHOOK_URL,{
               method:'POST',
               headers:{'Content-Type':'application/json'},
-              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已更新\\n'+process.argv[1]+'\\n请收藏此地址'}})
+              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已上线\\n'+process.argv[1]+'\\n请收藏此地址'}})
             }).catch(()=>{});
           " "$URL"
