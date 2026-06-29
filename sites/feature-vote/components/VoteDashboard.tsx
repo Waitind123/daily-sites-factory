@@ -81,6 +81,8 @@ export function VoteDashboard({ locale }: { locale: Locale }) {
   const showTrialLow =
     trial && !trial.isMember && trial.remaining > 0 && trial.remaining <= 2;
 
+  const showStickyBar = trial && !trial.isMember;
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-12">
       {showTrialLow && (
@@ -222,6 +224,22 @@ export function VoteDashboard({ locale }: { locale: Locale }) {
           ))}
         </div>
       </div>
+
+      {showStickyBar && (
+        <div className="fixed bottom-0 inset-x-0 z-40 border-t border-border bg-surface/95 backdrop-blur px-4 py-3 sm:hidden">
+          <div className="flex items-center justify-between gap-3 max-w-4xl mx-auto">
+            <p className="text-xs text-muted">
+              {t.stickyRemaining.replace("{remaining}", String(trial.remaining))}
+            </p>
+            <Link
+              href="/join"
+              className="shrink-0 rounded-lg bg-brand-600 px-4 py-2 text-xs font-semibold text-white hover:bg-brand-700"
+            >
+              {t.stickyCta}
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

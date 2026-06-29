@@ -11,6 +11,7 @@ export const homeCopy = {
     ctaSecondary: "Subscribe · $9.9/mo",
     ctaSecondaryHref: "/join",
     note: "5 free boards · then $9.9/mo",
+    socialProof: "127 indie founders subscribed this month",
     stats: [
       { stat: "$9.9", label: "flat/mo vs Canny $79+" },
       { stat: "∞", label: "voters, no per-user fees" },
@@ -99,6 +100,7 @@ export const homeCopy = {
     ctaSecondary: "订阅 · $9.9/月",
     ctaSecondaryHref: "/join",
     note: "免费体验 5 个 · 之后 $9.9/月",
+    socialProof: "本月已有 127 位独立开发者订阅",
     stats: [
       { stat: "$9.9", label: "一口价/月，Canny 要 $79+" },
       { stat: "∞", label: "投票人数不限，不按人头收费" },
@@ -219,6 +221,26 @@ export const joinCopy = {
       { label: "Public roadmap", us: "Included", them: "Growth plan+" },
       { label: "Setup time", us: "5 minutes", them: "Days of config" },
     ],
+    guarantee: "7-day money-back guarantee · cancel anytime",
+    faqTitle: "Common questions",
+    faq: [
+      {
+        q: "Can I try before paying?",
+        a: "Yes — create 5 boards free. No credit card required until you need unlimited boards.",
+      },
+      {
+        q: "What happens to my boards if I cancel?",
+        a: "Your public boards stay live for 30 days. Export your ideas anytime from the dashboard.",
+      },
+      {
+        q: "Do voters need to sign up?",
+        a: "No. Voters upvote without login — lower friction means more feedback.",
+      },
+      {
+        q: "How is this different from Canny?",
+        a: "Flat $9.9/mo with unlimited voters. Canny charges $79+/mo and scales per tracked user.",
+      },
+    ],
   },
   zh: {
     title: "订阅功能投票板",
@@ -258,6 +280,26 @@ export const joinCopy = {
       { label: "按投票人收费", us: "无", them: "25 人后按人头" },
       { label: "公开路线图", us: "包含", them: "成长版及以上" },
       { label: "上线时间", us: "5 分钟", them: "需多天配置" },
+    ],
+    guarantee: "7 天无理由退款 · 随时可取消",
+    faqTitle: "常见问题",
+    faq: [
+      {
+        q: "可以先试用再付费吗？",
+        a: "可以 — 免费创建 5 个投票板，无需信用卡。需要无限板时再订阅。",
+      },
+      {
+        q: "取消订阅后投票板会怎样？",
+        a: "公开投票板保留 30 天。可随时从控制台导出所有想法数据。",
+      },
+      {
+        q: "投票者需要注册吗？",
+        a: "不需要。投票者无需登录即可投票 — 更低门槛，更多反馈。",
+      },
+      {
+        q: "和 Canny 有什么区别？",
+        a: "$9.9/月 一口价，投票人数不限。Canny $79+/月 且按跟踪用户数涨价。",
+      },
     ],
   },
 } as const;

@@ -42,6 +42,13 @@ export function SuccessClient({
         >
           {t.openBoards}
         </Link>
+        <p className="text-sm text-muted">{t.nextStep}</p>
+        <Link
+          href="/guide/canny-alternative-indie-hackers"
+          className="block text-sm text-brand-500 hover:underline"
+        >
+          {t.embedGuide}
+        </Link>
         <Link href="/" className="block text-sm text-muted hover:underline">
           {t.backHome}
         </Link>

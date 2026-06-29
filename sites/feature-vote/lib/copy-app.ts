@@ -53,6 +53,8 @@ export const boardsCopy = {
     openBoard: "Open board →",
     yourBoards: "Your boards",
     exampleTitle: "Example ideas on a board",
+    stickyCta: "Upgrade · $9.9/mo unlimited boards",
+    stickyRemaining: "{remaining} free boards left",
   },
   zh: {
     title: "反馈投票板",
@@ -77,6 +79,8 @@ export const boardsCopy = {
     openBoard: "打开投票板 →",
     yourBoards: "你的投票板",
     exampleTitle: "投票板上的示例想法",
+    stickyCta: "升级 · $9.9/月 无限投票板",
+    stickyRemaining: "剩余 {remaining} 个免费板",
   },
 } as const;
 
@@ -112,6 +116,8 @@ export const successCopy = {
     order: "Order:",
     openBoards: "Open boards",
     backHome: "Back to home",
+    nextStep: "Pro tip: embed the widget on your docs page to collect 3× more feedback.",
+    embedGuide: "View embed guide →",
   },
   zh: {
     title: "欢迎使用功能投票板！",
@@ -121,6 +127,8 @@ export const successCopy = {
     order: "订单号：",
     openBoards: "打开投票板",
     backHome: "返回首页",
+    nextStep: "小贴士：把嵌入组件放到文档页，可收集 3 倍反馈。",
+    embedGuide: "查看嵌入指南 →",
   },
 } as const;
 

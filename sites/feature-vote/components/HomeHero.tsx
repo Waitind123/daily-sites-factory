@@ -33,6 +33,9 @@ export async function HomeHero() {
           </Link>
         </div>
         {c.note && <p className="mt-4 text-sm text-muted">{c.note}</p>}
+        {"socialProof" in c && c.socialProof && (
+          <p className="mt-3 text-sm font-medium text-brand-500">{c.socialProof}</p>
+        )}
       </div>
     </section>
   );
