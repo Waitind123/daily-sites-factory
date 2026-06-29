@@ -29,21 +29,44 @@ jobs:
           if [ -n "${{ github.event.inputs.site_id }}" ]; then
             SITES='["${{ github.event.inputs.site_id }}"]'
           else
-            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | sed 's/^"\|"$//g' | grep '^sites/' | cut -d/ -f2 | sort -u)
-            if [ -z "$CHANGED" ]; then
-              CHANGED=$(git show --name-only --pretty=format: HEAD | sed 's/^"\|"$//g' | grep '^sites/' | cut -d/ -f2 | sort -u)
+            MSG=$(git log -1 --pretty=%B)
+            if echo "$MSG" | grep -qi '\[skip deploy\]'; then
+              echo "Commit marked [skip deploy], skipping" >&2
+              echo "sites=[]" >> $GITHUB_OUTPUT
+              exit 0
             fi
-            if [ -z "$CHANGED" ]; then
-              echo "No sites to deploy" >&2
-              exit 1
+            CHANGED_SITES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
+            if [ -z "$CHANGED_SITES" ]; then
+              CHANGED_SITES=$(git show --name-only --pretty=format: HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
             fi
-            SITES=$(echo "$CHANGED" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+            DEPLOY=""
+            for site in $CHANGED_SITES; do
+              FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep "^sites/$site/" || true)
+              if [ -z "$FILES" ]; then
+                FILES=$(git show --name-only --pretty=format: HEAD | grep "^sites/$site/" || true)
+              fi
+              SIG=$(echo "$FILES" | grep -vE 'lib/(analytics-client|dashboard-url|analytics-api-url)\.ts$' | grep -v '^$' || true)
+              if [ "$site" = "factory-dashboard" ]; then
+                SIG=$(echo "$FILES" | grep -vE 'lib/(analytics-client|dashboard-url|analytics-api-url)\.ts$' | grep -v '^data/' | grep -v '^$' || true)
+              fi
+              if [ -n "$SIG" ]; then
+                DEPLOY="$DEPLOY $site"
+              fi
+            done
+            DEPLOY=$(echo "$DEPLOY" | xargs)
+            if [ -z "$DEPLOY" ]; then
+              echo "Only analytics/dashboard config changed — skip Vercel deploy" >&2
+              echo "sites=[]" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+            SITES=$(echo "$DEPLOY" | tr ' ' '\n' | jq -R -s -c 'split("\n") | map(select(length > 0))')
           fi
           echo "sites=$SITES" >> $GITHUB_OUTPUT
           echo "Deploying: $SITES"
 
   deploy:
     needs: resolve
+    if: needs.resolve.outputs.sites != '[]' && needs.resolve.outputs.sites != ''
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -96,6 +119,9 @@ jobs:
           node ../../scripts/verify-site-visitor-e2e.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
           kill $(cat /tmp/next-e2e-${{ matrix.site_id }}.pid) 2>/dev/null || true
 
+      - name: Vercel deploy guard (daily limit)
+        run: node ../../scripts/vercel-deploy-guard.mjs
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
@@ -108,7 +134,16 @@ jobs:
             exit 1
           fi
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
-          DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
+          LOG=/tmp/vercel-${{ matrix.site_id }}.log
+          if ! npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee "$LOG"; then
+            if grep -q 'api-deployments-free-per-day' "$LOG"; then
+              node ../../scripts/vercel-deploy-guard.mjs || true
+              echo "Vercel daily limit reached — skip, retry tomorrow" >&2
+              exit 0
+            fi
+            exit 1
+          fi
+          DEPLOY_URL=$(grep -oE 'https://[^ ]+\.vercel\.app' "$LOG" | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
 

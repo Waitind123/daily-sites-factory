@@ -40,7 +40,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add analytics/rollup.json scripts/sites-deploy-urls.json sites/factory-dashboard/data/ dashboard-public/index.html || true
-          git diff --staged --quiet || git commit -m "chore: daily SEO scan + analytics rollup [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: daily SEO scan + analytics rollup [skip ci] [skip deploy]"
           git push || true
 
       - name: Feishu summary
@@ -53,5 +53,5 @@ jobs:
             const r=require('./analytics/rollup.json');
             const sites=Object.entries(r.sites||{});
             const avg=sites.length?Math.round(sites.reduce((a,[,s])=>a+(s.seo?.score||0),0)/sites.length):0;
-            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({msg_type:'text',content:{text:'📊 SEO 全自动日报\\n均分: '+avg+'/100 · '+sites.length+' 站\\nIndexNow 已提交\\n看板: https://cdn.jsdelivr.net/gh/Waitind123/daily-sites-factory@main/dashboard-public/index.html'}})}).catch(()=>{});
+            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({msg_type:'text',content:{text:'📊 SEO 全自动日报\\n均分: '+avg+'/100 · '+sites.length+' 站\\nIndexNow 已提交\\n看板: https://waitind123.github.io/daily-sites-factory/'}})}).catch(()=>{});
           "
