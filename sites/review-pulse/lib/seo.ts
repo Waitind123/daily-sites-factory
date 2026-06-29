@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://review-pulse.vercel.app",
+    url: "https://review-pulse-two.vercel.app",
     name: "Review Pulse",
     title: "Review Pulse — SMS Google review requests for local business, $19/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://review-pulse.vercel.app",
+    url: "https://review-pulse-two.vercel.app",
     name: "Google 评价自动索取",
     title: "Google 评价自动索取 — 本地商家短信评价工具，$19/月",
     description:
