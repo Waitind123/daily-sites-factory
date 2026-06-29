@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "定价页转化诊断",
+  id: "price-lens",
   emoji: "📈",
   name: {
     en: "PriceLens",

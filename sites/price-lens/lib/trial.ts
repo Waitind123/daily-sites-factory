@@ -1,4 +1,4 @@
-export const SITE_ID = "定价页转化诊断";
+export const SITE_ID = "price-lens";
 export {
   FREE_TRIAL_LIMIT,
   getTrialStatus,
