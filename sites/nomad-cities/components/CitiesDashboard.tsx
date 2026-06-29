@@ -37,19 +37,19 @@ function CityDetailCard({ city, locale }: { city: LocalizedCity; locale: Locale 
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div className="rounded-xl border border-border bg-background p-3">
-          <p className="text-xs text-muted">{t.mrr}</p>
+          <p className="text-xs text-muted">{t.costLabel}</p>
           <p className="font-bold text-foreground">{city.costLabel}</p>
         </div>
         <div className="rounded-xl border border-border bg-background p-3">
-          <p className="text-xs text-muted">{t.arr}</p>
+          <p className="text-xs text-muted">{t.internetLabel}</p>
           <p className="font-bold text-foreground">{city.internet} Mbps</p>
         </div>
         <div className="rounded-xl border border-border bg-background p-3">
-          <p className="text-xs text-muted">{t.churn}</p>
+          <p className="text-xs text-muted">{t.safetyLabel}</p>
           <p className="font-bold text-foreground">{city.safety}</p>
         </div>
         <div className="rounded-xl border border-border bg-background p-3">
-          <p className="text-xs text-muted">{t.churned}</p>
+          <p className="text-xs text-muted">{t.visaLabel}</p>
           <p className="font-bold text-foreground text-sm">{city.visa}</p>
         </div>
       </div>
