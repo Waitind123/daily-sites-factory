@@ -8,7 +8,9 @@ export async function POST(request: NextRequest) {
   try {
     const origin = request.headers.get("origin") || request.nextUrl.origin;
     const locale = await getLocale();
-    const result = await createCheckoutSession(origin, locale);
+    const formData = await request.formData().catch(() => null);
+    const plan = formData?.get("plan") === "annual" ? "annual" : "monthly";
+    const result = await createCheckoutSession(origin, locale, plan);
 
     const response = NextResponse.redirect(result.url);
     if (result.demo) {

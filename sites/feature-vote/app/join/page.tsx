@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { getJoinCopy, getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
@@ -10,47 +11,70 @@ export default async function JoinPage() {
   const demo = isDemoMode();
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-20">
+    <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-20">
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold text-foreground sm:text-4xl">{c.title}</h1>
         <p className="mt-3 text-muted">{c.subtitle}</p>
+        <p className="mt-2 text-sm text-brand-500">{c.socialProof}</p>
       </div>
 
-      <div className="rounded-2xl border-2 border-brand-600 bg-surface p-8 shadow-lg relative overflow-hidden">
-        <div className="absolute top-0 right-0 bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-xl">
-          {c.recommended}
-        </div>
-
-        <div className="text-center">
-          <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
-          <div className="flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-bold text-foreground">$9.9</span>
+      <div className="grid sm:grid-cols-2 gap-6">
+        <div className="rounded-2xl border border-border bg-surface p-8 shadow-sm">
+          <p className="text-sm font-medium text-muted mb-2">{c.monthly}</p>
+          <div className="flex items-baseline gap-1">
+            <span className="text-4xl font-bold text-foreground">{c.monthlyPrice}</span>
             <span className="text-muted">{c.perMonth}</span>
           </div>
           <p className="mt-2 text-sm text-muted">{c.vsCanny}</p>
+
+          <ul className="mt-6 space-y-2.5 text-sm">
+            {c.perks.slice(0, 4).map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="text-brand-500 mt-0.5">✓</span>
+                <span className="text-foreground">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <CheckoutButton label={c.subscribe} plan="monthly" />
+          </div>
         </div>
 
-        <ul className="mt-8 space-y-3 text-sm">
-          {c.perks.map((item) => (
-            <li key={item} className="flex items-start gap-2">
-              <span className="text-brand-500 mt-0.5">✓</span>
-              <span className="text-foreground">{item}</span>
-            </li>
-          ))}
-        </ul>
+        <div className="rounded-2xl border-2 border-brand-600 bg-surface p-8 shadow-lg relative overflow-hidden">
+          <div className="absolute top-0 right-0 bg-brand-600 text-white text-xs font-semibold px-4 py-1 rounded-bl-xl">
+            {c.recommended}
+          </div>
 
-        <div className="mt-8">
-          <CheckoutButton label={c.subscribe} />
+          <p className="text-sm font-medium text-brand-500 mb-2">{c.annual}</p>
+          <div className="flex items-baseline gap-1">
+            <span className="text-4xl font-bold text-foreground">{c.annualPrice}</span>
+            <span className="text-muted">{c.perYear}</span>
+          </div>
+          <p className="mt-2 text-sm text-emerald-500 font-medium">{c.saveAnnual}</p>
+
+          <ul className="mt-6 space-y-2.5 text-sm">
+            {c.perks.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="text-brand-500 mt-0.5">✓</span>
+                <span className="text-foreground">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8">
+            <CheckoutButton label={c.subscribeAnnual} plan="annual" />
+          </div>
         </div>
-
-        {demo && (
-          <p className="mt-4 text-center text-xs text-amber-600 bg-amber-50 rounded-lg py-2 px-3">
-            {c.demoNote}
-          </p>
-        )}
-
-        <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
       </div>
+
+      {demo && (
+        <p className="mt-6 text-center text-xs text-amber-600 bg-amber-500/10 border border-amber-500/30 rounded-lg py-2 px-3">
+          {c.demoNote}
+        </p>
+      )}
+
+      <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
 
       <div className="mt-8 rounded-xl border border-border bg-background overflow-hidden">
         <h3 className="font-semibold text-foreground px-6 pt-6 pb-3">{c.compareTitle}</h3>
@@ -72,6 +96,12 @@ export default async function JoinPage() {
             <li key={item}>· {item}</li>
           ))}
         </ul>
+      </div>
+
+      <div className="mt-8 text-center">
+        <Link href="/boards" className="text-sm text-brand-500 hover:underline">
+          {locale === "zh" ? "← 返回创建投票板" : "← Back to create a board"}
+        </Link>
       </div>
 
       <div className="mt-12">

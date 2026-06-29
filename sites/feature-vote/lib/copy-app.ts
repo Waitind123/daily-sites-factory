@@ -38,6 +38,9 @@ export const boardsCopy = {
     paywallBody:
       "You've created 5 boards. Subscribe for unlimited boards, embed widgets, and voter notifications.",
     paywallCta: "Subscribe · $9.9/mo",
+    trialLowTitle: "Only {remaining} free boards left",
+    trialLowBody: "Subscribe now for unlimited boards — most founders upgrade after board #3.",
+    trialLowCta: "View pricing",
     formTitle: "New feedback board",
     boardName: "Board name",
     boardNamePlaceholder: "e.g. My SaaS Feedback",
@@ -59,6 +62,9 @@ export const boardsCopy = {
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个投票板。订阅后可无限创建、嵌入组件并通知投票者。",
     paywallCta: "订阅 · $9.9/月",
+    trialLowTitle: "仅剩 {remaining} 个免费投票板",
+    trialLowBody: "立即订阅解锁无限投票板 — 多数创始人在第 3 个板后升级。",
+    trialLowCta: "查看定价",
     formTitle: "新建反馈投票板",
     boardName: "投票板名称",
     boardNamePlaceholder: "例如：我的 SaaS 反馈",
@@ -151,10 +157,14 @@ export const stripeProductCopy = {
   en: {
     name: "Feature Vote · Monthly",
     description: "Unlimited boards, voters & ideas. Public roadmap & embed widget.",
+    annualName: "Feature Vote · Annual",
+    annualDescription: "Unlimited boards for 12 months. Save vs monthly billing.",
   },
   zh: {
     name: "功能投票板 · 月付",
     description: "无限投票板、投票者与想法。公开路线图与可嵌入组件。",
+    annualName: "功能投票板 · 年付",
+    annualDescription: "12 个月无限投票板，比月付更省。",
   },
 } as const;
 
