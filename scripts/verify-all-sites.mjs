@@ -12,6 +12,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { spawn, execSync } from "child_process";
+import { recordLocalEvent } from "./lib/rollup-local.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sitesDir = join(root, "sites");
@@ -100,6 +101,14 @@ async function main() {
       }
 
       results.pass.push(siteId);
+      if (baseUrl) {
+        recordLocalEvent({
+          siteId,
+          type: "pageview",
+          visitorId: local ? "ci-local-smoke" : "ci-prod-smoke",
+          url: baseUrl,
+        });
+      }
       console.log("✓");
     } catch (err) {
       const msg = err.stderr?.toString() || err.stdout?.toString() || err.message || String(err);

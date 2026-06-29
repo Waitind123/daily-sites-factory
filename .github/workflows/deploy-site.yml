@@ -125,6 +125,22 @@ jobs:
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
         run: node scripts/vercel-deploy-guard.mjs
 
+      - name: Sync GITHUB_TOKEN on Vercel (intercom-pulse analytics)
+        if: matrix.site_id == 'intercom-pulse'
+        working-directory: sites/intercom-pulse
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT }}
+        run: |
+          if [ -z "$ANALYTICS_PAT" ] || [ -z "$VERCEL_TOKEN" ]; then
+            echo "ANALYTICS_GITHUB_PAT 未配置，跳过（请在 GitHub Secrets 添加 repo 权限 PAT）"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$ANALYTICS_PAT" | npx vercel env add GITHUB_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "Waitind123/daily-sites-factory" | npx vercel env add GITHUB_REPO production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
