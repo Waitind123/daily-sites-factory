@@ -1,8 +1,9 @@
 {
-  "lastIndex": 22,
-  "lastVerticalId": "feature-vote",
-  "lastDeployedUrl": "https://feature-vote-ten.vercel.app",
-  "lastDeployedAt": "2026-06-29T01:09:22.000Z",
+  "lastIndex": 53,
+  "lastVerticalId": "alt-stack",
+  "lastDeployedUrl": "https://alt-stack.vercel.app",
+  "lastDeployedAt": "2026-06-29T02:26:03.000Z",
+  "deployNote": "CI passed; Vercel deploy blocked by api-deployments-free-per-day (100/day limit). Retry in 24h.",
   "revenueGoal": {
     "targetUsd": 20,
     "deadline": "2026-07-13",
@@ -10,6 +11,12 @@
     "stripeReadyBy": "2026-06-28"
   },
   "history": [
+    {
+      "verticalId": "alt-stack",
+      "name": "SaaS替代品目录",
+      "url": "https://alt-stack.vercel.app",
+      "deployedAt": "2026-06-29T02:26:03.000Z"
+    },
     {
       "verticalId": "feature-vote",
       "name": "功能投票板",
@@ -183,12 +190,6 @@
       "name": "线下 Meetup 组织",
       "url": "https://meetup-host.vercel.app",
       "deployedAt": "2026-06-28T23:08:13.000Z"
-    },
-    {
-      "verticalId": "intercom-pulse",
-      "name": "Intercom 替代品",
-      "url": "https://intercom-pulse.vercel.app",
-      "deployedAt": "2026-06-29T00:08:45.000Z"
     }
   ]
 }
