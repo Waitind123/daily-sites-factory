@@ -1,0 +1,52 @@
+name: SEO 全自动（每日）
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  seo-auto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Extract site URLs
+        run: node scripts/extract-site-urls.mjs
+
+      - name: Smoke test all production sites
+        run: node scripts/verify-all-sites.mjs || true
+
+      - name: SEO scan all sites
+        run: node scripts/seo-scan-all.mjs
+
+      - name: Submit IndexNow (Bing/Yandex)
+        run: node scripts/submit-indexnow.mjs
+
+      - name: Commit analytics rollup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/rollup.json scripts/sites-deploy-urls.json || true
+          git diff --staged --quiet || git commit -m "chore: daily SEO scan + analytics rollup [skip ci]"
+          git push || true
+
+      - name: Feishu summary
+        if: always()
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
+          node -e "
+            const r=require('./analytics/rollup.json');
+            const sites=Object.entries(r.sites||{});
+            const avg=sites.length?Math.round(sites.reduce((a,[,s])=>a+(s.seo?.score||0),0)/sites.length):0;
+            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({msg_type:'text',content:{text:'📊 SEO 全自动日报\\n均分: '+avg+'/100 · '+sites.length+' 站\\nIndexNow 已提交\\n看板: https://factory-dashboard.vercel.app'}})}).catch(()=>{});
+          "
