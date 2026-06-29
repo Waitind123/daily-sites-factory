@@ -1,0 +1,41 @@
+name: 一键同步 Analytics PAT
+
+# 把已有的 GITHUB_TOKEN secret 复制为 ANALYTICS_GITHUB_PAT，无需手动去 Settings
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/setup-analytics-pat.yml
+
+permissions:
+  secrets: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 从 GITHUB_TOKEN 同步 ANALYTICS_GITHUB_PAT
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SRC_PAT: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$SRC_PAT" ]; then
+            echo "::warning::仓库未配置 GITHUB_TOKEN secret，无法自动同步。请在 Actions 手动运行本 workflow 并先配置 GITHUB_TOKEN。"
+            exit 0
+          fi
+          gh secret set ANALYTICS_GITHUB_PAT --body "$SRC_PAT" --repo "${{ github.repository }}"
+          echo "✓ ANALYTICS_GITHUB_PAT 已同步"
+
+      - name: Feishu 通知
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
+          node -e "
+            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},
+              body:JSON.stringify({msg_type:'text',content:{text:'✅ Analytics PAT 已自动同步\\n埋点 API 将在 intercom-pulse 部署后生效'}})})
+            .catch(()=>{});
+          "

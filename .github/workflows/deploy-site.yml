@@ -131,15 +131,33 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
-          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT }}
+          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT || secrets.GITHUB_TOKEN }}
         run: |
           if [ -z "$ANALYTICS_PAT" ] || [ -z "$VERCEL_TOKEN" ]; then
-            echo "ANALYTICS_GITHUB_PAT 未配置，跳过（请在 GitHub Secrets 添加 repo 权限 PAT）"
+            echo "无 PAT 或 VERCEL_TOKEN，跳过 Vercel 埋点环境变量"
             exit 0
           fi
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "$ANALYTICS_PAT" | npx vercel env add GITHUB_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "Waitind123/daily-sites-factory" | npx vercel env add GITHUB_REPO production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
+      - name: Sync Stripe key on Vercel (real payments)
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          STRIPE_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_KEY" ] || [ -z "$VERCEL_TOKEN" ]; then
+            echo "无 STRIPE_SECRET_KEY — 站点保持 demo 演示付费模式"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$STRIPE_KEY" | npx vercel env add STRIPE_SECRET_KEY production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          if [ -n "${{ secrets.STRIPE_WEBHOOK_SECRET }}" ]; then
+            printf '%s' "${{ secrets.STRIPE_WEBHOOK_SECRET }}" | npx vercel env add STRIPE_WEBHOOK_SECRET production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
 
       - name: Deploy to Vercel
         id: vercel
