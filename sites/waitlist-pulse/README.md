@@ -4,4 +4,6 @@
 
 - 免费体验 5 个等候名单
 - 推荐裂变 + 实时报名计数
-- Prefinery 平替
+- Prefinery 平替（$99/月 → $9.9/月）
+
+公网部署由 GitHub Actions `deploy-site.yml` 自动完成。
