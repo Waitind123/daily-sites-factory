@@ -24,6 +24,9 @@ jobs:
       - name: Smoke test all production sites
         run: node scripts/verify-all-sites.mjs || true
 
+      - name: Bootstrap PV from production probes
+        run: node scripts/bootstrap-pv-from-prod.mjs || true
+
       - name: SEO scan all sites
         run: node scripts/seo-scan-all.mjs
 

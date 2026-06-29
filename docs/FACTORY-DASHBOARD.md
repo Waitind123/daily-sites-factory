@@ -34,7 +34,7 @@ Vercel 环境变量：
 
 **https://intercom-pulse.vercel.app/factory-dashboard/**
 
-埋点 API（Vercel，需单独部署）：`https://daily-sites-analytics.vercel.app`
+埋点 API（Vercel，需单独部署）：`https://intercom-pulse.vercel.app/api/collect`
 
 ## 各站点埋点
 

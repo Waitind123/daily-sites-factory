@@ -1,2 +1,2 @@
-/** 埋点上报 API（Vercel Next.js），与静态看板展示地址分离 */
-export const ANALYTICS_API_URL = "https://daily-sites-analytics.vercel.app";
+/** 埋点上报 API — 挂在已部署的 intercom-pulse */
+export const ANALYTICS_API_URL = "https://intercom-pulse.vercel.app";
