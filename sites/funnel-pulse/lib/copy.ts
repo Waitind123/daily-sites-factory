@@ -91,10 +91,10 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Mixpanel $500/月？· $9.9/月一口价",
+    badge: "Mixpanel $500/月？ · $9.9/月一口价",
     title: "Funnel Pulse — 独立开发者漏斗分析",
     subtitle:
-      "看清用户在哪一步流失、修复最大漏洞、提升 MRR。无需企业级接入流程。免费体验 5 个漏斗，之后 $9.9/月。",
+      "看清用户在哪一步流失，修复最大漏洞，提升 MRR。无需企业级接入。免费体验 5 个漏斗，之后 $9.9/月。",
     ctaPrimary: "免费创建漏斗",
     ctaPrimaryHref: "/funnels",
     ctaSecondary: "订阅 · $9.9/月",
