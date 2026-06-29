@@ -23,9 +23,12 @@ export function buildSiteMetadata(
       template: `%s · ${name}`,
     },
     description,
-    keywords,
-    authors: [{ name }],
+    keywords: keywords.join(", "),
+    authors: [{ name, url }],
     creator: name,
+    publisher: name,
+    applicationName: name,
+    category: "technology",
     openGraph: {
       type: "website",
       locale,
@@ -54,6 +57,25 @@ export function buildSiteMetadata(
       },
     },
     ...overrides,
+  };
+}
+
+/** JSON-LD WebApplication — 各站 lib/seo.ts 可 re-export */
+export function buildWebApplicationJsonLd(config: {
+  url: string;
+  name: string;
+  description: string;
+  locale?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: config.name,
+    description: config.description,
+    url: config.url,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: config.locale === "zh_CN" ? "zh-CN" : "en",
   };
 }
 

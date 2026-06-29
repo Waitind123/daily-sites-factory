@@ -7,6 +7,7 @@ export type SiteSeoConfig = {
   description: string;
   keywords: string[];
   locale?: string;
+  twitterHandle?: string;
 };
 
 export function buildSiteMetadata(
@@ -17,11 +18,17 @@ export function buildSiteMetadata(
 
   return {
     metadataBase: new URL(url),
-    title: { default: title, template: `%s · ${name}` },
+    title: {
+      default: title,
+      template: `%s · ${name}`,
+    },
     description,
-    keywords,
-    authors: [{ name }],
+    keywords: keywords.join(", "),
+    authors: [{ name, url }],
     creator: name,
+    publisher: name,
+    applicationName: name,
+    category: "technology",
     openGraph: {
       type: "website",
       locale,
@@ -30,8 +37,14 @@ export function buildSiteMetadata(
       title,
       description,
     },
-    twitter: { card: "summary_large_image", title, description },
-    alternates: { canonical: url },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    alternates: {
+      canonical: url,
+    },
     robots: {
       index: true,
       follow: true,
@@ -44,6 +57,25 @@ export function buildSiteMetadata(
       },
     },
     ...overrides,
+  };
+}
+
+/** JSON-LD WebApplication — 各站 lib/seo.ts 可 re-export */
+export function buildWebApplicationJsonLd(config: {
+  url: string;
+  name: string;
+  description: string;
+  locale?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: config.name,
+    description: config.description,
+    url: config.url,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    inLanguage: config.locale === "zh_CN" ? "zh-CN" : "en",
   };
 }
 
