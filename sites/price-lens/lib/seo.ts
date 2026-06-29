@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://price-lens.vercel.app",
+    url: "https://price-lens-theta.vercel.app",
     name: "PriceLens",
     title: "PriceLens — Pricing page conversion audit for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://price-lens.vercel.app",
+    url: "https://price-lens-theta.vercel.app",
     name: "定价页转化诊断",
     title: "PriceLens — 定价页转化诊断，独立开发者 $9.9/月",
     description:
