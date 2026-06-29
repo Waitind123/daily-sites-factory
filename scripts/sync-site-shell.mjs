@@ -154,6 +154,16 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/tools", label: { en: "Tools", zh: "工具" } }],
   },
+  "alt-stack": {
+    emoji: "🔓",
+    name: { en: "Alt Stack", zh: "Alt Stack" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/open-source-saas-alternatives",
+    nav: [
+      { href: "/guide/open-source-saas-alternatives", label: { en: "Guide", zh: "指南" } },
+      { href: "/tools", label: { en: "Alternatives", zh: "替代品" } },
+    ],
+  },
   "meetup-host": {
     emoji: "📍",
     name: { en: "Meetup Host", zh: "线下 Meetup 组织" },
