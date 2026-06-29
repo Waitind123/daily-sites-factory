@@ -148,6 +148,17 @@ const SITE_REGISTRY = {
       { href: "/visas", label: { en: "Visas", zh: "签证" } },
     ],
   },
+  "visa-alert": {
+    emoji: "🔔",
+    name: { en: "Visa Alert", zh: "签证政策提醒" },
+    jsonLd: "webApplicationJsonLd",
+    guideHref: "/guide/nomad-visa-policy-change-alerts",
+    nav: [
+      { href: "/guide/nomad-visa-policy-change-alerts", label: { en: "Guide", zh: "指南" } },
+      { href: "/alerts", label: { en: "Alerts", zh: "告警" } },
+      { href: "/visas", label: { en: "Policies", zh: "政策" } },
+    ],
+  },
   "indie-tools": {
     emoji: "🧰",
     name: { en: "Indie Tools", zh: "独立开发者工具箱" },
