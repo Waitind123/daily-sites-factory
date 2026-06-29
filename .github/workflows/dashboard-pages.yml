@@ -12,9 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: dashboard-static
@@ -23,9 +21,6 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,29 +34,36 @@ jobs:
           node scripts/sync-dashboard-data.mjs || true
           node scripts/build-static-dashboard.mjs
           touch dashboard-public/.nojekyll
+          mkdir -p sites/intercom-pulse/public/factory-dashboard
+          cp dashboard-public/index.html sites/intercom-pulse/public/factory-dashboard/index.html
 
-      - uses: actions/configure-pages@v5
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          enablement: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard-public
+          publish_branch: gh-pages
+          force_orphan: true
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dashboard-public
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit intercom-pulse dashboard mirror
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sites/intercom-pulse/public/factory-dashboard/index.html
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: mirror factory dashboard to intercom-pulse public"
+          git push || true
 
       - name: Feishu notify
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
           if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
-          URL="${{ steps.deployment.outputs.page_url }}"
+          URL="https://intercom-pulse.vercel.app/factory-dashboard/"
           node -e "
             fetch(process.env.FEISHU_WEBHOOK_URL,{
               method:'POST',
               headers:{'Content-Type':'application/json'},
-              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已上线\\n'+process.argv[1]+'\\n请收藏此地址'}})
+              body:JSON.stringify({msg_type:'text',content:{text:'✅ 全站看板已更新\\n主地址: '+process.argv[1]+'\\n备用: https://waitind123.github.io/daily-sites-factory/'}})
             }).catch(()=>{});
           " "$URL"

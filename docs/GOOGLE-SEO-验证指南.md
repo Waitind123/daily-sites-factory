@@ -48,7 +48,7 @@ https://search.google.com/test/rich-results
 
 打开全站看板（部署后）：
 
-**https://waitind123.github.io/daily-sites-factory/**
+**https://intercom-pulse.vercel.app/factory-dashboard/**
 
 每个站点卡片上的 **SEO 分（0–100）** 来自自动扫描：
 - robots / sitemap 是否可访问

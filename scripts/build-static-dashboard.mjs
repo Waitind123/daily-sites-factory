@@ -142,4 +142,10 @@ const html = `<!DOCTYPE html>
 
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "index.html"), html);
+
+// 同步到已上线站点的 public 目录（下次部署 intercom-pulse 后可直接访问）
+const mirrorDir = join(root, "sites", "intercom-pulse", "public", "factory-dashboard");
+mkdirSync(mirrorDir, { recursive: true });
+writeFileSync(join(mirrorDir, "index.html"), html);
+
 console.log(`✓ 静态看板 → dashboard-public/index.html (${sites.length} 站)`);
