@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -25,6 +26,7 @@ export default async function RootLayout({
         <JsonLd data={softwareApplicationJsonLd()} />
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+        <AnalyticsBeacon siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
         <main>{children}</main>
         <FeedbackSection

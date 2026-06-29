@@ -1,17 +1,6 @@
 import { features, venues } from "@/lib/data";
 
-export function CheckoutButton({ className = "" }: { className?: string }) {
-  return (
-    <form action="/api/checkout" method="POST">
-      <button
-        type="submit"
-        className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
-      >
-        立即订阅 · $9.9/月
-      </button>
-    </form>
-  );
-}
+export { CheckoutButton } from "./CheckoutButton";
 
 export function FeatureGrid() {
   return (

@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n-shared";
 import { getSuccessCopy } from "@/lib/copy-app";
+import { trackFactoryEvent } from "@/lib/analytics-client";
+import { siteMeta } from "@/lib/site-meta";
 
 export function SuccessClient({
   locale,
@@ -18,6 +20,7 @@ export function SuccessClient({
 
   useEffect(() => {
     fetch("/api/member/activate", { method: "POST" });
+    trackFactoryEvent(siteMeta.id, "purchase");
   }, []);
 
   return (

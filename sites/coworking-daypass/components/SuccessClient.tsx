@@ -12,6 +12,7 @@ export function SuccessClient({
 }) {
   useEffect(() => {
     fetch("/api/member/activate", { method: "POST" });
+    trackFactoryEvent(siteMeta.id, "purchase");
   }, []);
 
   return (

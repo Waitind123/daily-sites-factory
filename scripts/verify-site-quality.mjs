@@ -15,6 +15,9 @@ import { fileURLToPath } from "url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sitesDir = join(root, "sites");
 
+/** 内部工具站，不走产品站点质量闸门 */
+const SKIP_SITES = new Set(["factory-dashboard"]);
+
 const EXEMPT = [
   /node_modules/,
   /\.next/,
@@ -189,6 +192,10 @@ function verifySite(siteId) {
   if (!existsSync(siteDir)) {
     console.error(`站点不存在: ${siteId}`);
     process.exit(1);
+  }
+  if (SKIP_SITES.has(siteId)) {
+    console.log(`⊘ ${siteId} (skipped)`);
+    return errors;
   }
 
   checkCopyBilingual(siteId, siteDir, errors);

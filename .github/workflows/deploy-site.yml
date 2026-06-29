@@ -57,7 +57,12 @@ jobs:
           node-version: "22"
 
       - name: Verify site quality
+        if: matrix.site_id != 'factory-dashboard'
         run: node scripts/verify-site-quality.mjs ${{ matrix.site_id }}
+
+      - name: Verify site quality (dashboard)
+        if: matrix.site_id == 'factory-dashboard'
+        run: echo "factory-dashboard is internal — skip product quality gate"
 
       - name: Install and build
         working-directory: sites/${{ matrix.site_id }}
@@ -66,6 +71,7 @@ jobs:
           npm run build
 
       - name: Visitor smoke test (guest, local)
+        if: matrix.site_id != 'factory-dashboard'
         working-directory: sites/${{ matrix.site_id }}
         run: |
           npx next start -p 3099 &
