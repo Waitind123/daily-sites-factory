@@ -26,7 +26,8 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ ok: true }, { headers: { "Access-Control-Allow-Origin": corsOrigin } });
-  } catch {
+  } catch (err) {
+    console.error("analytics collect failed:", err);
     return apiError("analytics_failed", 500);
   }
 }
