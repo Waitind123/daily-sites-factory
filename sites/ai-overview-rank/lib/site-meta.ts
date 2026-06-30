@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "ai-overview-排名追踪",
+  id: "ai-overview-rank",
   emoji: "🤖",
   name: {
     en: "AIO Rank",
