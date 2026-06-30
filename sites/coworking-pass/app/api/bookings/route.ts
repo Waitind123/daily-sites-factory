@@ -5,6 +5,10 @@ import { SITE_ID, consumeTrial, incrementTrial } from "@/lib/trial";
 import { isMember } from "@/lib/member";
 import { getSpaceById } from "@/lib/data";
 
+export async function GET() {
+  return NextResponse.json({ bookings: [] });
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = (await request.json()) as { spaceId?: string };
