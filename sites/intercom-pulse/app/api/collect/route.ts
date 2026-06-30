@@ -22,6 +22,12 @@ export async function POST(req: NextRequest) {
       path: body.path,
       visitorId: body.visitorId,
       referrer: body.referrer,
+      locale: body.locale,
+      device: body.device,
+      timezone: body.timezone,
+      utmSource: body.utmSource,
+      utmMedium: body.utmMedium,
+      utmCampaign: body.utmCampaign,
       ts: new Date().toISOString(),
     });
 

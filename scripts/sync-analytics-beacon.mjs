@@ -43,8 +43,10 @@ for (const id of targets) {
   }
 
   const layoutPath = join(siteDir, "app/layout.tsx");
-  if (existsSync(layoutPath)) {
-    let layout = readFileSync(layoutPath, "utf8");
+  const productLayoutPath = join(siteDir, "app/(product)/layout.tsx");
+  const beaconLayoutPath = existsSync(productLayoutPath) ? productLayoutPath : layoutPath;
+  if (existsSync(beaconLayoutPath)) {
+    let layout = readFileSync(beaconLayoutPath, "utf8");
     if (!layout.includes("AnalyticsBeacon")) {
       if (!layout.includes('from "@/components/AnalyticsBeacon"')) {
         layout = layout.replace(
@@ -52,11 +54,17 @@ for (const id of targets) {
           '$1import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";\n'
         );
       }
+      if (!layout.includes("siteMeta")) {
+        layout = layout.replace(
+          /(import[^\n]+\n)(?=import|const inter|export)/,
+          '$1import { siteMeta } from "@/lib/site-meta";\n'
+        );
+      }
       layout = layout.replace(
         /<body([^>]*)>/,
         '<body$1>\n        <AnalyticsBeacon siteId={siteMeta.id} />'
       );
-      writeFileSync(layoutPath, layout);
+      writeFileSync(beaconLayoutPath, layout);
       console.log(`  layout + beacon → ${id}`);
     }
   }

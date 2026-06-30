@@ -8,6 +8,8 @@ import type {
   RevenueGoalView,
 } from "@/lib/dashboard-metrics";
 import { SUBSCRIPTION_PRICE_USD, buildFunnel, getTodayMetrics } from "@/lib/dashboard-metrics";
+import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
+import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
 
 interface SiteEntry {
   id: string;
@@ -20,6 +22,7 @@ interface DashboardPayload {
   rollup: RollupFile;
   summary: DashboardSummary;
   revenueGoal: RevenueGoalView | null;
+  visitorInsights?: VisitorInsightsPayload;
 }
 
 function pct(n: number, d: number) {
@@ -298,6 +301,14 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
                 ))}
               </div>
             </section>
+
+            {data.visitorInsights ? (
+              <VisitorInsightsPanel
+                locale={_locale}
+                insights={data.visitorInsights}
+                sites={data.sites}
+              />
+            ) : null}
 
             <section>
               <SectionTitle title="SEO 健康" subtitle="决定自然流量能不能持续增长" />
