@@ -80,9 +80,11 @@ export function applyAudienceEvent(
   bumpMap(audience.timezones, (event.timezone || "unknown").slice(0, 40));
   if (event.utmSource) bumpMap(audience.utmSources, event.utmSource.slice(0, 40));
 
-  const hour = event.ts ? new Date(event.ts).getUTCHours() : new Date().getUTCHours();
-  const hourKey = `${String(hour).padStart(2, "0")}:00 UTC`;
-  bumpMap(audience.hours, hourKey, 24);
+  const date = event.ts ? new Date(event.ts) : new Date();
+  const hour = Number(
+    date.toLocaleString("en-US", { hour: "numeric", hour12: false, timeZone: "Asia/Shanghai" })
+  );
+  bumpMap(audience.hours, String(hour), 24);
 
   if (isReturning) audience.visitorTypes.returning += 1;
   else audience.visitorTypes.new += 1;

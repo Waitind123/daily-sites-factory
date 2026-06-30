@@ -1,5 +1,9 @@
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
 import type { SiteEntry } from "@/lib/dashboard-metrics";
+import { sumSitePeriod } from "@/lib/dashboard-metrics";
+import type { DateRange } from "@/lib/date-range";
+import { isDayInRange } from "@/lib/date-range";
+import { labelDevice, labelHour, labelLocale } from "@/lib/dashboard-labels";
 import {
   audienceToProfile,
   emptyAudience,
@@ -10,80 +14,57 @@ import {
 export type { VisitorProfileView };
 
 export interface VisitorInsightsPayload {
-  today: VisitorProfileView;
-  allTime: VisitorProfileView;
-  bySite: Record<string, { today: VisitorProfileView; allTime: VisitorProfileView }>;
+  profile: VisitorProfileView;
+  dateRange: DateRange;
+  siteId: string;
 }
 
-function todayKey() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function collectAudience(site: SiteRollup, dayFilter?: string) {
+function collectAudience(site: SiteRollup, range: DateRange) {
   const merged = emptyAudience();
   for (const [day, metrics] of Object.entries(site.daily)) {
-    if (dayFilter && day !== dayFilter) continue;
+    if (!isDayInRange(day, range)) continue;
     if (metrics.audience) mergeAudience(merged, metrics.audience);
   }
   return merged;
 }
 
-function totalsFor(site: SiteRollup, dayFilter?: string) {
-  if (!dayFilter) return site.totals;
-  const day = site.daily[dayFilter];
-  if (!day) return { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  return {
-    pv: day.pv,
-    uv: day.uv,
-    trial: day.trial,
-    checkout: day.checkout,
-    purchase: day.purchase,
-  };
-}
-
-function buildSiteProfiles(site: SiteRollup) {
-  const today = todayKey();
-  return {
-    today: audienceToProfile(collectAudience(site, today), totalsFor(site, today)),
-    allTime: audienceToProfile(collectAudience(site), site.totals),
-  };
-}
-
 export function buildVisitorInsights(
   sites: SiteEntry[],
-  rollup: RollupFile
+  rollup: RollupFile,
+  range: DateRange,
+  siteId = "all"
 ): VisitorInsightsPayload {
-  const today = todayKey();
-  const globalToday = emptyAudience();
-  const globalAll = emptyAudience();
-  const todayTotals = { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  const allTotals = { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
+  const merged = emptyAudience();
+  let totals = { pv: 0, trial: 0, checkout: 0, purchase: 0 };
 
-  const bySite: VisitorInsightsPayload["bySite"] = {};
+  const targets =
+    siteId === "all" ? sites : sites.filter((s) => s.id === siteId);
 
-  for (const site of sites) {
+  for (const site of targets) {
     const r = rollup.sites[site.id];
     if (!r) continue;
-    bySite[site.id] = buildSiteProfiles(r);
-
-    mergeAudience(globalToday, collectAudience(r, today));
-    mergeAudience(globalAll, collectAudience(r));
-    const t = totalsFor(r, today);
-    todayTotals.pv += t.pv;
-    todayTotals.uv += t.uv;
-    todayTotals.trial += t.trial;
-    todayTotals.checkout += t.checkout;
-    todayTotals.purchase += t.purchase;
-    allTotals.pv += r.totals.pv;
-    allTotals.uv += r.totals.uv;
-    allTotals.trial += r.totals.trial;
-    allTotals.checkout += r.totals.checkout;
-    allTotals.purchase += r.totals.purchase;
+    mergeAudience(merged, collectAudience(r, range));
+    const p = sumSitePeriod(r, range);
+    totals.pv += p.pv;
+    totals.trial += p.trial;
+    totals.checkout += p.checkout;
+    totals.purchase += p.purchase;
   }
 
+  const profile = localizeProfile(audienceToProfile(merged, totals));
+
+  return { profile, dateRange: range, siteId };
+}
+
+function localizeProfile(profile: VisitorProfileView): VisitorProfileView {
   return {
-    today: audienceToProfile(globalToday, todayTotals),
-    allTime: audienceToProfile(globalAll, allTotals),
-    bySite,
+    ...profile,
+    devices: profile.devices.map((r) => ({ ...r, label: labelDevice(r.label) })),
+    locales: profile.locales.map((r) => ({ ...r, label: labelLocale(r.label) })),
+    hours: profile.hours.map((r) => ({ ...r, label: labelHour(r.label) })),
+    utmSources: profile.utmSources.map((r) => ({
+      ...r,
+      label: r.label === "unknown" ? "未知推广来源" : r.label,
+    })),
   };
 }
