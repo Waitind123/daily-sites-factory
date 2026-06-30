@@ -1,29 +1,29 @@
-/** 看板中文文案 — 避免英文缩写看不懂 */
+/** 看板中英双语文案 — 中文 + 英文并列，方便对照理解 */
 
 export const METRIC = {
-  pv: "浏览次数",
-  uv: "独立访客",
-  trial: "试用",
-  checkout: "结账",
-  purchase: "付费",
+  pv: "浏览次数 (Pageviews)",
+  uv: "独立访客 (Unique Visitors)",
+  trial: "试用 (Trial)",
+  checkout: "结账 (Checkout)",
+  purchase: "付费 (Purchase)",
 } as const;
 
 export const DEVICE_LABELS: Record<string, string> = {
-  mobile: "手机",
-  desktop: "电脑",
-  tablet: "平板",
-  unknown: "未知设备",
+  mobile: "手机 (Mobile)",
+  desktop: "电脑 (Desktop)",
+  tablet: "平板 (Tablet)",
+  unknown: "未知设备 (Unknown)",
 };
 
 export const LOCALE_LABELS: Record<string, string> = {
-  zh: "中文",
-  en: "英语",
-  ja: "日语",
-  ko: "韩语",
-  fr: "法语",
-  de: "德语",
-  es: "西班牙语",
-  unknown: "未知语言",
+  zh: "中文 (Chinese)",
+  en: "英语 (English)",
+  ja: "日语 (Japanese)",
+  ko: "韩语 (Korean)",
+  fr: "法语 (French)",
+  de: "德语 (German)",
+  es: "西班牙语 (Spanish)",
+  unknown: "未知语言 (Unknown)",
 };
 
 export function labelDevice(key: string) {
@@ -31,35 +31,179 @@ export function labelDevice(key: string) {
 }
 
 export function labelLocale(key: string) {
-  return LOCALE_LABELS[key] || `语言：${key}`;
+  return LOCALE_LABELS[key] || `${key}`;
 }
 
 export function labelHour(key: string) {
   const h = Number(String(key).replace(/\D/g, ""));
   if (Number.isNaN(h)) return key;
-  if (h < 6) return `凌晨 ${h} 点`;
-  if (h < 12) return `上午 ${h} 点`;
-  if (h === 12) return "中午 12 点";
-  if (h < 18) return `下午 ${h - 12} 点`;
-  return `晚上 ${h - 12} 点`;
+  const zh =
+    h < 6
+      ? `凌晨 ${h} 点`
+      : h < 12
+        ? `上午 ${h} 点`
+        : h === 12
+          ? "中午 12 点"
+          : h < 18
+            ? `下午 ${h - 12} 点`
+            : `晚上 ${h - 12} 点`;
+  return `${zh} (${h}:00 CST)`;
 }
 
 export const SEO_LABELS = {
-  score: "搜索优化得分",
-  excellent: "优秀站点（≥80分）",
-  needsWork: "待优化站点（<50分）",
-  sitemap: "站点地图正常",
-  robots: "爬虫规则正常",
-  og: "社交分享预览",
-  jsonLd: "结构化数据",
-  guides: "有指南文章",
-  scanned: "已检测站点",
+  score: "搜索优化得分 (SEO Score)",
+  excellent: "优秀站点 ≥80 (Excellent)",
+  needsWork: "待优化 <50 (Needs Work)",
+  sitemap: "站点地图正常 (Sitemap OK)",
+  robots: "爬虫规则正常 (Robots OK)",
+  og: "社交分享预览 (Open Graph)",
+  jsonLd: "结构化数据 (JSON-LD)",
+  guides: "有指南文章 (Guide Pages)",
+  scanned: "已检测站点 (Sites Scanned)",
 };
 
 export const STRIPE_LABELS = {
-  title: "在线收款（Stripe）",
-  configured: "收款密钥",
-  live: "真实收款站点",
-  demo: "演示模式站点",
-  fail: "检测失败",
+  title: "在线收款 Stripe",
+  configured: "收款密钥 (API Key)",
+  configuredYes: "已配置 Configured",
+  configuredNo: "未配置 Not Configured",
+  live: "真实收款站 (Live)",
+  demo: "演示模式站 (Demo)",
+  fail: "检测失败 (Failed)",
 };
+
+export const REFERRER_LABELS: Record<string, string> = {
+  直接访问: "直接访问 Direct",
+  搜索引擎: "搜索引擎 Search Engine",
+  社交媒体: "社交媒体 Social",
+  站内互跳: "站内互跳 Internal",
+  开发者社区: "开发者社区 Dev Community",
+  其他来源: "其他来源 Other",
+};
+
+export function labelReferrer(key: string) {
+  return REFERRER_LABELS[key] || key;
+}
+
+export const DATE_PRESET_LABELS = {
+  today: "今天 Today",
+  yesterday: "昨天 Yesterday",
+  last7: "近7天 Last 7d",
+  last30: "近30天 Last 30d",
+  thisMonth: "本月 This Month",
+  lastMonth: "上月 Last Month",
+  all: "全部 All Time",
+  custom: "自定义 Custom",
+} as const;
+
+export const DASHBOARD_COPY = {
+  brand: "每日站点工厂 Daily Sites Factory",
+  title: "全站运营看板 Factory Dashboard",
+  subtitle: "流量 Traffic · 转化 Conversion · 搜索优化 SEO · 收款 Payments",
+  autoRefresh: "每 20 秒自动刷新 Auto-refresh 20s",
+  dataUpdated: "数据更新 Updated",
+  pageFetched: "页面拉取 Fetched",
+  loading: "正在拉取最新数据… Loading…",
+  fetchError: "拉取失败 Fetch failed",
+  retryHint: "20 秒后重试 Retry in 20s",
+  openSite: "打开站点 Open site →",
+
+  filtersTitle: "筛选条件 Filters",
+  filtersCurrent: "当前查看 Viewing",
+  allSites: "全部站点 All Sites",
+  startDate: "开始日期 Start",
+  endDate: "结束日期 End",
+  rangeTo: "至 to",
+
+  revenueGoal: "收入目标 Revenue Goal",
+  revenueGoalSub: "距离目标还有多远 Progress to goal",
+  targetAmount: "目标金额 Target",
+  estimatedRevenue: "估算已收 Est. Revenue",
+  estimatedHint: "每次付费估算 Est. per purchase",
+  progress: "完成度 Progress",
+  daysLeft: "剩余天数 Days Left",
+  deadline: "截止 Due",
+
+  periodData: "数据 Metrics",
+  periodDataSub: "以下数字均按所选日期范围统计 Filtered by date range",
+  siteCount: "站点数 Sites",
+  activeSites: "有流量的站 Sites with Traffic",
+  activeSitesHint: "该时段内有浏览 PV > 0 in period",
+  payingSites: "有付费的站 Paying Sites",
+  estimatedIncome: "估算收入 Est. Income",
+
+  funnelTitle: "转化漏斗 Conversion Funnel",
+  funnelSub: "看访客在哪一步流失最多 Where visitors drop off",
+  funnelVisitTrial: "浏览→试用 View→Trial",
+  funnelTrialCheckout: "试用→结账 Trial→Checkout",
+  funnelCheckoutPurchase: "结账→付费 Checkout→Purchase",
+  funnelVisitCheckout: "浏览→结账 View→Checkout",
+  funnelVisitPurchase: "浏览→付费 View→Purchase",
+  funnelVisitorPurchase: "访客→付费 Visitor→Purchase",
+
+  visitorTitle: "访客画像分析 Visitor Insights",
+  visitorSub: "来源、设备、语言、时段与购买意向 Source, device, locale & intent",
+  newVisitors: "第一次来 New",
+  returningVisitors: "再次访问 Returning",
+  deviceChart: "使用设备 Devices",
+  intentChart: "购买意向分层 Intent",
+  intentBrowse: "只看了看 Browse only",
+  intentTrial: "想试用 Trial intent",
+  intentCheckout: "想付款 Checkout intent",
+  intentPaid: "已经付费 Paid",
+  referrers: "访客从哪来 Referrers",
+  locales: "使用语言 Languages",
+  timezones: "所在时区 Timezones",
+  utmSources: "推广链接来源 UTM Source",
+  hours: "活跃时段 Peak Hours (CST)",
+  landingPages: "从哪个页面进入 Landing Pages",
+  noAudienceData: "该时段暂无画像数据 No audience data in this period",
+  noDataYet: "暂无 N/A",
+  peopleUnit: "人 visitors",
+  newVsReturningTitle: "新老访客 New vs Returning",
+  unknownUtm: "未知推广来源 Unknown UTM",
+
+  seoTitle: "搜索优化健康度 SEO Health",
+  seoSub: "影响自然搜索流量能否持续增长 Organic growth readiness",
+  stripeSub: "没配密钥就只能演示 Demo mode without real payments",
+
+  topSitesTitle: "流量排名 Top Traffic",
+  topSitesSub: "优先推广排名靠前的站点 Focus on top performers",
+  siteColumn: "站点 Site",
+
+  allSitesTitle: "全部站点 All Sites",
+  allSitesSub: "按所选时段浏览次数排序 Sorted by pageviews in period",
+
+  footer: "每日站点工厂 Daily Sites Factory · 实时数据看板 Live Dashboard",
+
+  siteSeoScore: "搜索优化 SEO",
+  siteGuides: "篇指南 guides",
+  seoSitemapOk: "✓ 站点地图 Sitemap",
+  seoSitemapFail: "✗ 站点地图 Sitemap",
+  seoRobotsOk: "✓ 爬虫规则 Robots",
+  seoRobotsFail: "✗ 爬虫规则 Robots",
+  funnelBrowseTrial: "浏览→试用 View→Trial",
+  funnelTrialCheckoutShort: "试用→结账 Trial→Checkout",
+  funnelCheckoutPaid: "结账→付费 Checkout→Purchase",
+  funnelBrowsePaid: "浏览→付费 View→Purchase",
+  funnelVisitorPaid: "访客→付费 Visitor→Purchase",
+  purchaseCountHint: "次付费 purchases ×",
+  requestFailed: "请求失败 Request failed",
+  loadFailed: "加载失败 Load failed",
+} as const;
+
+export const INTENT_SEGMENT_LABELS: Record<string, string> = {
+  browse: DASHBOARD_COPY.intentBrowse,
+  trial: DASHBOARD_COPY.intentTrial,
+  checkout: DASHBOARD_COPY.intentCheckout,
+  paid: DASHBOARD_COPY.intentPaid,
+};
+
+export function formatRangeLabelBilingual(range: { from: string; to: string }) {
+  if (range.from === range.to) return range.from;
+  return `${range.from} ${DASHBOARD_COPY.rangeTo} ${range.to}`;
+}
+
+export function estimatedPurchaseHint(priceUsd: number) {
+  return `每次付费按 $${priceUsd} 估算 · Est. $${priceUsd} per purchase`;
+}

@@ -3,7 +3,7 @@ import type { SiteEntry } from "@/lib/dashboard-metrics";
 import { sumSitePeriod } from "@/lib/dashboard-metrics";
 import type { DateRange } from "@/lib/date-range";
 import { isDayInRange } from "@/lib/date-range";
-import { labelDevice, labelHour, labelLocale } from "@/lib/dashboard-labels";
+import { labelDevice, labelHour, labelLocale, labelReferrer, DASHBOARD_COPY, INTENT_SEGMENT_LABELS } from "@/lib/dashboard-labels";
 import {
   audienceToProfile,
   emptyAudience,
@@ -59,12 +59,17 @@ export function buildVisitorInsights(
 function localizeProfile(profile: VisitorProfileView): VisitorProfileView {
   return {
     ...profile,
+    referrers: profile.referrers.map((r) => ({ ...r, label: labelReferrer(r.label) })),
     devices: profile.devices.map((r) => ({ ...r, label: labelDevice(r.label) })),
     locales: profile.locales.map((r) => ({ ...r, label: labelLocale(r.label) })),
     hours: profile.hours.map((r) => ({ ...r, label: labelHour(r.label) })),
     utmSources: profile.utmSources.map((r) => ({
       ...r,
-      label: r.label === "unknown" ? "未知推广来源" : r.label,
+      label: r.label === "unknown" ? DASHBOARD_COPY.unknownUtm : r.label,
+    })),
+    intentSegments: profile.intentSegments.map((r) => ({
+      ...r,
+      label: INTENT_SEGMENT_LABELS[r.label] || r.label,
     })),
   };
 }
