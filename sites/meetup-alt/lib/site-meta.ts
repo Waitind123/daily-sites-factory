@@ -1,5 +1,5 @@
 export const siteMeta = {
-  "id": "meetup-替代品",
+  "id": "meetup-alt",
   "emoji": "🚀",
   "name": {
     "en": "MeetupAlt",

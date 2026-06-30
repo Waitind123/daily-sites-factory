@@ -5,7 +5,7 @@ import {
   getTrialCookieName,
 } from "./trial-core";
 
-export const SITE_ID = "meetup-替代品";
+export const SITE_ID = "meetup-alt";
 
 export { FREE_TRIAL_LIMIT, getTrialCookieName };
 

@@ -191,7 +191,7 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/events", label: { en: "Events", zh: "活动" } }],
   },
-  "meetup-替代品": {
+  "meetup-alt": {
     emoji: "🚀",
     name: { en: "MeetupAlt", zh: "Meetup 替代品" },
     jsonLd: "softwareApplicationJsonLd",
