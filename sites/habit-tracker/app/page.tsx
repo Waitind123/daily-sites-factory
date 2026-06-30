@@ -123,7 +123,7 @@ export default async function HomePage() {
             </Link>
             <Link
               href="/join"
-              className="inline-block border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/10 transition-colors"
+              className="inline-block border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-surface/10 transition-colors"
             >
               {c.closing.ctaSecondary}
             </Link>
