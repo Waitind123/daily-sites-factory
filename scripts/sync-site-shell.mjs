@@ -191,6 +191,16 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/events", label: { en: "Events", zh: "活动" } }],
   },
+  "meetup-替代品": {
+    emoji: "🚀",
+    name: { en: "MeetupAlt", zh: "Meetup 替代品" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/meetup-alternative-indie-organizers",
+    nav: [
+      { href: "/events", label: { en: "Events", zh: "活动" } },
+      { href: "/guide/meetup-alternative-indie-organizers", label: { en: "Guide", zh: "指南" } },
+    ],
+  },
   "price-tracker": {
     emoji: "📊",
     name: { en: "SaaS Price Tracker", zh: "SaaS 价格追踪" },
