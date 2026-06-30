@@ -203,6 +203,13 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/generate", label: { en: "Generate", zh: "生成" } }],
   },
+  "bulk-landing-gen": {
+    emoji: "📦",
+    name: { en: "Bulk Landing Gen", zh: "批量落地页生成" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/google-ads-keyword-landing-pages",
+    nav: [{ href: "/studio", label: { en: "Batch", zh: "批量生成" } }],
+  },
   "newsletter-stack": {
     emoji: "📧",
     name: { en: "Newsletter Stack", zh: "Newsletter 工具对比" },
