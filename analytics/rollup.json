@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T18:05:57.534Z",
+  "updatedAt": "2026-06-30T19:04:28.404Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2662,20 +2662,46 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ci-prod-smoke",
-            "bootstrap-probe"
-          ]
+            "bootstrap-probe",
+            "0f8f4a5d-f8ae-4bb2-acea-d5336f2005f3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "3": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2692,7 +2718,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:57.457Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0f8f4a5d-f8ae-4bb2-acea-d5336f2005f3"
+      ]
     },
     "tracetics-lite": {
       "url": "https://tracetics-lite.vercel.app",
