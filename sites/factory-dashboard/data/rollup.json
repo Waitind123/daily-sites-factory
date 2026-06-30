@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T06:21:06.155Z",
+  "updatedAt": "2026-06-30T07:05:28.867Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -683,20 +683,28 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 10,
+          "uv": 10,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ci-prod-smoke",
-            "bootstrap-probe"
+            "bootstrap-probe",
+            "e2e-test-1782802522",
+            "prod-test-1782802793",
+            "e2e-refresh-1782802814",
+            "e2e-final-1782802870",
+            "final-refresh-1782802945",
+            "cachebust-1782802985",
+            "retry-1782803052",
+            "prove-1782803081"
           ]
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 9,
+        "pv": 19,
+        "uv": 17,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1994,20 +2002,22 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ci-prod-smoke",
-            "bootstrap-probe"
+            "bootstrap-probe",
+            "406a50bb-f12b-4d20-994a-5cfc3584770c",
+            "4f4adc0a-c19f-4153-a931-12b39a593924"
           ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
