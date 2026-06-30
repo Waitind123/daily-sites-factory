@@ -96,3 +96,26 @@ export function getApiErrorMessage(code: string | undefined, locale: Locale): st
   }
   return apiErrorCopy[locale].GENERIC;
 }
+
+export const successCopy = {
+  en: {
+    title: "Welcome to Startup Ideas!",
+    demoPaid: "Demo payment successful.",
+    paidBody: "Payment successful — unlimited deep analyses are now active.",
+    order: "Order:",
+    openIdeas: "Browse ideas",
+    backHome: "Back to home",
+  },
+  zh: {
+    title: "欢迎加入创业点子库！",
+    demoPaid: "演示支付成功。",
+    paidBody: "支付成功，你已是月度会员，可无限阅读全部深度分析。",
+    order: "订单：",
+    openIdeas: "浏览创业点子",
+    backHome: "返回首页",
+  },
+} as const;
+
+export function getSuccessCopy(locale: Locale) {
+  return successCopy[locale];
+}
