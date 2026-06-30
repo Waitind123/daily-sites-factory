@@ -2,14 +2,14 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
-import type {
-  DashboardSummary,
-  MetricTotals,
-  RevenueGoalView,
-} from "@/lib/dashboard-metrics";
-import { SUBSCRIPTION_PRICE_USD, buildFunnel, getTodayMetrics } from "@/lib/dashboard-metrics";
-import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
+import { DashboardFilters } from "@/components/DashboardFilters";
 import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
+import type { DashboardSummary, RevenueGoalView } from "@/lib/dashboard-metrics";
+import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashboard-metrics";
+import { METRIC, SEO_LABELS, STRIPE_LABELS } from "@/lib/dashboard-labels";
+import type { DatePreset, DateRange } from "@/lib/date-range";
+import { formatRangeLabel } from "@/lib/date-range";
+import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
 
 interface SiteEntry {
   id: string;
@@ -23,6 +23,7 @@ interface DashboardPayload {
   summary: DashboardSummary;
   revenueGoal: RevenueGoalView | null;
   visitorInsights?: VisitorInsightsPayload;
+  filters?: { preset: DatePreset; siteId: string; range: DateRange };
 }
 
 function pct(n: number, d: number) {
@@ -59,25 +60,16 @@ function SectionTitle({ title, subtitle }: { title: string; subtitle?: string })
   );
 }
 
-function TotalsRow({ totals, prefix }: { totals: MetricTotals; prefix: string }) {
-  return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-      {[
-        ["PV", totals.pv],
-        ["UV", totals.uv],
-        ["试用", totals.trial],
-        ["结账", totals.checkout],
-        ["付费", totals.purchase],
-      ].map(([label, val]) => (
-        <MetricCard key={`${prefix}-${label}`} label={`${prefix}${label}`} value={val as number} />
-      ))}
-    </div>
-  );
-}
-
-function SiteCard({ site, rollup }: { site: SiteEntry; rollup?: SiteRollup }) {
-  const t = rollup?.totals || { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  const today = getTodayMetrics(rollup);
+function SiteCard({
+  site,
+  rollup,
+  range,
+}: {
+  site: SiteEntry;
+  rollup?: SiteRollup;
+  range: DateRange;
+}) {
+  const t = rollup ? sumSitePeriod(rollup, range) : { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
   const seo = rollup?.seo;
   const funnel = buildFunnel(t);
 
@@ -86,50 +78,49 @@ function SiteCard({ site, rollup }: { site: SiteEntry; rollup?: SiteRollup }) {
       <div className="flex items-start justify-between gap-3">
         <div>
           <h3 className="text-lg font-semibold text-zinc-50">{site.name}</h3>
-          <p className="text-xs text-zinc-500 font-mono">{site.id}</p>
         </div>
-        <div className="flex flex-col items-end gap-1">
-          {seo ? (
-            <span
-              className={`text-xs font-medium px-2 py-1 rounded-full ${
-                seo.score >= 80
-                  ? "bg-emerald-500/15 text-emerald-400"
-                  : seo.score >= 50
-                    ? "bg-amber-500/15 text-amber-400"
-                    : "bg-red-500/15 text-red-400"
-              }`}
-            >
-              SEO {seo.score}
-            </span>
-          ) : null}
-          {today.pv > 0 ? (
-            <span className="text-[10px] text-sky-400">今日 +{today.pv} PV</span>
-          ) : null}
-        </div>
+        {seo ? (
+          <span
+            className={`text-xs font-medium px-2 py-1 rounded-full ${
+              seo.score >= 80
+                ? "bg-emerald-500/15 text-emerald-400"
+                : seo.score >= 50
+                  ? "bg-amber-500/15 text-amber-400"
+                  : "bg-red-500/15 text-red-400"
+            }`}
+          >
+            搜索优化 {seo.score} 分
+          </span>
+        ) : null}
       </div>
 
       <div className="mt-4 grid grid-cols-2 sm:grid-cols-5 gap-2 text-center">
         {[
-          ["PV", t.pv],
-          ["UV", t.uv],
-          ["试用", t.trial],
-          ["结账", t.checkout],
-          ["付费", t.purchase],
+          [METRIC.pv, t.pv],
+          [METRIC.uv, t.uv],
+          [METRIC.trial, t.trial],
+          [METRIC.checkout, t.checkout],
+          [METRIC.purchase, t.purchase],
         ].map(([label, val]) => (
           <div key={label as string} className="rounded-xl bg-zinc-950/80 py-2">
             <div className="text-lg font-semibold text-zinc-100">{val as number}</div>
-            <div className="text-[10px] uppercase tracking-wide text-zinc-500">{label as string}</div>
+            <div className="text-[10px] text-zinc-500">{label as string}</div>
           </div>
         ))}
       </div>
 
       <div className="mt-3 grid gap-1 text-xs text-zinc-400">
-        <p>访问→试用 {funnel.pvToTrial} · 试用→结账 {funnel.trialToCheckout} · 结账→付费 {funnel.checkoutToPurchase}</p>
-        <p>访问→付费 {funnel.pvToPurchase} · UV→付费 {funnel.uvToPurchase}</p>
+        <p>
+          浏览→试用 {funnel.visitToTrial} · 试用→结账 {funnel.trialToCheckout} · 结账→付费{" "}
+          {funnel.checkoutToPurchase}
+        </p>
+        <p>
+          浏览→付费 {funnel.visitToPurchase} · 访客→付费 {funnel.visitorToPurchase}
+        </p>
         {seo?.lastChecked ? (
           <p>
-            {seo.sitemapOk ? "✓ sitemap" : "✗ sitemap"} · {seo.robotsOk ? "✓ robots" : "✗ robots"} ·
-            {seo.hasOg ? " ✓ OG" : " ✗ OG"} · {seo.hasJsonLd ? "✓ JSON-LD" : "✗ JSON-LD"} · {seo.guideCount} 指南页
+            {seo.sitemapOk ? "✓ 站点地图" : "✗ 站点地图"} ·{" "}
+            {seo.robotsOk ? "✓ 爬虫规则" : "✗ 爬虫规则"} · {seo.guideCount} 篇指南
           </p>
         ) : null}
       </div>
@@ -146,23 +137,36 @@ function SiteCard({ site, rollup }: { site: SiteEntry; rollup?: SiteRollup }) {
   );
 }
 
-export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
+export function LiveFactoryDashboard({ locale }: { locale: string }) {
   const [data, setData] = useState<DashboardPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [lastFetchedAt, setLastFetchedAt] = useState<string | null>(null);
+  const [preset, setPreset] = useState<DatePreset>("today");
+  const [siteId, setSiteId] = useState("all");
+  const [customFrom, setCustomFrom] = useState("");
+  const [customTo, setCustomTo] = useState("");
 
   const refresh = useCallback(async () => {
     try {
-      const res = await fetch("/api/dashboard", { cache: "no-store" });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const params = new URLSearchParams({ preset, site: siteId });
+      if (preset === "custom" && customFrom && customTo) {
+        params.set("from", customFrom);
+        params.set("to", customTo);
+      }
+      const res = await fetch(`/api/dashboard?${params}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(`请求失败 ${res.status}`);
       const json = (await res.json()) as DashboardPayload;
       setData(json);
+      if (json.filters?.range) {
+        setCustomFrom(json.filters.range.from);
+        setCustomTo(json.filters.range.to);
+      }
       setLastFetchedAt(new Date().toLocaleString("zh-CN"));
       setError(null);
     } catch (err) {
       setError(err instanceof Error ? err.message : "加载失败");
     }
-  }, []);
+  }, [preset, siteId, customFrom, customTo]);
 
   useEffect(() => {
     refresh();
@@ -172,15 +176,19 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
 
   const sortedSites = useMemo(() => {
     if (!data) return [];
-    return [...data.sites].sort((a, b) => {
-      const ap = data.rollup.sites[a.id]?.totals.pv || 0;
-      const bp = data.rollup.sites[b.id]?.totals.pv || 0;
-      return bp - ap;
-    });
-  }, [data]);
+    const range = data.summary.dateRange;
+    return [...data.sites]
+      .filter((s) => siteId === "all" || s.id === siteId)
+      .sort((a, b) => {
+        const ap = data.rollup.sites[a.id] ? sumSitePeriod(data.rollup.sites[a.id], range).pv : 0;
+        const bp = data.rollup.sites[b.id] ? sumSitePeriod(data.rollup.sites[b.id], range).pv : 0;
+        return bp - ap;
+      });
+  }, [data, siteId]);
 
   const summary = data?.summary;
   const revenueGoal = data?.revenueGoal;
+  const range = summary?.dateRange;
   const rollupUpdated = data?.rollup.updatedAt
     ? new Date(data.rollup.updatedAt).toLocaleString("zh-CN")
     : "暂无";
@@ -190,11 +198,11 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
       <header className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-4">
           <div>
-            <p className="text-xs uppercase tracking-widest text-indigo-400">Daily Sites Factory</p>
+            <p className="text-xs tracking-widest text-indigo-400">每日站点工厂</p>
             <h1 className="text-2xl font-bold mt-1">全站运营看板</h1>
           </div>
           <div className="text-right text-xs text-zinc-500">
-            <p>流量 · 转化 · SEO · 收款</p>
+            <p>流量 · 转化 · 搜索优化 · 收款</p>
             <p className="mt-1">
               数据更新 {rollupUpdated}
               {lastFetchedAt ? ` · 页面拉取 ${lastFetchedAt}` : ""}
@@ -209,33 +217,39 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
           <p className="text-center text-amber-400 text-sm">拉取失败: {error} · 20 秒后重试</p>
         ) : null}
 
-        {!summary ? (
+        {data?.sites && range ? (
+          <DashboardFilters
+            locale={locale}
+            sites={data.sites}
+            preset={preset}
+            siteId={siteId}
+            range={range}
+            onPresetChange={setPreset}
+            onSiteChange={setSiteId}
+            onCustomRange={(from, to) => {
+              setPreset("custom");
+              setCustomFrom(from);
+              setCustomTo(to);
+            }}
+          />
+        ) : null}
+
+        {!summary || !range ? (
           <p className="text-zinc-500 text-center py-16">正在拉取最新数据…</p>
         ) : (
           <>
             {revenueGoal ? (
               <section className="rounded-2xl border border-indigo-500/30 bg-indigo-500/5 p-6">
-                <SectionTitle
-                  title="收入目标"
-                  subtitle={revenueGoal.purpose || "追踪距离目标的进度"}
-                />
+                <SectionTitle title="收入目标" subtitle={revenueGoal.purpose || "距离目标还有多远"} />
                 <div className="grid sm:grid-cols-4 gap-4 mb-4">
-                  <MetricCard
-                    label="目标金额"
-                    value={`$${revenueGoal.targetUsd}`}
-                    hint={`截止 ${revenueGoal.deadline}`}
-                  />
+                  <MetricCard label="目标金额" value={`$${revenueGoal.targetUsd}`} hint={`截止 ${revenueGoal.deadline}`} />
                   <MetricCard
                     label="估算已收"
                     value={`$${revenueGoal.estimatedRevenueUsd.toFixed(1)}`}
-                    hint={`付费次数 × $${SUBSCRIPTION_PRICE_USD}`}
+                    hint={`每次付费按 $${SUBSCRIPTION_PRICE_USD} 估算`}
                     accent="text-emerald-400"
                   />
-                  <MetricCard
-                    label="完成度"
-                    value={`${revenueGoal.progressPct.toFixed(1)}%`}
-                    accent="text-indigo-400"
-                  />
+                  <MetricCard label="完成度" value={`${revenueGoal.progressPct.toFixed(1)}%`} accent="text-indigo-400" />
                   <MetricCard label="剩余天数" value={revenueGoal.daysLeft} />
                 </div>
                 <div className="h-3 rounded-full bg-zinc-800 overflow-hidden">
@@ -248,54 +262,40 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
             ) : null}
 
             <section>
-              <SectionTitle title="今日数据" subtitle="当天实时累计，最能反映推广是否起效" />
-              <TotalsRow totals={summary.today} prefix="今日" />
-              <div className="grid sm:grid-cols-3 gap-3 mt-3">
-                <MetricCard label="今日活跃站" value={summary.todayActiveSites} hint="今日 PV > 0" />
-                <MetricCard
-                  label="今日估算收入"
-                  value={`$${(summary.today.purchase * SUBSCRIPTION_PRICE_USD).toFixed(1)}`}
-                />
-                <MetricCard
-                  label="今日访问→付费"
-                  value={pct(summary.today.purchase, summary.today.pv)}
-                />
+              <SectionTitle
+                title={`${formatRangeLabel(range)} 数据`}
+                subtitle="以下数字均按你选的日期范围统计"
+              />
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                <MetricCard label={METRIC.pv} value={summary.period.pv} />
+                <MetricCard label={METRIC.uv} value={summary.period.uv} />
+                <MetricCard label={METRIC.trial} value={summary.period.trial} />
+                <MetricCard label={METRIC.checkout} value={summary.period.checkout} />
+                <MetricCard label={METRIC.purchase} value={summary.period.purchase} accent="text-emerald-400" />
               </div>
-            </section>
-
-            <section>
-              <SectionTitle title="累计数据" subtitle="全周期总量，看整体盘子大小" />
-              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+              <div className="grid sm:grid-cols-4 gap-3 mt-3">
                 <MetricCard label="站点数" value={summary.siteCount} />
-                <MetricCard label="有流量站" value={summary.activeSites} hint="累计 PV > 0" />
-                <MetricCard label="有付费站" value={summary.payingSites} accent="text-emerald-400" />
-                <MetricCard label="总 PV" value={summary.totals.pv} />
-                <MetricCard label="总 UV" value={summary.totals.uv} />
-                <MetricCard label="总试用" value={summary.totals.trial} />
-                <MetricCard label="总结账" value={summary.totals.checkout} />
-                <MetricCard label="总付费" value={summary.totals.purchase} accent="text-emerald-400" />
-              </div>
-              <div className="grid sm:grid-cols-2 gap-3 mt-3">
+                <MetricCard label="有流量的站" value={summary.activeSites} hint="该时段内有浏览" />
+                <MetricCard label="有付费的站" value={summary.payingSites} accent="text-emerald-400" />
                 <MetricCard
-                  label="估算累计收入"
+                  label="估算收入"
                   value={`$${summary.estimatedRevenueUsd.toFixed(1)}`}
-                  hint={`${summary.totals.purchase} 次付费 × $${SUBSCRIPTION_PRICE_USD}/月`}
+                  hint={`${summary.period.purchase} 次付费 × $${SUBSCRIPTION_PRICE_USD}`}
                   accent="text-emerald-400"
                 />
-                <MetricCard label="人均访问深度" value={pct(summary.totals.pv, summary.totals.uv)} hint="PV / UV" />
               </div>
             </section>
 
             <section>
-              <SectionTitle title="转化漏斗" subtitle="优先看哪一步掉人最多" />
+              <SectionTitle title="转化漏斗" subtitle="看访客在哪一步流失最多" />
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {[
-                  ["访问 → 试用", summary.funnel.pvToTrial],
+                  ["浏览 → 试用", summary.funnel.visitToTrial],
                   ["试用 → 结账", summary.funnel.trialToCheckout],
                   ["结账 → 付费", summary.funnel.checkoutToPurchase],
-                  ["访问 → 结账", summary.funnel.pvToCheckout],
-                  ["访问 → 付费", summary.funnel.pvToPurchase],
-                  ["UV → 付费", summary.funnel.uvToPurchase],
+                  ["浏览 → 结账", summary.funnel.visitToCheckout],
+                  ["浏览 → 付费", summary.funnel.visitToPurchase],
+                  ["访客 → 付费", summary.funnel.visitorToPurchase],
                 ].map(([label, val]) => (
                   <MetricCard key={label as string} label={label as string} value={val as string} />
                 ))}
@@ -303,56 +303,48 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
             </section>
 
             {data.visitorInsights ? (
-              <VisitorInsightsPanel
-                locale={_locale}
-                insights={data.visitorInsights}
-                sites={data.sites}
-              />
+              <VisitorInsightsPanel locale={locale} profile={data.visitorInsights.profile} />
             ) : null}
 
             <section>
-              <SectionTitle title="SEO 健康" subtitle="决定自然流量能不能持续增长" />
+              <SectionTitle title="搜索优化健康度" subtitle="影响自然搜索流量能否持续增长" />
               <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
-                <MetricCard label="平均 SEO 分" value={summary.seo.avgScore} />
-                <MetricCard label="优秀站 (≥80)" value={summary.seo.excellentCount} accent="text-emerald-400" />
-                <MetricCard label="待优化 (<50)" value={summary.seo.needsWorkCount} accent="text-amber-400" />
-                <MetricCard label="Sitemap 通过" value={summary.seo.sitemapPass} />
-                <MetricCard label="Robots 通过" value={summary.seo.robotsPass} />
-                <MetricCard label="有 OG 标签" value={summary.seo.withOg} />
-                <MetricCard label="有 JSON-LD" value={summary.seo.withJsonLd} />
-                <MetricCard label="有指南页" value={summary.seo.withGuides} />
-                <MetricCard label="已扫描站" value={summary.seo.checkedCount} />
+                <MetricCard label={SEO_LABELS.score} value={summary.seo.avgScore} />
+                <MetricCard label={SEO_LABELS.excellent} value={summary.seo.excellentCount} accent="text-emerald-400" />
+                <MetricCard label={SEO_LABELS.needsWork} value={summary.seo.needsWorkCount} accent="text-amber-400" />
+                <MetricCard label={SEO_LABELS.sitemap} value={summary.seo.sitemapPass} />
+                <MetricCard label={SEO_LABELS.robots} value={summary.seo.robotsPass} />
+                <MetricCard label={SEO_LABELS.og} value={summary.seo.withOg} />
+                <MetricCard label={SEO_LABELS.jsonLd} value={summary.seo.withJsonLd} />
+                <MetricCard label={SEO_LABELS.guides} value={summary.seo.withGuides} />
+                <MetricCard label={SEO_LABELS.scanned} value={summary.seo.checkedCount} />
               </div>
             </section>
 
             <section>
-              <SectionTitle
-                title="Stripe 收款状态"
-                subtitle="没配密钥 = 演示付费，用户付了也进不了账"
-              />
+              <SectionTitle title={STRIPE_LABELS.title} subtitle="没配密钥就只能演示，用户付了也进不了账" />
               <div className="grid sm:grid-cols-4 gap-3">
                 <MetricCard
-                  label="密钥状态"
+                  label={STRIPE_LABELS.configured}
                   value={summary.stripe.configured ? "已配置" : "未配置"}
                   accent={summary.stripe.configured ? "text-emerald-400" : "text-red-400"}
                 />
-                <MetricCard label="真实收款站" value={summary.stripe.liveCount} accent="text-emerald-400" />
-                <MetricCard label="演示模式站" value={summary.stripe.demoCount} accent="text-amber-400" />
-                <MetricCard label="检查失败" value={summary.stripe.failCount} />
+                <MetricCard label={STRIPE_LABELS.live} value={summary.stripe.liveCount} accent="text-emerald-400" />
+                <MetricCard label={STRIPE_LABELS.demo} value={summary.stripe.demoCount} accent="text-amber-400" />
+                <MetricCard label={STRIPE_LABELS.fail} value={summary.stripe.failCount} />
               </div>
             </section>
 
             <section>
-              <SectionTitle title="流量 TOP 站" subtitle="集中推广这几个，比撒网 56 站更有效" />
+              <SectionTitle title="流量排名（该时段）" subtitle="优先推广排名靠前的站点" />
               <div className="overflow-x-auto rounded-2xl border border-zinc-800">
                 <table className="w-full text-sm">
                   <thead className="bg-zinc-900/80 text-zinc-400">
                     <tr>
                       <th className="text-left px-4 py-3">站点</th>
-                      <th className="text-right px-4 py-3">累计 PV</th>
-                      <th className="text-right px-4 py-3">UV</th>
-                      <th className="text-right px-4 py-3">今日 PV</th>
-                      <th className="text-right px-4 py-3">付费</th>
+                      <th className="text-right px-4 py-3">{METRIC.pv}</th>
+                      <th className="text-right px-4 py-3">{METRIC.uv}</th>
+                      <th className="text-right px-4 py-3">{METRIC.purchase}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -362,11 +354,9 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
                           <a href={row.url} target="_blank" rel="noreferrer" className="text-indigo-400 hover:underline">
                             {row.name}
                           </a>
-                          <span className="block text-[11px] text-zinc-600 font-mono">{row.id}</span>
                         </td>
                         <td className="text-right px-4 py-3 font-medium">{row.pv}</td>
                         <td className="text-right px-4 py-3">{row.uv}</td>
-                        <td className="text-right px-4 py-3 text-sky-400">{row.todayPv}</td>
                         <td className="text-right px-4 py-3 text-emerald-400">{row.purchase}</td>
                       </tr>
                     ))}
@@ -376,10 +366,15 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
             </section>
 
             <section>
-              <SectionTitle title="全部站点" subtitle="按累计 PV 排序" />
+              <SectionTitle title="全部站点" subtitle="按所选时段浏览次数排序" />
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
                 {sortedSites.map((site) => (
-                  <SiteCard key={site.id} site={site} rollup={data?.rollup.sites[site.id]} />
+                  <SiteCard
+                    key={site.id}
+                    site={site}
+                    rollup={data?.rollup.sites[site.id]}
+                    range={range}
+                  />
                 ))}
               </div>
             </section>
@@ -387,7 +382,7 @@ export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
         )}
       </main>
 
-      <footer className="text-center py-8 text-zinc-600 text-xs">daily-sites-factory · 实时数据看板</footer>
+      <footer className="text-center py-8 text-zinc-600 text-xs">每日站点工厂 · 实时数据看板</footer>
     </div>
   );
 }

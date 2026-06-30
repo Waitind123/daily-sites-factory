@@ -1,4 +1,6 @@
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
+import type { DateRange } from "@/lib/date-range";
+import { isDayInRange } from "@/lib/date-range";
 
 export const SUBSCRIPTION_PRICE_USD = 9.9;
 
@@ -26,12 +28,12 @@ export interface MetricTotals {
 }
 
 export interface FunnelRates {
-  pvToTrial: string;
+  visitToTrial: string;
   trialToCheckout: string;
   checkoutToPurchase: string;
-  pvToCheckout: string;
-  pvToPurchase: string;
-  uvToPurchase: string;
+  visitToCheckout: string;
+  visitToPurchase: string;
+  visitorToPurchase: string;
 }
 
 export interface SeoHealth {
@@ -62,21 +64,19 @@ export interface TopSiteRow {
   pv: number;
   uv: number;
   purchase: number;
-  todayPv: number;
 }
 
 export interface DashboardSummary {
   siteCount: number;
   activeSites: number;
   payingSites: number;
-  todayActiveSites: number;
-  totals: MetricTotals;
-  today: MetricTotals;
+  period: MetricTotals;
   funnel: FunnelRates;
   estimatedRevenueUsd: number;
   seo: SeoHealth;
   stripe: StripeHealth;
   topSites: TopSiteRow[];
+  dateRange: DateRange;
 }
 
 function pct(n: number, d: number) {
@@ -84,33 +84,41 @@ function pct(n: number, d: number) {
   return `${((n / d) * 100).toFixed(1)}%`;
 }
 
-function todayKey() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function sumToday(rollup: RollupFile): MetricTotals {
-  const key = todayKey();
+export function sumSitePeriod(site: SiteRollup, range: DateRange): MetricTotals {
+  const visitors = new Set<string>();
   const totals: MetricTotals = { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  for (const site of Object.values(rollup.sites)) {
-    const day = site.daily[key];
-    if (!day) continue;
-    totals.pv += day.pv || 0;
-    totals.uv += day.uv || 0;
-    totals.trial += day.trial || 0;
-    totals.checkout += day.checkout || 0;
-    totals.purchase += day.purchase || 0;
+
+  for (const [day, metrics] of Object.entries(site.daily || {})) {
+    if (!isDayInRange(day, range)) continue;
+    totals.pv += metrics.pv || 0;
+    totals.trial += metrics.trial || 0;
+    totals.checkout += metrics.checkout || 0;
+    totals.purchase += metrics.purchase || 0;
+    for (const v of metrics.visitors || []) visitors.add(v);
+  }
+
+  totals.uv = visitors.size;
+  if (!totals.uv) {
+    for (const [day, metrics] of Object.entries(site.daily || {})) {
+      if (!isDayInRange(day, range)) continue;
+      totals.uv += metrics.uv || 0;
+    }
   }
   return totals;
 }
 
-function sumTotals(rollup: RollupFile): MetricTotals {
+export function sumRollupPeriod(rollup: RollupFile, range: DateRange, siteId?: string): MetricTotals {
   const totals: MetricTotals = { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  for (const site of Object.values(rollup.sites)) {
-    totals.pv += site.totals.pv;
-    totals.uv += site.totals.uv;
-    totals.trial += site.totals.trial;
-    totals.checkout += site.totals.checkout;
-    totals.purchase += site.totals.purchase;
+  const sites = siteId ? { [siteId]: rollup.sites[siteId] } : rollup.sites;
+
+  for (const site of Object.values(sites)) {
+    if (!site) continue;
+    const part = sumSitePeriod(site, range);
+    totals.pv += part.pv;
+    totals.trial += part.trial;
+    totals.checkout += part.checkout;
+    totals.purchase += part.purchase;
+    totals.uv += part.uv;
   }
   return totals;
 }
@@ -152,27 +160,14 @@ function computeSeo(rollup: RollupFile): SeoHealth {
   return health;
 }
 
-export function getTodayMetrics(site?: SiteRollup): MetricTotals {
-  if (!site) return { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  const day = site.daily[todayKey()];
-  if (!day) return { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-  return {
-    pv: day.pv || 0,
-    uv: day.uv || 0,
-    trial: day.trial || 0,
-    checkout: day.checkout || 0,
-    purchase: day.purchase || 0,
-  };
-}
-
 export function buildFunnel(totals: MetricTotals): FunnelRates {
   return {
-    pvToTrial: pct(totals.trial, totals.pv),
+    visitToTrial: pct(totals.trial, totals.pv),
     trialToCheckout: pct(totals.checkout, totals.trial),
     checkoutToPurchase: pct(totals.purchase, totals.checkout),
-    pvToCheckout: pct(totals.checkout, totals.pv),
-    pvToPurchase: pct(totals.purchase, totals.pv),
-    uvToPurchase: pct(totals.purchase, totals.uv),
+    visitToCheckout: pct(totals.checkout, totals.pv),
+    visitToPurchase: pct(totals.purchase, totals.pv),
+    visitorToPurchase: pct(totals.purchase, totals.uv),
   };
 }
 
@@ -198,51 +193,51 @@ export function buildRevenueGoal(
 export function buildDashboardSummary(
   sites: SiteEntry[],
   rollup: RollupFile,
-  stripe: StripeHealth
+  stripe: StripeHealth,
+  range: DateRange,
+  filterSiteId?: string
 ): DashboardSummary {
-  const totals = sumTotals(rollup);
-  const today = sumToday(rollup);
-  const key = todayKey();
+  const period = sumRollupPeriod(rollup, range, filterSiteId === "all" ? undefined : filterSiteId);
 
   let activeSites = 0;
   let payingSites = 0;
-  let todayActiveSites = 0;
 
-  for (const site of Object.values(rollup.sites)) {
-    if (site.totals.pv > 0) activeSites += 1;
-    if (site.totals.purchase > 0) payingSites += 1;
-    if ((site.daily[key]?.pv || 0) > 0) todayActiveSites += 1;
+  for (const site of sites) {
+    if (filterSiteId && filterSiteId !== "all" && site.id !== filterSiteId) continue;
+    const r = rollup.sites[site.id];
+    if (!r) continue;
+    const p = sumSitePeriod(r, range);
+    if (p.pv > 0) activeSites += 1;
+    if (p.purchase > 0) payingSites += 1;
   }
 
   const topSites = sites
+    .filter((s) => !filterSiteId || filterSiteId === "all" || s.id === filterSiteId)
     .map((site) => {
       const r = rollup.sites[site.id];
-      const t = r?.totals || { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
-      const td = getTodayMetrics(r);
+      const p = r ? sumSitePeriod(r, range) : { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0 };
       return {
         id: site.id,
         name: site.name,
         url: site.url,
-        pv: t.pv,
-        uv: t.uv,
-        purchase: t.purchase,
-        todayPv: td.pv,
+        pv: p.pv,
+        uv: p.uv,
+        purchase: p.purchase,
       };
     })
-    .sort((a, b) => b.pv - a.pv || b.todayPv - a.todayPv)
+    .sort((a, b) => b.pv - a.pv)
     .slice(0, 8);
 
   return {
-    siteCount: sites.length,
+    siteCount: filterSiteId && filterSiteId !== "all" ? 1 : sites.length,
     activeSites,
     payingSites,
-    todayActiveSites,
-    totals,
-    today,
-    funnel: buildFunnel(totals),
-    estimatedRevenueUsd: totals.purchase * SUBSCRIPTION_PRICE_USD,
+    period,
+    funnel: buildFunnel(period),
+    estimatedRevenueUsd: period.purchase * SUBSCRIPTION_PRICE_USD,
     seo: computeSeo(rollup),
     stripe,
     topSites,
+    dateRange: range,
   };
 }
