@@ -6,7 +6,7 @@ import { DashboardFilters } from "@/components/DashboardFilters";
 import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
 import type { DashboardSummary, RevenueGoalView } from "@/lib/dashboard-metrics";
 import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashboard-metrics";
-import { METRIC, SEO_LABELS, STRIPE_LABELS } from "@/lib/dashboard-labels";
+import { DASHBOARD_COPY, METRIC, SEO_LABELS, STRIPE_LABELS, estimatedPurchaseHint } from "@/lib/dashboard-labels";
 import type { DatePreset, DateRange } from "@/lib/date-range";
 import { formatRangeLabel } from "@/lib/date-range";
 import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
@@ -24,11 +24,6 @@ interface DashboardPayload {
   revenueGoal: RevenueGoalView | null;
   visitorInsights?: VisitorInsightsPayload;
   filters?: { preset: DatePreset; siteId: string; range: DateRange };
-}
-
-function pct(n: number, d: number) {
-  if (!d) return "0%";
-  return `${((n / d) * 100).toFixed(1)}%`;
 }
 
 function MetricCard({
@@ -89,7 +84,7 @@ function SiteCard({
                   : "bg-red-500/15 text-red-400"
             }`}
           >
-            搜索优化 {seo.score} 分
+            {DASHBOARD_COPY.siteSeoScore} {seo.score}
           </span>
         ) : null}
       </div>
@@ -111,16 +106,18 @@ function SiteCard({
 
       <div className="mt-3 grid gap-1 text-xs text-zinc-400">
         <p>
-          浏览→试用 {funnel.visitToTrial} · 试用→结账 {funnel.trialToCheckout} · 结账→付费{" "}
-          {funnel.checkoutToPurchase}
+          {DASHBOARD_COPY.funnelBrowseTrial} {funnel.visitToTrial} · {DASHBOARD_COPY.funnelTrialCheckoutShort}{" "}
+          {funnel.trialToCheckout} · {DASHBOARD_COPY.funnelCheckoutPaid} {funnel.checkoutToPurchase}
         </p>
         <p>
-          浏览→付费 {funnel.visitToPurchase} · 访客→付费 {funnel.visitorToPurchase}
+          {DASHBOARD_COPY.funnelBrowsePaid} {funnel.visitToPurchase} · {DASHBOARD_COPY.funnelVisitorPaid}{" "}
+          {funnel.visitorToPurchase}
         </p>
         {seo?.lastChecked ? (
           <p>
-            {seo.sitemapOk ? "✓ 站点地图" : "✗ 站点地图"} ·{" "}
-            {seo.robotsOk ? "✓ 爬虫规则" : "✗ 爬虫规则"} · {seo.guideCount} 篇指南
+            {seo.sitemapOk ? DASHBOARD_COPY.seoSitemapOk : DASHBOARD_COPY.seoSitemapFail} ·{" "}
+            {seo.robotsOk ? DASHBOARD_COPY.seoRobotsOk : DASHBOARD_COPY.seoRobotsFail} · {seo.guideCount}{" "}
+            {DASHBOARD_COPY.siteGuides}
           </p>
         ) : null}
       </div>
@@ -131,7 +128,7 @@ function SiteCard({
         rel="noreferrer"
         className="mt-4 inline-flex text-sm text-indigo-400 hover:text-indigo-300"
       >
-        打开站点 →
+        {DASHBOARD_COPY.openSite}
       </a>
     </article>
   );
@@ -154,7 +151,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
         params.set("to", customTo);
       }
       const res = await fetch(`/api/dashboard?${params}`, { cache: "no-store" });
-      if (!res.ok) throw new Error(`请求失败 ${res.status}`);
+      if (!res.ok) throw new Error(`${DASHBOARD_COPY.requestFailed} ${res.status}`);
       const json = (await res.json()) as DashboardPayload;
       setData(json);
       if (json.filters?.range) {
@@ -164,7 +161,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
       setLastFetchedAt(new Date().toLocaleString("zh-CN"));
       setError(null);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "加载失败");
+      setError(err instanceof Error ? err.message : DASHBOARD_COPY.loadFailed);
     }
   }, [preset, siteId, customFrom, customTo]);
 
@@ -191,30 +188,32 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
   const range = summary?.dateRange;
   const rollupUpdated = data?.rollup.updatedAt
     ? new Date(data.rollup.updatedAt).toLocaleString("zh-CN")
-    : "暂无";
+    : DASHBOARD_COPY.noDataYet;
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-zinc-100">
       <header className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-4">
           <div>
-            <p className="text-xs tracking-widest text-indigo-400">每日站点工厂</p>
-            <h1 className="text-2xl font-bold mt-1">全站运营看板</h1>
+            <p className="text-xs tracking-widest text-indigo-400">{DASHBOARD_COPY.brand}</p>
+            <h1 className="text-2xl font-bold mt-1">{DASHBOARD_COPY.title}</h1>
           </div>
           <div className="text-right text-xs text-zinc-500">
-            <p>流量 · 转化 · 搜索优化 · 收款</p>
+            <p>{DASHBOARD_COPY.subtitle}</p>
             <p className="mt-1">
-              数据更新 {rollupUpdated}
-              {lastFetchedAt ? ` · 页面拉取 ${lastFetchedAt}` : ""}
+              {DASHBOARD_COPY.dataUpdated} {rollupUpdated}
+              {lastFetchedAt ? ` · ${DASHBOARD_COPY.pageFetched} ${lastFetchedAt}` : ""}
             </p>
-            <p className="mt-1 text-emerald-400">每 20 秒自动刷新</p>
+            <p className="mt-1 text-emerald-400">{DASHBOARD_COPY.autoRefresh}</p>
           </div>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-10">
         {error ? (
-          <p className="text-center text-amber-400 text-sm">拉取失败: {error} · 20 秒后重试</p>
+          <p className="text-center text-amber-400 text-sm">
+            {DASHBOARD_COPY.fetchError}: {error} · {DASHBOARD_COPY.retryHint}
+          </p>
         ) : null}
 
         {data?.sites && range ? (
@@ -235,22 +234,33 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
         ) : null}
 
         {!summary || !range ? (
-          <p className="text-zinc-500 text-center py-16">正在拉取最新数据…</p>
+          <p className="text-zinc-500 text-center py-16">{DASHBOARD_COPY.loading}</p>
         ) : (
           <>
             {revenueGoal ? (
               <section className="rounded-2xl border border-indigo-500/30 bg-indigo-500/5 p-6">
-                <SectionTitle title="收入目标" subtitle={revenueGoal.purpose || "距离目标还有多远"} />
+                <SectionTitle
+                  title={DASHBOARD_COPY.revenueGoal}
+                  subtitle={revenueGoal.purpose || DASHBOARD_COPY.revenueGoalSub}
+                />
                 <div className="grid sm:grid-cols-4 gap-4 mb-4">
-                  <MetricCard label="目标金额" value={`$${revenueGoal.targetUsd}`} hint={`截止 ${revenueGoal.deadline}`} />
                   <MetricCard
-                    label="估算已收"
+                    label={DASHBOARD_COPY.targetAmount}
+                    value={`$${revenueGoal.targetUsd}`}
+                    hint={`${DASHBOARD_COPY.deadline} ${revenueGoal.deadline}`}
+                  />
+                  <MetricCard
+                    label={DASHBOARD_COPY.estimatedRevenue}
                     value={`$${revenueGoal.estimatedRevenueUsd.toFixed(1)}`}
-                    hint={`每次付费按 $${SUBSCRIPTION_PRICE_USD} 估算`}
+                    hint={estimatedPurchaseHint(SUBSCRIPTION_PRICE_USD)}
                     accent="text-emerald-400"
                   />
-                  <MetricCard label="完成度" value={`${revenueGoal.progressPct.toFixed(1)}%`} accent="text-indigo-400" />
-                  <MetricCard label="剩余天数" value={revenueGoal.daysLeft} />
+                  <MetricCard
+                    label={DASHBOARD_COPY.progress}
+                    value={`${revenueGoal.progressPct.toFixed(1)}%`}
+                    accent="text-indigo-400"
+                  />
+                  <MetricCard label={DASHBOARD_COPY.daysLeft} value={revenueGoal.daysLeft} />
                 </div>
                 <div className="h-3 rounded-full bg-zinc-800 overflow-hidden">
                   <div
@@ -263,8 +273,8 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
 
             <section>
               <SectionTitle
-                title={`${formatRangeLabel(range)} 数据`}
-                subtitle="以下数字均按你选的日期范围统计"
+                title={`${formatRangeLabel(range)} ${DASHBOARD_COPY.periodData}`}
+                subtitle={DASHBOARD_COPY.periodDataSub}
               />
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                 <MetricCard label={METRIC.pv} value={summary.period.pv} />
@@ -274,28 +284,36 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
                 <MetricCard label={METRIC.purchase} value={summary.period.purchase} accent="text-emerald-400" />
               </div>
               <div className="grid sm:grid-cols-4 gap-3 mt-3">
-                <MetricCard label="站点数" value={summary.siteCount} />
-                <MetricCard label="有流量的站" value={summary.activeSites} hint="该时段内有浏览" />
-                <MetricCard label="有付费的站" value={summary.payingSites} accent="text-emerald-400" />
+                <MetricCard label={DASHBOARD_COPY.siteCount} value={summary.siteCount} />
                 <MetricCard
-                  label="估算收入"
+                  label={DASHBOARD_COPY.activeSites}
+                  value={summary.activeSites}
+                  hint={DASHBOARD_COPY.activeSitesHint}
+                />
+                <MetricCard
+                  label={DASHBOARD_COPY.payingSites}
+                  value={summary.payingSites}
+                  accent="text-emerald-400"
+                />
+                <MetricCard
+                  label={DASHBOARD_COPY.estimatedIncome}
                   value={`$${summary.estimatedRevenueUsd.toFixed(1)}`}
-                  hint={`${summary.period.purchase} 次付费 × $${SUBSCRIPTION_PRICE_USD}`}
+                  hint={`${summary.period.purchase} ${DASHBOARD_COPY.purchaseCountHint} $${SUBSCRIPTION_PRICE_USD}`}
                   accent="text-emerald-400"
                 />
               </div>
             </section>
 
             <section>
-              <SectionTitle title="转化漏斗" subtitle="看访客在哪一步流失最多" />
+              <SectionTitle title={DASHBOARD_COPY.funnelTitle} subtitle={DASHBOARD_COPY.funnelSub} />
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {[
-                  ["浏览 → 试用", summary.funnel.visitToTrial],
-                  ["试用 → 结账", summary.funnel.trialToCheckout],
-                  ["结账 → 付费", summary.funnel.checkoutToPurchase],
-                  ["浏览 → 结账", summary.funnel.visitToCheckout],
-                  ["浏览 → 付费", summary.funnel.visitToPurchase],
-                  ["访客 → 付费", summary.funnel.visitorToPurchase],
+                  [DASHBOARD_COPY.funnelVisitTrial, summary.funnel.visitToTrial],
+                  [DASHBOARD_COPY.funnelTrialCheckout, summary.funnel.trialToCheckout],
+                  [DASHBOARD_COPY.funnelCheckoutPurchase, summary.funnel.checkoutToPurchase],
+                  [DASHBOARD_COPY.funnelVisitCheckout, summary.funnel.visitToCheckout],
+                  [DASHBOARD_COPY.funnelVisitPurchase, summary.funnel.visitToPurchase],
+                  [DASHBOARD_COPY.funnelVisitorPurchase, summary.funnel.visitorToPurchase],
                 ].map(([label, val]) => (
                   <MetricCard key={label as string} label={label as string} value={val as string} />
                 ))}
@@ -307,7 +325,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             ) : null}
 
             <section>
-              <SectionTitle title="搜索优化健康度" subtitle="影响自然搜索流量能否持续增长" />
+              <SectionTitle title={DASHBOARD_COPY.seoTitle} subtitle={DASHBOARD_COPY.seoSub} />
               <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3">
                 <MetricCard label={SEO_LABELS.score} value={summary.seo.avgScore} />
                 <MetricCard label={SEO_LABELS.excellent} value={summary.seo.excellentCount} accent="text-emerald-400" />
@@ -322,11 +340,11 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             </section>
 
             <section>
-              <SectionTitle title={STRIPE_LABELS.title} subtitle="没配密钥就只能演示，用户付了也进不了账" />
+              <SectionTitle title={STRIPE_LABELS.title} subtitle={DASHBOARD_COPY.stripeSub} />
               <div className="grid sm:grid-cols-4 gap-3">
                 <MetricCard
                   label={STRIPE_LABELS.configured}
-                  value={summary.stripe.configured ? "已配置" : "未配置"}
+                  value={summary.stripe.configured ? STRIPE_LABELS.configuredYes : STRIPE_LABELS.configuredNo}
                   accent={summary.stripe.configured ? "text-emerald-400" : "text-red-400"}
                 />
                 <MetricCard label={STRIPE_LABELS.live} value={summary.stripe.liveCount} accent="text-emerald-400" />
@@ -336,12 +354,12 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             </section>
 
             <section>
-              <SectionTitle title="流量排名（该时段）" subtitle="优先推广排名靠前的站点" />
+              <SectionTitle title={DASHBOARD_COPY.topSitesTitle} subtitle={DASHBOARD_COPY.topSitesSub} />
               <div className="overflow-x-auto rounded-2xl border border-zinc-800">
                 <table className="w-full text-sm">
                   <thead className="bg-zinc-900/80 text-zinc-400">
                     <tr>
-                      <th className="text-left px-4 py-3">站点</th>
+                      <th className="text-left px-4 py-3">{DASHBOARD_COPY.siteColumn}</th>
                       <th className="text-right px-4 py-3">{METRIC.pv}</th>
                       <th className="text-right px-4 py-3">{METRIC.uv}</th>
                       <th className="text-right px-4 py-3">{METRIC.purchase}</th>
@@ -366,7 +384,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             </section>
 
             <section>
-              <SectionTitle title="全部站点" subtitle="按所选时段浏览次数排序" />
+              <SectionTitle title={DASHBOARD_COPY.allSitesTitle} subtitle={DASHBOARD_COPY.allSitesSub} />
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
                 {sortedSites.map((site) => (
                   <SiteCard
@@ -382,7 +400,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
         )}
       </main>
 
-      <footer className="text-center py-8 text-zinc-600 text-xs">每日站点工厂 · 实时数据看板</footer>
+      <footer className="text-center py-8 text-zinc-600 text-xs">{DASHBOARD_COPY.footer}</footer>
     </div>
   );
 }

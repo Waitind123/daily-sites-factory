@@ -138,10 +138,10 @@ export function audienceToProfile(
   totals: { pv: number; trial: number; checkout: number; purchase: number }
 ): VisitorProfileView {
   const intentMap = {
-    仅浏览: Math.max(0, totals.pv - totals.trial),
-    试用意向: Math.max(0, totals.trial - totals.checkout),
-    结账意向: Math.max(0, totals.checkout - totals.purchase),
-    已付费: totals.purchase,
+    browse: Math.max(0, totals.pv - totals.trial),
+    trial: Math.max(0, totals.trial - totals.checkout),
+    checkout: Math.max(0, totals.checkout - totals.purchase),
+    paid: totals.purchase,
   };
 
   return {

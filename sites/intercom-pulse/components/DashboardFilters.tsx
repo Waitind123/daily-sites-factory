@@ -1,12 +1,7 @@
 "use client";
 
-import {
-  DATE_PRESET_LABELS,
-  formatRangeLabel,
-  type DatePreset,
-  type DateRange,
-  todayKey,
-} from "@/lib/date-range";
+import { type DatePreset, type DateRange, todayKey } from "@/lib/date-range";
+import { DASHBOARD_COPY, DATE_PRESET_LABELS, formatRangeLabelBilingual } from "@/lib/dashboard-labels";
 
 interface SiteOption {
   id: string;
@@ -36,10 +31,10 @@ export function DashboardFilters({
     <section className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4 space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-base font-semibold text-zinc-100">筛选条件</h2>
+          <h2 className="text-base font-semibold text-zinc-100">{DASHBOARD_COPY.filtersTitle}</h2>
           <p className="text-sm text-zinc-500 mt-1">
-            当前查看：<span className="text-indigo-300">{formatRangeLabel(range)}</span>
-            {siteId === "all" ? " · 全部站点" : ` · ${sites.find((s) => s.id === siteId)?.name || siteId}`}
+            {DASHBOARD_COPY.filtersCurrent}：<span className="text-indigo-300">{formatRangeLabelBilingual(range)}</span>
+            {siteId === "all" ? ` · ${DASHBOARD_COPY.allSites}` : ` · ${sites.find((s) => s.id === siteId)?.name || siteId}`}
           </p>
         </div>
         <select
@@ -47,7 +42,7 @@ export function DashboardFilters({
           onChange={(e) => onSiteChange(e.target.value)}
           className="rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-sm text-zinc-200"
         >
-          <option value="all">全部站点</option>
+          <option value="all">{DASHBOARD_COPY.allSites}</option>
           {sites.map((s) => (
             <option key={s.id} value={s.id}>
               {s.name}
@@ -77,7 +72,7 @@ export function DashboardFilters({
 
       <div className="flex flex-wrap items-end gap-3">
         <label className="text-sm text-zinc-400">
-          开始日期
+          {DASHBOARD_COPY.startDate}
           <input
             type="date"
             max={todayKey()}
@@ -87,7 +82,7 @@ export function DashboardFilters({
           />
         </label>
         <label className="text-sm text-zinc-400">
-          结束日期
+          {DASHBOARD_COPY.endDate}
           <input
             type="date"
             max={todayKey()}

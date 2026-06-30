@@ -45,17 +45,6 @@ export type DatePreset =
   | "all"
   | "custom";
 
-export const DATE_PRESET_LABELS: Record<DatePreset, string> = {
-  today: "今天",
-  yesterday: "昨天",
-  last7: "近 7 天",
-  last30: "近 30 天",
-  thisMonth: "本月",
-  lastMonth: "上月",
-  all: "全部时间",
-  custom: "自定义",
-};
-
 export function rangeForPreset(preset: DatePreset, earliestDay?: string): DateRange {
   const today = todayKey();
   switch (preset) {
@@ -84,7 +73,7 @@ export function rangeForPreset(preset: DatePreset, earliestDay?: string): DateRa
 
 export function formatRangeLabel(range: DateRange) {
   if (range.from === range.to) return range.from;
-  return `${range.from} 至 ${range.to}`;
+  return `${range.from} 至 to ${range.to}`;
 }
 
 export function earliestDayInRollup(sites: Record<string, { daily: Record<string, unknown> }>) {
