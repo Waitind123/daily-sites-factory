@@ -132,12 +132,41 @@ function writeLocal(data: RollupFile) {
   writeFileSync(path, JSON.stringify(data, null, 2) + "\n");
 }
 
+async function fetchRollupFromRaw(): Promise<RollupFile | null> {
+  try {
+    let path = `main/analytics/rollup.json`;
+    const meta = await fetch(`https://api.github.com/repos/${REPO}/commits/main`, {
+      headers: { Accept: "application/vnd.github+json", "User-Agent": "intercom-pulse-analytics" },
+      signal: AbortSignal.timeout(10000),
+      cache: "no-store",
+    });
+    if (meta.ok) {
+      const commit = (await meta.json()) as { sha?: string };
+      if (commit.sha) path = `${commit.sha}/analytics/rollup.json`;
+    }
+    const res = await fetch(
+      `https://raw.githubusercontent.com/${REPO}/${path}?t=${Date.now()}`,
+      { signal: AbortSignal.timeout(10000), cache: "no-store" }
+    );
+    if (!res.ok) return null;
+    return (await res.json()) as RollupFile;
+  } catch {
+    return null;
+  }
+}
+
 export async function loadRollup(): Promise<RollupFile> {
   try {
     const remote = await githubGet(ROLLUP_PATH);
     if (remote) return JSON.parse(remote.content) as RollupFile;
   } catch {
-    /* local fallback */
+    /* github api fallback */
+  }
+  try {
+    const raw = await fetchRollupFromRaw();
+    if (raw) return raw;
+  } catch {
+    /* raw fallback */
   }
   return readLocal();
 }
