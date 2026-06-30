@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T09:08:13.371Z",
+  "updatedAt": "2026-06-30T10:05:35.591Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -919,20 +919,46 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ci-prod-smoke",
-            "bootstrap-probe"
-          ]
+            "bootstrap-probe",
+            "0afb6200-2931-49a1-aa75-e82824c4fcf3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -949,7 +975,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:21.495Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0afb6200-2931-49a1-aa75-e82824c4fcf3"
+      ]
     },
     "gummyspy": {
       "url": "https://gummyspy.vercel.app",
