@@ -19,6 +19,13 @@ export const siteMeta = {
         "en": "Track",
         "zh": "追踪"
       }
+    },
+    {
+      "href": "/join",
+      "label": {
+        "en": "Pricing",
+        "zh": "定价"
+      }
     }
   ],
   "guideHref": "/guide/streak-anxiety-habit-tracker-alternative"
