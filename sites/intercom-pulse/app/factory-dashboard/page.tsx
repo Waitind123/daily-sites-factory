@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { LiveFactoryDashboard } from "@/components/LiveFactoryDashboard";
+import { getLocale } from "@/lib/locale";
+import type { Locale } from "@/lib/i18n-shared";
 
 export const metadata: Metadata = {
   title: "全站运营看板 · Daily Sites Factory",
@@ -8,6 +10,7 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default function FactoryDashboardPage() {
-  return <LiveFactoryDashboard />;
+export default async function FactoryDashboardPage() {
+  const locale = await getLocale();
+  return <LiveFactoryDashboard locale={locale as Locale} />;
 }

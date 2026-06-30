@@ -143,7 +143,7 @@ function SiteCard({ site, rollup }: { site: SiteEntry; rollup?: SiteRollup }) {
   );
 }
 
-export function LiveFactoryDashboard() {
+export function LiveFactoryDashboard({ locale: _locale }: { locale: string }) {
   const [data, setData] = useState<DashboardPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [lastFetchedAt, setLastFetchedAt] = useState<string | null>(null);
