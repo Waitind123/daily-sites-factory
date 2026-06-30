@@ -1,19 +1,19 @@
 export const siteMeta = {
-  id: "coworking-finder",
-  emoji: "🏢",
-  name: {
-    en: "Coworking Finder",
-    zh: "联合办公 Finder",
+  "id": "coworking-finder",
+  "emoji": "🏢",
+  "name": {
+    "en": "Coworking Finder",
+    "zh": "联合办公 Finder"
   },
-  guideHref: "/guide/find-coworking-space-digital-nomad",
-  nav: [
+  "nav": [
     {
-      href: "/spaces",
-      label: {
-        en: "Spaces",
-        zh: "空间",
-      },
-    },
+      "href": "/spaces",
+      "label": {
+        "en": "Spaces",
+        "zh": "空间"
+      }
+    }
   ],
+  "guideHref": "/guide/find-coworking-space-digital-nomad"
 } as const;
 export type SiteMeta = typeof siteMeta;
