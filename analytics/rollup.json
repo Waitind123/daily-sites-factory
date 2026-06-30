@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T06:08:46.427Z",
+  "updatedAt": "2026-06-30T06:21:06.155Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -20,11 +20,22 @@
             "c01bd75b-c602-479a-a646-ca03a3dd2e88",
             "eed76f98-318c-4408-98ac-2219207cc2cf"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 6,
+        "pv": 9,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -39,7 +50,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:40.916Z",
+        "lastChecked": "2026-06-30T06:20:00.397Z",
         "score": 90
       }
     },
@@ -57,11 +68,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -76,13 +98,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:41.686Z",
+        "lastChecked": "2026-06-30T06:20:01.619Z",
         "score": 90
       }
     },
     "book-pulse": {
       "url": "https://book-pulse-lovat.vercel.app",
-      "name": "book-pulse",
+      "name": "独立开发者预约",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -96,20 +118,21 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "98a4af86-b504-44e3-8990-dbee07213a9a",
-            "12332e86-925b-4738-bfc7-61e08bc1900f"
+            "12332e86-925b-4738-bfc7-61e08bc1900f",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -124,7 +147,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:42.770Z",
+        "lastChecked": "2026-06-30T06:20:04.161Z",
         "score": 90
       }
     },
@@ -142,11 +165,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -161,50 +195,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:43.507Z",
+        "lastChecked": "2026-06-30T06:20:05.310Z",
         "score": 100
       }
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
-      "name": "Indie Changelog 发布台",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Indie Changelog — Beamer alternative, $9.9/mo",
-        "titleLen": 45,
-        "description": "5 free tries. Generate changelog pages, embed widgets, status snippets, and RSS. Built for indie hackers after Beamer&#x27;s $49/mo hike.",
-        "descriptionLen": 137,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:44.387Z",
-        "score": 100
-      }
-    },
-    "churn-pulse": {
-      "url": "https://churn-pulse-pi.vercel.app",
-      "name": "churn-pulse",
+      "name": "changelog-hub",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -224,14 +221,64 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "1fa939c9-c076-4b05-8b11-ce35debbfccc",
-            "096ef9ef-f1c7-4687-8c61-f1e99cb59fe5"
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
         "pv": 5,
         "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Indie Changelog — Beamer alternative, $9.9/mo",
+        "titleLen": 45,
+        "description": "5 free tries. Generate changelog pages, embed widgets, status snippets, and RSS. Built for indie hackers after Beamer&#x27;s $49/mo hike.",
+        "descriptionLen": 137,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:06.485Z",
+        "score": 100
+      }
+    },
+    "churn-pulse": {
+      "url": "https://churn-pulse-pi.vercel.app",
+      "name": "客户成功健康分",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 4,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1fa939c9-c076-4b05-8b11-ce35debbfccc",
+            "096ef9ef-f1c7-4687-8c61-f1e99cb59fe5",
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -246,7 +293,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:45.224Z",
+        "lastChecked": "2026-06-30T06:20:07.619Z",
         "score": 90
       }
     },
@@ -264,11 +311,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -283,7 +341,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:45.892Z",
+        "lastChecked": "2026-06-30T06:20:08.684Z",
         "score": 100
       }
     },
@@ -301,11 +359,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -320,13 +389,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:46.564Z",
+        "lastChecked": "2026-06-30T06:20:09.898Z",
         "score": 80
       }
     },
     "coworking-finder": {
       "url": "https://coworking-finder-lovat.vercel.app",
-      "name": "联合办公 Finder",
+      "name": "coworking-finder",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -338,11 +407,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -357,13 +437,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:47.225Z",
+        "lastChecked": "2026-06-30T06:20:10.942Z",
         "score": 90
       }
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
-      "name": "coworking-pass",
+      "name": "联合办公日票预订",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -377,20 +457,22 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "bc37c5cb-d469-45a2-9872-fe971ab8078b",
-            "848588da-51d1-4997-8a05-756f28415970"
+            "848588da-51d1-4997-8a05-756f28415970",
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -405,87 +487,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:48.116Z",
+        "lastChecked": "2026-06-30T06:20:11.923Z",
         "score": 100
       }
     },
     "cron-heartbeat": {
       "url": "https://cron-heartbeat.vercel.app",
-      "name": "Cron 任务心跳监控",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Cron Heartbeat — Healthchecks.io alternative for indie devs, $9.9/mo flat",
-        "titleLen": 73,
-        "description": "5 free cron job monitors. Healthchecks.io too complex? $9.9/mo flat: heartbeat ping, missed-run alerts, Slack notifications.",
-        "descriptionLen": 124,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:48.797Z",
-        "score": 90
-      }
-    },
-    "desk-pulse": {
-      "url": "https://desk-pulse.vercel.app",
-      "name": "极简客服工单",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Desk Pulse — Zendesk alternative for indie devs, $9.9/mo flat",
-        "titleLen": 61,
-        "description": "5 free ticket actions. Zendesk $98/agent? $9.9/mo flat: shared inbox, AI reply suggestions, knowledge base, no per-seat fees.",
-        "descriptionLen": 125,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:49.512Z",
-        "score": 100
-      }
-    },
-    "docs-pulse": {
-      "url": "https://docs-pulse.vercel.app",
-      "name": "docs-pulse",
+      "name": "cron-heartbeat",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -505,14 +513,112 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4242bb33-7225-4456-91b1-eb27ee3dc4b5",
-            "53b1a074-64ac-4e3d-973f-fe51d42c2237"
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
         "pv": 5,
         "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Cron Heartbeat — Healthchecks.io alternative for indie devs, $9.9/mo flat",
+        "titleLen": 73,
+        "description": "5 free cron job monitors. Healthchecks.io too complex? $9.9/mo flat: heartbeat ping, missed-run alerts, Slack notifications.",
+        "descriptionLen": 124,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:13.243Z",
+        "score": 90
+      }
+    },
+    "desk-pulse": {
+      "url": "https://desk-pulse.vercel.app",
+      "name": "desk-pulse",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Desk Pulse — Zendesk alternative for indie devs, $9.9/mo flat",
+        "titleLen": 61,
+        "description": "5 free ticket actions. Zendesk $98/agent? $9.9/mo flat: shared inbox, AI reply suggestions, knowledge base, no per-seat fees.",
+        "descriptionLen": 125,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:14.286Z",
+        "score": 100
+      }
+    },
+    "docs-pulse": {
+      "url": "https://docs-pulse.vercel.app",
+      "name": "API 文档托管",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 4,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4242bb33-7225-4456-91b1-eb27ee3dc4b5",
+            "53b1a074-64ac-4e3d-973f-fe51d42c2237",
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -527,7 +633,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:50.478Z",
+        "lastChecked": "2026-06-30T06:20:15.334Z",
         "score": 100
       }
     },
@@ -552,7 +658,7 @@
         "hasOg": false,
         "hasJsonLd": false,
         "guideCount": 0,
-        "lastChecked": "2026-06-29T06:55:51.006Z",
+        "lastChecked": "2026-06-30T06:20:16.122Z",
         "score": 0
       }
     },
@@ -575,11 +681,22 @@
             "6b5fa719-c943-44cd-a745-3b2aa396219a",
             "47411f2f-9085-482f-8c4e-545db4a71833"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 7,
+        "pv": 11,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -594,13 +711,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:51.832Z",
+        "lastChecked": "2026-06-30T06:20:17.193Z",
         "score": 100
       }
     },
     "form-pulse": {
       "url": "https://form-pulse-amber.vercel.app",
-      "name": "form-pulse",
+      "name": "极简表单构建器",
       "daily": {
         "2026-06-29": {
           "pv": 4,
@@ -613,11 +730,22 @@
             "ci-prod-smoke",
             "48d6c38e-8330-48d3-be79-2d5acb0b7af5"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -632,7 +760,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:52.528Z",
+        "lastChecked": "2026-06-30T06:20:18.257Z",
         "score": 100
       }
     },
@@ -650,11 +778,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -669,7 +808,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:53.218Z",
+        "lastChecked": "2026-06-30T06:20:19.315Z",
         "score": 100
       }
     },
@@ -689,11 +828,22 @@
             "845093f0-382a-4e0e-a0e6-290eb6db3147",
             "b4471bae-ce46-4391-b4e2-80450e973f86"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -708,7 +858,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:53.892Z",
+        "lastChecked": "2026-06-30T06:20:20.354Z",
         "score": 90
       }
     },
@@ -726,11 +876,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -745,13 +906,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:54.622Z",
+        "lastChecked": "2026-06-30T06:20:21.495Z",
         "score": 100
       }
     },
     "gummyspy": {
       "url": "https://gummyspy.vercel.app",
-      "name": "GummySearch 替代品",
+      "name": "gummyspy",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -763,11 +924,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -782,13 +954,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:55.415Z",
+        "lastChecked": "2026-06-30T06:20:22.599Z",
         "score": 90
       }
     },
     "habit-tracker": {
       "url": "https://habit-tracker-opal-rho.vercel.app",
-      "name": "习惯打卡",
+      "name": "habit-tracker",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -800,11 +972,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -819,13 +1002,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:56.246Z",
+        "lastChecked": "2026-06-30T06:20:23.601Z",
         "score": 100
       }
     },
     "incident-ai": {
       "url": "https://incident-ai-seven.vercel.app",
-      "name": "AI 事件摘要",
+      "name": "incident-ai",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -837,11 +1020,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -856,13 +1050,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:56.932Z",
+        "lastChecked": "2026-06-30T06:20:24.560Z",
         "score": 100
       }
     },
     "indie-tools": {
       "url": "https://indie-tools-rho.vercel.app",
-      "name": "独立开发者工具箱",
+      "name": "indie-tools",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -874,11 +1068,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -893,7 +1098,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:57.707Z",
+        "lastChecked": "2026-06-30T06:20:25.648Z",
         "score": 90
       }
     },
@@ -914,19 +1119,21 @@
           ]
         },
         "2026-06-30": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "f3c08cae-b8b2-497b-94c8-16e4cc747c62"
+            "f3c08cae-b8b2-497b-94c8-16e4cc747c62",
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -941,7 +1148,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:58.439Z",
+        "lastChecked": "2026-06-30T06:20:27.121Z",
         "score": 90
       }
     },
@@ -959,11 +1166,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -978,7 +1196,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:59.055Z",
+        "lastChecked": "2026-06-30T06:20:28.459Z",
         "score": 90
       }
     },
@@ -996,11 +1214,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1015,7 +1244,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:55:59.922Z",
+        "lastChecked": "2026-06-30T06:20:29.645Z",
         "score": 100
       }
     },
@@ -1035,20 +1264,22 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "bd31a539-1fca-4e18-a7f4-0eaaaef8e65d",
-            "7ae85da0-53d5-4b65-ad7e-9b2535d62b36"
+            "7ae85da0-53d5-4b65-ad7e-9b2535d62b36",
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1063,7 +1294,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:00.710Z",
+        "lastChecked": "2026-06-30T06:20:30.743Z",
         "score": 100
       }
     },
@@ -1081,11 +1312,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1100,7 +1342,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:01.509Z",
+        "lastChecked": "2026-06-30T06:20:31.974Z",
         "score": 100
       }
     },
@@ -1118,11 +1360,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1137,7 +1390,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:02.304Z",
+        "lastChecked": "2026-06-30T06:20:33.439Z",
         "score": 100
       }
     },
@@ -1157,11 +1410,22 @@
             "ba097e6e-70eb-4907-bb86-1edea4a32438",
             "f3076a30-0a22-4c91-a7ca-ab77d30d4c7c"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1176,13 +1440,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:03.145Z",
+        "lastChecked": "2026-06-30T06:20:34.293Z",
         "score": 100
       }
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
-      "name": "OG 图生成器",
+      "name": "og-image-studio",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -1194,11 +1458,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1213,7 +1488,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:03.813Z",
+        "lastChecked": "2026-06-30T06:20:35.272Z",
         "score": 100
       }
     },
@@ -1233,11 +1508,22 @@
             "84571af6-31e3-4b50-9c26-e4c1d9249292",
             "0b85de4e-df8c-4222-9980-18e105ddbd69"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1252,498 +1538,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:04.647Z",
+        "lastChecked": "2026-06-30T06:20:36.340Z",
         "score": 100
       }
     },
     "pain-radar": {
       "url": "https://pain-radar-lyart.vercel.app",
       "name": "pain-radar",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Pain Radar — Cross-platform pain point scanner for indie hackers, $9.9/mo",
-        "titleLen": 73,
-        "description": "5 free scans. Scan Reddit, Hacker News &amp; Product Hunt for pain points. GummySearch alternative with opportunity scoring. $9.9/mo flat.",
-        "descriptionLen": 138,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:05.440Z",
-        "score": 90
-      }
-    },
-    "price-tracker": {
-      "url": "https://price-tracker-seven-tan.vercel.app",
-      "name": "price-tracker",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "SaaS Price Tracker — competitor pricing monitor &amp; history $9.9/mo",
-        "titleLen": 69,
-        "description": "5 free deep-dives. Auto-track Notion, Linear, Cursor pricing changes — 90-day history, trend analysis, email alerts. 5x cheaper than RivalPeek.",
-        "descriptionLen": 143,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:06.291Z",
-        "score": 90
-      }
-    },
-    "pulse-suite": {
-      "url": "https://pulse-suite-ochre.vercel.app",
-      "name": "监控+状态页一体",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Pulse Suite — Uptime monitoring + status pages for indie devs, $9.9/mo",
-        "titleLen": 70,
-        "description": "5 free actions. Statuspage $29 + UptimeRobot $7? $9.9/mo flat: 1-minute checks, public status pages, incident posts — one dashboard.",
-        "descriptionLen": 132,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:06.965Z",
-        "score": 90
-      }
-    },
-    "quote-pulse": {
-      "url": "https://quote-pulse.vercel.app",
-      "name": "quote-pulse",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Quote Pulse — HoneyBook alternative for freelancers, $9.9/mo flat",
-        "titleLen": 65,
-        "description": "5 free quote actions. HoneyBook $36/mo? $9.9/mo flat: proposals, contracts, invoices — no 89% price hike.",
-        "descriptionLen": 105,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:07.618Z",
-        "score": 100
-      }
-    },
-    "reddit-leads": {
-      "url": "https://reddit-leads-beta.vercel.app",
-      "name": "reddit-leads",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Reddit Leads — High-intent Reddit lead monitoring for indie hackers, $9.9/mo",
-        "titleLen": 76,
-        "description": "5 free scans. Monitor r/SaaS, r/Entrepreneur &amp; r/indiehackers for switching, alternative &amp; pricing signals. SubWatch alternative with intent scoring. $9.9/mo flat.",
-        "descriptionLen": 171,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:08.298Z",
-        "score": 80
-      }
-    },
-    "reddit-pulse": {
-      "url": "https://reddit-pulse-six.vercel.app",
-      "name": "reddit-pulse",
-      "daily": {
-        "2026-06-29": {
-          "pv": 5,
-          "uv": 4,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke",
-            "48027363-9460-4cfa-98d0-be852a11f55b",
-            "284df9c5-dae2-4c19-b1a0-acb41c089cfb"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 5,
-        "uv": 4,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Reddit Pulse — GummySearch alternative for indie hackers, $9.9/mo",
-        "titleLen": 65,
-        "description": "5 free pain point searches. GummySearch shut down? $9.9/mo flat: mine Reddit for &#x27;I wish&#x27; and &#x27;looking for alternative&#x27; signals.",
-        "descriptionLen": 148,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:09.116Z",
-        "score": 100
-      }
-    },
-    "reddit-watch": {
-      "url": "https://reddit-watch-rho.vercel.app",
-      "name": "Reddit 线索监控",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Reddit Watch — 24/7 keyword monitoring for indie hackers, $9.9/mo",
-        "titleLen": 65,
-        "description": "5 free scans. SubWatch alternative with 24/7 keyword alerts, intent scoring 1–10, and switching/alternative signal filtering. Monitor r/SaaS &amp; r/indiehackers for $9.9/mo.",
-        "descriptionLen": 174,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:09.913Z",
-        "score": 90
-      }
-    },
-    "release-pulse": {
-      "url": "https://release-pulse.vercel.app",
-      "name": "发布日志转社交帖",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Release Pulse — Changelog to social posts for indie devs, $9.9/mo",
-        "titleLen": 65,
-        "description": "5 free conversions. PushToPost $9/mo? $9.9/mo flat: paste release notes → X, LinkedIn, Threads. Ship announcements in 30 seconds.",
-        "descriptionLen": 129,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:10.645Z",
-        "score": 100
-      }
-    },
-    "remote-jobs": {
-      "url": "https://remote-jobs-azure.vercel.app",
-      "name": "remote-jobs",
-      "daily": {
-        "2026-06-29": {
-          "pv": 5,
-          "uv": 4,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke",
-            "b4b1f1db-8bf4-42d6-8ab3-927eac3459b5",
-            "5a91496b-62d1-4eab-9045-fd669dac8a87"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 5,
-        "uv": 4,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Remote Jobs — Curated remote board for indie hackers, $9.9/mo",
-        "titleLen": 61,
-        "description": "5 free job detail views. We Work Remotely $149/yr? $9.9/mo flat: 200+ remote roles, transparent salaries, stack filters, unlimited company posts.",
-        "descriptionLen": 145,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:11.459Z",
-        "score": 100
-      }
-    },
-    "seo-rank-tracker": {
-      "url": "https://seo-rank-tracker-lemon.vercel.app",
-      "name": "SEO 排名追踪",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Rank Pulse — SEMrush alternative for indie devs, $9.9/mo flat",
-        "titleLen": 61,
-        "description": "5 free rank checks. SEMrush $130/mo? $9.9/mo flat: daily keyword position tracking, rank history, 7-day trends. Ship SEO in 30 seconds.",
-        "descriptionLen": 135,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:12.292Z",
-        "score": 100
-      }
-    },
-    "sign-pulse": {
-      "url": "https://sign-pulse.vercel.app",
-      "name": "sign-pulse",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Sign Pulse — PandaDoc alternative for small teams, $9.9/mo flat",
-        "titleLen": 63,
-        "description": "5 free document actions. PandaDoc $19–49/user? $9.9/mo flat: proposals, e-signatures, contracts — no per-seat tax.",
-        "descriptionLen": 114,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:13.089Z",
-        "score": 100
-      }
-    },
-    "startup-ideas": {
-      "url": "https://startup-ideas-five.vercel.app",
-      "name": "创业点子库",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Startup Ideas — Daily inspiration + deep market analysis $9.9/mo",
-        "titleLen": 64,
-        "description": "5 free deep analyses. Curated micro-SaaS ideas with market size, competitor pricing, acquisition channels &amp; MVP roadmap. $9.9/mo unlimited.",
-        "descriptionLen": 143,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:13.939Z",
-        "score": 100
-      }
-    },
-    "status-pulse": {
-      "url": "https://status-pulse-chi.vercel.app",
-      "name": "状态页发布",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Status Pulse — Statuspage.io alternative for indie devs, $9.9/mo flat",
-        "titleLen": 69,
-        "description": "5 free status pages. Statuspage.io costs $29+/mo? $9.9/mo flat: incident management, email subscribers, embeddable widget.",
-        "descriptionLen": 122,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:14.708Z",
-        "score": 90
-      }
-    },
-    "stripe-pulse": {
-      "url": "https://stripe-pulse-two.vercel.app",
-      "name": "stripe-pulse",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -1763,14 +1564,644 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4afbe281-df98-4293-b509-c2498c186a3b",
-            "52200b0b-b6d8-4caa-a6ae-35eaee9ddc35"
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
         "pv": 5,
         "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Pain Radar — Cross-platform pain point scanner for indie hackers, $9.9/mo",
+        "titleLen": 73,
+        "description": "5 free scans. Scan Reddit, Hacker News &amp; Product Hunt for pain points. GummySearch alternative with opportunity scoring. $9.9/mo flat.",
+        "descriptionLen": 138,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:37.542Z",
+        "score": 90
+      }
+    },
+    "price-tracker": {
+      "url": "https://price-tracker-seven-tan.vercel.app",
+      "name": "price-tracker",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "SaaS Price Tracker — competitor pricing monitor &amp; history $9.9/mo",
+        "titleLen": 69,
+        "description": "5 free deep-dives. Auto-track Notion, Linear, Cursor pricing changes — 90-day history, trend analysis, email alerts. 5x cheaper than RivalPeek.",
+        "descriptionLen": 143,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:39.794Z",
+        "score": 90
+      }
+    },
+    "pulse-suite": {
+      "url": "https://pulse-suite-ochre.vercel.app",
+      "name": "监控+状态页一体",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Pulse Suite — Uptime monitoring + status pages for indie devs, $9.9/mo",
+        "titleLen": 70,
+        "description": "5 free actions. Statuspage $29 + UptimeRobot $7? $9.9/mo flat: 1-minute checks, public status pages, incident posts — one dashboard.",
+        "descriptionLen": 132,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:41.080Z",
+        "score": 90
+      }
+    },
+    "quote-pulse": {
+      "url": "https://quote-pulse.vercel.app",
+      "name": "quote-pulse",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Quote Pulse — HoneyBook alternative for freelancers, $9.9/mo flat",
+        "titleLen": 65,
+        "description": "5 free quote actions. HoneyBook $36/mo? $9.9/mo flat: proposals, contracts, invoices — no 89% price hike.",
+        "descriptionLen": 105,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:42.166Z",
+        "score": 100
+      }
+    },
+    "reddit-leads": {
+      "url": "https://reddit-leads-beta.vercel.app",
+      "name": "reddit-leads",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Reddit Leads — High-intent Reddit lead monitoring for indie hackers, $9.9/mo",
+        "titleLen": 76,
+        "description": "5 free scans. Monitor r/SaaS, r/Entrepreneur &amp; r/indiehackers for switching, alternative &amp; pricing signals. SubWatch alternative with intent scoring. $9.9/mo flat.",
+        "descriptionLen": 171,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:43.299Z",
+        "score": 80
+      }
+    },
+    "reddit-pulse": {
+      "url": "https://reddit-pulse-six.vercel.app",
+      "name": "Reddit 痛点挖掘",
+      "daily": {
+        "2026-06-29": {
+          "pv": 5,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke",
+            "48027363-9460-4cfa-98d0-be852a11f55b",
+            "284df9c5-dae2-4c19-b1a0-acb41c089cfb"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Reddit Pulse — GummySearch alternative for indie hackers, $9.9/mo",
+        "titleLen": 65,
+        "description": "5 free pain point searches. GummySearch shut down? $9.9/mo flat: mine Reddit for &#x27;I wish&#x27; and &#x27;looking for alternative&#x27; signals.",
+        "descriptionLen": 148,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:44.264Z",
+        "score": 100
+      }
+    },
+    "reddit-watch": {
+      "url": "https://reddit-watch-rho.vercel.app",
+      "name": "reddit-watch",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Reddit Watch — 24/7 keyword monitoring for indie hackers, $9.9/mo",
+        "titleLen": 65,
+        "description": "5 free scans. SubWatch alternative with 24/7 keyword alerts, intent scoring 1–10, and switching/alternative signal filtering. Monitor r/SaaS &amp; r/indiehackers for $9.9/mo.",
+        "descriptionLen": 174,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:45.335Z",
+        "score": 90
+      }
+    },
+    "release-pulse": {
+      "url": "https://release-pulse.vercel.app",
+      "name": "发布日志转社交帖",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Release Pulse — Changelog to social posts for indie devs, $9.9/mo",
+        "titleLen": 65,
+        "description": "5 free conversions. PushToPost $9/mo? $9.9/mo flat: paste release notes → X, LinkedIn, Threads. Ship announcements in 30 seconds.",
+        "descriptionLen": 129,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:46.403Z",
+        "score": 100
+      }
+    },
+    "remote-jobs": {
+      "url": "https://remote-jobs-azure.vercel.app",
+      "name": "远程工作板",
+      "daily": {
+        "2026-06-29": {
+          "pv": 5,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke",
+            "b4b1f1db-8bf4-42d6-8ab3-927eac3459b5",
+            "5a91496b-62d1-4eab-9045-fd669dac8a87"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Remote Jobs — Curated remote board for indie hackers, $9.9/mo",
+        "titleLen": 61,
+        "description": "5 free job detail views. We Work Remotely $149/yr? $9.9/mo flat: 200+ remote roles, transparent salaries, stack filters, unlimited company posts.",
+        "descriptionLen": 145,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:47.808Z",
+        "score": 100
+      }
+    },
+    "seo-rank-tracker": {
+      "url": "https://seo-rank-tracker-lemon.vercel.app",
+      "name": "seo-rank-tracker",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Rank Pulse — SEMrush alternative for indie devs, $9.9/mo flat",
+        "titleLen": 61,
+        "description": "5 free rank checks. SEMrush $130/mo? $9.9/mo flat: daily keyword position tracking, rank history, 7-day trends. Ship SEO in 30 seconds.",
+        "descriptionLen": 135,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:50.067Z",
+        "score": 100
+      }
+    },
+    "sign-pulse": {
+      "url": "https://sign-pulse.vercel.app",
+      "name": "sign-pulse",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Sign Pulse — PandaDoc alternative for small teams, $9.9/mo flat",
+        "titleLen": 63,
+        "description": "5 free document actions. PandaDoc $19–49/user? $9.9/mo flat: proposals, e-signatures, contracts — no per-seat tax.",
+        "descriptionLen": 114,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:51.237Z",
+        "score": 100
+      }
+    },
+    "startup-ideas": {
+      "url": "https://startup-ideas-five.vercel.app",
+      "name": "startup-ideas",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Startup Ideas — Daily inspiration + deep market analysis $9.9/mo",
+        "titleLen": 64,
+        "description": "5 free deep analyses. Curated micro-SaaS ideas with market size, competitor pricing, acquisition channels &amp; MVP roadmap. $9.9/mo unlimited.",
+        "descriptionLen": 143,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:52.463Z",
+        "score": 100
+      }
+    },
+    "status-pulse": {
+      "url": "https://status-pulse-chi.vercel.app",
+      "name": "状态页发布",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 5,
+        "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Status Pulse — Statuspage.io alternative for indie devs, $9.9/mo flat",
+        "titleLen": 69,
+        "description": "5 free status pages. Statuspage.io costs $29+/mo? $9.9/mo flat: incident management, email subscribers, embeddable widget.",
+        "descriptionLen": 122,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:53.518Z",
+        "score": 90
+      }
+    },
+    "stripe-pulse": {
+      "url": "https://stripe-pulse-two.vercel.app",
+      "name": "Stripe 收入仪表盘",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 4,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4afbe281-df98-4293-b509-c2498c186a3b",
+            "52200b0b-b6d8-4caa-a6ae-35eaee9ddc35",
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1785,13 +2216,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:15.362Z",
+        "lastChecked": "2026-06-30T06:20:54.460Z",
         "score": 90
       }
     },
     "team-headshots": {
       "url": "https://team-headshots-phi.vercel.app",
-      "name": "team-headshots",
+      "name": "团队 AI 头像",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -1805,19 +2236,21 @@
           ]
         },
         "2026-06-30": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "86f8867e-7de6-4f27-8b08-57017d5d84d3"
+            "86f8867e-7de6-4f27-8b08-57017d5d84d3",
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1832,13 +2265,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:16.078Z",
+        "lastChecked": "2026-06-30T06:20:55.329Z",
         "score": 90
       }
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
-      "name": "独立开发者证言墙",
+      "name": "testimonial-wall",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -1850,11 +2283,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1869,7 +2313,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:16.832Z",
+        "lastChecked": "2026-06-30T06:20:56.333Z",
         "score": 100
       }
     },
@@ -1887,11 +2331,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1906,13 +2361,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:17.657Z",
+        "lastChecked": "2026-06-30T06:20:57.457Z",
         "score": 100
       }
     },
     "tracetics-lite": {
       "url": "https://tracetics-lite.vercel.app",
-      "name": "Indie 漏斗分析",
+      "name": "tracetics-lite",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -1924,11 +2379,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1943,7 +2409,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:18.356Z",
+        "lastChecked": "2026-06-30T06:20:58.605Z",
         "score": 100
       }
     },
@@ -1961,11 +2427,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1980,7 +2457,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:19.996Z",
+        "lastChecked": "2026-06-30T06:20:59.756Z",
         "score": 90
       }
     },
@@ -1998,11 +2475,22 @@
             "bootstrap-probe",
             "ci-prod-smoke"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2017,7 +2505,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:21.583Z",
+        "lastChecked": "2026-06-30T06:21:00.826Z",
         "score": 100
       }
     },
@@ -2037,11 +2525,22 @@
             "e46690e9-e10c-45c4-904f-5192327a460e",
             "d43dbaa3-7bbb-458a-9578-1a65b3b65288"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2056,89 +2555,13 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:22.284Z",
+        "lastChecked": "2026-06-30T06:21:03.021Z",
         "score": 100
       }
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
       "name": "visa-tracker",
-      "daily": {
-        "2026-06-29": {
-          "pv": 3,
-          "uv": 2,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 3,
-        "uv": 2,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Visa Tracker — Digital nomad visa policy &amp; expiry alerts, $9.9/mo",
-        "titleLen": 69,
-        "description": "Track 35+ digital nomad visa policies with real-time change alerts and expiry reminders. 5 free tracks, then $9.9/mo.",
-        "descriptionLen": 117,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:23.039Z",
-        "score": 90
-      }
-    },
-    "waitlist-pulse": {
-      "url": "https://waitlist-pulse.vercel.app",
-      "name": "waitlist-pulse",
-      "daily": {
-        "2026-06-29": {
-          "pv": 6,
-          "uv": 4,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "bootstrap-probe",
-            "ci-prod-smoke",
-            "80a76b56-f8ba-473a-bc02-940909d7da0b",
-            "b87dae17-8b4b-499c-b074-30a562340e72"
-          ]
-        }
-      },
-      "totals": {
-        "pv": 6,
-        "uv": 4,
-        "trial": 0,
-        "checkout": 0,
-        "purchase": 0
-      },
-      "seo": {
-        "robotsOk": true,
-        "sitemapOk": true,
-        "title": "Waitlist Pulse — Prefinery alternative for indie devs, $9.9/mo flat",
-        "titleLen": 67,
-        "description": "5 free product waitlists. Prefinery costs $99/mo? $9.9/mo flat: email capture, referral boost, public signup count, embed widget.",
-        "descriptionLen": 129,
-        "hasOg": true,
-        "hasJsonLd": true,
-        "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:24.422Z",
-        "score": 90
-      }
-    },
-    "wcag-alt-text": {
-      "url": "https://wcag-alt-text.vercel.app",
-      "name": "WCAG Alt-Text 生成器",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -2158,14 +2581,114 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "8c4b6035-9cea-448d-b45d-03996e0f80d1",
-            "7c4e7464-885f-476c-91b5-7050fcb967aa"
+            "ci-prod-smoke",
+            "bootstrap-probe"
           ]
         }
       },
       "totals": {
         "pv": 5,
         "uv": 4,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Visa Tracker — Digital nomad visa policy &amp; expiry alerts, $9.9/mo",
+        "titleLen": 69,
+        "description": "Track 35+ digital nomad visa policies with real-time change alerts and expiry reminders. 5 free tracks, then $9.9/mo.",
+        "descriptionLen": 117,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:21:04.021Z",
+        "score": 90
+      }
+    },
+    "waitlist-pulse": {
+      "url": "https://waitlist-pulse.vercel.app",
+      "name": "产品等候名单",
+      "daily": {
+        "2026-06-29": {
+          "pv": 6,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke",
+            "80a76b56-f8ba-473a-bc02-940909d7da0b",
+            "b87dae17-8b4b-499c-b074-30a562340e72"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 8,
+        "uv": 6,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Waitlist Pulse — Prefinery alternative for indie devs, $9.9/mo flat",
+        "titleLen": 67,
+        "description": "5 free product waitlists. Prefinery costs $99/mo? $9.9/mo flat: email capture, referral boost, public signup count, embed widget.",
+        "descriptionLen": 129,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:21:04.985Z",
+        "score": 90
+      }
+    },
+    "wcag-alt-text": {
+      "url": "https://wcag-alt-text.vercel.app",
+      "name": "WCAG Alt-Text 生成器",
+      "daily": {
+        "2026-06-29": {
+          "pv": 3,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe",
+            "ci-prod-smoke"
+          ]
+        },
+        "2026-06-30": {
+          "pv": 4,
+          "uv": 4,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8c4b6035-9cea-448d-b45d-03996e0f80d1",
+            "7c4e7464-885f-476c-91b5-7050fcb967aa",
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
+        }
+      },
+      "totals": {
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2180,7 +2703,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-06-29T06:56:25.856Z",
+        "lastChecked": "2026-06-30T06:21:06.155Z",
         "score": 100
       }
     },
@@ -2197,11 +2720,21 @@
           "visitors": [
             "bootstrap-probe"
           ]
+        },
+        "2026-06-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bootstrap-probe"
+          ]
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2216,12 +2749,13 @@
         "hasOg": true,
         "hasJsonLd": false,
         "guideCount": 0,
-        "lastChecked": "2026-06-29T06:55:42.000Z",
+        "lastChecked": "2026-06-30T06:20:01.966Z",
         "score": 25
       }
     },
     "review-pulse": {
-      "url": "",
+      "url": "https://review-pulse-two.vercel.app",
+      "name": "review-pulse",
       "daily": {
         "2026-06-29": {
           "pv": 4,
@@ -2234,27 +2768,38 @@
             "7b0ac520-014a-49e3-bde5-2d9ec3d433bd",
             "23df84c3-689b-44af-97f7-a0f6428023e5"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
-      "seo": {
-        "lastChecked": null,
-        "sitemapOk": false,
-        "robotsOk": false,
-        "title": "",
-        "titleLen": 0,
-        "description": "",
-        "descriptionLen": 0,
-        "hasOg": false,
-        "hasJsonLd": false,
-        "guideCount": 0,
-        "score": 0
-      },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Review Pulse — SMS Google review requests for local business, $19/mo",
+        "titleLen": 68,
+        "description": "5 free SMS sends. Podium $399/mo? $19/mo flat: automated Google review requests via SMS with direct review links. 3–5× higher conversion than email.",
+        "descriptionLen": 148,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:48.846Z",
+        "score": 90
       }
     },
     "定价页转化诊断": {
@@ -2293,7 +2838,8 @@
       }
     },
     "price-lens": {
-      "url": "",
+      "url": "https://price-lens-theta.vercel.app",
+      "name": "price-lens",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -2305,31 +2851,43 @@
             "134154d3-6c49-4a61-af93-bf704a7f93a1",
             "db10a094-2325-472a-a142-a04429db0cd1"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
-      "seo": {
-        "lastChecked": null,
-        "sitemapOk": false,
-        "robotsOk": false,
-        "title": "",
-        "titleLen": 0,
-        "description": "",
-        "descriptionLen": 0,
-        "hasOg": false,
-        "hasJsonLd": false,
-        "guideCount": 0,
-        "score": 0
-      },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "PriceLens — Pricing page conversion audit for indie hackers, $9.9/mo",
+        "titleLen": 68,
+        "description": "5 free pricing page audits. Hotjar $39/mo? $9.9/mo flat: heatmap zones, drop-off analysis, A/B test suggestions for your /pricing page.",
+        "descriptionLen": 135,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:38.683Z",
+        "score": 90
       }
     },
     "visa-alert": {
-      "url": "",
+      "url": "https://visa-alert-one.vercel.app",
+      "name": "签证政策变更提醒",
       "daily": {
         "2026-06-29": {
           "pv": 3,
@@ -2341,27 +2899,38 @@
             "1bbae461-1f87-4b56-8c8f-d3b2f7c4c2ad",
             "d917ac8b-3037-4ac0-8a67-0f149747cfc6"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
-      "seo": {
-        "lastChecked": null,
-        "sitemapOk": false,
-        "robotsOk": false,
-        "title": "",
-        "titleLen": 0,
-        "description": "",
-        "descriptionLen": 0,
-        "hasOg": false,
-        "hasJsonLd": false,
-        "guideCount": 0,
-        "score": 0
-      },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Visa Alert — Digital nomad visa policy change notifications, $9.9/mo",
+        "titleLen": 68,
+        "description": "Get instant alerts when digital nomad visa policies change — income thresholds, processing times, tax rules. 5 free watches, then $9.9/mo.",
+        "descriptionLen": 138,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:21:01.846Z",
+        "score": 90
       }
     },
     "saas-早期用户市场": {
@@ -2400,7 +2969,8 @@
       }
     },
     "beta-match": {
-      "url": "",
+      "url": "https://beta-match-tau.vercel.app",
+      "name": "beta-match",
       "daily": {
         "2026-06-29": {
           "pv": 1,
@@ -2411,27 +2981,38 @@
           "visitors": [
             "bf66211a-51f3-4921-9458-b1e402f6001c"
           ]
+        },
+        "2026-06-30": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ci-prod-smoke",
+            "bootstrap-probe"
+          ]
         }
       },
-      "seo": {
-        "lastChecked": null,
-        "sitemapOk": false,
-        "robotsOk": false,
-        "title": "",
-        "titleLen": 0,
-        "description": "",
-        "descriptionLen": 0,
-        "hasOg": false,
-        "hasJsonLd": false,
-        "guideCount": 0,
-        "score": 0
-      },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
+      },
+      "seo": {
+        "robotsOk": true,
+        "sitemapOk": true,
+        "title": "Beta Match — Find your first 10 beta testers, $9.9/mo flat",
+        "titleLen": 58,
+        "description": "5 free beta listings. Connect indie founders with early adopters. Post recruitment pages, get qualified tester applications. HN#47618992 inspired.",
+        "descriptionLen": 146,
+        "hasOg": true,
+        "hasJsonLd": true,
+        "guideCount": 1,
+        "lastChecked": "2026-06-30T06:20:03.211Z",
+        "score": 100
       }
     }
   }
