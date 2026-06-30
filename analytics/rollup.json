@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T11:13:48.832Z",
+  "updatedAt": "2026-06-30T12:07:26.602Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -409,20 +409,46 @@
           ]
         },
         "2026-06-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ci-prod-smoke",
-            "bootstrap-probe"
-          ]
+            "bootstrap-probe",
+            "8ce3c2cf-5b61-44f8-af10-797a04e11f0d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -439,7 +465,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:10.942Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "8ce3c2cf-5b61-44f8-af10-797a04e11f0d"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
