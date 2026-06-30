@@ -1,6 +1,12 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join } from "path";
 
+import {
+  applyAudienceEvent,
+  emptyAudience,
+  type AudienceDaily,
+} from "@/lib/visitor-audience";
+
 export type EventType = "pageview" | "trial" | "checkout" | "purchase";
 
 export interface AnalyticsEvent {
@@ -9,6 +15,12 @@ export interface AnalyticsEvent {
   path?: string;
   visitorId?: string;
   referrer?: string;
+  locale?: string;
+  device?: string;
+  timezone?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
   ts?: string;
 }
 
@@ -29,9 +41,18 @@ export interface SiteSeoMetrics {
 export interface SiteRollup {
   url: string;
   name?: string;
+  knownVisitors?: string[];
   daily: Record<
     string,
-    { pv: number; uv: number; trial: number; checkout: number; purchase: number; visitors?: string[] }
+    {
+      pv: number;
+      uv: number;
+      trial: number;
+      checkout: number;
+      purchase: number;
+      visitors?: string[];
+      audience?: AudienceDaily;
+    }
   >;
   seo: SiteSeoMetrics;
   totals: { pv: number; uv: number; trial: number; checkout: number; purchase: number };
@@ -197,7 +218,19 @@ export async function recordEvent(event: AnalyticsEvent) {
   const rollup = await loadRollup();
   const site = rollup.sites[event.siteId] || emptySite();
   const dayKey = new Date().toISOString().slice(0, 10);
-  const day = site.daily[dayKey] || { pv: 0, uv: 0, trial: 0, checkout: 0, purchase: 0, visitors: [] as string[] };
+  const day = site.daily[dayKey] || {
+    pv: 0,
+    uv: 0,
+    trial: 0,
+    checkout: 0,
+    purchase: 0,
+    visitors: [] as string[],
+    audience: emptyAudience(),
+  };
+  if (!day.audience) day.audience = emptyAudience();
+
+  const known = site.knownVisitors || [];
+  const isReturning = Boolean(event.visitorId && known.includes(event.visitorId));
 
   switch (event.type) {
     case "pageview":
@@ -209,7 +242,11 @@ export async function recordEvent(event: AnalyticsEvent) {
           day.uv = visitors.length;
           day.visitors = visitors.slice(-5000);
         }
+        if (!known.includes(event.visitorId)) {
+          site.knownVisitors = [...known, event.visitorId].slice(-20000);
+        }
       }
+      applyAudienceEvent(day.audience, event, isReturning);
       break;
     case "trial":
       day.trial += 1;
