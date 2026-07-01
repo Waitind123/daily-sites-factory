@@ -133,6 +133,7 @@ export const DASHBOARD_COPY = {
   sprintLive: "现在能收钱 Live checkout — 优先推广",
   sprintActions: "今天就做 Do today",
   sprintPromote: "推广 Promote",
+  sprintShare: "一键发帖 Share posts（打开发帖页）",
 
   periodData: "数据 Metrics",
   periodDataSub: "以下数字均按所选日期范围统计 Filtered by date range",

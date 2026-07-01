@@ -67,6 +67,27 @@ export function RevenueSprintPanel({
       ) : null}
 
       <div>
+        <div className="text-xs font-medium text-sky-300 mb-2">{DASHBOARD_COPY.sprintShare}</div>
+        <div className="flex flex-wrap gap-2">
+          {[
+            ["Reddit", "https://www.reddit.com/r/SideProject/submit?url=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dreddit&title=AI%20LinkedIn%20headshots%20%E2%80%94%20%249.9%2Fmo"],
+            ["HN", "https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dhn&t=Show%20HN%3A%20AI%20headshots%20%249.9%2Fmo"],
+            ["Twitter", "https://twitter.com/intent/tweet?text=AI%20LinkedIn%20headshots%20in%2030s%20%E2%80%94%20%249.9%2Fmo%20flat&url=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dtwitter"],
+          ].map(([label, href]) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-sky-500/30 px-3 py-1.5 text-xs text-sky-300 hover:bg-sky-500/10"
+            >
+              {label} →
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
         <div className="text-xs font-medium text-indigo-300 mb-2">{DASHBOARD_COPY.sprintActions}</div>
         <ol className="space-y-1.5 text-xs text-zinc-300 list-decimal list-inside">
           {plan.actions.map((a) => (
