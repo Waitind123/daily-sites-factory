@@ -20,12 +20,7 @@ async function checkoutRedirect(request: NextRequest) {
   }
 
   const locale = await getLocale();
-  const plan =
-    request.nextUrl.searchParams.get("plan") === "annual" ||
-    (await request.formData().catch(() => null))?.get("plan") === "annual"
-      ? "annual"
-      : "monthly";
-  const result = await createCheckoutSession(origin, locale, plan);
+  const result = await createCheckoutSession(origin, locale, "usd");
   const response = NextResponse.redirect(result.url, 302);
   if (result.demo) {
     response.headers.append("Set-Cookie", memberCookieHeader());

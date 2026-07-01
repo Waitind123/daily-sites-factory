@@ -43,9 +43,9 @@ export default async function RootLayout({
         <SiteFooter
           meta={siteMeta}
           locale={locale}
-          guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
+          guideHref={siteMeta.guideHref}
         />
-              <FixedContactBar locale={locale} />
+        <FixedContactBar locale={locale} />
       </body>
     </html>
   );
