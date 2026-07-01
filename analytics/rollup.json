@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:20:52.286Z",
+  "updatedAt": "2026-07-01T03:20:53.418Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1812,11 +1812,49 @@
             "845fa0f5-2b61-4be0-8c5c-dabe670fe70d",
             "01c142a9-a216-4d02-b878-76def84c19be"
           ]
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9619e30d-f456-40fe-a81a-d99e0b5e701f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9619e30d-f456-40fe-a81a-d99e0b5e701f": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 2,
+        "pv": 5,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1836,7 +1874,8 @@
       },
       "knownVisitors": [
         "845fa0f5-2b61-4be0-8c5c-dabe670fe70d",
-        "01c142a9-a216-4d02-b878-76def84c19be"
+        "01c142a9-a216-4d02-b878-76def84c19be",
+        "9619e30d-f456-40fe-a81a-d99e0b5e701f"
       ]
     },
     "pulse-suite": {
@@ -3037,49 +3076,11 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
-        },
-        "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "81e97af4-2171-45ec-9e5b-acb306821b43"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "11": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "81e97af4-2171-45ec-9e5b-acb306821b43": 1
-          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 0,
+        "uv": 0,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3096,10 +3097,7 @@
         "guideCount": 0,
         "lastChecked": "2026-06-30T06:20:01.966Z",
         "score": 25
-      },
-      "knownVisitors": [
-        "81e97af4-2171-45ec-9e5b-acb306821b43"
-      ]
+      }
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
