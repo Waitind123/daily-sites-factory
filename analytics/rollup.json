@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T07:20:00.618Z",
+  "updatedAt": "2026-07-01T07:32:58.358Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -260,8 +260,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 6,
-          "uv": 6,
+          "pv": 7,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -271,31 +271,33 @@
             "de9e7301-389f-4895-90a7-965dd0fd455e",
             "10874a3c-959e-45d2-996e-f7d5191fb6f1",
             "4d36bb19-5eb3-40ea-ba10-f516e62f72c8",
-            "09db29c5-e828-4183-a52d-ebb692c8cbb3"
+            "09db29c5-e828-4183-a52d-ebb692c8cbb3",
+            "b2d64827-ea63-47a1-b1a6-446fe2adba10"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 6
+              "直接访问": 7
             },
             "paths": {
-              "/": 5,
+              "/": 6,
               "/join": 1
             },
             "devices": {
-              "desktop": 6
+              "desktop": 7
             },
             "locales": {
-              "zh": 6
+              "zh": 7
             },
             "timezones": {
-              "UTC": 6
+              "UTC": 7
             },
             "utmSources": {},
             "hours": {
-              "13": 6
+              "13": 6,
+              "15": 1
             },
             "visitorTypes": {
-              "new": 6,
+              "new": 7,
               "returning": 0
             }
           },
@@ -305,13 +307,14 @@
             "de9e7301-389f-4895-90a7-965dd0fd455e": 1,
             "10874a3c-959e-45d2-996e-f7d5191fb6f1": 1,
             "4d36bb19-5eb3-40ea-ba10-f516e62f72c8": 1,
-            "09db29c5-e828-4183-a52d-ebb692c8cbb3": 1
+            "09db29c5-e828-4183-a52d-ebb692c8cbb3": 1,
+            "b2d64827-ea63-47a1-b1a6-446fe2adba10": 1
           }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 6,
+        "pv": 8,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -328,7 +331,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:32.296Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "b2d64827-ea63-47a1-b1a6-446fe2adba10"
+      ]
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
