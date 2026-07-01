@@ -63,6 +63,21 @@ export const ideasCopy = {
   },
 } as const;
 
+export const stripeProductCopy = {
+  en: {
+    name: "Startup Ideas · Monthly",
+    description: "Unlimited deep market analyses, MVP roadmaps & monetization models.",
+  },
+  zh: {
+    name: "创业点子库 · 月付",
+    description: "无限深度市场分析、MVP 路线图与变现模型。",
+  },
+} as const;
+
+export function getStripeProductCopy(locale: Locale) {
+  return stripeProductCopy[locale];
+}
+
 export const apiErrorCopy = {
   en: {
     GENERIC: "Something went wrong. Please try again.",
