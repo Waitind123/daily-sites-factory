@@ -1,4 +1,5 @@
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
+import { SharePromoKit } from "@/components/SharePromoKit";
 import { getJoinCopy, getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
 import { getPaymentMode } from "@/lib/payments";
@@ -58,6 +59,10 @@ export default async function JoinPage() {
         )}
 
         <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
+      </div>
+
+      <div className="mt-8">
+        <SharePromoKit locale={locale} />
       </div>
 
       <div className="mt-8 rounded-xl border border-border bg-background p-6">

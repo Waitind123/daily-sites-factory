@@ -35,6 +35,9 @@ jobs:
       - name: Sprint report + share copy
         run: node scripts/revenue-sprint.mjs
 
+      - name: Run promotion (IndexNow + share kit)
+        run: node scripts/run-promotion.mjs || true
+
       - name: IndexNow (SEO push)
         run: node scripts/submit-indexnow.mjs || true
 
