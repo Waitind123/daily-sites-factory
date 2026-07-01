@@ -109,6 +109,8 @@ export function generateRedditPost(state = { history: [] }) {
         hash,
         kind: "self",
         url: utmLink(sub.name, variant),
+        joinUrl: utmLink(sub.name, variant),
+        campaign: `auto_${variant}`,
       };
     }
   }

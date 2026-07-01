@@ -5,6 +5,7 @@ import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
 import { DashboardFilters } from "@/components/DashboardFilters";
 import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
 import { VisitorsTablePanel } from "@/components/VisitorsTablePanel";
+import { PromoPerformancePanel } from "@/components/PromoPerformancePanel";
 import type { DashboardSummary, RevenueGoalView } from "@/lib/dashboard-metrics";
 import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashboard-metrics";
 import { DASHBOARD_COPY, METRIC, SEO_LABELS, STRIPE_LABELS, estimatedPurchaseHint } from "@/lib/dashboard-labels";
@@ -14,6 +15,7 @@ import { RevenueSprintPanel } from "@/components/RevenueSprintPanel";
 import type { RevenueSprintPlan } from "@/lib/revenue-sprint";
 import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
 import type { VisitorTablePayload } from "@/lib/visitor-registry";
+import type { PromoPerformancePayload } from "@/lib/promo-performance";
 
 interface SiteEntry {
   id: string;
@@ -29,6 +31,7 @@ interface DashboardPayload {
   revenueSprint?: RevenueSprintPlan | null;
   visitorInsights?: VisitorInsightsPayload;
   visitorTable?: VisitorTablePayload;
+  promoPerformance?: PromoPerformancePayload;
   filters?: { preset: DatePreset; siteId: string; range: DateRange };
 }
 
@@ -339,6 +342,8 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             ) : null}
 
             {data.visitorTable ? <VisitorsTablePanel table={data.visitorTable} /> : null}
+
+            {data.promoPerformance ? <PromoPerformancePanel data={data.promoPerformance} /> : null}
 
             <section>
               <SectionTitle title={DASHBOARD_COPY.seoTitle} subtitle={DASHBOARD_COPY.seoSub} />

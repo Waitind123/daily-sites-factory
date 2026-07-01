@@ -94,7 +94,7 @@ export function VoteDashboard({ locale }: { locale: Locale }) {
             <p className="mt-1 text-sm text-muted">{t.trialLowBody}</p>
           </div>
           <Link
-            href="/join"
+            href="/join?utm_source=feature-vote&utm_medium=trial_low&utm_campaign=sticky"
             className="shrink-0 rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 text-center"
           >
             {t.trialLowCta}

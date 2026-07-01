@@ -129,12 +129,28 @@ export function TicketDashboard({ locale }: { locale: Locale }) {
         )}
       </div>
 
+      {trial && !trial.isMember && trial.remaining <= 1 && !showPaywall && (
+        <div className="rounded-xl border border-brand-600/40 bg-brand-600/10 p-4 mb-6 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm text-foreground">
+            {locale === "zh"
+              ? `免费次数即将用完（剩余 ${trial.remaining} 次），订阅后可无限使用 AI 回复。`
+              : `Free tries almost gone (${trial.remaining} left). Subscribe for unlimited AI replies.`}
+          </p>
+          <Link
+            href="/join?utm_source=intercom-pulse&utm_medium=inbox&utm_campaign=trial_banner"
+            className="shrink-0 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700"
+          >
+            {t.paywallCta}
+          </Link>
+        </div>
+      )}
+
       {showPaywall && (
         <div className="rounded-xl border border-amber-600/40 bg-amber-950/30 p-6 mb-8">
           <h2 className="font-semibold text-lg text-amber-200">{t.paywallTitle}</h2>
           <p className="mt-2 text-sm text-muted">{t.paywallBody}</p>
           <Link
-            href="/join"
+            href="/join?utm_source=intercom-pulse&utm_medium=paywall&utm_campaign=trial_exhausted"
             className="mt-4 inline-block rounded-lg bg-brand-600 px-6 py-2.5 font-semibold text-white hover:bg-brand-700"
           >
             {t.paywallCta}
