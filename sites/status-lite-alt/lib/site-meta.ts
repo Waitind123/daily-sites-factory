@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "状态页极简替代品",
+  id: "status-lite-alt",
   emoji: "📡",
   name: {
     en: "Status Lite",
