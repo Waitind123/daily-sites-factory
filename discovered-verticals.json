@@ -1,14 +1,5 @@
 {
-  "pending": [
-    {
-      "id": "stripe-pulse-lite",
-      "name": "Indie 订阅分析",
-      "description": "ChartMogul/Baremetrics 免费档过期后跳 99 美元/月，独立开发者需要 19.9 美元/月的 MRR/流失/队列分析，只连 Stripe",
-      "template": "micro-saas",
-      "source": "MicroGaps indie-saas-subscription-analytics 2026",
-      "discoveredAt": "2026-07-01T21:02:39.196Z"
-    }
-  ],
+  "pending": [],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -18,6 +9,14 @@
   ],
   "lastDiscoveredAt": "2026-07-01T21:02:39.196Z",
   "consumed": [
+    {
+      "id": "stripe-pulse-lite",
+      "name": "Indie 订阅分析",
+      "description": "ChartMogul/Baremetrics 免费档过期后跳 99 美元/月，独立开发者需要 19.9 美元/月的 MRR/流失/队列分析，只连 Stripe",
+      "template": "micro-saas",
+      "source": "MicroGaps indie-saas-subscription-analytics 2026",
+      "discoveredAt": "2026-07-01T21:02:39.196Z"
+    },
     {
       "id": "一次性买断工具目录",
       "name": "一次性买断工具目录",
