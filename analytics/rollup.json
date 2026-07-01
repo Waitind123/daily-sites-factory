@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:23:37.776Z",
+  "updatedAt": "2026-07-01T03:24:27.772Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3423,11 +3423,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "2a67f598-77df-42fb-92cc-7405ba3f9f31"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "2a67f598-77df-42fb-92cc-7405ba3f9f31": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3444,7 +3482,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:21:01.846Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "2a67f598-77df-42fb-92cc-7405ba3f9f31"
+      ]
     },
     "saas-早期用户市场": {
       "url": "",
