@@ -1,13 +1,12 @@
-/** Polar Checkout API — per-site success/return URLs (synced to each site lib/). */
-const DEFAULT_POLAR_CHECKOUT_URL =
-  process.env.POLAR_CHECKOUT_URL ??
-  "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
+/** Polar checkout — API per-site URLs, or hub bridge (no secrets). Synced to each site lib/polar-checkout.ts */
+import { CHECKOUT_HUB_URL, DEFAULT_POLAR_CHECKOUT_URL } from "./polar-config";
 
 /**
- * Create a Polar checkout URL for the requesting site (origin).
- * Uses API when POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID are set; else static link.
+ * Checkout URL for the requesting site (origin).
+ * 1. Polar API when POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID are set
+ * 2. Else hub bridge → sets return cookie → Polar static link
  */
-export async function resolvePolarCheckoutUrl(origin: string): Promise<string | null> {
+export async function resolvePolarCheckoutUrl(origin: string): Promise<string> {
   const base = origin.replace(/\/$/, "");
   const token = process.env.POLAR_ACCESS_TOKEN;
   const productId = process.env.POLAR_PRODUCT_ID;
@@ -37,7 +36,8 @@ export async function resolvePolarCheckoutUrl(origin: string): Promise<string | 
     }
   }
 
-  return DEFAULT_POLAR_CHECKOUT_URL;
+  const hub = CHECKOUT_HUB_URL.replace(/\/$/, "");
+  return `${hub}/api/checkout-bridge?origin=${encodeURIComponent(base)}`;
 }
 
 export function polarPaymentsConfigured() {

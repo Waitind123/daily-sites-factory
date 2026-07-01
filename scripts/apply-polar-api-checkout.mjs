@@ -4,7 +4,8 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, copyFileSync } fr
 import { join } from "path";
 
 const ROOT = join(import.meta.dirname, "..");
-const TEMPLATE = join(ROOT, "factory-lib/polar-checkout.ts");
+const CHECKOUT_TEMPLATE = join(ROOT, "factory-lib/polar-checkout.ts");
+const CONFIG_TEMPLATE = join(ROOT, "factory-lib/polar-config.ts");
 
 function siteDirs() {
   return readdirSync(join(ROOT, "sites"), { withFileTypes: true })
@@ -18,7 +19,8 @@ let patched = 0;
 for (const siteId of siteDirs()) {
   const libDir = join(ROOT, "sites", siteId, "lib");
   if (!existsSync(libDir)) continue;
-  copyFileSync(TEMPLATE, join(libDir, "polar-checkout.ts"));
+  copyFileSync(CHECKOUT_TEMPLATE, join(libDir, "polar-checkout.ts"));
+  copyFileSync(CONFIG_TEMPLATE, join(libDir, "polar-config.ts"));
   copied++;
 
   const stripePath = join(libDir, "stripe.ts");
