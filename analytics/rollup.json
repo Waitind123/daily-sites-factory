@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T22:08:07.730Z",
+  "updatedAt": "2026-07-01T22:11:18.401Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1941,8 +1941,8 @@
           ]
         },
         "2026-07-01": {
-          "pv": 10,
-          "uv": 6,
+          "pv": 11,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -1952,33 +1952,36 @@
             "b7383ba7-a174-48ee-9654-8553018f3e5b",
             "74f40ab2-232d-4df4-bd0d-ee8782893c94",
             "1ad7957e-06a3-4dbc-8240-58b9e8cfbf1c",
-            "8aaca4e9-d3b8-4cf3-b43b-d4192565ef64"
+            "8aaca4e9-d3b8-4cf3-b43b-d4192565ef64",
+            "192ffd31-f391-4906-b8f7-d3f63409192e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 10
+              "直接访问": 11
             },
             "paths": {
-              "/": 6,
+              "/": 7,
               "/events": 4
             },
             "devices": {
-              "desktop": 10
+              "desktop": 11
             },
             "locales": {
-              "zh": 10
+              "zh": 10,
+              "en": 1
             },
             "timezones": {
-              "UTC": 10
+              "UTC": 11
             },
             "utmSources": {},
             "hours": {
+              "6": 1,
               "11": 2,
               "12": 2,
               "13": 6
             },
             "visitorTypes": {
-              "new": 6,
+              "new": 7,
               "returning": 4
             }
           },
@@ -1988,13 +1991,14 @@
             "b7383ba7-a174-48ee-9654-8553018f3e5b": 2,
             "74f40ab2-232d-4df4-bd0d-ee8782893c94": 2,
             "1ad7957e-06a3-4dbc-8240-58b9e8cfbf1c": 2,
-            "8aaca4e9-d3b8-4cf3-b43b-d4192565ef64": 2
+            "8aaca4e9-d3b8-4cf3-b43b-d4192565ef64": 2,
+            "192ffd31-f391-4906-b8f7-d3f63409192e": 1
           }
         }
       },
       "totals": {
-        "pv": 14,
-        "uv": 8,
+        "pv": 15,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2011,7 +2015,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:53.386Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "192ffd31-f391-4906-b8f7-d3f63409192e"
+      ]
     },
     "newsletter-stack": {
       "url": "https://newsletter-stack.vercel.app",
@@ -5443,6 +5450,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "192ffd31-f391-4906-b8f7-d3f63409192e",
+      "siteId": "meetup-host",
+      "firstSeen": "2026-07-01T22:11:18.258Z",
+      "lastSeen": "2026-07-01T22:11:18.258Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f0233c5e-777c-478c-b9e4-e6f385267795",
       "siteId": "stripe-pulse-lite",
