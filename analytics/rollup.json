@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:36:25.333Z",
+  "updatedAt": "2026-07-01T03:36:48.467Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1259,47 +1259,50 @@
           ]
         },
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c43c2498-e029-44c2-97ab-8af4df1e330a"
+            "c43c2498-e029-44c2-97ab-8af4df1e330a",
+            "499452e9-86b2-402f-8712-1d3f67784991"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c43c2498-e029-44c2-97ab-8af4df1e330a": 1
+            "c43c2498-e029-44c2-97ab-8af4df1e330a": 1,
+            "499452e9-86b2-402f-8712-1d3f67784991": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 3,
+        "pv": 6,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1320,7 +1323,8 @@
       "knownVisitors": [
         "f146d48b-c94f-466b-9eb3-22b0998c8e51",
         "4935a714-2a6b-4fec-990c-d5504d6fe426",
-        "c43c2498-e029-44c2-97ab-8af4df1e330a"
+        "c43c2498-e029-44c2-97ab-8af4df1e330a",
+        "499452e9-86b2-402f-8712-1d3f67784991"
       ]
     },
     "intercom-pulse": {
