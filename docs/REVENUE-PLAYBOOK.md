@@ -17,6 +17,7 @@
 | 看板推广表 | Reddit 发帖记录 + UTM 渠道访问 |
 | 收入冲刺 | 每日报告 + 一键分享链接 |
 | intercom-pulse 转化 | 试用将尽 / 付费墙带 UTM |
+| 全站交叉推广条 | 67 站顶部导流 ai-headshots/join，UTM `utm_medium=crosssell` |
 
 ## 你必须做的 3 件事（我无法代登录）
 
