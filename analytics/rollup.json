@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T19:14:38.784Z",
+  "updatedAt": "2026-07-01T19:17:18.596Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5214,41 +5214,43 @@
       "url": "",
       "daily": {
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "aae3c83b-f5e1-456a-bec1-e32bd627a78d"
+            "aae3c83b-f5e1-456a-bec1-e32bd627a78d",
+            "774fc87c-7612-4170-b674-4ef9f9b187ad"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "3": 1
+              "3": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "aae3c83b-f5e1-456a-bec1-e32bd627a78d": 1
+            "aae3c83b-f5e1-456a-bec1-e32bd627a78d": 1,
+            "774fc87c-7612-4170-b674-4ef9f9b187ad": 1
           }
         }
       },
@@ -5266,18 +5268,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "aae3c83b-f5e1-456a-bec1-e32bd627a78d"
+        "aae3c83b-f5e1-456a-bec1-e32bd627a78d",
+        "774fc87c-7612-4170-b674-4ef9f9b187ad"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "774fc87c-7612-4170-b674-4ef9f9b187ad",
+      "siteId": "ai-funnel-diagnosis",
+      "firstSeen": "2026-07-01T19:17:18.448Z",
+      "lastSeen": "2026-07-01T19:17:18.448Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "aae3c83b-f5e1-456a-bec1-e32bd627a78d",
       "siteId": "ai-funnel-diagnosis",
