@@ -1,10 +1,12 @@
 import { createCheckoutSession, isDemoMode as isStripeDemo } from "./stripe";
 import { POLAR_CHECKOUT_URL, PRICING } from "./config";
+import { resolvePolarCheckoutUrl } from "./polar-checkout";
 
 export type Currency = "cny" | "usd";
 
 export function getPaymentMode() {
   if (process.env.STRIPE_SECRET_KEY) return "stripe";
+  if (process.env.POLAR_ACCESS_TOKEN && process.env.POLAR_PRODUCT_ID) return "polar";
   if (POLAR_CHECKOUT_URL) return "polar";
   if (process.env.LEMON_SQUEEZY_CHECKOUT_URL) return "lemonsqueezy";
   return "demo";
@@ -27,10 +29,11 @@ export async function createPayment(origin: string, currency: Currency = "usd") 
   }
 
   if (mode === "polar") {
+    const url = await resolvePolarCheckoutUrl(origin);
     return {
       provider: "polar" as const,
       demo: false as const,
-      url: POLAR_CHECKOUT_URL,
+      url,
     };
   }
 

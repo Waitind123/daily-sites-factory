@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { resolvePolarCheckoutUrl } from "./polar-checkout";
 const DEFAULT_POLAR_CHECKOUT_URL =
   "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
 
@@ -25,7 +26,7 @@ export async function createCheckoutSession(
   origin: string,
   currency: "cny" | "usd" = "cny"
 ) {
-  const polarUrl = POLAR_CHECKOUT_URL;
+  const polarUrl = await resolvePolarCheckoutUrl(origin);
   if (polarUrl) {
     return { demo: false as const, url: polarUrl };
   }

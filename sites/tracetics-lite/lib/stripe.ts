@@ -1,6 +1,7 @@
 import Stripe from "stripe";
 import type { Locale } from "./i18n-shared";
 import { getStripeProductCopy } from "./copy-app";
+import { resolvePolarCheckoutUrl } from "./polar-checkout";
 const DEFAULT_POLAR_CHECKOUT_URL =
   "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
 
@@ -24,7 +25,7 @@ export const PRICE_USD = 990;
 
 export async function createCheckoutSession(origin: string, locale: Locale = "en") {
   const product = getStripeProductCopy(locale);
-  const polarUrl = POLAR_CHECKOUT_URL;
+  const polarUrl = await resolvePolarCheckoutUrl(origin);
   if (polarUrl) {
     return { demo: false as const, url: polarUrl };
   }

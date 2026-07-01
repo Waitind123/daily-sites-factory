@@ -167,6 +167,8 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
           POLAR_URL: ${{ secrets.POLAR_CHECKOUT_URL }}
+          POLAR_TOKEN: ${{ secrets.POLAR_ACCESS_TOKEN }}
+          POLAR_PRODUCT: ${{ secrets.POLAR_PRODUCT_ID }}
         run: |
           if [ -z "$VERCEL_TOKEN" ]; then
             exit 0
@@ -175,6 +177,12 @@ jobs:
           URL="${POLAR_URL:-$DEFAULT}"
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "$URL" | npx vercel env add POLAR_CHECKOUT_URL production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          if [ -n "$POLAR_TOKEN" ]; then
+            printf '%s' "$POLAR_TOKEN" | npx vercel env add POLAR_ACCESS_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
+          if [ -n "$POLAR_PRODUCT" ]; then
+            printf '%s' "$POLAR_PRODUCT" | npx vercel env add POLAR_PRODUCT_ID production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
 
       - name: Deploy to Vercel
         id: vercel
