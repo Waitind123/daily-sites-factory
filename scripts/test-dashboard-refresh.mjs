@@ -5,7 +5,7 @@
  */
 const BASE = (process.env.BASE_URL || "http://127.0.0.1:3111").replace(/\/$/, "");
 const SITE_ID = process.env.TEST_SITE_ID || "feature-vote";
-const VISITOR = `refresh-test-${Date.now()}`;
+const VISITOR = process.env.TEST_VISITOR_ID || crypto.randomUUID();
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));

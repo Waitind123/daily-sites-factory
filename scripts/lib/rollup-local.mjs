@@ -1,6 +1,4 @@
-/**
- * 本地读写 analytics/rollup.json（CI / 冒烟测试用）
- */
+import { isTestVisitor } from "./analytics-real-users.mjs";
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -63,6 +61,10 @@ function recomputeTotals(site) {
  * @param {{ siteId: string, type: 'pageview'|'trial'|'checkout'|'purchase', visitorId?: string, url?: string }} event
  */
 export function recordLocalEvent(event) {
+  if (event.type === "pageview" && isTestVisitor(event.visitorId)) {
+    return;
+  }
+
   const rollup = loadRollup();
   const site = rollup.sites[event.siteId] || emptySite(event.url || "");
   if (event.url) site.url = event.url;
@@ -87,6 +89,9 @@ export function recordLocalEvent(event) {
           day.uv = visitors.length;
           day.visitors = visitors.slice(-5000);
         }
+        const hits = day.visitorHits || {};
+        hits[event.visitorId] = (hits[event.visitorId] || 0) + 1;
+        day.visitorHits = hits;
       }
       break;
     case "trial":

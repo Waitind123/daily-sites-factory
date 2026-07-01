@@ -6,6 +6,7 @@ import {
   emptyAudience,
   type AudienceDaily,
 } from "@/lib/visitor-audience";
+import { isTestVisitor } from "@/lib/analytics-real-users";
 
 export type EventType = "pageview" | "trial" | "checkout" | "purchase";
 
@@ -51,6 +52,7 @@ export interface SiteRollup {
       checkout: number;
       purchase: number;
       visitors?: string[];
+      visitorHits?: Record<string, number>;
       audience?: AudienceDaily;
     }
   >;
@@ -215,6 +217,10 @@ function recomputeTotals(site: SiteRollup) {
 }
 
 export async function recordEvent(event: AnalyticsEvent) {
+  if (event.type === "pageview" && isTestVisitor(event.visitorId)) {
+    return;
+  }
+
   const rollup = await loadRollup();
   const site = rollup.sites[event.siteId] || emptySite();
   const dayKey = new Date().toISOString().slice(0, 10);
@@ -242,6 +248,9 @@ export async function recordEvent(event: AnalyticsEvent) {
           day.uv = visitors.length;
           day.visitors = visitors.slice(-5000);
         }
+        const hits = day.visitorHits || {};
+        hits[event.visitorId] = (hits[event.visitorId] || 0) + 1;
+        day.visitorHits = hits;
         if (!known.includes(event.visitorId)) {
           site.knownVisitors = [...known, event.visitorId].slice(-20000);
         }

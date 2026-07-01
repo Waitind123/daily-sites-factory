@@ -200,6 +200,7 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
           </div>
           <div className="text-right text-xs text-zinc-500">
             <p>{DASHBOARD_COPY.subtitle}</p>
+            <p className="mt-1 text-sky-400/90">{DASHBOARD_COPY.realUsersOnly}</p>
             <p className="mt-1">
               {DASHBOARD_COPY.dataUpdated} {rollupUpdated}
               {lastFetchedAt ? ` · ${DASHBOARD_COPY.pageFetched} ${lastFetchedAt}` : ""}
