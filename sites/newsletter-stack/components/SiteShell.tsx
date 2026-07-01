@@ -69,7 +69,6 @@ export function SiteFooter({
           {OWNER_CONTACT_EMAIL}
         </a>
       </p>
-      <p className="mt-2 text-xs text-muted">{legal.complianceNote}</p>
       <p className="mt-2">
         {guideHref && (
           <>
