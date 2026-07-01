@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T09:08:15.266Z",
+  "updatedAt": "2026-07-01T09:11:46.451Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4852,9 +4852,86 @@
         "512edf9b-71f5-4ce5-964b-d4e9c13e8814",
         "a342193f-72ac-4e38-89ac-bcb2a55d22f3"
       ]
+    },
+    "status-lite-alt": {
+      "url": "",
+      "daily": {
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ad226a7c-d26c-4fbf-b20b-6aab61ae4c48"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ad226a7c-d26c-4fbf-b20b-6aab61ae4c48": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "ad226a7c-d26c-4fbf-b20b-6aab61ae4c48"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ad226a7c-d26c-4fbf-b20b-6aab61ae4c48",
+      "siteId": "status-lite-alt",
+      "firstSeen": "2026-07-01T09:11:46.326Z",
+      "lastSeen": "2026-07-01T09:11:46.326Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a342193f-72ac-4e38-89ac-bcb2a55d22f3",
       "siteId": "状态页极简替代品",
