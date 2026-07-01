@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T11:08:52.360Z",
+  "updatedAt": "2026-07-01T12:11:47.448Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4988,9 +4988,86 @@
       "knownVisitors": [
         "ad226a7c-d26c-4fbf-b20b-6aab61ae4c48"
       ]
+    },
+    "bookmark-pulse": {
+      "url": "",
+      "daily": {
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d39be27d-4ed8-4cad-ab1c-652ba5dac0de"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d39be27d-4ed8-4cad-ab1c-652ba5dac0de": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "d39be27d-4ed8-4cad-ab1c-652ba5dac0de"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d39be27d-4ed8-4cad-ab1c-652ba5dac0de",
+      "siteId": "bookmark-pulse",
+      "firstSeen": "2026-07-01T12:11:47.258Z",
+      "lastSeen": "2026-07-01T12:11:47.258Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3db652e5-f33c-4ad4-952a-3e3eb470178e",
       "siteId": "page-split",
