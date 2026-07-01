@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T13:31:41.185Z",
+  "updatedAt": "2026-07-01T13:31:46.429Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1539,8 +1539,8 @@
           ]
         },
         "2026-07-01": {
-          "pv": 19,
-          "uv": 13,
+          "pv": 20,
+          "uv": 14,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -1557,26 +1557,28 @@
             "0468c00e-82a6-4374-97f6-75de8d2bcf66",
             "f54ce48a-3caa-4a9b-88e6-4e86d875a907",
             "b0c9ea30-14ee-46c8-aed7-c950c9224800",
-            "76896820-94d9-49a7-878d-956b9653961d"
+            "76896820-94d9-49a7-878d-956b9653961d",
+            "50100efb-67bd-494c-b9bc-497e328d2b4a"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 19
+              "直接访问": 20
             },
             "paths": {
-              "/": 12,
+              "/": 13,
               "/inbox": 7
             },
             "devices": {
-              "desktop": 19
+              "desktop": 20
             },
             "locales": {
               "zh": 16,
-              "en": 3
+              "en": 4
             },
             "timezones": {
               "UTC": 18,
-              "Pacific/Honolulu": 1
+              "Pacific/Honolulu": 1,
+              "America/Chicago": 1
             },
             "utmSources": {},
             "hours": {
@@ -1585,10 +1587,11 @@
               "11": 5,
               "12": 1,
               "13": 5,
-              "15": 2
+              "15": 2,
+              "21": 1
             },
             "visitorTypes": {
-              "new": 13,
+              "new": 14,
               "returning": 6
             }
           },
@@ -1604,13 +1607,14 @@
             "0468c00e-82a6-4374-97f6-75de8d2bcf66": 2,
             "f54ce48a-3caa-4a9b-88e6-4e86d875a907": 1,
             "b0c9ea30-14ee-46c8-aed7-c950c9224800": 1,
-            "76896820-94d9-49a7-878d-956b9653961d": 2
+            "76896820-94d9-49a7-878d-956b9653961d": 2,
+            "50100efb-67bd-494c-b9bc-497e328d2b4a": 1
           }
         }
       },
       "totals": {
-        "pv": 27,
-        "uv": 20,
+        "pv": 28,
+        "uv": 21,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1629,7 +1633,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "76896820-94d9-49a7-878d-956b9653961d"
+        "76896820-94d9-49a7-878d-956b9653961d",
+        "50100efb-67bd-494c-b9bc-497e328d2b4a"
       ]
     },
     "invoice-desk": {
@@ -5107,6 +5112,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "50100efb-67bd-494c-b9bc-497e328d2b4a",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-01T13:31:46.279Z",
+      "lastSeen": "2026-07-01T13:31:46.279Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Chicago"
+    },
     {
       "visitorId": "567c86f8-5c50-4a47-b956-abaa283fae91",
       "siteId": "remote-jobs",
