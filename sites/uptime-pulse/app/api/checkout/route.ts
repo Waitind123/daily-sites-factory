@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import {createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
+import { createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
+import { getLocale } from "@/lib/locale";
 import { apiError } from "@/lib/api-errors";
 
 async function checkoutRedirect(request: NextRequest) {
@@ -18,7 +19,8 @@ async function checkoutRedirect(request: NextRequest) {
     return response;
   }
 
-  const result = await createCheckoutSession(origin);
+  const locale = await getLocale();
+  const result = await createCheckoutSession(origin, locale);
   const response = NextResponse.redirect(result.url, 302);
   if (result.demo) {
     response.headers.append("Set-Cookie", memberCookieHeader());
