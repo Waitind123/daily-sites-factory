@@ -100,6 +100,7 @@ export const DASHBOARD_COPY = {
   brand: "每日站点工厂 Daily Sites Factory",
   title: "全站运营看板 Factory Dashboard",
   subtitle: "流量 Traffic · 转化 Conversion · 搜索优化 SEO · 收款 Payments",
+  realUsersOnly: "仅统计真实用户 Real users only（已排除 CI / 测试流量）",
   autoRefresh: "每 20 秒自动刷新 Auto-refresh 20s",
   dataUpdated: "数据更新 Updated",
   pageFetched: "页面拉取 Fetched",

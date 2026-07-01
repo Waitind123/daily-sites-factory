@@ -1,6 +1,7 @@
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
 import type { DateRange } from "@/lib/date-range";
 import { isDayInRange } from "@/lib/date-range";
+import { isTestVisitor } from "@/lib/analytics-real-users";
 
 export const SUBSCRIPTION_PRICE_USD = 9.9;
 
@@ -90,20 +91,28 @@ export function sumSitePeriod(site: SiteRollup, range: DateRange): MetricTotals 
 
   for (const [day, metrics] of Object.entries(site.daily || {})) {
     if (!isDayInRange(day, range)) continue;
-    totals.pv += metrics.pv || 0;
     totals.trial += metrics.trial || 0;
     totals.checkout += metrics.checkout || 0;
     totals.purchase += metrics.purchase || 0;
-    for (const v of metrics.visitors || []) visitors.add(v);
+
+    const hits = metrics.visitorHits;
+    if (hits && Object.keys(hits).length > 0) {
+      for (const [vid, count] of Object.entries(hits)) {
+        if (isTestVisitor(vid)) continue;
+        totals.pv += count;
+        visitors.add(vid);
+      }
+      continue;
+    }
+
+    const dayVisitors = metrics.visitors || [];
+    const realVisitors = dayVisitors.filter((v) => !isTestVisitor(v));
+    const testCount = dayVisitors.length - realVisitors.length;
+    totals.pv += Math.max(0, (metrics.pv || 0) - testCount);
+    for (const v of realVisitors) visitors.add(v);
   }
 
   totals.uv = visitors.size;
-  if (!totals.uv) {
-    for (const [day, metrics] of Object.entries(site.daily || {})) {
-      if (!isDayInRange(day, range)) continue;
-      totals.uv += metrics.uv || 0;
-    }
-  }
   return totals;
 }
 

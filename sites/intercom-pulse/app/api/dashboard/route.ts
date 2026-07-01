@@ -36,7 +36,7 @@ export async function GET(req: NextRequest) {
       summary,
       revenueGoal,
       visitorInsights,
-      filters: { preset, siteId, range },
+      filters: { preset, siteId, range, realUsersOnly: true },
     },
     { headers: { "Cache-Control": "no-store, max-age=0" } }
   );
