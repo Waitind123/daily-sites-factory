@@ -80,7 +80,7 @@ jobs:
           node-version: "22"
 
       - name: Sync dashboard data
-        if: matrix.site_id == 'factory-dashboard'
+        if: matrix.site_id == 'intercom-pulse' || matrix.site_id == 'factory-dashboard'
         run: node scripts/sync-dashboard-data.mjs
 
       - name: Verify site quality
