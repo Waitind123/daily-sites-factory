@@ -12,8 +12,16 @@ export function SuccessClient({
 }) {
   useEffect(() => {
     fetch("/api/member/activate", { method: "POST" });
-    trackFactoryEvent(siteMeta.id, "purchase");
-  }, []);
+    const params = new URLSearchParams(window.location.search);
+    const demo = isDemo || params.get("demo") === "true";
+    const paid =
+      !!sessionId ||
+      params.get("polar") === "true" ||
+      params.has("checkout_id");
+    if (!demo && paid) {
+      trackFactoryEvent(siteMeta.id, "purchase");
+    }
+  }, [isDemo, sessionId]);
 
   return (
     <div className="mx-auto max-w-lg px-4 py-16 text-center">

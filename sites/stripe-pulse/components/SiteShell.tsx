@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { getUiCopy, type Locale } from "@/lib/i18n-shared";
+import { OWNER_CONTACT_EMAIL } from "@/lib/site-owner";
 import { siteMeta } from "@/lib/site-meta";
 
 type SiteMeta = typeof siteMeta;
@@ -69,6 +70,11 @@ export function SiteFooter({
         <Link href="/sitemap.xml" className="hover:underline">
           {t.sitemap}
         </Link>
+      </p>
+      <p className="mt-2">
+        <a href={`mailto:${OWNER_CONTACT_EMAIL}`} className="hover:underline">
+          {OWNER_CONTACT_EMAIL}
+        </a>
       </p>
     </footer>
   );

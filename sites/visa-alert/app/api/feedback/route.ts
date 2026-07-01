@@ -8,11 +8,16 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  const body = await req.json().catch(() => ({}));
-  const text = typeof body.text === "string" ? body.text : "";
-  if (!text.trim() || text.length > 2000) {
-    return NextResponse.json({ error: "invalid_text" }, { status: 400 });
+  try {
+    const body = await req.json().catch(() => ({}));
+    const text = typeof body.text === "string" ? body.text : "";
+    if (!text.trim() || text.length > 2000) {
+      return NextResponse.json({ error: "invalid_text" }, { status: 400 });
+    }
+    const message = await addFeedback(siteMeta.id, text);
+    return NextResponse.json({ message });
+  } catch (error) {
+    console.error("[feedback] POST failed:", error);
+    return NextResponse.json({ error: "server_error" }, { status: 503 });
   }
-  const message = await addFeedback(siteMeta.id, text);
-  return NextResponse.json({ message });
 }

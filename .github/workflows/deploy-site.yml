@@ -125,16 +125,16 @@ jobs:
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
         run: node scripts/vercel-deploy-guard.mjs
 
-      - name: Sync GITHUB_TOKEN on Vercel (intercom-pulse analytics)
-        if: matrix.site_id == 'intercom-pulse'
-        working-directory: sites/intercom-pulse
+      - name: Sync GITHUB_TOKEN on Vercel (feedback + analytics)
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
           ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT }}
         run: |
           if [ -z "$ANALYTICS_PAT" ] || [ -z "$VERCEL_TOKEN" ]; then
-            echo "::warning::请在仓库 Secrets 添加 ANALYTICS_GITHUB_PAT（不能用 GITHUB_TOKEN 这个名字）"
+            echo "::warning::请在仓库 Secrets 添加 ANALYTICS_GITHUB_PAT（留言与数据看板需要）"
             exit 0
           fi
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
