@@ -7,12 +7,7 @@ import { apiError } from "@/lib/api-errors";
 async function checkoutRedirect(request: NextRequest) {
   const origin = request.headers.get("origin") || request.nextUrl.origin;
   const locale = await getLocale();
-  const plan =
-    request.nextUrl.searchParams.get("plan") === "annual" ||
-    (await request.formData().catch(() => null))?.get("plan") === "annual"
-      ? "annual"
-      : "monthly";
-  const result = await createCheckoutSession(origin, locale, plan);
+  const result = await createCheckoutSession(origin, locale);
   const response = NextResponse.redirect(result.url, 302);
   if (result.demo) {
     response.headers.append("Set-Cookie", memberCookieHeader());
