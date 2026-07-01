@@ -30,15 +30,20 @@ for (const [id, url] of Object.entries(urls)) {
   }
 }
 
-console.log(`\nStripe 收款状态 (${Object.keys(urls).length} 站)\n`);
+console.log(`\n收款状态 (${Object.keys(urls).length} 站) — Polar / Stripe\n`);
 console.log(`真实收款: ${results.live.length} 站`);
 if (results.live.length) console.log("  ", results.live.slice(0, 10).join(", "), results.live.length > 10 ? "..." : "");
 console.log(`演示模式 (无法真收钱): ${results.demo.length} 站`);
 console.log(`检查失败: ${results.fail.length} 站`);
 
 const statusPath = join(root, "analytics", "stripe-status.json");
+const polarApi =
+  Boolean(process.env.POLAR_ACCESS_TOKEN) && Boolean(process.env.POLAR_PRODUCT_ID);
 const status = {
-  configured: Boolean(process.env.STRIPE_SECRET_KEY),
+  configured: Boolean(process.env.STRIPE_SECRET_KEY) || polarApi || results.live.length > 0,
+  polarApi,
+  polarPerSite: polarApi,
+  provider: polarApi ? "polar-api" : results.live.length > 0 ? "polar-fallback" : "none",
   liveCount: results.live.length,
   demoCount: results.demo.length,
   failCount: results.fail.length,
@@ -53,6 +58,6 @@ writeFileSync(intercomPath, JSON.stringify(status, null, 2) + "\n");
 console.log(`✓ stripe status → analytics/stripe-status.json`);
 
 if (results.demo.length === Object.keys(urls).length) {
-  console.log("\n⚠️  全部 demo — 请在 GitHub Secrets 配置 STRIPE_SECRET_KEY 后重新部署");
+  console.log("\n⚠️  全部 demo — 请配置 GitHub Secrets: POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID（或 STRIPE_SECRET_KEY）后重新部署");
   process.exit(1);
 }

@@ -79,11 +79,14 @@ export function buildRevenueSprint(
   }
 
   if (!stripe.configured && liveCheckoutSites.length === 0) {
-    blockers.push("GitHub Secret STRIPE_SECRET_KEY missing — all sites stay in demo mode");
-    actions.push("Add STRIPE_SECRET_KEY to repo Secrets, then redeploy intercom-pulse + feature-vote");
+    blockers.push("GitHub Secrets 未配置 — 需要 POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID（或 STRIPE_SECRET_KEY）");
+    actions.push("Add Polar secrets per docs/POLAR-PER-SITE.md, then redeploy priority sites");
+  } else if (!stripe.polarPerSite && liveCheckoutSites.length > 0) {
+    blockers.push("Polar 静态链接模式 — 付完统一跳 ai-headshots，其他站回调未独立");
+    actions.push("Add POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID for per-site success URLs");
   } else if (liveCheckoutSites.length < 3) {
     blockers.push(`Only ${liveCheckoutSites.length} site(s) can collect real payments`);
-    actions.push("Redeploy top-traffic sites so Stripe key syncs (intercom-pulse, feature-vote, seo-rank-tracker)");
+    actions.push("Redeploy top-traffic sites (intercom-pulse, feature-vote, ai-headshots)");
   }
 
   if (liveCheckoutSites.length > 0) {
@@ -96,7 +99,7 @@ export function buildRevenueSprint(
   }
 
   if (goal.daysLeft <= 12 && purchasesNeeded > 0) {
-    actions.push("Post ai-headshots on Reddit r/SideProject or r/linkedin — live Stripe ready");
+    actions.push("Post ai-headshots on Reddit r/SideProject or r/linkedin — Polar checkout live");
     actions.push("Share /join link with ?utm_source=twitter for attribution");
   }
 

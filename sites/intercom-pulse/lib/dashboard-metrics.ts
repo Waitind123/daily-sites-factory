@@ -52,9 +52,13 @@ export interface SeoHealth {
 
 export interface StripeHealth {
   configured: boolean;
+  polarPerSite?: boolean;
+  polarApi?: boolean;
+  provider?: string;
   liveCount: number;
   demoCount: number;
   failCount: number;
+  liveSiteIds?: string[];
   updatedAt: string | null;
 }
 
