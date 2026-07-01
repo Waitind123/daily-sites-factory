@@ -34,7 +34,7 @@ export function LaunchUrgencyBar({
         </p>
         <Link
           href={joinHref}
-          className="shrink-0 rounded-lg bg-white px-5 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50 transition"
+          className="shrink-0 rounded-lg bg-surface px-5 py-2 text-sm font-semibold text-brand-500 hover:bg-brand-600/10 transition"
         >
           Subscribe $9.9/mo →
         </Link>
