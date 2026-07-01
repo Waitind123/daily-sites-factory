@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T23:04:47.430Z",
+  "updatedAt": "2026-07-01T23:04:48.495Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2704,7 +2704,7 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -2715,37 +2715,38 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/mine": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "7": 2
+              "7": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "9df571f9-1a75-4cb0-876b-7df4c0cacd3f": 1,
-            "d32be597-89ca-40d3-816d-1528a17cccd4": 1
+            "d32be597-89ca-40d3-816d-1528a17cccd4": 2
           }
         }
       },
       "totals": {
-        "pv": 5,
+        "pv": 6,
         "uv": 4,
         "trial": 0,
         "checkout": 0,
@@ -5498,9 +5499,9 @@
       "visitorId": "d32be597-89ca-40d3-816d-1528a17cccd4",
       "siteId": "reddit-pulse",
       "firstSeen": "2026-07-01T23:04:47.291Z",
-      "lastSeen": "2026-07-01T23:04:47.291Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-01T23:04:48.349Z",
+      "pageviews": 2,
+      "path": "/mine",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
