@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Sync footer contact + feedback store only (does not touch site-specific copy). */
+/** Sync footer contact, legal pages, fixed contact bar, and shared shell components. */
 import { copyFileSync, existsSync, readdirSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -10,9 +10,13 @@ const sitesDir = join(root, "sites");
 
 const FILES = [
   ["lib/site-owner.ts", "lib/site-owner.ts"],
+  ["lib/legal.ts", "lib/legal.ts"],
   ["lib/feedback-store.ts", "lib/feedback-store.ts"],
   ["components/SiteShell.tsx", "components/SiteShell.tsx"],
+  ["components/FixedContactBar.tsx", "components/FixedContactBar.tsx"],
   ["app/api/feedback/route.ts", "app/api/feedback/route.ts"],
+  ["app/legal/privacy/page.tsx", "app/legal/privacy/page.tsx"],
+  ["app/legal/terms/page.tsx", "app/legal/terms/page.tsx"],
 ];
 
 let synced = 0;
@@ -28,4 +32,4 @@ for (const siteId of readdirSync(sitesDir)) {
   }
   synced++;
 }
-console.log(`footer + feedback synced: ${synced} sites`);
+console.log(`footer + legal + contact synced: ${synced} sites`);

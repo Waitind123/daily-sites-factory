@@ -85,8 +85,7 @@ export async function createCheckoutSession(
     };
   }
 
-  const isAnnual = plan === "annual";
-  const currency = isAnnual && locale === "zh" ? "cny" : "usd";
+  const currency = payCurrency;
   const unitAmount =
     currency === "cny"
       ? PRICE_CNY_ANNUAL

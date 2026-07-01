@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { getUiCopy, type Locale } from "@/lib/i18n-shared";
+import { getLegalCopy } from "@/lib/legal";
 import { OWNER_CONTACT_EMAIL } from "@/lib/site-owner";
 import { siteMeta } from "@/lib/site-meta";
 
@@ -51,10 +52,11 @@ export function SiteFooter({
   guideHref?: string;
 }) {
   const t = getUiCopy(locale);
+  const legal = getLegalCopy(locale);
   const name = meta.name[locale];
 
   return (
-    <footer className="border-t border-border py-8 pb-28 text-center text-sm text-muted">
+    <footer className="border-t border-border py-8 pb-40 text-center text-sm text-muted">
       <p>
         {name} · {t.footerBuilt}
       </p>
@@ -67,6 +69,7 @@ export function SiteFooter({
           {OWNER_CONTACT_EMAIL}
         </a>
       </p>
+      <p className="mt-2 text-xs text-muted">{legal.complianceNote}</p>
       <p className="mt-2">
         {guideHref && (
           <>
@@ -76,6 +79,14 @@ export function SiteFooter({
             {" · "}
           </>
         )}
+        <Link href="/legal/privacy" className="hover:underline">
+          {legal.privacyTitle}
+        </Link>
+        {" · "}
+        <Link href="/legal/terms" className="hover:underline">
+          {legal.termsTitle}
+        </Link>
+        {" · "}
         <Link href="/sitemap.xml" className="hover:underline">
           {t.sitemap}
         </Link>

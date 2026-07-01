@@ -17,10 +17,12 @@ export const uiCopy = {
     feedbackThanks: "Thanks! We'll reply here soon.",
     feedbackEmpty: "No feedback yet. Be the first!",
     feedbackReply: "Our reply",
-    feedbackFailed: "Failed to send. Try again later.",
     langEn: "EN",
     langZh: "中文",
     footerBuilt: "Ship fast · indie maintained",
+    privacy: "Privacy",
+    terms: "Terms",
+    legalCompliance: "Compliant with PRC laws",
   },
   zh: {
     guide: "指南",
@@ -36,10 +38,12 @@ export const uiCopy = {
     feedbackThanks: "感谢留言！我们会尽快在此回复。",
     feedbackEmpty: "暂无留言，欢迎第一个反馈。",
     feedbackReply: "我们的回复",
-    feedbackFailed: "发送失败，请稍后再试",
     langEn: "EN",
     langZh: "中文",
     footerBuilt: "快速迭代 · 一人维护",
+    privacy: "隐私政策",
+    terms: "用户协议",
+    legalCompliance: "遵守中国法律法规",
   },
 } as const;
 
