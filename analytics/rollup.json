@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T00:52:33.280Z",
+  "updatedAt": "2026-07-01T00:52:39.659Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1036,45 +1036,49 @@
           ]
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "9f998a9c-05a9-45ce-b91f-3fb8587fb79f"
+            "9f998a9c-05a9-45ce-b91f-3fb8587fb79f",
+            "6da57b59-a311-45c0-85f5-67494a155697"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/inbox": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "8": 2
+              "8": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
+          },
+          "visitorHits": {
+            "6da57b59-a311-45c0-85f5-67494a155697": 1
           }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 8,
+        "pv": 11,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1095,7 +1099,8 @@
       "knownVisitors": [
         "bd9f783b-21c1-4fff-9870-272f0005996b",
         "b8de4fdc-52ac-4938-a896-6ffc0354c293",
-        "9f998a9c-05a9-45ce-b91f-3fb8587fb79f"
+        "9f998a9c-05a9-45ce-b91f-3fb8587fb79f",
+        "6da57b59-a311-45c0-85f5-67494a155697"
       ]
     },
     "invoice-desk": {
