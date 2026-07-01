@@ -1,0 +1,61 @@
+name: Social promo (Reddit auto)
+
+on:
+  schedule:
+    # 每 4 小时检查一次；脚本内随机决定是否发帖
+    - cron: "17 1,5,9,13,17,21 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force post (ignore random gate)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Dry run only"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  reddit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Post to Reddit
+        id: post
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          elif [ "${{ github.event.inputs.force }}" = "true" ]; then
+            ARGS="--force"
+          elif [ -z "$REDDIT_REFRESH_TOKEN" ]; then
+            echo "REDDIT_REFRESH_TOKEN 未配置 — dry-run"
+            ARGS="--dry-run"
+          elif [ "$SOCIAL_PROMO_ENABLED" != "true" ]; then
+            echo "SOCIAL_PROMO_ENABLED != true — dry-run（配置 Secret 后改为 true）"
+            ARGS="--dry-run"
+          fi
+          node scripts/post-reddit-promo.mjs $ARGS
+
+      - name: Commit promo state
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          if git diff --quiet analytics/social-promo-state.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/social-promo-state.json
+          git commit -m "chore: update social promo state [skip deploy]"
+          git push

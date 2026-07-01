@@ -134,6 +134,7 @@ export const DASHBOARD_COPY = {
   sprintActions: "今天就做 Do today",
   sprintPromote: "推广 Promote",
   sprintShare: "一键发帖 Share posts（打开发帖页）",
+  sprintAutoPromo: "Reddit 自动发帖需配置 GitHub Secrets → docs/SOCIAL-PROMO-SETUP.md",
 
   periodData: "数据 Metrics",
   periodDataSub: "以下数字均按所选日期范围统计 Filtered by date range",
