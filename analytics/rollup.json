@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T20:08:04.919Z",
+  "updatedAt": "2026-07-01T20:14:05.776Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4237,8 +4237,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 8,
-          "uv": 6,
+          "pv": 9,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -4248,33 +4248,36 @@
             "c543b14d-f0de-41c7-b72e-8fb18fecf8b4",
             "8835100e-6736-4df6-a05f-e56cb1b8c304",
             "8df68256-8a9b-4e9c-a098-11e7cb6a3948",
-            "11453ea2-bb29-403c-a286-5f6aecef61ed"
+            "11453ea2-bb29-403c-a286-5f6aecef61ed",
+            "e51fc434-91d4-4789-979e-cd61efcb69ca"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 8
+              "直接访问": 9
             },
             "paths": {
-              "/": 6,
+              "/": 7,
               "/alerts": 2
             },
             "devices": {
-              "desktop": 8
+              "desktop": 9
             },
             "locales": {
-              "zh": 8
+              "zh": 8,
+              "en": 1
             },
             "timezones": {
-              "UTC": 8
+              "UTC": 9
             },
             "utmSources": {},
             "hours": {
+              "4": 1,
               "11": 3,
               "12": 1,
               "13": 4
             },
             "visitorTypes": {
-              "new": 6,
+              "new": 7,
               "returning": 2
             }
           },
@@ -4284,13 +4287,14 @@
             "c543b14d-f0de-41c7-b72e-8fb18fecf8b4": 1,
             "8835100e-6736-4df6-a05f-e56cb1b8c304": 1,
             "8df68256-8a9b-4e9c-a098-11e7cb6a3948": 1,
-            "11453ea2-bb29-403c-a286-5f6aecef61ed": 2
+            "11453ea2-bb29-403c-a286-5f6aecef61ed": 2,
+            "e51fc434-91d4-4789-979e-cd61efcb69ca": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 8,
+        "pv": 12,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4307,7 +4311,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:16.271Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "e51fc434-91d4-4789-979e-cd61efcb69ca"
+      ]
     },
     "saas-早期用户市场": {
       "url": "",
@@ -5343,6 +5350,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e51fc434-91d4-4789-979e-cd61efcb69ca",
+      "siteId": "visa-alert",
+      "firstSeen": "2026-07-01T20:14:05.657Z",
+      "lastSeen": "2026-07-01T20:14:05.657Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ccb9cb9f-6b4b-4163-8452-e7ecf426c934",
       "siteId": "habit-tracker",
