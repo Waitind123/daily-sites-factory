@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T14:05:04.369Z",
+  "updatedAt": "2026-07-01T14:07:00.206Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3235,47 +3235,49 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "878cd906-0d4b-4eee-ac66-d4c241ef905b"
+            "878cd906-0d4b-4eee-ac66-d4c241ef905b",
+            "0af34404-2c93-4d10-8221-a8ed20c73f3b"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "878cd906-0d4b-4eee-ac66-d4c241ef905b": 1
+            "878cd906-0d4b-4eee-ac66-d4c241ef905b": 1,
+            "0af34404-2c93-4d10-8221-a8ed20c73f3b": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 1,
+        "pv": 3,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3294,7 +3296,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "878cd906-0d4b-4eee-ac66-d4c241ef905b"
+        "878cd906-0d4b-4eee-ac66-d4c241ef905b",
+        "0af34404-2c93-4d10-8221-a8ed20c73f3b"
       ]
     },
     "timezone-planner": {
@@ -5161,6 +5164,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0af34404-2c93-4d10-8221-a8ed20c73f3b",
+      "siteId": "testimonial-wall",
+      "firstSeen": "2026-07-01T14:07:00.053Z",
+      "lastSeen": "2026-07-01T14:07:00.053Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "878cd906-0d4b-4eee-ac66-d4c241ef905b",
       "siteId": "testimonial-wall",
