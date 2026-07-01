@@ -63,8 +63,8 @@ export const SEO_LABELS = {
 };
 
 export const STRIPE_LABELS = {
-  title: "在线收款 Stripe",
-  configured: "收款密钥 (API Key)",
+  title: "在线收款 Polar / Stripe",
+  configured: "收款已配置 Payments",
   configuredYes: "已配置 Configured",
   configuredNo: "未配置 Not Configured",
   live: "真实收款站 (Live)",
@@ -177,7 +177,7 @@ export const DASHBOARD_COPY = {
 
   seoTitle: "搜索优化健康度 SEO Health",
   seoSub: "影响自然搜索流量能否持续增长 Organic growth readiness",
-  stripeSub: "没配密钥就只能演示 Demo mode without real payments",
+  stripeSub: "Polar API 已配 = 每站独立回调；仅静态链接则付完跳 ai-headshots",
 
   topSitesTitle: "流量排名 Top Traffic",
   topSitesSub: "优先推广排名靠前的站点 Focus on top performers",

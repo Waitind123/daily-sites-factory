@@ -103,7 +103,7 @@ export function RevenueSprintPanel({
               <tr>
                 <th className="text-left py-1">{DASHBOARD_COPY.siteColumn}</th>
                 <th className="text-right py-1">PV</th>
-                <th className="text-right py-1">Stripe</th>
+                <th className="text-right py-1">收款 Live</th>
                 <th className="text-right py-1">{DASHBOARD_COPY.sprintPromote}</th>
               </tr>
             </thead>
