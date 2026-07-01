@@ -1,4 +1,4 @@
-export const SITE_ID = "ai-定价页优化";
+export const SITE_ID = "ai-pricing-optimizer";
 export {
   FREE_TRIAL_LIMIT,
   getTrialStatus,

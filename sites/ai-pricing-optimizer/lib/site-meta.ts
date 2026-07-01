@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "ai-定价页优化",
+  id: "ai-pricing-optimizer",
   emoji: "✨",
   name: {
     en: "PricePulse AI",
