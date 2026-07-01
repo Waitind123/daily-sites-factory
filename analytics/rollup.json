@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T18:07:43.635Z",
+  "updatedAt": "2026-07-01T19:14:38.784Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5209,9 +5209,86 @@
       "knownVisitors": [
         "d39be27d-4ed8-4cad-ab1c-652ba5dac0de"
       ]
+    },
+    "ai-funnel-diagnosis": {
+      "url": "",
+      "daily": {
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "aae3c83b-f5e1-456a-bec1-e32bd627a78d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "3": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "aae3c83b-f5e1-456a-bec1-e32bd627a78d": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "aae3c83b-f5e1-456a-bec1-e32bd627a78d"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "aae3c83b-f5e1-456a-bec1-e32bd627a78d",
+      "siteId": "ai-funnel-diagnosis",
+      "firstSeen": "2026-07-01T19:14:38.572Z",
+      "lastSeen": "2026-07-01T19:14:38.572Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "69c61598-541a-48a3-8f32-42f2af820e85",
       "siteId": "funnel-pulse",
