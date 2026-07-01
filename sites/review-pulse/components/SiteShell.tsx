@@ -54,9 +54,17 @@ export function SiteFooter({
   const name = meta.name[locale];
 
   return (
-    <footer className="border-t border-border py-8 text-center text-sm text-muted">
+    <footer className="border-t border-border py-8 pb-28 text-center text-sm text-muted">
       <p>
         {name} · {t.footerBuilt}
+      </p>
+      <p className="mt-3">
+        <a
+          href={`mailto:${OWNER_CONTACT_EMAIL}`}
+          className="text-base font-semibold text-brand-400 hover:text-brand-300 hover:underline"
+        >
+          {OWNER_CONTACT_EMAIL}
+        </a>
       </p>
       <p className="mt-2">
         {guideHref && (
@@ -70,14 +78,6 @@ export function SiteFooter({
         <Link href="/sitemap.xml" className="hover:underline">
           {t.sitemap}
         </Link>
-      </p>
-      <p className="mt-2">
-        <a
-          href={`mailto:${OWNER_CONTACT_EMAIL}`}
-          className="font-medium text-foreground hover:underline"
-        >
-          {OWNER_CONTACT_EMAIL}
-        </a>
       </p>
     </footer>
   );
