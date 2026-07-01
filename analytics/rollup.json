@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T12:11:47.448Z",
+  "updatedAt": "2026-07-01T13:06:33.407Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1091,11 +1091,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ae037834-5027-4a03-a9e2-6b46598a9b9d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ae037834-5027-4a03-a9e2-6b46598a9b9d": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1112,7 +1150,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:42.124Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "ae037834-5027-4a03-a9e2-6b46598a9b9d"
+      ]
     },
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
@@ -5057,6 +5098,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ae037834-5027-4a03-a9e2-6b46598a9b9d",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-07-01T13:06:33.188Z",
+      "lastSeen": "2026-07-01T13:06:33.188Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d39be27d-4ed8-4cad-ab1c-652ba5dac0de",
       "siteId": "bookmark-pulse",
