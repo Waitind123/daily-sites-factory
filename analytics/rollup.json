@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T05:02:15.775Z",
+  "updatedAt": "2026-07-01T05:05:00.096Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -254,11 +254,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9b70d4ed-d8f4-481d-9547-8527a0e72a13"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9b70d4ed-d8f4-481d-9547-8527a0e72a13": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -275,7 +313,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:05.310Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9b70d4ed-d8f4-481d-9547-8527a0e72a13"
+      ]
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
