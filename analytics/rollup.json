@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T18:05:06.750Z",
+  "updatedAt": "2026-07-01T18:07:43.635Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1205,50 +1205,53 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "23827110-8ce3-4212-b757-be546c33c508",
-            "bbf1c077-b3fb-498a-881a-2cce2bc33277"
+            "bbf1c077-b3fb-498a-881a-2cce2bc33277",
+            "69c61598-541a-48a3-8f32-42f2af820e85"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/join": 2
+              "/join": 2,
+              "/": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "2": 1,
+              "2": 2,
               "9": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "23827110-8ce3-4212-b757-be546c33c508": 1,
-            "bbf1c077-b3fb-498a-881a-2cce2bc33277": 1
+            "bbf1c077-b3fb-498a-881a-2cce2bc33277": 1,
+            "69c61598-541a-48a3-8f32-42f2af820e85": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 7,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1267,7 +1270,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "bbf1c077-b3fb-498a-881a-2cce2bc33277"
+        "bbf1c077-b3fb-498a-881a-2cce2bc33277",
+        "69c61598-541a-48a3-8f32-42f2af820e85"
       ]
     },
     "guilt-free-habits": {
@@ -5208,6 +5212,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "69c61598-541a-48a3-8f32-42f2af820e85",
+      "siteId": "funnel-pulse",
+      "firstSeen": "2026-07-01T18:07:43.485Z",
+      "lastSeen": "2026-07-01T18:07:43.485Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bbf1c077-b3fb-498a-881a-2cce2bc33277",
       "siteId": "funnel-pulse",
