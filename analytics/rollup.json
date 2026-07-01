@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T14:07:01.183Z",
+  "updatedAt": "2026-07-01T15:02:47.740Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -370,8 +370,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 5,
-          "uv": 5,
+          "pv": 6,
+          "uv": 6,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -380,32 +380,34 @@
             "e7d0a77b-0247-4e30-97c9-8bfdec1791bb",
             "29156db5-6b46-48ee-bb71-f1ee9206b415",
             "c30459b3-1bcb-494c-a3c0-d31fd40344eb",
-            "075253be-ae8f-4f59-9b82-d2612a775c15"
+            "075253be-ae8f-4f59-9b82-d2612a775c15",
+            "32e9763c-d51b-48fd-a1f5-45ca07867f4b"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 5
+              "直接访问": 6
             },
             "paths": {
-              "/": 3,
+              "/": 4,
               "/join": 2
             },
             "devices": {
-              "desktop": 5
+              "desktop": 6
             },
             "locales": {
-              "zh": 5
+              "zh": 6
             },
             "timezones": {
-              "UTC": 5
+              "UTC": 6
             },
             "utmSources": {},
             "hours": {
               "11": 2,
-              "13": 3
+              "13": 3,
+              "23": 1
             },
             "visitorTypes": {
-              "new": 5,
+              "new": 6,
               "returning": 0
             }
           },
@@ -414,13 +416,14 @@
             "e7d0a77b-0247-4e30-97c9-8bfdec1791bb": 1,
             "29156db5-6b46-48ee-bb71-f1ee9206b415": 1,
             "c30459b3-1bcb-494c-a3c0-d31fd40344eb": 1,
-            "075253be-ae8f-4f59-9b82-d2612a775c15": 1
+            "075253be-ae8f-4f59-9b82-d2612a775c15": 1,
+            "32e9763c-d51b-48fd-a1f5-45ca07867f4b": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -437,7 +440,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:33.523Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "32e9763c-d51b-48fd-a1f5-45ca07867f4b"
+      ]
     },
     "churn-pulse": {
       "url": "https://churn-pulse-pi.vercel.app",
@@ -5165,6 +5171,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "32e9763c-d51b-48fd-a1f5-45ca07867f4b",
+      "siteId": "changelog-hub",
+      "firstSeen": "2026-07-01T15:02:47.475Z",
+      "lastSeen": "2026-07-01T15:02:47.475Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "0af34404-2c93-4d10-8221-a8ed20c73f3b",
       "siteId": "testimonial-wall",
