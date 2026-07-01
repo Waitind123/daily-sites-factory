@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T01:11:36.018Z",
+  "updatedAt": "2026-07-01T01:11:37.780Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2691,11 +2691,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fe6380d9-9140-4f21-abd5-0ca4702b5d79"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fe6380d9-9140-4f21-abd5-0ca4702b5d79": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 2,
+        "pv": 5,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2712,7 +2750,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:21:04.985Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "fe6380d9-9140-4f21-abd5-0ca4702b5d79"
+      ]
     },
     "wcag-alt-text": {
       "url": "https://wcag-alt-text.vercel.app",
