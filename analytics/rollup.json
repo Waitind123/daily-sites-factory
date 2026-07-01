@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:20:45.499Z",
+  "updatedAt": "2026-07-01T03:20:52.286Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3037,11 +3037,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "81e97af4-2171-45ec-9e5b-acb306821b43"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "81e97af4-2171-45ec-9e5b-acb306821b43": 1
+          }
         }
       },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3058,7 +3096,10 @@
         "guideCount": 0,
         "lastChecked": "2026-06-30T06:20:01.966Z",
         "score": 25
-      }
+      },
+      "knownVisitors": [
+        "81e97af4-2171-45ec-9e5b-acb306821b43"
+      ]
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
