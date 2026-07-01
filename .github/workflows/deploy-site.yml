@@ -35,15 +35,17 @@ jobs:
               echo "sites=[]" >> $GITHUB_OUTPUT
               exit 0
             fi
-            CHANGED_SITES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
+            GIT_DIFF='git -c core.quotePath=false diff --name-only'
+            GIT_SHOW='git -c core.quotePath=false show --name-only --pretty=format:'
+            CHANGED_SITES=$($GIT_DIFF HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
             if [ -z "$CHANGED_SITES" ]; then
-              CHANGED_SITES=$(git show --name-only --pretty=format: HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
+              CHANGED_SITES=$($GIT_SHOW HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
             fi
             DEPLOY=""
             for site in $CHANGED_SITES; do
-              FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep "^sites/$site/" || true)
+              FILES=$($GIT_DIFF HEAD~1 HEAD 2>/dev/null | grep "^sites/$site/" || true)
               if [ -z "$FILES" ]; then
-                FILES=$(git show --name-only --pretty=format: HEAD | grep "^sites/$site/" || true)
+                FILES=$($GIT_SHOW HEAD | grep "^sites/$site/" || true)
               fi
               SIG=$(echo "$FILES" | grep -vE 'lib/(analytics-client|dashboard-url|analytics-api-url)\.ts$' | grep -v '^$' || true)
               if [ "$site" = "factory-dashboard" ]; then
