@@ -6,19 +6,39 @@ import { siteMeta } from "@/lib/site-meta";
 export function CheckoutButton({
   className = "",
   label = "Subscribe · $9.9/mo",
-  plan = "monthly",
+  currency,
+  plan,
 }: {
   className?: string;
   label?: string;
+  currency?: "cny" | "usd";
   plan?: "monthly" | "annual";
 }) {
+  if (currency) {
+    return (
+      <a
+        href={`/api/checkout?go=1&currency=${currency}`}
+        onClick={() => trackFactoryEvent(siteMeta.id, "checkout")}
+        className={`block w-full rounded-xl bg-brand-600 px-6 py-3.5 text-center text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
+      >
+        {label}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={`/api/checkout?go=1&plan=${plan}`}
-      onClick={() => trackFactoryEvent(siteMeta.id, "checkout")}
-      className={`block w-full rounded-xl bg-brand-600 px-6 py-3.5 text-center text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
+    <form
+      action="/api/checkout"
+      method="POST"
+      onSubmit={() => trackFactoryEvent(siteMeta.id, "checkout")}
     >
-      {label}
-    </a>
+      {plan ? <input type="hidden" name="plan" value={plan} /> : null}
+      <button
+        type="submit"
+        className={`w-full rounded-xl bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors active:scale-[0.98] ${className}`}
+      >
+        {label}
+      </button>
+    </form>
   );
 }
