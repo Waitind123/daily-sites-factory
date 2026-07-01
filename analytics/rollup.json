@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T20:14:05.776Z",
+  "updatedAt": "2026-07-01T21:03:52.270Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3060,8 +3060,8 @@
           ]
         },
         "2026-07-01": {
-          "pv": 7,
-          "uv": 5,
+          "pv": 8,
+          "uv": 6,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -3070,34 +3070,36 @@
             "4cd0dda8-0e56-47e5-b178-698775951124",
             "9ed30241-9dc8-4e76-b789-8c8dab334401",
             "1a477e30-152e-4f45-abd1-9d4284c9399b",
-            "961fb9f1-e7fe-469b-bf9e-68dfc6ac8f0e"
+            "961fb9f1-e7fe-469b-bf9e-68dfc6ac8f0e",
+            "211dfb2d-0a1e-4609-ab9a-47f9fdc29599"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 7
+              "直接访问": 8
             },
             "paths": {
-              "/": 4,
+              "/": 5,
               "/ideas": 2,
               "/join": 1
             },
             "devices": {
-              "desktop": 7
+              "desktop": 8
             },
             "locales": {
-              "zh": 7
+              "zh": 8
             },
             "timezones": {
-              "UTC": 7
+              "UTC": 8
             },
             "utmSources": {},
             "hours": {
+              "5": 1,
               "11": 4,
               "12": 1,
               "13": 2
             },
             "visitorTypes": {
-              "new": 5,
+              "new": 6,
               "returning": 2
             }
           },
@@ -3106,13 +3108,14 @@
             "4cd0dda8-0e56-47e5-b178-698775951124": 2,
             "9ed30241-9dc8-4e76-b789-8c8dab334401": 1,
             "1a477e30-152e-4f45-abd1-9d4284c9399b": 1,
-            "961fb9f1-e7fe-469b-bf9e-68dfc6ac8f0e": 1
+            "961fb9f1-e7fe-469b-bf9e-68dfc6ac8f0e": 1,
+            "211dfb2d-0a1e-4609-ab9a-47f9fdc29599": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 7,
+        "pv": 12,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3129,7 +3132,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:08.270Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "211dfb2d-0a1e-4609-ab9a-47f9fdc29599"
+      ]
     },
     "status-pulse": {
       "url": "https://status-pulse-chi.vercel.app",
@@ -5350,6 +5356,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "211dfb2d-0a1e-4609-ab9a-47f9fdc29599",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-01T21:03:52.062Z",
+      "lastSeen": "2026-07-01T21:03:52.062Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e51fc434-91d4-4789-979e-cd61efcb69ca",
       "siteId": "visa-alert",
