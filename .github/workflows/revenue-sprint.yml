@@ -41,10 +41,8 @@ jobs:
       - name: IndexNow (SEO push)
         run: node scripts/submit-indexnow.mjs || true
 
-      - name: Redeploy Stripe priority sites
-        if: |
-          (github.event_name == 'schedule' || inputs.redeploy_priority != false) &&
-          secrets.STRIPE_SECRET_KEY != ''
+      - name: Redeploy revenue priority sites
+        if: github.event_name == 'schedule' || inputs.redeploy_priority != false
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

@@ -76,6 +76,9 @@ async function main() {
       title: post.title,
       hash: post.hash,
       url: result.url,
+      joinUrl: post.joinUrl || post.url,
+      campaign: post.campaign || null,
+      platform: `Reddit r/${post.subreddit}`,
     },
     ...(state.history || []),
   ].slice(0, 60);

@@ -1,0 +1,20 @@
+name: Redeploy revenue sites only
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site_id: [ai-headshots, intercom-pulse, feature-vote, team-headshots]
+      max-parallel: 1
+    steps:
+      - name: Trigger deploy for ${{ matrix.site_id }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-site.yml -f site_id="${{ matrix.site_id }}"
