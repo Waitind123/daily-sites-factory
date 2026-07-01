@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T05:16:17.029Z",
+  "updatedAt": "2026-07-01T05:16:23.259Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -346,49 +346,52 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "beba783e-8973-4561-9422-cba219af09a7",
-            "e7d0a77b-0247-4e30-97c9-8bfdec1791bb"
+            "e7d0a77b-0247-4e30-97c9-8bfdec1791bb",
+            "29156db5-6b46-48ee-bb71-f1ee9206b415"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "11": 2
+              "11": 2,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "beba783e-8973-4561-9422-cba219af09a7": 1,
-            "e7d0a77b-0247-4e30-97c9-8bfdec1791bb": 1
+            "e7d0a77b-0247-4e30-97c9-8bfdec1791bb": 1,
+            "29156db5-6b46-48ee-bb71-f1ee9206b415": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -408,7 +411,8 @@
       },
       "knownVisitors": [
         "beba783e-8973-4561-9422-cba219af09a7",
-        "e7d0a77b-0247-4e30-97c9-8bfdec1791bb"
+        "e7d0a77b-0247-4e30-97c9-8bfdec1791bb",
+        "29156db5-6b46-48ee-bb71-f1ee9206b415"
       ]
     },
     "churn-pulse": {
