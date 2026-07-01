@@ -603,6 +603,7 @@ function syncSite(siteId) {
   };
 
   copyTemplate("app/globals.css", join(siteDir, "app", "globals.css"));
+  copyTemplate("lib/site-owner.ts", join(siteDir, "lib", "site-owner.ts"));
   copyTemplate("lib/i18n-shared.ts", join(siteDir, "lib", "i18n-shared.ts"));
   copyTemplate("lib/locale.ts", join(siteDir, "lib", "locale.ts"));
   copyTemplate("lib/feedback-store.ts", join(siteDir, "lib", "feedback-store.ts"));

@@ -16,7 +16,10 @@ export interface FeedbackFile {
 }
 
 const REPO = process.env.GITHUB_REPO || "Waitind123/daily-sites-factory";
-const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+const TOKEN =
+  process.env.ANALYTICS_GITHUB_PAT ||
+  process.env.GITHUB_TOKEN ||
+  process.env.GH_TOKEN;
 
 function repoRoot() {
   return join(process.cwd(), "..", "..");
@@ -100,13 +103,15 @@ export async function loadFeedback(siteId: string): Promise<FeedbackFile> {
 export async function saveFeedback(siteId: string, data: FeedbackFile) {
   const content = JSON.stringify(data, null, 2) + "\n";
   const ghPath = `feedback/${siteId}.json`;
-  try {
-    const remote = await githubGet(ghPath);
-    await githubPut(ghPath, content, remote?.sha);
-    return;
-  } catch {
-    writeLocal(siteId, data);
+  if (!TOKEN) {
+    if (process.env.NODE_ENV === "development") {
+      writeLocal(siteId, data);
+      return;
+    }
+    throw new Error("GITHUB_TOKEN not configured");
   }
+  const remote = await githubGet(ghPath);
+  await githubPut(ghPath, content, remote?.sha);
 }
 
 export async function addFeedback(siteId: string, text: string) {
