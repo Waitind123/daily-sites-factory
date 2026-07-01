@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T06:08:47.436Z",
+  "updatedAt": "2026-07-01T06:08:52.547Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3465,11 +3465,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e3c13fa1-b19a-45d9-9f74-084b12beabd7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e3c13fa1-b19a-45d9-9f74-084b12beabd7": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3486,7 +3524,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:21:00.826Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e3c13fa1-b19a-45d9-9f74-084b12beabd7"
+      ]
     },
     "visa-guide": {
       "url": "https://visa-guide-tau.vercel.app",
