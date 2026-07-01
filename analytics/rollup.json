@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:14:04.588Z",
+  "updatedAt": "2026-07-01T03:17:25.506Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3577,42 +3577,44 @@
       "url": "",
       "daily": {
         "2026-07-01": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "0c9bf94f-2d32-4985-a57e-e77b4fdfced3"
+            "0c9bf94f-2d32-4985-a57e-e77b4fdfced3",
+            "d56a64ed-29b2-4b25-a887-a180a9b954be"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/wiki": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "11": 2
+              "11": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "0c9bf94f-2d32-4985-a57e-e77b4fdfced3": 2
+            "0c9bf94f-2d32-4985-a57e-e77b4fdfced3": 2,
+            "d56a64ed-29b2-4b25-a887-a180a9b954be": 1
           }
         }
       },
@@ -3630,14 +3632,15 @@
         "score": 0
       },
       "totals": {
-        "pv": 2,
-        "uv": 1,
+        "pv": 3,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "0c9bf94f-2d32-4985-a57e-e77b4fdfced3"
+        "0c9bf94f-2d32-4985-a57e-e77b4fdfced3",
+        "d56a64ed-29b2-4b25-a887-a180a9b954be"
       ]
     }
   }
