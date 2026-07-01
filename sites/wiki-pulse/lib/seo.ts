@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://wiki-pulse.vercel.app",
+    url: "https://wiki-pulse-coral.vercel.app",
     name: "Wiki Pulse",
     title: "Wiki Pulse — Notion/Obsidian team wiki alternative, $9.9/mo flat",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://wiki-pulse.vercel.app",
+    url: "https://wiki-pulse-coral.vercel.app",
     name: "团队知识库",
     title: "团队知识库 — Notion/Obsidian 平替，独立团队 $9.9/月",
     description:
