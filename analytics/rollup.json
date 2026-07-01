@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:20:53.418Z",
+  "updatedAt": "2026-07-01T03:20:54.301Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1680,11 +1680,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "890b5e97-1bb0-4c1e-bfcf-f6dda1c58357"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "890b5e97-1bb0-4c1e-bfcf-f6dda1c58357": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1701,7 +1739,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:35.272Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "890b5e97-1bb0-4c1e-bfcf-f6dda1c58357"
+      ]
     },
     "page-split": {
       "url": "https://page-split-pi.vercel.app",
