@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T07:33:57.918Z",
+  "updatedAt": "2026-07-01T07:34:01.490Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4701,41 +4701,44 @@
       "url": "",
       "daily": {
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "287c0490-885c-4c7d-9593-8200e41d1648"
+            "287c0490-885c-4c7d-9593-8200e41d1648",
+            "cd7f67f6-9d29-4e5e-be34-daaf50fc10ad"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/analyze": 1
+              "/analyze": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "287c0490-885c-4c7d-9593-8200e41d1648": 1
+            "287c0490-885c-4c7d-9593-8200e41d1648": 1,
+            "cd7f67f6-9d29-4e5e-be34-daaf50fc10ad": 1
           }
         }
       },
@@ -4753,14 +4756,15 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "287c0490-885c-4c7d-9593-8200e41d1648"
+        "287c0490-885c-4c7d-9593-8200e41d1648",
+        "cd7f67f6-9d29-4e5e-be34-daaf50fc10ad"
       ]
     }
   }
