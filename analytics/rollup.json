@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T21:13:33.039Z",
+  "updatedAt": "2026-07-01T21:26:19.947Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3707,8 +3707,8 @@
           ]
         },
         "2026-07-01": {
-          "pv": 10,
-          "uv": 8,
+          "pv": 11,
+          "uv": 9,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -3720,37 +3720,40 @@
             "78f71e98-0221-467f-9b25-6ea1475bd113",
             "ba7da5ee-c60a-4232-8cd7-7918a1613795",
             "6747d570-ebd7-4862-a48f-85a36c35aebc",
-            "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad"
+            "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad",
+            "bbdd964d-86f9-4913-a20a-fc27284a12a4"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 10
+              "直接访问": 11
             },
             "paths": {
-              "/": 5,
+              "/": 6,
               "/visas": 4,
               "/join": 1
             },
             "devices": {
-              "desktop": 10
+              "desktop": 11
             },
             "locales": {
               "zh": 9,
-              "en": 1
+              "en": 1,
+              "de": 1
             },
             "timezones": {
-              "UTC": 10
+              "UTC": 10,
+              "Europe/Berlin": 1
             },
             "utmSources": {},
             "hours": {
-              "5": 1,
+              "5": 2,
               "9": 2,
               "11": 3,
               "12": 1,
               "13": 3
             },
             "visitorTypes": {
-              "new": 8,
+              "new": 9,
               "returning": 2
             }
           },
@@ -3762,13 +3765,14 @@
             "78f71e98-0221-467f-9b25-6ea1475bd113": 1,
             "ba7da5ee-c60a-4232-8cd7-7918a1613795": 1,
             "6747d570-ebd7-4862-a48f-85a36c35aebc": 1,
-            "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad": 1
+            "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad": 1,
+            "bbdd964d-86f9-4913-a20a-fc27284a12a4": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 12,
+        "pv": 16,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3787,7 +3791,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad"
+        "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad",
+        "bbdd964d-86f9-4913-a20a-fc27284a12a4"
       ]
     },
     "visa-tracker": {
@@ -5366,6 +5371,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bbdd964d-86f9-4913-a20a-fc27284a12a4",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-01T21:26:19.735Z",
+      "lastSeen": "2026-07-01T21:26:19.735Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "de",
+      "device": "desktop",
+      "timezone": "Europe/Berlin"
+    },
     {
       "visitorId": "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad",
       "siteId": "visa-guide",
