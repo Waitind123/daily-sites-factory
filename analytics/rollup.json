@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T23:02:38.807Z",
+  "updatedAt": "2026-07-01T23:04:47.430Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2704,47 +2704,49 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f"
+            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f",
+            "d32be597-89ca-40d3-816d-1528a17cccd4"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "7": 1
+              "7": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f": 1
+            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f": 1,
+            "d32be597-89ca-40d3-816d-1528a17cccd4": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2763,7 +2765,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "9df571f9-1a75-4cb0-876b-7df4c0cacd3f"
+        "9df571f9-1a75-4cb0-876b-7df4c0cacd3f",
+        "d32be597-89ca-40d3-816d-1528a17cccd4"
       ]
     },
     "reddit-watch": {
@@ -5491,6 +5494,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d32be597-89ca-40d3-816d-1528a17cccd4",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-07-01T23:04:47.291Z",
+      "lastSeen": "2026-07-01T23:04:47.291Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9df571f9-1a75-4cb0-876b-7df4c0cacd3f",
       "siteId": "reddit-pulse",
