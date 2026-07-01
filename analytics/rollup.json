@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T13:32:36.485Z",
+  "updatedAt": "2026-07-01T13:32:39.561Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -28,8 +28,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 50,
-          "uv": 24,
+          "pv": 51,
+          "uv": 25,
           "trial": 0,
           "checkout": 2,
           "purchase": 2,
@@ -57,16 +57,17 @@
             "095b7b0f-9403-4a76-9000-77cef9dfe020",
             "674ef02b-89e4-4869-86db-8e5bc481255a",
             "848eab89-c833-48ba-9351-af4a87859f08",
-            "03d19b70-d841-420a-919c-9ab2641841d0"
+            "03d19b70-d841-420a-919c-9ab2641841d0",
+            "63f92324-ea15-4a7a-9b5d-16204a17b527"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 48,
+              "直接访问": 49,
               "站内互跳": 1,
               "搜索引擎": 1
             },
             "paths": {
-              "/": 27,
+              "/": 28,
               "/join": 11,
               "/studio": 4,
               "/api/checkout-bridge": 3,
@@ -74,18 +75,18 @@
               "/guide/linkedin-headshot": 1
             },
             "devices": {
-              "desktop": 49,
+              "desktop": 50,
               "tablet": 1
             },
             "locales": {
               "zh": 39,
-              "en": 11
+              "en": 12
             },
             "timezones": {
               "UTC": 22,
               "Asia/Shanghai": 26,
               "Etc/Unknown": 1,
-              "America/New_York": 1
+              "America/New_York": 2
             },
             "utmSources": {
               "reddit": 1
@@ -100,10 +101,10 @@
               "14": 2,
               "15": 1,
               "16": 1,
-              "21": 1
+              "21": 2
             },
             "visitorTypes": {
-              "new": 25,
+              "new": 26,
               "returning": 25
             }
           },
@@ -131,13 +132,14 @@
             "095b7b0f-9403-4a76-9000-77cef9dfe020": 1,
             "674ef02b-89e4-4869-86db-8e5bc481255a": 1,
             "848eab89-c833-48ba-9351-af4a87859f08": 1,
-            "03d19b70-d841-420a-919c-9ab2641841d0": 1
+            "03d19b70-d841-420a-919c-9ab2641841d0": 1,
+            "63f92324-ea15-4a7a-9b5d-16204a17b527": 1
           }
         }
       },
       "totals": {
-        "pv": 55,
-        "uv": 28,
+        "pv": 56,
+        "uv": 29,
         "trial": 0,
         "checkout": 2,
         "purchase": 2
@@ -158,7 +160,8 @@
       "knownVisitors": [
         "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
         "848eab89-c833-48ba-9351-af4a87859f08",
-        "03d19b70-d841-420a-919c-9ab2641841d0"
+        "03d19b70-d841-420a-919c-9ab2641841d0",
+        "63f92324-ea15-4a7a-9b5d-16204a17b527"
       ]
     },
     "ai-waitlist": {
@@ -5117,6 +5120,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "63f92324-ea15-4a7a-9b5d-16204a17b527",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-01T13:32:39.433Z",
+      "lastSeen": "2026-07-01T13:32:39.433Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/New_York"
+    },
     {
       "visitorId": "03d19b70-d841-420a-919c-9ab2641841d0",
       "siteId": "ai-headshots",
