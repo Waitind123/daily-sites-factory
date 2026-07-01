@@ -26,9 +26,16 @@ export default async function JoinPage() {
         <div className="text-center">
           <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
           <div className="flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-bold text-foreground">$9.9</span>
+            <span className="text-5xl font-bold text-foreground">
+              {locale === "zh" ? "¥69" : "$9.9"}
+            </span>
             <span className="text-muted">{c.perMonth}</span>
           </div>
+          {locale === "zh" ? (
+            <p className="mt-1 text-xs text-muted">或美元 $9.9/月 · Polar 收款</p>
+          ) : (
+            <p className="mt-1 text-xs text-muted">Or ¥69/mo in CNY via Alipay / WeChat</p>
+          )}
           <p className="mt-2 text-sm text-muted">{c.vsPhotoAI}</p>
         </div>
 
@@ -41,8 +48,13 @@ export default async function JoinPage() {
           ))}
         </ul>
 
-        <div className="mt-8">
-          <CheckoutButton label={c.subscribe} />
+        <div className="mt-8 space-y-3">
+          <CheckoutButton label={c.subscribe} currency="usd" />
+          <CheckoutButton
+            label={c.subscribeCny}
+            currency="cny"
+            className="!bg-emerald-600 hover:!bg-emerald-700"
+          />
         </div>
 
         {mode === "polar" && (

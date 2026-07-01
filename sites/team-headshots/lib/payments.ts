@@ -21,6 +21,11 @@ export function getPolarCheckoutUrl() {
 }
 
 export async function createPayment(origin: string, currency: Currency = "usd") {
+  if (currency === "cny" && process.env.STRIPE_SECRET_KEY) {
+    const result = await createCheckoutSession(origin, "cny");
+    return { provider: "stripe" as const, ...result };
+  }
+
   const mode = getPaymentMode();
 
   if (mode === "stripe") {
@@ -29,12 +34,19 @@ export async function createPayment(origin: string, currency: Currency = "usd") 
   }
 
   if (mode === "polar") {
-    const url = await resolvePolarCheckoutUrl(origin);
-    return {
-      provider: "polar" as const,
-      demo: false as const,
-      url,
-    };
+    const url = await resolvePolarCheckoutUrl(origin, { currency });
+    if (url) {
+      return {
+        provider: "polar" as const,
+        demo: false as const,
+        url,
+      };
+    }
+  }
+
+  if (process.env.STRIPE_SECRET_KEY) {
+    const result = await createCheckoutSession(origin, currency);
+    return { provider: "stripe" as const, ...result };
   }
 
   if (mode === "lemonsqueezy") {

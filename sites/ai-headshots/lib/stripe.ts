@@ -13,12 +13,13 @@ export function isDemoMode() {
 }
 
 export function getStripe() {
-  if (DEMO_MODE || POLAR_CHECKOUT_URL) return null;
+  if (!process.env.STRIPE_SECRET_KEY) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
 }
 
+export const PRICE_CNY_MONTHLY = 6900;
 export const PRICE_CNY = 69900;
 export const PRICE_USD = 9900;
 
@@ -26,9 +27,11 @@ export async function createCheckoutSession(
   origin: string,
   currency: "cny" | "usd" = "cny"
 ) {
-  const polarUrl = await resolvePolarCheckoutUrl(origin);
-  if (polarUrl) {
-    return { demo: false as const, url: polarUrl };
+  if (currency !== "cny") {
+    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
+    if (polarUrl) {
+      return { demo: false as const, url: polarUrl };
+    }
   }
 
   const stripe = getStripe();
@@ -54,10 +57,12 @@ export async function createCheckoutSession(
         price_data: {
           currency: isCny ? "cny" : "usd",
           product_data: {
-            name: "AI 证件照 · 年费会员",
-            description: "无限生成 + 全部风格 + 高清下载，365 天",
+            name: isCny ? "AI 证件照 · 月费会员" : "AI Headshots · Monthly",
+            description: isCny
+              ? "无限生成 + 全部风格 + 高清下载，支持支付宝/微信"
+              : "Unlimited generations + all styles + HD download",
           },
-          unit_amount: isCny ? PRICE_CNY : PRICE_USD,
+          unit_amount: isCny ? PRICE_CNY_MONTHLY : PRICE_USD,
         },
         quantity: 1,
       },

@@ -20,6 +20,9 @@ export const uiCopy = {
     langEn: "EN",
     langZh: "中文",
     footerBuilt: "Ship fast · indie maintained",
+    privacy: "Privacy",
+    terms: "Terms",
+    legalCompliance: "Compliant with PRC laws",
   },
   zh: {
     guide: "指南",
@@ -38,6 +41,9 @@ export const uiCopy = {
     langEn: "EN",
     langZh: "中文",
     footerBuilt: "快速迭代 · 一人维护",
+    privacy: "隐私政策",
+    terms: "用户协议",
+    legalCompliance: "遵守中国法律法规",
   },
 } as const;
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { getUiCopy, type Locale } from "@/lib/i18n-shared";
+import { getLegalCopy } from "@/lib/legal";
 import { OWNER_CONTACT_EMAIL } from "@/lib/site-owner";
 import { siteMeta } from "@/lib/site-meta";
 
@@ -51,14 +52,16 @@ export function SiteFooter({
   guideHref?: string;
 }) {
   const t = getUiCopy(locale);
+  const legal = getLegalCopy(locale);
   const name = meta.name[locale];
 
   return (
-    <footer className="border-t border-border py-8 pb-28 text-center text-sm text-muted">
+    <footer className="border-t border-border py-8 pb-40 text-center text-sm text-muted">
       <p>
         {name} · {t.footerBuilt}
       </p>
-      <p className="mt-3">
+      <p className="mt-3 text-foreground">
+        {locale === "zh" ? "有任何问题请联系：" : "Questions? Contact us at "}
         <a
           href={`mailto:${OWNER_CONTACT_EMAIL}`}
           className="text-base font-semibold text-brand-400 hover:text-brand-300 hover:underline"
@@ -75,6 +78,14 @@ export function SiteFooter({
             {" · "}
           </>
         )}
+        <Link href="/legal/privacy" className="hover:underline">
+          {legal.privacyTitle}
+        </Link>
+        {" · "}
+        <Link href="/legal/terms" className="hover:underline">
+          {legal.termsTitle}
+        </Link>
+        {" · "}
         <Link href="/sitemap.xml" className="hover:underline">
           {t.sitemap}
         </Link>

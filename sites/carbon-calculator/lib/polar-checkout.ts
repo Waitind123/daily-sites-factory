@@ -6,7 +6,14 @@ import { CHECKOUT_HUB_URL, DEFAULT_POLAR_CHECKOUT_URL } from "./polar-config";
  * 1. Polar API when POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID are set
  * 2. Else hub bridge → sets return cookie → Polar static link
  */
-export async function resolvePolarCheckoutUrl(origin: string): Promise<string> {
+export async function resolvePolarCheckoutUrl(
+  origin: string,
+  opts?: { currency?: "cny" | "usd" }
+): Promise<string | null> {
+  if (opts?.currency === "cny" && process.env.STRIPE_SECRET_KEY) {
+    return null;
+  }
+
   const base = origin.replace(/\/$/, "");
   const token = process.env.POLAR_ACCESS_TOKEN;
   const productId = process.env.POLAR_PRODUCT_ID;

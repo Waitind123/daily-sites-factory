@@ -64,6 +64,23 @@ export interface RollupFile {
   version: number;
   updatedAt: string | null;
   sites: Record<string, SiteRollup>;
+  visitorRegistry?: VisitorRegistryEntry[];
+}
+
+export interface VisitorRegistryEntry {
+  visitorId: string;
+  siteId: string;
+  firstSeen: string;
+  lastSeen: string;
+  pageviews: number;
+  path?: string;
+  referrer?: string;
+  locale?: string;
+  device?: string;
+  timezone?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
 }
 
 const REPO = process.env.GITHUB_REPO || "Waitind123/daily-sites-factory";
@@ -216,6 +233,37 @@ function recomputeTotals(site: SiteRollup) {
   site.totals = totals;
 }
 
+function upsertVisitorRegistry(rollup: RollupFile, event: AnalyticsEvent) {
+  if (!event.visitorId || event.type !== "pageview") return;
+  const now = event.ts || new Date().toISOString();
+  const registry = rollup.visitorRegistry || [];
+  const idx = registry.findIndex((v) => v.visitorId === event.visitorId);
+  const prev = idx >= 0 ? registry[idx] : null;
+  const entry: VisitorRegistryEntry = {
+    visitorId: event.visitorId,
+    siteId: event.siteId,
+    firstSeen: prev?.firstSeen || now,
+    lastSeen: now,
+    pageviews: (prev?.pageviews || 0) + 1,
+    path: event.path || prev?.path,
+    referrer: event.referrer || prev?.referrer,
+    locale: event.locale || prev?.locale,
+    device: event.device || prev?.device,
+    timezone: event.timezone || prev?.timezone,
+    utmSource: event.utmSource || prev?.utmSource,
+    utmMedium: event.utmMedium || prev?.utmMedium,
+    utmCampaign: event.utmCampaign || prev?.utmCampaign,
+  };
+  if (idx >= 0) {
+    registry[idx] = entry;
+  } else {
+    registry.unshift(entry);
+  }
+  rollup.visitorRegistry = registry
+    .sort((a, b) => b.lastSeen.localeCompare(a.lastSeen))
+    .slice(0, 5000);
+}
+
 export async function recordEvent(event: AnalyticsEvent) {
   if (event.type === "pageview" && isTestVisitor(event.visitorId)) {
     return;
@@ -271,5 +319,6 @@ export async function recordEvent(event: AnalyticsEvent) {
   site.daily[dayKey] = day;
   rollup.sites[event.siteId] = site;
   recomputeTotals(site);
+  upsertVisitorRegistry(rollup, event);
   await saveRollup(rollup);
 }
