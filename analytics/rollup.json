@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:34:54.177Z",
+  "updatedAt": "2026-07-01T03:35:26.194Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1721,49 +1721,52 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 4,
-          "uv": 3,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "612606fe-71bd-4f0e-940d-f563e15404db",
             "01838778-bf32-431f-b629-28662d2b1060",
-            "353d7811-1508-42a3-a0a0-af7e425bead9"
+            "353d7811-1508-42a3-a0a0-af7e425bead9",
+            "eb66de9f-1a7b-4685-b210-f86a694486fb"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/compare": 1
+              "/compare": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "353d7811-1508-42a3-a0a0-af7e425bead9": 1
+            "353d7811-1508-42a3-a0a0-af7e425bead9": 1,
+            "eb66de9f-1a7b-4685-b210-f86a694486fb": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 3,
+        "pv": 6,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1784,7 +1787,8 @@
       "knownVisitors": [
         "612606fe-71bd-4f0e-940d-f563e15404db",
         "01838778-bf32-431f-b629-28662d2b1060",
-        "353d7811-1508-42a3-a0a0-af7e425bead9"
+        "353d7811-1508-42a3-a0a0-af7e425bead9",
+        "eb66de9f-1a7b-4685-b210-f86a694486fb"
       ]
     },
     "nomad-cities": {
