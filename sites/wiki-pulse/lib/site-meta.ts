@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "团队知识库替代品",
+  id: "wiki-pulse",
   emoji: "🧠",
   name: {
     en: "Wiki Pulse",

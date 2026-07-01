@@ -1,4 +1,4 @@
 import { FREE_TRIAL_LIMIT, getTrialStatus, consumeTrial, incrementTrial } from "./trial-core";
 
-export const SITE_ID = "团队知识库替代品";
+export const SITE_ID = "wiki-pulse";
 export { FREE_TRIAL_LIMIT, getTrialStatus, consumeTrial, incrementTrial };
