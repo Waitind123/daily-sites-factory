@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:33:42.684Z",
+  "updatedAt": "2026-07-01T03:33:44.850Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -819,11 +819,49 @@
           "visitors": [
             "1cb90adf-e72f-4901-aa45-8c6af03ef66c"
           ]
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c49aace6-130a-4f54-9b7a-b39e3b9a0056"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c49aace6-130a-4f54-9b7a-b39e3b9a0056": 1
+          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 6,
+        "pv": 9,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -841,7 +879,9 @@
         "lastChecked": "2026-06-30T06:20:17.193Z",
         "score": 100
       },
-      "knownVisitors": []
+      "knownVisitors": [
+        "c49aace6-130a-4f54-9b7a-b39e3b9a0056"
+      ]
     },
     "form-pulse": {
       "url": "https://form-pulse-amber.vercel.app",
