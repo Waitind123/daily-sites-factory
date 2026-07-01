@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T07:33:29.232Z",
+  "updatedAt": "2026-07-01T07:33:57.918Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -928,8 +928,8 @@
           ]
         },
         "2026-07-01": {
-          "pv": 7,
-          "uv": 6,
+          "pv": 8,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -939,35 +939,37 @@
             "c7ccb394-2e0b-4600-8be6-7b3c060191be",
             "5600d0d1-af39-41ed-8ccf-639f4462323d",
             "efd03321-b261-4abd-a18f-c3e6c8a443c8",
-            "83f983cc-cebb-4bf7-a363-4abd232cda14"
+            "83f983cc-cebb-4bf7-a363-4abd232cda14",
+            "843175a5-72df-435e-b3ac-8d4d914effd8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 7
+              "直接访问": 8
             },
             "paths": {
-              "/": 3,
+              "/": 4,
               "/join": 1,
               "/boards": 3
             },
             "devices": {
-              "desktop": 7
+              "desktop": 8
             },
             "locales": {
-              "zh": 7
+              "zh": 8
             },
             "timezones": {
-              "UTC": 7
+              "UTC": 8
             },
             "utmSources": {},
             "hours": {
               "11": 1,
               "12": 1,
               "13": 4,
-              "14": 1
+              "14": 1,
+              "15": 1
             },
             "visitorTypes": {
-              "new": 6,
+              "new": 7,
               "returning": 1
             }
           },
@@ -977,13 +979,14 @@
             "c7ccb394-2e0b-4600-8be6-7b3c060191be": 1,
             "5600d0d1-af39-41ed-8ccf-639f4462323d": 1,
             "efd03321-b261-4abd-a18f-c3e6c8a443c8": 2,
-            "83f983cc-cebb-4bf7-a363-4abd232cda14": 1
+            "83f983cc-cebb-4bf7-a363-4abd232cda14": 1,
+            "843175a5-72df-435e-b3ac-8d4d914effd8": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 12,
+        "pv": 16,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1000,7 +1003,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:40.817Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "843175a5-72df-435e-b3ac-8d4d914effd8"
+      ]
     },
     "form-pulse": {
       "url": "https://form-pulse-amber.vercel.app",
