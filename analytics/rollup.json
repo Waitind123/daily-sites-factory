@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T05:18:42.128Z",
+  "updatedAt": "2026-07-01T05:19:17.611Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -923,50 +923,54 @@
           ]
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "c49aace6-130a-4f54-9b7a-b39e3b9a0056",
-            "74327655-f336-4f40-8b5f-4c1738f127e2"
+            "74327655-f336-4f40-8b5f-4c1738f127e2",
+            "c7ccb394-2e0b-4600-8be6-7b3c060191be"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/join": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
               "11": 1,
-              "12": 1
+              "12": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "c49aace6-130a-4f54-9b7a-b39e3b9a0056": 1,
-            "74327655-f336-4f40-8b5f-4c1738f127e2": 1
+            "74327655-f336-4f40-8b5f-4c1738f127e2": 1,
+            "c7ccb394-2e0b-4600-8be6-7b3c060191be": 1
           }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 8,
+        "pv": 11,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -986,7 +990,8 @@
       },
       "knownVisitors": [
         "c49aace6-130a-4f54-9b7a-b39e3b9a0056",
-        "74327655-f336-4f40-8b5f-4c1738f127e2"
+        "74327655-f336-4f40-8b5f-4c1738f127e2",
+        "c7ccb394-2e0b-4600-8be6-7b3c060191be"
       ]
     },
     "form-pulse": {
