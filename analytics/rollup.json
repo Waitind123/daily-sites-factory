@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T04:05:06.778Z",
+  "updatedAt": "2026-07-01T04:05:08.432Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2903,50 +2903,54 @@
           ]
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "e1b62dc6-61bb-44b0-a0b4-4d56c888fc3d",
-            "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1"
+            "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1",
+            "c9fd2189-b6b6-4337-ae5a-e0932f12db9b"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/join": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
               "8": 1,
-              "11": 1
+              "11": 1,
+              "12": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "e1b62dc6-61bb-44b0-a0b4-4d56c888fc3d": 1,
-            "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1": 1
+            "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1": 1,
+            "c9fd2189-b6b6-4337-ae5a-e0932f12db9b": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2966,7 +2970,8 @@
       },
       "knownVisitors": [
         "e1b62dc6-61bb-44b0-a0b4-4d56c888fc3d",
-        "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1"
+        "e13516a0-bbfc-4dc9-8426-c1c7fcd064d1",
+        "c9fd2189-b6b6-4337-ae5a-e0932f12db9b"
       ]
     },
     "testimonial-wall": {
