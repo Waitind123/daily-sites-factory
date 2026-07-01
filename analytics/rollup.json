@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T22:11:18.401Z",
+  "updatedAt": "2026-07-01T23:02:38.807Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2702,11 +2702,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "7": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9df571f9-1a75-4cb0-876b-7df4c0cacd3f": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2723,7 +2761,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:03.094Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9df571f9-1a75-4cb0-876b-7df4c0cacd3f"
+      ]
     },
     "reddit-watch": {
       "url": "https://reddit-watch-rho.vercel.app",
@@ -5450,6 +5491,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9df571f9-1a75-4cb0-876b-7df4c0cacd3f",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-07-01T23:02:38.611Z",
+      "lastSeen": "2026-07-01T23:02:38.611Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "192ffd31-f391-4906-b8f7-d3f63409192e",
       "siteId": "meetup-host",
