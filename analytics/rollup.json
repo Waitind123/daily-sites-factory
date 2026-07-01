@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T04:02:01.961Z",
+  "updatedAt": "2026-07-01T04:02:02.648Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -848,47 +848,50 @@
           ]
         },
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c49aace6-130a-4f54-9b7a-b39e3b9a0056"
+            "c49aace6-130a-4f54-9b7a-b39e3b9a0056",
+            "74327655-f336-4f40-8b5f-4c1738f127e2"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 1,
+              "12": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c49aace6-130a-4f54-9b7a-b39e3b9a0056": 1
+            "c49aace6-130a-4f54-9b7a-b39e3b9a0056": 1,
+            "74327655-f336-4f40-8b5f-4c1738f127e2": 1
           }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 7,
+        "pv": 10,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -907,7 +910,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "c49aace6-130a-4f54-9b7a-b39e3b9a0056"
+        "c49aace6-130a-4f54-9b7a-b39e3b9a0056",
+        "74327655-f336-4f40-8b5f-4c1738f127e2"
       ]
     },
     "form-pulse": {
