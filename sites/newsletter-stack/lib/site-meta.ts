@@ -5,14 +5,8 @@ export const siteMeta = {
     en: "Newsletter Stack",
     zh: "Newsletter 工具对比",
   },
+  guideHref: "/guide/newsletter-tool-comparison-indie",
   nav: [
-    {
-      href: "/guide/newsletter-tool-comparison-indie",
-      label: {
-        en: "Guide",
-        zh: "指南",
-      },
-    },
     {
       href: "/compare",
       label: {
@@ -21,6 +15,5 @@ export const siteMeta = {
       },
     },
   ],
-  guideHref: "/guide/newsletter-tool-comparison-indie",
 } as const;
 export type SiteMeta = typeof siteMeta;

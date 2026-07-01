@@ -40,7 +40,7 @@ export default async function RootLayout({
         <SiteFooter
           meta={siteMeta}
           locale={locale}
-          guideHref={siteMeta.guideHref}
+          guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
         />
       </body>
     </html>
