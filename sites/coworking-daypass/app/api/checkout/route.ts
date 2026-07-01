@@ -2,31 +2,38 @@ import { NextRequest, NextResponse } from "next/server";
 import { createCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 
+async function checkoutRedirect(request: NextRequest) {
+  const origin = request.headers.get("origin") || request.nextUrl.origin;
+  const result = await createCheckoutSession(origin);
+  const response = NextResponse.redirect(result.url, 302);
+  if (result.demo) {
+    response.headers.append("Set-Cookie", memberCookieHeader());
+  }
+  return response;
+}
+
 export async function POST(request: NextRequest) {
   try {
-    const origin = request.headers.get("origin") || request.nextUrl.origin;
-    const result = await createCheckoutSession(origin);
-
-    const response = NextResponse.redirect(result.url);
-    if (result.demo) {
-      response.headers.append("Set-Cookie", memberCookieHeader());
-    }
-    return response;
+    return await checkoutRedirect(request);
   } catch (error) {
     console.error("Checkout error:", error);
-    return NextResponse.json(
-      { error: "支付创建失败，请稍后重试" },
-      { status: 500 }
-    );
+    return apiError("CHECKOUT_FAILED", 500);
   }
 }
 
-export async function GET() {
-  const { isDemoMode } = await import("@/lib/stripe");
+export async function GET(request: NextRequest) {
+  if (request.nextUrl.searchParams.get("go") === "1") {
+    try {
+      return await checkoutRedirect(request);
+    } catch (error) {
+      console.error("Checkout error:", error);
+      return apiError("CHECKOUT_FAILED", 500);
+    }
+  }
   return NextResponse.json({
     status: "ok",
-    message: "日票通支付接口",
-    price: "$9.9/月",
-    demo: isDemoMode(),
+    code: "checkout_ready",
+    price: "$9.9/mo",
+    demo: (await import("@/lib/stripe")).isDemoMode(),
   });
 }

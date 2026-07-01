@@ -160,6 +160,22 @@ jobs:
             printf '%s' "${{ secrets.STRIPE_WEBHOOK_SECRET }}" | npx vercel env add STRIPE_WEBHOOK_SECRET production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           fi
 
+      - name: Sync Polar checkout URL on Vercel
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          POLAR_URL: ${{ secrets.POLAR_CHECKOUT_URL }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            exit 0
+          fi
+          DEFAULT="https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj"
+          URL="${POLAR_URL:-$DEFAULT}"
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$URL" | npx vercel env add POLAR_CHECKOUT_URL production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
