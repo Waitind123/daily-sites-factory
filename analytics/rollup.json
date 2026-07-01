@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T09:06:05.721Z",
+  "updatedAt": "2026-07-01T09:08:15.266Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4788,41 +4788,43 @@
       "url": "",
       "daily": {
         "2026-07-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "512edf9b-71f5-4ce5-964b-d4e9c13e8814"
+            "512edf9b-71f5-4ce5-964b-d4e9c13e8814",
+            "a342193f-72ac-4e38-89ac-bcb2a55d22f3"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "512edf9b-71f5-4ce5-964b-d4e9c13e8814": 1
+            "512edf9b-71f5-4ce5-964b-d4e9c13e8814": 1,
+            "a342193f-72ac-4e38-89ac-bcb2a55d22f3": 1
           }
         }
       },
@@ -4840,18 +4842,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "512edf9b-71f5-4ce5-964b-d4e9c13e8814"
+        "512edf9b-71f5-4ce5-964b-d4e9c13e8814",
+        "a342193f-72ac-4e38-89ac-bcb2a55d22f3"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a342193f-72ac-4e38-89ac-bcb2a55d22f3",
+      "siteId": "状态页极简替代品",
+      "firstSeen": "2026-07-01T09:08:15.082Z",
+      "lastSeen": "2026-07-01T09:08:15.082Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "512edf9b-71f5-4ce5-964b-d4e9c13e8814",
       "siteId": "状态页极简替代品",
