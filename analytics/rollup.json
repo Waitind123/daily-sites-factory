@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T05:11:46.668Z",
+  "updatedAt": "2026-07-01T05:12:06.126Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -28,8 +28,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 26,
-          "uv": 15,
+          "pv": 27,
+          "uv": 16,
           "trial": 0,
           "checkout": 1,
           "purchase": 2,
@@ -48,30 +48,32 @@
             "60e0adbd-54cc-4965-9e74-e75315b0963f",
             "f7b06fbf-a05b-4222-a87b-4e372a400724",
             "f6436896-45fd-4604-a0a3-d45265e10808",
-            "4ffe6763-b123-4055-8bd8-7ee998373873"
+            "4ffe6763-b123-4055-8bd8-7ee998373873",
+            "8fe0f74f-dfa9-4c8f-9eb4-23e40aac89bb"
           ],
           "audience": {
             "referrers": {
               "直接访问": 25,
-              "站内互跳": 1
+              "站内互跳": 1,
+              "搜索引擎": 1
             },
             "paths": {
               "/": 9,
               "/join": 9,
               "/studio": 3,
               "/api/checkout-bridge": 3,
-              "/success": 2
+              "/success": 3
             },
             "devices": {
-              "desktop": 25,
+              "desktop": 26,
               "tablet": 1
             },
             "locales": {
               "zh": 20,
-              "en": 6
+              "en": 7
             },
             "timezones": {
-              "UTC": 14,
+              "UTC": 15,
               "Asia/Shanghai": 11,
               "Etc/Unknown": 1
             },
@@ -84,10 +86,10 @@
               "10": 4,
               "11": 8,
               "12": 8,
-              "13": 3
+              "13": 4
             },
             "visitorTypes": {
-              "new": 15,
+              "new": 16,
               "returning": 11
             }
           },
@@ -106,13 +108,14 @@
             "60e0adbd-54cc-4965-9e74-e75315b0963f": 1,
             "f7b06fbf-a05b-4222-a87b-4e372a400724": 1,
             "f6436896-45fd-4604-a0a3-d45265e10808": 2,
-            "4ffe6763-b123-4055-8bd8-7ee998373873": 1
+            "4ffe6763-b123-4055-8bd8-7ee998373873": 1,
+            "8fe0f74f-dfa9-4c8f-9eb4-23e40aac89bb": 1
           }
         }
       },
       "totals": {
-        "pv": 31,
-        "uv": 19,
+        "pv": 32,
+        "uv": 20,
         "trial": 0,
         "checkout": 1,
         "purchase": 2
@@ -145,7 +148,8 @@
         "60e0adbd-54cc-4965-9e74-e75315b0963f",
         "f7b06fbf-a05b-4222-a87b-4e372a400724",
         "f6436896-45fd-4604-a0a3-d45265e10808",
-        "4ffe6763-b123-4055-8bd8-7ee998373873"
+        "4ffe6763-b123-4055-8bd8-7ee998373873",
+        "8fe0f74f-dfa9-4c8f-9eb4-23e40aac89bb"
       ]
     },
     "ai-waitlist": {
