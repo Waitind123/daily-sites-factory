@@ -125,6 +125,15 @@ export const DASHBOARD_COPY = {
   daysLeft: "剩余天数 Days Left",
   deadline: "截止 Due",
 
+  sprintTitle: "还剩 {days} 天冲刺 · {days}d Revenue Sprint",
+  sprintSub: "目标 $20 = Cursor 续费 · 需要真实付费订阅",
+  sprintNeed: "还需付费 Need purchases",
+  sprintGap: "还差金额 Gap",
+  sprintBlockers: "卡点 Blockers",
+  sprintLive: "现在能收钱 Live checkout — 优先推广",
+  sprintActions: "今天就做 Do today",
+  sprintPromote: "推广 Promote",
+
   periodData: "数据 Metrics",
   periodDataSub: "以下数字均按所选日期范围统计 Filtered by date range",
   siteCount: "站点数 Sites",

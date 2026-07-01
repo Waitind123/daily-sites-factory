@@ -4,6 +4,7 @@ import { loadSitesFromState } from "@/lib/sites-registry";
 import { loadRevenueGoal, loadStripeHealth } from "@/lib/dashboard-config";
 import { buildDashboardSummary, buildRevenueGoal } from "@/lib/dashboard-metrics";
 import { buildVisitorInsights } from "@/lib/visitor-insights";
+import { buildRevenueSprint } from "@/lib/revenue-sprint";
 import { earliestDayInRollup, parseDateRange, rangeForPreset, type DatePreset } from "@/lib/date-range";
 
 export const dynamic = "force-dynamic";
@@ -28,6 +29,9 @@ export async function GET(req: NextRequest) {
     ? buildRevenueGoal(goalConfig, summary.estimatedRevenueUsd)
     : null;
   const visitorInsights = buildVisitorInsights(sites, rollup, range, siteId);
+  const revenueSprint = revenueGoal
+    ? buildRevenueSprint(revenueGoal, sites, rollup, stripe, range)
+    : null;
 
   return NextResponse.json(
     {
@@ -35,6 +39,7 @@ export async function GET(req: NextRequest) {
       rollup,
       summary,
       revenueGoal,
+      revenueSprint,
       visitorInsights,
       filters: { preset, siteId, range, realUsersOnly: true },
     },

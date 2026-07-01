@@ -9,6 +9,8 @@ import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashbo
 import { DASHBOARD_COPY, METRIC, SEO_LABELS, STRIPE_LABELS, estimatedPurchaseHint } from "@/lib/dashboard-labels";
 import type { DatePreset, DateRange } from "@/lib/date-range";
 import { formatRangeLabel } from "@/lib/date-range";
+import { RevenueSprintPanel } from "@/components/RevenueSprintPanel";
+import type { RevenueSprintPlan } from "@/lib/revenue-sprint";
 import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
 
 interface SiteEntry {
@@ -22,6 +24,7 @@ interface DashboardPayload {
   rollup: RollupFile;
   summary: DashboardSummary;
   revenueGoal: RevenueGoalView | null;
+  revenueSprint?: RevenueSprintPlan | null;
   visitorInsights?: VisitorInsightsPayload;
   filters?: { preset: DatePreset; siteId: string; range: DateRange };
 }
@@ -269,6 +272,13 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
                     style={{ width: `${Math.min(100, revenueGoal.progressPct)}%` }}
                   />
                 </div>
+                {data.revenueSprint ? (
+                  <RevenueSprintPanel
+                    locale={locale}
+                    plan={data.revenueSprint}
+                    daysLeft={revenueGoal.daysLeft}
+                  />
+                ) : null}
               </section>
             ) : null}
 

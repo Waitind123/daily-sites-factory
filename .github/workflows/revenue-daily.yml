@@ -20,9 +20,6 @@ jobs:
       - name: Extract URLs
         run: node scripts/extract-site-urls.mjs
 
-      - name: Bootstrap PV probe
-        run: node scripts/bootstrap-pv-from-prod.mjs || true
-
       - name: Stripe live check
         id: stripe
         continue-on-error: true
