@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import {createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
+import { createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 import { apiError } from "@/lib/api-errors";
+import { getLocale } from "@/lib/locale";
 
 async function checkoutRedirect(request: NextRequest) {
   const origin = request.headers.get("origin") || request.nextUrl.origin;
