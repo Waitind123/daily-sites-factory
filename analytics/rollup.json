@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T07:33:25.701Z",
+  "updatedAt": "2026-07-01T07:33:28.036Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3298,48 +3298,51 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e3c13fa1-b19a-45d9-9f74-084b12beabd7"
+            "e3c13fa1-b19a-45d9-9f74-084b12beabd7",
+            "4f2892c0-c48c-4559-af2c-8e7929ffb382"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/room": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "14": 2
+              "14": 2,
+              "15": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "e3c13fa1-b19a-45d9-9f74-084b12beabd7": 2
+            "e3c13fa1-b19a-45d9-9f74-084b12beabd7": 2,
+            "4f2892c0-c48c-4559-af2c-8e7929ffb382": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 1,
+        "pv": 4,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3356,7 +3359,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:15.213Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "4f2892c0-c48c-4559-af2c-8e7929ffb382"
+      ]
     },
     "visa-guide": {
       "url": "https://visa-guide-tau.vercel.app",
