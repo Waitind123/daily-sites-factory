@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-30T23:14:14.194Z",
+  "updatedAt": "2026-07-01T00:04:45.271Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1633,11 +1633,46 @@
             "ci-prod-smoke",
             "bootstrap-probe"
           ]
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "612606fe-71bd-4f0e-940d-f563e15404db"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1654,7 +1689,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:33.439Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "612606fe-71bd-4f0e-940d-f563e15404db"
+      ]
     },
     "nomad-cities": {
       "url": "https://nomad-cities.vercel.app",
