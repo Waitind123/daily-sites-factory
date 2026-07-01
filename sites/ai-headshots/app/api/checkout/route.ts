@@ -14,7 +14,8 @@ export async function POST(request: NextRequest) {
     const origin = request.headers.get("origin") || request.nextUrl.origin;
     const result = await createPayment(origin, currency);
 
-    const response = NextResponse.redirect(result.url);
+    // 303: form POST must become GET at Polar checkout link (307 keeps POST → polar.sh homepage)
+    const response = NextResponse.redirect(result.url, 303);
     if (result.demo) {
       response.headers.append("Set-Cookie", memberCookieHeader());
     }
