@@ -42,6 +42,7 @@ const status = {
   liveCount: results.live.length,
   demoCount: results.demo.length,
   failCount: results.fail.length,
+  liveSiteIds: results.live,
   updatedAt: new Date().toISOString(),
 };
 writeFileSync(statusPath, JSON.stringify(status, null, 2) + "\n");

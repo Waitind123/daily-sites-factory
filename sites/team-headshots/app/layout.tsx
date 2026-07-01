@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LaunchUrgencyBar } from "@/components/LaunchUrgencyBar";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
@@ -42,6 +43,7 @@ export default async function RootLayout({
           locale={locale}
           guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
         />
+        <LaunchUrgencyBar locale={locale} />
       </body>
     </html>
   );
