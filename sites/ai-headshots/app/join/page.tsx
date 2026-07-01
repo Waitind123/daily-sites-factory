@@ -2,8 +2,7 @@ import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { SharePromoKit } from "@/components/SharePromoKit";
 import { getJoinCopy, getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
-import { getPaymentMode } from "@/lib/payments";
-import { isDemoMode } from "@/lib/stripe";
+import { getPaymentMode, isDemoMode } from "@/lib/payments";
 
 export default async function JoinPage() {
   const locale = await getLocale();

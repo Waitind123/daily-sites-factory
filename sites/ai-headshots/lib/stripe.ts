@@ -1,13 +1,18 @@
 import Stripe from "stripe";
+const DEFAULT_POLAR_CHECKOUT_URL =
+  "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
 
-const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
+
+const POLAR_CHECKOUT_URL =
+  process.env.POLAR_CHECKOUT_URL ?? DEFAULT_POLAR_CHECKOUT_URL;
+const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !POLAR_CHECKOUT_URL;
 
 export function isDemoMode() {
   return DEMO_MODE;
 }
 
 export function getStripe() {
-  if (DEMO_MODE) return null;
+  if (DEMO_MODE || POLAR_CHECKOUT_URL) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
@@ -20,6 +25,11 @@ export async function createCheckoutSession(
   origin: string,
   currency: "cny" | "usd" = "cny"
 ) {
+  const polarUrl = POLAR_CHECKOUT_URL;
+  if (polarUrl) {
+    return { demo: false as const, url: polarUrl };
+  }
+
   const stripe = getStripe();
 
   if (!stripe) {
