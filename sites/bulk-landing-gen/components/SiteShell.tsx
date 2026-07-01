@@ -72,7 +72,10 @@ export function SiteFooter({
         </Link>
       </p>
       <p className="mt-2">
-        <a href={`mailto:${OWNER_CONTACT_EMAIL}`} className="hover:underline">
+        <a
+          href={`mailto:${OWNER_CONTACT_EMAIL}`}
+          className="font-medium text-foreground hover:underline"
+        >
           {OWNER_CONTACT_EMAIL}
         </a>
       </p>

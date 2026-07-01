@@ -29,7 +29,7 @@ export default async function RootLayout({
       <head>
         <JsonLd data={softwareApplicationJsonLd(locale)} />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
+      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground pb-24`}>
         <AnalyticsBeacon siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
         <main>{children}</main>
