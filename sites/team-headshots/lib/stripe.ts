@@ -13,12 +13,13 @@ export function isDemoMode() {
 }
 
 export function getStripe() {
-  if (DEMO_MODE || POLAR_CHECKOUT_URL) return null;
+  if (!process.env.STRIPE_SECRET_KEY) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
 }
 
+export const PRICE_CNY_MONTHLY = 6900;
 export const PRICE_CNY = 69900;
 export const PRICE_USD = 9900;
 
@@ -26,9 +27,11 @@ export async function createCheckoutSession(
   origin: string,
   currency: "cny" | "usd" = "cny"
 ) {
-  const polarUrl = await resolvePolarCheckoutUrl(origin);
-  if (polarUrl) {
-    return { demo: false as const, url: polarUrl };
+  if (currency !== "cny") {
+    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
+    if (polarUrl) {
+      return { demo: false as const, url: polarUrl };
+    }
   }
 
   const stripe = getStripe();
@@ -57,7 +60,7 @@ export async function createCheckoutSession(
             name: "团队 AI 头像 · 月付会员",
             description: "最多 10 人 + 无限批量生成 + 全部风格 + 高清下载",
           },
-          unit_amount: isCny ? PRICE_CNY : PRICE_USD,
+          unit_amount: isCny ? PRICE_CNY_MONTHLY : PRICE_USD,
         },
         quantity: 1,
       },

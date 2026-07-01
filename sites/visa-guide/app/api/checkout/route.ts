@@ -1,10 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import { apiError } from "@/lib/api-errors";
-import { createCheckoutSession } from "@/lib/stripe";
+import {createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 
 async function checkoutRedirect(request: NextRequest) {
   const origin = request.headers.get("origin") || request.nextUrl.origin;
+  if (
+    request.nextUrl.searchParams.get("currency") === "cny" ||
+    (await request.formData().catch(() => null))?.get("currency") === "cny"
+  ) {
+    const locale = await getLocale();
+    const result = await createCnyCheckoutSession(origin, locale);
+    const response = NextResponse.redirect(result.url, 302);
+    if (result.demo) {
+      response.headers.append("Set-Cookie", memberCookieHeader());
+    }
+    return response;
+  }
+
   const result = await createCheckoutSession(origin);
   const response = NextResponse.redirect(result.url, 302);
   if (result.demo) {

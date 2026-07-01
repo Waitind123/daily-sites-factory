@@ -13,7 +13,7 @@ export function isDemoMode() {
 }
 
 export function getStripe() {
-  if (DEMO_MODE || POLAR_CHECKOUT_URL) return null;
+  if (!process.env.STRIPE_SECRET_KEY) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
@@ -21,11 +21,13 @@ export function getStripe() {
 
 export const PRICE_USD = 990;
 
-export async function createCheckoutSession(origin: string) {
-  const polarUrl = await resolvePolarCheckoutUrl(origin);
+export async function createCheckoutSession(origin: string, payCurrency: "cny" | "usd" = "usd") {
+  if (payCurrency !== "cny") {
+  const polarUrl = await resolvePolarCheckoutUrl(origin, { currency: payCurrency });
   if (polarUrl) {
     return { demo: false as const, url: polarUrl };
   }
+}
 
   const stripe = getStripe();
 

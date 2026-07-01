@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { OWNER_CONTACT_EMAIL } from "@/lib/site-owner";
 
 const DISMISS_KEY = "dsf_dismiss_urgency_bar";
 
@@ -33,38 +32,31 @@ export function LaunchUrgencyBar({
   if (dismissed || daysLeft === null || daysLeft <= 0) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 border-t border-brand-600/40 bg-indigo-950/95 backdrop-blur px-4 py-3 shadow-lg">
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3">
-        <p className="min-w-0 flex-1 text-center text-sm text-indigo-100 sm:text-left">
-          <span className="font-semibold text-white">Launch price $9.9/mo</span>
-          <span className="mx-2 text-indigo-300">·</span>
-          <span className="text-indigo-200">
-            首发价还剩 {daysLeft} 天 · {daysLeft}d left
-          </span>
-          <span className="mx-2 hidden text-indigo-400 sm:inline">·</span>
-          <a
-            href={`mailto:${OWNER_CONTACT_EMAIL}`}
-            className="hidden text-indigo-200 hover:text-white sm:inline"
-          >
-            {OWNER_CONTACT_EMAIL}
-          </a>
+    <div
+      className="fixed bottom-0 inset-x-0 z-[60] border-t border-brand-600/40 bg-indigo-950/98 backdrop-blur px-3 py-2.5 shadow-2xl sm:px-4"
+      role="region"
+      aria-label="Launch promotion"
+    >
+      <div className="mx-auto flex max-w-5xl items-center gap-2">
+        <p className="min-w-0 flex-1 text-xs leading-snug text-indigo-100 sm:text-sm">
+          <span className="font-semibold text-white">Launch $9.9/mo · ¥69/月</span>
+          <span className="mx-1 text-indigo-400">·</span>
+          <span className="text-indigo-200">还剩 {daysLeft} 天</span>
         </p>
-        <div className="flex shrink-0 items-center gap-2">
-          <Link
-            href={joinHref}
-            className="rounded-lg bg-surface px-4 py-2 text-sm font-semibold text-brand-500 hover:bg-brand-600/10 transition"
-          >
-            Subscribe $9.9/mo →
-          </Link>
-          <button
-            type="button"
-            onClick={dismiss}
-            className="rounded-lg p-2 text-indigo-300 hover:bg-indigo-900/60 hover:text-white"
-            aria-label="Close"
-          >
-            ✕
-          </button>
-        </div>
+        <Link
+          href={joinHref}
+          className="shrink-0 rounded-lg bg-white px-2.5 py-1.5 text-xs font-semibold text-brand-700 hover:bg-brand-50 sm:px-3 sm:py-2 sm:text-sm"
+        >
+          订阅
+        </Link>
+        <button
+          type="button"
+          onClick={dismiss}
+          className="shrink-0 min-w-[4.5rem] rounded-lg border-2 border-white/40 bg-white/10 px-3 py-1.5 text-sm font-bold text-white hover:bg-white/20 sm:py-2"
+          aria-label="关闭促销条"
+        >
+          ✕ 关闭
+        </button>
       </div>
     </div>
   );

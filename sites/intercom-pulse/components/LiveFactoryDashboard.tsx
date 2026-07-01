@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
 import { DashboardFilters } from "@/components/DashboardFilters";
 import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
+import { VisitorsTablePanel } from "@/components/VisitorsTablePanel";
 import type { DashboardSummary, RevenueGoalView } from "@/lib/dashboard-metrics";
 import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashboard-metrics";
 import { DASHBOARD_COPY, METRIC, SEO_LABELS, STRIPE_LABELS, estimatedPurchaseHint } from "@/lib/dashboard-labels";
@@ -12,6 +13,7 @@ import { formatRangeLabel } from "@/lib/date-range";
 import { RevenueSprintPanel } from "@/components/RevenueSprintPanel";
 import type { RevenueSprintPlan } from "@/lib/revenue-sprint";
 import type { VisitorInsightsPayload } from "@/lib/visitor-insights";
+import type { VisitorTablePayload } from "@/lib/visitor-registry";
 
 interface SiteEntry {
   id: string;
@@ -26,6 +28,7 @@ interface DashboardPayload {
   revenueGoal: RevenueGoalView | null;
   revenueSprint?: RevenueSprintPlan | null;
   visitorInsights?: VisitorInsightsPayload;
+  visitorTable?: VisitorTablePayload;
   filters?: { preset: DatePreset; siteId: string; range: DateRange };
 }
 
@@ -334,6 +337,8 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
             {data.visitorInsights ? (
               <VisitorInsightsPanel locale={locale} profile={data.visitorInsights.profile} />
             ) : null}
+
+            {data.visitorTable ? <VisitorsTablePanel table={data.visitorTable} /> : null}
 
             <section>
               <SectionTitle title={DASHBOARD_COPY.seoTitle} subtitle={DASHBOARD_COPY.seoSub} />

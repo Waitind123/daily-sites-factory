@@ -58,7 +58,8 @@ export function SiteFooter({
       <p>
         {name} · {t.footerBuilt}
       </p>
-      <p className="mt-3">
+      <p className="mt-3 text-foreground">
+        {locale === "zh" ? "有任何问题请联系：" : "Questions? Contact us at "}
         <a
           href={`mailto:${OWNER_CONTACT_EMAIL}`}
           className="text-base font-semibold text-brand-400 hover:text-brand-300 hover:underline"
