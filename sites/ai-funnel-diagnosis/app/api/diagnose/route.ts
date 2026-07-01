@@ -1,0 +1,90 @@
+import { NextRequest, NextResponse } from "next/server";
+import { runDiagnosis, listDiagnoses } from "@/lib/diagnosis";
+import { apiError } from "@/lib/api-errors";
+import { SITE_ID, consumeTrial, incrementTrial } from "@/lib/trial";
+import { isMember } from "@/lib/member";
+import type { Locale } from "@/lib/i18n-shared";
+
+export async function GET() {
+  return NextResponse.json({ diagnoses: listDiagnoses() });
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    const body = (await request.json()) as {
+      name?: string;
+      steps?: string;
+      counts?: string;
+      locale?: Locale;
+    };
+
+    if (!body.name?.trim()) {
+      return apiError("FUNNEL_NAME_REQUIRED", 400);
+    }
+
+    const stepList = (body.steps ?? "")
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+
+    if (stepList.length < 2) {
+      return apiError("STEPS_REQUIRED", 400);
+    }
+
+    const countList = (body.counts ?? "")
+      .split(",")
+      .map((s) => parseInt(s.trim(), 10))
+      .filter((n) => !Number.isNaN(n));
+
+    if (countList.length !== stepList.length) {
+      return apiError("COUNTS_MISMATCH", 400);
+    }
+
+    if (countList.some((n) => n <= 0)) {
+      return apiError("COUNTS_INVALID", 400);
+    }
+
+    const member = await isMember();
+    const access = await consumeTrial(SITE_ID, member);
+
+    if (!access.consumed && !access.isMember) {
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
+    }
+
+    const locale = body.locale === "zh" ? "zh" : "en";
+    const diagnosis = runDiagnosis(
+      { name: body.name.trim(), steps: stepList, counts: countList },
+      locale
+    );
+
+    if (!member) {
+      const trial = await incrementTrial(SITE_ID);
+      const response = NextResponse.json({
+        diagnosis,
+        trial: {
+          limit: 5,
+          used: trial.used,
+          remaining: trial.remaining,
+          isMember: false,
+          canUse: trial.remaining > 0,
+        },
+      });
+      response.headers.append("Set-Cookie", trial.cookieHeader);
+      return response;
+    }
+
+    return NextResponse.json({
+      diagnosis,
+      trial: {
+        limit: 5,
+        used: access.used,
+        remaining: access.remaining,
+        isMember: true,
+        canUse: true,
+      },
+    });
+  } catch (error) {
+    console.error("Diagnosis error:", error);
+    return apiError("DIAGNOSIS_FAILED", 500);
+  }
+}
