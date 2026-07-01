@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T08:11:12.456Z",
+  "updatedAt": "2026-07-01T08:13:38.901Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -28,8 +28,8 @@
           "visitors": []
         },
         "2026-07-01": {
-          "pv": 48,
-          "uv": 22,
+          "pv": 49,
+          "uv": 23,
           "trial": 0,
           "checkout": 2,
           "purchase": 2,
@@ -55,11 +55,12 @@
             "a9227b75-c0fc-4cbc-89da-a969e20daf30",
             "95546374-e758-4ca3-a117-0c19c799cfbd",
             "095b7b0f-9403-4a76-9000-77cef9dfe020",
-            "674ef02b-89e4-4869-86db-8e5bc481255a"
+            "674ef02b-89e4-4869-86db-8e5bc481255a",
+            "848eab89-c833-48ba-9351-af4a87859f08"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 46,
+              "直接访问": 47,
               "站内互跳": 1,
               "搜索引擎": 1
             },
@@ -68,19 +69,19 @@
               "/join": 11,
               "/studio": 4,
               "/api/checkout-bridge": 3,
-              "/success": 3,
+              "/success": 4,
               "/guide/linkedin-headshot": 1
             },
             "devices": {
-              "desktop": 47,
+              "desktop": 48,
               "tablet": 1
             },
             "locales": {
               "zh": 39,
-              "en": 9
+              "en": 10
             },
             "timezones": {
-              "UTC": 21,
+              "UTC": 22,
               "Asia/Shanghai": 26,
               "Etc/Unknown": 1
             },
@@ -95,10 +96,11 @@
               "12": 8,
               "13": 22,
               "14": 2,
-              "15": 1
+              "15": 1,
+              "16": 1
             },
             "visitorTypes": {
-              "new": 23,
+              "new": 24,
               "returning": 25
             }
           },
@@ -124,13 +126,14 @@
             "a9227b75-c0fc-4cbc-89da-a969e20daf30": 1,
             "95546374-e758-4ca3-a117-0c19c799cfbd": 1,
             "095b7b0f-9403-4a76-9000-77cef9dfe020": 1,
-            "674ef02b-89e4-4869-86db-8e5bc481255a": 1
+            "674ef02b-89e4-4869-86db-8e5bc481255a": 1,
+            "848eab89-c833-48ba-9351-af4a87859f08": 1
           }
         }
       },
       "totals": {
-        "pv": 53,
-        "uv": 26,
+        "pv": 54,
+        "uv": 27,
         "trial": 0,
         "checkout": 2,
         "purchase": 2
@@ -149,7 +152,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "e0f726d3-463c-4d03-a8ad-78e15b5e6176"
+        "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
+        "848eab89-c833-48ba-9351-af4a87859f08"
       ]
     },
     "ai-waitlist": {
@@ -4782,6 +4786,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "848eab89-c833-48ba-9351-af4a87859f08",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-01T08:13:38.812Z",
+      "lastSeen": "2026-07-01T08:13:38.812Z",
+      "pageviews": 1,
+      "path": "/success",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9d81e581-2e9a-4ddf-9157-21931c3f7186",
       "siteId": "feature-vote",
