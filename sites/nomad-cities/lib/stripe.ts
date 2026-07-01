@@ -15,9 +15,17 @@ export function getStripe() {
   });
 }
 
-export const PRICE_USD_YEAR = 9900;
+export const PRICE_USD_MONTHLY = 990;
+export const PRICE_USD_ANNUAL = 9900;
+export const PRICE_CNY_ANNUAL = 69900;
 
-export async function createCheckoutSession(origin: string, locale: Locale = "en") {
+export type BillingPlan = "monthly" | "annual";
+
+export async function createCheckoutSession(
+  origin: string,
+  locale: Locale = "en",
+  plan: BillingPlan = "monthly"
+) {
   const product = getStripeProductCopy(locale);
   const polarUrl = process.env.POLAR_CHECKOUT_URL;
   if (polarUrl) {
@@ -29,30 +37,42 @@ export async function createCheckoutSession(origin: string, locale: Locale = "en
   if (!stripe) {
     return {
       demo: true as const,
-      url: `${origin}/success?demo=true`,
+      url: `${origin}/success?demo=true&plan=${plan}`,
     };
   }
 
+  const isAnnual = plan === "annual";
+  const currency = isAnnual && locale === "zh" ? "cny" : "usd";
+  const unitAmount =
+    currency === "cny"
+      ? PRICE_CNY_ANNUAL
+      : isAnnual
+        ? PRICE_USD_ANNUAL
+        : PRICE_USD_MONTHLY;
+
   const session = await stripe.checkout.sessions.create({
     mode: "subscription",
-    payment_method_types: ["card"],
+    payment_method_types: currency === "cny" ? ["card", "alipay", "wechat_pay"] : ["card"],
+    ...(currency === "cny"
+      ? { payment_method_options: { wechat_pay: { client: "web" } } }
+      : {}),
     line_items: [
       {
         price_data: {
-          currency: "usd",
+          currency,
           product_data: {
-            name: product.name,
-            description: product.description,
+            name: isAnnual ? product.annualName : product.name,
+            description: isAnnual ? product.annualDescription : product.description,
           },
-          unit_amount: PRICE_USD_YEAR,
-          recurring: { interval: "year" },
+          unit_amount: unitAmount,
+          recurring: { interval: isAnnual ? "year" : "month" },
         },
         quantity: 1,
       },
     ],
-    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&plan=${plan}`,
     cancel_url: `${origin}/join`,
-    metadata: { product: "nomad-cities-yearly" },
+    metadata: { product: isAnnual ? "nomad-cities-annual" : "nomad-cities-monthly" },
   });
 
   return {

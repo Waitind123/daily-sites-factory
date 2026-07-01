@@ -242,6 +242,25 @@ export function CitiesDashboard({ locale }: { locale: Locale }) {
 
       {error && <p className="mt-4 text-sm text-red-400">{error}</p>}
       <p className="mt-4 text-xs text-muted">{t.topTenNote}</p>
+
+      {trial && !trial.isMember && trial.remaining > 0 && trial.remaining <= 2 && (
+        <div className="fixed bottom-0 inset-x-0 z-50 border-t border-brand-600/40 bg-background/95 backdrop-blur px-4 py-3 shadow-lg">
+          <div className="mx-auto max-w-5xl flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div>
+              <p className="text-sm font-semibold text-foreground">
+                {t.stickyTrialTitle.replace("{n}", String(trial.remaining))}
+              </p>
+              <p className="text-xs text-muted">{t.stickyTrialBody}</p>
+            </div>
+            <Link
+              href="/join"
+              className="shrink-0 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 text-center"
+            >
+              {t.stickyTrialCta}
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
