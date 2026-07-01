@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T03:17:25.506Z",
+  "updatedAt": "2026-07-01T03:20:23.024Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -263,11 +263,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "beba783e-8973-4561-9422-cba219af09a7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "beba783e-8973-4561-9422-cba219af09a7": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -284,7 +322,10 @@
         "guideCount": 1,
         "lastChecked": "2026-06-30T06:20:06.485Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "beba783e-8973-4561-9422-cba219af09a7"
+      ]
     },
     "churn-pulse": {
       "url": "https://churn-pulse-pi.vercel.app",
