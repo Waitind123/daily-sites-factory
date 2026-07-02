@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T13:13:36.747Z",
+  "updatedAt": "2026-07-02T13:15:57.385Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6750,41 +6750,43 @@
       "url": "",
       "daily": {
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "b5e6390d-672a-4ae2-8ce3-2c45248b7342"
+            "b5e6390d-672a-4ae2-8ce3-2c45248b7342",
+            "330af075-de61-4c20-95a1-db08786d7d02"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "21": 1
+              "21": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "b5e6390d-672a-4ae2-8ce3-2c45248b7342": 1
+            "b5e6390d-672a-4ae2-8ce3-2c45248b7342": 1,
+            "330af075-de61-4c20-95a1-db08786d7d02": 1
           }
         }
       },
@@ -6802,18 +6804,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "b5e6390d-672a-4ae2-8ce3-2c45248b7342"
+        "b5e6390d-672a-4ae2-8ce3-2c45248b7342",
+        "330af075-de61-4c20-95a1-db08786d7d02"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "330af075-de61-4c20-95a1-db08786d7d02",
+      "siteId": "freelance-local-kit",
+      "firstSeen": "2026-07-02T13:15:57.238Z",
+      "lastSeen": "2026-07-02T13:15:57.238Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b5e6390d-672a-4ae2-8ce3-2c45248b7342",
       "siteId": "freelance-local-kit",
