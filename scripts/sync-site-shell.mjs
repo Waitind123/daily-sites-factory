@@ -369,6 +369,16 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "仪表盘" } },
     ],
   },
+  "freelance-local-kit": {
+    emoji: "💼",
+    name: { en: "Local Freelance Kit", zh: "自由职业本地套件" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/local-first-freelance-saas-alternative",
+    nav: [
+      { href: "/guide/local-first-freelance-saas-alternative", label: { en: "Guide", zh: "指南" } },
+      { href: "/workspace", label: { en: "Workspace", zh: "工作台" } },
+    ],
+  },
 };
 
 const DARK_REPLACEMENTS = [
