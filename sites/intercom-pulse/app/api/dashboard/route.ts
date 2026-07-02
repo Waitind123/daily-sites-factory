@@ -7,6 +7,7 @@ import { buildVisitorInsights } from "@/lib/visitor-insights";
 import { buildVisitorTable } from "@/lib/visitor-registry";
 import { buildPromoPerformance } from "@/lib/promo-performance";
 import { buildRevenueSprint } from "@/lib/revenue-sprint";
+import { buildMetricsCharts } from "@/lib/metrics-charts";
 import { earliestDayInRollup, parseDateRange, rangeForPreset, type DatePreset } from "@/lib/date-range";
 
 export const dynamic = "force-dynamic";
@@ -37,6 +38,7 @@ export async function GET(req: NextRequest) {
     ? buildRevenueSprint(revenueGoal, sites, rollup, stripe, range)
     : null;
   const healthWatch = loadHealthWatch();
+  const metricsCharts = buildMetricsCharts(rollup, range, siteId);
 
   return NextResponse.json(
     {
@@ -49,6 +51,7 @@ export async function GET(req: NextRequest) {
       visitorTable,
       promoPerformance,
       healthWatch,
+      metricsCharts,
       filters: { preset, siteId, range, realUsersOnly: true },
     },
     { headers: { "Cache-Control": "no-store, max-age=0" } }

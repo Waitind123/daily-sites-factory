@@ -7,6 +7,8 @@ import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
 import { VisitorsTablePanel } from "@/components/VisitorsTablePanel";
 import { PromoPerformancePanel } from "@/components/PromoPerformancePanel";
 import { HealthWatchPanel } from "@/components/HealthWatchPanel";
+import { MetricsChartsPanel } from "@/components/MetricsChartsPanel";
+import type { MetricsChartsPayload } from "@/lib/metrics-charts";
 import type { DashboardSummary, RevenueGoalView } from "@/lib/dashboard-metrics";
 import { SUBSCRIPTION_PRICE_USD, buildFunnel, sumSitePeriod } from "@/lib/dashboard-metrics";
 import { DASHBOARD_COPY, METRIC, SEO_LABELS, STRIPE_LABELS, estimatedPurchaseHint } from "@/lib/dashboard-labels";
@@ -35,6 +37,7 @@ interface DashboardPayload {
   visitorTable?: VisitorTablePayload;
   promoPerformance?: PromoPerformancePayload;
   healthWatch?: HealthWatchPayload | null;
+  metricsCharts?: MetricsChartsPayload;
   filters?: { preset: DatePreset; siteId: string; range: DateRange };
 }
 
@@ -303,6 +306,8 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
                 <MetricCard label={METRIC.checkout} value={summary.period.checkout} />
                 <MetricCard label={METRIC.purchase} value={summary.period.purchase} accent="text-emerald-400" />
               </div>
+
+              {data.metricsCharts ? <MetricsChartsPanel data={data.metricsCharts} /> : null}
               <div className="grid sm:grid-cols-4 gap-3 mt-3">
                 <MetricCard label={DASHBOARD_COPY.siteCount} value={summary.siteCount} />
                 <MetricCard
