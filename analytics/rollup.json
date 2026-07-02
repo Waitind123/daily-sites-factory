@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T01:06:47.943Z",
+  "updatedAt": "2026-07-02T02:09:02.325Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5688,9 +5688,86 @@
         "1c2d5d45-c6b4-4965-a616-6591e957aa39",
         "ba73e39e-121e-4375-96e9-c2596025d842"
       ]
+    },
+    "dunning-失败支付恢复": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0c613094-f9ef-4205-8302-c45afb51b68a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0c613094-f9ef-4205-8302-c45afb51b68a": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "0c613094-f9ef-4205-8302-c45afb51b68a"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0c613094-f9ef-4205-8302-c45afb51b68a",
+      "siteId": "dunning-失败支付恢复",
+      "firstSeen": "2026-07-02T02:09:02.203Z",
+      "lastSeen": "2026-07-02T02:09:02.203Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1a892b65-993b-4ae9-8aaa-e706242f4d08",
       "siteId": "coworking-finder",
