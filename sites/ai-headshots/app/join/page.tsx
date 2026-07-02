@@ -1,7 +1,9 @@
+import { InviteReferralCard } from "@/components/InviteReferralCard";
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { SharePromoKit } from "@/components/SharePromoKit";
 import { getJoinCopy, getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
+import { siteMeta } from "@/lib/site-meta";
 import { getPaymentMode, isDemoMode } from "@/lib/payments";
 
 export default async function JoinPage() {
@@ -70,6 +72,10 @@ export default async function JoinPage() {
         )}
 
         <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
+      </div>
+
+      <div className="mt-8">
+        <InviteReferralCard siteId={siteMeta.id} locale={locale} />
       </div>
 
       <div className="mt-8">

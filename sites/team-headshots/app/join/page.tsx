@@ -1,6 +1,8 @@
+import { InviteReferralCard } from "@/components/InviteReferralCard";
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { getJoinCopy, getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
+import { siteMeta } from "@/lib/site-meta";
 import { getPaymentMode } from "@/lib/payments";
 import { isDemoMode } from "@/lib/stripe";
 

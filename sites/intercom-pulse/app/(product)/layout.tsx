@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
+import { ReferralCapture } from "@/components/ReferralCapture";
 import { PromoCrossSell } from "@/components/PromoCrossSell";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -24,6 +25,7 @@ export default async function ProductLayout({
     <div className="bg-background text-foreground">
       <JsonLd data={softwareApplicationJsonLd(locale)} />
       <AnalyticsBeacon siteId={siteMeta.id} />
+        <ReferralCapture siteId={siteMeta.id} />
       <SiteHeader meta={siteMeta} locale={locale} />
       <PromoCrossSell locale={locale} siteId={siteMeta.id} />
       <main>{children}</main>

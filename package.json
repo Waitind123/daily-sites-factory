@@ -18,6 +18,7 @@
     "verify-visitor-e2e": "node scripts/verify-site-visitor-e2e.mjs",
     "health-watch": "node scripts/hourly-health-watch.mjs",
     "health-watch-autofix": "node scripts/health-watch-autofix.mjs",
+    "sync-referral-invite": "node scripts/sync-referral-invite.mjs",
     "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
     "notify-feishu": "node scripts/notify-feishu.mjs"
   },

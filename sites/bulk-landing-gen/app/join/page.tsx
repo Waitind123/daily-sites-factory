@@ -1,7 +1,9 @@
+import { InviteReferralCard } from "@/components/InviteReferralCard";
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { getJoinCopy } from "@/lib/copy-app";
 import { getHomeCopy } from "@/lib/copy";
 import { getLocale } from "@/lib/locale";
+import { siteMeta } from "@/lib/site-meta";
 import { isDemoMode } from "@/lib/stripe";
 
 export default async function JoinPage() {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { LaunchUrgencyBar } from "@/components/LaunchUrgencyBar";
 import { FixedContactBar } from "@/components/FixedContactBar";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
+import { ReferralCapture } from "@/components/ReferralCapture";
 import { FixedContactBar } from "@/components/FixedContactBar";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
@@ -33,6 +34,7 @@ export default async function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground pb-11`}>
         <AnalyticsBeacon siteId={siteMeta.id} />
+        <ReferralCapture siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
         <main>{children}</main>
         <FeedbackSection
