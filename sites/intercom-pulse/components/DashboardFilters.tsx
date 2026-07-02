@@ -28,7 +28,7 @@ export function DashboardFilters({
   onCustomRange: (from: string, to: string) => void;
 }) {
   return (
-    <section className="rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4 space-y-4">
+    <section className="sticky top-[5.25rem] sm:top-[5.5rem] z-20 -mx-6 px-6 py-3 rounded-none sm:rounded-2xl border-y sm:border border-zinc-800 bg-zinc-950/95 backdrop-blur-md shadow-lg shadow-black/20 space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h2 className="text-base font-semibold text-zinc-100">{DASHBOARD_COPY.filtersTitle}</h2>
