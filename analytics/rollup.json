@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T10:10:42.203Z",
+  "updatedAt": "2026-07-02T10:13:00.900Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6592,41 +6592,44 @@
       "url": "",
       "daily": {
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "30a77ced-854d-4fcf-ae24-3f8bce03bcc3"
+            "30a77ced-854d-4fcf-ae24-3f8bce03bcc3",
+            "012813b4-1f51-4f78-a148-76e28cd2d072"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "30a77ced-854d-4fcf-ae24-3f8bce03bcc3": 1
+            "30a77ced-854d-4fcf-ae24-3f8bce03bcc3": 1,
+            "012813b4-1f51-4f78-a148-76e28cd2d072": 1
           }
         }
       },
@@ -6644,18 +6647,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "30a77ced-854d-4fcf-ae24-3f8bce03bcc3"
+        "30a77ced-854d-4fcf-ae24-3f8bce03bcc3",
+        "012813b4-1f51-4f78-a148-76e28cd2d072"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "012813b4-1f51-4f78-a148-76e28cd2d072",
+      "siteId": "visa-live",
+      "firstSeen": "2026-07-02T10:13:00.675Z",
+      "lastSeen": "2026-07-02T10:13:00.675Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "30a77ced-854d-4fcf-ae24-3f8bce03bcc3",
       "siteId": "visa-live",
