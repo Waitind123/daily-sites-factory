@@ -7,13 +7,6 @@ export const siteMeta = {
   },
   "nav": [
     {
-      "href": "/guide/indie-developer-tool-stack",
-      "label": {
-        "en": "Guide",
-        "zh": "指南"
-      }
-    },
-    {
       "href": "/tools",
       "label": {
         "en": "Tools",
