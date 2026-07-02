@@ -30,7 +30,16 @@ jobs:
         continue-on-error: true
         env:
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          POLAR_ACCESS_TOKEN: ${{ secrets.POLAR_ACCESS_TOKEN }}
+          POLAR_PRODUCT_ID: ${{ secrets.POLAR_PRODUCT_ID }}
         run: node scripts/verify-stripe-live.mjs
+
+      - name: Auto-fix revenue blockers (demo sites + Polar sync)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          POLAR_ACCESS_TOKEN: ${{ secrets.POLAR_ACCESS_TOKEN }}
+          POLAR_PRODUCT_ID: ${{ secrets.POLAR_PRODUCT_ID }}
+        run: node scripts/revenue-sprint-autofix.mjs
 
       - name: Sprint report + share copy
         run: node scripts/revenue-sprint.mjs
@@ -41,12 +50,12 @@ jobs:
       - name: IndexNow (SEO push)
         run: node scripts/submit-indexnow.mjs || true
 
-      - name: Redeploy revenue priority sites
+      - name: Redeploy revenue priority sites (fallback if autofix skipped)
         if: github.event_name == 'schedule' || inputs.redeploy_priority != false
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          for site in intercom-pulse feature-vote ai-headshots; do
+          for site in ai-headshots intercom-pulse feature-vote coworking-finder remote-jobs; do
             gh workflow run deploy-site.yml -f site_id="$site" || true
             sleep 5
           done
