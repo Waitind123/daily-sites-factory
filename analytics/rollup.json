@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-01T23:04:48.495Z",
+  "updatedAt": "2026-07-02T00:07:10.532Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5492,9 +5492,86 @@
         "5d86a2c4-f2b7-4613-9129-9834268cc8a8",
         "f0233c5e-777c-478c-b9e4-e6f385267795"
       ]
+    },
+    "affiliate-pulse": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1c2d5d45-c6b4-4965-a616-6591e957aa39"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/dashboard": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "1c2d5d45-c6b4-4965-a616-6591e957aa39": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "1c2d5d45-c6b4-4965-a616-6591e957aa39"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1c2d5d45-c6b4-4965-a616-6591e957aa39",
+      "siteId": "affiliate-pulse",
+      "firstSeen": "2026-07-02T00:07:10.283Z",
+      "lastSeen": "2026-07-02T00:07:10.283Z",
+      "pageviews": 1,
+      "path": "/dashboard",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d32be597-89ca-40d3-816d-1528a17cccd4",
       "siteId": "reddit-pulse",
