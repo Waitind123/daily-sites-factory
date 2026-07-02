@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
-import { ReferralCapture } from "@/components/ReferralCapture";
-import { FixedContactBar } from "@/components/FixedContactBar";
-import { PromoCrossSell } from "@/components/PromoCrossSell";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -13,12 +10,12 @@ import { buildLocaleMetadata, softwareApplicationJsonLd } from "@/lib/seo";
 import { siteMeta } from "@/lib/site-meta";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildLocaleMetadata(locale);
 }
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default async function RootLayout({
   children,
@@ -31,11 +28,9 @@ export default async function RootLayout({
       <head>
         <JsonLd data={softwareApplicationJsonLd(locale)} />
       </head>
-      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground pb-11`}>
+      <body className={`${inter.variable} font-sans antialiased bg-background text-foreground`}>
         <AnalyticsBeacon siteId={siteMeta.id} />
-        <ReferralCapture siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
-        <PromoCrossSell locale={locale} siteId={siteMeta.id} />
         <main>{children}</main>
         <FeedbackSection
           siteId={siteMeta.id}
@@ -47,7 +42,6 @@ export default async function RootLayout({
           locale={locale}
           guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
         />
-              <FixedContactBar locale={locale} />
       </body>
     </html>
   );
