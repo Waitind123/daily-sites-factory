@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isMember } from "@/lib/member";
-import { getTrialInfo } from "@/lib/trial";
+import { SITE_ID, getTrialInfo } from "@/lib/trial";
 import { syncReferralBonusFromHub } from "@/lib/referral-server";
 import { trialBonusCookieHeader } from "@/lib/trial-core";
-
-const SITE_ID = "cron-heartbeat";
 
 export async function GET(req: NextRequest) {
   const member = await isMember();
