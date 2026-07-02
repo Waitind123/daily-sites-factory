@@ -82,6 +82,16 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
     ],
   },
+  "churn-reason-pulse": {
+    emoji: "📉",
+    name: { en: "Churn Reason Pulse", zh: "流失原因追踪" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/saas-churn-reason-tracking-chartmogul-alternative",
+    nav: [
+      { href: "/guide/saas-churn-reason-tracking-chartmogul-alternative", label: { en: "Guide", zh: "指南" } },
+      { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
+    ],
+  },
   "remote-jobs": {
     emoji: "💼",
     name: { en: "Remote Jobs", zh: "远程工作板" },
