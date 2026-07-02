@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T19:03:49.948Z",
+  "updatedAt": "2026-07-02T19:05:42.058Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4697,47 +4697,50 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f"
+            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f",
+            "9b59f61d-50be-4cf4-91bb-b9dcb4a872a8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/visas": 1
+              "/visas": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "3": 1
+              "3": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f": 1
+            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f": 1,
+            "9b59f61d-50be-4cf4-91bb-b9dcb4a872a8": 1
           }
         }
       },
       "totals": {
-        "pv": 18,
-        "uv": 15,
+        "pv": 19,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4759,7 +4762,8 @@
         "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad",
         "bbdd964d-86f9-4913-a20a-fc27284a12a4",
         "a70029d3-f9f4-4db7-b30e-256e99835802",
-        "681c20be-2ac4-4ba4-832c-4b1887e7cd9f"
+        "681c20be-2ac4-4ba4-832c-4b1887e7cd9f",
+        "9b59f61d-50be-4cf4-91bb-b9dcb4a872a8"
       ]
     },
     "visa-tracker": {
@@ -7200,6 +7204,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9b59f61d-50be-4cf4-91bb-b9dcb4a872a8",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-02T19:05:41.911Z",
+      "lastSeen": "2026-07-02T19:05:41.911Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "681c20be-2ac4-4ba4-832c-4b1887e7cd9f",
       "siteId": "visa-guide",
