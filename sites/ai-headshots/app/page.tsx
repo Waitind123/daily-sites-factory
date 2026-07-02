@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FeatureGrid, StyleGrid } from "@/components/ui";
 import { HomeHero } from "@/components/HomeHero";
+import { HeadshotStudio } from "@/components/HeadshotStudio";
 import { getLocale } from "@/lib/locale";
 import { getHomeCopy } from "@/lib/copy";
 
@@ -12,19 +13,9 @@ export default async function HomePage() {
     <div>
       <HomeHero />
 
-      {"productDemo" in c && (
-        <section className="py-16 border-b border-border">
-          <div className="mx-auto max-w-5xl px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">{c.productDemo.title}</h2>
-            <p className="text-center text-sm text-muted mb-6">{c.productDemo.caption}</p>
-            <div className="rounded-2xl border border-brand-600/30 bg-surface p-6 shadow-xl">
-              <pre className="whitespace-pre-wrap rounded-xl bg-background border border-border p-5 font-mono text-sm text-foreground leading-relaxed">
-                {c.productDemo.preview}
-              </pre>
-            </div>
-          </div>
-        </section>
-      )}
+      <section id="studio" className="border-b border-border bg-surface/40">
+        <HeadshotStudio locale={locale} embedded />
+      </section>
 
       <section id="styles" className="bg-surface border-y border-border py-16">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -97,7 +88,7 @@ export default async function HomePage() {
           <p className="mt-4 text-brand-100 text-lg">{c.closing.subtitle}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/studio"
+              href="#studio"
               className="inline-block bg-surface text-brand-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-600/10 transition-colors"
             >
               {c.closing.ctaPrimary}
