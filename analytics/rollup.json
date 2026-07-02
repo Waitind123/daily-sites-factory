@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:09:03.423Z",
+  "updatedAt": "2026-07-02T02:11:18.801Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5693,42 +5693,44 @@
       "url": "",
       "daily": {
         "2026-07-02": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "0c613094-f9ef-4205-8302-c45afb51b68a"
+            "0c613094-f9ef-4205-8302-c45afb51b68a",
+            "afc03609-268e-4c93-93be-36ee4ca08143"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/dashboard": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "10": 2
+              "10": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "0c613094-f9ef-4205-8302-c45afb51b68a": 2
+            "0c613094-f9ef-4205-8302-c45afb51b68a": 2,
+            "afc03609-268e-4c93-93be-36ee4ca08143": 1
           }
         }
       },
@@ -5746,18 +5748,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 2,
-        "uv": 1,
+        "pv": 3,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "0c613094-f9ef-4205-8302-c45afb51b68a"
+        "0c613094-f9ef-4205-8302-c45afb51b68a",
+        "afc03609-268e-4c93-93be-36ee4ca08143"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "afc03609-268e-4c93-93be-36ee4ca08143",
+      "siteId": "dunning-失败支付恢复",
+      "firstSeen": "2026-07-02T02:11:18.670Z",
+      "lastSeen": "2026-07-02T02:11:18.670Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "0c613094-f9ef-4205-8302-c45afb51b68a",
       "siteId": "dunning-失败支付恢复",
