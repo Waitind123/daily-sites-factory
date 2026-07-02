@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T10:14:54.442Z",
+  "updatedAt": "2026-07-02T10:15:04.820Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3521,50 +3521,53 @@
           }
         },
         "2026-07-02": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "30009ba8-f1c8-446b-9659-c88f53e2f8c6",
-            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb"
+            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb",
+            "6cd77b3c-b69a-438b-9edc-1a0a17260f6a"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/jobs": 2
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
-              "zh": 3
+              "zh": 4
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 4
             },
             "utmSources": {},
             "hours": {
-              "11": 3
+              "11": 3,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "30009ba8-f1c8-446b-9659-c88f53e2f8c6": 2,
-            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb": 1
+            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb": 1,
+            "6cd77b3c-b69a-438b-9edc-1a0a17260f6a": 1
           }
         }
       },
       "totals": {
-        "pv": 14,
-        "uv": 11,
+        "pv": 15,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3588,7 +3591,8 @@
         "5198dd0c-cf80-4c50-a2e4-42462d756fe4",
         "567c86f8-5c50-4a47-b956-abaa283fae91",
         "30009ba8-f1c8-446b-9659-c88f53e2f8c6",
-        "0bfcb176-a817-4842-b2bc-b41f7f1e10fb"
+        "0bfcb176-a817-4842-b2bc-b41f7f1e10fb",
+        "6cd77b3c-b69a-438b-9edc-1a0a17260f6a"
       ]
     },
     "seo-rank-tracker": {
@@ -6674,6 +6678,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6cd77b3c-b69a-438b-9edc-1a0a17260f6a",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-07-02T10:15:04.674Z",
+      "lastSeen": "2026-07-02T10:15:04.674Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d6ab2374-0a89-4ef5-b753-a1ebfc24bfd3",
       "siteId": "intercom-pulse",
