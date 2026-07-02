@@ -9,6 +9,38 @@ export type PolicyChange = {
 
 export const recentPolicyChanges: PolicyChange[] = [
   {
+    id: "sri-lanka-launch",
+    visaId: "sri-lanka-dnv",
+    country: "Sri Lanka",
+    flag: "🇱🇰",
+    change: "New DNV launched: $2,000/mo income, 1-year + 5-year options",
+    changedAt: "2026-07-01",
+  },
+  {
+    id: "colombia-fee",
+    visaId: "colombia-v",
+    country: "Colombia",
+    flag: "🇨🇴",
+    change: "Application fee increased: $177→$230",
+    changedAt: "2026-06-28",
+  },
+  {
+    id: "croatia-renewal",
+    visaId: "croatia-digital",
+    country: "Croatia",
+    flag: "🇭🇷",
+    change: "Visa confirmed non-renewable (was listed as renewable)",
+    changedAt: "2026-06-26",
+  },
+  {
+    id: "portugal-fee",
+    visaId: "portugal-d8",
+    country: "Portugal",
+    flag: "🇵🇹",
+    change: "Application fee $90→$120; processing 60–90→30–60 days",
+    changedAt: "2026-06-25",
+  },
+  {
     id: "spain-processing",
     visaId: "spain-nomad",
     country: "Spain",

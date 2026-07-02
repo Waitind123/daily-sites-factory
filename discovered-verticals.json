@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "签证政策实时追踪",
+      "name": "签证政策实时追踪",
+      "description": "Nomad List 签证数据过时 18 个月，数字游民需要 .9/月的政策变更告警+到期追踪，RelocateMe 2026 报告多数门槛已变动",
+      "template": "micro-saas",
+      "source": "RelocateMe 2026 World Cup of Visas + Basehop outdated visa data post",
+      "discoveredAt": "2026-07-02T09:02:04.560Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-02T06:07:35.385Z",
+  "lastDiscoveredAt": "2026-07-02T09:02:04.560Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
