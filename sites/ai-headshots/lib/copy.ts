@@ -2,7 +2,7 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "PhotoAI $29/mo? · $9.9/mo flat",
+    badge: "2 subs by 7/13 · $9.9/mo flat",
     title: "AI professional headshots in 30 seconds",
     subtitle:
       "Upload a selfie, pick a style, download LinkedIn-ready portraits. 5 free generations, then $9.9/mo unlimited.",
@@ -71,7 +71,7 @@ export const homeCopy = {
     ],
   },
   zh: {
-    badge: "PhotoAI $29/月？· $9.9/月一口价",
+    badge: "7/13 前需 2 人订阅 · ¥69/月",
     title: "30 秒生成 AI 专业证件照",
     subtitle:
       "上传自拍、选风格、下载 LinkedIn 级头像。免费体验 5 次，之后 $9.9/月不限量生成。",

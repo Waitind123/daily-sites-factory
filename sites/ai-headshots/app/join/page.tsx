@@ -15,6 +15,13 @@ export default async function JoinPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-20">
+      <div className="mb-8 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-center text-sm text-amber-900">
+        <strong>{locale === "zh" ? "⏰ 7/13 Cursor 续费前" : "⏰ Before 7/13 Cursor renewal"}:</strong>{" "}
+        {locale === "zh"
+          ? "仅需 2 人订阅即可赚够 $20。5 次免费试用 → 满意立刻付款。"
+          : "Just 2 subscribers = $20 goal. 5 free tries → pay if you like it."}
+      </div>
+
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold text-foreground sm:text-4xl">{c.title}</h1>
         <p className="mt-3 text-muted">{c.subtitle}</p>
