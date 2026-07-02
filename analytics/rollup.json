@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:16:03.799Z",
+  "updatedAt": "2026-07-02T02:16:04.962Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6010,7 +6010,7 @@
       "url": "",
       "daily": {
         "2026-07-02": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -6020,31 +6020,32 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/dashboard": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "10": 1
+              "10": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "f7f06329-8cba-4018-a9f7-48f02e857101": 1
+            "f7f06329-8cba-4018-a9f7-48f02e857101": 2
           }
         }
       },
@@ -6062,7 +6063,7 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
+        "pv": 2,
         "uv": 1,
         "trial": 0,
         "checkout": 0,
@@ -6078,9 +6079,9 @@
       "visitorId": "f7f06329-8cba-4018-a9f7-48f02e857101",
       "siteId": "dunning-pulse",
       "firstSeen": "2026-07-02T02:16:03.696Z",
-      "lastSeen": "2026-07-02T02:16:03.696Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-02T02:16:04.858Z",
+      "pageviews": 2,
+      "path": "/dashboard",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
