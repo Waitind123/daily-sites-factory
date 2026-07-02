@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T03:50:26.893Z",
+  "updatedAt": "2026-07-02T04:05:28.504Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1826,11 +1826,49 @@
             "9341bac0-085a-4dd1-94d8-b3e316580426": 2,
             "a48bd5d4-af82-4092-82cd-c2e05f7b5369": 2
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6f355eef-644e-40e8-96a0-6b6ffbd693b1"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/tools": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6f355eef-644e-40e8-96a0-6b6ffbd693b1": 1
+          }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 7,
+        "pv": 14,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1847,7 +1885,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:47.316Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "6f355eef-644e-40e8-96a0-6b6ffbd693b1"
+      ]
     },
     "intercom-pulse": {
       "url": "https://intercom-pulse.vercel.app",
@@ -6128,6 +6169,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6f355eef-644e-40e8-96a0-6b6ffbd693b1",
+      "siteId": "indie-tools",
+      "firstSeen": "2026-07-02T04:05:28.284Z",
+      "lastSeen": "2026-07-02T04:05:28.284Z",
+      "pageviews": 1,
+      "path": "/tools",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b10c641e-15c9-45ce-a64f-ecd2fe1069be",
       "siteId": "intercom-pulse",
