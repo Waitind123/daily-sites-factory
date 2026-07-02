@@ -79,23 +79,32 @@ export function buildRevenueSprint(
   }
 
   if (!stripe.configured && liveCheckoutSites.length === 0) {
-    blockers.push("GitHub Secrets 未配置 — 需要 POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID（或 STRIPE_SECRET_KEY）");
-    actions.push("Add Polar secrets per docs/POLAR-PER-SITE.md, then redeploy priority sites");
+    blockers.push(
+      "GitHub Secrets 未配置 — 需 POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID（来源：verify-stripe-live 探测 /api/checkout）"
+    );
+    actions.push("在 GitHub Secrets 配置 Polar 后，revenue-sprint 工作流会自动 redeploy 优先站");
   } else if (!stripe.polarPerSite && liveCheckoutSites.length > 0) {
-    blockers.push("Polar 静态链接模式 — 付完统一跳 ai-headshots，其他站回调未独立");
-    actions.push("Add POLAR_ACCESS_TOKEN + POLAR_PRODUCT_ID for per-site success URLs");
+    blockers.push(
+      `Polar 静态/Hub 模式 — 仅 ${liveCheckoutSites.map((s) => s.name).join("、")} 真收款；其余站结账走 ai-headshots hub，付完跳回 hub /success（非本站回调）`
+    );
+    actions.push("已为各站写好 Polar API checkout；自动修复会 redeploy 并同步 Vercel 环境变量");
   } else if (liveCheckoutSites.length < 3) {
-    blockers.push(`Only ${liveCheckoutSites.length} site(s) can collect real payments`);
-    actions.push("Redeploy top-traffic sites (intercom-pulse, feature-vote, ai-headshots)");
+    blockers.push(
+      `真收款站仅 ${liveCheckoutSites.length} 个（来源：每小时 probe /api/checkout → analytics/stripe-status.json）`
+    );
+    actions.push("revenue-sprint-autofix 会自动 redeploy 高流量 demo 站");
   }
 
   if (liveCheckoutSites.length > 0) {
-    actions.push(`Promote live checkout: ${liveCheckoutSites.map((s) => s.name).join(", ")}`);
+    actions.push(`优先推广真收款站: ${liveCheckoutSites.map((s) => s.name).join(", ")}`);
   }
 
   const topDemo = promoteNow.filter((s) => !s.live && s.pv > 0).slice(0, 3);
   if (topDemo.length) {
-    blockers.push(`Top traffic in demo mode: ${topDemo.map((s) => s.name).join(", ")}`);
+    blockers.push(
+      `高流量但仍 Demo: ${topDemo.map((s) => `${s.name}(${s.pv} PV)`).join("、")} — 探测 /api/checkout 返回 demo:true，需 redeploy 同步 Polar 密钥`
+    );
+    actions.push(`自动修复将 redeploy: ${topDemo.map((s) => s.id).join(", ")}`);
   }
 
   if (goal.daysLeft <= 12 && purchasesNeeded > 0) {

@@ -210,6 +210,28 @@ async function main() {
     triggerRedeploy(siteId);
   }
 
+  // 4. 收入卡点：Tier-1 demo 收款站 → 同步 Polar 并 redeploy 高流量站
+  const hasDemoCheckout =
+    (report.failures || []).some((f) => f.severity === "checkout_demo_revenue" || f.detail?.includes("demo")) ||
+    (report.checks || []).some((c) => c.severity === "checkout_demo_revenue" || c.detail?.includes("demo 模式"));
+  if (hasDemoCheckout) {
+    log("→ revenue-sprint-autofix (demo checkout detected)");
+    try {
+      const env = { ...process.env, SPRINT_AUTOFIX_MAX_REDEPLOY: "2" };
+      if (!dryRun) {
+        spawnSync("node", ["scripts/revenue-sprint-autofix.mjs"], {
+          cwd: root,
+          encoding: "utf8",
+          timeout: 120000,
+          env,
+        });
+      }
+      autofixLog.succeeded.push({ action: "revenue-sprint-autofix" });
+    } catch (err) {
+      autofixLog.failed.push({ action: "revenue-sprint-autofix", error: err.message });
+    }
+  }
+
   writeFixLog();
   console.log(`\n修复完成: 成功 ${autofixLog.succeeded.length}, 失败 ${autofixLog.failed.length}\n`);
 }

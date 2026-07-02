@@ -35,6 +35,8 @@ jobs:
         if: steps.watch.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
+          POLAR_ACCESS_TOKEN: ${{ secrets.POLAR_ACCESS_TOKEN }}
+          POLAR_PRODUCT_ID: ${{ secrets.POLAR_PRODUCT_ID }}
         run: node scripts/health-watch-autofix.mjs
 
       - name: Feishu alert
@@ -47,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add analytics/health-watch-latest.json analytics/health-watch-history.jsonl analytics/health-watch-autofix-latest.json sites/intercom-pulse/data/health-watch-latest.json 2>/dev/null || true
+          git add analytics/health-watch-latest.json analytics/health-watch-history.jsonl analytics/health-watch-autofix-latest.json analytics/revenue-sprint-autofix-latest.json sites/intercom-pulse/data/health-watch-latest.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No report changes"
           else
