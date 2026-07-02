@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:13:27.902Z",
+  "updatedAt": "2026-07-02T02:13:31.586Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1294,11 +1294,49 @@
             "ae037834-5027-4a03-a9e2-6b46598a9b9d": 1,
             "c488e81c-78a0-4157-b2a2-81893bdfd70e": 2
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "3dc68322-5f63-464d-82ad-fb0cc8f9d9f9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "3dc68322-5f63-464d-82ad-fb0cc8f9d9f9": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 2,
+        "pv": 5,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1318,7 +1356,8 @@
       },
       "knownVisitors": [
         "ae037834-5027-4a03-a9e2-6b46598a9b9d",
-        "c488e81c-78a0-4157-b2a2-81893bdfd70e"
+        "c488e81c-78a0-4157-b2a2-81893bdfd70e",
+        "3dc68322-5f63-464d-82ad-fb0cc8f9d9f9"
       ]
     },
     "funnel-pulse": {
@@ -5840,6 +5879,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3dc68322-5f63-464d-82ad-fb0cc8f9d9f9",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-07-02T02:13:31.462Z",
+      "lastSeen": "2026-07-02T02:13:31.462Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ad70905e-388f-49ed-88e2-c0192bd43979",
       "siteId": "carbon-calculator",
