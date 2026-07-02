@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T21:06:05.388Z",
+  "updatedAt": "2026-07-02T21:09:47.558Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2749,50 +2749,52 @@
           }
         },
         "2026-07-02": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "1a2a2731-b1ab-4ac4-ac50-2e37782ea66e",
-            "bdcd8953-b0fa-488a-b574-668fdf67d72d"
+            "bdcd8953-b0fa-488a-b574-668fdf67d72d",
+            "fd4dca48-de0c-4d85-a4fe-d78e70b04056"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/compare": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "5": 2
+              "5": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "1a2a2731-b1ab-4ac4-ac50-2e37782ea66e": 1,
-            "bdcd8953-b0fa-488a-b574-668fdf67d72d": 1
+            "bdcd8953-b0fa-488a-b574-668fdf67d72d": 1,
+            "fd4dca48-de0c-4d85-a4fe-d78e70b04056": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 10,
+        "pv": 14,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2812,7 +2814,8 @@
       },
       "knownVisitors": [
         "1a2a2731-b1ab-4ac4-ac50-2e37782ea66e",
-        "bdcd8953-b0fa-488a-b574-668fdf67d72d"
+        "bdcd8953-b0fa-488a-b574-668fdf67d72d",
+        "fd4dca48-de0c-4d85-a4fe-d78e70b04056"
       ]
     },
     "nomad-cities": {
@@ -7297,6 +7300,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fd4dca48-de0c-4d85-a4fe-d78e70b04056",
+      "siteId": "newsletter-stack",
+      "firstSeen": "2026-07-02T21:09:47.414Z",
+      "lastSeen": "2026-07-02T21:09:47.414Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bdcd8953-b0fa-488a-b574-668fdf67d72d",
       "siteId": "newsletter-stack",
