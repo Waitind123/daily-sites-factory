@@ -186,9 +186,11 @@ function ComparisonBadge({ delta, label }: { delta: { changePct: string; availab
 function MetricComparisonCard({
   metric,
   data,
+  showComparisons,
 }: {
   metric: MetricKey;
   data: MetricsChartsPayload;
+  showComparisons: boolean;
 }) {
   const current = data.totals[metric];
   const mom = data.comparisons.mom[metric];
@@ -201,14 +203,18 @@ function MetricComparisonCard({
         <span className="text-xs text-zinc-400">{METRIC[metric]}</span>
       </div>
       <div className="text-2xl font-bold text-zinc-50">{current}</div>
-      <div className="mt-2 flex flex-col gap-0.5">
-        <ComparisonBadge delta={mom} label={DASHBOARD_COPY.momLabel} />
-        <ComparisonBadge delta={yoy} label={DASHBOARD_COPY.yoyLabel} />
-      </div>
-      {mom.available ? (
-        <p className="text-[10px] text-zinc-600 mt-2">
-          {DASHBOARD_COPY.momPrev}: {mom.previous}
-        </p>
+      {showComparisons ? (
+        <>
+          <div className="mt-2 flex flex-col gap-0.5">
+            <ComparisonBadge delta={mom} label={DASHBOARD_COPY.momLabel} />
+            <ComparisonBadge delta={yoy} label={DASHBOARD_COPY.yoyLabel} />
+          </div>
+          {mom.available ? (
+            <p className="text-[10px] text-zinc-600 mt-2">
+              {DASHBOARD_COPY.momPrev}: {mom.previous}
+            </p>
+          ) : null}
+        </>
       ) : null}
     </div>
   );
@@ -251,6 +257,7 @@ function FunnelBarChart({ data }: { data: MetricsChartsPayload }) {
 
 export function MetricsChartsPanel({ locale: _locale, data }: { locale: string; data: MetricsChartsPayload }) {
   const [metric, setMetric] = useState<MetricKey>("pv");
+  const [showComparisons, setShowComparisons] = useState(false);
 
   const stacked = useMemo(
     () =>
@@ -264,20 +271,31 @@ export function MetricsChartsPanel({ locale: _locale, data }: { locale: string; 
 
   return (
     <section>
-      <div className="mb-4">
-        <h2 className="text-lg font-semibold text-zinc-100">{DASHBOARD_COPY.chartsTitle}</h2>
-        <p className="text-sm text-zinc-500 mt-1">{DASHBOARD_COPY.chartsSub}</p>
-        <p className="text-xs text-zinc-600 mt-1">
-          {DASHBOARD_COPY.momRange}: {data.ranges.mom.from} ~ {data.ranges.mom.to}
-          {data.ranges.yoy
-            ? ` · ${DASHBOARD_COPY.yoyRange}: ${data.ranges.yoy.from} ~ ${data.ranges.yoy.to}`
-            : ""}
-        </p>
+      <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h2 className="text-lg font-semibold text-zinc-100">{DASHBOARD_COPY.chartsTitle}</h2>
+          <p className="text-sm text-zinc-500 mt-1">{DASHBOARD_COPY.chartsSub}</p>
+          {showComparisons ? (
+            <p className="text-xs text-zinc-600 mt-1">
+              {DASHBOARD_COPY.momRange}: {data.ranges.mom.from} ~ {data.ranges.mom.to}
+              {data.ranges.yoy
+                ? ` · ${DASHBOARD_COPY.yoyRange}: ${data.ranges.yoy.from} ~ ${data.ranges.yoy.to}`
+                : ""}
+            </p>
+          ) : null}
+        </div>
+        <button
+          type="button"
+          onClick={() => setShowComparisons((v) => !v)}
+          className="shrink-0 rounded-lg border border-zinc-700 px-3 py-1.5 text-xs text-zinc-300 hover:border-indigo-500 hover:text-indigo-200 transition"
+        >
+          {showComparisons ? DASHBOARD_COPY.comparisonToggleHide : DASHBOARD_COPY.comparisonToggleShow}
+        </button>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
         {METRIC_KEYS.map((key) => (
-          <MetricComparisonCard key={key} metric={key} data={data} />
+          <MetricComparisonCard key={key} metric={key} data={data} showComparisons={showComparisons} />
         ))}
       </div>
 
