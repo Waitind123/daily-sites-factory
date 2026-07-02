@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T05:59:03.882Z",
+  "updatedAt": "2026-07-02T06:03:29.345Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -151,7 +151,7 @@
           }
         },
         "2026-07-02": {
-          "pv": 3,
+          "pv": 4,
           "uv": 3,
           "trial": 0,
           "checkout": 1,
@@ -163,41 +163,43 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
               "/": 2,
-              "/join": 1
+              "/join": 1,
+              "/legal/privacy": 1
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
-              "zh": 3
+              "zh": 4
             },
             "timezones": {
               "UTC": 2,
-              "Asia/Shanghai": 1
+              "Asia/Shanghai": 2
             },
             "utmSources": {},
             "hours": {
               "10": 1,
-              "13": 2
+              "13": 2,
+              "14": 1
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 1
+              "returning": 2
             }
           },
           "visitorHits": {
             "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1,
             "ef325f93-2331-4ba3-a560-05b10a00933a": 1,
-            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 1
+            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 2
           }
         }
       },
       "totals": {
-        "pv": 64,
+        "pv": 65,
         "uv": 37,
         "trial": 0,
         "checkout": 3,
@@ -6239,9 +6241,9 @@
       "visitorId": "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
       "siteId": "ai-headshots",
       "firstSeen": "2026-07-02T05:58:42.258Z",
-      "lastSeen": "2026-07-02T05:58:42.258Z",
-      "pageviews": 1,
-      "path": "/join",
+      "lastSeen": "2026-07-02T06:03:29.243Z",
+      "pageviews": 2,
+      "path": "/legal/privacy",
       "locale": "zh",
       "device": "desktop",
       "timezone": "Asia/Shanghai"
