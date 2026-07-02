@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T07:18:47.331Z",
+  "updatedAt": "2026-07-02T07:19:25.754Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -151,7 +151,7 @@
           }
         },
         "2026-07-02": {
-          "pv": 8,
+          "pv": 9,
           "uv": 6,
           "trial": 0,
           "checkout": 2,
@@ -166,38 +166,41 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 8
+              "直接访问": 9
             },
             "paths": {
               "/": 4,
-              "/join": 3,
+              "/join": 4,
               "/legal/privacy": 1
             },
             "devices": {
-              "desktop": 8
+              "desktop": 9
             },
             "locales": {
-              "zh": 8
+              "zh": 9
             },
             "timezones": {
               "UTC": 5,
-              "Asia/Shanghai": 3
+              "Asia/Shanghai": 4
             },
-            "utmSources": {},
+            "utmSources": {
+              "dunning-pulse": 1
+            },
             "hours": {
               "10": 1,
               "13": 2,
-              "14": 5
+              "14": 5,
+              "15": 1
             },
             "visitorTypes": {
               "new": 5,
-              "returning": 3
+              "returning": 4
             }
           },
           "visitorHits": {
             "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1,
             "ef325f93-2331-4ba3-a560-05b10a00933a": 1,
-            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 3,
+            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 4,
             "208b9ece-4440-4282-8a66-64cf719ac7f7": 1,
             "7cba504a-bf4d-4a16-98ae-fb3c70925d2e": 1,
             "a80b8680-cdbd-4331-873f-27a492f6bde0": 1
@@ -205,7 +208,7 @@
         }
       },
       "totals": {
-        "pv": 69,
+        "pv": 70,
         "uv": 40,
         "trial": 0,
         "checkout": 4,
@@ -6414,6 +6417,19 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-02T05:58:42.258Z",
+      "lastSeen": "2026-07-02T07:19:25.677Z",
+      "pageviews": 4,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai",
+      "utmSource": "dunning-pulse",
+      "utmMedium": "crosssell"
+    },
+    {
       "visitorId": "30252907-dd51-49bf-b57f-d9ce89cc9f47",
       "siteId": "dunning-pulse",
       "firstSeen": "2026-07-02T07:18:47.222Z",
@@ -6478,17 +6494,6 @@
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
-    },
-    {
-      "visitorId": "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
-      "siteId": "ai-headshots",
-      "firstSeen": "2026-07-02T05:58:42.258Z",
-      "lastSeen": "2026-07-02T06:12:21.387Z",
-      "pageviews": 3,
-      "path": "/",
-      "locale": "zh",
-      "device": "desktop",
-      "timezone": "Asia/Shanghai"
     },
     {
       "visitorId": "7cba504a-bf4d-4a16-98ae-fb3c70925d2e",
