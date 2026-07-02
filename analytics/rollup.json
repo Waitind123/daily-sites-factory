@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T21:09:48.554Z",
+  "updatedAt": "2026-07-02T22:03:55.545Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -419,47 +419,51 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ad70905e-388f-49ed-88e2-c0192bd43979"
+            "ad70905e-388f-49ed-88e2-c0192bd43979",
+            "411d9681-5e6e-416a-aedd-c8a53a63b3ec"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/calculate": 1
+              "/calculate": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
+              "6": 1,
               "10": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ad70905e-388f-49ed-88e2-c0192bd43979": 1
+            "ad70905e-388f-49ed-88e2-c0192bd43979": 1,
+            "411d9681-5e6e-416a-aedd-c8a53a63b3ec": 1
           }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 8,
+        "pv": 11,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -479,7 +483,8 @@
       },
       "knownVisitors": [
         "b2d64827-ea63-47a1-b1a6-446fe2adba10",
-        "ad70905e-388f-49ed-88e2-c0192bd43979"
+        "ad70905e-388f-49ed-88e2-c0192bd43979",
+        "411d9681-5e6e-416a-aedd-c8a53a63b3ec"
       ]
     },
     "changelog-hub": {
@@ -7300,6 +7305,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "411d9681-5e6e-416a-aedd-c8a53a63b3ec",
+      "siteId": "carbon-calculator",
+      "firstSeen": "2026-07-02T22:03:55.299Z",
+      "lastSeen": "2026-07-02T22:03:55.299Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "fd4dca48-de0c-4d85-a4fe-d78e70b04056",
       "siteId": "newsletter-stack",
