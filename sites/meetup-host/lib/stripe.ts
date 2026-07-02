@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { getStripeProductCopy } from "./copy-app";
+import type { Locale } from "./i18n-shared";
 import { getLocale } from "./locale";
 import { resolvePolarCheckoutUrl } from "./polar-checkout";
 const DEFAULT_POLAR_CHECKOUT_URL =

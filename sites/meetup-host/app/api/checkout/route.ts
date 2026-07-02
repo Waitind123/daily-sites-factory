@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { apiError } from "@/lib/api-errors";
-import {createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
+import { getLocale } from "@/lib/locale";
+import { createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
 
 async function checkoutRedirect(request: NextRequest) {
