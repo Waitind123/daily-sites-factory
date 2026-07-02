@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:13:27.012Z",
+  "updatedAt": "2026-07-02T02:13:27.902Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -342,11 +342,49 @@
             "09db29c5-e828-4183-a52d-ebb692c8cbb3": 1,
             "b2d64827-ea63-47a1-b1a6-446fe2adba10": 2
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ad70905e-388f-49ed-88e2-c0192bd43979"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/calculate": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ad70905e-388f-49ed-88e2-c0192bd43979": 1
+          }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 7,
+        "pv": 10,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -365,7 +403,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "b2d64827-ea63-47a1-b1a6-446fe2adba10"
+        "b2d64827-ea63-47a1-b1a6-446fe2adba10",
+        "ad70905e-388f-49ed-88e2-c0192bd43979"
       ]
     },
     "changelog-hub": {
@@ -5801,6 +5840,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ad70905e-388f-49ed-88e2-c0192bd43979",
+      "siteId": "carbon-calculator",
+      "firstSeen": "2026-07-02T02:13:27.774Z",
+      "lastSeen": "2026-07-02T02:13:27.774Z",
+      "pageviews": 1,
+      "path": "/calculate",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bf36d096-f8bb-46e1-8b2d-e3b02c84917a",
       "siteId": "habit-tracker",
