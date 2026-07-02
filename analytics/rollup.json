@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T07:06:16.974Z",
+  "updatedAt": "2026-07-02T07:10:07.848Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6335,9 +6335,86 @@
       "knownVisitors": [
         "f7f06329-8cba-4018-a9f7-48f02e857101"
       ]
+    },
+    "pricing-intel": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "686cb899-838e-417d-8dfa-57014e879760"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "686cb899-838e-417d-8dfa-57014e879760": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "686cb899-838e-417d-8dfa-57014e879760"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "686cb899-838e-417d-8dfa-57014e879760",
+      "siteId": "pricing-intel",
+      "firstSeen": "2026-07-02T07:10:07.759Z",
+      "lastSeen": "2026-07-02T07:10:07.759Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "363dc845-cbe0-4bca-93ec-987e6ea49121",
       "siteId": "changelog-hub",
