@@ -93,7 +93,7 @@ for (const endpoint of ["https://api.indexnow.org/indexnow", "https://www.bing.c
       body: JSON.stringify({
         host: "ai-headshots-navy.vercel.app",
         key: KEY,
-        keyLocation: "https://feature-vote-ten.vercel.app/indexnow-key.txt",
+        keyLocation: "https://ai-headshots-navy.vercel.app/indexnow-key.txt",
         urlList: priority,
       }),
     });
