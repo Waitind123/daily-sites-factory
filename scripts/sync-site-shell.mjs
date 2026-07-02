@@ -72,6 +72,16 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
     ],
   },
+  "dunning-失败支付恢复": {
+    emoji: "💳",
+    name: { en: "Dunning Pulse", zh: "失败支付恢复" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/stripe-failed-payment-recovery-dunning",
+    nav: [
+      { href: "/guide/stripe-failed-payment-recovery-dunning", label: { en: "Guide", zh: "指南" } },
+      { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
+    ],
+  },
   "remote-jobs": {
     emoji: "💼",
     name: { en: "Remote Jobs", zh: "远程工作板" },
