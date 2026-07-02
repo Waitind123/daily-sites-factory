@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T12:07:20.936Z",
+  "updatedAt": "2026-07-02T13:13:36.747Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6745,9 +6745,86 @@
         "30a77ced-854d-4fcf-ae24-3f8bce03bcc3",
         "012813b4-1f51-4f78-a148-76e28cd2d072"
       ]
+    },
+    "freelance-local-kit": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b5e6390d-672a-4ae2-8ce3-2c45248b7342"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b5e6390d-672a-4ae2-8ce3-2c45248b7342": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "b5e6390d-672a-4ae2-8ce3-2c45248b7342"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b5e6390d-672a-4ae2-8ce3-2c45248b7342",
+      "siteId": "freelance-local-kit",
+      "firstSeen": "2026-07-02T13:13:36.446Z",
+      "lastSeen": "2026-07-02T13:13:36.446Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9f79bdea-f169-4dd6-a46a-b05b30d758cd",
       "siteId": "ai-headshots",
