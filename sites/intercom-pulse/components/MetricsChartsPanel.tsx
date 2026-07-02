@@ -17,6 +17,10 @@ function maxInSeries(values: number[]) {
   return values.reduce((m, v) => Math.max(m, v), 0) || 1;
 }
 
+function formatChartValue(value: number) {
+  return value.toLocaleString("en-US");
+}
+
 function LineChart({
   points,
   metric,
@@ -27,10 +31,12 @@ function LineChart({
   const values = points.map((p) => p[metric]);
   const max = maxInSeries(values);
   const w = 640;
-  const h = 180;
-  const pad = { l: 8, r: 8, t: 12, b: 24 };
+  const h = 210;
+  const pad = { l: 36, r: 8, t: 28, b: 24 };
   const innerW = w - pad.l - pad.r;
   const innerH = h - pad.t - pad.b;
+  const dense = points.length > 16;
+  const labelSize = dense ? 8 : 9;
 
   const coords = values.map((v, i) => {
     const x = pad.l + (values.length <= 1 ? innerW / 2 : (i / (values.length - 1)) * innerW);
@@ -41,6 +47,11 @@ function LineChart({
   const line = coords.map((c) => `${c.x},${c.y}`).join(" ");
   const area = `${pad.l},${pad.t + innerH} ${line} ${pad.l + innerW},${pad.t + innerH}`;
   const color = METRIC_COLORS[metric];
+  const yTicks = [0, 0.25, 0.5, 0.75, 1].map((t) => ({
+    t,
+    value: Math.round(max * t),
+    y: pad.t + innerH * (1 - t),
+  }));
 
   return (
     <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-4">
@@ -57,16 +68,20 @@ function LineChart({
               <stop offset="100%" stopColor={color} stopOpacity="0" />
             </linearGradient>
           </defs>
-          {[0, 0.25, 0.5, 0.75, 1].map((t) => (
-            <line
-              key={t}
-              x1={pad.l}
-              x2={w - pad.r}
-              y1={pad.t + innerH * (1 - t)}
-              y2={pad.t + innerH * (1 - t)}
-              stroke="#27272a"
-              strokeWidth="1"
-            />
+          {yTicks.map((tick) => (
+            <g key={tick.t}>
+              <line
+                x1={pad.l}
+                x2={w - pad.r}
+                y1={tick.y}
+                y2={tick.y}
+                stroke="#27272a"
+                strokeWidth="1"
+              />
+              <text x={pad.l - 6} y={tick.y + 3} fill="#71717a" fontSize="9" textAnchor="end">
+                {formatChartValue(tick.value)}
+              </text>
+            </g>
           ))}
           <polygon points={area} fill={`url(#grad-${metric})`} />
           <polyline
@@ -78,7 +93,18 @@ function LineChart({
             strokeLinecap="round"
           />
           {coords.map((c) => (
-            <circle key={c.day} cx={c.x} cy={c.y} r="3.5" fill={color} />
+            <g key={c.day}>
+              <circle cx={c.x} cy={c.y} r="3.5" fill={color} />
+              <text
+                x={c.x}
+                y={Math.max(pad.t + 8, c.y - 8)}
+                fill="#e4e4e7"
+                fontSize={labelSize}
+                textAnchor="middle"
+              >
+                {formatChartValue(c.v)}
+              </text>
+            </g>
           ))}
           {coords.length > 0 ? (
             <>
@@ -115,9 +141,12 @@ function BarChart({
       {points.length === 0 ? (
         <p className="text-xs text-zinc-500 py-10 text-center">{DASHBOARD_COPY.noChartData}</p>
       ) : (
-        <div className="flex items-end gap-1 h-40">
+        <div className="flex items-end gap-1 h-48">
           {points.map((p) => (
-            <div key={p.day} className="flex-1 min-w-0 flex flex-col items-center gap-1 group">
+            <div key={p.day} className="flex-1 min-w-0 flex flex-col items-center justify-end gap-0.5 group h-full">
+              <span className="text-[9px] font-medium text-zinc-200 leading-none tabular-nums">
+                {formatChartValue(p[metric])}
+              </span>
               <div
                 className="w-full rounded-t-md transition-all group-hover:opacity-90"
                 style={{
@@ -127,7 +156,7 @@ function BarChart({
                 }}
                 title={`${p.day}: ${p[metric]}`}
               />
-              {points.length <= 14 ? (
+              {points.length <= 21 ? (
                 <span className="text-[9px] text-zinc-600 truncate w-full text-center">
                   {p.day.slice(8)}
                 </span>
