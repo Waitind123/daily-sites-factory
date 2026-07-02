@@ -50,6 +50,7 @@ export const AUTOFIX_ACTIONS = {
   checkout_probe_fail: ["sync-polar", "redeploy"],
   checkout_redirect_fail: ["sync-polar", "redeploy"],
   checkout_demo_revenue: ["sync-polar"],
+  generate_demo_mode: ["redeploy"],
   generate_api_fail: ["redeploy"],
   boards_api_fail: ["redeploy"],
   tickets_api_fail: ["redeploy"],
