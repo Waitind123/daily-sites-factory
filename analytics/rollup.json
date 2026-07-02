@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T05:22:01.164Z",
+  "updatedAt": "2026-07-02T05:22:07.698Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -151,47 +151,50 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "7a1d43b6-b890-4552-a66d-2ab10feb0934"
+            "7a1d43b6-b890-4552-a66d-2ab10feb0934",
+            "ef325f93-2331-4ba3-a560-05b10a00933a"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "10": 1
+              "10": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1
+            "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1,
+            "ef325f93-2331-4ba3-a560-05b10a00933a": 1
           }
         }
       },
       "totals": {
-        "pv": 62,
-        "uv": 35,
+        "pv": 63,
+        "uv": 36,
         "trial": 0,
         "checkout": 2,
         "purchase": 2
@@ -219,7 +222,8 @@
         "6458dd73-2131-47a5-b238-d7e59e0b6b95",
         "214f184e-2efe-48ad-95e2-10339519c8f5",
         "b247d4c7-2554-4957-ac3a-5a8fe2185558",
-        "7a1d43b6-b890-4552-a66d-2ab10feb0934"
+        "7a1d43b6-b890-4552-a66d-2ab10feb0934",
+        "ef325f93-2331-4ba3-a560-05b10a00933a"
       ]
     },
     "ai-waitlist": {
@@ -6224,6 +6228,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ef325f93-2331-4ba3-a560-05b10a00933a",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-02T05:22:07.578Z",
+      "lastSeen": "2026-07-02T05:22:07.578Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e6c34b22-0be5-4fab-add5-6f43393b9550",
       "siteId": "intercom-pulse",
