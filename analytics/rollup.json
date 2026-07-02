@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T13:15:58.494Z",
+  "updatedAt": "2026-07-02T13:47:27.272Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2996,11 +2996,49 @@
             "25580ce1-2535-4121-9d9a-c5fb53a0cc57": 1,
             "3db652e5-f33c-4ad4-952a-3e3eb470178e": 1
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 7,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3020,7 +3058,8 @@
       },
       "knownVisitors": [
         "25580ce1-2535-4121-9d9a-c5fb53a0cc57",
-        "3db652e5-f33c-4ad4-952a-3e3eb470178e"
+        "3db652e5-f33c-4ad4-952a-3e3eb470178e",
+        "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8"
       ]
     },
     "pain-radar": {
@@ -6818,6 +6857,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-02T13:47:27.012Z",
+      "lastSeen": "2026-07-02T13:47:27.012Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "330af075-de61-4c20-95a1-db08786d7d02",
       "siteId": "freelance-local-kit",
