@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T15:11:30.009Z",
+  "updatedAt": "2026-07-02T15:11:57.277Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3018,52 +3018,54 @@
           }
         },
         "2026-07-02": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8",
-            "1370082c-e368-4343-b4a3-83850acd6fbb"
+            "1370082c-e368-4343-b4a3-83850acd6fbb",
+            "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "en": 1,
+              "en": 2,
               "es": 1
             },
             "timezones": {
-              "UTC": 1,
+              "UTC": 2,
               "Atlantic/Canary": 1
             },
             "utmSources": {},
             "hours": {
               "21": 1,
-              "23": 1
+              "23": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8": 1,
-            "1370082c-e368-4343-b4a3-83850acd6fbb": 1
+            "1370082c-e368-4343-b4a3-83850acd6fbb": 1,
+            "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831": 1
           }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 6,
+        "pv": 9,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3085,7 +3087,8 @@
         "25580ce1-2535-4121-9d9a-c5fb53a0cc57",
         "3db652e5-f33c-4ad4-952a-3e3eb470178e",
         "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8",
-        "1370082c-e368-4343-b4a3-83850acd6fbb"
+        "1370082c-e368-4343-b4a3-83850acd6fbb",
+        "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831"
       ]
     },
     "pain-radar": {
@@ -6997,6 +7000,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-02T15:11:57.120Z",
+      "lastSeen": "2026-07-02T15:11:57.120Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "550b60e0-0056-4628-9f96-b96cc9fb8835",
       "siteId": "churn-reason-pulse",
