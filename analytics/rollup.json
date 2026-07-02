@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T03:06:12.497Z",
+  "updatedAt": "2026-07-02T03:08:11.202Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3235,48 +3235,50 @@
           }
         },
         "2026-07-02": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "30009ba8-f1c8-446b-9659-c88f53e2f8c6"
+            "30009ba8-f1c8-446b-9659-c88f53e2f8c6",
+            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/jobs": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "11": 2
+              "11": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "30009ba8-f1c8-446b-9659-c88f53e2f8c6": 2
+            "30009ba8-f1c8-446b-9659-c88f53e2f8c6": 2,
+            "0bfcb176-a817-4842-b2bc-b41f7f1e10fb": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 10,
+        "pv": 14,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3299,7 +3301,8 @@
         "2ec19dcf-605a-4aa0-a59b-5151ea54af12",
         "5198dd0c-cf80-4c50-a2e4-42462d756fe4",
         "567c86f8-5c50-4a47-b956-abaa283fae91",
-        "30009ba8-f1c8-446b-9659-c88f53e2f8c6"
+        "30009ba8-f1c8-446b-9659-c88f53e2f8c6",
+        "0bfcb176-a817-4842-b2bc-b41f7f1e10fb"
       ]
     },
     "seo-rank-tracker": {
@@ -6122,6 +6125,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0bfcb176-a817-4842-b2bc-b41f7f1e10fb",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-07-02T03:08:11.086Z",
+      "lastSeen": "2026-07-02T03:08:11.086Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "30009ba8-f1c8-446b-9659-c88f53e2f8c6",
       "siteId": "remote-jobs",
