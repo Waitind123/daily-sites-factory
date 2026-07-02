@@ -72,7 +72,7 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
     ],
   },
-  "dunning-失败支付恢复": {
+  "dunning-pulse": {
     emoji: "💳",
     name: { en: "Dunning Pulse", zh: "失败支付恢复" },
     jsonLd: "softwareApplicationJsonLd",

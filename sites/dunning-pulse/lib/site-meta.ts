@@ -1,5 +1,5 @@
 export const siteMeta = {
-  "id": "dunning-失败支付恢复",
+  "id": "dunning-pulse",
   "emoji": "💳",
   "name": {
     "en": "Dunning Pulse",
