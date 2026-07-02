@@ -54,21 +54,4 @@ jobs:
       - name: Feishu sprint alert
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
-        run: |
-          if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
-          node -e "
-            const s=require('./analytics/stripe-status.json');
-            const r=require('./analytics/rollup.json');
-            const st=require('./state.json');
-            const dl=new Date((st.revenueGoal?.deadline||'2026-07-13')+'T23:59:59');
-            const days=Math.max(0,Math.ceil((dl-Date.now())/86400000));
-            let pv=0,purchase=0;
-            for (const site of Object.values(r.sites||{})) {
-              pv+=site.totals?.pv||0;
-              purchase+=site.totals?.purchase||0;
-            }
-            const live=(s.liveSiteIds||[]).join(', ')||'none';
-            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-              body:JSON.stringify({msg_type:'text',content:{text:'🎯 收入冲刺\\n剩余 '+days+' 天 · 目标 \$20\\n付费: '+purchase+' · PV: '+pv+'\\nLive Stripe: '+live+'\\n看板: https://intercom-pulse.vercel.app/factory-dashboard'}})})
-            }).catch(()=>{});
-          "
+        run: node scripts/notify-feishu-revenue-sprint.mjs

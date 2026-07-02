@@ -10,6 +10,7 @@ import { readFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import { normalizeCommand, replyText, sendToChat } from "./lib/feishu-api.mjs";
+import { formatFactoryDeploySummary, formatSiteDeployLabel } from "./lib/feishu-site-index.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const text = normalizeCommand(process.argv[2] || "");
@@ -116,9 +117,11 @@ async function handleCommand(raw) {
     if (!s) return "暂无 state.json";
     return `📊 最近部署
 站点：${s.lastVerticalId}
+${formatSiteDeployLabel(s.lastVerticalId)}
+${formatFactoryDeploySummary()}
 URL：${s.lastDeployedUrl}
 时间：${s.lastDeployedAt}
-历史：${s.history?.length || 0} 个站点`;
+历史：${s.history?.length || 0} 条记录`;
   }
 
   if (cmd === "列表" || cmd === "sites" || cmd === "list") {
@@ -126,7 +129,7 @@ URL：${s.lastDeployedUrl}
     if (!s?.history?.length) return "暂无站点记录";
     const lines = s.history
       .slice(0, 10)
-      .map((h) => `• ${h.name} (${h.verticalId})\n  ${h.url}`)
+      .map((h) => `• ${h.name} (${h.verticalId}) — ${formatSiteDeployLabel(h.verticalId)}\n  ${h.url}`)
       .join("\n");
     return `🌐 站点（最近 10 个）\n${lines}`;
   }
