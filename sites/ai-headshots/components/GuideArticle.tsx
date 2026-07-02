@@ -61,7 +61,7 @@ export function GuideArticle({ locale }: { locale: Locale }) {
         <p className="mt-2 text-sm text-muted">{g.cta.subtitle}</p>
         <div className="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
           <Link
-            href="/studio"
+            href="/#studio"
             className="inline-block rounded-lg bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
             {g.cta.button}

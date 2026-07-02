@@ -1,5 +1,26 @@
 # 社交自动推广配置
 
+## 每天全自动发帖（3 步）
+
+配置完成后，工作流 **Social promo (Reddit auto)** 每 4 小时检查一次，随机决定是否发帖（约每天 1 帖），无需人工操作。
+
+| 步骤 | 操作 |
+|------|------|
+| 1 | Reddit 创建应用 → 本地跑 `node scripts/setup-reddit-oauth.mjs` 拿 `refresh_token` |
+| 2 | GitHub Secrets 填入下表四个变量 |
+| 3 | 设 `SOCIAL_PROMO_ENABLED` = `true`，等定时任务或手动 Run workflow |
+
+| Secret | 必填 |
+|--------|------|
+| `REDDIT_CLIENT_ID` | ✅ |
+| `REDDIT_CLIENT_SECRET` | ✅ |
+| `REDDIT_REFRESH_TOKEN` | ✅ |
+| `SOCIAL_PROMO_ENABLED` | ✅ 设为 `true` 才会真发（否则只 dry-run） |
+
+发帖记录自动写入 `analytics/social-promo-state.json`，看板「推广效果」可溯源。
+
+---
+
 **请勿把 Reddit 密码或 token 发给 AI 或写进代码仓库。** 只需一次性配置 GitHub Secrets，由 CI 每天随机发帖。
 
 ## 1. 创建 Reddit 应用

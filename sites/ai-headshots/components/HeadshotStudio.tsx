@@ -18,7 +18,7 @@ type TrialInfo = {
   canUse: boolean;
 };
 
-export function HeadshotStudio({ locale }: { locale: Locale }) {
+export function HeadshotStudio({ locale, embedded = false }: { locale: Locale; embedded?: boolean }) {
   const t = getStudioCopy(locale);
   const styles = getHomeCopy(locale).styles;
   const [preview, setPreview] = useState<string | null>(null);
@@ -109,10 +109,12 @@ export function HeadshotStudio({ locale }: { locale: Locale }) {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
       <div className="mb-6">
-        <Link href="/" className="text-sm text-muted hover:text-foreground">
-          {t.backHome}
-        </Link>
-        <h1 className="text-2xl sm:text-3xl font-bold mt-2">{t.title}</h1>
+        {!embedded ? (
+          <Link href="/" className="text-sm text-muted hover:text-foreground">
+            {t.backHome}
+          </Link>
+        ) : null}
+        <h1 className={`text-2xl sm:text-3xl font-bold ${embedded ? "mt-0" : "mt-2"}`}>{t.title}</h1>
         <p className="text-muted mt-1">{t.subtitle}</p>
       </div>
 

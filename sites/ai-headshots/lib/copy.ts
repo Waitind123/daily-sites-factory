@@ -7,7 +7,7 @@ export const homeCopy = {
     subtitle:
       "Upload a selfie, pick a style, download LinkedIn-ready portraits. 5 free generations, then $9.9/mo unlimited.",
     ctaPrimary: "Try free in studio",
-    ctaPrimaryHref: "/studio",
+    ctaPrimaryHref: "/#studio",
     ctaSecondary: "Subscribe · $9.9/mo",
     ctaSecondaryHref: "/join",
     note: "5 free tries · then $9.9/mo",
@@ -76,7 +76,7 @@ export const homeCopy = {
     subtitle:
       "上传自拍、选风格、下载 LinkedIn 级头像。免费体验 5 次，之后 $9.9/月不限量生成。",
     ctaPrimary: "免费进入工作室",
-    ctaPrimaryHref: "/studio",
+    ctaPrimaryHref: "/#studio",
     ctaSecondary: "订阅 · $9.9/月",
     ctaSecondaryHref: "/join",
     note: "免费体验 5 次 · 之后 $9.9/月",

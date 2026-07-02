@@ -52,7 +52,7 @@ export function SuccessClient({
       )}
       <div className="mt-8 space-y-3">
         <Link
-          href="/studio"
+          href="/#studio"
           className="block w-full bg-brand-600 text-white py-4 rounded-xl font-semibold hover:bg-brand-700 transition-colors"
         >
           {t.openStudio}
