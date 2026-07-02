@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T06:06:44.704Z",
+  "updatedAt": "2026-07-02T06:10:21.531Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2952,47 +2952,49 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "20b54081-b922-4624-8faa-3b087bffabb4"
+            "20b54081-b922-4624-8faa-3b087bffabb4",
+            "619d68c5-b382-43ef-b7ed-ac2a290472b9"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "14": 1
+              "14": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "20b54081-b922-4624-8faa-3b087bffabb4": 1
+            "20b54081-b922-4624-8faa-3b087bffabb4": 1,
+            "619d68c5-b382-43ef-b7ed-ac2a290472b9": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 9,
+        "pv": 16,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3011,7 +3013,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "20b54081-b922-4624-8faa-3b087bffabb4"
+        "20b54081-b922-4624-8faa-3b087bffabb4",
+        "619d68c5-b382-43ef-b7ed-ac2a290472b9"
       ]
     },
     "pulse-suite": {
@@ -6285,6 +6288,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "619d68c5-b382-43ef-b7ed-ac2a290472b9",
+      "siteId": "price-tracker",
+      "firstSeen": "2026-07-02T06:10:21.225Z",
+      "lastSeen": "2026-07-02T06:10:21.225Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "20b54081-b922-4624-8faa-3b087bffabb4",
       "siteId": "price-tracker",
