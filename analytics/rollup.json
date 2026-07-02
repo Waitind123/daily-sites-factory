@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T01:04:50.032Z",
+  "updatedAt": "2026-07-02T01:06:46.812Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -671,48 +671,50 @@
           }
         },
         "2026-07-02": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "6f6747c7-f837-45f0-b25e-77449067571a"
+            "6f6747c7-f837-45f0-b25e-77449067571a",
+            "1a892b65-993b-4ae9-8aaa-e706242f4d08"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/spaces": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "9": 2
+              "9": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "6f6747c7-f837-45f0-b25e-77449067571a": 2
+            "6f6747c7-f837-45f0-b25e-77449067571a": 2,
+            "1a892b65-993b-4ae9-8aaa-e706242f4d08": 1
           }
         }
       },
       "totals": {
-        "pv": 14,
-        "uv": 8,
+        "pv": 15,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -731,7 +733,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "6f6747c7-f837-45f0-b25e-77449067571a"
+        "6f6747c7-f837-45f0-b25e-77449067571a",
+        "1a892b65-993b-4ae9-8aaa-e706242f4d08"
       ]
     },
     "coworking-pass": {
@@ -5688,6 +5691,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1a892b65-993b-4ae9-8aaa-e706242f4d08",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-07-02T01:06:46.732Z",
+      "lastSeen": "2026-07-02T01:06:46.732Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "6f6747c7-f837-45f0-b25e-77449067571a",
       "siteId": "coworking-finder",
