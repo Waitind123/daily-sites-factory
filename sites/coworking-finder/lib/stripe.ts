@@ -1,4 +1,6 @@
 import Stripe from "stripe";
+import type { Locale } from "./i18n-shared";
+import { getStripeProductCopy } from "./copy-app";
 import { resolvePolarCheckoutUrl } from "./polar-checkout";
 const DEFAULT_POLAR_CHECKOUT_URL =
   "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
@@ -20,14 +22,51 @@ export function getStripe() {
 }
 
 export const PRICE_USD = 990;
+export const PRICE_CNY_MONTHLY = 6900;
 
-export async function createCheckoutSession(origin: string, payCurrency: "cny" | "usd" = "usd") {
-  if (payCurrency !== "cny") {
-  const polarUrl = await resolvePolarCheckoutUrl(origin, { currency: payCurrency });
-  if (polarUrl) {
-    return { demo: false as const, url: polarUrl };
+export async function createCnyCheckoutSession(origin: string, locale: Locale = "en") {
+  const product = getStripeProductCopy(locale);
+  const stripe = getStripe();
+  if (!stripe) {
+    return {
+      demo: true as const,
+      url: `${origin}/success?demo=true&currency=cny`,
+    };
   }
+  const session = await stripe.checkout.sessions.create({
+    mode: "subscription",
+    payment_method_types: ["card", "alipay", "wechat_pay"],
+    payment_method_options: { wechat_pay: { client: "web" } },
+    line_items: [
+      {
+        price_data: {
+          currency: "cny",
+          product_data: { name: product.name, description: product.description },
+          unit_amount: PRICE_CNY_MONTHLY,
+          recurring: { interval: "month" },
+        },
+        quantity: 1,
+      },
+    ],
+    success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&currency=cny`,
+    cancel_url: `${origin}/join`,
+    metadata: { product: "coworking-finder-monthly-cny", currency: "cny" },
+  });
+  return { demo: false as const, url: session.url!, sessionId: session.id };
 }
+
+export async function createCheckoutSession(
+  origin: string,
+  locale: Locale = "en",
+  payCurrency: "cny" | "usd" = "usd"
+) {
+  const product = getStripeProductCopy(locale);
+  if (payCurrency !== "cny") {
+    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency: payCurrency });
+    if (polarUrl) {
+      return { demo: false as const, url: polarUrl };
+    }
+  }
 
   const stripe = getStripe();
 
@@ -46,8 +85,8 @@ export async function createCheckoutSession(origin: string, payCurrency: "cny" |
         price_data: {
           currency: "usd",
           product_data: {
-            name: "联合办公 Finder · 月度会员",
-            description: "无限查看空间详情 + WiFi 数据 + 内部贴士，按月订阅",
+            name: product.name,
+            description: product.description,
           },
           unit_amount: PRICE_USD,
           recurring: { interval: "month" },
