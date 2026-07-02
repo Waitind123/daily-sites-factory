@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T13:15:57.385Z",
+  "updatedAt": "2026-07-02T13:15:58.494Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6750,7 +6750,7 @@
       "url": "",
       "daily": {
         "2026-07-02": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -6761,32 +6761,33 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/workspace": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "21": 2
+              "21": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "b5e6390d-672a-4ae2-8ce3-2c45248b7342": 1,
-            "330af075-de61-4c20-95a1-db08786d7d02": 1
+            "330af075-de61-4c20-95a1-db08786d7d02": 2
           }
         }
       },
@@ -6804,7 +6805,7 @@
         "score": 0
       },
       "totals": {
-        "pv": 2,
+        "pv": 3,
         "uv": 2,
         "trial": 0,
         "checkout": 0,
@@ -6821,9 +6822,9 @@
       "visitorId": "330af075-de61-4c20-95a1-db08786d7d02",
       "siteId": "freelance-local-kit",
       "firstSeen": "2026-07-02T13:15:57.238Z",
-      "lastSeen": "2026-07-02T13:15:57.238Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-02T13:15:58.319Z",
+      "pageviews": 2,
+      "path": "/workspace",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
