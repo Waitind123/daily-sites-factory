@@ -1,8 +1,8 @@
 {
-  "lastIndex": 83,
-  "lastVerticalId": "churn-reason-pulse",
-  "lastDeployedUrl": "https://churn-reason-pulse.vercel.app",
-  "lastDeployedAt": "2026-07-02T15:14:59.000Z",
+  "lastIndex": 84,
+  "lastVerticalId": "sec-quest-pulse",
+  "lastDeployedUrl": "https://sec-quest-pulse.vercel.app",
+  "lastDeployedAt": "2026-07-02T16:12:40.000Z",
   "revenueGoal": {
     "targetUsd": 20,
     "deadline": "2026-07-13",
@@ -10,6 +10,12 @@
     "stripeReadyBy": "2026-06-28"
   },
   "history": [
+    {
+      "verticalId": "sec-quest-pulse",
+      "name": "安全问卷自动填写",
+      "url": "https://sec-quest-pulse.vercel.app",
+      "deployedAt": "2026-07-02T16:12:40.000Z"
+    },
     {
       "verticalId": "churn-reason-pulse",
       "name": "SaaS 流失原因追踪",
@@ -183,12 +189,6 @@
       "name": "落地页 A/B 测试",
       "url": "https://page-split-pi.vercel.app",
       "deployedAt": "2026-07-01T11:10:00.000Z"
-    },
-    {
-      "verticalId": "cron-heartbeat",
-      "name": "Cron 任务心跳监控",
-      "url": "https://cron-heartbeat.vercel.app",
-      "deployedAt": "2026-07-01T10:12:25.000Z"
     }
   ]
 }
