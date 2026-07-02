@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { RollupFile, SiteRollup } from "@/lib/analytics-store";
-import { RevenueDeadlineBanner } from "@/components/RevenueDeadlineBanner";
 import { DashboardFilters } from "@/components/DashboardFilters";
 import { VisitorInsightsPanel } from "@/components/VisitorInsightsPanel";
 import { VisitorsTablePanel } from "@/components/VisitorsTablePanel";
@@ -227,8 +226,6 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-10">
-        <RevenueDeadlineBanner locale={locale} />
-
         {error ? (
           <p className="text-center text-amber-400 text-sm">
             {DASHBOARD_COPY.fetchError}: {error} · {DASHBOARD_COPY.retryHint}

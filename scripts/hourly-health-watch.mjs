@@ -194,7 +194,17 @@ async function checkAiHeadshotsGenerate() {
       record(siteId, "feature:generate", "fail", JSON.stringify(data).slice(0, 120), "generate_api_fail");
       return;
     }
-    record(siteId, "feature:generate", "pass", data.demo ? "demo 模式" : "live");
+    if (data.demo) {
+      record(
+        siteId,
+        "feature:generate",
+        "fail",
+        "REPLICATE_API_TOKEN 未配置 — 仅返回 demo SVG，无法真实生成",
+        "generate_demo_mode"
+      );
+      return;
+    }
+    record(siteId, "feature:generate", "pass", "live AI");
   } catch (err) {
     record(siteId, "feature:generate", "fail", err.message, "generate_api_fail");
   }

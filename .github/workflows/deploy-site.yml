@@ -186,6 +186,24 @@ jobs:
             printf '%s' "$POLAR_PRODUCT" | npx vercel env add POLAR_PRODUCT_ID production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           fi
 
+      - name: Sync Replicate token on Vercel (AI generation)
+        if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          REPLICATE_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            exit 0
+          fi
+          if [ -z "$REPLICATE_TOKEN" ]; then
+            echo "::warning::REPLICATE_API_TOKEN 未配置 — ai-headshots 生成将保持 demo 模式"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$REPLICATE_TOKEN" | npx vercel env add REPLICATE_API_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
@@ -209,6 +227,17 @@ jobs:
           DEPLOY_URL=$(grep -oE 'https://[^ ]+\.vercel\.app' "$LOG" | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
+
+      - name: Verify AI generation live (production)
+        if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        env:
+          REPLICATE_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: |
+          if [ -z "$REPLICATE_TOKEN" ]; then
+            echo "::warning::REPLICATE_API_TOKEN 未配置 — 跳过 live 探测，生成仍为 demo"
+            exit 0
+          fi
+          node scripts/verify-ai-generate-live.mjs ${{ matrix.site_id }}
 
       - name: Notify Feishu
         if: success() && steps.vercel.outputs.url != ''
