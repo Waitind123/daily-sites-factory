@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "dunning-失败支付恢复",
+      "name": "Dunning 失败支付恢复",
+      "description": "Stripe 订阅失败支付无自动重试提醒，独立开发者需要 .9/月的 dunning 邮件+重试链接工具",
+      "template": "micro-saas",
+      "source": "MicroGaps 2026 failed payment recovery gap",
+      "discoveredAt": "2026-07-02T01:03:40.755Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-01T23:01:22.722Z",
+  "lastDiscoveredAt": "2026-07-02T01:03:40.755Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
