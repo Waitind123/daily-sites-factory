@@ -307,7 +307,9 @@ export function LiveFactoryDashboard({ locale }: { locale: string }) {
                 <MetricCard label={METRIC.purchase} value={summary.period.purchase} accent="text-emerald-400" />
               </div>
 
-              {data.metricsCharts ? <MetricsChartsPanel data={data.metricsCharts} /> : null}
+              {data.metricsCharts ? (
+                <MetricsChartsPanel locale={locale} data={data.metricsCharts} />
+              ) : null}
               <div className="grid sm:grid-cols-4 gap-3 mt-3">
                 <MetricCard label={DASHBOARD_COPY.siteCount} value={summary.siteCount} />
                 <MetricCard

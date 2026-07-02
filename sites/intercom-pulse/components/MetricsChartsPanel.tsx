@@ -220,7 +220,7 @@ function FunnelBarChart({ data }: { data: MetricsChartsPayload }) {
   );
 }
 
-export function MetricsChartsPanel({ data }: { data: MetricsChartsPayload }) {
+export function MetricsChartsPanel({ locale: _locale, data }: { locale: string; data: MetricsChartsPayload }) {
   const [metric, setMetric] = useState<MetricKey>("pv");
 
   const stacked = useMemo(
