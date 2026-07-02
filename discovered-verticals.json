@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "pricing-intel",
+      "name": "竞品定价情报",
+      "description": "Kompyte/Klue $10K+/年太贵，solo founder 需要 $9.9/月的 SaaS 定价页变动监控+策略建议",
+      "template": "micro-saas",
+      "source": "PriceGhost indie founder gap 2026",
+      "discoveredAt": "2026-07-02T06:07:35.385Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-02T01:03:40.755Z",
+  "lastDiscoveredAt": "2026-07-02T06:07:35.385Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
