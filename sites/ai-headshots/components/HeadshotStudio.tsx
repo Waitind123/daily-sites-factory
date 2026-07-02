@@ -1,5 +1,6 @@
 "use client";
 
+import { CheckoutButton } from "@/components/CheckoutButton";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n-shared";
@@ -115,6 +116,14 @@ export function HeadshotStudio({ locale }: { locale: Locale }) {
         <p className="text-muted mt-1">{t.subtitle}</p>
       </div>
 
+      {trial && !trial.isMember && trial.remaining <= 1 && !showPaywall && (
+        <div className="mb-4 rounded-xl bg-rose-50 border border-rose-200 px-4 py-3 text-sm text-rose-900 text-center">
+          {locale === "zh"
+            ? "⚠️ 最后 1 次免费机会 — 用完需订阅 ¥69/月 或 $9.9/月"
+            : "⚠️ Last free try — subscribe at ¥69/mo or $9.9/mo after"}
+        </div>
+      )}
+
       {trial && !trial.isMember && (
         <div className="mb-4 rounded-xl bg-brand-600/10 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
           {t.trialRemaining}{" "}
@@ -131,15 +140,18 @@ export function HeadshotStudio({ locale }: { locale: Locale }) {
       )}
 
       {showPaywall && (
-        <div className="mb-4 rounded-xl bg-amber-50 border border-amber-200 p-4 text-center">
-          <p className="font-medium text-amber-900">{t.paywallTitle}</p>
-          <p className="text-sm text-amber-700 mt-1">{t.paywallBody}</p>
-          <Link
-            href="/join"
-            className="inline-block mt-3 rounded-lg bg-brand-600 text-white px-6 py-2 text-sm font-semibold hover:bg-brand-700"
-          >
-            {t.paywallCta}
-          </Link>
+        <div className="mb-4 rounded-xl bg-amber-50 border-2 border-amber-300 p-5 text-center shadow-lg">
+          <p className="font-bold text-lg text-amber-900">{t.paywallTitle}</p>
+          <p className="text-sm text-amber-800 mt-2">{t.paywallBody}</p>
+          <p className="text-xs text-amber-700 mt-2">{t.paywallHint}</p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+            <CheckoutButton label={t.paywallCtaUsd} currency="usd" />
+            <CheckoutButton
+              label={t.paywallCtaCny}
+              currency="cny"
+              className="!bg-emerald-600 hover:!bg-emerald-700"
+            />
+          </div>
         </div>
       )}
 
