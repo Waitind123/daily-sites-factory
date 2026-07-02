@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "sec-quest-pulse",
+      "name": "安全问卷自动填写",
+      "description": "B2B SaaS 收到 250 行 Excel 安全问卷，Vanta/Conveyor k+/年太贵，需要 .9/月的 AI 自动填写安全问卷工具",
+      "template": "micro-saas",
+      "source": "HN#46940547 Vanta/Conveyor alternative security questionnaire",
+      "discoveredAt": "2026-07-02T16:03:18.618Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-02T14:04:30.361Z",
+  "lastDiscoveredAt": "2026-07-02T16:03:18.618Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
