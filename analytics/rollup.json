@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:13:32.418Z",
+  "updatedAt": "2026-07-02T02:13:47.062Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -149,11 +149,49 @@
             "214f184e-2efe-48ad-95e2-10339519c8f5": 1,
             "b247d4c7-2554-4957-ac3a-5a8fe2185558": 1
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7a1d43b6-b890-4552-a66d-2ab10feb0934"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1
+          }
         }
       },
       "totals": {
-        "pv": 61,
-        "uv": 34,
+        "pv": 62,
+        "uv": 35,
         "trial": 0,
         "checkout": 2,
         "purchase": 2
@@ -180,7 +218,8 @@
         "dd1710cf-fc0b-49b8-91fd-269ce535f017",
         "6458dd73-2131-47a5-b238-d7e59e0b6b95",
         "214f184e-2efe-48ad-95e2-10339519c8f5",
-        "b247d4c7-2554-4957-ac3a-5a8fe2185558"
+        "b247d4c7-2554-4957-ac3a-5a8fe2185558",
+        "7a1d43b6-b890-4552-a66d-2ab10feb0934"
       ]
     },
     "ai-waitlist": {
@@ -5880,6 +5919,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7a1d43b6-b890-4552-a66d-2ab10feb0934",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-02T02:13:46.934Z",
+      "lastSeen": "2026-07-02T02:13:46.934Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3dc68322-5f63-464d-82ad-fb0cc8f9d9f9",
       "siteId": "freelance-proposal",
