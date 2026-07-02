@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T19:05:43.222Z",
+  "updatedAt": "2026-07-02T20:05:51.114Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2413,11 +2413,49 @@
             "08a6ebf8-7258-4e99-9fb6-f079a0d16557": 1,
             "24ad09ab-3deb-4ab6-a9dd-ab7bcefe4e10": 1
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "25134fd1-ed57-4a92-96a9-dcdeffca57d6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "4": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "25134fd1-ed57-4a92-96a9-dcdeffca57d6": 1
+          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 7,
+        "pv": 9,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2434,7 +2472,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:50.026Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "25134fd1-ed57-4a92-96a9-dcdeffca57d6"
+      ]
     },
     "link-pulse": {
       "url": "https://link-pulse-one.vercel.app",
@@ -7204,6 +7245,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "25134fd1-ed57-4a92-96a9-dcdeffca57d6",
+      "siteId": "landing-generator",
+      "firstSeen": "2026-07-02T20:05:50.866Z",
+      "lastSeen": "2026-07-02T20:05:50.866Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9b59f61d-50be-4cf4-91bb-b9dcb4a872a8",
       "siteId": "visa-guide",
