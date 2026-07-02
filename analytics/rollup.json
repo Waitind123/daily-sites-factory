@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T18:48:07.632Z",
+  "updatedAt": "2026-07-02T19:03:49.948Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4695,11 +4695,49 @@
             "bbdd964d-86f9-4913-a20a-fc27284a12a4": 1,
             "a70029d3-f9f4-4db7-b30e-256e99835802": 1
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/visas": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "3": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "681c20be-2ac4-4ba4-832c-4b1887e7cd9f": 1
+          }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 14,
+        "pv": 18,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4720,7 +4758,8 @@
       "knownVisitors": [
         "8f4d33bd-d19c-4d5b-b285-214b24d6b1ad",
         "bbdd964d-86f9-4913-a20a-fc27284a12a4",
-        "a70029d3-f9f4-4db7-b30e-256e99835802"
+        "a70029d3-f9f4-4db7-b30e-256e99835802",
+        "681c20be-2ac4-4ba4-832c-4b1887e7cd9f"
       ]
     },
     "visa-tracker": {
@@ -7161,6 +7200,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "681c20be-2ac4-4ba4-832c-4b1887e7cd9f",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-02T19:03:49.586Z",
+      "lastSeen": "2026-07-02T19:03:49.586Z",
+      "pageviews": 1,
+      "path": "/visas",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1783018087411",
       "siteId": "feature-vote",
