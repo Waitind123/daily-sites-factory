@@ -1,3 +1,4 @@
+import { InviteReferralCard } from "@/components/InviteReferralCard";
 import { CheckoutButton, FeatureGrid } from "@/components/ui";
 import { isDemoMode } from "@/lib/stripe";
 

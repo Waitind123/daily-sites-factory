@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
+import { ReferralCapture } from "@/components/ReferralCapture";
 import { PromoCrossSell } from "@/components/PromoCrossSell";
 import { FixedContactBar } from "@/components/FixedContactBar";
 import { Inter } from "next/font/google";
@@ -29,6 +30,7 @@ export default async function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased bg-background text-foreground pb-11`}>
         <AnalyticsBeacon siteId={siteMeta.id} />
+        <ReferralCapture siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
         <PromoCrossSell locale={locale} siteId={siteMeta.id} />
         <main>{children}</main>

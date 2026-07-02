@@ -5,9 +5,12 @@ import Link from "next/link";
 import type { Locale } from "@/lib/i18n-shared";
 import { getHomeCopy } from "@/lib/copy";
 import { getApiErrorMessage, getStudioCopy } from "@/lib/copy-app";
+import { getVisitorId } from "@/lib/referral-client";
 
 type TrialInfo = {
   limit: number;
+  bonus?: number;
+  effectiveLimit?: number;
   used: number;
   remaining: number;
   isMember: boolean;
@@ -28,7 +31,8 @@ export function HeadshotStudio({ locale }: { locale: Locale }) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    fetch("/api/trial")
+    const vid = getVisitorId();
+    fetch(`/api/trial?visitorId=${encodeURIComponent(vid)}`)
       .then((r) => r.json())
       .then(setTrial)
       .catch(() => null);
@@ -115,9 +119,14 @@ export function HeadshotStudio({ locale }: { locale: Locale }) {
         <div className="mb-4 rounded-xl bg-brand-600/10 border border-brand-200 px-4 py-3 text-sm text-brand-800 text-center">
           {t.trialRemaining}{" "}
           <strong>
-            {trial.remaining}/{trial.limit}
+            {trial.remaining}/{trial.effectiveLimit ?? trial.limit}
           </strong>{" "}
           {t.trialSuffix}
+          {trial.bonus ? (
+            <span className="text-brand-600">
+              {locale === "zh" ? `（含邀请奖励 +${trial.bonus}）` : ` (+${trial.bonus} invite bonus)`}
+            </span>
+          ) : null}
         </div>
       )}
 

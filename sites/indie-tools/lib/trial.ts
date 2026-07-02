@@ -19,5 +19,10 @@ export async function useTrial(isMember: boolean) {
 
 export async function recordTrialUse() {
   const { incrementTrial } = await import("./trial-core");
-  return incrementTrial(SITE_ID);
+  const result = await incrementTrial(SITE_ID);
+  if (result.wasFirstTrial) {
+    const { reportReferralTrialComplete } = await import("./referral-server");
+    await reportReferralTrialComplete(SITE_ID);
+  }
+  return result;
 }
