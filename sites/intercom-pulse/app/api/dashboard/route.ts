@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { loadRollup } from "@/lib/analytics-store";
 import { loadSitesFromState } from "@/lib/sites-registry";
-import { loadRevenueGoal, loadStripeHealth } from "@/lib/dashboard-config";
+import { loadRevenueGoal, loadStripeHealth, loadHealthWatch } from "@/lib/dashboard-config";
 import { buildDashboardSummary, buildRevenueGoal } from "@/lib/dashboard-metrics";
 import { buildVisitorInsights } from "@/lib/visitor-insights";
 import { buildVisitorTable } from "@/lib/visitor-registry";
@@ -36,6 +36,7 @@ export async function GET(req: NextRequest) {
   const revenueSprint = revenueGoal
     ? buildRevenueSprint(revenueGoal, sites, rollup, stripe, range)
     : null;
+  const healthWatch = loadHealthWatch();
 
   return NextResponse.json(
     {
@@ -47,6 +48,7 @@ export async function GET(req: NextRequest) {
       visitorInsights,
       visitorTable,
       promoPerformance,
+      healthWatch,
       filters: { preset, siteId, range, realUsersOnly: true },
     },
     { headers: { "Cache-Control": "no-store, max-age=0" } }

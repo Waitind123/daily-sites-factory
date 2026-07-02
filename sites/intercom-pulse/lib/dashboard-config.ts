@@ -47,3 +47,22 @@ export function loadStripeHealth(): StripeHealth {
     updatedAt: null,
   };
 }
+
+export interface HealthWatchSnapshot {
+  at: string;
+  summary: { pass: number; warn: number; fail: number };
+  failures: Array<{ siteId: string; check: string; detail: string }>;
+}
+
+export function loadHealthWatch(): HealthWatchSnapshot | null {
+  const paths = [
+    join(process.cwd(), "data", "health-watch-latest.json"),
+    join(process.cwd(), "..", "..", "analytics", "health-watch-latest.json"),
+  ];
+  for (const path of paths) {
+    if (!existsSync(path)) continue;
+    const raw = JSON.parse(readFileSync(path, "utf8")) as HealthWatchSnapshot;
+    if (raw?.summary) return raw;
+  }
+  return null;
+}
