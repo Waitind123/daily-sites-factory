@@ -6,6 +6,10 @@
 import { readFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import {
+  formatFactoryDeploySummary,
+  formatSiteDeployLabelShort,
+} from "./lib/feishu-site-index.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const reportPath = process.argv[2] || join(root, "analytics/health-watch-latest.json");
@@ -36,7 +40,7 @@ if (failCount === 0 && warnCount === 0) {
 const time = new Date(report.at).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" });
 const failLines = (report.failures || [])
   .slice(0, 8)
-  .map((f) => `• [${f.siteId}] ${f.check}: ${f.detail}`)
+  .map((f) => `• ${formatSiteDeployLabelShort(f.siteId)} — ${f.check}: ${f.detail}`)
   .join("\n");
 
 let fixLines = "";
@@ -51,6 +55,7 @@ if (autofix?.failed?.length) {
 }
 
 const text = `🏥 站点健康巡检异常
+${formatFactoryDeploySummary()}
 时间: ${time}
 结果: ❌ ${failCount} 失败 / ⚠️ ${warnCount} 警告
 

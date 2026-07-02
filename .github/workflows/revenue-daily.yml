@@ -29,13 +29,4 @@ jobs:
         env:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           HAS_STRIPE: ${{ secrets.STRIPE_SECRET_KEY != '' && 'yes' || 'no' }}
-        run: |
-          if [ -z "$FEISHU_WEBHOOK_URL" ]; then exit 0; fi
-          node -e "
-            const r=require('./analytics/rollup.json');
-            const pv=Object.values(r.sites||{}).reduce((a,s)=>a+(s.totals?.pv||0),0);
-            const stripeMsg=process.env.HAS_STRIPE==='yes'?'Stripe 密钥已配置':'⚠️ Stripe 未配置=演示付费，无法真收钱';
-            fetch(process.env.FEISHU_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},
-              body:JSON.stringify({msg_type:'text',content:{text:'💰 赚钱日报\\n总PV: '+pv+'\\n'+stripeMsg+'\\n看板: https://intercom-pulse.vercel.app/factory-dashboard'}})})
-            }).catch(()=>{});
-          "
+        run: node scripts/notify-feishu-revenue-daily.mjs

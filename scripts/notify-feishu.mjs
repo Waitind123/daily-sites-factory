@@ -17,9 +17,12 @@
  *
  * 优先使用模式 A；未配置 App 凭证时回退到 Webhook。
  */
+import { formatSiteDeployLabel } from "./lib/feishu-site-index.mjs";
+
 const siteId = process.argv[2];
 const deployUrl = process.argv[3];
 const siteName = process.argv[4] || siteId;
+const deployLabel = siteId ? formatSiteDeployLabel(siteId) : "";
 
 const webhook = process.env.FEISHU_WEBHOOK_URL;
 const appId = process.env.FEISHU_APP_ID;
@@ -57,6 +60,7 @@ const postBody = {
         content: [
           [
             { tag: "text", text: `站点：${siteName} (${siteId})\n` },
+            { tag: "text", text: `${deployLabel}\n` },
             { tag: "text", text: `时间：${time}\n` },
           ],
           [{ tag: "a", text: "打开公网 URL", href: deployUrl }],
