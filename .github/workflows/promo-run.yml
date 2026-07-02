@@ -14,7 +14,9 @@ jobs:
           node-version: "22"
 
       - name: IndexNow + promo links
-        run: node scripts/run-promotion.mjs
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: node scripts/promo-multi-platform.mjs
 
       - name: Reddit auto post (if configured)
         env:
