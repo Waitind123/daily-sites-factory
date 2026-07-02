@@ -227,6 +227,13 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/track", label: { en: "Track", zh: "追踪" } }],
   },
+  "pricing-intel": {
+    emoji: "🧠",
+    name: { en: "Pricing Intel", zh: "竞品定价情报" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/competitive-pricing-intelligence-indie",
+    nav: [{ href: "/intel", label: { en: "Intel", zh: "情报" } }],
+  },
   "landing-generator": {
     emoji: "🎨",
     name: { en: "Landing Generator", zh: "Landing Page 生成器" },
