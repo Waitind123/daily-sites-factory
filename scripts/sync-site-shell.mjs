@@ -279,6 +279,16 @@ const SITE_REGISTRY = {
     jsonLd: "softwareApplicationJsonLd",
     nav: [{ href: "/calc", label: { en: "Calculate", zh: "计算" } }],
   },
+  "scope3-commute-pulse": {
+    emoji: "🚌",
+    name: { en: "Scope3 Commute Pulse", zh: "Scope 3 员工通勤" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/csrd-scope3-employee-commuting",
+    nav: [
+      { href: "/guide/csrd-scope3-employee-commuting", label: { en: "Guide", zh: "指南" } },
+      { href: "/survey", label: { en: "Survey", zh: "调研" } },
+    ],
+  },
   "timezone-planner": {
     emoji: "🌍",
     name: { en: "Timezone Planner", zh: "跨时区会议" },
