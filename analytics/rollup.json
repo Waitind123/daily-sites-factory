@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T06:03:29.345Z",
+  "updatedAt": "2026-07-02T06:05:19.182Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -151,56 +151,58 @@
           }
         },
         "2026-07-02": {
-          "pv": 4,
-          "uv": 3,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 1,
           "purchase": 0,
           "visitors": [
             "7a1d43b6-b890-4552-a66d-2ab10feb0934",
             "ef325f93-2331-4ba3-a560-05b10a00933a",
-            "e0f726d3-463c-4d03-a8ad-78e15b5e6176"
+            "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
+            "208b9ece-4440-4282-8a66-64cf719ac7f7"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
-              "/": 2,
+              "/": 3,
               "/join": 1,
               "/legal/privacy": 1
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
-              "zh": 4
+              "zh": 5
             },
             "timezones": {
-              "UTC": 2,
+              "UTC": 3,
               "Asia/Shanghai": 2
             },
             "utmSources": {},
             "hours": {
               "10": 1,
               "13": 2,
-              "14": 1
+              "14": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 2
             }
           },
           "visitorHits": {
             "7a1d43b6-b890-4552-a66d-2ab10feb0934": 1,
             "ef325f93-2331-4ba3-a560-05b10a00933a": 1,
-            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 2
+            "e0f726d3-463c-4d03-a8ad-78e15b5e6176": 2,
+            "208b9ece-4440-4282-8a66-64cf719ac7f7": 1
           }
         }
       },
       "totals": {
-        "pv": 65,
-        "uv": 37,
+        "pv": 66,
+        "uv": 38,
         "trial": 0,
         "checkout": 3,
         "purchase": 2
@@ -229,7 +231,8 @@
         "214f184e-2efe-48ad-95e2-10339519c8f5",
         "b247d4c7-2554-4957-ac3a-5a8fe2185558",
         "7a1d43b6-b890-4552-a66d-2ab10feb0934",
-        "ef325f93-2331-4ba3-a560-05b10a00933a"
+        "ef325f93-2331-4ba3-a560-05b10a00933a",
+        "208b9ece-4440-4282-8a66-64cf719ac7f7"
       ]
     },
     "ai-waitlist": {
@@ -6237,6 +6240,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "208b9ece-4440-4282-8a66-64cf719ac7f7",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-02T06:05:18.970Z",
+      "lastSeen": "2026-07-02T06:05:18.970Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e0f726d3-463c-4d03-a8ad-78e15b5e6176",
       "siteId": "ai-headshots",
