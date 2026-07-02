@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T02:16:01.018Z",
+  "updatedAt": "2026-07-02T02:16:03.799Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6005,9 +6005,86 @@
         "0c613094-f9ef-4205-8302-c45afb51b68a",
         "afc03609-268e-4c93-93be-36ee4ca08143"
       ]
+    },
+    "dunning-pulse": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f7f06329-8cba-4018-a9f7-48f02e857101"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f7f06329-8cba-4018-a9f7-48f02e857101": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "f7f06329-8cba-4018-a9f7-48f02e857101"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f7f06329-8cba-4018-a9f7-48f02e857101",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-07-02T02:16:03.696Z",
+      "lastSeen": "2026-07-02T02:16:03.696Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1ff95991-4008-41e9-9f3a-06964686b50b",
       "siteId": "virtual-cowork-room",
