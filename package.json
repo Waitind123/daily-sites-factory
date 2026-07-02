@@ -16,6 +16,8 @@
     "verify-site": "node scripts/verify-site-quality.mjs",
     "verify-visitor": "node scripts/verify-site-visitor.mjs",
     "verify-visitor-e2e": "node scripts/verify-site-visitor-e2e.mjs",
+    "health-watch": "node scripts/hourly-health-watch.mjs",
+    "health-watch-autofix": "node scripts/health-watch-autofix.mjs",
     "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
     "notify-feishu": "node scripts/notify-feishu.mjs"
   },

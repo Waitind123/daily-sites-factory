@@ -1,0 +1,62 @@
+name: Hourly health watch
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: hourly-health-watch
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Extract deploy URLs
+        run: node scripts/extract-site-urls.mjs
+
+      - name: Run health watch (Tier-1 deep + Tier-2 light)
+        id: watch
+        continue-on-error: true
+        run: node scripts/hourly-health-watch.mjs
+
+      - name: Auto-fix on failure
+        if: steps.watch.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/health-watch-autofix.mjs
+
+      - name: Feishu alert
+        if: steps.watch.outcome == 'failure'
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: node scripts/notify-feishu-health.mjs
+
+      - name: Commit health report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/health-watch-latest.json analytics/health-watch-history.jsonl analytics/health-watch-autofix-latest.json sites/intercom-pulse/data/health-watch-latest.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No report changes"
+          else
+            git commit -m "analytics: health watch report [skip ci] [skip deploy]"
+            git push
+          fi
+
+      - name: Fail job if checks failed
+        if: steps.watch.outcome == 'failure'
+        run: |
+          echo "Health watch found failures — see analytics/health-watch-latest.json"
+          exit 1
