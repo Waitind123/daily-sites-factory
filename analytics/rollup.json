@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T07:26:41.286Z",
+  "updatedAt": "2026-07-02T08:12:50.697Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6421,9 +6421,86 @@
       "knownVisitors": [
         "686cb899-838e-417d-8dfa-57014e879760"
       ]
+    },
+    "pricing-convert": {
+      "url": "",
+      "daily": {
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "033552bf-f776-496a-8aa8-bf40a75de543"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "033552bf-f776-496a-8aa8-bf40a75de543": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "033552bf-f776-496a-8aa8-bf40a75de543"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "033552bf-f776-496a-8aa8-bf40a75de543",
+      "siteId": "pricing-convert",
+      "firstSeen": "2026-07-02T08:12:50.601Z",
+      "lastSeen": "2026-07-02T08:12:50.601Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "aac9b2d8-8dca-4a9a-865e-e388f819df68",
       "siteId": "dunning-pulse",
