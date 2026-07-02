@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T04:05:28.504Z",
+  "updatedAt": "2026-07-02T04:08:22.971Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1828,47 +1828,50 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "6f355eef-644e-40e8-96a0-6b6ffbd693b1"
+            "6f355eef-644e-40e8-96a0-6b6ffbd693b1",
+            "df86858f-057c-419f-8297-ebadfc621f44"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/tools": 1
+              "/tools": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "12": 1
+              "12": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "6f355eef-644e-40e8-96a0-6b6ffbd693b1": 1
+            "6f355eef-644e-40e8-96a0-6b6ffbd693b1": 1,
+            "df86858f-057c-419f-8297-ebadfc621f44": 1
           }
         }
       },
       "totals": {
-        "pv": 14,
-        "uv": 8,
+        "pv": 15,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1887,7 +1890,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "6f355eef-644e-40e8-96a0-6b6ffbd693b1"
+        "6f355eef-644e-40e8-96a0-6b6ffbd693b1",
+        "df86858f-057c-419f-8297-ebadfc621f44"
       ]
     },
     "intercom-pulse": {
@@ -6169,6 +6173,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "df86858f-057c-419f-8297-ebadfc621f44",
+      "siteId": "indie-tools",
+      "firstSeen": "2026-07-02T04:08:22.739Z",
+      "lastSeen": "2026-07-02T04:08:22.739Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "6f355eef-644e-40e8-96a0-6b6ffbd693b1",
       "siteId": "indie-tools",
