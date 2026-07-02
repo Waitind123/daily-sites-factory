@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T09:04:58.562Z",
+  "updatedAt": "2026-07-02T09:07:29.279Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5014,47 +5014,49 @@
           }
         },
         "2026-07-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "42e8665b-a209-4287-bf46-af749a122de7"
+            "42e8665b-a209-4287-bf46-af749a122de7",
+            "065083f5-6730-4ab1-976b-bf56c37c28c6"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "42e8665b-a209-4287-bf46-af749a122de7": 1
+            "42e8665b-a209-4287-bf46-af749a122de7": 1,
+            "065083f5-6730-4ab1-976b-bf56c37c28c6": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 10,
+        "pv": 14,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5074,7 +5076,8 @@
       },
       "knownVisitors": [
         "e51fc434-91d4-4789-979e-cd61efcb69ca",
-        "42e8665b-a209-4287-bf46-af749a122de7"
+        "42e8665b-a209-4287-bf46-af749a122de7",
+        "065083f5-6730-4ab1-976b-bf56c37c28c6"
       ]
     },
     "saas-早期用户市场": {
@@ -6537,6 +6540,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "065083f5-6730-4ab1-976b-bf56c37c28c6",
+      "siteId": "visa-alert",
+      "firstSeen": "2026-07-02T09:07:29.172Z",
+      "lastSeen": "2026-07-02T09:07:29.172Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "42e8665b-a209-4287-bf46-af749a122de7",
       "siteId": "visa-alert",
