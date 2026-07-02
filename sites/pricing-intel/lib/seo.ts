@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://pricing-intel.vercel.app",
+    url: "https://pricing-intel-vert.vercel.app",
     name: "Pricing Intel",
     title: "Pricing Intel — SaaS competitor pricing intelligence for indie founders $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://pricing-intel.vercel.app",
+    url: "https://pricing-intel-vert.vercel.app",
     name: "竞品定价情报",
     title: "竞品定价情报 — solo founder 的 SaaS 定价监控与策略分析 $9.9/月",
     description:
