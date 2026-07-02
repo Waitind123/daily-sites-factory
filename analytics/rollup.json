@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T04:08:22.971Z",
+  "updatedAt": "2026-07-02T05:05:08.341Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2342,11 +2342,49 @@
             "8aaca4e9-d3b8-4cf3-b43b-d4192565ef64": 2,
             "192ffd31-f391-4906-b8f7-d3f63409192e": 1
           }
+        },
+        "2026-07-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c381ce93-7211-441c-9e86-ad762bd3bcc2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c381ce93-7211-441c-9e86-ad762bd3bcc2": 1
+          }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 9,
+        "pv": 16,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2365,7 +2403,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "192ffd31-f391-4906-b8f7-d3f63409192e"
+        "192ffd31-f391-4906-b8f7-d3f63409192e",
+        "c381ce93-7211-441c-9e86-ad762bd3bcc2"
       ]
     },
     "newsletter-stack": {
@@ -6173,6 +6212,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c381ce93-7211-441c-9e86-ad762bd3bcc2",
+      "siteId": "meetup-host",
+      "firstSeen": "2026-07-02T05:05:08.112Z",
+      "lastSeen": "2026-07-02T05:05:08.112Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "df86858f-057c-419f-8297-ebadfc621f44",
       "siteId": "indie-tools",
