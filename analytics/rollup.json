@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T02:10:46.118Z",
+  "updatedAt": "2026-07-03T02:10:47.179Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -744,7 +744,7 @@
           "visitors": []
         },
         "2026-07-03": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -755,37 +755,38 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/passes": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "10": 2
+              "10": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "9a2c7a05-092f-4aea-ba9c-249fafdfa20a": 1,
-            "383f22f5-3b3b-45c2-b8b9-8d6f9ba71fe7": 1
+            "383f22f5-3b3b-45c2-b8b9-8d6f9ba71fe7": 2
           }
         }
       },
       "totals": {
-        "pv": 3,
+        "pv": 4,
         "uv": 2,
         "trial": 0,
         "checkout": 0,
@@ -7578,9 +7579,9 @@
       "visitorId": "383f22f5-3b3b-45c2-b8b9-8d6f9ba71fe7",
       "siteId": "coworking-daypass",
       "firstSeen": "2026-07-03T02:10:45.975Z",
-      "lastSeen": "2026-07-03T02:10:45.975Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-03T02:10:47.061Z",
+      "pageviews": 2,
+      "path": "/passes",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
