@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T01:06:29.246Z",
+  "updatedAt": "2026-07-03T02:08:14.168Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -742,11 +742,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9a2c7a05-092f-4aea-ba9c-249fafdfa20a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9a2c7a05-092f-4aea-ba9c-249fafdfa20a": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -763,7 +801,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:35.374Z",
         "score": 80
-      }
+      },
+      "knownVisitors": [
+        "9a2c7a05-092f-4aea-ba9c-249fafdfa20a"
+      ]
     },
     "coworking-finder": {
       "url": "https://coworking-finder-lovat.vercel.app",
@@ -7530,6 +7571,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9a2c7a05-092f-4aea-ba9c-249fafdfa20a",
+      "siteId": "coworking-daypass",
+      "firstSeen": "2026-07-03T02:08:13.918Z",
+      "lastSeen": "2026-07-03T02:08:13.918Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "96863ca9-2df1-4012-8424-e99ee7226501",
       "siteId": "timezone-planner",
