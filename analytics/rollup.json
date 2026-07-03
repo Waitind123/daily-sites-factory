@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T04:08:35.553Z",
+  "updatedAt": "2026-07-03T04:08:36.618Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1671,7 +1671,7 @@
           }
         },
         "2026-07-03": {
-          "pv": 10,
+          "pv": 11,
           "uv": 10,
           "trial": 0,
           "checkout": 0,
@@ -1690,28 +1690,29 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 10
+              "直接访问": 11
             },
             "paths": {
               "/": 8,
-              "/join": 2
+              "/join": 2,
+              "/proposal": 1
             },
             "devices": {
-              "desktop": 10
+              "desktop": 11
             },
             "locales": {
-              "zh": 10
+              "zh": 11
             },
             "timezones": {
-              "UTC": 10
+              "UTC": 11
             },
             "utmSources": {},
             "hours": {
-              "12": 10
+              "12": 11
             },
             "visitorTypes": {
               "new": 10,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
@@ -1724,12 +1725,12 @@
             "8b2c9550-7a9d-428a-b37e-32686134a88e": 1,
             "949335fc-5bd6-4b05-8ac2-15bc355d0a79": 1,
             "882689ad-620e-490a-a999-b080f9ffc4bf": 1,
-            "2da6f73f-f808-435b-b267-8a42a18c70db": 1
+            "2da6f73f-f808-435b-b267-8a42a18c70db": 2
           }
         }
       },
       "totals": {
-        "pv": 16,
+        "pv": 17,
         "uv": 13,
         "trial": 0,
         "checkout": 0,
@@ -7733,9 +7734,9 @@
       "visitorId": "2da6f73f-f808-435b-b267-8a42a18c70db",
       "siteId": "freelance-proposal",
       "firstSeen": "2026-07-03T04:08:35.424Z",
-      "lastSeen": "2026-07-03T04:08:35.424Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-03T04:08:36.513Z",
+      "pageviews": 2,
+      "path": "/proposal",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
