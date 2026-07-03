@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import {createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
+import { createCheckoutSession, createCnyCheckoutSession } from "@/lib/stripe";
 import { memberCookieHeader } from "@/lib/member";
+import { getLocale } from "@/lib/locale";
+import { apiError } from "@/lib/api-errors";
 
 async function checkoutRedirect(request: NextRequest) {
   const origin = request.headers.get("origin") || request.nextUrl.origin;
@@ -17,7 +19,8 @@ async function checkoutRedirect(request: NextRequest) {
     return response;
   }
 
-  const result = await createCheckoutSession(origin);
+  const locale = await getLocale();
+  const result = await createCheckoutSession(origin, locale);
   const response = NextResponse.redirect(result.url, 302);
   if (result.demo) {
     response.headers.append("Set-Cookie", memberCookieHeader());
@@ -43,10 +46,10 @@ export async function GET(request: NextRequest) {
       return apiError("CHECKOUT_FAILED", 500);
     }
   }
+  const { isDemoMode } = await import("@/lib/stripe");
   return NextResponse.json({
     status: "ok",
-    code: "checkout_ready",
     price: "$9.9/mo",
-    demo: (await import("@/lib/stripe")).isDemoMode(),
+    demo: isDemoMode(),
   });
 }

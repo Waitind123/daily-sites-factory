@@ -3,7 +3,9 @@ import Link from "next/link";
 import { buildSiteMetadata } from "@/lib/site-seo";
 import { siteConfig } from "@/lib/seo";
 
-export const metadata: Metadata = buildSiteMetadata(siteConfig, {
+export const metadata: Metadata = buildSiteMetadata(
+  { ...siteConfig, keywords: [...siteConfig.keywords] },
+  {
   title: "2026 出差如何当天订到联合办公日票 — 完整指南",
   description:
     "落地新城市找不到工位？手把手教你当天预订 coworking day pass：库存查询、WiFi 验证、walk-in 攻略和热门城市推荐。",

@@ -16,7 +16,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const sitesDir = join(root, "sites");
 
 /** 内部工具站 / 未完成站，跳过产品质量闸门 */
-const SKIP_SITES = new Set(["factory-dashboard", "coworking-daypass"]);
+const SKIP_SITES = new Set(["factory-dashboard"]);
 
 const EXEMPT = [
   /node_modules/,

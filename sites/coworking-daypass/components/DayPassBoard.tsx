@@ -3,6 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { venues as allVenues, cities, type DayPassVenue } from "@/lib/data";
+import type { Locale } from "@/lib/i18n-shared";
+import { getPassesCopy } from "@/lib/copy-app";
+import { getApiErrorMessage } from "@/lib/copy-app";
 
 type TrialInfo = {
   limit: number;
@@ -28,9 +31,10 @@ type BookingConfirmation = {
 
 type VenueDetail = DayPassVenue & { unlocked: boolean; booking?: BookingConfirmation };
 
-const TAGS = ["即时预订", "视频会议", "低价", "数字游民"];
+export function DayPassBoard({ locale }: { locale: Locale }) {
+  const c = getPassesCopy(locale);
+  const tags = c.tags;
 
-export function DayPassBoard() {
   const [query, setQuery] = useState("");
   const [city, setCity] = useState("");
   const [tag, setTag] = useState("");
@@ -74,7 +78,7 @@ export function DayPassBoard() {
           setTrial((t) => (t ? { ...t, remaining: 0, canUse: false } : t));
           return;
         }
-        throw new Error(data.error || "预订失败");
+        throw new Error(getApiErrorMessage(data.code, locale));
       }
 
       setSelected(data.venue);
@@ -82,7 +86,7 @@ export function DayPassBoard() {
         setTrial(data.trial);
       }
     } catch (e) {
-      setError(e instanceof Error ? e.message : "预订失败");
+      setError(e instanceof Error ? e.message : c.bookingFailed);
     } finally {
       setLoading(false);
     }
@@ -99,14 +103,12 @@ export function DayPassBoard() {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-3xl font-bold">今日可订日票</h1>
-          <p className="text-muted mt-1">{filtered.length} 个场地 · 实时库存更新</p>
+          <h1 className="text-3xl font-bold">{c.title}</h1>
+          <p className="text-muted mt-1">{c.subtitle(filtered.length)}</p>
         </div>
         {trial && (
           <div className="text-sm rounded-lg bg-brand-600/10 text-brand-500 px-4 py-2 font-medium">
-            {trial.isMember
-              ? "✓ 会员 · 无限预订"
-              : `剩余 ${trial.remaining}/${trial.limit} 次免费体验`}
+            {trial.isMember ? c.memberBadge : c.trialBadge(trial.remaining, trial.limit)}
           </div>
         )}
       </div>
@@ -114,7 +116,7 @@ export function DayPassBoard() {
       <div className="flex flex-col gap-3 mb-6">
         <input
           type="search"
-          placeholder="搜索城市、场地名称…"
+          placeholder={c.searchPlaceholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="w-full rounded-xl border border-border px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -125,14 +127,14 @@ export function DayPassBoard() {
             onChange={(e) => setCity(e.target.value)}
             className="rounded-full border border-border px-3 py-1 text-xs font-medium bg-surface text-muted"
           >
-            <option value="">全部城市</option>
-            {cities.map((c) => (
-              <option key={c} value={c}>
-                {c}
+            <option value="">{c.allCities}</option>
+            {cities.map((cityName) => (
+              <option key={cityName} value={cityName}>
+                {cityName}
               </option>
             ))}
           </select>
-          {TAGS.map((t) => (
+          {tags.map((t) => (
             <button
               key={t}
               type="button"
@@ -152,14 +154,14 @@ export function DayPassBoard() {
       {showPaywall && (
         <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <p className="font-semibold text-amber-900">免费体验已用完</p>
-            <p className="text-sm text-amber-700 mt-1">订阅 $9.9/月，无限预订日票 + 实时库存 + 预订确认单</p>
+            <p className="font-semibold text-amber-900">{c.paywallTitle}</p>
+            <p className="text-sm text-amber-700 mt-1">{c.paywallDesc}</p>
           </div>
           <Link
             href="/join"
             className="shrink-0 rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
-            立即订阅
+            {c.subscribeNow}
           </Link>
         </div>
       )}
@@ -188,15 +190,17 @@ export function DayPassBoard() {
                     {venue.city}, {venue.country}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
-                    <span className={`text-xs px-2 py-0.5 rounded font-medium ${availabilityColor(venue.spotsLeftToday, venue.totalSpots)}`}>
-                      今日余 {venue.spotsLeftToday}/{venue.totalSpots}
+                    <span
+                      className={`text-xs px-2 py-0.5 rounded font-medium ${availabilityColor(venue.spotsLeftToday, venue.totalSpots)}`}
+                    >
+                      {c.spotsToday(venue.spotsLeftToday, venue.totalSpots)}
                     </span>
                     <span className="text-xs bg-surface-muted text-muted px-2 py-0.5 rounded">
                       📶 {venue.wifiMbps} Mbps
                     </span>
                     {venue.instantBook && (
                       <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded">
-                        即时预订
+                        {c.instantBook}
                       </span>
                     )}
                   </div>
@@ -211,7 +215,7 @@ export function DayPassBoard() {
           {selected?.booking ? (
             <div className="rounded-xl border border-brand-200 bg-surface p-6 sticky top-24">
               <div className="rounded-lg bg-brand-600/10 border border-brand-200 p-4 mb-6">
-                <p className="text-sm text-brand-500 font-medium">预订确认单</p>
+                <p className="text-sm text-brand-500 font-medium">{c.confirmationTitle}</p>
                 <p className="text-2xl font-bold text-brand-800 mt-1">{selected.booking.ref}</p>
                 <p className="text-sm text-brand-500 mt-1">{selected.booking.date}</p>
               </div>
@@ -228,26 +232,28 @@ export function DayPassBoard() {
 
               <div className="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">日票价格</p>
+                  <p className="text-muted text-xs">{c.priceLabel}</p>
                   <p className="font-semibold text-brand-500">{selected.booking.price}</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">WiFi 实测</p>
+                  <p className="text-muted text-xs">{c.wifiLabel}</p>
                   <p className="font-semibold">{selected.booking.wifiMbps} Mbps</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">营业时间</p>
+                  <p className="text-muted text-xs">{c.hoursLabel}</p>
                   <p className="font-semibold">{selected.booking.hours}</p>
                 </div>
                 <div className="rounded-lg bg-background p-3">
-                  <p className="text-muted text-xs">预订方式</p>
-                  <p className="font-semibold">{selected.booking.instantBook ? "即时入场" : "需提前预约"}</p>
+                  <p className="text-muted text-xs">{c.methodLabel}</p>
+                  <p className="font-semibold">
+                    {selected.booking.instantBook ? c.instantEntry : c.advanceRequired}
+                  </p>
                 </div>
               </div>
 
               {selected.booking.tips.length > 0 && (
                 <div className="mt-6">
-                  <h3 className="font-semibold text-foreground mb-2 text-sm">入场贴士</h3>
+                  <h3 className="font-semibold text-foreground mb-2 text-sm">{c.tipsTitle}</h3>
                   <ul className="list-disc list-inside text-muted text-sm space-y-1">
                     {selected.booking.tips.map((tip) => (
                       <li key={tip}>{tip}</li>
@@ -263,23 +269,21 @@ export function DayPassBoard() {
                   rel="noopener noreferrer"
                   className="mt-6 block w-full text-center rounded-xl bg-brand-600 py-3 font-semibold text-white hover:bg-brand-700 transition-colors"
                 >
-                  前往官网完成付款 →
+                  {c.payOnSite}
                 </a>
               )}
 
-              <p className="mt-4 text-xs text-muted text-center">
-                此为预订指引确认单，实际付款请在场地官网完成
-              </p>
+              <p className="mt-4 text-xs text-muted text-center">{c.disclaimer}</p>
             </div>
           ) : selected ? (
             <div className="rounded-xl border border-border bg-surface p-6 sticky top-24">
-              <p className="text-muted">加载预订信息中…</p>
+              <p className="text-muted">{c.loading}</p>
             </div>
           ) : (
             <div className="rounded-xl border border-dashed border-border bg-background p-12 text-center text-muted">
               <p className="text-4xl mb-3">🎫</p>
-              <p>点击左侧场地预订今日日票</p>
-              <p className="text-sm mt-1">非会员免费体验 5 次</p>
+              <p>{c.emptyTitle}</p>
+              <p className="text-sm mt-1">{c.emptyHint}</p>
             </div>
           )}
         </div>

@@ -3,31 +3,25 @@ import { getVenueById, generateBookingConfirmation } from "@/lib/data";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
 import { FREE_TRIAL_LIMIT } from "@/lib/trial-core";
+import { apiError } from "@/lib/api-errors";
 
 export async function POST(request: NextRequest) {
   try {
     const { venueId } = await request.json();
     if (!venueId || typeof venueId !== "string") {
-      return NextResponse.json({ error: "缺少 venueId" }, { status: 400 });
+      return apiError("MISSING_VENUE_ID", 400);
     }
 
     const venue = getVenueById(venueId);
     if (!venue) {
-      return NextResponse.json({ error: "场地不存在" }, { status: 404 });
+      return apiError("VENUE_NOT_FOUND", 404);
     }
 
     const member = await isMember();
     const access = await useTrial(member);
 
     if (!access.consumed && !access.isMember) {
-      return NextResponse.json(
-        {
-          error: "免费体验已用完，请订阅",
-          code: "TRIAL_EXHAUSTED",
-          remaining: 0,
-        },
-        { status: 403 }
-      );
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
     }
 
     const booking = generateBookingConfirmation(venue);
@@ -55,6 +49,6 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("Pass book error:", error);
-    return NextResponse.json({ error: "预订失败" }, { status: 500 });
+    return apiError("BOOKING_FAILED", 500);
   }
 }

@@ -1,8 +1,14 @@
-import { features, venues } from "@/lib/data";
+import { venues } from "@/lib/data";
 
 export { CheckoutButton } from "./CheckoutButton";
 
-export function FeatureGrid() {
+type Feature = {
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+export function FeatureGrid({ features }: { features: readonly Feature[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       {features.map((f) => (
@@ -16,7 +22,14 @@ export function FeatureGrid() {
   );
 }
 
-export function PassPreviewTable() {
+type PreviewLabels = {
+  venue: string;
+  city: string;
+  spots: string;
+  price: string;
+};
+
+export function PassPreviewTable({ labels }: { labels: PreviewLabels }) {
   const preview = venues.filter((v) => v.featured).slice(0, 5);
 
   return (
@@ -24,10 +37,10 @@ export function PassPreviewTable() {
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-border bg-background text-left text-muted">
-            <th className="px-4 py-3 font-medium">场地</th>
-            <th className="px-4 py-3 font-medium hidden sm:table-cell">城市</th>
-            <th className="px-4 py-3 font-medium hidden md:table-cell">今日余量</th>
-            <th className="px-4 py-3 font-medium text-right">日票</th>
+            <th className="px-4 py-3 font-medium">{labels.venue}</th>
+            <th className="px-4 py-3 font-medium hidden sm:table-cell">{labels.city}</th>
+            <th className="px-4 py-3 font-medium hidden md:table-cell">{labels.spots}</th>
+            <th className="px-4 py-3 font-medium text-right">{labels.price}</th>
           </tr>
         </thead>
         <tbody>
