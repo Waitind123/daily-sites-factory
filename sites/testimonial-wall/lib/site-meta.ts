@@ -17,5 +17,4 @@ export const siteMeta = {
   ],
   guideHref: "/guide/testimonial-to-alternative-indie-hacker",
 } as const;
-
 export type SiteMeta = typeof siteMeta;
