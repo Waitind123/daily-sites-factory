@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T14:04:04.833Z",
+  "updatedAt": "2026-07-03T14:05:37.544Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4526,11 +4526,49 @@
           "visitorHits": {
             "3b7d6592-0f75-4696-9349-7b34ac29d806": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "84f5a386-e96d-4d7e-aec0-93ba9798a053"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "84f5a386-e96d-4d7e-aec0-93ba9798a053": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 7,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4547,7 +4585,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:06.752Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "84f5a386-e96d-4d7e-aec0-93ba9798a053"
+      ]
     },
     "sign-pulse": {
       "url": "https://sign-pulse.vercel.app",
@@ -8306,6 +8347,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "84f5a386-e96d-4d7e-aec0-93ba9798a053",
+      "siteId": "seo-rank-tracker",
+      "firstSeen": "2026-07-03T14:05:37.375Z",
+      "lastSeen": "2026-07-03T14:05:37.375Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f43d0bba-b479-4dab-a3ed-9ee1fb1b3813",
       "siteId": "form-pulse",
