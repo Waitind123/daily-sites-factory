@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T03:09:26.874Z",
+  "updatedAt": "2026-07-03T03:55:01.644Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4377,11 +4377,49 @@
             "72058a31-d278-48c0-992c-f329985f1dae": 1,
             "c7468be3-e7b8-4cb4-914e-31bca003d751": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "133febd7-a9a3-4aaa-91a6-3c8444c8120a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "133febd7-a9a3-4aaa-91a6-3c8444c8120a": 1
+          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 7,
+        "pv": 9,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4398,7 +4436,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:10.595Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "133febd7-a9a3-4aaa-91a6-3c8444c8120a"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -7621,6 +7662,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "133febd7-a9a3-4aaa-91a6-3c8444c8120a",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-07-03T03:55:01.382Z",
+      "lastSeen": "2026-07-03T03:55:01.382Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "17ef5675-989c-4193-b301-1767fcd5eb7a",
       "siteId": "virtual-cowork-room",
