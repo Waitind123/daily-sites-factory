@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://ai-contract-review.vercel.app",
+    url: "https://ai-contract-review-three.vercel.app",
     name: "Contract Review Pulse",
     title: "Contract Review Pulse — AI contract risk scan for freelancers, $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://ai-contract-review.vercel.app",
+    url: "https://ai-contract-review-three.vercel.app",
     name: "合同审查助手",
     title: "合同审查助手 — 自由职业者 AI 合同风险扫描，$9.9/月",
     description:
