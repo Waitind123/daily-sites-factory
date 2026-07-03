@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T03:07:10.833Z",
+  "updatedAt": "2026-07-03T03:09:26.874Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4813,50 +4813,52 @@
           }
         },
         "2026-07-03": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "a2e22db1-2c61-4b95-9436-284e66b363c3",
-            "76d65d53-042b-4eb6-b05f-a6e7e234e186"
+            "76d65d53-042b-4eb6-b05f-a6e7e234e186",
+            "17ef5675-989c-4193-b301-1767fcd5eb7a"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/room": 1,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "11": 2
+              "11": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "a2e22db1-2c61-4b95-9436-284e66b363c3": 1,
-            "76d65d53-042b-4eb6-b05f-a6e7e234e186": 1
+            "76d65d53-042b-4eb6-b05f-a6e7e234e186": 1,
+            "17ef5675-989c-4193-b301-1767fcd5eb7a": 1
           }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 5,
+        "pv": 10,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4878,7 +4880,8 @@
         "4f2892c0-c48c-4559-af2c-8e7929ffb382",
         "1ff95991-4008-41e9-9f3a-06964686b50b",
         "a2e22db1-2c61-4b95-9436-284e66b363c3",
-        "76d65d53-042b-4eb6-b05f-a6e7e234e186"
+        "76d65d53-042b-4eb6-b05f-a6e7e234e186",
+        "17ef5675-989c-4193-b301-1767fcd5eb7a"
       ]
     },
     "visa-guide": {
@@ -7618,6 +7621,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "17ef5675-989c-4193-b301-1767fcd5eb7a",
+      "siteId": "virtual-cowork-room",
+      "firstSeen": "2026-07-03T03:09:26.749Z",
+      "lastSeen": "2026-07-03T03:09:26.749Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "76d65d53-042b-4eb6-b05f-a6e7e234e186",
       "siteId": "virtual-cowork-room",
