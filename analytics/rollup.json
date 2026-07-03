@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T22:03:58.964Z",
+  "updatedAt": "2026-07-03T22:05:57.088Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -367,47 +367,50 @@
           ]
         },
         "2026-07-03": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5"
+            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5",
+            "1fbe7b68-4d7e-47a8-bef0-6ad97dd7222e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/dashboard": 1
+              "/dashboard": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "6": 1
+              "6": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5": 1
+            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5": 1,
+            "1fbe7b68-4d7e-47a8-bef0-6ad97dd7222e": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -426,7 +429,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "dd28787a-b8cb-4e2f-8563-cfaa0da922a5"
+        "dd28787a-b8cb-4e2f-8563-cfaa0da922a5",
+        "1fbe7b68-4d7e-47a8-bef0-6ad97dd7222e"
       ]
     },
     "carbon-calculator": {
@@ -8760,6 +8764,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1fbe7b68-4d7e-47a8-bef0-6ad97dd7222e",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-03T22:05:56.915Z",
+      "lastSeen": "2026-07-03T22:05:56.915Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "dd28787a-b8cb-4e2f-8563-cfaa0da922a5",
       "siteId": "book-pulse",
