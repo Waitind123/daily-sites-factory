@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { ReferralCapture } from "@/components/ReferralCapture";
-import { PromoCrossSell } from "@/components/PromoCrossSell";
 import { FixedContactBar } from "@/components/FixedContactBar";
+import { PromoCrossSell } from "@/components/PromoCrossSell";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -47,7 +47,7 @@ export default async function RootLayout({
           locale={locale}
           guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
         />
-              <FixedContactBar locale={locale} />
+        <FixedContactBar locale={locale} />
       </body>
     </html>
   );
