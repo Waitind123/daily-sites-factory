@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T07:06:59.540Z",
+  "updatedAt": "2026-07-03T08:04:30.658Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4928,11 +4928,49 @@
             "65c056c2-d574-494c-b724-98226882dcb9": 1,
             "60c1376a-ffe1-4cc6-a724-c9f0f004fb29": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e0118e9f-238e-4b4d-8015-652bb420949f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e0118e9f-238e-4b4d-8015-652bb420949f": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 6,
+        "pv": 8,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4951,7 +4989,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "60c1376a-ffe1-4cc6-a724-c9f0f004fb29"
+        "60c1376a-ffe1-4cc6-a724-c9f0f004fb29",
+        "e0118e9f-238e-4b4d-8015-652bb420949f"
       ]
     },
     "virtual-cowork-room": {
@@ -7864,6 +7903,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e0118e9f-238e-4b4d-8015-652bb420949f",
+      "siteId": "uptime-pulse",
+      "firstSeen": "2026-07-03T08:04:30.395Z",
+      "lastSeen": "2026-07-03T08:04:30.395Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e45cae64-92a7-4a7b-adc9-db209917a618",
       "siteId": "og-image-studio",
