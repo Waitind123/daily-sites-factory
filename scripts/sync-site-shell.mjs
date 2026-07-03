@@ -102,6 +102,16 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
     ],
   },
+  "ai-contract-review": {
+    emoji: "📄",
+    name: { en: "Contract Review Pulse", zh: "合同审查助手" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/freelance-contract-review-ai-alternative",
+    nav: [
+      { href: "/guide/freelance-contract-review-ai-alternative", label: { en: "Guide", zh: "指南" } },
+      { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
+    ],
+  },
   "remote-jobs": {
     emoji: "💼",
     name: { en: "Remote Jobs", zh: "远程工作板" },
