@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T15:06:05.428Z",
+  "updatedAt": "2026-07-03T16:06:39.608Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4892,11 +4892,49 @@
             "4afbe281-df98-4293-b509-c2498c186a3b",
             "52200b0b-b6d8-4caa-a6ae-35eaee9ddc35"
           ]
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "eac1b18e-ada6-48a0-b55e-3ec870f9b985"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "0": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "eac1b18e-ada6-48a0-b55e-3ec870f9b985": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4913,7 +4951,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:09.452Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "eac1b18e-ada6-48a0-b55e-3ec870f9b985"
+      ]
     },
     "team-headshots": {
       "url": "https://team-headshots-phi.vercel.app",
@@ -8399,6 +8440,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "eac1b18e-ada6-48a0-b55e-3ec870f9b985",
+      "siteId": "stripe-pulse",
+      "firstSeen": "2026-07-03T16:06:39.325Z",
+      "lastSeen": "2026-07-03T16:06:39.325Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "7d618c3a-66db-4cd8-a59c-6cb6b82f0fcb",
       "siteId": "docs-pulse",
