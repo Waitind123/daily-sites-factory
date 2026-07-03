@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T13:08:12.167Z",
+  "updatedAt": "2026-07-03T14:04:04.833Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1705,11 +1705,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f43d0bba-b479-4dab-a3ed-9ee1fb1b3813"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f43d0bba-b479-4dab-a3ed-9ee1fb1b3813": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 1,
+        "pv": 3,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1726,7 +1764,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:41.537Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "f43d0bba-b479-4dab-a3ed-9ee1fb1b3813"
+      ]
     },
     "freelance-proposal": {
       "url": "https://freelance-proposal-one.vercel.app",
@@ -8265,6 +8306,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f43d0bba-b479-4dab-a3ed-9ee1fb1b3813",
+      "siteId": "form-pulse",
+      "firstSeen": "2026-07-03T14:04:04.529Z",
+      "lastSeen": "2026-07-03T14:04:04.529Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ce7b5531-ce7a-4dbc-9fa5-0b8c1107df65",
       "siteId": "waitlist-pulse",
