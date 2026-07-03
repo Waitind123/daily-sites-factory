@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T23:03:00.684Z",
+  "updatedAt": "2026-07-03T23:05:00.796Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1201,48 +1201,50 @@
           ]
         },
         "2026-07-03": {
-          "pv": 2,
-          "uv": 1,
+          "pv": 3,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "99c0777e-3ddb-459f-b71f-125e66f8f56d"
+            "99c0777e-3ddb-459f-b71f-125e66f8f56d",
+            "3a52df19-8a74-4cee-9963-cf9330fc176d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/passes": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "7": 2
+              "7": 3
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 1
             }
           },
           "visitorHits": {
-            "99c0777e-3ddb-459f-b71f-125e66f8f56d": 2
+            "99c0777e-3ddb-459f-b71f-125e66f8f56d": 2,
+            "3a52df19-8a74-4cee-9963-cf9330fc176d": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 3,
+        "pv": 6,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1261,7 +1263,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "99c0777e-3ddb-459f-b71f-125e66f8f56d"
+        "99c0777e-3ddb-459f-b71f-125e66f8f56d",
+        "3a52df19-8a74-4cee-9963-cf9330fc176d"
       ]
     },
     "cron-heartbeat": {
@@ -8810,6 +8813,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3a52df19-8a74-4cee-9963-cf9330fc176d",
+      "siteId": "coworking-pass",
+      "firstSeen": "2026-07-03T23:05:00.633Z",
+      "lastSeen": "2026-07-03T23:05:00.633Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "99c0777e-3ddb-459f-b71f-125e66f8f56d",
       "siteId": "coworking-pass",
