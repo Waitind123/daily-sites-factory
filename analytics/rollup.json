@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T02:10:47.179Z",
+  "updatedAt": "2026-07-03T03:04:33.630Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4811,11 +4811,49 @@
           "visitorHits": {
             "1ff95991-4008-41e9-9f3a-06964686b50b": 2
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a2e22db1-2c61-4b95-9436-284e66b363c3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/room": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a2e22db1-2c61-4b95-9436-284e66b363c3": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 3,
+        "pv": 8,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4835,7 +4873,8 @@
       },
       "knownVisitors": [
         "4f2892c0-c48c-4559-af2c-8e7929ffb382",
-        "1ff95991-4008-41e9-9f3a-06964686b50b"
+        "1ff95991-4008-41e9-9f3a-06964686b50b",
+        "a2e22db1-2c61-4b95-9436-284e66b363c3"
       ]
     },
     "visa-guide": {
@@ -7575,6 +7614,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a2e22db1-2c61-4b95-9436-284e66b363c3",
+      "siteId": "virtual-cowork-room",
+      "firstSeen": "2026-07-03T03:04:33.518Z",
+      "lastSeen": "2026-07-03T03:04:33.518Z",
+      "pageviews": 1,
+      "path": "/room",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "383f22f5-3b3b-45c2-b8b9-8d6f9ba71fe7",
       "siteId": "coworking-daypass",
