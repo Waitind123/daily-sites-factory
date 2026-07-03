@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T00:07:55.572Z",
+  "updatedAt": "2026-07-03T00:10:23.228Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7383,41 +7383,43 @@
       "url": "",
       "daily": {
         "2026-07-03": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "3aed15d7-d413-439e-8739-0b84c65388c3"
+            "3aed15d7-d413-439e-8739-0b84c65388c3",
+            "859043f6-a8d0-40af-b9a8-d83f3fe9770f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "3aed15d7-d413-439e-8739-0b84c65388c3": 1
+            "3aed15d7-d413-439e-8739-0b84c65388c3": 1,
+            "859043f6-a8d0-40af-b9a8-d83f3fe9770f": 1
           }
         }
       },
@@ -7435,18 +7437,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "3aed15d7-d413-439e-8739-0b84c65388c3"
+        "3aed15d7-d413-439e-8739-0b84c65388c3",
+        "859043f6-a8d0-40af-b9a8-d83f3fe9770f"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "859043f6-a8d0-40af-b9a8-d83f3fe9770f",
+      "siteId": "ai-contract-review",
+      "firstSeen": "2026-07-03T00:10:23.080Z",
+      "lastSeen": "2026-07-03T00:10:23.080Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3aed15d7-d413-439e-8739-0b84c65388c3",
       "siteId": "ai-contract-review",
