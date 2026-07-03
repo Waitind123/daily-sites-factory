@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T10:06:50.528Z",
+  "updatedAt": "2026-07-03T11:06:15.259Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1988,11 +1988,49 @@
             "bbf1c077-b3fb-498a-881a-2cce2bc33277": 1,
             "69c61598-541a-48a3-8f32-42f2af820e85": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1d54c7e5-9882-4235-aa37-df682db8af6e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "1d54c7e5-9882-4235-aa37-df682db8af6e": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 5,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2012,7 +2050,8 @@
       },
       "knownVisitors": [
         "bbf1c077-b3fb-498a-881a-2cce2bc33277",
-        "69c61598-541a-48a3-8f32-42f2af820e85"
+        "69c61598-541a-48a3-8f32-42f2af820e85",
+        "1d54c7e5-9882-4235-aa37-df682db8af6e"
       ]
     },
     "guilt-free-habits": {
@@ -8133,6 +8172,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1d54c7e5-9882-4235-aa37-df682db8af6e",
+      "siteId": "funnel-pulse",
+      "firstSeen": "2026-07-03T11:06:15.005Z",
+      "lastSeen": "2026-07-03T11:06:15.005Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "743eaccf-0548-44b6-be70-db1df51a9388",
       "siteId": "page-split",
