@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T06:06:32.924Z",
+  "updatedAt": "2026-07-03T07:04:53.756Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3260,11 +3260,49 @@
             "b3dc56b5-c057-4784-a88d-a169afd48b2d": 1,
             "93b20ab1-ce3a-4cb3-b643-b6904267b8ee": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b41f7e4d-40a0-4fbd-8c50-bb0810bb57f9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b41f7e4d-40a0-4fbd-8c50-bb0810bb57f9": 1
+          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 7,
+        "pv": 9,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3284,7 +3322,8 @@
       },
       "knownVisitors": [
         "b3dc56b5-c057-4784-a88d-a169afd48b2d",
-        "93b20ab1-ce3a-4cb3-b643-b6904267b8ee"
+        "93b20ab1-ce3a-4cb3-b643-b6904267b8ee",
+        "b41f7e4d-40a0-4fbd-8c50-bb0810bb57f9"
       ]
     },
     "page-split": {
@@ -7821,6 +7860,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b41f7e4d-40a0-4fbd-8c50-bb0810bb57f9",
+      "siteId": "og-image-studio",
+      "firstSeen": "2026-07-03T07:04:53.479Z",
+      "lastSeen": "2026-07-03T07:04:53.479Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1f1ebc3c-6154-4ac3-81fb-cf120f93e729",
       "siteId": "changelog-hub",
