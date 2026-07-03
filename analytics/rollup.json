@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-02T23:11:42.861Z",
+  "updatedAt": "2026-07-03T00:07:55.572Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7378,9 +7378,86 @@
         "d571295d-df5a-4f94-b0ef-7dddf18fac71",
         "c178ed34-df8d-4409-a59d-d77bbd8ac048"
       ]
+    },
+    "ai-contract-review": {
+      "url": "",
+      "daily": {
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "3aed15d7-d413-439e-8739-0b84c65388c3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "3aed15d7-d413-439e-8739-0b84c65388c3": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "3aed15d7-d413-439e-8739-0b84c65388c3"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3aed15d7-d413-439e-8739-0b84c65388c3",
+      "siteId": "ai-contract-review",
+      "firstSeen": "2026-07-03T00:07:55.318Z",
+      "lastSeen": "2026-07-03T00:07:55.318Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c178ed34-df8d-4409-a59d-d77bbd8ac048",
       "siteId": "scope3-commute-pulse",
