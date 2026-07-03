@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T00:18:46.004Z",
+  "updatedAt": "2026-07-03T01:06:29.246Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4464,11 +4464,49 @@
             "0f8f4a5d-f8ae-4bb2-acea-d5336f2005f3",
             "70dff8b5-3d93-47d3-9bdf-a4aa4a7ad68a"
           ]
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "96863ca9-2df1-4012-8424-e99ee7226501"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "96863ca9-2df1-4012-8424-e99ee7226501": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4485,7 +4523,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:41:12.163Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "96863ca9-2df1-4012-8424-e99ee7226501"
+      ]
     },
     "tracetics-lite": {
       "url": "https://tracetics-lite.vercel.app",
@@ -7489,6 +7530,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "96863ca9-2df1-4012-8424-e99ee7226501",
+      "siteId": "timezone-planner",
+      "firstSeen": "2026-07-03T01:06:29.003Z",
+      "lastSeen": "2026-07-03T01:06:29.003Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1783037925836",
       "siteId": "feature-vote",
