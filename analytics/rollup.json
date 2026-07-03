@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T10:02:55.203Z",
+  "updatedAt": "2026-07-03T10:06:50.528Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3586,11 +3586,49 @@
             "1370082c-e368-4343-b4a3-83850acd6fbb": 1,
             "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831": 1
           }
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "743eaccf-0548-44b6-be70-db1df51a9388"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "743eaccf-0548-44b6-be70-db1df51a9388": 1
+          }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 7,
+        "pv": 10,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3613,7 +3651,8 @@
         "3db652e5-f33c-4ad4-952a-3e3eb470178e",
         "8ce6c8a7-04b7-4ff1-997c-797e4e3adef8",
         "1370082c-e368-4343-b4a3-83850acd6fbb",
-        "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831"
+        "f85e613d-70f4-4f0c-a5d7-2b0a92fe9831",
+        "743eaccf-0548-44b6-be70-db1df51a9388"
       ]
     },
     "pain-radar": {
@@ -8094,6 +8133,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "743eaccf-0548-44b6-be70-db1df51a9388",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-03T10:06:50.243Z",
+      "lastSeen": "2026-07-03T10:06:50.243Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8e80a19d-b809-4480-abb2-8e255f9e9b3d",
       "siteId": "remote-jobs",
