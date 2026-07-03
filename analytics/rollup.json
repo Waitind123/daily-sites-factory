@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T06:04:41.537Z",
+  "updatedAt": "2026-07-03T06:06:32.924Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -608,49 +608,51 @@
           }
         },
         "2026-07-03": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "8f170f5b-be6c-4835-b0ca-1485cc56f834",
-            "43d70ed2-3b34-4db2-8110-eb458baf9e48"
+            "43d70ed2-3b34-4db2-8110-eb458baf9e48",
+            "1f1ebc3c-6154-4ac3-81fb-cf120f93e729"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "14": 2
+              "14": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "8f170f5b-be6c-4835-b0ca-1485cc56f834": 1,
-            "43d70ed2-3b34-4db2-8110-eb458baf9e48": 1
+            "43d70ed2-3b34-4db2-8110-eb458baf9e48": 1,
+            "1f1ebc3c-6154-4ac3-81fb-cf120f93e729": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 12,
+        "pv": 14,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -675,7 +677,8 @@
         "363dc845-cbe0-4bca-93ec-987e6ea49121",
         "d849eac8-2e99-4042-ad0c-3b3bafbcfb8d",
         "8f170f5b-be6c-4835-b0ca-1485cc56f834",
-        "43d70ed2-3b34-4db2-8110-eb458baf9e48"
+        "43d70ed2-3b34-4db2-8110-eb458baf9e48",
+        "1f1ebc3c-6154-4ac3-81fb-cf120f93e729"
       ]
     },
     "churn-pulse": {
@@ -7818,6 +7821,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1f1ebc3c-6154-4ac3-81fb-cf120f93e729",
+      "siteId": "changelog-hub",
+      "firstSeen": "2026-07-03T06:06:32.629Z",
+      "lastSeen": "2026-07-03T06:06:32.629Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "43d70ed2-3b34-4db2-8110-eb458baf9e48",
       "siteId": "changelog-hub",
