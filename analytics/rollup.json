@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T21:06:07.771Z",
+  "updatedAt": "2026-07-03T22:03:58.034Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -365,11 +365,49 @@
             "98a4af86-b504-44e3-8990-dbee07213a9a",
             "12332e86-925b-4738-bfc7-61e08bc1900f"
           ]
+        },
+        "2026-07-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "6": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "dd28787a-b8cb-4e2f-8563-cfaa0da922a5": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -386,7 +424,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:30.450Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "dd28787a-b8cb-4e2f-8563-cfaa0da922a5"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -8719,6 +8760,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "dd28787a-b8cb-4e2f-8563-cfaa0da922a5",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-03T22:03:57.790Z",
+      "lastSeen": "2026-07-03T22:03:57.790Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c29d4a7a-b402-466e-8682-53a7c3693df3",
       "siteId": "churn-pulse",
