@@ -24,6 +24,11 @@ export const roomCopy = {
     startSession: (duration: number) => `Start ${duration}-min session →`,
     subscribeCta: "Subscribe · $9.9/mo →",
     subscribeNow: "Subscribe now",
+    trialLowTitle: "Only {remaining} free sessions left",
+    trialLowBody: "Subscribe for unlimited cowork sessions — most remote workers upgrade after session #3.",
+    trialLowCta: "View pricing",
+    sessionDoneUpsell: "Loved the focus? Subscribe for unlimited sessions.",
+    sessionDoneUpsellCta: "Subscribe · $9.9/mo",
     liveStats: {
       active: "Active sessions",
       focusHours: "Focus hours today",
@@ -53,6 +58,11 @@ export const roomCopy = {
     startSession: (duration: number) => `开始 ${duration} 分钟共工 →`,
     subscribeCta: "订阅 · $9.9/月 →",
     subscribeNow: "立即订阅",
+    trialLowTitle: "仅剩 {remaining} 次免费会话",
+    trialLowBody: "订阅解锁无限共工 — 多数远程工作者在第 3 场后升级。",
+    trialLowCta: "查看定价",
+    sessionDoneUpsell: "专注感觉不错？订阅解锁无限会话。",
+    sessionDoneUpsellCta: "订阅 · $9.9/月",
     liveStats: {
       active: "正在共工",
       focusHours: "今日专注小时",

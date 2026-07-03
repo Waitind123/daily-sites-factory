@@ -171,6 +171,7 @@ export function CoworkRoom({ locale }: { locale: Locale }) {
   }
 
   if (sessionState === "done") {
+    const showUpsell = trial && !trial.isMember;
     return (
       <div className="text-center space-y-6 py-8">
         <div className="text-5xl">🎉</div>
@@ -178,6 +179,17 @@ export function CoworkRoom({ locale }: { locale: Locale }) {
         <p className="text-muted">
           {c.sessionDoneBody(roomMeta.duration, roomCopy.name)}
         </p>
+        {showUpsell && (
+          <div className="mx-auto max-w-md rounded-xl border border-brand-600/30 bg-brand-600/10 px-5 py-4">
+            <p className="text-sm text-foreground">{c.sessionDoneUpsell}</p>
+            <Link
+              href="/join?utm_source=virtual-cowork-room&utm_medium=session_done&utm_campaign=upsell"
+              className="mt-3 inline-block rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 transition-colors"
+            >
+              {c.sessionDoneUpsellCta}
+            </Link>
+          </div>
+        )}
         <button
           type="button"
           onClick={() => setSessionState("idle")}
@@ -189,9 +201,29 @@ export function CoworkRoom({ locale }: { locale: Locale }) {
     );
   }
 
+  const showTrialLow =
+    trial && !trial.isMember && trial.remaining > 0 && trial.remaining <= 2;
+
   return (
     <div className="space-y-6">
-      {trial && !trial.isMember && (
+      {showTrialLow && (
+        <div className="rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <p className="font-semibold text-foreground">
+              {c.trialLowTitle.replace("{remaining}", String(trial.remaining))}
+            </p>
+            <p className="mt-1 text-sm text-muted">{c.trialLowBody}</p>
+          </div>
+          <Link
+            href="/join?utm_source=virtual-cowork-room&utm_medium=trial_low&utm_campaign=banner"
+            className="shrink-0 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-700 transition-colors text-center"
+          >
+            {c.trialLowCta}
+          </Link>
+        </div>
+      )}
+
+      {trial && !trial.isMember && !showTrialLow && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             {c.freeSessions}{" "}
