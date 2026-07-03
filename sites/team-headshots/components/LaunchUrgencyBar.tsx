@@ -51,14 +51,14 @@ export function LaunchUrgencyBar({
         </p>
         <Link
           href={joinHref}
-          className="shrink-0 rounded-lg bg-white px-2.5 py-1.5 text-xs font-semibold text-brand-700 hover:bg-brand-50 sm:px-3 sm:py-2 sm:text-sm"
+          className="shrink-0 rounded-lg bg-surface px-2.5 py-1.5 text-xs font-semibold text-brand-500 hover:bg-brand-600/10 sm:px-3 sm:py-2 sm:text-sm"
         >
           Subscribe
         </Link>
         <button
           type="button"
           onClick={dismiss}
-          className="shrink-0 rounded-lg border-2 border-white bg-white/20 px-3 py-1.5 text-sm font-bold text-white hover:bg-white/30 sm:min-w-[5rem] sm:py-2"
+          className="shrink-0 rounded-lg border-2 border-white bg-surface/20 px-3 py-1.5 text-sm font-bold text-white hover:bg-surface/30 sm:min-w-[5rem] sm:py-2"
           aria-label="关闭促销条"
         >
           ✕ 关闭

@@ -3,7 +3,6 @@ import { LaunchUrgencyBar } from "@/components/LaunchUrgencyBar";
 import { FixedContactBar } from "@/components/FixedContactBar";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { ReferralCapture } from "@/components/ReferralCapture";
-import { FixedContactBar } from "@/components/FixedContactBar";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -49,7 +48,6 @@ export default async function RootLayout({
         />
         <LaunchUrgencyBar locale={locale} />
         <FixedContactBar locale={locale} />
-              <FixedContactBar locale={locale} />
       </body>
     </html>
   );
