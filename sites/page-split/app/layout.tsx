@@ -42,11 +42,7 @@ export default async function RootLayout({
           locale={locale}
           initialMessages={feedback.messages}
         />
-        <SiteFooter
-          meta={siteMeta}
-          locale={locale}
-          guideHref={siteMeta.guideHref}
-        />
+        <SiteFooter meta={siteMeta} locale={locale} guideHref={siteMeta.guideHref} />
         <FixedContactBar locale={locale} />
       </body>
     </html>
