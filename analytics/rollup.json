@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-03T10:02:41.527Z",
+  "updatedAt": "2026-07-03T10:02:42.738Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1020,7 +1020,7 @@
           }
         },
         "2026-07-03": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -1030,36 +1030,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/spaces": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "b6742907-0343-4688-90be-b867385661c0": 1
+            "b6742907-0343-4688-90be-b867385661c0": 2
           }
         }
       },
       "totals": {
-        "pv": 19,
+        "pv": 20,
         "uv": 12,
         "trial": 0,
         "checkout": 0,
@@ -8054,9 +8055,9 @@
       "visitorId": "b6742907-0343-4688-90be-b867385661c0",
       "siteId": "coworking-finder",
       "firstSeen": "2026-07-03T10:02:41.385Z",
-      "lastSeen": "2026-07-03T10:02:41.385Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-03T10:02:42.599Z",
+      "pageviews": 2,
+      "path": "/spaces",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
