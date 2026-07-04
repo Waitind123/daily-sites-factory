@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T11:09:50.346Z",
+  "updatedAt": "2026-07-04T11:12:00.033Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9344,41 +9344,44 @@
       "url": "",
       "daily": {
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54"
+            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54",
+            "1ffaa552-2ca3-4cc5-ba2c-fafdc613b1dc"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/invoices": 1
+              "/invoices": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "19": 1
+              "19": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54": 1
+            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54": 1,
+            "1ffaa552-2ca3-4cc5-ba2c-fafdc613b1dc": 1
           }
         }
       },
@@ -9396,18 +9399,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54"
+        "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54",
+        "1ffaa552-2ca3-4cc5-ba2c-fafdc613b1dc"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1ffaa552-2ca3-4cc5-ba2c-fafdc613b1dc",
+      "siteId": "eu-einvoice-compliance",
+      "firstSeen": "2026-07-04T11:11:59.877Z",
+      "lastSeen": "2026-07-04T11:11:59.877Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54",
       "siteId": "eu-einvoice-compliance",
