@@ -12,6 +12,13 @@ export const siteMeta = {
         "en": "Events",
         "zh": "活动"
       }
+    },
+    {
+      "href": "/guide/organize-indie-meetup-china",
+      "label": {
+        "en": "Guide",
+        "zh": "指南"
+      }
     }
   ],
   "guideHref": "/guide/organize-indie-meetup-china"
