@@ -429,6 +429,17 @@ const SITE_REGISTRY = {
       { href: "/workspace", label: { en: "Workspace", zh: "工作台" } },
     ],
   },
+  "应用商店差评挖痛点": {
+    emoji: "📱",
+    name: { en: "AppGap Pulse", zh: "应用商店差评挖痛点" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/app-store-negative-reviews-startup-ideas",
+    nav: [
+      { href: "/guide/app-store-negative-reviews-startup-ideas", label: { en: "Guide", zh: "指南" } },
+      { href: "/mine", label: { en: "Scan", zh: "扫描" } },
+    ],
+    primaryHref: "/mine",
+  },
 };
 
 const DARK_REPLACEMENTS = [
