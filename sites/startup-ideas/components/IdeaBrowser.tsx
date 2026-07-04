@@ -72,10 +72,29 @@ export function IdeaBrowser({ locale }: { locale: Locale }) {
   }
 
   const categoryFilters = [c.allCategory, ...categories.filter((cat) => cat !== "全部")];
+  const showTrialLow =
+    trial && !trial.isMember && trial.remaining > 0 && trial.remaining <= 2;
 
   return (
     <div className="space-y-6">
-      {trial && !trial.isMember && (
+      {showTrialLow && (
+        <div className="rounded-xl border border-amber-500/40 bg-amber-500/10 px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <p className="font-semibold text-foreground">
+              {c.trialLowTitle.replace("{remaining}", String(trial.remaining))}
+            </p>
+            <p className="mt-1 text-sm text-muted">{c.trialLowBody}</p>
+          </div>
+          <Link
+            href="/join?utm_source=startup-ideas&utm_medium=trial_low&utm_campaign=banner"
+            className="inline-flex shrink-0 items-center justify-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700"
+          >
+            {c.trialLowCta}
+          </Link>
+        </div>
+      )}
+
+      {trial && !trial.isMember && !showTrialLow && (
         <div className="rounded-xl border border-brand-200 bg-brand-600/10 px-4 py-3 text-sm text-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <span>
             <strong>{c.trialBanner(trial.remaining, trial.limit)}</strong>

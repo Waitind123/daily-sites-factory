@@ -7,6 +7,10 @@ export const ideasCopy = {
       "Click「Deep analysis」for market size, competitor pricing, and MVP roadmap. 5 free views.",
     trialBanner: (remaining: number, limit: number) =>
       `${remaining}/${limit} free deep analyses left`,
+    trialLowTitle: "Only {remaining} free deep analysis left",
+    trialLowBody:
+      "Subscribe for unlimited market analyses — most founders upgrade after idea #3.",
+    trialLowCta: "View pricing",
     subscribeCta: "Subscribe · $9.9/mo →",
     memberBadge: "✓ Member active · unlimited deep analyses",
     allCategory: "All",
@@ -37,6 +41,9 @@ export const ideasCopy = {
     subtitle: "点击「深度分析」查看市场规模、竞品定价、MVP 路线图。免费体验 5 次。",
     trialBanner: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费深度分析`,
+    trialLowTitle: "仅剩 {remaining} 次免费深度分析",
+    trialLowBody: "订阅解锁无限市场分析 — 多数创始人在第 3 个点子后升级。",
+    trialLowCta: "查看定价",
     subscribeCta: "订阅 $9.9/月 →",
     memberBadge: "✓ 会员已激活 · 无限阅读深度分析",
     allCategory: "全部",
