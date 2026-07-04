@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T14:05:53.026Z",
+  "updatedAt": "2026-07-04T14:08:16.238Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5284,47 +5284,49 @@
           }
         },
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178"
+            "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178",
+            "22fda56b-76f4-41d1-9acf-760e715032ac"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178": 1
+            "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178": 1,
+            "22fda56b-76f4-41d1-9acf-760e715032ac": 1
           }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 11,
+        "pv": 18,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5343,7 +5345,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178"
+        "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178",
+        "22fda56b-76f4-41d1-9acf-760e715032ac"
       ]
     },
     "status-pulse": {
@@ -9520,6 +9523,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "22fda56b-76f4-41d1-9acf-760e715032ac",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-04T14:08:16.074Z",
+      "lastSeen": "2026-07-04T14:08:16.074Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178",
       "siteId": "startup-ideas",
