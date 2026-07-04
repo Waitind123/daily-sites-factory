@@ -5,7 +5,7 @@ import {
   getTrialCookieName,
 } from "./trial-core";
 
-export const SITE_ID = "saas替代品情报";
+export const SITE_ID = "saas-alt-intel";
 
 export { FREE_TRIAL_LIMIT, getTrialCookieName };
 

@@ -274,7 +274,7 @@ const SITE_REGISTRY = {
     guideHref: "/guide/competitive-pricing-intelligence-indie",
     nav: [{ href: "/intel", label: { en: "Intel", zh: "情报" } }],
   },
-  "saas替代品情报": {
+  "saas-alt-intel": {
     emoji: "🔀",
     name: { en: "Alt Intel", zh: "SaaS 替代品情报" },
     jsonLd: "softwareApplicationJsonLd",
