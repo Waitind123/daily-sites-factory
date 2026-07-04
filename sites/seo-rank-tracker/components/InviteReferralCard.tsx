@@ -47,7 +47,7 @@ export function InviteReferralCard({ siteId, locale }: { siteId: string; locale:
   }
 
   return (
-    <div className="rounded-xl border border-brand-200/60 bg-brand-50/50 dark:bg-brand-950/20 p-4 space-y-3">
+    <div className="rounded-xl border border-brand-200/60 bg-brand-600/10 dark:bg-brand-950/20 p-4 space-y-3">
       <h3 className="text-sm font-semibold text-foreground">
         {zh ? "🎁 邀请好友 · 各得额外试用" : "🎁 Invite friends · earn extra tries"}
       </h3>
