@@ -429,6 +429,16 @@ const SITE_REGISTRY = {
       { href: "/workspace", label: { en: "Workspace", zh: "工作台" } },
     ],
   },
+  "eu-einvoice-compliance": {
+    emoji: "🇪🇺",
+    name: { en: "EU E-Invoice Compliance", zh: "欧盟电子发票合规" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/poland-e-invoice-ubl-compliance-2026",
+    nav: [
+      { href: "/guide/poland-e-invoice-ubl-compliance-2026", label: { en: "Guide", zh: "指南" } },
+      { href: "/invoices", label: { en: "Invoices", zh: "发票" } },
+    ],
+  },
   "appgap-pulse": {
     emoji: "📱",
     name: { en: "AppGap Pulse", zh: "应用商店差评挖痛点" },
