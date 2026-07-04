@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { scanPainPoints } from "@/lib/pain-miner";
 import { apiError } from "@/lib/api-errors";
-import { SITE_ID, consumeTrial, incrementTrial } from "@/lib/trial";
+import { useTrial, recordTrialUse } from "@/lib/trial";
 import { isMember } from "@/lib/member";
 
 export async function POST(request: NextRequest) {
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     }
 
     const member = await isMember();
-    const access = await consumeTrial(SITE_ID, member);
+    const access = await useTrial(member);
 
     if (!access.consumed && !access.isMember) {
       return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     const result = scanPainPoints(body.keyword.trim());
 
     if (!member) {
-      const trial = await incrementTrial(SITE_ID);
+      const trial = await recordTrialUse();
       const response = NextResponse.json({
         result,
         trial: {
