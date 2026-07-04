@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T02:04:41.195Z",
+  "updatedAt": "2026-07-04T03:03:50.949Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -320,11 +320,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a1016716-af61-4fe3-badc-a8c277f8addc"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a1016716-af61-4fe3-badc-a8c277f8addc": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -341,7 +379,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:28.924Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a1016716-af61-4fe3-badc-a8c277f8addc"
+      ]
     },
     "book-pulse": {
       "url": "https://book-pulse-lovat.vercel.app",
@@ -8949,6 +8990,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a1016716-af61-4fe3-badc-a8c277f8addc",
+      "siteId": "ai-waitlist",
+      "firstSeen": "2026-07-04T03:03:50.677Z",
+      "lastSeen": "2026-07-04T03:03:50.677Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3060ac92-06da-4293-ab16-a64a9f67dcac",
       "siteId": "pain-radar",
