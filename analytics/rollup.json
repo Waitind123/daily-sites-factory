@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T21:06:20.209Z",
+  "updatedAt": "2026-07-04T21:06:45.697Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5221,11 +5221,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6e035765-20a0-4b72-ad2a-25994a4039d2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6e035765-20a0-4b72-ad2a-25994a4039d2": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5242,7 +5280,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-04T05:53:07.628Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "6e035765-20a0-4b72-ad2a-25994a4039d2"
+      ]
     },
     "startup-ideas": {
       "url": "https://startup-ideas-five.vercel.app",
@@ -9894,6 +9935,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6e035765-20a0-4b72-ad2a-25994a4039d2",
+      "siteId": "sign-pulse",
+      "firstSeen": "2026-07-04T21:06:45.535Z",
+      "lastSeen": "2026-07-04T21:06:45.535Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b1a41a20-2c58-49a4-bed5-21e369b96384",
       "siteId": "sec-quest-pulse",
