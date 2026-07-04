@@ -274,6 +274,13 @@ const SITE_REGISTRY = {
     guideHref: "/guide/competitive-pricing-intelligence-indie",
     nav: [{ href: "/intel", label: { en: "Intel", zh: "情报" } }],
   },
+  "saas替代品情报": {
+    emoji: "🔀",
+    name: { en: "Alt Intel", zh: "SaaS 替代品情报" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/saas-price-hike-alternatives-indie",
+    nav: [{ href: "/intel", label: { en: "Intel", zh: "情报" } }],
+  },
   "landing-generator": {
     emoji: "🎨",
     name: { en: "Landing Generator", zh: "Landing Page 生成器" },
