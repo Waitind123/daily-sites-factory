@@ -19,4 +19,4 @@ npm run dev
 
 ## 部署
 
-通过 GitHub Actions 自动部署到 Vercel（2026-06-30 上线）。
+通过 GitHub Actions 自动部署到 Vercel（2026-07-04 重新上线 · meetup-alt.vercel.app）。
