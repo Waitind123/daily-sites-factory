@@ -66,6 +66,14 @@ export const workspaceCopy = {
     paywallBody:
       "You've created 5 free documents. Subscribe for unlimited access to all 5 tools plus JSON export.",
     paywallCta: "Subscribe · $9.9/mo",
+    trialLowTitle: "Only {remaining} free documents left",
+    trialLowBody:
+      "Subscribe for unlimited invoices & contracts — most freelancers upgrade after document #3.",
+    trialLowCta: "View pricing",
+    postGenerateTitle: "Document ready — keep billing",
+    postGenerateBody:
+      "Unlimited docs across 5 tools for $9.9/mo — replace HoneyBook + Bonsai + PandaDoc.",
+    postGenerateCta: "Subscribe now",
     createTitle: "New document",
     docTitle: "Title",
     docTitlePlaceholder: "Website redesign project",
@@ -107,6 +115,12 @@ export const workspaceCopy = {
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 份免费文档。订阅后可无限使用 5 种工具并导出 JSON。",
     paywallCta: "订阅 · $9.9/月",
+    trialLowTitle: "仅剩 {remaining} 份免费文档",
+    trialLowBody: "订阅解锁无限生成 — 多数自由职业者在第 3 份文档后升级。",
+    trialLowCta: "查看定价",
+    postGenerateTitle: "文档已生成 — 趁热打铁",
+    postGenerateBody: "5 种工具无限文档，$9.9/月 — 替代 HoneyBook + Bonsai + PandaDoc。",
+    postGenerateCta: "立即订阅",
     createTitle: "新建文档",
     docTitle: "标题",
     docTitlePlaceholder: "网站改版项目",

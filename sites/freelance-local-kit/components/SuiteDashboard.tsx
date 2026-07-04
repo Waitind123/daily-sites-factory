@@ -224,13 +224,32 @@ export function SuiteDashboard({ locale }: { locale: Locale }) {
         ))}
       </div>
 
+      {trial && !trial.isMember && trial.remaining > 0 && trial.remaining <= 2 && (
+        <div className="mb-6 rounded-xl border border-brand-600/30 bg-brand-600/10 p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p className="font-semibold text-foreground">
+              {t.trialLowTitle.replace("{remaining}", String(trial.remaining))}
+            </p>
+            <p className="text-sm text-muted mt-1">{t.trialLowBody}</p>
+          </div>
+          <Link
+            href="/join?utm_source=freelance-local-kit&utm_medium=trial_low"
+            className="shrink-0 rounded-xl border border-brand-600 px-6 py-2.5 text-sm font-semibold text-brand-500 hover:bg-brand-600/10"
+          >
+            {t.trialLowCta}
+          </Link>
+        </div>
+      )}
+
       {showPaywall && (
-        <div className="mb-8 rounded-2xl border border-amber-500/40 bg-amber-500/10 p-6">
-          <h2 className="text-lg font-semibold text-foreground">{t.paywallTitle}</h2>
-          <p className="mt-2 text-sm text-muted">{t.paywallBody}</p>
+        <div className="mb-8 rounded-2xl border border-amber-500/40 bg-amber-500/10 p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h2 className="text-lg font-semibold text-foreground">{t.paywallTitle}</h2>
+            <p className="mt-2 text-sm text-muted">{t.paywallBody}</p>
+          </div>
           <Link
             href="/join"
-            className="mt-4 inline-block rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
+            className="shrink-0 inline-block rounded-xl bg-brand-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-700"
           >
             {t.paywallCta}
           </Link>
@@ -379,6 +398,18 @@ export function SuiteDashboard({ locale }: { locale: Locale }) {
                   {copied ? t.copied : t.copyMarkdown}
                 </button>
               </div>
+              {trial && !trial.isMember && (
+                <div className="mt-4 rounded-xl border border-brand-600/30 bg-brand-600/5 p-4">
+                  <p className="text-sm font-semibold text-foreground">{t.postGenerateTitle}</p>
+                  <p className="text-xs text-muted mt-1">{t.postGenerateBody}</p>
+                  <Link
+                    href="/join?utm_source=freelance-local-kit&utm_medium=post_generate"
+                    className="mt-3 inline-block rounded-lg bg-brand-600 px-4 py-2 text-xs font-semibold text-white hover:bg-brand-700"
+                  >
+                    {t.postGenerateCta}
+                  </Link>
+                </div>
+              )}
             </div>
           )}
           <button
