@@ -62,6 +62,16 @@ const SITE_REGISTRY = {
       { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
     ],
   },
+  "social-listen-alt": {
+    emoji: "📡",
+    name: { en: "Listen Pulse", zh: "社交监听替代品" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/brand24-mention-alternative-indie",
+    nav: [
+      { href: "/guide/brand24-mention-alternative-indie", label: { en: "Guide", zh: "指南" } },
+      { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
+    ],
+  },
   "affiliate-pulse": {
     emoji: "🤝",
     name: { en: "Affiliate Pulse", zh: "联盟追踪平替" },
