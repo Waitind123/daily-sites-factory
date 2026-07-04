@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T10:08:11.566Z",
+  "updatedAt": "2026-07-04T11:09:50.346Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9339,9 +9339,86 @@
       "knownVisitors": [
         "fd4d14ad-f656-47c6-854d-a23738aff00c"
       ]
+    },
+    "eu-einvoice-compliance": {
+      "url": "",
+      "daily": {
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/invoices": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1e4204b8-6c6a-41ac-b99f-54ccdfd7dd54",
+      "siteId": "eu-einvoice-compliance",
+      "firstSeen": "2026-07-04T11:09:50.100Z",
+      "lastSeen": "2026-07-04T11:09:50.100Z",
+      "pageviews": 1,
+      "path": "/invoices",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e35a39ab-9bb0-46b5-8043-b434e3bf3ba5",
       "siteId": "freelance-local-kit",
