@@ -15,6 +15,10 @@ export const trackCopy = {
     loading: "…",
     subscribeNow: "Subscribe now",
     streakLabel: (n: number) => `🔥 ${n} day streak`,
+    trialLowTitle: "Only {remaining} free check-in left",
+    trialLowBody:
+      "Subscribe for unlimited habits, streak tracking & weekly reports — most users upgrade after day 3.",
+    trialLowCta: "View pricing",
   },
   zh: {
     title: "今日打卡",
@@ -30,6 +34,9 @@ export const trackCopy = {
     loading: "…",
     subscribeNow: "立即订阅",
     streakLabel: (n: number) => `🔥 连续 ${n} 天`,
+    trialLowTitle: "仅剩 {remaining} 次免费打卡",
+    trialLowBody: "订阅解锁无限习惯与周报 — 多数用户在第 3 天升级。",
+    trialLowCta: "查看定价",
   },
 } as const;
 
