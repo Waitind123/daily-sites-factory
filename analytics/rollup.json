@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T20:09:17.601Z",
+  "updatedAt": "2026-07-04T21:06:20.209Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9023,11 +9023,49 @@
           "visitorHits": {
             "7b0615c3-928b-4154-9ca4-2d369565f872": 1
           }
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b1a41a20-2c58-49a4-bed5-21e369b96384"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b1a41a20-2c58-49a4-bed5-21e369b96384": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9044,7 +9082,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-04T05:53:06.992Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b1a41a20-2c58-49a4-bed5-21e369b96384"
+      ]
     },
     "zapier-pulse": {
       "url": "https://zapier-pulse.vercel.app",
@@ -9853,6 +9894,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b1a41a20-2c58-49a4-bed5-21e369b96384",
+      "siteId": "sec-quest-pulse",
+      "firstSeen": "2026-07-04T21:06:19.917Z",
+      "lastSeen": "2026-07-04T21:06:19.917Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b1abef68-931d-47ae-b8bd-f1eb3c65e173",
       "siteId": "social-listen-alt",
