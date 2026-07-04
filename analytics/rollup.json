@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T01:08:31.144Z",
+  "updatedAt": "2026-07-04T02:02:40.426Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4059,11 +4059,49 @@
           "checkout": 0,
           "purchase": 0,
           "visitors": []
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 0,
+        "pv": 2,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4080,7 +4118,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-01T06:40:58.072Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261"
+      ]
     },
     "price-tracker": {
       "url": "https://price-tracker-seven-tan.vercel.app",
@@ -8904,6 +8945,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-07-04T02:02:40.134Z",
+      "lastSeen": "2026-07-04T02:02:40.134Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f5cd9140-dd4e-4213-9a51-e344f0e2b18c",
       "siteId": "seo-rank-tracker",
