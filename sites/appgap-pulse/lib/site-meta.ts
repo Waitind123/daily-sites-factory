@@ -1,5 +1,5 @@
 export const siteMeta = {
-  "id": "应用商店差评挖痛点",
+  "id": "appgap-pulse",
   "emoji": "📱",
   "name": {
     "en": "AppGap Pulse",

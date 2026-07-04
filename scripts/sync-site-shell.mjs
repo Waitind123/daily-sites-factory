@@ -429,7 +429,7 @@ const SITE_REGISTRY = {
       { href: "/workspace", label: { en: "Workspace", zh: "工作台" } },
     ],
   },
-  "应用商店差评挖痛点": {
+  "appgap-pulse": {
     emoji: "📱",
     name: { en: "AppGap Pulse", zh: "应用商店差评挖痛点" },
     jsonLd: "softwareApplicationJsonLd",

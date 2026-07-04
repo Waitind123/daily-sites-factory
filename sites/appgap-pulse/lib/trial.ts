@@ -5,7 +5,7 @@ import {
   incrementTrial,
 } from "./trial-core";
 
-export const SITE_ID = "应用商店差评挖痛点";
+export const SITE_ID = "appgap-pulse";
 
 export { FREE_TRIAL_LIMIT, getTrialStatus, consumeTrial, incrementTrial };
 
