@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T06:14:22.643Z",
+  "updatedAt": "2026-07-04T07:05:30.599Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7091,11 +7091,49 @@
             "d5b06e4f-7893-4918-9b1d-8852d163c19b": 1,
             "94fd7b55-e6f6-4ed8-bea2-0bae7753d02f": 1
           }
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fd711bca-298f-46e3-9e74-39226d809f62"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fd711bca-298f-46e3-9e74-39226d809f62": 1
+          }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 9,
+        "pv": 12,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7112,7 +7150,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-04T05:52:59.212Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "fd711bca-298f-46e3-9e74-39226d809f62"
+      ]
     },
     "uptime-alt": {
       "url": "https://uptime-alt.vercel.app",
@@ -8920,6 +8961,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fd711bca-298f-46e3-9e74-39226d809f62",
+      "siteId": "meetup-alt",
+      "firstSeen": "2026-07-04T07:05:30.325Z",
+      "lastSeen": "2026-07-04T07:05:30.325Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "48047e90-4685-4e1c-b745-04ee1526b8e6",
       "siteId": "appgap-pulse",
