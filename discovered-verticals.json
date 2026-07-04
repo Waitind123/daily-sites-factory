@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "saas替代品情报",
+      "name": "SaaS替代品情报",
+      "description": "竞品涨价无预警，独立开发者需要 .9/月的 SaaS 定价变化监控+替代品推荐",
+      "template": "micro-saas",
+      "source": "HN payoncealternatives + IndieList 2026",
+      "discoveredAt": "2026-07-04T17:06:15.901Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-04T10:05:28.221Z",
+  "lastDiscoveredAt": "2026-07-04T17:06:15.901Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
