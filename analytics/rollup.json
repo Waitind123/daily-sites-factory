@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T04:09:21.623Z",
+  "updatedAt": "2026-07-04T05:05:22.912Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3775,11 +3775,49 @@
             "24366741-0441-4bec-b9ad-395a035a4bbd": 1,
             "41c935b7-d1b2-4354-bd54-c4ab79a11154": 1
           }
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4a2f4ccb-7c8a-4bd7-b4be-00d2e3860cbb"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4a2f4ccb-7c8a-4bd7-b4be-00d2e3860cbb": 1
+          }
         }
       },
       "totals": {
-        "pv": 16,
-        "uv": 14,
+        "pv": 17,
+        "uv": 15,
         "trial": 0,
         "checkout": 1,
         "purchase": 0
@@ -3800,7 +3838,8 @@
       "knownVisitors": [
         "a5d7b32e-2454-4174-bb59-d6615add371c",
         "24366741-0441-4bec-b9ad-395a035a4bbd",
-        "41c935b7-d1b2-4354-bd54-c4ab79a11154"
+        "41c935b7-d1b2-4354-bd54-c4ab79a11154",
+        "4a2f4ccb-7c8a-4bd7-b4be-00d2e3860cbb"
       ]
     },
     "og-image-studio": {
@@ -9101,6 +9140,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4a2f4ccb-7c8a-4bd7-b4be-00d2e3860cbb",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-07-04T05:05:22.579Z",
+      "lastSeen": "2026-07-04T05:05:22.579Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b8a99ced-e80b-477f-855f-18a49e48787f",
       "siteId": "waitlist-email-verify",
