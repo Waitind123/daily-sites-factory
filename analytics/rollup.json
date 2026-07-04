@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T08:04:48.174Z",
+  "updatedAt": "2026-07-04T08:07:40.173Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9035,9 +9035,86 @@
       "knownVisitors": [
         "e1ee7793-050f-4d03-a7ca-e30719c6d0e4"
       ]
+    },
+    "reddit-lead-pulse": {
+      "url": "",
+      "daily": {
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fd4d14ad-f656-47c6-854d-a23738aff00c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fd4d14ad-f656-47c6-854d-a23738aff00c": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "fd4d14ad-f656-47c6-854d-a23738aff00c"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fd4d14ad-f656-47c6-854d-a23738aff00c",
+      "siteId": "reddit-lead-pulse",
+      "firstSeen": "2026-07-04T08:07:40.025Z",
+      "lastSeen": "2026-07-04T08:07:40.025Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e1ee7793-050f-4d03-a7ca-e30719c6d0e4",
       "siteId": "reddit-获客线索",
