@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "status-embed-lite",
+      "name": "极简状态页",
+      "description": "Statuspage $299/月太贵，独立开发者需要 $15/月的极简状态页 + 自动事件检测 + 嵌入组件",
+      "template": "micro-saas",
+      "source": "Indie Hackers StatusEmbed post 2026-03",
+      "discoveredAt": "2026-07-04T21:06:00.545Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-04T19:06:01.236Z",
+  "lastDiscoveredAt": "2026-07-04T21:06:00.545Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
