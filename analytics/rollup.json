@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T00:05:54.286Z",
+  "updatedAt": "2026-07-04T01:02:56.215Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4860,11 +4860,49 @@
           "visitorHits": {
             "84f5a386-e96d-4d7e-aec0-93ba9798a053": 1
           }
+        },
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "326b3749-8bb1-408f-b11b-cd5e5fac989c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "326b3749-8bb1-408f-b11b-cd5e5fac989c": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 5,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4883,7 +4921,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "84f5a386-e96d-4d7e-aec0-93ba9798a053"
+        "84f5a386-e96d-4d7e-aec0-93ba9798a053",
+        "326b3749-8bb1-408f-b11b-cd5e5fac989c"
       ]
     },
     "sign-pulse": {
@@ -8858,6 +8897,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "326b3749-8bb1-408f-b11b-cd5e5fac989c",
+      "siteId": "seo-rank-tracker",
+      "firstSeen": "2026-07-04T01:02:55.929Z",
+      "lastSeen": "2026-07-04T01:02:55.929Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "59ab5add-d700-4128-9657-4f3a0575f2dc",
       "siteId": "wcag-alt-text",
