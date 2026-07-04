@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T18:06:00.815Z",
+  "updatedAt": "2026-07-04T18:08:04.298Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9638,41 +9638,44 @@
       "url": "",
       "daily": {
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "1400c1bb-cec3-43ab-b00c-052aa099c5b6"
+            "1400c1bb-cec3-43ab-b00c-052aa099c5b6",
+            "230992e1-6c5b-4426-87b2-01330ab46050"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "2": 1
+              "2": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "1400c1bb-cec3-43ab-b00c-052aa099c5b6": 1
+            "1400c1bb-cec3-43ab-b00c-052aa099c5b6": 1,
+            "230992e1-6c5b-4426-87b2-01330ab46050": 1
           }
         }
       },
@@ -9690,18 +9693,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "1400c1bb-cec3-43ab-b00c-052aa099c5b6"
+        "1400c1bb-cec3-43ab-b00c-052aa099c5b6",
+        "230992e1-6c5b-4426-87b2-01330ab46050"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "230992e1-6c5b-4426-87b2-01330ab46050",
+      "siteId": "saas替代品情报",
+      "firstSeen": "2026-07-04T18:08:04.140Z",
+      "lastSeen": "2026-07-04T18:08:04.140Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1400c1bb-cec3-43ab-b00c-052aa099c5b6",
       "siteId": "saas替代品情报",
