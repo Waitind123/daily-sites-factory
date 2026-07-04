@@ -164,6 +164,16 @@ const SITE_REGISTRY = {
       { href: "/dashboard", label: { en: "Dashboard", zh: "控制台" } },
     ],
   },
+  "waitlist-email-verify": {
+    emoji: "✉️",
+    name: { en: "Waitlist Verify", zh: "等候名单邮件验证" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/waitlist-email-validation-indie-hackers",
+    nav: [
+      { href: "/guide/waitlist-email-validation-indie-hackers", label: { en: "Guide", zh: "指南" } },
+      { href: "/lists", label: { en: "Lists", zh: "名单" } },
+    ],
+  },
   "coworking-finder": {
     emoji: "🏢",
     name: { en: "Coworking Finder", zh: "联合办公 Finder" },
