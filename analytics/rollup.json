@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T18:08:04.298Z",
+  "updatedAt": "2026-07-04T18:11:40.420Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9703,9 +9703,86 @@
         "1400c1bb-cec3-43ab-b00c-052aa099c5b6",
         "230992e1-6c5b-4426-87b2-01330ab46050"
       ]
+    },
+    "saas-alt-intel": {
+      "url": "",
+      "daily": {
+        "2026-07-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "dec3489b-f531-4fce-9ed1-9f12dc81b510"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "dec3489b-f531-4fce-9ed1-9f12dc81b510": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "dec3489b-f531-4fce-9ed1-9f12dc81b510"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "dec3489b-f531-4fce-9ed1-9f12dc81b510",
+      "siteId": "saas-alt-intel",
+      "firstSeen": "2026-07-04T18:11:40.279Z",
+      "lastSeen": "2026-07-04T18:11:40.279Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "230992e1-6c5b-4426-87b2-01330ab46050",
       "siteId": "saas替代品情报",
