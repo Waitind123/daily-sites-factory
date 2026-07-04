@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T15:08:04.054Z",
+  "updatedAt": "2026-07-04T15:10:52.692Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5067,52 +5067,56 @@
           }
         },
         "2026-07-04": {
-          "pv": 4,
-          "uv": 3,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "326b3749-8bb1-408f-b11b-cd5e5fac989c",
             "78d01fbf-aaac-40c5-815e-b6362278c809",
-            "f5cd9140-dd4e-4213-9a51-e344f0e2b18c"
+            "f5cd9140-dd4e-4213-9a51-e344f0e2b18c",
+            "28d83564-2caf-4248-b563-bf36b9ca2b02"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
-              "/": 3,
+              "/": 4,
               "/dashboard": 1
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
-              "zh": 4
+              "zh": 4,
+              "en": 1
             },
             "timezones": {
-              "UTC": 4
+              "UTC": 5
             },
             "utmSources": {},
             "hours": {
-              "9": 4
+              "9": 4,
+              "23": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 1
             }
           },
           "visitorHits": {
             "326b3749-8bb1-408f-b11b-cd5e5fac989c": 1,
             "78d01fbf-aaac-40c5-815e-b6362278c809": 1,
-            "f5cd9140-dd4e-4213-9a51-e344f0e2b18c": 2
+            "f5cd9140-dd4e-4213-9a51-e344f0e2b18c": 2,
+            "28d83564-2caf-4248-b563-bf36b9ca2b02": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 8,
+        "pv": 12,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5129,7 +5133,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-04T05:53:07.406Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "28d83564-2caf-4248-b563-bf36b9ca2b02"
+      ]
     },
     "sign-pulse": {
       "url": "https://sign-pulse.vercel.app",
@@ -9531,6 +9538,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "28d83564-2caf-4248-b563-bf36b9ca2b02",
+      "siteId": "seo-rank-tracker",
+      "firstSeen": "2026-07-04T15:10:52.541Z",
+      "lastSeen": "2026-07-04T15:10:52.541Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "053f38cb-05d2-4f5e-80d0-8d41d1e4db7c",
       "siteId": "coworking-finder",
