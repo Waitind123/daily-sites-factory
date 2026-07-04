@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T02:02:41.337Z",
+  "updatedAt": "2026-07-04T02:04:41.195Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4061,47 +4061,50 @@
           "visitors": []
         },
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261"
+            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261",
+            "3060ac92-06da-4293-ab16-a64a9f67dcac"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "10": 1
+              "10": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261": 1
+            "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261": 1,
+            "3060ac92-06da-4293-ab16-a64a9f67dcac": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 1,
+        "pv": 3,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4120,7 +4123,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261"
+        "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261",
+        "3060ac92-06da-4293-ab16-a64a9f67dcac"
       ]
     },
     "price-tracker": {
@@ -8945,6 +8949,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3060ac92-06da-4293-ab16-a64a9f67dcac",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-07-04T02:04:41.028Z",
+      "lastSeen": "2026-07-04T02:04:41.028Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261",
       "siteId": "pain-radar",
