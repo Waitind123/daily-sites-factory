@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://reddit-huoke.vercel.app",
+    url: "https://reddit-lead-pulse.vercel.app",
     name: "Reddit Lead Pulse",
     title: "Reddit Lead Pulse — High-intent Reddit lead monitoring for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://reddit-huoke.vercel.app",
+    url: "https://reddit-lead-pulse.vercel.app",
     name: "Reddit 获客线索",
     title: "Reddit 获客线索 — 独立开发者高意向 Reddit 监控，$9.9/月",
     description:
