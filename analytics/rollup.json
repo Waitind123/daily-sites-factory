@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T14:08:16.238Z",
+  "updatedAt": "2026-07-04T14:08:17.522Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5284,7 +5284,7 @@
           }
         },
         "2026-07-04": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -5295,37 +5295,38 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/ideas": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "22": 2
+              "22": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178": 1,
-            "22fda56b-76f4-41d1-9acf-760e715032ac": 1
+            "22fda56b-76f4-41d1-9acf-760e715032ac": 2
           }
         }
       },
       "totals": {
-        "pv": 18,
+        "pv": 19,
         "uv": 12,
         "trial": 0,
         "checkout": 0,
@@ -9527,9 +9528,9 @@
       "visitorId": "22fda56b-76f4-41d1-9acf-760e715032ac",
       "siteId": "startup-ideas",
       "firstSeen": "2026-07-04T14:08:16.074Z",
-      "lastSeen": "2026-07-04T14:08:16.074Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-04T14:08:17.352Z",
+      "pageviews": 2,
+      "path": "/ideas",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
