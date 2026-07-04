@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T22:08:31.805Z",
+  "updatedAt": "2026-07-04T22:09:51.730Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9809,41 +9809,45 @@
       "url": "",
       "daily": {
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "dec3489b-f531-4fce-9ed1-9f12dc81b510"
+            "dec3489b-f531-4fce-9ed1-9f12dc81b510",
+            "877a833d-142f-4d37-a6f7-d75519a4d0d7"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 1,
+              "en": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "2": 1
+              "2": 1,
+              "6": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "dec3489b-f531-4fce-9ed1-9f12dc81b510": 1
+            "dec3489b-f531-4fce-9ed1-9f12dc81b510": 1,
+            "877a833d-142f-4d37-a6f7-d75519a4d0d7": 1
           }
         }
       },
@@ -9861,14 +9865,15 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "dec3489b-f531-4fce-9ed1-9f12dc81b510"
+        "dec3489b-f531-4fce-9ed1-9f12dc81b510",
+        "877a833d-142f-4d37-a6f7-d75519a4d0d7"
       ]
     },
     "social-listen-alt": {
@@ -10012,6 +10017,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "877a833d-142f-4d37-a6f7-d75519a4d0d7",
+      "siteId": "saas-alt-intel",
+      "firstSeen": "2026-07-04T22:09:51.595Z",
+      "lastSeen": "2026-07-04T22:09:51.595Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "306f668b-f4dd-4787-a5a1-2c5dd20a9149",
       "siteId": "status-embed-lite",
