@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T16:07:27.776Z",
+  "updatedAt": "2026-07-04T16:07:28.860Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6353,7 +6353,7 @@
           }
         },
         "2026-07-04": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -6364,37 +6364,38 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/visas": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "0": 2
+              "0": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "0a6c04a5-7de0-4500-8ef4-d69fd5214dfb": 1,
-            "43886435-942e-43b1-bd99-e4a03fa7f8c5": 1
+            "43886435-942e-43b1-bd99-e4a03fa7f8c5": 2
           }
         }
       },
       "totals": {
-        "pv": 22,
+        "pv": 23,
         "uv": 18,
         "trial": 0,
         "checkout": 0,
@@ -9590,9 +9591,9 @@
       "visitorId": "43886435-942e-43b1-bd99-e4a03fa7f8c5",
       "siteId": "visa-guide",
       "firstSeen": "2026-07-04T16:07:27.604Z",
-      "lastSeen": "2026-07-04T16:07:27.604Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-04T16:07:28.699Z",
+      "pageviews": 2,
+      "path": "/visas",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
