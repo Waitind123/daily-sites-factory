@@ -14,7 +14,7 @@ export const siteMeta = {
       }
     },
     {
-      "href": "/#studio",
+      "href": "/studio",
       "label": {
         "en": "Studio",
         "zh": "工作室"

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { LaunchUrgencyBar } from "@/components/LaunchUrgencyBar";
-import { FixedContactBar } from "@/components/FixedContactBar";
 import { AnalyticsBeacon } from "@/components/AnalyticsBeacon";
 import { ReferralCapture } from "@/components/ReferralCapture";
+import { PromoCrossSell } from "@/components/PromoCrossSell";
+import { FixedContactBar } from "@/components/FixedContactBar";
 import { Inter } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { FeedbackSection } from "@/components/FeedbackSection";
@@ -13,12 +13,12 @@ import { buildLocaleMetadata, softwareApplicationJsonLd } from "@/lib/seo";
 import { siteMeta } from "@/lib/site-meta";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   return buildLocaleMetadata(locale);
 }
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default async function RootLayout({
   children,
@@ -35,6 +35,7 @@ export default async function RootLayout({
         <AnalyticsBeacon siteId={siteMeta.id} />
         <ReferralCapture siteId={siteMeta.id} />
         <SiteHeader meta={siteMeta} locale={locale} />
+        <PromoCrossSell locale={locale} siteId={siteMeta.id} />
         <main>{children}</main>
         <FeedbackSection
           siteId={siteMeta.id}
@@ -46,7 +47,6 @@ export default async function RootLayout({
           locale={locale}
           guideHref={"guideHref" in siteMeta ? siteMeta.guideHref : undefined}
         />
-        <LaunchUrgencyBar locale={locale} />
         <FixedContactBar locale={locale} />
       </body>
     </html>

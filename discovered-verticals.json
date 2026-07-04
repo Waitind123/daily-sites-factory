@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "本地优先自由职业套件",
+      "name": "本地优先自由职业套件",
+      "description": "HN 热议：自由职业者为发票/报价/合同付多个 SaaS 订阅，需要本地优先、浏览器运行的极简套件，.9/月",
+      "template": "micro-saas",
+      "source": "HN#47298161 freelance local-first HTML tools",
+      "discoveredAt": "2026-07-04T09:06:26.800Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-04T07:03:31.666Z",
+  "lastDiscoveredAt": "2026-07-04T09:06:26.800Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",

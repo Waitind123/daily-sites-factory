@@ -134,7 +134,7 @@ export function HeadshotStudio({ locale, embedded = false }: { locale: Locale; e
           </strong>{" "}
           {t.trialSuffix}
           {trial.bonus ? (
-            <span className="text-brand-600">
+            <span className="text-brand-500">
               {locale === "zh" ? `（含邀请奖励 +${trial.bonus}）` : ` (+${trial.bonus} invite bonus)`}
             </span>
           ) : null}
