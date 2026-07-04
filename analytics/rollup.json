@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T17:06:06.445Z",
+  "updatedAt": "2026-07-04T17:08:32.860Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2805,47 +2805,49 @@
           }
         },
         "2026-07-04": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "2a5c2556-4c42-47a4-825b-1e32d3fc63cc"
+            "2a5c2556-4c42-47a4-825b-1e32d3fc63cc",
+            "db9592c5-1591-48e9-be28-885b22f5103f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "1": 1
+              "1": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "2a5c2556-4c42-47a4-825b-1e32d3fc63cc": 1
+            "2a5c2556-4c42-47a4-825b-1e32d3fc63cc": 1,
+            "db9592c5-1591-48e9-be28-885b22f5103f": 1
           }
         }
       },
       "totals": {
-        "pv": 16,
-        "uv": 10,
+        "pv": 17,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2864,7 +2866,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "2a5c2556-4c42-47a4-825b-1e32d3fc63cc"
+        "2a5c2556-4c42-47a4-825b-1e32d3fc63cc",
+        "db9592c5-1591-48e9-be28-885b22f5103f"
       ]
     },
     "intercom-pulse": {
@@ -9628,6 +9631,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "db9592c5-1591-48e9-be28-885b22f5103f",
+      "siteId": "indie-tools",
+      "firstSeen": "2026-07-04T17:08:32.683Z",
+      "lastSeen": "2026-07-04T17:08:32.683Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "2a5c2556-4c42-47a4-825b-1e32d3fc63cc",
       "siteId": "indie-tools",
