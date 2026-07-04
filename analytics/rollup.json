@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T09:25:33.934Z",
+  "updatedAt": "2026-07-04T09:25:35.197Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2912,7 +2912,7 @@
           }
         },
         "2026-07-04": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -2922,36 +2922,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/inbox": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "fad9c2c7-fc1c-4db9-9334-d85132361a47": 1
+            "fad9c2c7-fc1c-4db9-9334-d85132361a47": 2
           }
         }
       },
       "totals": {
-        "pv": 51,
+        "pv": 52,
         "uv": 36,
         "trial": 0,
         "checkout": 0,
@@ -9197,9 +9198,9 @@
       "visitorId": "fad9c2c7-fc1c-4db9-9334-d85132361a47",
       "siteId": "intercom-pulse",
       "firstSeen": "2026-07-04T09:25:33.836Z",
-      "lastSeen": "2026-07-04T09:25:33.836Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-04T09:25:35.073Z",
+      "pageviews": 2,
+      "path": "/inbox",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
