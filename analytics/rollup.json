@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T08:08:31.023Z",
+  "updatedAt": "2026-07-05T08:12:06.181Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10628,9 +10628,86 @@
         "9f5cf887-10f1-4c9a-a4ef-76c816a25151",
         "1e6d1cd9-5138-4f4e-b49f-1d80ed3e6197"
       ]
+    },
+    "library-cowork": {
+      "url": "",
+      "daily": {
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "cc001405-628b-47ec-9018-5414f994ec63"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "cc001405-628b-47ec-9018-5414f994ec63": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "cc001405-628b-47ec-9018-5414f994ec63"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "cc001405-628b-47ec-9018-5414f994ec63",
+      "siteId": "library-cowork",
+      "firstSeen": "2026-07-05T08:12:06.012Z",
+      "lastSeen": "2026-07-05T08:12:06.012Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1e6d1cd9-5138-4f4e-b49f-1d80ed3e6197",
       "siteId": "虚拟图书馆共工",
