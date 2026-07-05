@@ -85,3 +85,8 @@ export function softwareApplicationJsonLd(locale: Locale = "en") {
     url: cfg.url,
   };
 }
+
+export const metadata = buildSiteMetadata({
+  ...siteConfigByLocale.en,
+  keywords: [...siteConfigByLocale.en.keywords],
+});
