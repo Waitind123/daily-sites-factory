@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T02:10:48.324Z",
+  "updatedAt": "2026-07-05T02:12:49.260Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10407,41 +10407,43 @@
       "url": "",
       "daily": {
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "32944c0d-16cf-497d-b580-5b2662ccc521"
+            "32944c0d-16cf-497d-b580-5b2662ccc521",
+            "d9024b26-7bd6-418f-901e-80177ec9b2f7"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "10": 1
+              "10": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "32944c0d-16cf-497d-b580-5b2662ccc521": 1
+            "32944c0d-16cf-497d-b580-5b2662ccc521": 1,
+            "d9024b26-7bd6-418f-901e-80177ec9b2f7": 1
           }
         }
       },
@@ -10459,18 +10461,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "32944c0d-16cf-497d-b580-5b2662ccc521"
+        "32944c0d-16cf-497d-b580-5b2662ccc521",
+        "d9024b26-7bd6-418f-901e-80177ec9b2f7"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d9024b26-7bd6-418f-901e-80177ec9b2f7",
+      "siteId": "gdpr-pulse",
+      "firstSeen": "2026-07-05T02:12:49.119Z",
+      "lastSeen": "2026-07-05T02:12:49.119Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "dfc30750-e2f7-4d5b-9c9d-77448fe51273",
       "siteId": "newsletter-stack",
