@@ -18,7 +18,7 @@ export const siteMeta = {
       }
     },
     {
-      "href": "/#rankings",
+      "href": "/rankings",
       "label": {
         "en": "Rankings",
         "zh": "排名"

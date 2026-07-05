@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "schengen-天数追踪",
+      "name": "Schengen 天数追踪",
+      "description": "Nomad List 无合规追踪，数字游民需要 .9/月的 Schengen 90/180 天计数 + 税务居留提醒，替代手动表格",
+      "template": "micro-saas",
+      "source": "Nomad Blog 2026 nomad-list-alternatives + Nomad app compliance gap",
+      "discoveredAt": "2026-07-05T15:02:03.993Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-05T12:02:24.553Z",
+  "lastDiscoveredAt": "2026-07-05T15:02:03.993Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
