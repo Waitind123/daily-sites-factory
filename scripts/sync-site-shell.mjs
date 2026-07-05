@@ -72,6 +72,16 @@ const SITE_REGISTRY = {
       { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
     ],
   },
+  "reddit-社交监听平替": {
+    emoji: "🔴",
+    name: { en: "Reddit Radar", zh: "Reddit 社交监听平替" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/reddit-social-listening-indie",
+    nav: [
+      { href: "/guide/reddit-social-listening-indie", label: { en: "Guide", zh: "指南" } },
+      { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
+    ],
+  },
   "affiliate-pulse": {
     emoji: "🤝",
     name: { en: "Affiliate Pulse", zh: "联盟追踪平替" },
