@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T13:09:37.779Z",
+  "updatedAt": "2026-07-05T13:11:37.529Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11190,41 +11190,43 @@
       "url": "",
       "daily": {
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "30fc7939-f3ba-4631-a4bc-86b479819781"
+            "30fc7939-f3ba-4631-a4bc-86b479819781",
+            "f76e0701-2ea7-47cf-8cb9-06edd4822fd4"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "21": 1
+              "21": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "30fc7939-f3ba-4631-a4bc-86b479819781": 1
+            "30fc7939-f3ba-4631-a4bc-86b479819781": 1,
+            "f76e0701-2ea7-47cf-8cb9-06edd4822fd4": 1
           }
         }
       },
@@ -11242,18 +11244,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "30fc7939-f3ba-4631-a4bc-86b479819781"
+        "30fc7939-f3ba-4631-a4bc-86b479819781",
+        "f76e0701-2ea7-47cf-8cb9-06edd4822fd4"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f76e0701-2ea7-47cf-8cb9-06edd4822fd4",
+      "siteId": "docsend-pulse",
+      "firstSeen": "2026-07-05T13:11:37.364Z",
+      "lastSeen": "2026-07-05T13:11:37.364Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "30fc7939-f3ba-4631-a4bc-86b479819781",
       "siteId": "docsend-pulse",
