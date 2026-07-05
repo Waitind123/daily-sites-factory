@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://reddit-radar.vercel.app",
+    url: "https://reddit-radar-eta.vercel.app",
     name: "Reddit Radar",
     title: "Reddit Radar — Reddit social listening for indie hackers, $9.9/mo",
     description:
@@ -23,7 +23,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://reddit-radar.vercel.app",
+    url: "https://reddit-radar-eta.vercel.app",
     name: "Reddit 社交监听平替",
     title: "Reddit 社交监听平替 — Brand24/Mention Reddit 专注版，$9.9/月",
     description:
