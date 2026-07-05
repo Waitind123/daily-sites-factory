@@ -1,8 +1,8 @@
 {
-  "lastIndex": 21,
-  "lastVerticalId": "cron-heartbeat",
-  "lastDeployedUrl": "https://cron-heartbeat.vercel.app",
-  "lastDeployedAt": "2026-07-05T09:08:07.000Z",
+  "lastIndex": 23,
+  "lastVerticalId": "page-split",
+  "lastDeployedUrl": "https://page-split-pi.vercel.app",
+  "lastDeployedAt": "2026-07-05T10:07:28.000Z",
   "revenueGoal": {
     "targetUsd": 20,
     "deadline": "2026-07-13",
@@ -10,6 +10,12 @@
     "stripeReadyBy": "2026-06-28"
   },
   "history": [
+    {
+      "verticalId": "page-split",
+      "name": "落地页 A/B 测试",
+      "url": "https://page-split-pi.vercel.app",
+      "deployedAt": "2026-07-05T10:07:28.000Z"
+    },
     {
       "verticalId": "cron-heartbeat",
       "name": "Cron 任务心跳监控",
@@ -195,12 +201,6 @@
       "name": "AI 等候名单验证",
       "url": "https://ai-waitlist-orpin.vercel.app",
       "deployedAt": "2026-07-04T03:07:10.000Z"
-    },
-    {
-      "verticalId": "pain-radar",
-      "name": "跨平台痛点雷达",
-      "url": "https://pain-radar-lyart.vercel.app",
-      "deployedAt": "2026-07-04T02:05:57.000Z"
     }
   ]
 }
