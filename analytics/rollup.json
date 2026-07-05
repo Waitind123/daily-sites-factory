@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T02:13:09.218Z",
+  "updatedAt": "2026-07-05T03:03:19.186Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3451,47 +3451,52 @@
           }
         },
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ec69ad65-3e54-474a-88cc-7cce038d0a18"
+            "ec69ad65-3e54-474a-88cc-7cce038d0a18",
+            "1966701f-64a4-4bfc-a9c8-6c95b8629387"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 1,
+              "11": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ec69ad65-3e54-474a-88cc-7cce038d0a18": 1
+            "ec69ad65-3e54-474a-88cc-7cce038d0a18": 1,
+            "1966701f-64a4-4bfc-a9c8-6c95b8629387": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 10,
+        "pv": 12,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3510,7 +3515,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "ec69ad65-3e54-474a-88cc-7cce038d0a18"
+        "ec69ad65-3e54-474a-88cc-7cce038d0a18",
+        "1966701f-64a4-4bfc-a9c8-6c95b8629387"
       ]
     },
     "link-pulse": {
@@ -10513,6 +10519,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1966701f-64a4-4bfc-a9c8-6c95b8629387",
+      "siteId": "landing-generator",
+      "firstSeen": "2026-07-05T03:03:18.946Z",
+      "lastSeen": "2026-07-05T03:03:18.946Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f6fc6580-5e89-431f-99d3-fcfe45dc472f",
       "siteId": "status-embed-lite",
