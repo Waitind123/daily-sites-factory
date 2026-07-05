@@ -168,6 +168,16 @@ const SITE_REGISTRY = {
       { href: "/join", label: { en: "Pricing", zh: "定价" } },
     ],
   },
+  "gdpr-pulse": {
+    emoji: "🛡️",
+    name: { en: "GDPR Pulse", zh: "GDPR 合规自检" },
+    jsonLd: "softwareApplicationJsonLd",
+    guideHref: "/guide/gdpr-compliance-self-check-indie",
+    nav: [
+      { href: "/scan", label: { en: "Scan", zh: "自检" } },
+      { href: "/join", label: { en: "Pricing", zh: "定价" } },
+    ],
+  },
   "startup-ideas": {
     emoji: "💡",
     name: { en: "Startup Ideas", zh: "创业点子库" },
