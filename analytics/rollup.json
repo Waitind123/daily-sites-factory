@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T09:46:55.362Z",
+  "updatedAt": "2026-07-05T09:47:02.490Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2141,8 +2141,8 @@
           }
         },
         "2026-07-05": {
-          "pv": 5,
-          "uv": 4,
+          "pv": 6,
+          "uv": 5,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -2150,37 +2150,38 @@
             "health-watch-1783210356123",
             "health-watch-1783225201139",
             "health-watch-1783239379640",
-            "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8"
+            "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8",
+            "3f6360e0-97f0-4b61-8a14-6cb9c0523c7f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 5
+              "直接访问": 6
             },
             "paths": {
-              "/": 4,
+              "/": 5,
               "/boards": 1
             },
             "devices": {
               "unknown": 3,
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "unknown": 3,
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
               "unknown": 3,
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
               "8": 1,
               "12": 1,
               "16": 1,
-              "17": 2
+              "17": 3
             },
             "visitorTypes": {
-              "new": 4,
+              "new": 5,
               "returning": 1
             }
           },
@@ -2188,13 +2189,14 @@
             "health-watch-1783210356123": 1,
             "health-watch-1783225201139": 1,
             "health-watch-1783239379640": 1,
-            "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8": 2
+            "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8": 2,
+            "3f6360e0-97f0-4b61-8a14-6cb9c0523c7f": 1
           }
         }
       },
       "totals": {
-        "pv": 70,
-        "uv": 63,
+        "pv": 71,
+        "uv": 64,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2214,7 +2216,8 @@
       },
       "knownVisitors": [
         "health-watch-1783239379640",
-        "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8"
+        "882c00e1-27b8-49c4-b5c3-e50c9dabe4d8",
+        "3f6360e0-97f0-4b61-8a14-6cb9c0523c7f"
       ]
     },
     "form-pulse": {
@@ -10968,6 +10971,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3f6360e0-97f0-4b61-8a14-6cb9c0523c7f",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-05T09:47:02.335Z",
+      "lastSeen": "2026-07-05T09:47:02.335Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "dc1ef049-c44b-4bce-97fc-6673c68d717b",
       "siteId": "coworking-finder",
