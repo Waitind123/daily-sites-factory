@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T00:08:34.303Z",
+  "updatedAt": "2026-07-05T00:11:43.581Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10170,9 +10170,86 @@
       "knownVisitors": [
         "a8d4fd01-0026-476b-965f-46e2cadbeecc"
       ]
+    },
+    "reddit-radar": {
+      "url": "",
+      "daily": {
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210": 1
+          }
+        }
+      },
+      "seo": {
+        "lastChecked": null,
+        "sitemapOk": false,
+        "robotsOk": false,
+        "title": "",
+        "titleLen": 0,
+        "description": "",
+        "descriptionLen": 0,
+        "hasOg": false,
+        "hasJsonLd": false,
+        "guideCount": 0,
+        "score": 0
+      },
+      "totals": {
+        "pv": 1,
+        "uv": 1,
+        "trial": 0,
+        "checkout": 0,
+        "purchase": 0
+      },
+      "knownVisitors": [
+        "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210",
+      "siteId": "reddit-radar",
+      "firstSeen": "2026-07-05T00:11:43.297Z",
+      "lastSeen": "2026-07-05T00:11:43.297Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a8d4fd01-0026-476b-965f-46e2cadbeecc",
       "siteId": "reddit-社交监听平替",
