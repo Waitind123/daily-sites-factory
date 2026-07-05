@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T07:06:58.544Z",
+  "updatedAt": "2026-07-05T07:06:59.573Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2318,7 +2318,7 @@
           }
         },
         "2026-07-05": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -2329,39 +2329,40 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/proposal": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "en": 1,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
               "14": 1,
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "314e9b47-b467-400a-a367-9091b1952ab5": 1,
-            "68ffe129-185e-43ea-9c88-b64a4261797b": 1
+            "68ffe129-185e-43ea-9c88-b64a4261797b": 2
           }
         }
       },
       "totals": {
-        "pv": 21,
+        "pv": 22,
         "uv": 16,
         "trial": 0,
         "checkout": 0,
@@ -10561,9 +10562,9 @@
       "visitorId": "68ffe129-185e-43ea-9c88-b64a4261797b",
       "siteId": "freelance-proposal",
       "firstSeen": "2026-07-05T07:06:58.371Z",
-      "lastSeen": "2026-07-05T07:06:58.371Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-05T07:06:59.352Z",
+      "pageviews": 2,
+      "path": "/proposal",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
