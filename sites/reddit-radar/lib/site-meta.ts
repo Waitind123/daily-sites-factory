@@ -1,5 +1,5 @@
 export const siteMeta = {
-  "id": "reddit-社交监听平替",
+  "id": "reddit-radar",
   "emoji": "🔴",
   "name": {
     "en": "Reddit Radar",

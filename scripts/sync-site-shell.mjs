@@ -72,7 +72,7 @@ const SITE_REGISTRY = {
       { href: "/monitor", label: { en: "Monitor", zh: "监控" } },
     ],
   },
-  "reddit-社交监听平替": {
+  "reddit-radar": {
     emoji: "🔴",
     name: { en: "Reddit Radar", zh: "Reddit 社交监听平替" },
     jsonLd: "softwareApplicationJsonLd",
