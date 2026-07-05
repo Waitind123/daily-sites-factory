@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T11:11:22.761Z",
+  "updatedAt": "2026-07-05T12:04:42.734Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9727,11 +9727,49 @@
           "visitorHits": {
             "b1a41a20-2c58-49a4-bed5-21e369b96384": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f62a8827-cd29-4b2a-865c-eefebe888cb4"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f62a8827-cd29-4b2a-865c-eefebe888cb4": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9748,7 +9786,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:51.072Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "f62a8827-cd29-4b2a-865c-eefebe888cb4"
+      ]
     },
     "zapier-pulse": {
       "url": "https://zapier-pulse.vercel.app",
@@ -11139,6 +11180,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f62a8827-cd29-4b2a-865c-eefebe888cb4",
+      "siteId": "sec-quest-pulse",
+      "firstSeen": "2026-07-05T12:04:42.413Z",
+      "lastSeen": "2026-07-05T12:04:42.413Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "25ae837d-d348-4cf4-9c75-ee22d9d042db",
       "siteId": "pricing-heatmap",
