@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T11:06:47.534Z",
+  "updatedAt": "2026-07-05T11:07:54.052Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11068,41 +11068,43 @@
       "url": "",
       "daily": {
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "a070d573-ec47-4ee2-bafc-a71d3ba0326c"
+            "a070d573-ec47-4ee2-bafc-a71d3ba0326c",
+            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "19": 1
+              "19": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "a070d573-ec47-4ee2-bafc-a71d3ba0326c": 1
+            "a070d573-ec47-4ee2-bafc-a71d3ba0326c": 1,
+            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af": 1
           }
         }
       },
@@ -11120,18 +11122,30 @@
         "score": 0
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
-        "a070d573-ec47-4ee2-bafc-a71d3ba0326c"
+        "a070d573-ec47-4ee2-bafc-a71d3ba0326c",
+        "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af",
+      "siteId": "pricing-heatmap",
+      "firstSeen": "2026-07-05T11:07:53.869Z",
+      "lastSeen": "2026-07-05T11:07:53.869Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "802b8643-7fd3-46ac-8745-70f8c1eb5ce2",
       "siteId": "remote-jobs",
