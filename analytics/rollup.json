@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T09:04:47.779Z",
+  "updatedAt": "2026-07-05T09:06:59.656Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1505,47 +1505,49 @@
           }
         },
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c"
+            "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c",
+            "967d8c3a-7ac1-4379-9138-d22183aaad17"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c": 1
+            "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c": 1,
+            "967d8c3a-7ac1-4379-9138-d22183aaad17": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 14,
+        "pv": 16,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1564,7 +1566,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c"
+        "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c",
+        "967d8c3a-7ac1-4379-9138-d22183aaad17"
       ]
     },
     "desk-pulse": {
@@ -10785,6 +10788,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "967d8c3a-7ac1-4379-9138-d22183aaad17",
+      "siteId": "cron-heartbeat",
+      "firstSeen": "2026-07-05T09:06:59.486Z",
+      "lastSeen": "2026-07-05T09:06:59.486Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c",
       "siteId": "cron-heartbeat",
