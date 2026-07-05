@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T09:47:12.410Z",
+  "updatedAt": "2026-07-05T10:04:11.824Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4644,11 +4644,49 @@
           "visitorHits": {
             "743eaccf-0548-44b6-be70-db1df51a9388": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "59e46d86-82df-45d9-8625-47e3ccb9fbb3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "59e46d86-82df-45d9-8625-47e3ccb9fbb3": 1
+          }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 8,
+        "pv": 11,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4665,7 +4703,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:39.179Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "59e46d86-82df-45d9-8625-47e3ccb9fbb3"
+      ]
     },
     "pain-radar": {
       "url": "https://pain-radar-lyart.vercel.app",
@@ -11012,6 +11053,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "59e46d86-82df-45d9-8625-47e3ccb9fbb3",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-05T10:04:11.458Z",
+      "lastSeen": "2026-07-05T10:04:11.458Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "20cb42b6-ee46-42c3-8fba-aba0608ab40b",
       "siteId": "remote-jobs",
