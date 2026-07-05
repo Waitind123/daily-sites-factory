@@ -1,5 +1,5 @@
 export const siteMeta = {
-  id: "虚拟图书馆共工",
+  id: "library-cowork",
   emoji: "📚",
   name: {
     en: "Library Cowork",

@@ -5,7 +5,7 @@ import {
   getTrialCookieName,
 } from "./trial-core";
 
-export const SITE_ID = "虚拟图书馆共工";
+export const SITE_ID = "library-cowork";
 
 export { FREE_TRIAL_LIMIT, getTrialCookieName };
 
