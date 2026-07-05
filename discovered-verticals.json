@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "indie-定价页热力图",
+      "name": "Indie 定价页热力图",
+      "description": "85% 访客离开定价页未购买，独立开发者需要 .9/月的定价页热力图+流失分析+AB测试建议，替代 Hotjar 9/月",
+      "template": "micro-saas",
+      "source": "Indie Hackers pricing funnel post 2026-06 + HN deterministic SaaS 2026",
+      "discoveredAt": "2026-07-05T10:02:23.441Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,7 +16,7 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": "2026-07-05T07:07:12.985Z",
+  "lastDiscoveredAt": "2026-07-05T10:02:23.441Z",
   "consumed": [
     {
       "id": "stripe-pulse-lite",
