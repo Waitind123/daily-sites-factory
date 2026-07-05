@@ -6,7 +6,7 @@ export { buildSiteMetadata } from "./site-seo";
 
 const siteConfigByLocale = {
   en: {
-    url: "https://pricing-heatmap.vercel.app",
+    url: "https://pricing-heatmap-zeta.vercel.app",
     name: "Indie Pricing Heatmap",
     title: "Indie Pricing Heatmap — Hotjar alternative for /pricing pages, $9.9/mo",
     description:
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
     locale: "en_US",
   },
   zh: {
-    url: "https://pricing-heatmap.vercel.app",
+    url: "https://pricing-heatmap-zeta.vercel.app",
     name: "独立开发者定价页热力图",
     title: "定价页热力图 — Hotjar 替代品，独立开发者 $9.9/月",
     description:
