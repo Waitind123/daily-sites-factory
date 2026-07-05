@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T15:03:57.681Z",
+  "updatedAt": "2026-07-05T15:06:30.498Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4352,47 +4352,50 @@
           }
         },
         "2026-07-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b"
+            "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b",
+            "fd51c2db-5a7a-4fe0-af47-7a5a556607a5"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "23": 1
+              "23": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b": 1
+            "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b": 1,
+            "fd51c2db-5a7a-4fe0-af47-7a5a556607a5": 1
           }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 17,
+        "pv": 20,
+        "uv": 18,
         "trial": 0,
         "checkout": 1,
         "purchase": 0
@@ -4411,7 +4414,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b"
+        "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b",
+        "fd51c2db-5a7a-4fe0-af47-7a5a556607a5"
       ]
     },
     "og-image-studio": {
@@ -11303,6 +11307,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fd51c2db-5a7a-4fe0-af47-7a5a556607a5",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-07-05T15:06:30.327Z",
+      "lastSeen": "2026-07-05T15:06:30.327Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "7c7fa6f7-02b3-4316-b9ea-38e2c13fee1b",
       "siteId": "nomad-cities",
