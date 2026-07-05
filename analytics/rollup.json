@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T01:07:47.489Z",
+  "updatedAt": "2026-07-05T02:08:05.854Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -611,11 +611,49 @@
             "411d9681-5e6e-416a-aedd-c8a53a63b3ec": 1,
             "cc0b9525-a737-41c6-b0ba-3b78ed2a3912": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e9136215-7022-4850-a62e-74dcd452728c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e9136215-7022-4850-a62e-74dcd452728c": 1
+          }
         }
       },
       "totals": {
-        "pv": 12,
-        "uv": 10,
+        "pv": 13,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -632,7 +670,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-04T05:52:48.588Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e9136215-7022-4850-a62e-74dcd452728c"
+      ]
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
@@ -10323,6 +10364,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e9136215-7022-4850-a62e-74dcd452728c",
+      "siteId": "carbon-calculator",
+      "firstSeen": "2026-07-05T02:08:05.598Z",
+      "lastSeen": "2026-07-05T02:08:05.598Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "0e0d46b0-5f11-4648-8a67-f4d30457ee69",
       "siteId": "price-tracker",
