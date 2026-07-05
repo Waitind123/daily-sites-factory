@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T06:14:07.460Z",
+  "updatedAt": "2026-07-05T06:15:02.770Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9436,11 +9436,49 @@
             "d571295d-df5a-4f94-b0ef-7dddf18fac71": 1,
             "c178ed34-df8d-4409-a59d-d77bbd8ac048": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "280e0892-5c00-4783-8f49-bb8dcd24abfd"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "280e0892-5c00-4783-8f49-bb8dcd24abfd": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9457,7 +9495,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:50.275Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "280e0892-5c00-4783-8f49-bb8dcd24abfd"
+      ]
     },
     "ai-contract-review": {
       "url": "https://ai-contract-review-three.vercel.app",
@@ -10425,6 +10466,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "280e0892-5c00-4783-8f49-bb8dcd24abfd",
+      "siteId": "scope3-commute-pulse",
+      "firstSeen": "2026-07-05T06:15:02.591Z",
+      "lastSeen": "2026-07-05T06:15:02.591Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ea155108-f495-4adc-86f5-01b7eff13fb6",
       "siteId": "carbon-calculator",
