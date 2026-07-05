@@ -97,6 +97,10 @@ export const trackCopy = {
     scanButton: "Scan pricing page",
     scanHint: "AI extracts tiers + detects changes — uses 1 free try",
     scanLoading: "Scanning pricing page...",
+    trialLowTitle: "Only {remaining} free deep-dive left",
+    trialLowBody:
+      "Subscribe for unlimited competitor tracking + email alerts — most founders upgrade after their 3rd scan.",
+    trialLowCta: "View pricing",
   },
   zh: {
     title: "竞品定价追踪",
@@ -139,6 +143,10 @@ export const trackCopy = {
     impactHigh: "高影响",
     impactMedium: "中影响",
     impactLow: "低影响",
+    trialLowTitle: "仅剩 {remaining} 次免费深度追踪",
+    trialLowBody:
+      "订阅解锁无限竞品追踪 + 邮件变动提醒 — 多数创始人在第 3 次扫描后升级。",
+    trialLowCta: "查看定价",
   },
 } as const;
 
