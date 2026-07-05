@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T08:12:33.658Z",
+  "updatedAt": "2026-07-05T08:16:19.930Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2011,50 +2011,53 @@
           }
         },
         "2026-07-05": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1783210356123",
-            "health-watch-1783225201139"
+            "health-watch-1783225201139",
+            "health-watch-1783239379640"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "unknown": 2
+              "unknown": 3
             },
             "locales": {
-              "unknown": 2
+              "unknown": 3
             },
             "timezones": {
-              "unknown": 2
+              "unknown": 3
             },
             "utmSources": {},
             "hours": {
               "8": 1,
-              "12": 1
+              "12": 1,
+              "16": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1783210356123": 1,
-            "health-watch-1783225201139": 1
+            "health-watch-1783225201139": 1,
+            "health-watch-1783239379640": 1
           }
         }
       },
       "totals": {
-        "pv": 67,
-        "uv": 61,
+        "pv": 68,
+        "uv": 62,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2071,7 +2074,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:24.962Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "health-watch-1783239379640"
+      ]
     },
     "form-pulse": {
       "url": "https://form-pulse-amber.vercel.app",
@@ -10738,6 +10744,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1783239379640",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-05T08:16:19.800Z",
+      "lastSeen": "2026-07-05T08:16:19.800Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6",
       "siteId": "waitlist-email-verify",
