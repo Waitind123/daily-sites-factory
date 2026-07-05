@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T00:11:43.581Z",
+  "updatedAt": "2026-07-05T00:12:36.295Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1974,11 +1974,49 @@
             "health-watch-1783203082540": 1,
             "health-watch-1783206756808": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1783210356123"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1783210356123": 1
+          }
         }
       },
       "totals": {
-        "pv": 65,
-        "uv": 59,
+        "pv": 66,
+        "uv": 60,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2010,7 +2048,8 @@
         "health-watch-1783193761844",
         "health-watch-1783199621676",
         "health-watch-1783203082540",
-        "health-watch-1783206756808"
+        "health-watch-1783206756808",
+        "health-watch-1783210356123"
       ]
     },
     "form-pulse": {
@@ -10239,6 +10278,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1783210356123",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-05T00:12:36.174Z",
+      "lastSeen": "2026-07-05T00:12:36.174Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210",
       "siteId": "reddit-radar",
