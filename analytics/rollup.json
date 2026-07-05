@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T08:12:06.852Z",
+  "updatedAt": "2026-07-05T08:12:33.658Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9705,11 +9705,49 @@
             "47b73695-914c-47df-acd0-6b04a14b88bf": 1,
             "b8a99ced-e80b-477f-855f-18a49e48787f": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9726,7 +9764,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:14:04.850Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6"
+      ]
     },
     "应用商店差评挖痛点": {
       "url": "",
@@ -10697,6 +10738,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-05T08:12:33.480Z",
+      "lastSeen": "2026-07-05T08:12:33.480Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "cc001405-628b-47ec-9018-5414f994ec63",
       "siteId": "library-cowork",
