@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T09:07:00.718Z",
+  "updatedAt": "2026-07-05T09:45:17.794Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -299,11 +299,49 @@
             "544e8fc4-c699-4614-a484-fc15d6f5cf4a": 1,
             "eadbfd40-69c0-4fd6-b1ec-bbd89b58bcf7": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "cf62243b-6fd8-4e4d-8a81-fade3f5eecd8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "cf62243b-6fd8-4e4d-8a81-fade3f5eecd8": 1
+          }
         }
       },
       "totals": {
-        "pv": 79,
-        "uv": 49,
+        "pv": 80,
+        "uv": 50,
         "trial": 0,
         "checkout": 4,
         "purchase": 2
@@ -320,7 +358,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:09.416Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "cf62243b-6fd8-4e4d-8a81-fade3f5eecd8"
+      ]
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -10788,6 +10829,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "cf62243b-6fd8-4e4d-8a81-fade3f5eecd8",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-05T09:45:17.518Z",
+      "lastSeen": "2026-07-05T09:45:17.518Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "967d8c3a-7ac1-4379-9138-d22183aaad17",
       "siteId": "cron-heartbeat",
