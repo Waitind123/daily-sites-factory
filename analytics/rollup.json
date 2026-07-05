@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T11:07:55.181Z",
+  "updatedAt": "2026-07-05T11:11:21.676Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11068,44 +11068,46 @@
       "url": "",
       "daily": {
         "2026-07-05": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "a070d573-ec47-4ee2-bafc-a71d3ba0326c",
-            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af"
+            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af",
+            "25ae837d-d348-4cf4-9c75-ee22d9d042db"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 2,
+              "/": 3,
               "/diagnose": 1
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
-              "zh": 3
+              "zh": 4
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 4
             },
             "utmSources": {},
             "hours": {
-              "19": 3
+              "19": 4
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "a070d573-ec47-4ee2-bafc-a71d3ba0326c": 1,
-            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af": 2
+            "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af": 2,
+            "25ae837d-d348-4cf4-9c75-ee22d9d042db": 1
           }
         }
       },
@@ -11123,19 +11125,31 @@
         "score": 0
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
         "a070d573-ec47-4ee2-bafc-a71d3ba0326c",
-        "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af"
+        "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af",
+        "25ae837d-d348-4cf4-9c75-ee22d9d042db"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "25ae837d-d348-4cf4-9c75-ee22d9d042db",
+      "siteId": "pricing-heatmap",
+      "firstSeen": "2026-07-05T11:11:21.532Z",
+      "lastSeen": "2026-07-05T11:11:21.532Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af",
       "siteId": "pricing-heatmap",
