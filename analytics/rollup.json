@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T06:15:02.770Z",
+  "updatedAt": "2026-07-05T06:18:15.243Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2316,11 +2316,49 @@
             "2da6f73f-f808-435b-b267-8a42a18c70db": 2,
             "0edcd146-c373-48e1-b87a-81ce8efc8098": 2
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "314e9b47-b467-400a-a367-9091b1952ab5"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "314e9b47-b467-400a-a367-9091b1952ab5": 1
+          }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 14,
+        "pv": 20,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2337,7 +2375,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:26.795Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "314e9b47-b467-400a-a367-9091b1952ab5"
+      ]
     },
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
@@ -10466,6 +10507,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "314e9b47-b467-400a-a367-9091b1952ab5",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-07-05T06:18:15.099Z",
+      "lastSeen": "2026-07-05T06:18:15.099Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "280e0892-5c00-4783-8f49-bb8dcd24abfd",
       "siteId": "scope3-commute-pulse",
