@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T06:18:15.243Z",
+  "updatedAt": "2026-07-05T07:04:06.197Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6553,11 +6553,49 @@
             "76d65d53-042b-4eb6-b05f-a6e7e234e186": 1,
             "17ef5675-989c-4193-b301-1767fcd5eb7a": 1
           }
+        },
+        "2026-07-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f0f7cfdd-5850-40b7-b6ea-0d929868cd75"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f0f7cfdd-5850-40b7-b6ea-0d929868cd75": 1
+          }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 6,
+        "pv": 11,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6574,7 +6612,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:14:01.667Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "f0f7cfdd-5850-40b7-b6ea-0d929868cd75"
+      ]
     },
     "visa-guide": {
       "url": "https://visa-guide-tau.vercel.app",
@@ -10507,6 +10548,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f0f7cfdd-5850-40b7-b6ea-0d929868cd75",
+      "siteId": "virtual-cowork-room",
+      "firstSeen": "2026-07-05T07:04:05.916Z",
+      "lastSeen": "2026-07-05T07:04:05.916Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "314e9b47-b467-400a-a367-9091b1952ab5",
       "siteId": "freelance-proposal",
