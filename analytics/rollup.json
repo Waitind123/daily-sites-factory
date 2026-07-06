@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-06T06:07:16.120Z",
+  "updatedAt": "2026-07-06T06:11:34.769Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -512,11 +512,49 @@
             "dd28787a-b8cb-4e2f-8563-cfaa0da922a5": 1,
             "1fbe7b68-4d7e-47a8-bef0-6ad97dd7222e": 2
           }
+        },
+        "2026-07-06": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8528bbbd-2c92-4208-ba96-75c70e3593c0"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8528bbbd-2c92-4208-ba96-75c70e3593c0": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 4,
+        "pv": 7,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -533,7 +571,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-05T06:13:13.579Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "8528bbbd-2c92-4208-ba96-75c70e3593c0"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -11448,6 +11489,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8528bbbd-2c92-4208-ba96-75c70e3593c0",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-06T06:11:34.587Z",
+      "lastSeen": "2026-07-06T06:11:34.587Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "25c65b81-bd15-4134-9540-330cfe7b1da3",
       "siteId": "coworking-pass",
