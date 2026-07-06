@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-06T11:31:48.072Z",
+  "updatedAt": "2026-07-06T11:31:49.881Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3657,47 +3657,49 @@
           }
         },
         "2026-07-06": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "a0311134-ed3e-4961-8aef-c7918f87efc2"
+            "a0311134-ed3e-4961-8aef-c7918f87efc2",
+            "41fc19fa-d069-4bec-868d-b47ebdf76913"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "19": 1
+              "19": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "a0311134-ed3e-4961-8aef-c7918f87efc2": 1
+            "a0311134-ed3e-4961-8aef-c7918f87efc2": 1,
+            "41fc19fa-d069-4bec-868d-b47ebdf76913": 1
           }
         }
       },
       "totals": {
-        "pv": 58,
-        "uv": 40,
+        "pv": 59,
+        "uv": 41,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3716,7 +3718,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "a0311134-ed3e-4961-8aef-c7918f87efc2"
+        "a0311134-ed3e-4961-8aef-c7918f87efc2",
+        "41fc19fa-d069-4bec-868d-b47ebdf76913"
       ]
     },
     "invoice-desk": {
@@ -11673,6 +11676,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "41fc19fa-d069-4bec-868d-b47ebdf76913",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-06T11:31:49.719Z",
+      "lastSeen": "2026-07-06T11:31:49.719Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8cceeb89-f92b-43b2-ae95-cb755d594e15",
       "siteId": "coworking-finder",
