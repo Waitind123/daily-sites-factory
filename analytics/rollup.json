@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-06T09:57:39.495Z",
+  "updatedAt": "2026-07-06T11:30:19.844Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3561,11 +3561,49 @@
             "92f12a43-2719-46de-8898-bd8bddf7ac8f": 2,
             "0b2a7db0-e2c4-4bac-a077-e750ad76eecd": 1
           }
+        },
+        "2026-07-06": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a0311134-ed3e-4961-8aef-c7918f87efc2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a0311134-ed3e-4961-8aef-c7918f87efc2": 1
+          }
         }
       },
       "totals": {
-        "pv": 57,
-        "uv": 39,
+        "pv": 58,
+        "uv": 40,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3582,7 +3620,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-06T06:44:41.467Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a0311134-ed3e-4961-8aef-c7918f87efc2"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -11496,6 +11537,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a0311134-ed3e-4961-8aef-c7918f87efc2",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-06T11:30:19.454Z",
+      "lastSeen": "2026-07-06T11:30:19.454Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "11ebb906-0f9c-4d0f-babe-88e0bb671197",
       "siteId": "wcag-alt-text",
