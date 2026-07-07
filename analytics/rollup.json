@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-07T10:30:39.995Z",
+  "updatedAt": "2026-07-07T12:09:17.556Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2509,8 +2509,8 @@
           }
         },
         "2026-07-07": {
-          "pv": 6,
-          "uv": 5,
+          "pv": 7,
+          "uv": 6,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -2519,26 +2519,27 @@
             "health-watch-1783400770704",
             "health-watch-1783413688450",
             "69020aca-6c9e-4f83-80ff-59199b1edc4a",
-            "10d57bf9-07cc-491a-9c4a-c3c65d85af10"
+            "10d57bf9-07cc-491a-9c4a-c3c65d85af10",
+            "health-watch-1783426157213"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 6
+              "直接访问": 7
             },
             "paths": {
-              "/": 4,
+              "/": 5,
               "/boards": 2
             },
             "devices": {
-              "unknown": 3,
+              "unknown": 4,
               "desktop": 3
             },
             "locales": {
-              "unknown": 3,
+              "unknown": 4,
               "zh": 3
             },
             "timezones": {
-              "unknown": 3,
+              "unknown": 4,
               "UTC": 3
             },
             "utmSources": {},
@@ -2546,10 +2547,11 @@
               "8": 1,
               "13": 1,
               "16": 1,
-              "18": 3
+              "18": 3,
+              "20": 1
             },
             "visitorTypes": {
-              "new": 5,
+              "new": 6,
               "returning": 1
             }
           },
@@ -2558,13 +2560,14 @@
             "health-watch-1783400770704": 1,
             "health-watch-1783413688450": 1,
             "69020aca-6c9e-4f83-80ff-59199b1edc4a": 1,
-            "10d57bf9-07cc-491a-9c4a-c3c65d85af10": 2
+            "10d57bf9-07cc-491a-9c4a-c3c65d85af10": 2,
+            "health-watch-1783426157213": 1
           }
         }
       },
       "totals": {
-        "pv": 95,
-        "uv": 86,
+        "pv": 96,
+        "uv": 87,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2585,7 +2588,8 @@
       "knownVisitors": [
         "health-watch-1783413688450",
         "69020aca-6c9e-4f83-80ff-59199b1edc4a",
-        "10d57bf9-07cc-491a-9c4a-c3c65d85af10"
+        "10d57bf9-07cc-491a-9c4a-c3c65d85af10",
+        "health-watch-1783426157213"
       ]
     },
     "form-pulse": {
@@ -12051,6 +12055,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1783426157213",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-07T12:09:17.375Z",
+      "lastSeen": "2026-07-07T12:09:17.375Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "c7dc9176-3cd1-454a-8c69-3f8518ef3799",
       "siteId": "remote-jobs",
