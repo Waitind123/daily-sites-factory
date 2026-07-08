@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-08T07:14:23.512Z",
+  "updatedAt": "2026-07-08T09:28:35.409Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3936,11 +3936,49 @@
             "5a8b7b66-73ae-4e18-a398-dafcaa543cf9": 1,
             "531cd729-11f9-4b6e-bf63-f788664c0921": 1
           }
+        },
+        "2026-07-08": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "43533341-1c11-489c-a85d-3daad2cc76aa"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "43533341-1c11-489c-a85d-3daad2cc76aa": 1
+          }
         }
       },
       "totals": {
-        "pv": 62,
-        "uv": 43,
+        "pv": 63,
+        "uv": 44,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3957,7 +3995,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-08T05:29:08.359Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "43533341-1c11-489c-a85d-3daad2cc76aa"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -12212,6 +12253,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "43533341-1c11-489c-a85d-3daad2cc76aa",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-08T09:28:35.206Z",
+      "lastSeen": "2026-07-08T09:28:35.206Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "22b8aa6d-9a3b-4c83-93a7-488a39dde7e2",
       "siteId": "nomad-cities",
