@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-08T14:40:43.016Z",
+  "updatedAt": "2026-07-08T16:00:27.684Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1584,47 +1584,51 @@
           }
         },
         "2026-07-08": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "0ff35126-04c5-4d14-87ab-8eb4873a56ab"
+            "0ff35126-04c5-4d14-87ab-8eb4873a56ab",
+            "31076fcf-69b2-4d96-b5fb-354896e0fbe8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 1,
+              "en": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
+              "0": 1,
               "17": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "0ff35126-04c5-4d14-87ab-8eb4873a56ab": 1
+            "0ff35126-04c5-4d14-87ab-8eb4873a56ab": 1,
+            "31076fcf-69b2-4d96-b5fb-354896e0fbe8": 1
           }
         }
       },
       "totals": {
-        "pv": 29,
-        "uv": 19,
+        "pv": 30,
+        "uv": 20,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1643,7 +1647,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "0ff35126-04c5-4d14-87ab-8eb4873a56ab"
+        "0ff35126-04c5-4d14-87ab-8eb4873a56ab",
+        "31076fcf-69b2-4d96-b5fb-354896e0fbe8"
       ]
     },
     "coworking-pass": {
@@ -12443,6 +12448,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "31076fcf-69b2-4d96-b5fb-354896e0fbe8",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-07-08T16:00:27.338Z",
+      "lastSeen": "2026-07-08T16:00:27.338Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1783521642605",
       "siteId": "feature-vote",
