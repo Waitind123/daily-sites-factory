@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-09T10:29:57.934Z",
+  "updatedAt": "2026-07-09T10:29:59.133Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6618,7 +6618,7 @@
           }
         },
         "2026-07-09": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -6628,36 +6628,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/jobs": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "0ac2c30b-52d3-4278-9fb5-3c11c7003682": 1
+            "0ac2c30b-52d3-4278-9fb5-3c11c7003682": 2
           }
         }
       },
       "totals": {
-        "pv": 29,
+        "pv": 30,
         "uv": 23,
         "trial": 0,
         "checkout": 0,
@@ -12745,9 +12746,9 @@
       "visitorId": "0ac2c30b-52d3-4278-9fb5-3c11c7003682",
       "siteId": "remote-jobs",
       "firstSeen": "2026-07-09T10:29:57.749Z",
-      "lastSeen": "2026-07-09T10:29:57.749Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-09T10:29:58.948Z",
+      "pageviews": 2,
+      "path": "/jobs",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
