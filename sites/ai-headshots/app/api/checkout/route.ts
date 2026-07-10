@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { apiError } from "@/lib/api-errors";
-import { createPayment } from "@/lib/payments";
+import { createPayment, getPricing } from "@/lib/payments";
 import { memberCookieHeader } from "@/lib/member";
 
 async function checkoutRedirect(request: NextRequest, currency: "cny" | "usd") {
