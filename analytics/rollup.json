@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:33:36.775Z",
+  "updatedAt": "2026-07-10T07:33:54.560Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13972,11 +13972,49 @@
           "visitorHits": {
             "cc001405-628b-47ec-9018-5414f994ec63": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13993,7 +14031,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:54.254Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a"
+      ]
     },
     "pricing-heatmap": {
       "url": "https://pricing-heatmap-zeta.vercel.app",
@@ -14253,6 +14294,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a",
+      "siteId": "library-cowork",
+      "firstSeen": "2026-07-10T07:33:54.382Z",
+      "lastSeen": "2026-07-10T07:33:54.382Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "64bd76be-ecd1-4439-b70a-c7239278c220",
       "siteId": "reddit-radar",
