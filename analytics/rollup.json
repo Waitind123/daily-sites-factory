@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:25:59.995Z",
+  "updatedAt": "2026-07-10T07:26:49.877Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6154,11 +6154,49 @@
             "b41f7e4d-40a0-4fbd-8c50-bb0810bb57f9": 1,
             "e45cae64-92a7-4a7b-adc9-db209917a618": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e754671a-5d25-483a-87c9-c2746d068fe9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e754671a-5d25-483a-87c9-c2746d068fe9": 1
+          }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 9,
+        "pv": 12,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6175,7 +6213,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:57.571Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e754671a-5d25-483a-87c9-c2746d068fe9"
+      ]
     },
     "page-split": {
       "url": "https://page-split-pi.vercel.app",
@@ -13880,6 +13921,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e754671a-5d25-483a-87c9-c2746d068fe9",
+      "siteId": "og-image-studio",
+      "firstSeen": "2026-07-10T07:26:49.709Z",
+      "lastSeen": "2026-07-10T07:26:49.709Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "530d34ac-54b5-4663-b9f7-797bbac20819",
       "siteId": "carbon-calculator",
