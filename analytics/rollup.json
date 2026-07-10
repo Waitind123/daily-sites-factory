@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:04.772Z",
+  "updatedAt": "2026-07-10T07:15:06.408Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5115,11 +5115,49 @@
           "visitorHits": {
             "e7b14ffa-0591-46c4-9041-202b30ee1cce": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d2c98993-866d-425c-b30b-390a0f9c19c6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d2c98993-866d-425c-b30b-390a0f9c19c6": 1
+          }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 12,
+        "pv": 20,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5136,7 +5174,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:55.721Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d2c98993-866d-425c-b30b-390a0f9c19c6"
+      ]
     },
     "newsletter-stack": {
       "url": "https://newsletter-stack.vercel.app",
@@ -13222,6 +13263,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d2c98993-866d-425c-b30b-390a0f9c19c6",
+      "siteId": "meetup-host",
+      "firstSeen": "2026-07-10T07:15:06.059Z",
+      "lastSeen": "2026-07-10T07:15:06.059Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c02f955b-558f-4268-acff-259d3f9939d7",
       "siteId": "ai-contract-review",
