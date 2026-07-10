@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T03:01:28.899Z",
+  "updatedAt": "2026-07-10T04:13:45.124Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2963,11 +2963,49 @@
             "health-watch-1783633406748": 1,
             "health-watch-1783640169863": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1783656824057"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1783656824057": 1
+          }
         }
       },
       "totals": {
-        "pv": 125,
-        "uv": 115,
+        "pv": 126,
+        "uv": 116,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2994,7 +3032,8 @@
         "health-watch-1783620463946",
         "health-watch-1783627436582",
         "health-watch-1783633406748",
-        "health-watch-1783640169863"
+        "health-watch-1783640169863",
+        "health-watch-1783656824057"
       ]
     },
     "form-pulse": {
@@ -12889,6 +12928,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1783656824057",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-10T04:13:44.176Z",
+      "lastSeen": "2026-07-10T04:13:44.176Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "7f9b585f-7ca6-4b6c-96db-a45830d81514",
       "siteId": "churn-pulse",
