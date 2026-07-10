@@ -47,9 +47,13 @@ export default function JoinPage() {
           <CheckoutButton />
         </div>
 
-        {demo && (
+        {demo ? (
           <p className="mt-4 text-center text-xs text-amber-600 bg-amber-50 rounded-lg py-2 px-3">
             演示模式：未配置 Stripe 密钥，点击支付将模拟成功
+          </p>
+        ) : (
+          <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
+            ✅ 已连接 Stripe 收款
           </p>
         )}
 

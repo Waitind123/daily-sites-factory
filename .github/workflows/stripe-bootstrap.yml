@@ -1,0 +1,83 @@
+name: Stripe 全站接通
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stripe-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site_id:
+          - ai-headshots
+          - nomad-cities
+          - remote-jobs
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Require Stripe secret
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_SECRET_KEY" ]; then
+            echo "::error::请先在 GitHub Secrets 配置 STRIPE_SECRET_KEY"
+            echo "Stripe Dashboard → Developers → API keys → 复制 sk_live_... 或 sk_test_..."
+            exit 1
+          fi
+          if [[ ! "$STRIPE_SECRET_KEY" =~ ^sk_(live|test)_ ]]; then
+            echo "::error::STRIPE_SECRET_KEY 格式无效，应以 sk_live_ 或 sk_test_ 开头"
+            exit 1
+          fi
+
+      - name: Sync STRIPE_SECRET_KEY to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: node scripts/sync-vercel-env.mjs ${{ matrix.site_id }} STRIPE_SECRET_KEY
+
+      - name: Install and build
+        working-directory: sites/${{ matrix.site_id }}
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Deploy to Vercel
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: |
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN"
+
+      - name: Verify Stripe live
+        run: |
+          sleep 10
+          node scripts/verify-stripe-checkout.mjs ${{ matrix.site_id }}
+
+  summary:
+    needs: sync-and-deploy
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - run: |
+          echo "## Stripe 全站接通完成" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| 站点 | 订阅页 |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| ai-headshots | https://ai-headshots-navy.vercel.app/join |" >> $GITHUB_STEP_SUMMARY
+          echo "| nomad-cities | https://nomad-cities.vercel.app/join |" >> $GITHUB_STEP_SUMMARY
+          echo "| remote-jobs | https://remote-jobs-azure.vercel.app/join |" >> $GITHUB_STEP_SUMMARY

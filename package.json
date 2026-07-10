@@ -3,6 +3,8 @@
   "private": true,
   "description": "Daily vertical site factory - levelsio style",
   "scripts": {
-    "pick-vertical": "node scripts/pick-vertical.mjs"
+    "pick-vertical": "node scripts/pick-vertical.mjs",
+    "sync-stripe": "node scripts/sync-stripe-all-sites.mjs",
+    "verify-stripe": "node scripts/verify-stripe-checkout.mjs"
   }
 }

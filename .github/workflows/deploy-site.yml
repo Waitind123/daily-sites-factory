@@ -40,6 +40,29 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Detect payment-enabled site
+        id: payment
+        run: |
+          SITE="${{ steps.site.outputs.id }}"
+          if [ -f "sites/$SITE/lib/stripe.ts" ] || [ -f "sites/$SITE/lib/payments.ts" ]; then
+            echo "enabled=true" >> $GITHUB_OUTPUT
+          else
+            echo "enabled=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Sync Stripe env (payment sites)
+        if: steps.payment.outputs.enabled == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_SECRET_KEY" ]; then
+            echo "::warning::STRIPE_SECRET_KEY 未配置 — 站点将保持演示/Polar 模式"
+            exit 0
+          fi
+          node scripts/sync-vercel-env.mjs "${{ steps.site.outputs.id }}" STRIPE_SECRET_KEY
+
       - name: Install and build
         working-directory: sites/${{ steps.site.outputs.id }}
         run: |
@@ -61,3 +84,15 @@ jobs:
           DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
+
+      - name: Verify Stripe checkout (payment sites)
+        if: steps.payment.outputs.enabled == 'true'
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_SECRET_KEY" ]; then
+            echo "跳过 Stripe 验证（未配置密钥）"
+            exit 0
+          fi
+          sleep 8
+          node scripts/verify-stripe-checkout.mjs "${{ steps.site.outputs.id }}"

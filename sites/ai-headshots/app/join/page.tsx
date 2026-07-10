@@ -22,7 +22,13 @@ export default function JoinPage() {
             <span className="text-5xl font-bold text-stone-900">${usd.amount}</span>
             <span className="text-stone-500 text-lg">/月</span>
           </div>
-          <p className="mt-2 text-sm text-stone-400">Polar 安全支付 · 信用卡</p>
+          <p className="mt-2 text-sm text-stone-400">
+            {mode === "stripe"
+              ? "Stripe 安全支付 · 信用卡 / 支付宝 / 微信"
+              : mode === "polar"
+                ? "Polar 安全支付 · 信用卡"
+                : "安全支付"}
+          </p>
         </div>
 
         <ul className="mt-8 space-y-3 text-sm">
@@ -50,6 +56,12 @@ export default function JoinPage() {
           </button>
         </form>
 
+        {mode === "stripe" && (
+          <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
+            ✅ 已连接 Stripe 收款
+          </p>
+        )}
+
         {mode === "polar" && (
           <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
             ✅ 已连接 Polar 收款
@@ -63,7 +75,9 @@ export default function JoinPage() {
         )}
 
         <p className="mt-4 text-center text-xs text-stone-400">
-          支付由 Polar 处理 · 个人开发者可收款
+          {mode === "stripe"
+            ? "支付由 Stripe 处理 · 支持信用卡 / 支付宝 / 微信"
+            : "支付由 Polar 处理 · 个人开发者可收款"}
         </p>
       </div>
 
