@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:14.919Z",
+  "updatedAt": "2026-07-10T07:15:36.227Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1414,11 +1414,49 @@
             "9a2c7a05-092f-4aea-ba9c-249fafdfa20a": 1,
             "383f22f5-3b3b-45c2-b8b9-8d6f9ba71fe7": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5cf7fa40-007a-4476-8328-908bd4eb4899"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5cf7fa40-007a-4476-8328-908bd4eb4899": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 2,
+        "pv": 5,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1435,7 +1473,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:40.708Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5cf7fa40-007a-4476-8328-908bd4eb4899"
+      ]
     },
     "coworking-finder": {
       "url": "https://coworking-finder-lovat.vercel.app",
@@ -13263,6 +13304,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5cf7fa40-007a-4476-8328-908bd4eb4899",
+      "siteId": "coworking-daypass",
+      "firstSeen": "2026-07-10T07:15:35.772Z",
+      "lastSeen": "2026-07-10T07:15:35.772Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "78fbdff6-3ccb-4122-9bef-311e30bfde56",
       "siteId": "meetup-alt",
