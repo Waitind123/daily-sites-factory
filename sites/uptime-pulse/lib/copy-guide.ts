@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 UptimeRobot Alternative for Indie Hackers — Complete Guide",
       description:
-        "UptimeRobot raised prices 4× in 2025. Compare uptime monitoring tools for indie developers: pricing, status pages, alerts. Find a $9.9/mo flat-rate alternative.",
+        "UptimeRobot raised prices 4× in 2025. Compare uptime monitoring tools for indie developers: pricing, status pages, alerts. Find a $29/mo flat-rate alternative.",
     },
     h1: "2026 UptimeRobot Alternative for Indie Hackers: Complete Uptime Monitoring Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -48,9 +48,9 @@ export const guideCopy = {
             p: "Popular open-source option with unlimited monitors. \"Free\" ignores your time: patching, backups, and monitoring the monitor itself. Managed tools trade money for focus.",
           },
           {
-            h3: "Uptime Pulse — $9.9/mo flat",
+            h3: "Uptime Pulse — $29/mo flat",
             p: "Built for indie hackers post–UptimeRobot price hikes. Unlimited monitors, 1-minute checks, Slack/webhook alerts, public status page, and SSL expiry monitoring.",
-            link: { href: "/monitors", text: "Try 5 free URL checks", suffix: ", then $9.9/mo flat. No per-monitor math." },
+            link: { href: "/monitors", text: "Try 5 free URL checks", suffix: ", then $29/mo flat. No per-monitor math." },
           },
         ],
       },
@@ -81,16 +81,16 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "Pricing psychology: why $9.9/month works",
+        h2: "Pricing psychology: why $29/month works",
         paragraphs: [
           "Solo founders mentally budget $9–15/month per utility. Above $20, you start justifying and procrastinating. Below $5, users question reliability.",
-          "$9.9/month for uptime monitoring is less than one lost customer. It is less than an hour of your debugging time. If your product makes any revenue, monitoring pays for itself the first time it wakes you up before users notice.",
+          "$29/month for uptime monitoring is less than one lost customer. It is less than an hour of your debugging time. If your product makes any revenue, monitoring pays for itself the first time it wakes you up before users notice.",
         ],
       },
     ],
     cta: {
       title: "Run a free URL check now",
-      subtitle: "5 free checks · 1-min monitoring · $9.9/mo unlimited",
+      subtitle: "5 free checks · 1-min monitoring · $29/mo unlimited",
       button: "Open monitors →",
       href: "/monitors",
     },
@@ -99,7 +99,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 UptimeRobot 平替指南 — Uptime 监控选型",
       description:
-        "UptimeRobot 2025 年涨价 4 倍。对比独立开发者 uptime 监控工具：定价、状态页、告警。找到 $9.9/月一口价替代方案。",
+        "UptimeRobot 2025 年涨价 4 倍。对比独立开发者 uptime 监控工具：定价、状态页、告警。找到 $29/月一口价替代方案。",
     },
     h1: "2026 独立开发者 UptimeRobot 平替：Uptime 监控完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -142,9 +142,9 @@ export const guideCopy = {
             p: "流行的开源方案，监控不限量。「免费」忽略你的时间：打补丁、备份、还要监控监控器本身。托管工具用钱换专注。",
           },
           {
-            h3: "Uptime Pulse — $9.9/月 一口价",
+            h3: "Uptime Pulse — $29/月 一口价",
             p: "为 UptimeRobot 涨价后的独立开发者打造。无限监控、1 分钟检测、Slack/Webhook 告警、公开状态页、SSL 到期监控。",
-            link: { href: "/monitors", text: "免费体验 5 次 URL 检测", suffix: "，之后 $9.9/月一口价。无按监控数计费。" },
+            link: { href: "/monitors", text: "免费体验 5 次 URL 检测", suffix: "，之后 $29/月一口价。无按监控数计费。" },
           },
         ],
       },
@@ -175,16 +175,16 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "定价心理：为什么 $9.9/月合适",
+        h2: "定价心理：为什么 $29/月合适",
         paragraphs: [
           "独立开发者心里为每个工具预算 $9–15/月。超过 $20 就开始纠结比较拖延。低于 $5 用户会质疑可靠性。",
-          "$9.9/月的 uptime 监控比一个流失客户便宜，比一小时排错时间便宜。产品有收入的话，第一次在用户发现前叫醒你就回本了。",
+          "$29/月的 uptime 监控比一个流失客户便宜，比一小时排错时间便宜。产品有收入的话，第一次在用户发现前叫醒你就回本了。",
         ],
       },
     ],
     cta: {
       title: "立即免费检测 URL",
-      subtitle: "免费 5 次检测 · 1 分钟监控 · $9.9/月 不限量",
+      subtitle: "免费 5 次检测 · 1 分钟监控 · $29/月 不限量",
       button: "打开监控台 →",
       href: "/monitors",
     },

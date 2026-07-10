@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Statuspage $29 + UptimeRobot? · $9.9/mo all-in-one",
+    badge: "Statuspage $29 + UptimeRobot? · $29/mo all-in-one",
     title: "Uptime monitoring + status pages — one tool",
     subtitle:
-      "1-minute checks, auto status pages, incident posts. No juggling two subscriptions. 5 free actions, then $9.9/mo.",
+      "1-minute checks, auto status pages, incident posts. No juggling two subscriptions. 5 free actions, then $29/mo.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free actions · then $9.9/mo",
+    note: "5 free actions · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs $36+ for two tools" },
+      { stat: "$29", label: "flat/mo vs $36+ for two tools" },
       { stat: "60s", label: "downtime detection" },
       { stat: "1", label: "dashboard for monitor + status" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Monitoring + status pages in one subscription. No Statuspage $29 + UptimeRobot $7 stack.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Indie SaaS founder",
-        text: "I was paying Statuspage $29 and UptimeRobot $7 for the same product. Pulse Suite does both for $9.9.",
+        text: "I was paying Statuspage $29 and UptimeRobot $7 for the same product. Pulse Suite does both for $29.",
       },
       {
         name: "Mia Chen",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying for two tools that should be one",
-      subtitle: "5 free actions · then $9.9/mo for unlimited",
+      subtitle: "5 free actions · then $29/mo for unlimited",
       ctaPrimary: "Try free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Statuspage $29 + UptimeRobot？· $9.9/月一体",
+    badge: "Statuspage $29 + UptimeRobot？· $29/月一体",
     title: "Uptime 监控 + 状态页 — 一个工具搞定",
     subtitle:
-      "1 分钟检测、自动状态页、事件发布。不用再买两个订阅。免费体验 5 次，之后 $9.9/月。",
+      "1 分钟检测、自动状态页、事件发布。不用再买两个订阅。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费试用",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价 vs 两个工具 $36+" },
+      { stat: "$29", label: "一口价 vs 两个工具 $36+" },
       { stat: "60 秒", label: "故障检测" },
       { stat: "1", label: "个控制台搞定监控+状态" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "监控 + 状态页一个订阅搞定。不用 Statuspage $29 + UptimeRobot $7 组合。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "独立 SaaS 创始人",
-        text: "之前 Statuspage $29 加 UptimeRobot $7 买同一件事。Pulse Suite $9.9 全包。",
+        text: "之前 Statuspage $29 加 UptimeRobot $7 买同一件事。Pulse Suite $29 全包。",
       },
       {
         name: "Mia Chen",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为本该一体的两个工具付两份钱",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限使用",
       ctaPrimary: "免费试用",
       ctaSecondary: "查看定价",
     },

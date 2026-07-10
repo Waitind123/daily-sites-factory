@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://uptime-pulse-three.vercel.app",
     name: "Uptime Pulse",
-    title: "Uptime Pulse — UptimeRobot alternative for indie devs, $9.9/mo flat",
+    title: "Uptime Pulse — UptimeRobot alternative for indie devs, $29/mo flat",
     description:
-      "5 free URL checks. UptimeRobot 4× price hike? $9.9/mo flat: 1-min checks, Slack alerts, public status page, SSL monitoring.",
+      "5 free URL checks. UptimeRobot 4× price hike? $29/mo flat: 1-min checks, Slack alerts, public status page, SSL monitoring.",
     keywords: [
       "uptime monitoring",
       "UptimeRobot alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://uptime-pulse-three.vercel.app",
     name: "Uptime 监控",
-    title: "Uptime Pulse — UptimeRobot 平替，独立开发者 $9.9/月",
+    title: "Uptime Pulse — UptimeRobot 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次 URL 检测。UptimeRobot 涨价 4 倍？$9.9/月一口价：1 分钟检测、Slack 告警、公开状态页、SSL 到期提醒。",
+      "免费体验 5 次 URL 检测。UptimeRobot 涨价 4 倍？$29/月一口价：1 分钟检测、Slack 告警、公开状态页、SSL 到期提醒。",
     keywords: [
       "uptime 监控",
       "UptimeRobot 替代",

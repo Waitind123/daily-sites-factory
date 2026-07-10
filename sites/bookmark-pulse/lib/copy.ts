@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Pocket shut down · $9.9/mo flat",
+    badge: "Pocket shut down · $29/mo flat",
     title: "Minimal bookmark manager for indie hackers",
     subtitle:
-      "Save URLs, auto-fetch favicons, nest folders, share public collections. No AI second brain. 5 free saves, then $9.9/mo.",
+      "Save URLs, auto-fetch favicons, nest folders, share public collections. No AI second brain. 5 free saves, then $29/mo.",
     ctaPrimary: "Save a link free",
     ctaPrimaryHref: "/bookmarks",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free saves · then $9.9/mo",
+    note: "5 free saves · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Raindrop $28+" },
+      { stat: "$29", label: "flat/mo vs Raindrop $28+" },
       { stat: "⌘K", label: "instant search across all links" },
       { stat: "5 min", label: "to import your first folder" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited bookmarks and folders. No per-seat fees like enterprise tools.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop losing links in browser tabs",
-      subtitle: "5 free saves · then $9.9/mo for unlimited",
+      subtitle: "5 free saves · then $29/mo for unlimited",
       ctaPrimary: "Save a link free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Pocket 已关停 · $9.9/月 一口价",
+    badge: "Pocket 已关停 · $29/月 一口价",
     title: "独立开发者的极简书签收藏",
     subtitle:
-      "保存链接、自动抓取图标、文件夹整理、公开分享合集。不要 AI 第二大脑。免费体验 5 次，之后 $9.9/月。",
+      "保存链接、自动抓取图标、文件夹整理、公开分享合集。不要 AI 第二大脑。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费保存链接",
     ctaPrimaryHref: "/bookmarks",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Raindrop 要 $28+" },
+      { stat: "$29", label: "一口价/月，Raindrop 要 $28+" },
       { stat: "⌘K", label: "全站链接即时搜索" },
       { stat: "5 分钟", label: "导入第一个文件夹" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "书签与文件夹不限量，不像企业工具按席位收费。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再让链接消失在浏览器标签里",
-      subtitle: "免费 5 次 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次 · 之后 $29/月 不限量",
       ctaPrimary: "免费保存链接",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Auto title + favicon fetch",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free saves, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "自动抓取标题与图标",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

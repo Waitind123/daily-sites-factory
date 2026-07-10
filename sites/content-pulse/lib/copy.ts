@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Buffer $15+/mo? · $9.9/mo flat",
+    badge: "Buffer $15+/mo? · $29/mo flat",
     title: "One post, five platforms — adapted for each",
     subtitle:
-      "Paste your product update once. Get native-ready posts for X, LinkedIn, Threads, Reddit, and Product Hunt. 5 free reposts, then $9.9/mo.",
+      "Paste your product update once. Get native-ready posts for X, LinkedIn, Threads, Reddit, and Product Hunt. 5 free reposts, then $29/mo.",
     ctaPrimary: "Repost free",
     ctaPrimaryHref: "/repost",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free reposts · then $9.9/mo",
+    note: "5 free reposts · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Buffer $15+" },
+      { stat: "$29", label: "flat/mo vs Buffer $15+" },
       { stat: "5", label: "platforms from one paste" },
       { stat: "30s", label: "to adapt a launch announcement" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited reposts. No per-channel fees like Buffer Essentials at $5/channel.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "Indie hacker",
-        text: "Buffer wanted $15/mo for 3 channels. This gives me 5 platform formats for $9.9.",
+        text: "Buffer wanted $15/mo for 3 channels. This gives me 5 platform formats for $29.",
       },
       {
         name: "Chris P.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop rewriting the same update five times",
-      subtitle: "5 free reposts · then $9.9/mo for unlimited",
+      subtitle: "5 free reposts · then $29/mo for unlimited",
       ctaPrimary: "Repost free",
       ctaSecondary: "See pricing",
     },
@@ -87,21 +87,21 @@ export const homeCopy = {
       title: "Live repost preview",
       caption: "One paste → X · LinkedIn · Threads · Reddit · Product Hunt",
       preview:
-        "📣 Content Pulse                     Generated: 2 min ago\n─────────────────────────────────────────────────────\n  Original: \"Shipped v2.0 — dark mode, 3x faster\n  exports, and $9.9/mo pricing for indie devs.\"\n─────────────────────────────────────────────────────\n  𝕏 Twitter (142/280):\n  Shipped v2.0 — dark mode, 3x faster exports…\n  #buildinpublic\n─────────────────────────────────────────────────────\n  LinkedIn (380/3000):\n  Sharing an update from the build:\n  Shipped v2.0 with dark mode…\n─────────────────────────────────────────────────────\n  [ Copy 𝕏 ]  [ Copy LinkedIn ]  [ + New repost ]",
+        "📣 Content Pulse                     Generated: 2 min ago\n─────────────────────────────────────────────────────\n  Original: \"Shipped v2.0 — dark mode, 3x faster\n  exports, and $29/mo pricing for indie devs.\"\n─────────────────────────────────────────────────────\n  𝕏 Twitter (142/280):\n  Shipped v2.0 — dark mode, 3x faster exports…\n  #buildinpublic\n─────────────────────────────────────────────────────\n  LinkedIn (380/3000):\n  Sharing an update from the build:\n  Shipped v2.0 with dark mode…\n─────────────────────────────────────────────────────\n  [ Copy 𝕏 ]  [ Copy LinkedIn ]  [ + New repost ]",
     },
   },
   zh: {
-    badge: "Buffer 要 $15+/月？· $9.9/月一口价",
+    badge: "Buffer 要 $15+/月？· $29/月一口价",
     title: "一篇内容，五个平台 — 自动适配格式",
     subtitle:
-      "粘贴一次产品更新，自动生成适配 X、领英、Threads、Reddit、Product Hunt 的帖子。免费体验 5 次，之后 $9.9/月。",
+      "粘贴一次产品更新，自动生成适配 X、领英、Threads、Reddit、Product Hunt 的帖子。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费分发",
     ctaPrimaryHref: "/repost",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Buffer 要 $15+" },
+      { stat: "$29", label: "一口价/月，Buffer 要 $15+" },
       { stat: "5", label: "个平台一次生成" },
       { stat: "30 秒", label: "适配一条发布通知" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限分发，不像 Buffer Essentials 按频道 $5/月收费。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "独立开发者",
-        text: "Buffer 3 个频道要 $15/月。这个 5 个平台格式只要 $9.9。",
+        text: "Buffer 3 个频道要 $15/月。这个 5 个平台格式只要 $29。",
       },
       {
         name: "Chris P.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为五个平台重写同一条更新",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限使用",
       ctaPrimary: "免费分发",
       ctaSecondary: "查看定价",
     },
@@ -176,7 +176,7 @@ export const homeCopy = {
       title: "实时分发预览",
       caption: "一次粘贴 → X · 领英 · Threads · Reddit · Product Hunt",
       preview:
-        "📣 内容多平台分发                   生成于：2 分钟前\n─────────────────────────────────────────────────────\n  原文：「发布 v2.0 — 深色模式、导出快 3 倍、\n  独立开发者 $9.9/月定价。」\n─────────────────────────────────────────────────────\n  𝕏 推特 (142/280)：\n  发布 v2.0 — 深色模式、导出快 3 倍…\n  #buildinpublic\n─────────────────────────────────────────────────────\n  领英 (380/3000)：\n  分享一个构建进展：\n  发布 v2.0，新增深色模式…\n─────────────────────────────────────────────────────\n  [ 复制 𝕏 ]  [ 复制领英 ]  [ + 新建分发 ]",
+        "📣 内容多平台分发                   生成于：2 分钟前\n─────────────────────────────────────────────────────\n  原文：「发布 v2.0 — 深色模式、导出快 3 倍、\n  独立开发者 $29/月定价。」\n─────────────────────────────────────────────────────\n  𝕏 推特 (142/280)：\n  发布 v2.0 — 深色模式、导出快 3 倍…\n  #buildinpublic\n─────────────────────────────────────────────────────\n  领英 (380/3000)：\n  分享一个构建进展：\n  发布 v2.0，新增深色模式…\n─────────────────────────────────────────────────────\n  [ 复制 𝕏 ]  [ 复制领英 ]  [ + 新建分发 ]",
     },
   },
 } as const;

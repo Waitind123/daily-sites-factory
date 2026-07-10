@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://cron-heartbeat.vercel.app",
     name: "Cron Heartbeat",
-    title: "Cron Heartbeat — Healthchecks.io alternative for indie devs, $9.9/mo flat",
+    title: "Cron Heartbeat — Healthchecks.io alternative for indie devs, $29/mo flat",
     description:
-      "5 free cron job monitors. Healthchecks.io too complex? $9.9/mo flat: heartbeat ping, missed-run alerts, Slack notifications.",
+      "5 free cron job monitors. Healthchecks.io too complex? $29/mo flat: heartbeat ping, missed-run alerts, Slack notifications.",
     keywords: [
       "cron job monitoring",
       "Healthchecks.io alternative",
@@ -27,9 +27,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://cron-heartbeat.vercel.app",
     name: "Cron 心跳监控",
-    title: "Cron Heartbeat — Healthchecks.io 平替，独立开发者 $9.9/月",
+    title: "Cron Heartbeat — Healthchecks.io 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个 cron 任务监控。Healthchecks.io 太贵？$9.9/月一口价：心跳 ping、漏跑检测、Slack 告警、任务日志。",
+      "免费体验 5 个 cron 任务监控。Healthchecks.io 太贵？$29/月一口价：心跳 ping、漏跑检测、Slack 告警、任务日志。",
     keywords: [
       "cron 任务监控",
       "Healthchecks.io 替代",

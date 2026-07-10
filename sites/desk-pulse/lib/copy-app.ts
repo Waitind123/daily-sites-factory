@@ -9,7 +9,7 @@ export const inboxCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free ticket actions. Subscribe for unlimited inbox, AI suggestions, and knowledge base.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     newTicket: "New ticket",
     subject: "Subject",
     subjectPlaceholder: "e.g. Refund request",
@@ -38,7 +38,7 @@ export const inboxCopy = {
     freeTries: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费额度。订阅后可无限使用收件箱、AI 建议与知识库。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     newTicket: "新建工单",
     subject: "主题",
     subjectPlaceholder: "例如：退款申请",

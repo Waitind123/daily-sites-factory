@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HoneyBook $36/mo? · $9.9/mo flat",
+    badge: "HoneyBook $36/mo? · $29/mo flat",
     title: "Freelance quotes, contracts & invoices — without the HoneyBook tax",
     subtitle:
-      "Create proposals, auto-generate contracts and invoices. 5 free quotes, then $9.9/mo unlimited.",
+      "Create proposals, auto-generate contracts and invoices. 5 free quotes, then $29/mo unlimited.",
     ctaPrimary: "Create quote free",
     ctaPrimaryHref: "/quotes",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs HoneyBook $36+/mo" },
+      { stat: "$29", label: "flat/mo vs HoneyBook $36+/mo" },
       { stat: "3-in-1", label: "quote + contract + invoice" },
       { stat: "2 min", label: "to send your first proposal" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited quotes, contracts, and invoices. No 89% price hike surprises.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Lisa M.",
         role: "Brand designer",
-        text: "HoneyBook jumped to $36/mo. Quote Pulse does quotes + contracts for $9.9.",
+        text: "HoneyBook jumped to $36/mo. Quote Pulse does quotes + contracts for $29.",
       },
       {
         name: "James K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop overpaying for client management",
-      subtitle: "5 free quotes · then $9.9/mo for unlimited proposals + contracts + invoices",
+      subtitle: "5 free quotes · then $29/mo for unlimited proposals + contracts + invoices",
       ctaPrimary: "Create quote free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HoneyBook $36/月？· $9.9/月一口价",
+    badge: "HoneyBook $36/月？· $29/月一口价",
     title: "自由职业报价、合同与发票 — 不交 HoneyBook 税",
     subtitle:
-      "创建报价单，自动生成合同与发票。免费体验 5 次，之后 $9.9/月不限量。",
+      "创建报价单，自动生成合同与发票。免费体验 5 次，之后 $29/月不限量。",
     ctaPrimary: "免费创建报价",
     ctaPrimaryHref: "/quotes",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，HoneyBook 要 $36+/月" },
+      { stat: "$29", label: "一口价/月，HoneyBook 要 $36+/月" },
       { stat: "三合一", label: "报价 + 合同 + 发票" },
       { stat: "2 分钟", label: "发出第一份提案" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "报价、合同、发票不限量。不怕 89% 涨价突袭。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Lisa M.",
         role: "品牌设计师",
-        text: "HoneyBook 涨到 $36/月。极简报价单报价+合同只要 $9.9。",
+        text: "HoneyBook 涨到 $36/月。极简报价单报价+合同只要 $29。",
       },
       {
         name: "James K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为客户管理多付钱",
-      subtitle: "免费 5 次 · 之后 $9.9/月 无限报价 + 合同 + 发票",
+      subtitle: "免费 5 次 · 之后 $29/月 无限报价 + 合同 + 发票",
       ctaPrimary: "免费创建报价",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Client & project history",
       "No per-client fees",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "客户与项目历史",
       "不按客户数收费",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

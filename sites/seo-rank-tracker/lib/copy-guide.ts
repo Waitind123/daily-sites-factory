@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 SEMrush Alternative for Indie Hackers — Keyword Rank Tracking Guide",
       description:
-        "SEMrush starts at $130/mo for rank tracking. Compare keyword trackers for indie SaaS sites. Find a $9.9/mo flat-rate tool with daily position updates.",
+        "SEMrush starts at $130/mo for rank tracking. Compare keyword trackers for indie SaaS sites. Find a $29/mo flat-rate tool with daily position updates.",
     },
     h1: "2026 SEMrush Alternative for Indie Hackers: Keyword Rank Tracking Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Shows average position with lag. No daily alerts. Clunky for tracking specific keyword+URL pairs. Works but slow for quick experiments.",
           },
           {
-            h3: "Rank Pulse — $9.9/mo flat",
+            h3: "Rank Pulse — $29/mo flat",
             p: "Built for indie hackers who want keyword rank tracking without per-seat fees. Add keyword + domain in 30 seconds, see position, change arrows, and 7-day trend.",
-            link: { href: "/join", text: "5 free rank checks to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free rank checks to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -110,13 +110,13 @@ export const guideCopy = {
           "You're A/B testing titles and need position data within 48 hours",
         ],
         after: [
-          "Rank Pulse offers 5 free rank checks so you can validate the workflow before subscribing. After that, $9.9/mo flat — less than one hour of freelance work.",
+          "Rank Pulse offers 5 free rank checks so you can validate the workflow before subscribing. After that, $29/mo flat — less than one hour of freelance work.",
         ],
       },
     ],
     cta: {
       title: "Ready to track your keywords?",
-      subtitle: "5 free rank checks · daily position updates · $9.9/mo unlimited",
+      subtitle: "5 free rank checks · daily position updates · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -124,7 +124,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 SEMrush 平替指南 — 关键词排名追踪",
       description:
-        "SEMrush 排名追踪起步 $130/月。对比适合独立站的关键词追踪工具，找到 $9.9/月一口价的每日排名更新方案。",
+        "SEMrush 排名追踪起步 $130/月。对比适合独立站的关键词追踪工具，找到 $29/月一口价的每日排名更新方案。",
     },
     h1: "2026 独立开发者 SEMrush 平替：关键词排名追踪完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -169,9 +169,9 @@ export const guideCopy = {
             p: "显示有延迟的平均排名。无每日告警。追踪特定关键词+URL 组合很别扭。能用但实验速度慢。",
           },
           {
-            h3: "SEO 排名追踪 — $9.9/月一口价",
+            h3: "SEO 排名追踪 — $29/月一口价",
             p: "为独立开发者打造，无按席位收费。30 秒添加关键词+域名，查看排名、涨跌箭头和 7 日趋势。",
-            link: { href: "/join", text: "免费体验 5 次排名查询", suffix: "，之后 $9.9/月一口价。无年付锁定。" },
+            link: { href: "/join", text: "免费体验 5 次排名查询", suffix: "，之后 $29/月一口价。无年付锁定。" },
           },
         ],
       },
@@ -229,13 +229,13 @@ export const guideCopy = {
           "A/B 测试标题，需要 48 小时内的排名数据",
         ],
         after: [
-          "SEO 排名追踪提供 5 次免费排名查询，订阅前可验证工作流。之后 $9.9/月一口价 — 不到一小时自由职业收入。",
+          "SEO 排名追踪提供 5 次免费排名查询，订阅前可验证工作流。之后 $29/月一口价 — 不到一小时自由职业收入。",
         ],
       },
     ],
     cta: {
       title: "准备好追踪你的关键词了吗？",
-      subtitle: "免费体验 5 次排名查询 · 每日位置更新 · $9.9/月不限量",
+      subtitle: "免费体验 5 次排名查询 · 每日位置更新 · $29/月不限量",
       button: "打开控制台 →",
     },
   },

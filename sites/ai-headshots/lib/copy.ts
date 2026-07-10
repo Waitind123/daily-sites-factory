@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "2 subs by 7/13 · $9.9/mo flat",
+    badge: "2 subs by 7/13 · $29/mo flat",
     title: "AI professional headshots in 30 seconds",
     subtitle:
-      "Upload a selfie, pick a style, download LinkedIn-ready portraits. 5 free generations, then $9.9/mo unlimited.",
+      "Upload a selfie, pick a style, download LinkedIn-ready portraits. 5 free generations, then $29/mo unlimited.",
     ctaPrimary: "Try free in studio",
     ctaPrimaryHref: "/#studio",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs PhotoAI $29+" },
+      { stat: "$29", label: "flat/mo vs PhotoAI $29+" },
       { stat: "30 sec", label: "from selfie to pro headshot" },
       { stat: "4 styles", label: "corporate, casual, creative, academic" },
     ],
@@ -52,7 +52,7 @@ export const homeCopy = {
       },
     ],
     closing: {
-      title: "Studio once $299 — we're $9.9/mo",
+      title: "Studio once $299 — we're $29/mo",
       subtitle: "Unlimited generations, all styles, HD download. We charge day one because GPU isn't free.",
       ctaPrimary: "Try free in studio",
       ctaSecondary: "View pricing",
@@ -71,17 +71,17 @@ export const homeCopy = {
     ],
   },
   zh: {
-    badge: "7/13 前需 2 人订阅 · ¥69/月",
+    badge: "7/13 前需 2 人订阅 · ¥199/月",
     title: "30 秒生成 AI 专业证件照",
     subtitle:
-      "上传自拍、选风格、下载 LinkedIn 级头像。免费体验 5 次，之后 $9.9/月不限量生成。",
+      "上传自拍、选风格、下载 LinkedIn 级头像。免费体验 5 次，之后 $29/月不限量生成。",
     ctaPrimary: "免费进入工作室",
     ctaPrimaryHref: "/#studio",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，PhotoAI 要 $29+" },
+      { stat: "$29", label: "一口价/月，PhotoAI 要 $29+" },
       { stat: "30 秒", label: "自拍变专业证件照" },
       { stat: "4 种", label: "商务、休闲、创意、学术风格" },
     ],
@@ -109,7 +109,7 @@ export const homeCopy = {
       { name: "王浩", role: "创业者", text: "投资人会议前 5 分钟搞定，救了我" },
     ],
     closing: {
-      title: "照相馆一次 ¥299，我们只要 $9.9/月",
+      title: "照相馆一次 ¥299，我们只要 $29/月",
       subtitle: "无限生成、全部风格、高清下载。第一天收费，因为 GPU 算力不免费。",
       ctaPrimary: "免费进入工作室",
       ctaSecondary: "查看定价",
@@ -144,7 +144,7 @@ export const joinCopy = {
       "Priority GPU queue",
       "Cancel anytime",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     subscribeCny: "Pay in CNY · ¥69/mo",
     polarConnected: "✓ Polar checkout connected",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
@@ -171,8 +171,8 @@ export const joinCopy = {
       "优先 GPU 队列",
       "随时取消订阅",
     ],
-    subscribe: "订阅 · $9.9/月（美元 Polar）",
-    subscribeCny: "人民币付款 · ¥69/月",
+    subscribe: "订阅 · $29/月（美元 Polar）",
+    subscribeCny: "人民币付款 · ¥199/月",
     polarConnected: "✓ 已连接 Polar 收款（美元）",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "美元走 Polar · 人民币走 Stripe（支付宝 / 微信）",

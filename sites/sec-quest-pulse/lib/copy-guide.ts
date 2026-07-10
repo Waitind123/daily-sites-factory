@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Security Questionnaire Auto-Fill Guide — Vanta Alternative for Indie SaaS",
       description:
-        "Enterprise deal at the finish line? Learn how indie founders fill 250-row security questionnaires in minutes with AI, not weekends. Vanta $5k+/yr vs $9.9/mo flat.",
+        "Enterprise deal at the finish line? Learn how indie founders fill 250-row security questionnaires in minutes with AI, not weekends. Vanta $5k+/yr vs $29/mo flat.",
     },
     h1: "2026 Security Questionnaire Auto-Fill: Close B2B Deals Without Losing Weekends (Vanta Alternative)",
     updated: "Updated July 2026 · 10 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "On Hacker News, a solo founder wrote: \"We just spent 3 weeks chasing a $XXk enterprise deal. At the finish line, they sent a 250-row Excel security questionnaire. It took me my entire weekend to fill out. I looked at competitors ($5k+/year, overkill for us).\" The post got hundreds of upvotes — because every B2B indie founder has lived this.",
       "Enterprise compliance platforms like Vanta ($5,000+/year) and Conveyor ($3,000+/year) are built for companies pursuing SOC 2 certification year-round. They monitor controls, collect evidence, and maintain audit trails. Powerful — but massive overkill when you just need to answer one buyer's vendor security assessment.",
       "The gap is clear: indie SaaS founders selling to mid-market companies hit security questionnaires constantly, but cannot justify $5k/year compliance platforms for occasional questionnaire fills. They need a tool that takes their existing security policy, matches it to buyer questions, and exports filled answers in minutes.",
-      "This guide explains the security questionnaire workflow, compares 2026 tools for bootstrapped founders, and shows how to auto-fill your first questionnaire in 2 minutes for $9.9/mo flat.",
+      "This guide explains the security questionnaire workflow, compares 2026 tools for bootstrapped founders, and shows how to auto-fill your first questionnaire in 2 minutes for $29/mo flat.",
     ],
     sections: [
       {
@@ -47,7 +47,7 @@ export const guideCopy = {
             p: "Copy-paste from security policy PDFs. Works for one questionnaire but does not scale across multiple buyers. No answer reuse, no completion tracking, no AI matching.",
           },
           {
-            h3: "SecQuest Pulse — $9.9/mo flat",
+            h3: "SecQuest Pulse — $29/mo flat",
             p: "Purpose-built for indie founders: paste questions, add answer bank from your security docs, AI fills answers in seconds. 5 free fills to validate before subscribing. CSV export for buyer submission.",
             link: { href: "/dashboard", text: "Fill questionnaire free", suffix: " — five fills, no credit card." },
           },
@@ -62,7 +62,7 @@ export const guideCopy = {
           "Review AI-filled answers, export CSV, and submit to buyer procurement",
         ],
         after: [
-          "Reuse your answer bank across all buyers. Each new questionnaire takes minutes, not weekends. Subscribe at $9.9/mo when you exceed 5 free fills.",
+          "Reuse your answer bank across all buyers. Each new questionnaire takes minutes, not weekends. Subscribe at $29/mo when you exceed 5 free fills.",
         ],
       },
       {
@@ -82,7 +82,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Stop losing weekends to security questionnaires",
-      subtitle: "5 free questionnaire fills. Then $9.9/mo for unlimited auto-fill.",
+      subtitle: "5 free questionnaire fills. Then $29/mo for unlimited auto-fill.",
       button: "Fill questionnaire free →",
     },
   },
@@ -90,7 +90,7 @@ export const guideCopy = {
     meta: {
       title: "2026 安全问卷自动填写指南 — Vanta 替代品",
       description:
-        "企业大单临门一脚？独立开发者如何用 AI 在几分钟内填完 250 行安全问卷，而非牺牲整个周末。Vanta $5k+/年对比 $9.9/月一口价。",
+        "企业大单临门一脚？独立开发者如何用 AI 在几分钟内填完 250 行安全问卷，而非牺牲整个周末。Vanta $5k+/年对比 $29/月一口价。",
     },
     h1: "2026 安全问卷自动填写：不牺牲周末拿下 B2B 大单（Vanta 替代品）",
     updated: "更新于 2026 年 7 月 · 阅读约 10 分钟",
@@ -99,7 +99,7 @@ export const guideCopy = {
       "Hacker News 上一位独立创始人写道：「我们追了三个星期的大单，临门一脚对方发来 250 行安全问卷，我整个周末都在填。看了竞品（$5k+/年，对我们太重了）。」帖子获数百赞 — 因为每个卖 B2B 的独立开发者都经历过。",
       "Vanta（$5,000+/年）和 Conveyor（$3,000+/年）等合规平台是为全年追求 SOC 2 认证的公司设计的。它们监控控制项、收集证据、维护审计轨迹。功能强大 — 但如果你只需要回答一个买家的供应商安全评估，就太重了。",
       "缺口很明显：独立开发者向中型企业销售时经常遇到安全问卷，却无法为偶尔填写 justify $5k/年的合规平台。他们需要的是：拿现有安全政策、匹配买家题目、几分钟导出填写结果的工具。",
-      "本指南介绍安全问卷工作流、对比 2026 年自举创始人的工具选择，并演示如何 2 分钟内自动填写首份问卷，$9.9/月一口价。",
+      "本指南介绍安全问卷工作流、对比 2026 年自举创始人的工具选择，并演示如何 2 分钟内自动填写首份问卷，$29/月一口价。",
     ],
     sections: [
       {
@@ -132,7 +132,7 @@ export const guideCopy = {
             p: "从安全政策 PDF 复制粘贴。一份问卷还行，多个买家无法扩展。无答案复用、无完成度追踪、无 AI 匹配。",
           },
           {
-            h3: "安全问卷自动填写 — $9.9/月一口价",
+            h3: "安全问卷自动填写 — $29/月一口价",
             p: "为独立开发者设计：粘贴题目、从安全文档添加答案库、AI 几秒内填写。免费体验 5 次验证价值。CSV 导出供买家提交。",
             link: { href: "/dashboard", text: "免费填写问卷", suffix: " — 五次体验，无需信用卡。" },
           },
@@ -147,7 +147,7 @@ export const guideCopy = {
           "复核 AI 填写结果，导出 CSV，提交给买家采购",
         ],
         after: [
-          "答案库跨所有买家复用。每份新问卷几分钟而非整个周末。超过 5 次免费体验后 $9.9/月订阅。",
+          "答案库跨所有买家复用。每份新问卷几分钟而非整个周末。超过 5 次免费体验后 $29/月订阅。",
         ],
       },
       {
@@ -167,7 +167,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "别再为安全问卷牺牲周末",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月不限量自动填写",
+      subtitle: "免费体验 5 次 · 之后 $29/月不限量自动填写",
       button: "免费填写问卷 →",
     },
   },

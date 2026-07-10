@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Revenue up, margins down? · $9.9/mo flat",
+    badge: "Revenue up, margins down? · $29/mo flat",
     title: "Per-customer AI profit tracking for indie SaaS",
     subtitle:
-      "Stripe shows revenue growing — but OpenAI bills rising faster? See profit per customer: revenue vs AI API cost. 5 free analyses, then $9.9/mo.",
+      "Stripe shows revenue growing — but OpenAI bills rising faster? See profit per customer: revenue vs AI API cost. 5 free analyses, then $29/mo.",
     ctaPrimary: "Analyze profit free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free analyses · then $9.9/mo",
+    note: "5 free analyses · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs AICost.ai $49+" },
+      { stat: "$29", label: "flat/mo vs AICost.ai $49+" },
       { stat: "8", label: "customers analyzed per sync" },
       { stat: "2 min", label: "to connect Stripe & see margins" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited profit analyses. No per-customer fees like enterprise analytics tools.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Know your real margins, not just MRR",
-      subtitle: "5 free analyses · then $9.9/mo for unlimited",
+      subtitle: "5 free analyses · then $29/mo for unlimited",
       ctaPrimary: "Analyze profit free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "收入增长，利润下降？· $9.9/月一口价",
+    badge: "收入增长，利润下降？· $29/月一口价",
     title: "独立开发者 AI 客户利润追踪",
     subtitle:
-      "Stripe 显示收入增长，但 OpenAI 账单涨得更快？按客户查看利润：收入对比 AI API 成本。免费体验 5 次分析，之后 $9.9/月。",
+      "Stripe 显示收入增长，但 OpenAI 账单涨得更快？按客户查看利润：收入对比 AI API 成本。免费体验 5 次分析，之后 $29/月。",
     ctaPrimary: "免费分析利润",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，竞品要 $49+" },
+      { stat: "$29", label: "一口价/月，竞品要 $49+" },
       { stat: "8", label: "每次同步分析的客户数" },
       { stat: "2 分钟", label: "连接 Stripe 查看利润率" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限次利润分析，无企业级按客户收费。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "掌握真实利润率，而不只是 MRR",
-      subtitle: "免费体验 5 次分析 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次分析 · 之后 $29/月无限使用",
       ctaPrimary: "免费分析利润",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "CSV export",
       "Read-only Stripe key (secure)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free analyses, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "CSV 导出",
       "只读 Stripe 密钥（安全）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次分析，之后订阅？",

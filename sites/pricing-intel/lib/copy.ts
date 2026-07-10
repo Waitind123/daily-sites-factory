@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Kompyte $10K+/yr · Klue enterprise-only · we intel for $9.9/mo",
+    badge: "Kompyte $10K+/yr · Klue enterprise-only · we intel for $29/mo",
     title: "Competitive pricing intelligence for solo founders",
     subtitle:
-      "Pricing page monitoring, strategy playbooks & change alerts. 5 free intel reports, then $9.9/mo. Ship fast like levelsio — charge from day one.",
+      "Pricing page monitoring, strategy playbooks & change alerts. 5 free intel reports, then $29/mo. Ship fast like levelsio — charge from day one.",
     ctaPrimary: "Try intel free",
     ctaPrimaryHref: "/intel",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
       { stat: "8", label: "products tracked" },
       { stat: "2", label: "avg changes/90d" },
@@ -65,7 +65,7 @@ export const homeCopy = {
       {
         name: "Jay",
         role: "SaaS founder",
-        text: "Competitor cut prices 3 weeks before I knew — lost a deal. Now tracked daily for $9.9/mo.",
+        text: "Competitor cut prices 3 weeks before I knew — lost a deal. Now tracked daily for $29/mo.",
       },
       {
         name: "Mia",
@@ -75,20 +75,20 @@ export const homeCopy = {
       {
         name: "Kevin",
         role: "Indie Hacker",
-        text: "Kompyte wanted $12K/yr for 3 competitors. This gives intel + playbooks at $9.9/mo.",
+        text: "Kompyte wanted $12K/yr for 3 competitors. This gives intel + playbooks at $29/mo.",
       },
     ],
     closing: {
       title: "Enterprise CI teams pay $10K/yr. You shouldn't.",
-      subtitle: "$9.9/mo flat. Daily intel scans, 90-day history, strategy playbooks. Built for solo founders who ship fast.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+      subtitle: "$29/mo flat. Daily intel scans, 90-day history, strategy playbooks. Built for solo founders who ship fast.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try intel free",
     },
     productDemo: {
       title: "Live pricing intel preview",
       caption: "Scans · playbooks · competitive notes · strategy tips",
       preview:
-        "🧠 Pricing Intel — Intercom\n─────────────────────────────────────────────────────\n  📈 90-day     3 changes · Essential $39→$74/seat (+90%)\n  🔔 Intel      Free tier removed for new signups\n  🎯 Compete    Crisp $25/mo · desk-pulse $9.9/mo flat\n  💡 Playbook   Pitch「we didn't 2x in 90 days」now\n─────────────────────────────────────────────────────\n  [ View intel ]    [ Set alert ]    [ Run playbook ]",
+        "🧠 Pricing Intel — Intercom\n─────────────────────────────────────────────────────\n  📈 90-day     3 changes · Essential $39→$74/seat (+90%)\n  🔔 Intel      Free tier removed for new signups\n  🎯 Compete    Crisp $25/mo · desk-pulse $29/mo flat\n  💡 Playbook   Pitch「we didn't 2x in 90 days」now\n─────────────────────────────────────────────────────\n  [ View intel ]    [ Set alert ]    [ Run playbook ]",
     },
     emailAlertDemo: {
       title: "Email alert within 24h",
@@ -107,14 +107,14 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Kompyte 年费 $10K+ · Klue 仅企业版 · 我们 $9.9/月情报",
+    badge: "Kompyte 年费 $10K+ · Klue 仅企业版 · 我们 $29/月情报",
     title: "solo founder 的竞品定价情报",
-    subtitle: "定价页监控、策略手册与变动提醒。免费体验 5 次情报报告，之后 $9.9/月。levelsio 思路 — 第一天就收费。",
+    subtitle: "定价页监控、策略手册与变动提醒。免费体验 5 次情报报告，之后 $29/月。levelsio 思路 — 第一天就收费。",
     ctaPrimary: "免费体验情报",
     ctaPrimaryHref: "/intel",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "8", label: "追踪产品" },
       { stat: "2", label: "平均变动/90天" },
@@ -169,7 +169,7 @@ export const homeCopy = {
       {
         name: "阿杰",
         role: "SaaS 创始人",
-        text: "竞品降价 3 周后我才知道，丢了一单。现在每天自动追踪，$9.9/月太值了。",
+        text: "竞品降价 3 周后我才知道，丢了一单。现在每天自动追踪，$29/月太值了。",
       },
       {
         name: "Mia",
@@ -179,20 +179,20 @@ export const homeCopy = {
       {
         name: "Kevin",
         role: "Indie Hacker",
-        text: "Kompyte 3 个竞品要 $12K/年。这个 $9.9/月 情报+手册够用。",
+        text: "Kompyte 3 个竞品要 $12K/年。这个 $29/月 情报+手册够用。",
       },
     ],
     closing: {
       title: "企业 CI 团队付 $10K/年。你不必。",
-      subtitle: "只要 $9.9/月。每日情报扫描、90 天历史、策略手册。为快速 ship 的 solo founder 而生。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "只要 $29/月。每日情报扫描、90 天历史、策略手册。为快速 ship 的 solo founder 而生。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {
       title: "定价情报实时预览",
       caption: "扫描 · 手册 · 竞争分析 · 策略建议",
       preview:
-        "🧠 竞品定价情报 — Intercom\n─────────────────────────────────────────────────────\n  📈 90 天     3 次变动 · Essential $39→$74/席位（+90%）\n  🔔 情报      新账号取消免费层\n  🎯 竞争      Crisp $25/月 · desk-pulse $9.9/月固定价\n  💡 手册      现在推「我们 90 天没涨 2 倍」\n─────────────────────────────────────────────────────\n  [ 查看情报 ]    [ 设置提醒 ]    [ 执行手册 ]",
+        "🧠 竞品定价情报 — Intercom\n─────────────────────────────────────────────────────\n  📈 90 天     3 次变动 · Essential $39→$74/席位（+90%）\n  🔔 情报      新账号取消免费层\n  🎯 竞争      Crisp $25/月 · desk-pulse $29/月固定价\n  💡 手册      现在推「我们 90 天没涨 2 倍」\n─────────────────────────────────────────────────────\n  [ 查看情报 ]    [ 设置提醒 ]    [ 执行手册 ]",
     },
     emailAlertDemo: {
       title: "24 小时内邮件提醒",

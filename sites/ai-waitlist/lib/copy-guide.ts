@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI Waitlist Validation Guide for Indie Hackers — Score Signup Quality Before Launch",
       description:
-        "40% of waitlist signups may be junk. Learn how AI lead scoring validates signup quality, filters disposable emails, and tells you when to launch. $9.9/mo alternative to Prefinery.",
+        "40% of waitlist signups may be junk. Learn how AI lead scoring validates signup quality, filters disposable emails, and tells you when to launch. $29/mo alternative to Prefinery.",
     },
     h1: "2026 AI Waitlist Validation for Indie Hackers: Score Signup Quality Before You Launch",
     updated: "Updated June 2026 · 12 min read",
@@ -67,9 +67,9 @@ export const guideCopy = {
             p: "Built for indie hackers with MRR counter and auto-tweet milestones. Focuses on growth mechanics, not signup quality validation.",
           },
           {
-            h3: "AI Waitlist — $9.9/mo flat",
+            h3: "AI Waitlist — $29/mo flat",
             p: "Built for indie founders who want Prefinery-style waitlists plus AI lead scoring on every signup. A–F grades, health analysis, launch recommendations.",
-            link: { href: "/join", text: "5 free AI analyses to try", suffix: ", then $9.9/mo flat. No per-email fees." },
+            link: { href: "/join", text: "5 free AI analyses to try", suffix: ", then $29/mo flat. No per-email fees." },
           },
         ],
       },
@@ -120,7 +120,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 AI 等候名单验证指南 — 上线前评估报名质量",
       description:
-        "等候名单报名可能有 40% 是无效线索。了解 AI 线索评分如何验证报名质量、过滤一次性邮箱、判断何时上线。Prefinery 平替 $9.9/月。",
+        "等候名单报名可能有 40% 是无效线索。了解 AI 线索评分如何验证报名质量、过滤一次性邮箱、判断何时上线。Prefinery 平替 $29/月。",
     },
     h1: "2026 独立开发者 AI 等候名单验证：上线前评估报名质量",
     updated: "2026 年 6 月更新 · 阅读约 12 分钟",
@@ -182,9 +182,9 @@ export const guideCopy = {
             p: "为独立开发者打造，有 MRR 计数器和自动发推里程碑。聚焦增长机制，不是报名质量验证。",
           },
           {
-            h3: "AI 等候名单验证 — $9.9/月 一口价",
+            h3: "AI 等候名单验证 — $29/月 一口价",
             p: "为独立创始人打造：Prefinery 式等候名单 + 每个报名的 AI 线索评分。A–F 等级、健康分析、上线建议。",
-            link: { href: "/join", text: "免费体验 5 次 AI 分析", suffix: "，之后 $9.9/月 一口价，不按邮箱收费。" },
+            link: { href: "/join", text: "免费体验 5 次 AI 分析", suffix: "，之后 $29/月 一口价，不按邮箱收费。" },
           },
         ],
       },

@@ -9,7 +9,7 @@ export const quotesCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free document actions. Subscribe for unlimited proposals, contracts, and e-signatures.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     newQuote: "New document",
     clientName: "Client name",
     clientNamePlaceholder: "e.g. Sarah Chen",
@@ -48,7 +48,7 @@ export const quotesCopy = {
     freeTries: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费额度。订阅后可无限使用提案、合同与电子签名。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     newQuote: "新建文档",
     clientName: "客户名称",
     clientNamePlaceholder: "例如：陈莎拉",

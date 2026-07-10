@@ -46,7 +46,7 @@ export const guideCopy = {
           "Track no-show rate per attendee for future priority",
         ],
         after: [
-          "Meetup Host handles all four for $9.9/mo vs Meetup Pro $170/yr.",
+          "Meetup Host handles all four for $29/mo vs Meetup Pro $170/yr.",
         ],
         link: { href: "/join", text: "Try Meetup Host free", suffix: " — 5 event manages included." },
       },
@@ -72,8 +72,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready to run your first indie meetup?",
-      body: "5 free event manages. RSVP + waitlist + check-in + reminders for $9.9/mo.",
-      primary: "Subscribe · $9.9/mo",
+      body: "5 free event manages. RSVP + waitlist + check-in + reminders for $29/mo.",
+      primary: "Subscribe · $29/mo",
       secondary: "Browse sample events",
     },
   },
@@ -119,7 +119,7 @@ export const guideCopy = {
           "配置 T-24h + T-2h 提醒模板",
           "追踪每位参与者的 no-show 率，下次优先邀请可靠的人",
         ],
-        after: ["Meetup Host 四件事全包，$9.9/月 vs Meetup Pro $170/年。"],
+        after: ["Meetup Host 四件事全包，$29/月 vs Meetup Pro $170/年。"],
         link: { href: "/join", text: "免费体验 Meetup Host", suffix: " — 含 5 次活动管理。" },
       },
       {
@@ -144,8 +144,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好组织第一场 indie 聚会了吗？",
-      body: "免费体验 5 次活动管理。RSVP + 候补 + 签到 + 提醒，$9.9/月。",
-      primary: "立即订阅 $9.9/月",
+      body: "免费体验 5 次活动管理。RSVP + 候补 + 签到 + 提醒，$29/月。",
+      primary: "立即订阅 $29/月",
       secondary: "浏览示例活动",
     },
   },

@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Study Hall $20/mo? · $9.9/mo library focus",
+    badge: "Study Hall $20/mo? · $29/mo library focus",
     title: "Virtual library cowork for deep focus",
     subtitle:
-      "Quiet library atmosphere with pomodoro, page-turn ambient & body doubling. 5 free sessions, then $9.9/mo.",
+      "Quiet library atmosphere with pomodoro, page-turn ambient & body doubling. 5 free sessions, then $29/mo.",
     ctaPrimary: "Enter library",
     ctaPrimaryHref: "/room",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free sessions · then $9.9/mo",
+    note: "5 free sessions · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Study Hall $20+" },
+      { stat: "$29", label: "flat/mo vs Study Hall $20+" },
       { stat: "217", label: "readers focusing now" },
       { stat: "0", label: "video calls — pure silence" },
     ],
@@ -85,12 +85,12 @@ export const homeCopy = {
       {
         name: "Jay W.",
         role: "Remote frontend",
-        text: "$9.9 is less than a coffee, but buys me 2 extra focused hours daily. Body doubling works.",
+        text: "$29 is less than a coffee, but buys me 2 extra focused hours daily. Body doubling works.",
       },
     ],
     closing: {
       title: "Cafés are loud. Study Hall costs $20.",
-      subtitle: "Just $9.9/mo. Open → pick desk → read in silence. No camera, no pressure.",
+      subtitle: "Just $29/mo. Open → pick desk → read in silence. No camera, no pressure.",
       ctaPrimary: "Enter library",
       ctaSecondary: "View pricing",
     },
@@ -102,17 +102,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Study Hall $20/月？· $9.9/月图书馆专注",
+    badge: "Study Hall $20/月？· $29/月图书馆专注",
     title: "虚拟图书馆共工，安静到能听见翻书声",
     subtitle:
-      "图书馆氛围 + 番茄钟 + 翻书白噪音 + body doubling。免费体验 5 次，之后 $9.9/月。",
+      "图书馆氛围 + 番茄钟 + 翻书白噪音 + body doubling。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "进入阅览室",
     ctaPrimaryHref: "/room",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Study Hall 要 $20+" },
+      { stat: "$29", label: "一口价/月，Study Hall 要 $20+" },
       { stat: "217", label: "当前正在阅读专注" },
       { stat: "0", label: "次视频通话 — 纯安静" },
     ],
@@ -185,12 +185,12 @@ export const homeCopy = {
       {
         name: "阿杰",
         role: "远程前端",
-        text: "$9.9 比一杯咖啡便宜，但每天帮我多专注 2 小时。body doubling 真的有用。",
+        text: "$29 比一杯咖啡便宜，但每天帮我多专注 2 小时。body doubling 真的有用。",
       },
     ],
     closing: {
       title: "咖啡馆太吵，Study Hall 要 $20",
-      subtitle: "只要 $9.9/月。打开 → 选座位 → 安静阅读。没有摄像头，没有社交压力。",
+      subtitle: "只要 $29/月。打开 → 选座位 → 安静阅读。没有摄像头，没有社交压力。",
       ctaPrimary: "进入阅览室",
       ctaSecondary: "查看定价",
     },
@@ -219,7 +219,7 @@ export const joinCopy = {
       "Virtual companions online",
       "Daily & weekly focus stats",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free sessions, then subscribe?",
@@ -245,7 +245,7 @@ export const joinCopy = {
       "虚拟同伴在线陪伴",
       "每日/每周专注统计",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

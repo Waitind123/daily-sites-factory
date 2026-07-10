@@ -105,7 +105,7 @@ export default function GuidePage() {
       <p>
         会员可使用我们的 ICS 导出功能，将轮换后的会议时间直接导入 Google Calendar 或 Outlook。
         <Link href="/join" className="text-brand-500 hover:underline">
-          订阅 $9.9/月
+          订阅 $29/月
         </Link>{" "}
         解锁无限规划和日历导出。
       </p>
@@ -142,7 +142,7 @@ export default function GuidePage() {
       <h2>七、立即开始规划</h2>
       <p>
         添加你的团队成员，选择会议时长，30 秒内获得按痛苦指数排序的推荐时段。
-        免费体验 5 次，之后 $9.9/月解锁无限规划、ICS 导出和团队模板。
+        免费体验 5 次，之后 $29/月解锁无限规划、ICS 导出和团队模板。
       </p>
       <p>
         <Link

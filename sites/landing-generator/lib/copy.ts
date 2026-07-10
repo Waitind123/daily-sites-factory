@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Carrd $19/yr · we ship landing pages in 30s for $9.9/mo",
+    badge: "Carrd $19/yr · we ship landing pages in 30s for $29/mo",
     title: "AI landing page generator for indie hackers",
     subtitle:
-      "Describe your product, get deployable HTML in 30 seconds. 4 styles, SEO meta, export to Vercel. 5 free generations, then $9.9/mo.",
+      "Describe your product, get deployable HTML in 30 seconds. 4 styles, SEO meta, export to Vercel. 5 free generations, then $29/mo.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/studio",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
       { stat: "4", label: "style templates" },
       { stat: "30s", label: "avg generation" },
@@ -81,7 +81,7 @@ export const homeCopy = {
       {
         name: "Amy",
         role: "SaaS founder",
-        text: "A/B tested 3 landing page versions for $9.9/mo — 100x cheaper than hiring a designer.",
+        text: "A/B tested 3 landing page versions for $29/mo — 100x cheaper than hiring a designer.",
       },
       {
         name: "David",
@@ -92,8 +92,8 @@ export const homeCopy = {
     closing: {
       title: "levelsio: ship a landing page on day 1",
       subtitle:
-        "Skip 3 days of Webflow tutorials. Describe your product, get HTML in 30s, deploy today. $9.9/mo unlimited.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "Skip 3 days of Webflow tutorials. Describe your product, get HTML in 30s, deploy today. $29/mo unlimited.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try free",
     },
     productDemo: {
@@ -127,15 +127,15 @@ export const homeCopy = {
     ],
   },
   zh: {
-    badge: "Carrd $19/年 · 我们 30 秒生成落地页 $9.9/月",
+    badge: "Carrd $19/年 · 我们 30 秒生成落地页 $29/月",
     title: "独立开发者 AI 落地页生成器",
     subtitle:
-      "输入产品描述，30 秒生成可部署 HTML。4 种风格、SEO meta、导出到 Vercel。免费体验 5 次，之后 $9.9/月。",
+      "输入产品描述，30 秒生成可部署 HTML。4 种风格、SEO meta、导出到 Vercel。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/studio",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "4", label: "风格模板" },
       { stat: "30 秒", label: "平均生成" },
@@ -206,7 +206,7 @@ export const homeCopy = {
       {
         name: "Amy",
         role: "SaaS 创始人",
-        text: "A/B 测试 3 个 landing page 版本，$9.9/月比雇设计师便宜 100 倍。",
+        text: "A/B 测试 3 个 landing page 版本，$29/月比雇设计师便宜 100 倍。",
       },
       {
         name: "David",
@@ -217,8 +217,8 @@ export const homeCopy = {
     closing: {
       title: "levelsio 说：第一天就要有 landing page",
       subtitle:
-        "别花 3 天学 Webflow。输入描述，30 秒出稿，改改就能 ship。$9.9/月无限生成。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "别花 3 天学 Webflow。输入描述，30 秒出稿，改改就能 ship。$29/月无限生成。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {

@@ -9,7 +9,7 @@ export const docsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 doc sites. Subscribe for unlimited sites, custom domains, and llms.txt.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     siteTitle: "New doc site",
     siteName: "Site name",
     siteNamePlaceholder: "e.g. My API Docs",
@@ -31,7 +31,7 @@ export const docsCopy = {
     freeSites: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个文档站。订阅后可无限创建、使用自定义域名和 llms.txt。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     siteTitle: "新建文档站",
     siteName: "站点名称",
     siteNamePlaceholder: "例如：我的 API 文档",

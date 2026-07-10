@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "UptimeRobot 4× hike? · $9.9/mo flat",
+    badge: "UptimeRobot 4× hike? · $29/mo flat",
     title: "Uptime monitoring for indie hackers",
     subtitle:
-      "1-minute checks, Slack alerts, public status pages. No per-monitor fees. 5 free checks, then $9.9/mo.",
+      "1-minute checks, Slack alerts, public status pages. No per-monitor fees. 5 free checks, then $29/mo.",
     ctaPrimary: "Check a URL free",
     ctaPrimaryHref: "/monitors",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free checks · then $9.9/mo",
+    note: "5 free checks · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs UptimeRobot $34+" },
+      { stat: "$29", label: "flat/mo vs UptimeRobot $34+" },
       { stat: "60s", label: "detection from downtime" },
       { stat: "∞", label: "monitors, no per-seat fees" },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Indie SaaS founder",
-        text: "UptimeRobot went from $8 to $34/month overnight. Uptime Pulse does what I need for $9.9.",
+        text: "UptimeRobot went from $8 to $34/month overnight. Uptime Pulse does what I need for $29.",
       },
       {
         name: "Mia Chen",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Your users shouldn't be your uptime monitor",
-      subtitle: "5 free checks · then $9.9/mo for unlimited monitoring",
+      subtitle: "5 free checks · then $29/mo for unlimited monitoring",
       ctaPrimary: "Check a URL free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "UptimeRobot 涨价 4 倍？· $9.9/月一口价",
+    badge: "UptimeRobot 涨价 4 倍？· $29/月一口价",
     title: "独立开发者的极简 Uptime 监控",
     subtitle:
-      "1 分钟检测、Slack 告警、公开状态页。不按监控数收费。免费体验 5 次检测，之后 $9.9/月。",
+      "1 分钟检测、Slack 告警、公开状态页。不按监控数收费。免费体验 5 次检测，之后 $29/月。",
     ctaPrimary: "免费检测 URL",
     ctaPrimaryHref: "/monitors",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，UptimeRobot $34+" },
+      { stat: "$29", label: "一口价/月，UptimeRobot $34+" },
       { stat: "60 秒", label: "从宕机到发现" },
       { stat: "∞", label: "监控数不限，无按席位收费" },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "独立 SaaS 创始人",
-        text: "UptimeRobot 一夜之间从 $8 涨到 $34/月。Uptime Pulse 用 $9.9 满足我的需求。",
+        text: "UptimeRobot 一夜之间从 $8 涨到 $34/月。Uptime Pulse 用 $29 满足我的需求。",
       },
       {
         name: "Mia Chen",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别让用户当你的 uptime 监控",
-      subtitle: "免费体验 5 次检测 · 之后 $9.9/月不限量监控",
+      subtitle: "免费体验 5 次检测 · 之后 $29/月不限量监控",
       ctaPrimary: "免费检测 URL",
       ctaSecondary: "查看定价",
     },

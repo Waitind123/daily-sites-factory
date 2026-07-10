@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 HoneyBook Alternative for Freelancers — Quote & Invoice Guide",
       description:
-        "HoneyBook raised prices 89% to $36/mo. Compare freelance client management tools. Find a $9.9/mo flat-rate alternative for quotes, contracts, and invoices.",
+        "HoneyBook raised prices 89% to $36/mo. Compare freelance client management tools. Find a $29/mo flat-rate alternative for quotes, contracts, and invoices.",
     },
     h1: "2026 HoneyBook Alternative for Freelancers: Quote & Invoice Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Full project management + proposals + time tracking. Great if you need PM. Overkill if you only bill fixed-price projects.",
           },
           {
-            h3: "Quote Pulse — $9.9/mo flat",
+            h3: "Quote Pulse — $29/mo flat",
             p: "Built for freelancers who rage-quit HoneyBook pricing. Unlimited quotes, auto-generated contracts, invoice text. No per-client fees.",
-            link: { href: "/join", text: "5 free quote actions", suffix: ", then $9.9/mo flat. Cancel anytime." },
+            link: { href: "/join", text: "5 free quote actions", suffix: ", then $29/mo flat. Cancel anytime." },
           },
         ],
       },
@@ -88,7 +88,7 @@ export const guideCopy = {
         h2: "The real cost of HoneyBook's price hike",
         paragraphs: [
           "HoneyBook Starter at $36/mo × 12 = $432/year. If you send 12 proposals/year, that's $36 per proposal just for software.",
-          "Quote Pulse: $9.9/mo × 12 = $118.80/year, unlimited quotes and contracts. The math favors tools that match your actual usage.",
+          "Quote Pulse: $29/mo × 12 = $118.80/year, unlimited quotes and contracts. The math favors tools that match your actual usage.",
         ],
         after: [
           "Ready to try? Create a quote free, generate a contract, export invoice text, and upgrade only when you need unlimited.",
@@ -97,7 +97,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Create your first quote free",
-      subtitle: "5 free quote actions · contracts & invoices · $9.9/mo unlimited",
+      subtitle: "5 free quote actions · contracts & invoices · $29/mo unlimited",
       button: "Start free →",
     },
   },
@@ -105,7 +105,7 @@ export const guideCopy = {
     meta: {
       title: "2026 自由职业者 HoneyBook 替代品 — 报价与发票指南",
       description:
-        "HoneyBook 涨价 89% 至 $36/月。对比自由职业客户管理工具。找到 $9.9/月一口价的报价、合同与发票替代品。",
+        "HoneyBook 涨价 89% 至 $36/月。对比自由职业客户管理工具。找到 $29/月一口价的报价、合同与发票替代品。",
     },
     h1: "2026 自由职业者 HoneyBook 替代品：报价与发票指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -150,9 +150,9 @@ export const guideCopy = {
             p: "完整项目管理+提案+工时。需要 PM 很好。只做固定价项目就过剩了。",
           },
           {
-            h3: "极简报价单 — $9.9/月 一口价",
+            h3: "极简报价单 — $29/月 一口价",
             p: "为怒退 HoneyBook 定价的自由职业者打造。报价不限量、自动生成合同、发票文本。不按客户数收费。",
-            link: { href: "/join", text: "免费体验 5 次报价", suffix: "，之后 $9.9/月一口价。随时可取消。" },
+            link: { href: "/join", text: "免费体验 5 次报价", suffix: "，之后 $29/月一口价。随时可取消。" },
           },
         ],
       },
@@ -188,7 +188,7 @@ export const guideCopy = {
         h2: "HoneyBook 涨价的真实成本",
         paragraphs: [
           "HoneyBook 入门 $36/月 × 12 = $432/年。一年发 12 份提案，每份提案仅软件就 $36。",
-          "极简报价单：$9.9/月 × 12 = $118.80/年，报价和合同不限量。数学上更偏向匹配你实际用量的工具。",
+          "极简报价单：$29/月 × 12 = $118.80/年，报价和合同不限量。数学上更偏向匹配你实际用量的工具。",
         ],
         after: [
           "准备好试试？免费创建报价，生成合同，导出发票文本，需要不限量时再升级。",
@@ -197,7 +197,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费创建你的第一份报价",
-      subtitle: "免费 5 次 · 合同与发票 · $9.9/月不限量",
+      subtitle: "免费 5 次 · 合同与发票 · $29/月不限量",
       button: "免费开始 →",
     },
   },

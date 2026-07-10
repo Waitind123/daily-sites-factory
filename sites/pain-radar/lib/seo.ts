@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pain-radar-lyart.vercel.app",
     name: "Pain Radar",
-    title: "Pain Radar — Cross-platform pain point scanner for indie hackers, $9.9/mo",
+    title: "Pain Radar — Cross-platform pain point scanner for indie hackers, $29/mo",
     description:
-      "5 free scans. Scan Reddit, Hacker News & Product Hunt for pain points. GummySearch alternative with opportunity scoring. $9.9/mo flat.",
+      "5 free scans. Scan Reddit, Hacker News & Product Hunt for pain points. GummySearch alternative with opportunity scoring. $29/mo flat.",
     keywords: [
       "cross-platform pain points",
       "GummySearch alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pain-radar-lyart.vercel.app",
     name: "跨平台痛点雷达",
-    title: "跨平台痛点雷达 — 独立开发者 HN+Reddit+PH 扫描，$9.9/月",
+    title: "跨平台痛点雷达 — 独立开发者 HN+Reddit+PH 扫描，$29/月",
     description:
-      "免费体验 5 次扫描。跨 Reddit、Hacker News 与 Product Hunt 挖掘痛点，机会分评分。GummySearch 平替，$9.9/月一口价。",
+      "免费体验 5 次扫描。跨 Reddit、Hacker News 与 Product Hunt 挖掘痛点，机会分评分。GummySearch 平替，$29/月一口价。",
     keywords: [
       "跨平台痛点挖掘",
       "GummySearch 替代品",

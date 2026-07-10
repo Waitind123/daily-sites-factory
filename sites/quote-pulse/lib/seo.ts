@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://quote-pulse.vercel.app",
     name: "Quote Pulse",
-    title: "Quote Pulse — HoneyBook alternative for freelancers, $9.9/mo flat",
+    title: "Quote Pulse — HoneyBook alternative for freelancers, $29/mo flat",
     description:
-      "5 free quote actions. HoneyBook $36/mo? $9.9/mo flat: proposals, contracts, invoices — no 89% price hike.",
+      "5 free quote actions. HoneyBook $36/mo? $29/mo flat: proposals, contracts, invoices — no 89% price hike.",
     keywords: [
       "freelance quote",
       "HoneyBook alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://quote-pulse.vercel.app",
     name: "极简报价单",
-    title: "极简报价单 — HoneyBook 平替，自由职业者 $9.9/月",
+    title: "极简报价单 — HoneyBook 平替，自由职业者 $29/月",
     description:
-      "免费体验 5 次。HoneyBook $36/月？$9.9/月一口价：报价、合同、发票 — 不怕 89% 涨价。",
+      "免费体验 5 次。HoneyBook $36/月？$29/月一口价：报价、合同、发票 — 不怕 89% 涨价。",
     keywords: [
       "自由职业报价",
       "HoneyBook 替代品",

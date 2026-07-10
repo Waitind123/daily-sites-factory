@@ -51,7 +51,7 @@ export const scanCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 scans. Subscribe for unlimited cross-platform pain mining, scoring, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Scan a niche",
     keyword: "Niche keyword",
     keywordPlaceholder: "e.g. gummysearch, analytics, booking tool",
@@ -73,7 +73,7 @@ export const scanCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次扫描。订阅后可无限跨平台挖掘、评分并导出痛点。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "扫描细分领域",
     keyword: "细分领域关键词",
     keywordPlaceholder: "例如：gummysearch、分析工具、预约工具",

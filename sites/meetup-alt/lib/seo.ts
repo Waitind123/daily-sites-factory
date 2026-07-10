@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://meetup-alt.vercel.app",
     name: "MeetupAlt",
-    title: "MeetupAlt — community-owned Meetup.com alternative $9.9/mo",
+    title: "MeetupAlt — community-owned Meetup.com alternative $29/mo",
     description:
-      "Own your attendee data. Embeddable RSVP widget, custom event pages, CSV export. 5 free tries. $9.9/mo vs Meetup $25-45/mo organizer fee.",
+      "Own your attendee data. Embeddable RSVP widget, custom event pages, CSV export. 5 free tries. $29/mo vs Meetup $25-45/mo organizer fee.",
     keywords: [
       "meetup alternative",
       "meetup.com replacement",
@@ -27,9 +27,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://meetup-alt.vercel.app",
     name: "Meetup 替代品",
-    title: "Meetup 替代品 — 社区自有数据的 Meetup.com 平替 $9.9/月",
+    title: "Meetup 替代品 — 社区自有数据的 Meetup.com 平替 $29/月",
     description:
-      "参与者数据归你所有。可嵌入 RSVP 组件、自定义活动页、CSV 导出。免费体验 5 次。$9.9/月 vs Meetup 组织者 $25-45/月。",
+      "参与者数据归你所有。可嵌入 RSVP 组件、自定义活动页、CSV 导出。免费体验 5 次。$29/月 vs Meetup 组织者 $25-45/月。",
     keywords: [
       "meetup 替代品",
       "meetup.com 替代",

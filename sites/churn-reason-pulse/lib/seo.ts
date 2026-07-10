@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://churn-reason-pulse.vercel.app",
     name: "Churn Reason Pulse",
-    title: "Churn Reason Pulse — SaaS cancellation tracking for indie hackers, $9.9/mo",
+    title: "Churn Reason Pulse — SaaS cancellation tracking for indie hackers, $29/mo",
     description:
-      "5 free cancellation logs. ChartMogul shows churn % but not why. $9.9/mo flat: log reasons, categorize by price/feature/competitor, spot patterns.",
+      "5 free cancellation logs. ChartMogul shows churn % but not why. $29/mo flat: log reasons, categorize by price/feature/competitor, spot patterns.",
     keywords: [
       "churn reason tracking",
       "cancellation survey SaaS",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://churn-reason-pulse.vercel.app",
     name: "流失原因追踪",
-    title: "流失原因追踪 — 独立开发者 SaaS 取消原因采集，$9.9/月",
+    title: "流失原因追踪 — 独立开发者 SaaS 取消原因采集，$29/月",
     description:
-      "免费体验 5 次记录。ChartMogul 只显示流失率不记原因。$9.9/月一口价：记录原因、按价格/功能/竞品分类、发现规律。",
+      "免费体验 5 次记录。ChartMogul 只显示流失率不记原因。$29/月一口价：记录原因、按价格/功能/竞品分类、发现规律。",
     keywords: [
       "流失原因追踪",
       "取消调研 SaaS",

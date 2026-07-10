@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://waitlist-email-verify.vercel.app",
     name: "Waitlist Verify",
-    title: "Waitlist Verify — Email validation + AI conversion scoring, $9.9/mo",
+    title: "Waitlist Verify — Email validation + AI conversion scoring, $29/mo",
     description:
-      "5 free email audits. Waitle validates emails but no AI insights? $9.9/mo: MX checks, typo fix, disposable filter, double opt-in, conversion analysis.",
+      "5 free email audits. Waitle validates emails but no AI insights? $29/mo: MX checks, typo fix, disposable filter, double opt-in, conversion analysis.",
     keywords: [
       "waitlist email validation",
       "Waitle alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://waitlist-email-verify.vercel.app",
     name: "等候名单邮件验证",
-    title: "等候名单邮件验证 — 邮箱验证 + AI 转化分析，独立开发者 $9.9/月",
+    title: "等候名单邮件验证 — 邮箱验证 + AI 转化分析，独立开发者 $29/月",
     description:
-      "免费体验 5 次邮箱审计。Waitle 能验证邮箱但缺 AI 洞察？$9.9/月：MX 检测、拼写纠错、一次性邮箱过滤、双重确认、转化分析。",
+      "免费体验 5 次邮箱审计。Waitle 能验证邮箱但缺 AI 洞察？$29/月：MX 检测、拼写纠错、一次性邮箱过滤、双重确认、转化分析。",
     keywords: [
       "等候名单邮件验证",
       "Waitle 替代品",

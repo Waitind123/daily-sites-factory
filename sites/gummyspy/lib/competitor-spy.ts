@@ -145,7 +145,7 @@ const SPY_DATABASE: Record<string, Omit<SpyResult, "domain" | "scannedAt">> = {
         id: "c2",
         platform: "google",
         headline: "Competitor intelligence for bootstrappers",
-        body: "Meta + Google ads, G2/Capterra weaknesses, SEO gaps — $9.9/mo.",
+        body: "Meta + Google ads, G2/Capterra weaknesses, SEO gaps — $29/mo.",
         daysRunning: 18,
         spendEstimate: "$1.2k",
       },

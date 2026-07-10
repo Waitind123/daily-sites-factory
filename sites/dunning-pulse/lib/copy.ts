@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Churnkey $199/mo? · $9.9/mo flat",
+    badge: "Churnkey $199/mo? · $29/mo flat",
     title: "Recover failed Stripe payments — dunning emails + retry links",
     subtitle:
-      "9% of MRR leaks to failed payments every month. Stripe Smart Retries only recover 30%. Get branded dunning sequences, card-update links, and recovery tracking in 5 minutes. 5 free campaigns, then $9.9/mo.",
+      "9% of MRR leaks to failed payments every month. Stripe Smart Retries only recover 30%. Get branded dunning sequences, card-update links, and recovery tracking in 5 minutes. 5 free campaigns, then $29/mo.",
     ctaPrimary: "Start recovering free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free recovery campaigns · then $9.9/mo",
+    note: "5 free recovery campaigns · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Churnkey $199+" },
+      { stat: "$29", label: "flat/mo vs Churnkey $199+" },
       { stat: "57%", label: "avg recovery with full dunning stack" },
       { stat: "5 min", label: "to launch first recovery campaign" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited campaigns, unlimited emails. No % of recovered revenue like Churnkey.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "Indie hacker",
-        text: "Churnkey wanted $199/mo. I just needed dunning emails and a card-update page for $9.9.",
+        text: "Churnkey wanted $199/mo. I just needed dunning emails and a card-update page for $29.",
       },
       {
         name: "David K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop leaking MRR to failed payments",
-      subtitle: "5 free recovery campaigns · then $9.9/mo for unlimited dunning",
+      subtitle: "5 free recovery campaigns · then $29/mo for unlimited dunning",
       ctaPrimary: "Start recovering free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Churnkey 要 $199/月？· $9.9/月一口价",
+    badge: "Churnkey 要 $199/月？· $29/月一口价",
     title: "恢复 Stripe 失败支付 — 催款邮件 + 重试链接",
     subtitle:
-      "每月约 9% 的 MRR 因支付失败流失。Stripe 智能重试仅恢复 30%。5 分钟上线品牌化催款序列、更新卡片链接与恢复追踪。免费体验 5 个恢复活动，之后 $9.9/月。",
+      "每月约 9% 的 MRR 因支付失败流失。Stripe 智能重试仅恢复 30%。5 分钟上线品牌化催款序列、更新卡片链接与恢复追踪。免费体验 5 个恢复活动，之后 $29/月。",
     ctaPrimary: "免费开始恢复",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Churnkey 要 $199+" },
+      { stat: "$29", label: "一口价/月，Churnkey 要 $199+" },
       { stat: "57%", label: "完整催款栈平均恢复率" },
       { stat: "5 分钟", label: "上线首个恢复活动" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限活动、无限邮件。不像 Churnkey 按恢复收入抽成。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "独立开发者",
-        text: "Churnkey 要 $199/月。我只需要 $9.9 的催款邮件和更新卡片页。",
+        text: "Churnkey 要 $199/月。我只需要 $29 的催款邮件和更新卡片页。",
       },
       {
         name: "David K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再让失败支付漏掉 MRR",
-      subtitle: "免费体验 5 个恢复活动 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 个恢复活动 · 之后 $29/月不限量",
       ctaPrimary: "免费开始恢复",
       ctaSecondary: "查看定价",
     },

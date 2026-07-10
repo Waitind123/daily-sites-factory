@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "First 10 users are the hardest · $9.9/mo flat",
+    badge: "First 10 users are the hardest · $29/mo flat",
     title: "Find your first 10 beta testers",
     subtitle:
-      "Connect indie founders with early adopters. Post a beta listing, get qualified tester applications. 5 free listings, then $9.9/mo.",
+      "Connect indie founders with early adopters. Post a beta listing, get qualified tester applications. 5 free listings, then $29/mo.",
     ctaPrimary: "Post a beta listing free",
     ctaPrimaryHref: "/listings",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free listings · then $9.9/mo",
+    note: "5 free listings · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs manual outreach" },
+      { stat: "$29", label: "flat/mo vs manual outreach" },
       { stat: "10 min", label: "to post your first beta listing" },
       { stat: "3×", label: "more qualified testers vs cold DMs" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited beta listings and applications. No per-campaign fees.",
       },
     ],
@@ -74,12 +74,12 @@ export const homeCopy = {
       {
         name: "David K.",
         role: "Bootstrapped dev",
-        text: "HN#47618992 was right — finding early adopters is a marketplace problem. This solved it for $9.9/mo.",
+        text: "HN#47618992 was right — finding early adopters is a marketplace problem. This solved it for $29/mo.",
       },
     ],
     closing: {
       title: "Stop cold-DMing. Start recruiting.",
-      subtitle: "5 free beta listings · then $9.9/mo for unlimited",
+      subtitle: "5 free beta listings · then $29/mo for unlimited",
       ctaPrimary: "Post a beta listing free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "前 10 个用户最难找 · $9.9/月一口价",
+    badge: "前 10 个用户最难找 · $29/月一口价",
     title: "找到你的前 10 个内测用户",
     subtitle:
-      "连接独立开发者与早期尝鲜者。发布内测招募帖，获取高质量测试者申请。免费体验 5 个招募帖，之后 $9.9/月。",
+      "连接独立开发者与早期尝鲜者。发布内测招募帖，获取高质量测试者申请。免费体验 5 个招募帖，之后 $29/月。",
     ctaPrimary: "免费发布内测招募",
     ctaPrimaryHref: "/listings",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，省去手动私信" },
+      { stat: "$29", label: "一口价/月，省去手动私信" },
       { stat: "10 分钟", label: "发布第一条内测招募" },
       { stat: "3 倍", label: "比冷启动私信获得更多合格测试者" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限内测招募帖和申请，不按活动收费。",
       },
     ],
@@ -163,12 +163,12 @@ export const homeCopy = {
       {
         name: "David K.",
         role: "自举开发者",
-        text: "HN 说得对——找早期用户是撮合问题。$9.9/月解决了。",
+        text: "HN 说得对——找早期用户是撮合问题。$29/月解决了。",
       },
     ],
     closing: {
       title: "别再冷私信了，开始招募",
-      subtitle: "免费体验 5 个招募帖 · 之后 $9.9/月无限量",
+      subtitle: "免费体验 5 个招募帖 · 之后 $29/月无限量",
       ctaPrimary: "免费发布内测招募",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Application CSV export",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free listings, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "申请 CSV 导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 条招募帖，之后订阅？",

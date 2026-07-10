@@ -179,7 +179,7 @@ export default function GuidePage() {
         签证政策每月都在变化。2026 年印尼将巴厘岛签证延长至 5 年，克罗地亚即将加入申根区，泰国 DTV 细则仍在调整。
       </p>
       <p>
-        我们的 <Link href="/visas">签证数据库</Link> 覆盖 28+ 国最新政策，含收入门槛、材料清单、税务速查和实操建议。免费体验 5 次详情查询，之后 $9.9/月无限查阅。
+        我们的 <Link href="/visas">签证数据库</Link> 覆盖 28+ 国最新政策，含收入门槛、材料清单、税务速查和实操建议。免费体验 5 次详情查询，之后 $29/月无限查阅。
       </p>
 
       <div className="not-prose mt-10 rounded-2xl bg-brand-600/10 border border-brand-200 p-6 text-center">
@@ -194,7 +194,7 @@ export default function GuidePage() {
           免费体验 5 次查询
         </Link>
         <p className="text-xs text-muted mt-3">
-          或 <Link href="/join" className="text-brand-500 hover:underline">订阅 $9.9/月</Link> 无限查阅
+          或 <Link href="/join" className="text-brand-500 hover:underline">订阅 $29/月</Link> 无限查阅
         </p>
       </div>
     </article>

@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://nomad-cities.vercel.app",
     name: "Nomad Cities",
-    title: "Nomad Cities — Digital nomad city rankings, $99/yr",
+    title: "Nomad Cities — Digital nomad city rankings, $29/mo",
     description:
       "5 free city unlocks. Compare 200+ remote-work cities by cost, internet, safety & visa. Data-driven rankings for digital nomads.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://nomad-cities.vercel.app",
     name: "游民城市榜",
-    title: "游民城市榜 — 数字游民城市排名，¥699/年",
+    title: "游民城市榜 — 数字游民城市排名，¥199/月",
     description:
       "免费解锁 5 个城市。按生活成本、网速、安全、签证对比 200+ 远程工作城市。数据驱动的数字游民排名。",
     keywords: [

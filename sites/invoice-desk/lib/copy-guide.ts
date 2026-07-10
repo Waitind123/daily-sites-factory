@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 HoneyBook & Bonsai Invoice Alternative for Freelancers — Complete Guide",
       description:
-        "HoneyBook raised prices 89%. Bonsai starts at $24/mo. Compare 2026 invoice tools for solo freelancers. Find a $9.9/mo flat-rate invoice + receipt manager.",
+        "HoneyBook raised prices 89%. Bonsai starts at $24/mo. Compare 2026 invoice tools for solo freelancers. Find a $29/mo flat-rate invoice + receipt manager.",
     },
     h1: "2026 HoneyBook & Bonsai Invoice Alternative for Freelancers",
     updated: "Updated June 2026 · 12 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "If you're a solo freelancer in 2026, you've probably felt the sting of HoneyBook's 89% price increase. What used to be a reasonable $39/month tool is now $66/month for the features most freelancers actually use — proposals, contracts, and invoices. Bonsai isn't much better: $24/month on Starter, plus transaction fees on payments.",
       "The Reddit threads write themselves. r/freelance filled with posts like \"HoneyBook renewal just hit $792/year — what are you switching to?\" Indie Hackers founders ask weekly: \"I just need to send invoices and track who's paid. Why does everything cost $50/month?\"",
       "Here's the uncomfortable truth: most freelancers don't need a full client relationship management suite. They don't need subcontractor workflows, team collaboration, or marketing automation. They need four things: create an invoice, send it to a client, know when it's paid, and generate a receipt. That's it.",
-      "The market validated this gap. When HoneyBook raised prices in 2025, competitors like Indy, Wave, and newer indie tools saw sign-up spikes. MicroGaps documented the opportunity: freelancers on Reddit still complain about $20/month invoice tools in 2026. The floor hasn't dropped to $9.9/month yet — but it's getting there.",
+      "The market validated this gap. When HoneyBook raised prices in 2025, competitors like Indy, Wave, and newer indie tools saw sign-up spikes. MicroGaps documented the opportunity: freelancers on Reddit still complain about $20/month invoice tools in 2026. The floor hasn't dropped to $29/month yet — but it's getting there.",
       "This guide compares 2026 invoice and receipt tools for solo freelancers, what features actually matter at indie scale, and how to pick a billing tool that won't eat your project margins.",
     ],
     sections: [
@@ -54,7 +54,7 @@ export const guideCopy = {
             p: "Affordable proposals, contracts, and invoicing. Free tier for under 3 clients. Good budget option but no receipt auto-generation or outstanding tracker in the free plan.",
           },
           {
-            h3: "Invoice Desk — $9.9/mo",
+            h3: "Invoice Desk — $29/mo",
             p: "Built for solo freelancers who only need invoices + receipts. 5 free invoices to test with real clients. Auto invoice numbers, 15-day due dates, one-click receipt generation, outstanding vs paid dashboard. No CRM bloat, no transaction fees.",
           },
         ],
@@ -71,7 +71,7 @@ export const guideCopy = {
           "Outstanding dashboard — total unpaid at a glance",
         ],
         after: [
-          "Skip features you'll never use: team seats, subcontractor management, marketing automations, and complex CRM pipelines. A $9.9/month tool that does invoices perfectly beats a $66/month suite you use 10% of.",
+          "Skip features you'll never use: team seats, subcontractor management, marketing automations, and complex CRM pipelines. A $29/month tool that does invoices perfectly beats a $66/month suite you use 10% of.",
         ],
       },
       {
@@ -83,18 +83,18 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "Pricing math: why $9.9/mo beats free",
+        h2: "Pricing math: why $29/mo beats free",
         paragraphs: [
-          "Wave is free, so why pay $9.9/month? Three reasons:",
+          "Wave is free, so why pay $29/month? Three reasons:",
           "First, payment processing fees on Wave (2.9% + $0.60) add up. On a $3,000 invoice, that's $87.60 in fees — nearly 9 months of Invoice Desk.",
           "Second, free tools lack outstanding trackers and receipt auto-generation. You'll spend 30 minutes per month in spreadsheets — that's billable time.",
-          "Third, flat pricing means predictable costs. HoneyBook's surprise 89% hike taught freelancers that \"affordable\" tools can change overnight. A solo-maintained $9.9 tool with no upsell tiers is easier to budget.",
+          "Third, flat pricing means predictable costs. HoneyBook's surprise 89% hike taught freelancers that \"affordable\" tools can change overnight. A solo-maintained $29 tool with no upsell tiers is easier to budget.",
         ],
       },
     ],
     cta: {
       title: "Try Invoice Desk free — 5 invoices, no credit card",
-      subtitle: "Create your first invoice in 60 seconds · $9.9/mo unlimited",
+      subtitle: "Create your first invoice in 60 seconds · $29/mo unlimited",
       button: "Create invoice free →",
     },
   },
@@ -102,7 +102,7 @@ export const guideCopy = {
     meta: {
       title: "2026 HoneyBook 与 Bonsai 发票替代品指南 — 自由职业者完整对比",
       description:
-        "HoneyBook 涨价 89%，Bonsai 起步 $24/月。对比 2026 年自由职业者发票工具，找到 $9.9/月一口价的发票与收据管理方案。",
+        "HoneyBook 涨价 89%，Bonsai 起步 $24/月。对比 2026 年自由职业者发票工具，找到 $29/月一口价的发票与收据管理方案。",
     },
     h1: "2026 年 HoneyBook 与 Bonsai 发票替代品：自由职业者指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -110,7 +110,7 @@ export const guideCopy = {
       "如果你是 2026 年的自由职业者，很可能已经感受到 HoneyBook 涨价 89% 的冲击。曾经每月 $39 还算合理，如今常用功能要 $66/月。Bonsai 也好不到哪去：入门版 $24/月，付款还要收交易费。",
       "Reddit 上的吐槽帖层出不穷。r/freelance 里常见「HoneyBook 续费 $792/年 — 你们换什么？」Indie Hackers 上每周都有创始人问：「我只想开发票、看谁付了款，为什么什么都 $50/月？」",
       "事实是：大多数自由职业者不需要完整的客户关系管理系统。不需要分包商工作流、团队协作或营销自动化。他们只需要四件事：开发票、发给客户、知道是否已付、生成收据。仅此而已。",
-      "市场已经验证了这块缺口。HoneyBook 2025 年涨价后，Indy、Wave 等竞品注册量激增。MicroGaps 记录了这个机会：2026 年 Reddit 上仍有人抱怨 $20/月的发票工具。$9.9/月的地板价正在形成。",
+      "市场已经验证了这块缺口。HoneyBook 2025 年涨价后，Indy、Wave 等竞品注册量激增。MicroGaps 记录了这个机会：2026 年 Reddit 上仍有人抱怨 $20/月的发票工具。$29/月的地板价正在形成。",
       "本指南对比 2026 年适合自由职业者的发票与收据工具、独立开发者真正需要的功能，以及如何选一款不侵蚀项目利润的账单工具。",
     ],
     sections: [
@@ -151,7 +151,7 @@ export const guideCopy = {
             p: "实惠的报价、合同与发票。3 个客户以下有免费档。预算友好，但免费版没有自动收据和待收追踪。",
           },
           {
-            h3: "发票收据管理 — $9.9/月",
+            h3: "发票收据管理 — $29/月",
             p: "为只需发票和收据的自由职业者打造。5 张免费发票用真实客户测试。自动编号、15 天到期、一键收据、待收与已收面板。无 CRM 臃肿、无交易费。",
           },
         ],
@@ -168,7 +168,7 @@ export const guideCopy = {
           "待收面板 — 一屏看清未付总额",
         ],
         after: [
-          "跳过永远用不上的功能：团队席位、分包商管理、营销自动化、复杂 CRM。一款 $9.9/月把发票做好的工具，胜过 $66/月你只用 10% 的套件。",
+          "跳过永远用不上的功能：团队席位、分包商管理、营销自动化、复杂 CRM。一款 $29/月把发票做好的工具，胜过 $66/月你只用 10% 的套件。",
         ],
       },
       {
@@ -180,18 +180,18 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "定价算术：为什么 $9.9/月胜过免费",
+        h2: "定价算术：为什么 $29/月胜过免费",
         paragraphs: [
-          "Wave 免费，为什么还要付 $9.9/月？三个原因：",
+          "Wave 免费，为什么还要付 $29/月？三个原因：",
           "第一，Wave 的支付处理费（2.9% + $0.60）会累积。$3,000 发票手续费 $87.60 — 接近 9 个月的发票收据管理订阅费。",
           "第二，免费工具缺少待收追踪和自动收据。你每月要在表格里花 30 分钟 — 那是可计费时间。",
-          "第三，一口价意味着可预测成本。HoneyBook 突然涨价 89% 教会自由职业者：「实惠」工具可能一夜变贵。无升级档的 $9.9 单人维护产品更好做预算。",
+          "第三，一口价意味着可预测成本。HoneyBook 突然涨价 89% 教会自由职业者：「实惠」工具可能一夜变贵。无升级档的 $29 单人维护产品更好做预算。",
         ],
       },
     ],
     cta: {
       title: "免费试用发票收据管理 — 5 张发票，无需信用卡",
-      subtitle: "60 秒创建第一张发票 · $9.9/月不限量",
+      subtitle: "60 秒创建第一张发票 · $29/月不限量",
       button: "免费开发票 →",
     },
   },

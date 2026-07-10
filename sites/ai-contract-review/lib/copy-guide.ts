@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Freelance Contract Review Guide — AI Alternative to $300/hr Lawyers",
       description:
-        "Signing a client contract blind? Learn how freelancers scan for payment traps, IP grabs, and unlimited liability in 60 seconds with AI. Lawyer $300+/hr vs $9.9/mo flat.",
+        "Signing a client contract blind? Learn how freelancers scan for payment traps, IP grabs, and unlimited liability in 60 seconds with AI. Lawyer $300+/hr vs $29/mo flat.",
     },
     h1: "2026 Freelance Contract Review: Sign With Confidence, Not Anxiety (AI Alternative to Lawyers)",
     updated: "Updated July 2026 · 10 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "On Reddit r/SaaS, a freelance developer wrote: 'I signed a client SOW without reading it properly. They claimed ownership of my entire codebase including libraries I built before the project. Lawyer quoted $400 just to review one contract. I wish there was a $10/month tool that flags the risky clauses.' The post resonated with thousands of freelancers who've been burned by contracts they didn't fully understand.",
       "Enterprise contract lifecycle management tools like DocuSign CLM ($40+/seat/month) and LegalOn ($100+/month) are built for legal teams managing hundreds of contracts. They offer workflow automation, approval chains, and clause libraries. Powerful — but massive overkill when you're a solo freelancer reviewing one client SOW per month.",
       "The gap is clear: freelancers and indie consultants sign client contracts constantly but cannot justify $300/hour attorney fees for every agreement. They need a tool that scans contract text, flags risky clauses with plain-English explanations, and generates negotiation language they can send back to clients.",
-      "This guide explains the freelance contract review workflow, compares 2026 tools for bootstrapped founders, and shows how to review your first contract in 60 seconds for $9.9/mo flat.",
+      "This guide explains the freelance contract review workflow, compares 2026 tools for bootstrapped founders, and shows how to review your first contract in 60 seconds for $29/mo flat.",
     ],
     sections: [
       {
@@ -48,7 +48,7 @@ export const guideCopy = {
             p: "Can summarize contracts but lacks freelancer-specific clause detection, risk scoring, and negotiation templates. No structured output, no missing protection alerts, no persistent dashboard.",
           },
           {
-            h3: "Contract Review Pulse — $9.9/mo flat",
+            h3: "Contract Review Pulse — $29/mo flat",
             p: "Purpose-built for freelancers: paste contract text, get risk score, flagged clauses with severity ratings, missing protection alerts, and negotiation email draft. 5 free reviews to validate before subscribing.",
             link: { href: "/dashboard", text: "Review contract free", suffix: " — five reviews, no credit card." },
           },
@@ -77,7 +77,7 @@ export const guideCopy = {
           "Copy the negotiation email draft and send to your client within 24 hours",
         ],
         after: [
-          "Most clients accept reasonable changes when you explain them professionally. The negotiation email draft handles the tone and structure. Subscribe at $9.9/mo when you exceed 5 free reviews.",
+          "Most clients accept reasonable changes when you explain them professionally. The negotiation email draft handles the tone and structure. Subscribe at $29/mo when you exceed 5 free reviews.",
         ],
       },
       {
@@ -97,7 +97,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Stop signing contracts blind",
-      subtitle: "5 free contract reviews. Then $9.9/mo for unlimited scans + negotiation emails.",
+      subtitle: "5 free contract reviews. Then $29/mo for unlimited scans + negotiation emails.",
       button: "Review contract free →",
     },
   },
@@ -105,7 +105,7 @@ export const guideCopy = {
     meta: {
       title: "2026 自由职业合同审查指南 — AI 替代 $300/小时律师",
       description:
-        "盲目签客户合同？自由职业者如何用 AI 在 60 秒内扫描付款陷阱、知识产权掠夺和无限责任。律师 $300+/小时对比 $9.9/月一口价。",
+        "盲目签客户合同？自由职业者如何用 AI 在 60 秒内扫描付款陷阱、知识产权掠夺和无限责任。律师 $300+/小时对比 $29/月一口价。",
     },
     h1: "2026 自由职业合同审查：自信签约，不再焦虑（AI 替代律师）",
     updated: "更新于 2026 年 7 月 · 阅读约 10 分钟",
@@ -114,7 +114,7 @@ export const guideCopy = {
       "Reddit r/SaaS 上一位自由职业开发者写道：「我没仔细读就签了客户工作说明书。他们声称拥有我全部代码库，包括项目前我建的库。律师审一份合同报价 $400。真希望有个 $10/月的工具能标出问题条款。」帖子引起数千自由职业者共鸣 — 大家都被没完全理解的合同坑过。",
       "DocuSign CLM（$40+/席位/月）和 LegalOn（$100+/月）等企业合同生命周期管理工具是为管理数百份合同的法律团队设计的。它们提供工作流自动化、审批链和条款库。功能强大 — 但如果你只是每月审一份客户工作说明书，就太重了。",
       "缺口很明显：自由职业者和独立顾问经常签客户合同，却无法为每份协议 justify $300/小时的律师费。他们需要的是：扫描合同文本、用通俗语言标出问题条款、生成可发回客户的谈判语言的工具。",
-      "本指南介绍自由职业合同审查工作流、对比 2026 年自举创始人的工具选择，并演示如何 60 秒内审查首份合同，$9.9/月一口价。",
+      "本指南介绍自由职业合同审查工作流、对比 2026 年自举创始人的工具选择，并演示如何 60 秒内审查首份合同，$29/月一口价。",
     ],
     sections: [
       {
@@ -148,7 +148,7 @@ export const guideCopy = {
             p: "能总结合同但缺少自由职业者专用条款检测、风险评分和谈判模板。无结构化输出、无缺失保护提醒、无持久看板。",
           },
           {
-            h3: "合同审查助手 — $9.9/月一口价",
+            h3: "合同审查助手 — $29/月一口价",
             p: "为自由职业者设计：粘贴合同文本，获得风险评分、带严重度的问题条款、缺失保护提醒和谈判邮件草稿。免费体验 5 次验证价值。",
             link: { href: "/dashboard", text: "免费审查合同", suffix: " — 五次体验，无需信用卡。" },
           },
@@ -177,7 +177,7 @@ export const guideCopy = {
           "复制谈判邮件草稿，24 小时内发给客户",
         ],
         after: [
-          "专业解释下大多数客户会接受合理修改。谈判邮件草稿帮你把握语气和结构。超过 5 次免费体验后 $9.9/月订阅。",
+          "专业解释下大多数客户会接受合理修改。谈判邮件草稿帮你把握语气和结构。超过 5 次免费体验后 $29/月订阅。",
         ],
       },
       {
@@ -197,7 +197,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "别再盲目签合同",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限扫描 + 谈判邮件",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限扫描 + 谈判邮件",
       button: "免费审查合同 →",
     },
   },

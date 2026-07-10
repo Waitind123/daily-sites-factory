@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "450+ tools on AltStack · fragmented discovery · $9.9/mo",
+    badge: "450+ tools on AltStack · fragmented discovery · $29/mo",
     title: "Open-source SaaS alternatives — self-host & stop paying subscriptions",
     subtitle:
-      "Curated directory with Docker configs, pricing vs proprietary SaaS, and setup guides. 5 free deep dives, then $9.9/mo.",
+      "Curated directory with Docker configs, pricing vs proprietary SaaS, and setup guides. 5 free deep dives, then $29/mo.",
     ctaPrimary: "Browse alternatives free",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free deep dives · then $9.9/mo",
+    note: "5 free deep dives · then $29/mo",
     stats: [
       { stat: "50+", label: "curated alternatives" },
       { stat: "8", label: "stack categories" },
@@ -108,21 +108,21 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop leasing your stack. Own it.",
-      subtitle: "5 free deep dives · unlimited after $9.9/mo",
-      ctaPrimary: "Subscribe · $9.9/mo",
+      subtitle: "5 free deep dives · unlimited after $29/mo",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Browse alternatives free",
     },
   },
   zh: {
-    badge: "AltStack 450+ 工具 · 发现碎片化 · $9.9/月",
+    badge: "AltStack 450+ 工具 · 发现碎片化 · $29/月",
     title: "开源 SaaS 替代品目录 — 自托管，停止订阅",
     subtitle:
-      "精选目录含 Docker 配置、对比闭源 SaaS 定价、自托管指南。免费体验 5 次深度查阅，之后 $9.9/月。",
+      "精选目录含 Docker 配置、对比闭源 SaaS 定价、自托管指南。免费体验 5 次深度查阅，之后 $29/月。",
     ctaPrimary: "免费浏览替代品",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "50+", label: "精选替代品" },
       { stat: "8", label: "技术栈分类" },
@@ -220,8 +220,8 @@ export const homeCopy = {
     ],
     closing: {
       title: "停止租赁你的技术栈。拥有它。",
-      subtitle: "免费体验 5 次 · $9.9/月无限查阅",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "免费体验 5 次 · $29/月无限查阅",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费浏览替代品",
     },
   },

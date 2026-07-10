@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://invoice-desk-three.vercel.app",
     name: "Invoice Desk",
-    title: "Invoice Desk — HoneyBook alternative for freelancers, $9.9/mo flat",
+    title: "Invoice Desk — HoneyBook alternative for freelancers, $29/mo flat",
     description:
-      "5 free invoices. HoneyBook $66/mo? $9.9/mo flat: professional invoices, auto receipts, outstanding tracker. Ship billing in 60 seconds.",
+      "5 free invoices. HoneyBook $66/mo? $29/mo flat: professional invoices, auto receipts, outstanding tracker. Ship billing in 60 seconds.",
     keywords: [
       "invoice software",
       "freelance invoicing",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://invoice-desk-three.vercel.app",
     name: "极简发票工具",
-    title: "极简发票工具 — HN Show HN 平替，独立开发者 $9.9/月",
+    title: "极简发票工具 — HN Show HN 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 张发票。HoneyBook 要 $66/月？$9.9/月一口价：专业发票、自动收据、待收追踪，60 秒完成开账。",
+      "免费体验 5 张发票。HoneyBook 要 $66/月？$29/月一口价：专业发票、自动收据、待收追踪，60 秒完成开账。",
     keywords: [
       "发票软件",
       "自由职业开票",

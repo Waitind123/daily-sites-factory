@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Brand24 & Mention Alternative for Indie Hackers — Social Listening Guide",
       description:
-        "Brand24 starts at $199/mo. Mention $49/mo. Learn how to monitor Reddit & X for high-intent signals — alternative to, switching from — for $9.9/mo.",
+        "Brand24 starts at $199/mo. Mention $49/mo. Learn how to monitor Reddit & X for high-intent signals — alternative to, switching from — for $29/mo.",
     },
     h1: "2026 Social Listening Guide: Find Buyers on Reddit & X Without Brand24 Noise",
     updated: "Updated July 2026 · 12 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "Enterprise social listening tools were built for PR teams tracking every brand mention across 25 million sources. Indie hackers don't need podcast monitoring or influencer reach scores — they need threads where someone says \"switching from Mention\" or \"Brand24 alternative under $20/mo.\"",
       "Brand24's Individual plan costs $199/mo for 3 keywords with 12-hour update intervals. Mention starts at $49/mo for multi-channel coverage you may never use. ReplyRadar and Leadly fill gaps but still price above solo founders who only care about Reddit and X buying signals.",
       "The difference between vanity mention counts and intent signals is the difference between drowning in noise and landing your next 10 customers. \"I wish there was\" posts get upvotes. \"What's everyone switching to after Harvest raised prices?\" posts get credit cards.",
-      "This guide compares 2026 social listening tools for indie hackers, explains why intent filtering beats volume dashboards, and shows how to find high-intent threads on Reddit & X for $9.9/mo flat.",
+      "This guide compares 2026 social listening tools for indie hackers, explains why intent filtering beats volume dashboards, and shows how to find high-intent threads on Reddit & X for $29/mo flat.",
       "Listen Pulse follows the levelsio playbook: charge from day one, ship fast, filter for buyers already asking. Five free scans, then unlimited monitoring.",
     ],
     sections: [
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "Reddit-focused with reply drafts. Useful but still priced above bootstrappers who need monitoring, not a full outreach stack.",
           },
           {
-            h3: "Listen Pulse — $9.9/mo flat",
+            h3: "Listen Pulse — $29/mo flat",
             p: "Built for indie hackers: monitor Reddit & X for switching, alternative & pricing signals. Intent score 1–10, noise filtering, 5 free scans then unlimited.",
             link: { href: "/monitor", text: "Monitor intent signals free", suffix: " — five scans, no credit card." },
           },
@@ -76,7 +76,7 @@ export const guideCopy = {
         h2: "Real example: one thread, two trial signups",
         paragraphs: [
           "A solo SaaS founder monitored \"brand24\" on Listen Pulse and found a 10/10 intent thread: \"Brand24 $199/mo for 3 keywords — cheaper Reddit-focused alternative?\" Posted 3 hours ago in r/SaaS with 31 comments.",
-          "They replied with a genuine comparison (not a link drop), mentioned their $9.9/mo intent monitor, and got 2 trial signups from that single thread. Paid for a year of Listen Pulse in one day.",
+          "They replied with a genuine comparison (not a link drop), mentioned their $29/mo intent monitor, and got 2 trial signups from that single thread. Paid for a year of Listen Pulse in one day.",
           "This is the levelsio playbook: your customers are already asking. You just need to listen at scale and reply while the thread is hot.",
         ],
       },
@@ -92,7 +92,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Listen Pulse free",
-          prefix: "Brand24 costs $199/mo and Mention $49/mo. If you need high-intent Reddit & X monitoring, intent scoring, and $9.9/mo flat pricing, ",
+          prefix: "Brand24 costs $199/mo and Mention $49/mo. If you need high-intent Reddit & X monitoring, intent scoring, and $29/mo flat pricing, ",
           suffix: ". Five scans, no credit card. Your buyers are already asking.",
         },
       },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Brand24/Mention 替代品指南 — 独立开发者社交监听",
       description:
-        "Brand24 起步 $199/月，Mention $49/月。学习如何用切换、替代与价格信号以 $9.9/月监控 Reddit 与 X 高意向帖。",
+        "Brand24 起步 $199/月，Mention $49/月。学习如何用切换、替代与价格信号以 $29/月监控 Reddit 与 X 高意向帖。",
     },
     h1: "2026 社交监听完整指南：没有 Brand24 噪音，在 Reddit 与 X 找到买家",
     updated: "更新于 2026 年 7 月 · 阅读约 12 分钟",
@@ -115,7 +115,7 @@ export const guideCopy = {
       "企业级社交监听工具为公关团队设计，追踪 2500 万来源的每一条品牌提及。独立开发者不需要播客监控或达人影响力分数 — 他们需要有人发「正在从 Mention 切换」或「$20/月以下的 Brand24 替代品」的帖子。",
       "Brand24 个人版 $199/月仅 3 个关键词，12 小时更新间隔。Mention 起步 $49/月做多渠道覆盖，你可能根本用不到。ReplyRadar 和 Leadly 填补缺口，但定价仍高于只关心 Reddit 与 X 购买信号的自举创始人。",
       "虚荣提及数与高意向信号的区别，就是淹没在噪音里与拿下下 10 个客户之间的区别。「我希望有」帖获赞，「Harvest 涨价后大家都在换什么？」帖刷信用卡。",
-      "本指南对比 2026 年独立开发者社交监听工具，解释为什么意向过滤优于体量仪表盘，以及如何用 $9.9/月 一口价在 Reddit 与 X 找到高意向帖。",
+      "本指南对比 2026 年独立开发者社交监听工具，解释为什么意向过滤优于体量仪表盘，以及如何用 $29/月 一口价在 Reddit 与 X 找到高意向帖。",
       "社交监听替代品遵循 levelsio 路径：第一天收费、快速上线、过滤正在提问的买家。免费 5 次扫描，之后监控不限量。",
     ],
     sections: [
@@ -151,7 +151,7 @@ export const guideCopy = {
             p: "专注 Reddit 加回复草稿。有用，但定价仍高于只需监控、不需要完整外展栈的自举者。",
           },
           {
-            h3: "社交监听替代品 — $9.9/月 一口价",
+            h3: "社交监听替代品 — $29/月 一口价",
             p: "为独立开发者打造：监控 Reddit 与 X 的切换、替代与价格信号。意向分 1–10、噪音过滤。免费 5 次，之后不限量。",
             link: { href: "/monitor", text: "免费监控意向信号", suffix: " — 五次扫描，无需信用卡。" },
           },
@@ -178,7 +178,7 @@ export const guideCopy = {
         h2: "真实案例：一条帖，两个试用注册",
         paragraphs: [
           "一位独立 SaaS 创始人监控「brand24」，发现 10/10 意向帖：「Brand24 3 个关键词 $199/月 — 有更便宜的 Reddit 专注替代品吗？」3 小时前发在 r/SaaS，31 条评论。",
-          "他用真实对比回复（不是丢链接），提到自己的 $9.9/月 意向监控，从这一条帖获得 2 个试用注册。一天就赚回一年订阅费。",
+          "他用真实对比回复（不是丢链接），提到自己的 $29/月 意向监控，从这一条帖获得 2 个试用注册。一天就赚回一年订阅费。",
           "这就是 levelsio playbook：你的客户已经在提问了。你只需要规模化监听，在线还热的时候回复。",
         ],
       },
@@ -194,7 +194,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用社交监听替代品",
-          prefix: "Brand24 $199/月，Mention $49/月。若你需要 Reddit 与 X 高意向监控、意向评分、$9.9/月 一口价，可",
+          prefix: "Brand24 $199/月，Mention $49/月。若你需要 Reddit 与 X 高意向监控、意向评分、$29/月 一口价，可",
           suffix: "。五次扫描，无需信用卡。你的买家已经在提问了。",
         },
       },

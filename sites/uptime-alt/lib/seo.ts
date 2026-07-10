@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://uptime-alt.vercel.app",
     name: "UptimeAlt",
-    title: "UptimeAlt — UptimeRobot price hike alternative, $9.9/mo",
+    title: "UptimeAlt — UptimeRobot price hike alternative, $29/mo",
     description:
-      "UptimeRobot 4× price hike? 5 free actions. $9.9/mo flat: 1-minute checks, public status pages, incident posts — monitor + status in one dashboard.",
+      "UptimeRobot 4× price hike? 5 free actions. $29/mo flat: 1-minute checks, public status pages, incident posts — monitor + status in one dashboard.",
     keywords: [
       "UptimeRobot alternative",
       "UptimeRobot price hike",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://uptime-alt.vercel.app",
     name: "Uptime 涨价替代品",
-    title: "Uptime 涨价替代品 — UptimeRobot 4 倍涨价后的监控 + 状态页，$9.9/月",
+    title: "Uptime 涨价替代品 — UptimeRobot 4 倍涨价后的监控 + 状态页，$29/月",
     description:
-      "UptimeRobot 涨价 4 倍？免费体验 5 次。$9.9/月一口价：1 分钟检测、公开状态页、事件发布 — 监控与状态页一个控制台。",
+      "UptimeRobot 涨价 4 倍？免费体验 5 次。$29/月一口价：1 分钟检测、公开状态页、事件发布 — 监控与状态页一个控制台。",
     keywords: [
       "UptimeRobot 替代品",
       "UptimeRobot 涨价",

@@ -19,7 +19,7 @@ Drop-off #2: Tier selection (52%)
   → Highlight recommended plan + annual savings badge
 
 A/B #1: "Get started" → "Start free — no card" (+12–18%)
-A/B #2: "$9.9/mo" → "$99/yr (save 17%)" (+8–14%)`,
+A/B #2: "$29/mo" → "$29/mo (save 17%)" (+8–14%)`,
   zh: `诊断：indie-saas.com/pricing
 ─────────────────────────────────
 评分：64/100  │  预估转化：2.4%
@@ -38,7 +38,7 @@ A/B #2: "$9.9/mo" → "$99/yr (save 17%)" (+8–14%)`,
   → 推荐方案加角标 + 年付节省金额
 
 A/B #1：「立即开始」→「免费开始 — 无需信用卡」（+12–18%）
-A/B #2：「$9.9/月」→「$99/年（省 17%）」（+8–14%）`,
+A/B #2：「$29/月」→「$99/年（省 17%）」（+8–14%）`,
 };
 
 export const analyzeCopy = {
@@ -50,7 +50,7 @@ export const analyzeCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free audits. Subscribe for unlimited scans, heatmap reports, and A/B test ideas.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Audit a pricing page",
     pageUrl: "Pricing page URL",
     pageUrlPlaceholder: "https://yoursite.com/pricing",
@@ -77,7 +77,7 @@ export const analyzeCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费诊断。订阅后可无限扫描、热力图报告与 A/B 测试建议。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "诊断定价页",
     pageUrl: "定价页链接",
     pageUrlPlaceholder: "https://你的网站.com/pricing",

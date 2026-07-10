@@ -9,7 +9,7 @@ export const templatesCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 templates. Subscribe for unlimited templates, live preview, and HTML export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New template",
     templateName: "Template name",
     templateNamePlaceholder: "e.g. Product launch v2",
@@ -40,7 +40,7 @@ export const templatesCopy = {
     freeTemplates: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个模板。订阅后可无限创建、实时预览并导出 HTML。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建模板",
     templateName: "模板名称",
     templateNamePlaceholder: "例如：产品 v2 上线",

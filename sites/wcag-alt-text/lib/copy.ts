@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "AltText.ai $0.10/img? · $9.9/mo flat",
+    badge: "AltText.ai $0.10/img? · $29/mo flat",
     title: "WCAG alt-text generator for web agencies",
     subtitle:
-      "Batch-generate ADA-compliant alt text in seconds. 5 free generations, then $9.9/mo. No per-image fees.",
+      "Batch-generate ADA-compliant alt text in seconds. 5 free generations, then $29/mo. No per-image fees.",
     ctaPrimary: "Generate alt text free",
     ctaPrimaryHref: "/generate",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free generations · then $9.9/mo",
+    note: "5 free generations · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs AltText.ai per-image" },
+      { stat: "$29", label: "flat/mo vs AltText.ai per-image" },
       { stat: "WCAG 2.2", label: "AA compliance scoring" },
       { stat: "30s", label: "per image batch" },
     ],
@@ -83,7 +83,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited generations. No per-image billing like AltText.ai or AccessiBe.",
       },
     ],
@@ -107,7 +107,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop risking ADA lawsuits on client sites",
-      subtitle: "5 free generations · then $9.9/mo unlimited",
+      subtitle: "5 free generations · then $29/mo unlimited",
       ctaPrimary: "Generate alt text free",
       ctaSecondary: "View pricing",
     },
@@ -119,17 +119,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "AltText.ai 按图计费？· $9.9/月一口价",
+    badge: "AltText.ai 按图计费？· $29/月一口价",
     title: "网页代理商 WCAG Alt 文本生成器",
     subtitle:
-      "秒级批量生成 ADA 合规 alt 文本。免费体验 5 次，之后 $9.9/月。无按图计费。",
+      "秒级批量生成 ADA 合规 alt 文本。免费体验 5 次，之后 $29/月。无按图计费。",
     ctaPrimary: "免费生成 alt 文本",
     ctaPrimaryHref: "/generate",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，AltText.ai 按图计费" },
+      { stat: "$29", label: "一口价/月，AltText.ai 按图计费" },
       { stat: "WCAG 2.2", label: "AA 合规评分" },
       { stat: "30 秒", label: "每张图批量处理" },
     ],
@@ -200,7 +200,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "生成不限量。无 AltText.ai 或 AccessiBe 按图计费。",
       },
     ],
@@ -224,7 +224,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再让客户站点冒 ADA 诉讼风险",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限使用",
       ctaPrimary: "免费生成 alt 文本",
       ctaSecondary: "查看定价",
     },
@@ -253,7 +253,7 @@ export const joinCopy = {
       "125-char limit enforcement",
       "Priority support for agencies",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free generations, then subscribe?",
@@ -279,7 +279,7 @@ export const joinCopy = {
       "125 字符上限强制",
       "代理商优先支持",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Statuspage.io Alternative for Indie Hackers — Status Page Guide",
       description:
-        "Statuspage.io costs $29–299/mo before you have paying users. Compare status page tools for indie SaaS. Find a $9.9/mo flat-rate alternative with incident management and email subscribers.",
+        "Statuspage.io costs $29–299/mo before you have paying users. Compare status page tools for indie SaaS. Find a $29/mo flat-rate alternative with incident management and email subscribers.",
     },
     h1: "2026 Statuspage.io Alternative for Indie Hackers: Status Page Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -49,9 +49,9 @@ export const guideCopy = {
             p: "No-config public pages. Pair with your own monitoring. Good if you already use UptimeRobot and just need the public-facing page.",
           },
           {
-            h3: "Status Lite — $9.9/mo flat",
+            h3: "Status Lite — $29/mo flat",
             p: "Built for indie hackers who want Statuspage-style pages without per-component pricing. Unlimited pages, unlimited subscribers, incident management, embeddable widget.",
-            link: { href: "/join", text: "5 free status pages to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free status pages to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Statuspage.io 平替指南 — 状态页完整教程",
       description:
-        "Statuspage.io 还没付费用户就要 $29–299/月。对比状态页工具，找到 $9.9/月 一口价、含事件管理与邮件订阅的平替方案。",
+        "Statuspage.io 还没付费用户就要 $29–299/月。对比状态页工具，找到 $29/月 一口价、含事件管理与邮件订阅的平替方案。",
     },
     h1: "2026 独立开发者 Statuspage.io 平替：状态页完整指南",
     updated: "2026 年 6 月更新 · 阅读约 10 分钟",
@@ -158,9 +158,9 @@ export const guideCopy = {
             p: "零配置公开页。搭配自有监控使用。已用 UptimeRobot 只需要对外页面的可以考虑。",
           },
           {
-            h3: "极简状态页 — $9.9/月 一口价",
+            h3: "极简状态页 — $29/月 一口价",
             p: "为独立开发者打造：Statuspage 式页面，不按组件收费。页面不限量、订阅者不限量、事件管理、可嵌入组件。",
-            link: { href: "/join", text: "免费体验 5 个状态页", suffix: "，之后 $9.9/月 一口价，无年约。" },
+            link: { href: "/join", text: "免费体验 5 个状态页", suffix: "，之后 $29/月 一口价，无年约。" },
           },
         ],
       },

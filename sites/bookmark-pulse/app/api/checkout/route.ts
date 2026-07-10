@@ -25,7 +25,7 @@ export async function GET() {
   const { isDemoMode } = await import("@/lib/stripe");
   return NextResponse.json({
     status: "ok",
-    price: "$9.9/mo",
+    price: "$29/mo",
     demo: isDemoMode(),
   });
 }

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Notion & Obsidian Team Wiki Alternative — Knowledge Base Guide",
       description:
-        "Notion charges $15+/seat. Obsidian has no real-time team collab. Compare team wiki platforms for indie teams. Find a $9.9/mo flat-rate alternative with MCP and AI search.",
+        "Notion charges $15+/seat. Obsidian has no real-time team collab. Compare team wiki platforms for indie teams. Find a $29/mo flat-rate alternative with MCP and AI search.",
     },
     h1: "2026 Notion & Obsidian Team Wiki Alternative: Knowledge Base Guide",
     updated: "Updated July 2026 · 10 min read",
@@ -49,9 +49,9 @@ export const guideCopy = {
             p: "Clean team docs with AI search. Standard $8/user. Better than Notion for pure docs, but still per-seat pricing.",
           },
           {
-            h3: "Wiki Pulse — $9.9/mo flat",
+            h3: "Wiki Pulse — $29/mo flat",
             p: "Built for indie teams who want Notion-quality wiki without per-seat pricing. Unlimited wiki spaces, AI search, MCP for Cursor/Claude, markdown export.",
-            link: { href: "/join", text: "5 free wiki spaces to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free wiki spaces to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -79,7 +79,7 @@ export const guideCopy = {
       {
         h2: "Pricing reality for small teams",
         paragraphs: [
-          "A 3-person bootstrapped team on Notion Business pays $45/month. On Wiki Pulse, the same team pays $9.9/month flat — saving $420/year.",
+          "A 3-person bootstrapped team on Notion Business pays $45/month. On Wiki Pulse, the same team pays $29/month flat — saving $420/year.",
           "The hidden cost of per-seat pricing: every new hire, contractor, or advisor adds $10–15/month. Flat pricing means you can invite your whole team without calculator anxiety.",
           "Free tiers are fine for testing, but most teams hit limits (Notion: 1,000 blocks, no version history) within weeks. Start with 5 free wiki spaces, validate the workflow, then subscribe when knowledge compounds.",
         ],
@@ -88,13 +88,13 @@ export const guideCopy = {
         h2: "MCP: the indie team's secret weapon",
         paragraphs: [
           "Model Context Protocol (MCP) lets AI assistants read your team's wiki directly. Instead of copy-pasting runbooks into Cursor, your AI already knows your deploy checklist and on-call rotation.",
-          "Wiki Pulse ships an MCP server out of the box. Connect once, and every team member's Cursor/Claude session has access to your knowledge base. This is the AI-first advantage OpenKnowledge demonstrated on HN — now accessible at $9.9/mo.",
+          "Wiki Pulse ships an MCP server out of the box. Connect once, and every team member's Cursor/Claude session has access to your knowledge base. This is the AI-first advantage OpenKnowledge demonstrated on HN — now accessible at $29/mo.",
         ],
       },
     ],
     cta: {
       title: "Ready to launch your team wiki?",
-      subtitle: "Create your first wiki space free. 5 spaces included, then $9.9/mo flat.",
+      subtitle: "Create your first wiki space free. 5 spaces included, then $29/mo flat.",
       button: "Start building →",
     },
   },
@@ -102,7 +102,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Notion 与 Obsidian 团队知识库平替 — 知识库选型指南",
       description:
-        "Notion $15+/人。Obsidian 无实时团队协作。对比独立团队知识库平台，找到 $9.9/月一口价的 MCP + AI 搜索替代品。",
+        "Notion $15+/人。Obsidian 无实时团队协作。对比独立团队知识库平台，找到 $29/月一口价的 MCP + AI 搜索替代品。",
     },
     h1: "2026 Notion 与 Obsidian 团队知识库平替：知识库选型指南",
     updated: "2026 年 7 月更新 · 阅读约 10 分钟",
@@ -146,9 +146,9 @@ export const guideCopy = {
             p: "简洁团队文档带 AI 搜索。标准版 $8/人。纯文档比 Notion 好，但仍按人头收费。",
           },
           {
-            h3: "团队知识库 — $9.9/月 一口价",
+            h3: "团队知识库 — $29/月 一口价",
             p: "为想要 Notion 级知识库、不按人头收费的独立团队打造。无限知识库空间、AI 搜索、Cursor/Claude MCP、Markdown 导出。",
-            link: { href: "/join", text: "免费体验 5 个知识库空间", suffix: "，之后 $9.9/月一口价。无年付锁定。" },
+            link: { href: "/join", text: "免费体验 5 个知识库空间", suffix: "，之后 $29/月一口价。无年付锁定。" },
           },
         ],
       },
@@ -176,7 +176,7 @@ export const guideCopy = {
       {
         h2: "小团队定价现实",
         paragraphs: [
-          "3 人自举团队在 Notion 商业版每月 $45。团队知识库同样团队 $9.9/月一口价 — 每年省 $420。",
+          "3 人自举团队在 Notion 商业版每月 $45。团队知识库同样团队 $29/月一口价 — 每年省 $420。",
           "按人头收费的隐性成本：每个新雇员、外包或顾问加 $10–15/月。一口价意味着可以邀请整个团队而不用算帐焦虑。",
           "免费档适合测试，但大多数团队几周内触顶（Notion：1000 块、无版本历史）。从 5 个免费知识库空间开始，验证工作流，知识复利后再订阅。",
         ],
@@ -185,13 +185,13 @@ export const guideCopy = {
         h2: "MCP：独立团队的秘密武器",
         paragraphs: [
           "模型上下文协议（MCP）让 AI 助手直接读取团队知识库。不用把运维手册复制到 Cursor，你的 AI 已经知道部署清单和值班轮换。",
-          "团队知识库开箱即用 MCP 服务。连接一次，每个团队成员的 Cursor/Claude 会话都能访问知识库。这是 OpenKnowledge 在 HN 展示的 AI-first 优势 — 现在 $9.9/月即可使用。",
+          "团队知识库开箱即用 MCP 服务。连接一次，每个团队成员的 Cursor/Claude 会话都能访问知识库。这是 OpenKnowledge 在 HN 展示的 AI-first 优势 — 现在 $29/月即可使用。",
         ],
       },
     ],
     cta: {
       title: "准备好上线团队知识库了吗？",
-      subtitle: "免费创建第一个知识库空间。含 5 个空间，之后 $9.9/月一口价。",
+      subtitle: "免费创建第一个知识库空间。含 5 个空间，之后 $29/月一口价。",
       button: "开始搭建 →",
     },
   },

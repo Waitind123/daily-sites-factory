@@ -9,7 +9,7 @@ export const listsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 waitlists. Subscribe for unlimited lists, referral boosts, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New product waitlist",
     listName: "Product name",
     listNamePlaceholder: "e.g. My SaaS Launch",
@@ -31,7 +31,7 @@ export const listsCopy = {
     freeLists: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个等候名单。订阅后可无限创建、开启推荐裂变并导出邮箱。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建产品等候名单",
     listName: "产品名称",
     listNamePlaceholder: "例如：我的 SaaS 上线",

@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://page-split-pi.vercel.app",
     name: "Page Split",
-    title: "Page Split — VWO alternative for indie hackers, $9.9/mo flat",
+    title: "Page Split — VWO alternative for indie hackers, $29/mo flat",
     description:
-      "5 free landing page A/B tests. VWO costs $198/mo? $9.9/mo flat: 50/50 split, conversion tracking, auto winner detection.",
+      "5 free landing page A/B tests. VWO costs $198/mo? $29/mo flat: 50/50 split, conversion tracking, auto winner detection.",
     keywords: [
       "A/B testing",
       "landing page test",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://page-split-pi.vercel.app",
     name: "落地页 A/B 测试",
-    title: "Page Split — VWO 平替，独立开发者 $9.9/月",
+    title: "Page Split — VWO 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个落地页 A/B 测试。VWO $198/月太贵？$9.9/月一口价：50/50 分流、转化追踪、自动判定赢家。",
+      "免费体验 5 个落地页 A/B 测试。VWO $198/月太贵？$29/月一口价：50/50 分流、转化追踪、自动判定赢家。",
     keywords: [
       "A/B 测试",
       "落地页测试",

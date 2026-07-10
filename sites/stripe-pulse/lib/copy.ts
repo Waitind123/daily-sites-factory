@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "ChartMogul $79/mo? · $9.9/mo flat",
+    badge: "ChartMogul $79/mo? · $29/mo flat",
     title: "Stripe revenue dashboard for indie SaaS",
     subtitle:
-      "MRR, ARR, churn, customer movements — connect Stripe in 2 minutes. 5 free syncs, then $9.9/mo. No enterprise bloat.",
+      "MRR, ARR, churn, customer movements — connect Stripe in 2 minutes. 5 free syncs, then $29/mo. No enterprise bloat.",
     ctaPrimary: "Open dashboard free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free syncs · then $9.9/mo",
+    note: "5 free syncs · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs ChartMogul $79+" },
+      { stat: "$29", label: "flat/mo vs ChartMogul $79+" },
       { stat: "4", label: "metrics founders check weekly" },
       { stat: "2 min", label: "to connect Stripe & see MRR" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited syncs, unlimited history. No per-customer fees like Baremetrics.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Tom R.",
         role: "Solo SaaS founder",
-        text: "ChartMogul wanted $79/mo when I had 50 customers. Stripe Pulse shows me what I need for $9.9.",
+        text: "ChartMogul wanted $79/mo when I had 50 customers. Stripe Pulse shows me what I need for $29.",
       },
       {
         name: "Lisa W.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Know your numbers without enterprise pricing",
-      subtitle: "5 free syncs · then $9.9/mo for unlimited",
+      subtitle: "5 free syncs · then $29/mo for unlimited",
       ctaPrimary: "Open dashboard free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "ChartMogul 要 $79/月？· $9.9/月一口价",
+    badge: "ChartMogul 要 $79/月？· $29/月一口价",
     title: "独立开发者 Stripe 收入仪表盘",
     subtitle:
-      "MRR、ARR、流失率、客户变动 — 2 分钟连接 Stripe。免费体验 5 次同步，之后 $9.9/月。无企业级臃肿功能。",
+      "MRR、ARR、流失率、客户变动 — 2 分钟连接 Stripe。免费体验 5 次同步，之后 $29/月。无企业级臃肿功能。",
     ctaPrimary: "免费打开仪表盘",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，ChartMogul 要 $79+" },
+      { stat: "$29", label: "一口价/月，ChartMogul 要 $79+" },
       { stat: "4", label: "创始人每周必看的指标" },
       { stat: "2 分钟", label: "连接 Stripe 查看 MRR" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限同步、无限历史记录，无 Baremetrics 式的按客户收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Tom R.",
         role: "独立 SaaS 创始人",
-        text: "我只有 50 个客户时 ChartMogul 要 $79/月。Stripe Pulse 用 $9.9 给我需要的一切。",
+        text: "我只有 50 个客户时 ChartMogul 要 $79/月。Stripe Pulse 用 $29 给我需要的一切。",
       },
       {
         name: "Lisa W.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用企业级定价也能掌握数据",
-      subtitle: "免费体验 5 次同步 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次同步 · 之后 $29/月无限使用",
       ctaPrimary: "免费打开仪表盘",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "CSV export",
       "Read-only Stripe key (secure)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free syncs, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "CSV 导出",
       "只读 Stripe 密钥（安全）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次同步，之后订阅？",

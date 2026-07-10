@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "We Work Remotely $149/yr? · $9.9/mo",
+    badge: "We Work Remotely $149/yr? · $29/mo",
     title: "Remote jobs board for indie hackers",
     subtitle:
-      "200+ curated remote roles with transparent salaries. 5 free job views, then $9.9/mo. Companies post unlimited for one flat price.",
+      "200+ curated remote roles with transparent salaries. 5 free job views, then $29/mo. Companies post unlimited for one flat price.",
     ctaPrimary: "Browse jobs",
     ctaPrimaryHref: "/jobs",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free views · then $9.9/mo",
+    note: "5 free views · then $29/mo",
     latestJobsTitle: "Latest remote jobs",
     viewAll: "View all →",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs WWR $149/yr" },
+      { stat: "$29", label: "flat/mo vs WWR $149/yr" },
       { stat: "200+", label: "remote roles updated daily" },
       { stat: "5 free", label: "job detail views to try" },
     ],
@@ -66,7 +66,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Frontend dev · Lisbon",
-        text: "WWR wanted $149/yr just to see salaries. Here I get 5 free views and $9.9/mo after — way better for indie hackers.",
+        text: "WWR wanted $149/yr just to see salaries. Here I get 5 free views and $29/mo after — way better for indie hackers.",
       },
       {
         name: "李明",
@@ -76,12 +76,12 @@ export const homeCopy = {
       {
         name: "Sarah T.",
         role: "PM · Mexico City",
-        text: "Posted our startup role for $9.9/mo flat. Got 12 qualified applicants in a week — no LinkedIn Premium needed.",
+        text: "Posted our startup role for $29/mo flat. Got 12 qualified applicants in a week — no LinkedIn Premium needed.",
       },
     ],
     closing: {
       title: "Stop scrolling LinkedIn for remote gigs",
-      subtitle: "5 free views · then $9.9/mo for unlimited",
+      subtitle: "5 free views · then $29/mo for unlimited",
       ctaPrimary: "Browse jobs",
       ctaSecondary: "View pricing",
     },
@@ -89,23 +89,23 @@ export const homeCopy = {
       title: "Job board preview",
       caption: "Filter by stack · unlock salary + apply link",
       preview:
-        "🔍 Remote · React + TypeScript\n\n💳 Stripe     Senior FE    $180k–$240k  🌍 Global\n🦊 GitLab     DevOps       $120k–$160k  🌍 EMEA\n📝 Notion     PM           $150k–$190k  🌍 Americas\n\n→ 5 free detail views · then $9.9/mo",
+        "🔍 Remote · React + TypeScript\n\n💳 Stripe     Senior FE    $180k–$240k  🌍 Global\n🦊 GitLab     DevOps       $120k–$160k  🌍 EMEA\n📝 Notion     PM           $150k–$190k  🌍 Americas\n\n→ 5 free detail views · then $29/mo",
     },
   },
   zh: {
-    badge: "We Work Remotely $149/年？· $9.9/月",
+    badge: "We Work Remotely $149/年？· $29/月",
     title: "独立开发者远程工作板",
     subtitle:
-      "200+ 精选远程岗位，薪资透明。免费体验 5 次查看详情，之后 $9.9/月。企业一口价无限发帖。",
+      "200+ 精选远程岗位，薪资透明。免费体验 5 次查看详情，之后 $29/月。企业一口价无限发帖。",
     ctaPrimary: "浏览职位",
     ctaPrimaryHref: "/jobs",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     latestJobsTitle: "最新远程职位",
     viewAll: "查看全部 →",
     stats: [
-      { stat: "$9.9", label: "一口价/月，WWR 要 $149/年" },
+      { stat: "$29", label: "一口价/月，WWR 要 $149/年" },
       { stat: "200+", label: "远程岗位每日更新" },
       { stat: "5 次", label: "免费查看职位详情" },
     ],
@@ -157,7 +157,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "前端开发 · 里斯本",
-        text: "WWR $149/年才能看薪资。这里免费 5 次，之后 $9.9/月 — 对独立开发者友好多了。",
+        text: "WWR $149/年才能看薪资。这里免费 5 次，之后 $29/月 — 对独立开发者友好多了。",
       },
       {
         name: "李明",
@@ -167,12 +167,12 @@ export const homeCopy = {
       {
         name: "Sarah T.",
         role: "产品经理 · 墨西哥城",
-        text: "$9.9/月一口价发了我们创业公司的职位。一周 12 个合格申请 — 不用 LinkedIn Premium。",
+        text: "$29/月一口价发了我们创业公司的职位。一周 12 个合格申请 — 不用 LinkedIn Premium。",
       },
     ],
     closing: {
       title: "别再刷 LinkedIn 找远程工作了",
-      subtitle: "免费 5 次查看 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次查看 · 之后 $29/月 不限量",
       ctaPrimary: "浏览职位",
       ctaSecondary: "查看定价",
     },
@@ -180,7 +180,7 @@ export const homeCopy = {
       title: "职位板预览",
       caption: "按技术栈筛选 · 解锁薪资与申请链接",
       preview:
-        "🔍 远程 · React + TypeScript\n\n💳 Stripe     高级前端    $180k–$240k  🌍 全球\n🦊 GitLab     DevOps      $120k–$160k  🌍 欧洲\n📝 Notion     产品经理    $150k–$190k  🌍 美洲\n\n→ 免费 5 次详情查看 · 之后 $9.9/月",
+        "🔍 远程 · React + TypeScript\n\n💳 Stripe     高级前端    $180k–$240k  🌍 全球\n🦊 GitLab     DevOps      $120k–$160k  🌍 欧洲\n📝 Notion     产品经理    $150k–$190k  🌍 美洲\n\n→ 免费 5 次详情查看 · 之后 $29/月",
     },
   },
 } as const;
@@ -201,7 +201,7 @@ export const joinCopy = {
       "New job match email alerts",
       "Remote salary trend reports",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free views, then subscribe?",
@@ -227,7 +227,7 @@ export const joinCopy = {
       "新职位匹配邮件提醒",
       "远程薪资趋势月报",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

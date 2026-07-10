@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "PandaDoc $19–49/user? · $9.9/mo flat",
+    badge: "PandaDoc $19–49/user? · $29/mo flat",
     title: "Proposals, e-signatures & contracts — without the PandaDoc per-seat tax",
     subtitle:
-      "Create proposals, collect e-signatures, manage contracts. 5 free document actions, then $9.9/mo unlimited.",
+      "Create proposals, collect e-signatures, manage contracts. 5 free document actions, then $29/mo unlimited.",
     ctaPrimary: "Create document free",
     ctaPrimaryHref: "/quotes",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs PandaDoc $19–49/user" },
+      { stat: "$29", label: "flat/mo vs PandaDoc $19–49/user" },
       { stat: "3-in-1", label: "proposal + e-sign + contract" },
       { stat: "2 min", label: "to send your first signed doc" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited documents and signatures. No per-seat or per-envelope surprise.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Agency founder",
-        text: "PandaDoc Business is $19/user. We only sign contracts. Sign Pulse is $9.9 flat.",
+        text: "PandaDoc Business is $19/user. We only sign contracts. Sign Pulse is $29 flat.",
       },
       {
         name: "Priya S.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop overpaying for document software",
-      subtitle: "5 free document actions · then $9.9/mo for unlimited proposals + e-sign + contracts",
+      subtitle: "5 free document actions · then $29/mo for unlimited proposals + e-sign + contracts",
       ctaPrimary: "Create document free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "PandaDoc $19–49/席位？· $9.9/月一口价",
+    badge: "PandaDoc $19–49/席位？· $29/月一口价",
     title: "提案、电子签名与合同 — 不交 PandaDoc 按人头税",
     subtitle:
-      "创建提案，收集电子签名，管理合同。免费体验 5 次，之后 $9.9/月不限量。",
+      "创建提案，收集电子签名，管理合同。免费体验 5 次，之后 $29/月不限量。",
     ctaPrimary: "免费创建文档",
     ctaPrimaryHref: "/quotes",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，PandaDoc 要 $19–49/席位" },
+      { stat: "$29", label: "一口价/月，PandaDoc 要 $19–49/席位" },
       { stat: "三合一", label: "提案 + 电子签 + 合同" },
       { stat: "2 分钟", label: "发出第一份签署文档" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "文档与签名不限量。无按席位或按信封收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "代理机构创始人",
-        text: "PandaDoc 商业版 $19/人。我们只签合同。极简签署台一口价 $9.9。",
+        text: "PandaDoc 商业版 $19/人。我们只签合同。极简签署台一口价 $29。",
       },
       {
         name: "Priya S.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为文档软件多付钱",
-      subtitle: "免费 5 次 · 之后 $9.9/月 无限提案 + 电子签 + 合同",
+      subtitle: "免费 5 次 · 之后 $29/月 无限提案 + 电子签 + 合同",
       ctaPrimary: "免费创建文档",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Client & project history",
       "No per-seat fees",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "客户与项目历史",
       "不按席位收费",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

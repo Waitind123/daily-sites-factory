@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pricing-intel-vert.vercel.app",
     name: "Pricing Intel",
-    title: "Pricing Intel — SaaS competitor pricing intelligence for indie founders $9.9/mo",
+    title: "Pricing Intel — SaaS competitor pricing intelligence for indie founders $29/mo",
     description:
-      "5 free intel reports. Kompyte/Klue cost $10K+/yr — get pricing page monitoring, strategy playbooks & change alerts for $9.9/mo. Built for solo founders.",
+      "5 free intel reports. Kompyte/Klue cost $10K+/yr — get pricing page monitoring, strategy playbooks & change alerts for $29/mo. Built for solo founders.",
     keywords: [
       "competitive pricing intelligence",
       "SaaS pricing monitor",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pricing-intel-vert.vercel.app",
     name: "竞品定价情报",
-    title: "竞品定价情报 — solo founder 的 SaaS 定价监控与策略分析 $9.9/月",
+    title: "竞品定价情报 — solo founder 的 SaaS 定价监控与策略分析 $29/月",
     description:
-      "免费体验 5 次情报报告。Kompyte/Klue 年费 $10K+，我们 $9.9/月提供定价页监控、策略建议与变动提醒。为独立开发者打造。",
+      "免费体验 5 次情报报告。Kompyte/Klue 年费 $10K+，我们 $29/月提供定价页监控、策略建议与变动提醒。为独立开发者打造。",
     keywords: [
       "竞品定价情报",
       "SaaS 定价监控",

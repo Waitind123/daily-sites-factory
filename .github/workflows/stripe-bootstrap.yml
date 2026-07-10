@@ -6,8 +6,10 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/stripe-bootstrap.yml"
+      - "config/stripe-pricing.json"
       - "scripts/sync-vercel-env.mjs"
       - "scripts/sync-stripe-all-sites.mjs"
+      - "scripts/sync-stripe-29-all.mjs"
       - "scripts/verify-stripe-checkout.mjs"
       - "scripts/sites-payment-enabled.json"
       - "sites/**/lib/stripe.ts"
@@ -21,15 +23,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  sync-and-deploy:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.list.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          SITES=$(jq -c '.' scripts/sites-payment-enabled.json)
+          echo "sites=$SITES" >> $GITHUB_OUTPUT
+          echo "Payment sites: $(jq 'length' scripts/sites-payment-enabled.json)"
+
+  sync-stripe-env:
+    needs: prepare
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 12
       matrix:
-        site_id:
-          - ai-headshots
-          - nomad-cities
-          - remote-jobs
+        site_id: ${{ fromJson(needs.prepare.outputs.sites) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -43,11 +56,6 @@ jobs:
         run: |
           if [ -z "$STRIPE_SECRET_KEY" ]; then
             echo "::error::请先在 GitHub Secrets 配置 STRIPE_SECRET_KEY"
-            echo "Stripe Dashboard → Developers → API keys → 复制 sk_live_... 或 sk_test_..."
-            exit 1
-          fi
-          if [[ ! "$STRIPE_SECRET_KEY" =~ ^sk_(live|test)_ ]]; then
-            echo "::error::STRIPE_SECRET_KEY 格式无效，应以 sk_live_ 或 sk_test_ 开头"
             exit 1
           fi
 
@@ -58,36 +66,13 @@ jobs:
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
         run: node scripts/sync-vercel-env.mjs ${{ matrix.site_id }} STRIPE_SECRET_KEY
 
-      - name: Install and build
-        working-directory: sites/${{ matrix.site_id }}
-        run: |
-          npm ci || npm install
-          npm run build
-
-      - name: Deploy to Vercel
-        working-directory: sites/${{ matrix.site_id }}
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_SCOPE: baoyu18178053101-6131s-projects
-        run: |
-          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
-          npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN"
-
-      - name: Verify Stripe live
-        run: |
-          sleep 10
-          node scripts/verify-stripe-checkout.mjs ${{ matrix.site_id }}
-
   summary:
-    needs: sync-and-deploy
+    needs: sync-stripe-env
     runs-on: ubuntu-latest
     if: always()
     steps:
+      - uses: actions/checkout@v4
       - run: |
-          echo "## Stripe 全站接通完成" >> $GITHUB_STEP_SUMMARY
+          echo "## Stripe 全站密钥已同步（$29/月）" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "| 站点 | 订阅页 |" >> $GITHUB_STEP_SUMMARY
-          echo "|------|--------|" >> $GITHUB_STEP_SUMMARY
-          echo "| ai-headshots | https://ai-headshots-navy.vercel.app/join |" >> $GITHUB_STEP_SUMMARY
-          echo "| nomad-cities | https://nomad-cities.vercel.app/join |" >> $GITHUB_STEP_SUMMARY
-          echo "| remote-jobs | https://remote-jobs-azure.vercel.app/join |" >> $GITHUB_STEP_SUMMARY
+          echo "共 $(jq 'length' scripts/sites-payment-enabled.json) 个站点 · 代码 push 后由 Deploy site on push 自动部署" >> $GITHUB_STEP_SUMMARY

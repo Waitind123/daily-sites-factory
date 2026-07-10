@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://docsend-pulse.vercel.app",
     name: "DocSend Pulse",
-    title: "DocSend Pulse — Secure doc sharing with page analytics, $9.9/mo",
+    title: "DocSend Pulse — Secure doc sharing with page analytics, $29/mo",
     description:
-      "5 free tracked shares. DocSend $45+/user? $9.9/mo flat: secure links, page-by-page analytics, viewer sessions, and view notifications for indie founders.",
+      "5 free tracked shares. DocSend $45+/user? $29/mo flat: secure links, page-by-page analytics, viewer sessions, and view notifications for indie founders.",
     keywords: [
       "DocSend alternative",
       "document tracking indie",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://docsend-pulse.vercel.app",
     name: "文档追踪脉冲",
-    title: "文档追踪脉冲 — DocSend 替代品，安全分享 + 逐页分析 $9.9/月",
+    title: "文档追踪脉冲 — DocSend 替代品，安全分享 + 逐页分析 $29/月",
     description:
-      "免费体验 5 次追踪分享。DocSend $45+/席位？$9.9/月一口价：安全链接、逐页分析、访客会话与浏览通知。",
+      "免费体验 5 次追踪分享。DocSend $45+/席位？$29/月一口价：安全链接、逐页分析、访客会话与浏览通知。",
     keywords: [
       "DocSend 替代品",
       "文档追踪独立开发者",

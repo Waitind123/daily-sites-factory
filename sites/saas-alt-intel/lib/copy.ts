@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HN payoncealternatives · IndieList 2026 · $9.9/mo alt intel",
+    badge: "HN payoncealternatives · IndieList 2026 · $29/mo alt intel",
     title: "SaaS price hike alerts & ranked alternatives",
     subtitle:
-      "When competitors raise prices, get migration playbooks + cheaper alternatives in 24h. 5 free intel reports, then $9.9/mo. Ship fast — charge from day one.",
+      "When competitors raise prices, get migration playbooks + cheaper alternatives in 24h. 5 free intel reports, then $29/mo. Ship fast — charge from day one.",
     ctaPrimary: "Try alt intel free",
     ctaPrimaryHref: "/intel",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
       { stat: "50+", label: "alt matches" },
       { stat: "8", label: "products tracked" },
@@ -40,12 +40,12 @@ export const homeCopy = {
     testimonials: [
       { name: "Jay", role: "SaaS founder", text: "Intercom 2x'd in 90 days. Alt Intel emailed alternatives before my renewal — saved $400/mo." },
       { name: "Mia", role: "Indie Hacker", text: "HN payoncealternatives thread sent me here. Finally a tool that connects hikes to actual replacements." },
-      { name: "Kevin", role: "Bootstrapped CTO", text: "We track 6 tools. One hike alert paid for a year of $9.9/mo — switched Zapier to n8n self-host." },
+      { name: "Kevin", role: "Bootstrapped CTO", text: "We track 6 tools. One hike alert paid for a year of $29/mo — switched Zapier to n8n self-host." },
     ],
     closing: {
       title: "Subscription fatigue is real. Know your exits.",
-      subtitle: "$9.9/mo flat. Daily scans, hike alerts, ranked alternatives & migration playbooks. Built for indie founders who ship fast.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+      subtitle: "$29/mo flat. Daily scans, hike alerts, ranked alternatives & migration playbooks. Built for indie founders who ship fast.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try alt intel free",
     },
     productDemo: {
@@ -71,14 +71,14 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HN payoncealternatives · IndieList 2026 · $9.9/月替代品情报",
+    badge: "HN payoncealternatives · IndieList 2026 · $29/月替代品情报",
     title: "SaaS 涨价预警与替代品推荐",
-    subtitle: "竞品涨价无预警？24 小时内收到迁移手册与更便宜替代品。免费体验 5 次情报报告，之后 $9.9/月。第一天就收费。",
+    subtitle: "竞品涨价无预警？24 小时内收到迁移手册与更便宜替代品。免费体验 5 次情报报告，之后 $29/月。第一天就收费。",
     ctaPrimary: "免费体验情报",
     ctaPrimaryHref: "/intel",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "50+", label: "替代品匹配" },
       { stat: "8", label: "追踪产品" },
@@ -108,12 +108,12 @@ export const homeCopy = {
     testimonials: [
       { name: "阿杰", role: "SaaS 创始人", text: "Intercom 90 天涨 2 倍。替代品情报在续费前邮件推荐平替 — 每月省 $400。" },
       { name: "Mia", role: "Indie Hacker", text: "HN payoncealternatives 帖引流来的。终于有工具把涨价和实际替代品连起来。" },
-      { name: "Kevin", role: "自举 CTO", text: "追踪 6 个工具。一次涨价提醒就回本一年 $9.9/月 — Zapier 换 n8n 自托管。" },
+      { name: "Kevin", role: "自举 CTO", text: "追踪 6 个工具。一次涨价提醒就回本一年 $29/月 — Zapier 换 n8n 自托管。" },
     ],
     closing: {
       title: "订阅疲劳是真的。知道你的退路。",
-      subtitle: "只要 $9.9/月。每日扫描、涨价提醒、排名替代品与迁移手册。为快速 ship 的 indie 创始人而生。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "只要 $29/月。每日扫描、涨价提醒、排名替代品与迁移手册。为快速 ship 的 indie 创始人而生。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {

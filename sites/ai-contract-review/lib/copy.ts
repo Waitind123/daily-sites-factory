@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "DocuSign CLM $40+/seat · LegalOn $100+/mo · $9.9/mo",
+    badge: "DocuSign CLM $40+/seat · LegalOn $100+/mo · $29/mo",
     title: "Know what you're signing — AI contract risk scan in 60 seconds",
     subtitle:
-      "Client sent a freelance contract? Paste the text, get risk score, flagged clauses, missing protections, and negotiation email. 5 free reviews, then $9.9/mo. No lawyer required.",
+      "Client sent a freelance contract? Paste the text, get risk score, flagged clauses, missing protections, and negotiation email. 5 free reviews, then $29/mo. No lawyer required.",
     ctaPrimary: "Review contract free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free contract reviews · then $9.9/mo",
+    note: "5 free contract reviews · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs lawyer $300+/hr" },
+      { stat: "$29", label: "flat/mo vs lawyer $300+/hr" },
       { stat: "15+", label: "clause categories scanned" },
       { stat: "60 sec", label: "to review your first contract" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited contract reviews. No per-seat enterprise pricing like DocuSign CLM.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop signing contracts blind",
-      subtitle: "5 free contract reviews · then $9.9/mo for unlimited scans + negotiation drafts",
+      subtitle: "5 free contract reviews · then $29/mo for unlimited scans + negotiation drafts",
       ctaPrimary: "Review contract free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "DocuSign CLM $40+/席位 · LegalOn $100+/月 · $9.9/月",
+    badge: "DocuSign CLM $40+/席位 · LegalOn $100+/月 · $29/月",
     title: "签之前先看清 — AI 合同风险扫描 60 秒出结果",
     subtitle:
-      "客户发来自由职业合同？粘贴文本，获得风险评分、问题条款、缺失保护项和谈判邮件草稿。免费体验 5 次，之后 $9.9/月。无需请律师。",
+      "客户发来自由职业合同？粘贴文本，获得风险评分、问题条款、缺失保护项和谈判邮件草稿。免费体验 5 次，之后 $29/月。无需请律师。",
     ctaPrimary: "免费审查合同",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，律师要 $300+/小时" },
+      { stat: "$29", label: "一口价/月，律师要 $300+/小时" },
       { stat: "15+", label: "条款类别扫描" },
       { stat: "60 秒", label: "完成首份合同审查" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "合同审查不限量。不像 DocuSign CLM 按席位收企业价。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再盲目签合同",
-      subtitle: "免费体验 5 次合同审查 · 之后 $9.9/月无限扫描 + 谈判草稿",
+      subtitle: "免费体验 5 次合同审查 · 之后 $29/月无限扫描 + 谈判草稿",
       ctaPrimary: "免费审查合同",
       ctaSecondary: "查看定价",
     },

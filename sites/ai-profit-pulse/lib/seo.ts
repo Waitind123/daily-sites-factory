@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-profit-pulse.vercel.app",
     name: "AI Profit Pulse",
-    title: "AI Profit Pulse — per-customer profit tracking for indie AI SaaS, $9.9/mo",
+    title: "AI Profit Pulse — per-customer profit tracking for indie AI SaaS, $29/mo",
     description:
-      "5 free analyses. Stripe revenue up but OpenAI bills rising? See profit per customer: revenue vs AI cost. $9.9/mo flat.",
+      "5 free analyses. Stripe revenue up but OpenAI bills rising? See profit per customer: revenue vs AI cost. $29/mo flat.",
     keywords: [
       "AI SaaS profit tracking",
       "per-customer margin",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-profit-pulse.vercel.app",
     name: "AI 客户利润追踪",
-    title: "AI 客户利润追踪 — 独立开发者按客户利润率分析，$9.9/月",
+    title: "AI 客户利润追踪 — 独立开发者按客户利润率分析，$29/月",
     description:
-      "免费体验 5 次分析。Stripe 收入增长但 OpenAI 账单涨更快？按客户查看利润：收入对比 AI 成本。$9.9/月一口价。",
+      "免费体验 5 次分析。Stripe 收入增长但 OpenAI 账单涨更快？按客户查看利润：收入对比 AI 成本。$29/月一口价。",
     keywords: [
       "AI SaaS 利润追踪",
       "按客户利润率",

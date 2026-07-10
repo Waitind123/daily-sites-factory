@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "PushToPost $9+/mo? · $9.9/mo flat",
+    badge: "PushToPost $9+/mo? · $29/mo flat",
     title: "Changelog → X, LinkedIn, Threads — in 30 seconds",
     subtitle:
-      "Paste your release notes once. Get platform-native posts for X, LinkedIn, and Threads. 5 free conversions, then $9.9/mo.",
+      "Paste your release notes once. Get platform-native posts for X, LinkedIn, and Threads. 5 free conversions, then $29/mo.",
     ctaPrimary: "Convert free",
     ctaPrimaryHref: "/convert",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free conversions · then $9.9/mo",
+    note: "5 free conversions · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs PushToPost $9+" },
+      { stat: "$29", label: "flat/mo vs PushToPost $9+" },
       { stat: "3", label: "platforms from one changelog" },
       { stat: "30s", label: "to ship a release announcement" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited conversions. No GitHub webhook setup like PushToPost or BuildCast.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop rewriting every release three times",
-      subtitle: "5 free conversions · then $9.9/mo for unlimited",
+      subtitle: "5 free conversions · then $29/mo for unlimited",
       ctaPrimary: "Convert free",
       ctaSecondary: "See pricing",
     },
@@ -87,21 +87,21 @@ export const homeCopy = {
       title: "Live conversion preview",
       caption: "One changelog → X · LinkedIn · Threads",
       preview:
-        "🚀 Release Pulse                     Generated: 1 min ago\n─────────────────────────────────────────────────────\n  Input: v2.1.0 release notes\n  • Dark mode for dashboard\n  • 3x faster CSV export\n  • $9.9/mo pricing for indie devs\n─────────────────────────────────────────────────────\n  𝕏 Twitter (198/280):\n  🚀 Shipped v2.1.0: Dark mode + faster exports\n  • Dark mode for dashboard\n  • 3x faster CSV export\n  #buildinpublic #changelog\n─────────────────────────────────────────────────────\n  LinkedIn (420/3000):\n  📣 New release (v2.1.0): Dark mode + faster exports\n  → Dark mode for dashboard\n  → 3x faster CSV export\n─────────────────────────────────────────────────────\n  [ Copy 𝕏 ]  [ Copy LinkedIn ]  [ + New convert ]",
+        "🚀 Release Pulse                     Generated: 1 min ago\n─────────────────────────────────────────────────────\n  Input: v2.1.0 release notes\n  • Dark mode for dashboard\n  • 3x faster CSV export\n  • $29/mo pricing for indie devs\n─────────────────────────────────────────────────────\n  𝕏 Twitter (198/280):\n  🚀 Shipped v2.1.0: Dark mode + faster exports\n  • Dark mode for dashboard\n  • 3x faster CSV export\n  #buildinpublic #changelog\n─────────────────────────────────────────────────────\n  LinkedIn (420/3000):\n  📣 New release (v2.1.0): Dark mode + faster exports\n  → Dark mode for dashboard\n  → 3x faster CSV export\n─────────────────────────────────────────────────────\n  [ Copy 𝕏 ]  [ Copy LinkedIn ]  [ + New convert ]",
     },
   },
   zh: {
-    badge: "PushToPost 要 $9+/月？· $9.9/月一口价",
+    badge: "PushToPost 要 $9+/月？· $29/月一口价",
     title: "发布日志 → X、领英、Threads — 30 秒搞定",
     subtitle:
-      "粘贴一次 release notes，自动生成适配 X、领英、Threads 的原生帖子。免费体验 5 次，之后 $9.9/月。",
+      "粘贴一次 release notes，自动生成适配 X、领英、Threads 的原生帖子。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费转换",
     ctaPrimaryHref: "/convert",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，PushToPost 要 $9+" },
+      { stat: "$29", label: "一口价/月，PushToPost 要 $9+" },
       { stat: "3", label: "个平台一次生成" },
       { stat: "30 秒", label: "完成发布通知" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限转换，无需像 PushToPost 或 BuildCast 那样配置 GitHub Webhook。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为每次发布写三遍",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限使用",
       ctaPrimary: "免费转换",
       ctaSecondary: "查看定价",
     },
@@ -176,7 +176,7 @@ export const homeCopy = {
       title: "实时转换预览",
       caption: "一份 changelog → X · 领英 · Threads",
       preview:
-        "🚀 发布日志转社交帖                   生成于：1 分钟前\n─────────────────────────────────────────────────────\n  输入：v2.1.0 发布说明\n  • 仪表盘深色模式\n  • CSV 导出快 3 倍\n  • 独立开发者 $9.9/月定价\n─────────────────────────────────────────────────────\n  𝕏 推特 (198/280)：\n  🚀 发布 v2.1.0：深色模式 + 导出加速\n  • 仪表盘深色模式\n  • CSV 导出快 3 倍\n  #buildinpublic #changelog\n─────────────────────────────────────────────────────\n  领英 (420/3000)：\n  📣 新版本 (v2.1.0)：深色模式 + 导出加速\n  → 仪表盘深色模式\n  → CSV 导出快 3 倍\n─────────────────────────────────────────────────────\n  [ 复制 𝕏 ]  [ 复制领英 ]  [ + 新建转换 ]",
+        "🚀 发布日志转社交帖                   生成于：1 分钟前\n─────────────────────────────────────────────────────\n  输入：v2.1.0 发布说明\n  • 仪表盘深色模式\n  • CSV 导出快 3 倍\n  • 独立开发者 $29/月定价\n─────────────────────────────────────────────────────\n  𝕏 推特 (198/280)：\n  🚀 发布 v2.1.0：深色模式 + 导出加速\n  • 仪表盘深色模式\n  • CSV 导出快 3 倍\n  #buildinpublic #changelog\n─────────────────────────────────────────────────────\n  领英 (420/3000)：\n  📣 新版本 (v2.1.0)：深色模式 + 导出加速\n  → 仪表盘深色模式\n  → CSV 导出快 3 倍\n─────────────────────────────────────────────────────\n  [ 复制 𝕏 ]  [ 复制领英 ]  [ + 新建转换 ]",
     },
   },
 } as const;

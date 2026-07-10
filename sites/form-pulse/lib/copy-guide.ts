@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Typeform Alternative for Indie Hackers — Form Builder Guide",
       description:
-        "Typeform free tier caps at 10 responses/month. Compare form builders for indie SaaS. Find a $9.9/mo flat-rate alternative with drop-off analytics and unlimited submissions.",
+        "Typeform free tier caps at 10 responses/month. Compare form builders for indie SaaS. Find a $29/mo flat-rate alternative with drop-off analytics and unlimited submissions.",
     },
     h1: "2026 Typeform Alternative for Indie Hackers: Form Builder Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -49,9 +49,9 @@ export const guideCopy = {
             p: "Feature-rich, 10,000+ templates. Overwhelming UI for solo devs. Per-form limits on lower tiers.",
           },
           {
-            h3: "Form Pulse — $9.9/mo flat",
+            h3: "Form Pulse — $29/mo flat",
             p: "Built for indie hackers who want Typeform-style UX without per-response pricing. Unlimited forms, unlimited responses, drop-off analytics per question.",
-            link: { href: "/join", text: "5 free forms to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free forms to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -95,7 +95,7 @@ export const guideCopy = {
         h2: "Pricing math for indie founders",
         paragraphs: [
           "Typeform Basic: $39/mo × 12 = $468/year for 100 responses/month. If you get 500 responses in a launch month, you need Plus at $79/mo = $948/year.",
-          "Form Pulse: $9.9/mo × 12 = $118.80/year, unlimited responses. The break-even vs Typeform free is immediate — you exceed 10 responses on day one.",
+          "Form Pulse: $29/mo × 12 = $118.80/year, unlimited responses. The break-even vs Typeform free is immediate — you exceed 10 responses on day one.",
           "For bootstrapped founders, flat pricing means predictable costs. You won't wake up to a bill because your launch went viral.",
         ],
         after: [
@@ -105,7 +105,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Create your first form free",
-      subtitle: "5 free forms · drop-off analytics · $9.9/mo unlimited",
+      subtitle: "5 free forms · drop-off analytics · $29/mo unlimited",
       button: "Start building →",
     },
   },
@@ -113,7 +113,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Typeform 平替指南 — 表单构建器选型",
       description:
-        "Typeform 免费版每月仅 10 条回复。对比独立开发者表单工具，找到 $9.9/月一口价、放弃率分析与无限回复的替代方案。",
+        "Typeform 免费版每月仅 10 条回复。对比独立开发者表单工具，找到 $29/月一口价、放弃率分析与无限回复的替代方案。",
     },
     h1: "2026 独立开发者 Typeform 平替：表单构建器选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -157,9 +157,9 @@ export const guideCopy = {
             p: "功能丰富、模板超万。对独立开发者界面过载。低档有按表单数量限制。",
           },
           {
-            h3: "极简表单构建器 — $9.9/月 一口价",
+            h3: "极简表单构建器 — $29/月 一口价",
             p: "为想要 Typeform 体验、不想按条付费的独立开发者打造。无限表单、无限回复、每题放弃率分析。",
-            link: { href: "/join", text: "免费体验 5 个表单", suffix: "，之后 $9.9/月一口价。无年付绑定。" },
+            link: { href: "/join", text: "免费体验 5 个表单", suffix: "，之后 $29/月一口价。无年付绑定。" },
           },
         ],
       },
@@ -203,7 +203,7 @@ export const guideCopy = {
         h2: "独立开发者的定价账",
         paragraphs: [
           "Typeform 基础版：$39/月 × 12 = $468/年，每月 100 条。上线月若收到 500 条，需要 Plus $79/月 = $948/年。",
-          "极简表单构建器：$9.9/月 × 12 = $118.80/年，无限回复。对比 Typeform 免费版，第一天超过 10 条就回本。",
+          "极简表单构建器：$29/月 × 12 = $118.80/年，无限回复。对比 Typeform 免费版，第一天超过 10 条就回本。",
           "对自举创始人，一口价意味着成本可预测。不会因为发布火了而收到意外账单。",
         ],
         after: [
@@ -213,7 +213,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费创建你的第一个表单",
-      subtitle: "免费 5 个表单 · 放弃率分析 · $9.9/月 不限量",
+      subtitle: "免费 5 个表单 · 放弃率分析 · $29/月 不限量",
       button: "开始创建 →",
     },
   },

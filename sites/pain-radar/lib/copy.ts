@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HN + Reddit + PH · $9.9/mo flat",
+    badge: "HN + Reddit + PH · $29/mo flat",
     title: "Scan pain points across Reddit, HN & Product Hunt",
     subtitle:
-      "GummySearch is gone. Reddit API is unstable. One tool scans 3 platforms, scores opportunities, ranks pain quotes. 5 free scans, then $9.9/mo.",
+      "GummySearch is gone. Reddit API is unstable. One tool scans 3 platforms, scores opportunities, ranks pain quotes. 5 free scans, then $29/mo.",
     ctaPrimary: "Scan pain points free",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
       { stat: "3", label: "platforms: Reddit · HN · Product Hunt" },
       { stat: "92", label: "max opportunity score / 100" },
-      { stat: "$9.9", label: "flat/mo vs PainHunt $29+" },
+      { stat: "$29", label: "flat/mo vs PainHunt $29+" },
     ],
     howItWorks: {
       title: "How it works",
@@ -32,7 +32,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "Build what scores highest",
-          desc: "Ship a $9.9/mo micro-SaaS solving the top opportunity",
+          desc: "Ship a $29/mo micro-SaaS solving the top opportunity",
         },
       ],
     },
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited niche scans. No $199/mo enterprise audience research pricing.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo founder",
-        text: "GummySearch died, PainHunt wants $29/mo. Pain Radar found the same HN + Reddit signals for $9.9.",
+        text: "GummySearch died, PainHunt wants $29/mo. Pain Radar found the same HN + Reddit signals for $29.",
       },
       {
         name: "Priya S.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing what to build",
-      subtitle: "5 free scans · then $9.9/mo for unlimited cross-platform mining",
+      subtitle: "5 free scans · then $29/mo for unlimited cross-platform mining",
       ctaPrimary: "Scan pain points free",
       ctaSecondary: "View pricing",
     },
@@ -91,19 +91,19 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HN + Reddit + PH · $9.9/月一口价",
+    badge: "HN + Reddit + PH · $29/月一口价",
     title: "跨平台扫描 Reddit、HN 与 Product Hunt 痛点",
     subtitle:
-      "GummySearch 已关停，Reddit API 不稳定。一个工具扫描 3 个平台、评分机会、排序痛点引用。免费体验 5 次，之后 $9.9/月。",
+      "GummySearch 已关停，Reddit API 不稳定。一个工具扫描 3 个平台、评分机会、排序痛点引用。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费扫描痛点",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "3", label: "个平台：Reddit · HN · Product Hunt" },
       { stat: "92", label: "最高机会分 / 100" },
-      { stat: "$9.9", label: "一口价/月，PainHunt 要 $29+" },
+      { stat: "$29", label: "一口价/月，PainHunt 要 $29+" },
     ],
     howItWorks: {
       title: "如何使用",
@@ -121,7 +121,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "做机会分最高的",
-          desc: "针对最高分机会，快速上线 $9.9/月 微 SaaS",
+          desc: "针对最高分机会，快速上线 $29/月 微 SaaS",
         },
       ],
     },
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "细分领域扫描不限量，不像企业受众研究工具收 $199/月。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "一人创始人",
-        text: "GummySearch 关了，PainHunt 要 $29/月。Pain Radar $9.9 就能拿到同样的 HN + Reddit 信号。",
+        text: "GummySearch 关了，PainHunt 要 $29/月。Pain Radar $29 就能拿到同样的 HN + Reddit 信号。",
       },
       {
         name: "Priya S.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜该做什么产品",
-      subtitle: "免费 5 次扫描 · 之后 $9.9/月 跨平台挖掘不限量",
+      subtitle: "免费 5 次扫描 · 之后 $29/月 跨平台挖掘不限量",
       ctaPrimary: "免费扫描痛点",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Export pain point lists",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "痛点列表导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次扫描，之后订阅？",

@@ -9,7 +9,7 @@ export const inboxCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free conversation actions. Subscribe for unlimited chat, AI agent, and help center.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     newTicket: "New conversation",
     subject: "Topic",
     subjectPlaceholder: "e.g. Cancel subscription",
@@ -38,7 +38,7 @@ export const inboxCopy = {
     freeTries: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费额度。订阅后可无限使用聊天、AI 客服与帮助中心。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     newTicket: "新建对话",
     subject: "主题",
     subjectPlaceholder: "例如：取消订阅",

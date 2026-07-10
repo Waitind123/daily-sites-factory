@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Mixpanel Alternative for Indie Hackers — Funnel Analytics Guide",
       description:
-        "Mixpanel costs $500/mo for solo founders. Compare funnel analytics tools for indie SaaS: Mixpanel, Amplitude, Plausible. Find a $9.9/mo flat-rate alternative with drop-off tracking.",
+        "Mixpanel costs $500/mo for solo founders. Compare funnel analytics tools for indie SaaS: Mixpanel, Amplitude, Plausible. Find a $29/mo flat-rate alternative with drop-off tracking.",
     },
     h1: "2026 Mixpanel Alternative for Indie Hackers: Funnel Analytics Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -48,8 +48,8 @@ export const guideCopy = {
             p: "Privacy-friendly, lightweight page analytics. Perfect for traffic and referrers. But no funnel tracking, no step-by-step drop-off. Many indie hackers pair it with a spreadsheet — painful.",
           },
           {
-            h3: "Funnel Pulse — $9.9/mo flat",
-            p: "Built for indie hackers: define funnel steps, track with one POST request, see drop-off charts and biggest-leak detection. 5 free funnels, then $9.9/mo unlimited. No per-MAU fees, no sales calls.",
+            h3: "Funnel Pulse — $29/mo flat",
+            p: "Built for indie hackers: define funnel steps, track with one POST request, see drop-off charts and biggest-leak detection. 5 free funnels, then $29/mo unlimited. No per-MAU fees, no sales calls.",
             link: { href: "/funnels", text: "Create a funnel free", suffix: " — five funnels, no credit card." },
           },
         ],
@@ -105,7 +105,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Funnel Pulse free",
-          prefix: "Mixpanel is powerful software built for growth teams with analytics budgets. If you need step-by-step drop-off charts, one-line event tracking, and $9.9/mo flat pricing, ",
+          prefix: "Mixpanel is powerful software built for growth teams with analytics budgets. If you need step-by-step drop-off charts, one-line event tracking, and $29/mo flat pricing, ",
           suffix: ". Five funnels, no credit card. Stop guessing where users leave — start measuring.",
         },
       },
@@ -120,7 +120,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Mixpanel 替代品指南 — 漏斗分析",
       description:
-        "Mixpanel 对独立开发者要 $500/月。对比 Mixpanel、Amplitude、Plausible 等漏斗分析工具，找到 $9.9/月一口价的流失追踪替代方案。",
+        "Mixpanel 对独立开发者要 $500/月。对比 Mixpanel、Amplitude、Plausible 等漏斗分析工具，找到 $29/月一口价的流失追踪替代方案。",
     },
     h1: "2026 独立开发者 Mixpanel 替代品：漏斗分析完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -163,8 +163,8 @@ export const guideCopy = {
             p: "注重隐私的轻量页面分析，适合看流量和来源。但没有漏斗追踪、没有逐步流失分析。很多独立开发者用表格凑合 — 很痛苦。",
           },
           {
-            h3: "Funnel Pulse — $9.9/月 一口价",
-            p: "为独立开发者打造：定义漏斗步骤、一行 POST 追踪、流失图表与最大漏洞检测。免费 5 个漏斗，之后 $9.9/月 不限量，不按 MAU 收费，无需销售演示。",
+            h3: "Funnel Pulse — $29/月 一口价",
+            p: "为独立开发者打造：定义漏斗步骤、一行 POST 追踪、流失图表与最大漏洞检测。免费 5 个漏斗，之后 $29/月 不限量，不按 MAU 收费，无需销售演示。",
             link: { href: "/funnels", text: "免费创建漏斗", suffix: " — 五个漏斗，无需信用卡。" },
           },
         ],
@@ -220,7 +220,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Funnel Pulse",
-          prefix: "Mixpanel 是面向有分析预算增长团队的重型软件。若你需要逐步流失图表、一行事件追踪、$9.9/月 一口价，可",
+          prefix: "Mixpanel 是面向有分析预算增长团队的重型软件。若你需要逐步流失图表、一行事件追踪、$29/月 一口价，可",
           suffix: "。五个漏斗，无需信用卡。别再猜用户在哪离开 — 开始测量。",
         },
       },

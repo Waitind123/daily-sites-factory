@@ -9,7 +9,7 @@ export const listingsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 beta listings. Subscribe for unlimited listings and application export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New beta listing",
     productName: "Product name",
     productNamePlaceholder: "e.g. Analytics Dashboard for Indie Hackers",
@@ -33,7 +33,7 @@ export const listingsCopy = {
     freeListings: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 条内测招募帖。订阅后可无限创建并导出申请。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建内测招募帖",
     productName: "产品名称",
     productNamePlaceholder: "例如：独立开发者数据分析面板",

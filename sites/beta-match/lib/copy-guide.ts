@@ -21,7 +21,7 @@ export const guideCopy = {
         paragraphs: ["At pre-launch scale, quality beats quantity every time:"],
         list: [
           "Product validation — 10 daily active users prove the core workflow works",
-          "Pricing signal — if 3 of 10 say they'd pay $9.9/mo, you have a business",
+          "Pricing signal — if 3 of 10 say they'd pay $29/mo, you have a business",
           "Feedback density — one engaged tester gives more insight than 100 passive signups",
           "Word of mouth — your first 10 become advocates if you treat them well",
         ],
@@ -58,7 +58,7 @@ export const guideCopy = {
             link: {
               href: "/join",
               text: "5 free beta listings to try",
-              suffix: ", then $9.9/mo flat.",
+              suffix: ", then $29/mo flat.",
             },
           },
           {
@@ -142,7 +142,7 @@ export const guideCopy = {
         paragraphs: ["在上线前阶段，质量永远胜过数量："],
         list: [
           "产品验证——10 个日活用户证明核心流程跑得通",
-          "定价信号——10 人里 3 人说愿意付 $9.9/月，你就有生意了",
+          "定价信号——10 人里 3 人说愿意付 $29/月，你就有生意了",
           "反馈密度——1 个活跃测试者比 100 个被动报名更有价值",
           "口碑传播——前 10 个用好了会成为倡导者",
         ],
@@ -179,7 +179,7 @@ export const guideCopy = {
             link: {
               href: "/join",
               text: "免费体验 5 条招募帖",
-              suffix: "，之后 $9.9/月一口价。",
+              suffix: "，之后 $29/月一口价。",
             },
           },
           {

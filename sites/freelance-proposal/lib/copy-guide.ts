@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 HoneyBook Alternative for Freelancers — Complete Guide",
       description:
-        "HoneyBook raised prices 89%. Bonsai sold to Zoom. Compare 2026 freelance proposal tools and find a $9.9/mo minimalist alternative.",
+        "HoneyBook raised prices 89%. Bonsai sold to Zoom. Compare 2026 freelance proposal tools and find a $29/mo minimalist alternative.",
     },
     h1: "2026 HoneyBook Alternative for Freelancers: Complete Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -47,12 +47,12 @@ export const guideCopy = {
             p: "AI proposal writers focused on narrative. Good for copy-heavy pitches. Less contract + invoice structure.",
           },
           {
-            h3: "Freelance Proposal — $9.9/mo flat",
+            h3: "Freelance Proposal — $29/mo flat",
             p: "Built for indie freelancers: quote + contract clauses + invoice in one doc. No CRM. 5 free tries.",
             link: {
               href: "/join",
               text: "Try 5 free proposals",
-              suffix: ", then $9.9/mo flat. Cancel anytime.",
+              suffix: ", then $29/mo flat. Cancel anytime.",
             },
           },
         ],
@@ -88,14 +88,14 @@ export const guideCopy = {
       {
         h2: "Pricing psychology for solo freelancers",
         paragraphs: [
-          "Day-one pricing ($9.9/mo) filters serious users from tire-kickers. Five free proposals let you validate the workflow before subscribing — the same levelsio pattern: experience value, then pay.",
-          "At indie scale, $9.9/mo pays for itself with one saved hour of copy-paste formatting per month.",
+          "Day-one pricing ($29/mo) filters serious users from tire-kickers. Five free proposals let you validate the workflow before subscribing — the same levelsio pattern: experience value, then pay.",
+          "At indie scale, $29/mo pays for itself with one saved hour of copy-paste formatting per month.",
         ],
       },
     ],
     cta: {
       title: "Ready to replace HoneyBook bloat?",
-      subtitle: "5 free proposals · quote + contract + invoice · $9.9/mo after",
+      subtitle: "5 free proposals · quote + contract + invoice · $29/mo after",
       button: "Create proposal free",
     },
   },
@@ -103,7 +103,7 @@ export const guideCopy = {
     meta: {
       title: "2026 自由职业者 HoneyBook 替代方案 — 完整指南",
       description:
-        "HoneyBook 涨价 89%、Bonsai 被 Zoom 收购。对比 2026 年自由职业报价工具，推荐 $9.9/月极简替代方案。",
+        "HoneyBook 涨价 89%、Bonsai 被 Zoom 收购。对比 2026 年自由职业报价工具，推荐 $29/月极简替代方案。",
     },
     h1: "2026 自由职业者 HoneyBook 替代方案：完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -145,12 +145,12 @@ export const guideCopy = {
             p: "AI 提案写作，偏文案。合同 + 发票结构较弱。",
           },
           {
-            h3: "自由职业报价单 — $9.9/月一口价",
+            h3: "自由职业报价单 — $29/月一口价",
             p: "为 indie 打造：报价 + 合同条款 + 发票一份文档。无 CRM。免费体验 5 次。",
             link: {
               href: "/join",
               text: "免费体验 5 次",
-              suffix: "，之后 $9.9/月。随时取消。",
+              suffix: "，之后 $29/月。随时取消。",
             },
           },
         ],
@@ -182,14 +182,14 @@ export const guideCopy = {
       {
         h2: "个人自由职业者的定价心理",
         paragraphs: [
-          "第一天收费（$9.9/月）过滤认真用户。五次免费体验让你在订阅前验证工作流 — levelsio 模式：先体验价值，再付费。",
-          "对 indie 来说，每月省 1 小时复制粘贴排版，$9.9 就回本。",
+          "第一天收费（$29/月）过滤认真用户。五次免费体验让你在订阅前验证工作流 — levelsio 模式：先体验价值，再付费。",
+          "对 indie 来说，每月省 1 小时复制粘贴排版，$29 就回本。",
         ],
       },
     ],
     cta: {
       title: "准备好换掉 HoneyBook 臃肿功能？",
-      subtitle: "免费体验 5 次 · 报价 + 合同 + 发票 · 之后 $9.9/月",
+      subtitle: "免费体验 5 次 · 报价 + 合同 + 发票 · 之后 $29/月",
       button: "免费创建报价单",
     },
   },

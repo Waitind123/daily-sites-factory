@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "PhotoAI $99/team? · $9.9/mo for 10 people",
+    badge: "PhotoAI $99/team? · $29/mo for 10 people",
     title: "Consistent LinkedIn headshots for your whole team",
     subtitle:
-      "Upload team selfies, pick one corporate style, batch-generate professional portraits. 5 free generations, then $9.9/mo unlimited.",
+      "Upload team selfies, pick one corporate style, batch-generate professional portraits. 5 free generations, then $29/mo unlimited.",
     ctaPrimary: "Try team studio free",
     ctaPrimaryHref: "/team",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs HeadshotPro $59/person" },
+      { stat: "$29", label: "flat/mo vs HeadshotPro $59/person" },
       { stat: "10 seats", label: "included per subscription" },
       { stat: "1 style", label: "unified look across your team page" },
     ],
@@ -52,7 +52,7 @@ export const homeCopy = {
       },
     ],
     closing: {
-      title: "HeadshotPro charges $59/person — we're $9.9/mo flat",
+      title: "HeadshotPro charges $59/person — we're $29/mo flat",
       subtitle: "Up to 10 team members, unlimited regenerations, unified style. We charge day one because GPU isn't free.",
       ctaPrimary: "Try team studio free",
       ctaSecondary: "View pricing",
@@ -71,17 +71,17 @@ export const homeCopy = {
     ],
   },
   zh: {
-    badge: "PhotoAI 团队版 $99+？· $9.9/月 10 人",
+    badge: "PhotoAI 团队版 $99+？· $29/月 10 人",
     title: "全团队统一 LinkedIn 专业头像",
     subtitle:
-      "上传团队成员自拍，选一种商务风格，批量生成专业证件照。免费体验 5 次，之后 $9.9/月不限量。",
+      "上传团队成员自拍，选一种商务风格，批量生成专业证件照。免费体验 5 次，之后 $29/月不限量。",
     ctaPrimary: "免费进入团队工作室",
     ctaPrimaryHref: "/team",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，HeadshotPro 每人 $59" },
+      { stat: "$29", label: "一口价/月，HeadshotPro 每人 $59" },
       { stat: "10 席位", label: "每个订阅包含" },
       { stat: "1 种风格", label: "团队页统一视觉" },
     ],
@@ -109,7 +109,7 @@ export const homeCopy = {
       { name: "李静", role: "12 人 SaaS 公司 HR", text: "新员工以前拖几周才换领英头像，现在入职第一天就搞定。" },
     ],
     closing: {
-      title: "HeadshotPro 每人 $59——我们只要 $9.9/月",
+      title: "HeadshotPro 每人 $59——我们只要 $29/月",
       subtitle: "最多 10 名成员、无限重新生成、统一风格。第一天收费，因为 GPU 算力不免费。",
       ctaPrimary: "免费进入团队工作室",
       ctaSecondary: "查看定价",
@@ -145,7 +145,7 @@ export const joinCopy = {
       "Priority GPU queue",
       "Cancel anytime",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     polarConnected: "✓ Polar checkout connected",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
     checkoutNote: "Polar / Stripe secure checkout · credit cards accepted",
@@ -172,7 +172,7 @@ export const joinCopy = {
       "优先 GPU 队列",
       "随时取消订阅",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     polarConnected: "✓ 已连接 Polar 收款",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Polar / Stripe 安全结账 · 支持信用卡",

@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://beta-match-tau.vercel.app",
     name: "Beta Match",
-    title: "Beta Match — Find your first 10 beta testers, $9.9/mo flat",
+    title: "Beta Match — Find your first 10 beta testers, $29/mo flat",
     description:
       "5 free beta listings. Connect indie founders with early adopters. Post recruitment pages, get qualified tester applications. HN#47618992 inspired.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://beta-match-tau.vercel.app",
     name: "早期用户市场",
-    title: "早期用户市场 — 找到前 10 个内测用户，$9.9/月",
+    title: "早期用户市场 — 找到前 10 个内测用户，$29/月",
     description:
       "免费体验 5 条内测招募帖。连接独立开发者与早期尝鲜者。发布招募页，获取合格测试者申请。",
     keywords: [

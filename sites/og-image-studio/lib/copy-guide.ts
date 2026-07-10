@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Bannerbear Alternative for Indie Hackers — OG Image Guide",
       description:
-        "Bannerbear $49/mo, Placid $29/mo too expensive? Compare 2026 OG image tools and find a $9.9/mo minimalist alternative for bootstrapped founders.",
+        "Bannerbear $49/mo, Placid $29/mo too expensive? Compare 2026 OG image tools and find a $29/mo minimalist alternative for bootstrapped founders.",
     },
     h1: "2026 Bannerbear Alternative for Indie Hackers: OG Image Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "2025 one-time payment option, $49 unlimited. Simple but limited templates. Good if you want basic OG images without monthly fees.",
           },
           {
-            h3: "OG Image Studio — $9.9/mo",
+            h3: "OG Image Studio — $29/mo",
             p: "Does one thing well: fast 1200×630 OG images with meta tag and Next.js snippet export. 5 templates, pure SVG render, no Puppeteer. Best for indie stage needing simple share images.",
             link: { href: "/studio", text: "OG Image Studio", suffix: " offers 5 free tries before you subscribe." },
           },
@@ -75,7 +75,7 @@ export const guideCopy = {
         tools: [
           {
             h3: "Scenario 1: MRR < $3000, 10–50 OG images/month",
-            p: "Early traction — Product Hunt, blog, Twitter promos. You need fast share images, not complex API automation. Recommended: OG Image Studio ($9.9/mo) or SnapOG ($49 one-time).",
+            p: "Early traction — Product Hunt, blog, Twitter promos. You need fast share images, not complex API automation. Recommended: OG Image Studio ($29/mo) or SnapOG ($49 one-time).",
           },
           {
             h3: "Scenario 2: MRR $3000–$10000, blog auto-generation",
@@ -116,7 +116,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Bannerbear 替代方案 — OG Image 生成器完整指南",
       description:
-        "Bannerbear $49/月、Placid $29/月太贵？2026 年 indie hacker 如何生成 Open Graph 社交分享图？对比价格、功能，推荐 $9.9/月的极简 OG 图生成方案。",
+        "Bannerbear $49/月、Placid $29/月太贵？2026 年 indie hacker 如何生成 Open Graph 社交分享图？对比价格、功能，推荐 $29/月的极简 OG 图生成方案。",
     },
     h1: "2026 独立开发者 Bannerbear 替代方案：OG Image 生成器完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -160,7 +160,7 @@ export const guideCopy = {
             p: "2025 年新兴的 one-time payment 选择，$49 买断无限使用。理念很好，但功能相对简单，模板选择有限。适合只需要基础 OG 图、不想付月费的开发者。",
           },
           {
-            h3: "OG Image Studio — $9.9/月",
+            h3: "OG Image Studio — $29/月",
             p: "专注做一件事：快速生成 1200×630 的 OG 社交分享图，附带 meta 标签和 Next.js 代码片段导出。5 种模板覆盖 SaaS 发布、博客、社交媒体等常见场景。纯 SVG 渲染，无需 Puppeteer 或外部 API。",
             link: { href: "/studio", text: "OG Image Studio", suffix: " 可以免费体验 5 次，感受生成速度后再决定是否订阅。" },
           },
@@ -186,7 +186,7 @@ export const guideCopy = {
         tools: [
           {
             h3: "场景 1：MRR < $3000，每月生成 10-50 张 OG 图",
-            p: "产品刚上线或处于 early traction 阶段，主要在 Product Hunt 发布、写博客、Twitter 推广时需要 OG 图。推荐：OG Image Studio（$9.9/月）或 SnapOG（$49 一次性）。",
+            p: "产品刚上线或处于 early traction 阶段，主要在 Product Hunt 发布、写博客、Twitter 推广时需要 OG 图。推荐：OG Image Studio（$29/月）或 SnapOG（$49 一次性）。",
           },
           {
             h3: "场景 2：MRR $3000-$10000，需要博客自动生成 OG 图",

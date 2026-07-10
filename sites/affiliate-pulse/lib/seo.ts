@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://affiliate-pulse.vercel.app",
     name: "Affiliate Pulse",
-    title: "Affiliate Pulse — Rewardful alternative for indie SaaS, $9.9/mo flat",
+    title: "Affiliate Pulse — Rewardful alternative for indie SaaS, $29/mo flat",
     description:
-      "5 free affiliate programs. Rewardful $49+9%? $9.9/mo flat: Stripe-native tracking, commission calculator, zero revenue share.",
+      "5 free affiliate programs. Rewardful $49+9%? $29/mo flat: Stripe-native tracking, commission calculator, zero revenue share.",
     keywords: [
       "affiliate tracking",
       "Rewardful alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://affiliate-pulse.vercel.app",
     name: "联盟追踪平替",
-    title: "联盟追踪平替 — Rewardful 替代品，独立开发者 $9.9/月",
+    title: "联盟追踪平替 — Rewardful 替代品，独立开发者 $29/月",
     description:
-      "免费体验 5 个联盟计划。Rewardful 要 $49+9%？$9.9/月一口价：Stripe 原生追踪、佣金计算、零收入分成。",
+      "免费体验 5 个联盟计划。Rewardful 要 $49+9%？$29/月一口价：Stripe 原生追踪、佣金计算、零收入分成。",
     keywords: [
       "联盟追踪",
       "Rewardful 替代品",

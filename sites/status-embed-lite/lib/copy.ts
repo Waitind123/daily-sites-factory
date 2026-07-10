@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Statuspage $299/mo? · $9.9/mo embed + auto-detect",
+    badge: "Statuspage $299/mo? · $29/mo embed + auto-detect",
     title: "Embeddable status widgets for indie SaaS",
     subtitle:
-      "Paste one line of code into your footer. Auto-detect downtime from uptime pings. Post incidents, notify subscribers. 5 free pages, then $9.9/mo.",
+      "Paste one line of code into your footer. Auto-detect downtime from uptime pings. Post incidents, notify subscribers. 5 free pages, then $29/mo.",
     ctaPrimary: "Create embed widget free",
     ctaPrimaryHref: "/pages",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free embed widgets · then $9.9/mo",
+    note: "5 free embed widgets · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Statuspage $299+" },
+      { stat: "$29", label: "flat/mo vs Statuspage $299+" },
       { stat: "1 line", label: "embed code for your footer or docs" },
       { stat: "Auto", label: "incident detection from uptime pings" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited embed widgets and subscribers. No per-component or per-user fees like Statuspage.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Rina M.",
         role: "Indie hacker",
-        text: "Statuspage wanted $299/mo for an embed widget. I had a live badge in my app sidebar for $9.9.",
+        text: "Statuspage wanted $299/mo for an embed widget. I had a live badge in my app sidebar for $29.",
       },
       {
         name: "Chris L.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Embed status in 60 seconds",
-      subtitle: "5 free embed widgets · then $9.9/mo for unlimited",
+      subtitle: "5 free embed widgets · then $29/mo for unlimited",
       ctaPrimary: "Create embed widget free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Statuspage $299/月？· $9.9/月嵌入 + 自动检测",
+    badge: "Statuspage $299/月？· $29/月嵌入 + 自动检测",
     title: "独立开发者的可嵌入状态组件",
     subtitle:
-      "一行代码贴到页脚。uptime 心跳自动检测故障。发布事件、通知订阅者。免费体验 5 个组件，之后 $9.9/月。",
+      "一行代码贴到页脚。uptime 心跳自动检测故障。发布事件、通知订阅者。免费体验 5 个组件，之后 $29/月。",
     ctaPrimary: "免费创建嵌入组件",
     ctaPrimaryHref: "/pages",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Statuspage 要 $299+" },
+      { stat: "$29", label: "一口价/月，Statuspage 要 $299+" },
       { stat: "1 行", label: "嵌入代码贴到页脚或文档" },
       { stat: "自动", label: "uptime 心跳检测故障并创建事件" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "嵌入组件与订阅者不限量，不像 Statuspage 按组件或用户收费。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Rina M.",
         role: "独立开发者",
-        text: "Statuspage 一个嵌入组件要 $299/月。我用 $9.9 就在应用侧栏上线了实时角标。",
+        text: "Statuspage 一个嵌入组件要 $299/月。我用 $29 就在应用侧栏上线了实时角标。",
       },
       {
         name: "Chris L.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "60 秒嵌入状态组件",
-      subtitle: "免费 5 个嵌入组件 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个嵌入组件 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建嵌入组件",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "90-day incident history",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free widgets, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "90 天事件历史",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个组件，之后订阅？",

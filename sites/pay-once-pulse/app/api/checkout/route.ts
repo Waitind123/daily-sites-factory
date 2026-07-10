@@ -47,7 +47,7 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({
     status: "ok",
     code: "checkout_ready",
-    price: "$9.9/mo",
+    price: "$29/mo",
     demo: (await import("@/lib/stripe")).isDemoMode(),
   });
 }

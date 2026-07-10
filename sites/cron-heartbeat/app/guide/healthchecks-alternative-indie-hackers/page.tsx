@@ -8,7 +8,7 @@ const cfg = getSiteConfig("en");
 export const metadata: Metadata = buildSiteMetadata({ ...cfg, keywords: [...cfg.keywords] }, {
   title: "2026 Healthchecks.io Alternative for Indie Hackers — Cron Monitoring Guide",
   description:
-    "Cron jobs fail silently in production. Compare heartbeat monitoring tools for indie developers: Healthchecks.io, Cronitor, CronSafe. Find a $9.9/mo flat-rate alternative.",
+    "Cron jobs fail silently in production. Compare heartbeat monitoring tools for indie developers: Healthchecks.io, Cronitor, CronSafe. Find a $29/mo flat-rate alternative.",
 });
 
 export default function GuidePage() {
@@ -74,13 +74,13 @@ export default function GuidePage() {
         AI-powered log analysis (Whycron) and edge-native ingest for Cloudflare Workers (CronCanary). Interesting if you run on edge. Pricing still stabilizing.
       </p>
 
-      <h3>Cron Heartbeat — $9.9/mo flat</h3>
+      <h3>Cron Heartbeat — $29/mo flat</h3>
       <p>
         Built for indie hackers who want Healthchecks-style simplicity without per-monitor pricing. Unlimited cron jobs, missed-run detection, Slack/email/webhook alerts, job output in failure pings.{" "}
         <Link href="/join" className="text-brand-500 hover:underline">
           5 free jobs to try
         </Link>
-        , then $9.9/month flat.
+        , then $29/month flat.
       </p>
 
       <h2>What to look for in a cron monitor</h2>
@@ -139,7 +139,7 @@ except Exception as e:
       <p>
         Or{" "}
         <Link href="/join" className="text-brand-500 hover:underline">
-          subscribe for $9.9/mo
+          subscribe for $29/mo
         </Link>{" "}
         when you are ready for unlimited jobs and 24/7 alerting.
       </p>

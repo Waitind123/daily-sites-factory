@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://form-pulse-amber.vercel.app",
     name: "Form Pulse",
-    title: "Form Pulse — Typeform alternative for indie devs, $9.9/mo flat",
+    title: "Form Pulse — Typeform alternative for indie devs, $29/mo flat",
     description:
-      "5 free forms. Typeform free = 10 responses/mo? $9.9/mo flat: unlimited responses, drop-off analytics, one-question-at-a-time UX, embed widget.",
+      "5 free forms. Typeform free = 10 responses/mo? $29/mo flat: unlimited responses, drop-off analytics, one-question-at-a-time UX, embed widget.",
     keywords: [
       "form builder",
       "Typeform alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://form-pulse-amber.vercel.app",
     name: "极简表单构建器",
-    title: "极简表单构建器 — Typeform 平替，独立开发者 $9.9/月",
+    title: "极简表单构建器 — Typeform 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个表单。Typeform 免费版仅 10 条/月？$9.9/月一口价：无限回复、放弃率分析、逐题展示、可嵌入组件。",
+      "免费体验 5 个表单。Typeform 免费版仅 10 条/月？$29/月一口价：无限回复、放弃率分析、逐题展示、可嵌入组件。",
     keywords: [
       "表单构建器",
       "Typeform 替代品",

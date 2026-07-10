@@ -8,7 +8,7 @@ export const studioCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free tries left`,
     paywallTitle: "Free trial used up",
-    paywallBody: "Subscribe $9.9/mo for unlimited changelog pages, widgets, and RSS",
+    paywallBody: "Subscribe $29/mo for unlimited changelog pages, widgets, and RSS",
     paywallCta: "Subscribe now",
     productInfo: "Product info",
     productName: "Product name *",
@@ -69,7 +69,7 @@ export const studioCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
     paywallTitle: "免费体验已用完",
-    paywallBody: "订阅 $9.9/月，无限生成 Changelog 页、Widget 和 RSS",
+    paywallBody: "订阅 $29/月，无限生成 Changelog 页、Widget 和 RSS",
     paywallCta: "立即订阅",
     productInfo: "产品信息",
     productName: "产品名称 *",

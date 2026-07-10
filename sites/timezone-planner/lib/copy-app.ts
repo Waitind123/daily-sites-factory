@@ -7,7 +7,7 @@ export const plannerCopy = {
       "Add team cities, scan 7 days of overlap, and get fair slot recommendations with misery scores.",
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free plans left`,
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited plans + ICS export + team templates",
     teamLabel: "Team members",
     namePlaceholder: "Name",
@@ -17,7 +17,7 @@ export const plannerCopy = {
     scanning: "Scanning…",
     findSlots: "Find best meeting times",
     planFailed: "Planning failed",
-    icsMemberOnly: "ICS export requires membership — subscribe $9.9/mo",
+    icsMemberOnly: "ICS export requires membership — subscribe $29/mo",
     subscribeNow: "Subscribe now",
     scanSummary: (days: number, slots: number, hours: number) =>
       `Scanned ${days} days · found ${slots} slots · ~${hours}h overlap/day`,
@@ -40,7 +40,7 @@ export const plannerCopy = {
     subtitle: "添加团队成员，自动扫描未来 7 天工作时段重叠，推荐最公平的会议时间。",
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限规划 + ICS 导出 + 团队模板",
     teamLabel: "团队成员",
     namePlaceholder: "名称",
@@ -50,7 +50,7 @@ export const plannerCopy = {
     scanning: "扫描中…",
     findSlots: "找出最佳会议时间",
     planFailed: "规划失败",
-    icsMemberOnly: "ICS 导出需要会员，请订阅 $9.9/月",
+    icsMemberOnly: "ICS 导出需要会员，请订阅 $29/月",
     subscribeNow: "立即订阅",
     scanSummary: (days: number, slots: number, hours: number) =>
       `扫描未来 ${days} 天 · 找到 ${slots} 个推荐时段 · 日均重叠约 ${hours} 小时`,
@@ -139,7 +139,7 @@ export const apiErrors = {
     FEEDBACK_EMPTY: "Message cannot be empty.",
   },
   zh: {
-    TRIAL_EXHAUSTED: "免费体验已用完，请订阅 $9.9/月",
+    TRIAL_EXHAUSTED: "免费体验已用完，请订阅 $29/月",
     MIN_PARTICIPANTS: "至少需要 2 名团队成员",
     MAX_PARTICIPANTS: "最多支持 10 名成员",
     INVALID_WORK_HOURS: "的工作时间无效",

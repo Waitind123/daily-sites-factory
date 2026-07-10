@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 VWO Alternative for Indie Hackers — Landing Page A/B Testing Guide",
       description:
-        "VWO costs $198/mo for solo founders. Compare A/B testing tools for indie SaaS: VWO, Convert, Google Optimize. Find a $9.9/mo flat-rate alternative with unlimited pageviews.",
+        "VWO costs $198/mo for solo founders. Compare A/B testing tools for indie SaaS: VWO, Convert, Google Optimize. Find a $29/mo flat-rate alternative with unlimited pageviews.",
     },
     h1: "2026 VWO Alternative for Indie Hackers: Landing Page A/B Testing Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -47,8 +47,8 @@ export const guideCopy = {
             p: "Was free but confusing and now shut down. Many indie hackers still search for alternatives and land on enterprise tools with 20× the price.",
           },
           {
-            h3: "Page Split — $9.9/mo flat",
-            p: "Built for indie hackers: create experiments, 50/50 traffic split, live conversion dashboard, auto winner detection. 5 free experiments, then $9.9/mo unlimited. No per-visitor fees, no sales calls.",
+            h3: "Page Split — $29/mo flat",
+            p: "Built for indie hackers: create experiments, 50/50 traffic split, live conversion dashboard, auto winner detection. 5 free experiments, then $29/mo unlimited. No per-visitor fees, no sales calls.",
             link: { href: "/experiments", text: "Start a test free", suffix: " — five experiments, no credit card." },
           },
         ],
@@ -95,7 +95,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Page Split free",
-          prefix: "VWO is powerful software built for teams with experimentation budgets. If you need 50/50 split, conversion tracking, and $9.9/mo flat pricing, ",
+          prefix: "VWO is powerful software built for teams with experimentation budgets. If you need 50/50 split, conversion tracking, and $29/mo flat pricing, ",
           suffix: ". Five experiments, no credit card. Stop guessing — start testing.",
         },
       },
@@ -110,14 +110,14 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 VWO 替代品指南 — 落地页 A/B 测试",
       description:
-        "VWO 对独立开发者要 $198/月。对比 VWO、Convert、Google Optimize 等 A/B 测试工具，找到 $9.9/月一口价的无限流量替代方案。",
+        "VWO 对独立开发者要 $198/月。对比 VWO、Convert、Google Optimize 等 A/B 测试工具，找到 $29/月一口价的无限流量替代方案。",
     },
     h1: "2026 独立开发者 VWO 替代品：落地页 A/B 测试完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
     intro: [
       "你上线了落地页，每天从 Product Hunt、推特和 SEO 来 200 个访客，但转化率只有 3%。你在想：换个标题会不会更好？按钮写「立即开始」还是「免费试用 5 天」？",
       "A/B 测试用数据回答这些问题，而不是靠直觉。把访客 50/50 分到两个变体，看哪个带来更多注册，然后上线赢家版本。问题是：VWO 这类企业工具要 $198/月，还要销售演示。Google Optimize 已停服，Convert 起步 $299/月。",
-      "Indie Hackers 上经常有创始人发帖：「我本来要付 VWO $198/月，$9.9 的工具刚好够用。」还有人说：「我只想改个标题、50/50 分流、看哪个版本转化更好，不想写代码，不想销售演示。」",
+      "Indie Hackers 上经常有创始人发帖：「我本来要付 VWO $198/月，$29 的工具刚好够用。」还有人说：「我只想改个标题、50/50 分流、看哪个版本转化更好，不想写代码，不想销售演示。」",
       "本指南对比 2026 年适合独立开发者的 A/B 测试工具、一人规模真正需要什么，以及如何不把整月 MRR 花在单一工具上就跑通第一个落地页测试。",
     ],
     sections: [
@@ -152,8 +152,8 @@ export const guideCopy = {
             p: "曾经免费但难用，现已关闭。很多独立开发者搜替代品时直接落到贵 20 倍的企业工具上。",
           },
           {
-            h3: "Page Split — $9.9/月 一口价",
-            p: "为独立开发者打造：创建实验、50/50 分流、实时转化看板、自动判定赢家。免费 5 个实验，之后 $9.9/月 不限量，不按访客收费，无需销售演示。",
+            h3: "Page Split — $29/月 一口价",
+            p: "为独立开发者打造：创建实验、50/50 分流、实时转化看板、自动判定赢家。免费 5 个实验，之后 $29/月 不限量，不按访客收费，无需销售演示。",
             link: { href: "/experiments", text: "免费开始测试", suffix: " — 五个实验，无需信用卡。" },
           },
         ],
@@ -200,7 +200,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Page Split",
-          prefix: "VWO 是面向有实验预算团队的重型软件。若你需要 50/50 分流、转化追踪、$9.9/月 一口价，可",
+          prefix: "VWO 是面向有实验预算团队的重型软件。若你需要 50/50 分流、转化追踪、$29/月 一口价，可",
           suffix: "。五个实验，无需信用卡。别再猜 — 开始测试。",
         },
       },

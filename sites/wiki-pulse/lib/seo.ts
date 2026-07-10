@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://wiki-pulse-coral.vercel.app",
     name: "Wiki Pulse",
-    title: "Wiki Pulse — Notion/Obsidian team wiki alternative, $9.9/mo flat",
+    title: "Wiki Pulse — Notion/Obsidian team wiki alternative, $29/mo flat",
     description:
-      "5 free wiki spaces. Notion $15+/seat? Obsidian solo only? $9.9/mo flat: AI search, MCP for Cursor/Claude, team collaboration, markdown export.",
+      "5 free wiki spaces. Notion $15+/seat? Obsidian solo only? $29/mo flat: AI search, MCP for Cursor/Claude, team collaboration, markdown export.",
     keywords: [
       "team wiki",
       "Notion alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://wiki-pulse-coral.vercel.app",
     name: "团队知识库",
-    title: "团队知识库 — Notion/Obsidian 平替，独立团队 $9.9/月",
+    title: "团队知识库 — Notion/Obsidian 平替，独立团队 $29/月",
     description:
-      "免费体验 5 个知识库空间。Notion $15+/人？Obsidian 只能单人？$9.9/月一口价：AI 搜索、Cursor/Claude MCP、团队协作、Markdown 导出。",
+      "免费体验 5 个知识库空间。Notion $15+/人？Obsidian 只能单人？$29/月一口价：AI 搜索、Cursor/Claude MCP、团队协作、Markdown 导出。",
     keywords: [
       "团队知识库",
       "Notion 替代品",

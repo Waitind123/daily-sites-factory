@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://gdpr-pulse.vercel.app",
     name: "GDPR Pulse",
-    title: "GDPR Pulse — Compliance Self-Check for Indie SaaS, $9.9/mo",
+    title: "GDPR Pulse — Compliance Self-Check for Indie SaaS, $29/mo",
     description:
-      "5 free scans. Vanta too expensive? $9.9/mo flat: GDPR gap scanner, privacy policy generator, cookie consent checklist for indie founders selling to EU.",
+      "5 free scans. Vanta too expensive? $29/mo flat: GDPR gap scanner, privacy policy generator, cookie consent checklist for indie founders selling to EU.",
     keywords: [
       "GDPR compliance tool",
       "indie SaaS GDPR",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://gdpr-pulse.vercel.app",
     name: "GDPR 合规自检",
-    title: "GDPR 合规自检 — 独立开发者 SaaS 合规工具，$9.9/月",
+    title: "GDPR 合规自检 — 独立开发者 SaaS 合规工具，$29/月",
     description:
-      "免费体验 5 次。Vanta 太贵？$9.9/月一口价：GDPR 缺口扫描、隐私政策生成、Cookie 同意清单，面向服务欧盟客户的独立开发者。",
+      "免费体验 5 次。Vanta 太贵？$29/月一口价：GDPR 缺口扫描、隐私政策生成、Cookie 同意清单，面向服务欧盟客户的独立开发者。",
     keywords: [
       "GDPR 合规工具",
       "独立开发者 GDPR",

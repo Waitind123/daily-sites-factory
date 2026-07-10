@@ -2,18 +2,18 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "SEMrush ignores AI Overviews · $9.9/mo flat",
+    badge: "SEMrush ignores AI Overviews · $29/mo flat",
     title: "Track classic rank AND AI Overview citations",
     subtitle:
-      "Google AI Overviews changed search. Track classic SERP position plus AI citation status in one dashboard. 5 free dual-track checks, then $9.9/mo.",
+      "Google AI Overviews changed search. Track classic SERP position plus AI citation status in one dashboard. 5 free dual-track checks, then $29/mo.",
     ctaPrimary: "Check dual-track rank free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free dual-track checks · then $9.9/mo",
+    note: "5 free dual-track checks · then $29/mo",
     stats: [
       { stat: "2-track", label: "classic rank + AI Overview" },
-      { stat: "$9.9", label: "flat/mo vs SEMrush $130+" },
+      { stat: "$29", label: "flat/mo vs SEMrush $130+" },
       { stat: "30s", label: "to add your first keyword" },
     ],
     howItWorks: {
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited keywords and dual-track rechecks. SEMrush charges $130+ and still ignores AI Overviews.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Tom W.",
         role: "Indie blogger",
-        text: "SEMrush tracks position but not AI citations. Finally a tool that tracks both for $9.9.",
+        text: "SEMrush tracks position but not AI citations. Finally a tool that tracks both for $29.",
       },
       {
         name: "Lisa M.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Don't fly blind in the AI Overview era",
-      subtitle: "5 free dual-track checks · then $9.9/mo for unlimited",
+      subtitle: "5 free dual-track checks · then $29/mo for unlimited",
       ctaPrimary: "Check dual-track rank free",
       ctaSecondary: "View pricing",
     },
@@ -91,18 +91,18 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "SEMrush 忽略 AI 摘要 · $9.9/月一口价",
+    badge: "SEMrush 忽略 AI 摘要 · $29/月一口价",
     title: "同时追踪经典排名与 AI Overview 引用",
     subtitle:
-      "Google AI 摘要改变了搜索格局。一个控制台同时查看经典 SERP 排名与 AI 引用状态。免费体验 5 次双轨查询，之后 $9.9/月。",
+      "Google AI 摘要改变了搜索格局。一个控制台同时查看经典 SERP 排名与 AI 引用状态。免费体验 5 次双轨查询，之后 $29/月。",
     ctaPrimary: "免费双轨查询",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次双轨查询 · 之后 $9.9/月",
+    note: "免费体验 5 次双轨查询 · 之后 $29/月",
     stats: [
       { stat: "双轨", label: "经典排名 + AI 摘要" },
-      { stat: "$9.9", label: "一口价/月，SEMrush 要 $130+" },
+      { stat: "$29", label: "一口价/月，SEMrush 要 $130+" },
       { stat: "30 秒", label: "添加第一个关键词" },
     ],
     howItWorks: {
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "关键词与双轨复查不限量。SEMrush 收 $130+ 却仍忽略 AI 摘要。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Tom W.",
         role: "独立博主",
-        text: "SEMrush 只追踪排名不追踪 AI 引用。终于有 $9.9 的双轨工具。",
+        text: "SEMrush 只追踪排名不追踪 AI 引用。终于有 $29 的双轨工具。",
       },
       {
         name: "Lisa M.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "AI 摘要时代别盲目优化",
-      subtitle: "免费体验 5 次双轨查询 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次双轨查询 · 之后 $29/月无限使用",
       ctaPrimary: "免费双轨查询",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Competitor citation alerts",
       "CSV export (coming soon)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free dual-track checks, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "竞品引用提醒",
       "CSV 导出（即将推出）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次双轨查询，之后订阅？",

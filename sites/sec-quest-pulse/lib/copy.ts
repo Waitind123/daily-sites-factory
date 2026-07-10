@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Vanta $5k+/yr · Conveyor $3k+/yr · $9.9/mo",
+    badge: "Vanta $5k+/yr · Conveyor $3k+/yr · $29/mo",
     title: "Fill enterprise security questionnaires in minutes — not weekends",
     subtitle:
-      "B2B deal at the finish line? Upload the 250-row Excel security questionnaire, paste your security docs, and get AI-filled answers. 5 free fills, then $9.9/mo. No sales calls.",
+      "B2B deal at the finish line? Upload the 250-row Excel security questionnaire, paste your security docs, and get AI-filled answers. 5 free fills, then $29/mo. No sales calls.",
     ctaPrimary: "Fill questionnaire free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free questionnaire fills · then $9.9/mo",
+    note: "5 free questionnaire fills · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Vanta $5k+/yr" },
+      { stat: "$29", label: "flat/mo vs Vanta $5k+/yr" },
       { stat: "250+", label: "questions auto-filled per upload" },
       { stat: "2 min", label: "to fill your first questionnaire" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited questionnaire fills. No per-seat enterprise pricing like Vanta.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Jenny R.",
         role: "Solo founder",
-        text: "Vanta quoted $5k/year. I just needed to answer one buyer's questionnaire. $9.9/mo is exactly right.",
+        text: "Vanta quoted $5k/year. I just needed to answer one buyer's questionnaire. $29/mo is exactly right.",
       },
       {
         name: "Alex K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop losing weekends to security questionnaires",
-      subtitle: "5 free questionnaire fills · then $9.9/mo for unlimited auto-fill",
+      subtitle: "5 free questionnaire fills · then $29/mo for unlimited auto-fill",
       ctaPrimary: "Fill questionnaire free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Vanta $5k+/年 · Conveyor $3k+/年 · $9.9/月",
+    badge: "Vanta $5k+/年 · Conveyor $3k+/年 · $29/月",
     title: "企业安全问卷几分钟填完 — 不用牺牲整个周末",
     subtitle:
-      "B2B 大单临门一脚？上传 250 行 Excel 安全问卷，粘贴安全文档，AI 自动填写答案。免费体验 5 次，之后 $9.9/月。无需销售电话。",
+      "B2B 大单临门一脚？上传 250 行 Excel 安全问卷，粘贴安全文档，AI 自动填写答案。免费体验 5 次，之后 $29/月。无需销售电话。",
     ctaPrimary: "免费填写问卷",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Vanta 要 $5k+/年" },
+      { stat: "$29", label: "一口价/月，Vanta 要 $5k+/年" },
       { stat: "250+", label: "每次上传自动填写题数" },
       { stat: "2 分钟", label: "完成首份问卷填写" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "问卷填写不限量。不像 Vanta 按席位收企业价。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Jenny R.",
         role: "独立创始人",
-        text: "Vanta 报价 $5k/年。我只需要回答一个买家的问卷。$9.9/月刚刚好。",
+        text: "Vanta 报价 $5k/年。我只需要回答一个买家的问卷。$29/月刚刚好。",
       },
       {
         name: "Alex K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为安全问卷牺牲周末",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月不限量自动填写",
+      subtitle: "免费体验 5 次 · 之后 $29/月不限量自动填写",
       ctaPrimary: "免费填写问卷",
       ctaSecondary: "查看定价",
     },

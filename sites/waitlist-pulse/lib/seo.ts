@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://waitlist-pulse.vercel.app",
     name: "Waitlist Pulse",
-    title: "Waitlist Pulse — Prefinery alternative for indie devs, $9.9/mo flat",
+    title: "Waitlist Pulse — Prefinery alternative for indie devs, $29/mo flat",
     description:
-      "5 free product waitlists. Prefinery costs $99/mo? $9.9/mo flat: email capture, referral boost, public signup count, embed widget.",
+      "5 free product waitlists. Prefinery costs $99/mo? $29/mo flat: email capture, referral boost, public signup count, embed widget.",
     keywords: [
       "product waitlist",
       "Prefinery alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://waitlist-pulse.vercel.app",
     name: "产品等候名单",
-    title: "产品等候名单 — Prefinery 平替，独立开发者 $9.9/月",
+    title: "产品等候名单 — Prefinery 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个产品等候名单。Prefinery $99/月太贵？$9.9/月一口价：邮箱收集、推荐裂变、公开计数、可嵌入组件。",
+      "免费体验 5 个产品等候名单。Prefinery $99/月太贵？$29/月一口价：邮箱收集、推荐裂变、公开计数、可嵌入组件。",
     keywords: [
       "产品等候名单",
       "Prefinery 替代品",

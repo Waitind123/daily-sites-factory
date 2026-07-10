@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://reddit-radar-eta.vercel.app",
     name: "Reddit Radar",
-    title: "Reddit Radar — Reddit social listening for indie hackers, $9.9/mo",
+    title: "Reddit Radar — Reddit social listening for indie hackers, $29/mo",
     description:
-      "5 free scans. Monitor Reddit for high-intent buying signals — alternative to, switching from, pricing pain. No Brand24 noise. Intent scoring for founders. $9.9/mo flat.",
+      "5 free scans. Monitor Reddit for high-intent buying signals — alternative to, switching from, pricing pain. No Brand24 noise. Intent scoring for founders. $29/mo flat.",
     keywords: [
       "Reddit social listening",
       "Brand24 alternative Reddit",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://reddit-radar-eta.vercel.app",
     name: "Reddit 社交监听平替",
-    title: "Reddit 社交监听平替 — Brand24/Mention Reddit 专注版，$9.9/月",
+    title: "Reddit 社交监听平替 — Brand24/Mention Reddit 专注版，$29/月",
     description:
-      "免费体验 5 次扫描。专注 Reddit 高意向购买信号 — 寻找替代、正在切换、价格不满。过滤 Brand24 噪音，意向评分，$9.9/月一口价。",
+      "免费体验 5 次扫描。专注 Reddit 高意向购买信号 — 寻找替代、正在切换、价格不满。过滤 Brand24 噪音，意向评分，$29/月一口价。",
     keywords: [
       "Reddit 社交监听",
       "Brand24 替代品 Reddit",

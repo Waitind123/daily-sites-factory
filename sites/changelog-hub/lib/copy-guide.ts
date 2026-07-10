@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Beamer Alternative for Indie Hackers — Changelog Guide",
       description:
-        "Beamer $49/mo, AnnounceKit $79/mo too expensive? Compare 2026 changelog tools and find a $9.9/mo minimalist alternative for bootstrapped founders.",
+        "Beamer $49/mo, AnnounceKit $79/mo too expensive? Compare 2026 changelog tools and find a $29/mo minimalist alternative for bootstrapped founders.",
     },
     h1: "2026 Beamer Alternative for Indie Hackers: Changelog Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -45,7 +45,7 @@ export const guideCopy = {
             p: "2026 EU-hosted option with changelog + feedback + roadmap + status page. Feature-rich but still iterating. Best for European teams needing GDPR compliance.",
           },
           {
-            h3: "Indie Changelog — $9.9/mo",
+            h3: "Indie Changelog — $29/mo",
             p: "Does one thing well: fast public changelog page + embed widget + status snippet + RSS. No in-app notifications, no MAU billing, no A/B tests. Pure HTML export, zero vendor lock-in.",
             link: { href: "/publish", text: "Indie Changelog", suffix: " offers 5 free tries before you subscribe." },
           },
@@ -69,7 +69,7 @@ export const guideCopy = {
           },
         ],
         after: [
-          "If you ship 2–10 updates/month, don't need MAU segmentation, and want pure HTML export — Indie Changelog at $9.9/mo is likely the best value in 2026.",
+          "If you ship 2–10 updates/month, don't need MAU segmentation, and want pure HTML export — Indie Changelog at $29/mo is likely the best value in 2026.",
         ],
       },
       {
@@ -87,7 +87,7 @@ export const guideCopy = {
         h2: "Build yourself vs use a tool",
         paragraphs: [
           "Many indie hackers hand-roll changelog pages — Markdown + static site generator. Zero cost, fully viable. But you maintain version tag HTML, embed widget JS, RSS generation, and status pages yourself.",
-          "If your time is better spent on product, $9.9/mo saves 2–4 hours/month. At $50/hr indie rate, ROI is positive.",
+          "If your time is better spent on product, $29/mo saves 2–4 hours/month. At $50/hr indie rate, ROI is positive.",
         ],
       },
       {
@@ -101,13 +101,13 @@ export const guideCopy = {
         h2: "Summary",
         paragraphs: [
           "2026 changelog tools are splitting: Beamer/AnnounceKit for mature SaaS ($49–99/mo), Vershun and Indie Changelog for indie stage ($7–10/mo).",
-          "If MRR is four figures or below, you update under 10 times/month, and don't need MAU segmentation — skip $49/mo. Pick a $9.9 tool and invest savings in growth or product.",
+          "If MRR is four figures or below, you update under 10 times/month, and don't need MAU segmentation — skip $49/mo. Pick a $29 tool and invest savings in growth or product.",
         ],
       },
     ],
     cta: {
       title: "Ready to publish your changelog?",
-      subtitle: "5 free tries · then $9.9/mo",
+      subtitle: "5 free tries · then $29/mo",
       button: "Start free",
     },
   },
@@ -115,7 +115,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Beamer 替代方案 — Changelog 工具完整指南",
       description:
-        "Beamer $49/月、AnnounceKit $79/月太贵？对比 2026 年 Changelog 工具，找到 $9.9/月的极简替代方案。",
+        "Beamer $49/月、AnnounceKit $79/月太贵？对比 2026 年 Changelog 工具，找到 $29/月的极简替代方案。",
     },
     h1: "2026 独立开发者 Beamer 替代方案：Changelog 工具完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -155,7 +155,7 @@ export const guideCopy = {
             p: "2026 年新兴的 EU-hosted 选择，€7/月包含 changelog + feedback + roadmap + status page。功能全面但仍在快速迭代中。适合欧洲用户、需要 GDPR 合规的团队。",
           },
           {
-            h3: "Indie Changelog 发布台 — $9.9/月",
+            h3: "Indie Changelog 发布台 — $29/月",
             p: "专注做一件事：快速生成可发布的 Changelog 公开页 + 嵌入 Widget + 状态页片段 + RSS。没有 in-app 通知、没有 MAU 计费、没有 A/B 测试。纯 HTML 导出，零 vendor lock-in。",
             link: { href: "/publish", text: "Indie Changelog", suffix: " 可以免费体验 5 次，感受生成速度后再决定是否订阅。" },
           },
@@ -179,7 +179,7 @@ export const guideCopy = {
           },
         ],
         after: [
-          "如果你 MRR 还在四位数以下、每月更新不超过 10 次、不需要 MAU 分群，没有理由付 $49/月。选一个 $9.9 的工具，把省下的钱投入获客或产品开发。",
+          "如果你 MRR 还在四位数以下、每月更新不超过 10 次、不需要 MAU 分群，没有理由付 $49/月。选一个 $29 的工具，把省下的钱投入获客或产品开发。",
         ],
       },
       {
@@ -197,7 +197,7 @@ export const guideCopy = {
         h2: "自己搭建 vs 用工具",
         paragraphs: [
           "很多 indie hacker 选择手搓 changelog 页面——一个 Markdown 文件 + 静态站点生成器。这完全可行，成本为零。但你需要自己维护版本标签 HTML、嵌入 widget JS、RSS feed 生成和状态页。",
-          "如果你时间宝贵、更想专注产品本身，$9.9/月的工具能帮你省下每月 2-4 小时的维护时间。按 indie hacker 时薪 $50 算，ROI 是正向的。",
+          "如果你时间宝贵、更想专注产品本身，$29/月的工具能帮你省下每月 2-4 小时的维护时间。按 indie hacker 时薪 $50 算，ROI 是正向的。",
         ],
       },
       {
@@ -211,13 +211,13 @@ export const guideCopy = {
         h2: "总结",
         paragraphs: [
           "2026 年的 Changelog 工具市场正在分化：一端是 Beamer/AnnounceKit 面向成熟 SaaS 的全功能平台（$49-99/月），另一端是 Vershun、Indie Changelog 等面向 indie stage 的极简方案（$7-10/月）。",
-          "如果你 MRR 还在四位数以下、每月更新不超过 10 次、不需要 MAU 分群，没有理由付 $49/月。选一个 $9.9 的工具，把省下的钱投入获客或产品开发。免费体验 5 次，无风险试用。",
+          "如果你 MRR 还在四位数以下、每月更新不超过 10 次、不需要 MAU 分群，没有理由付 $49/月。选一个 $29 的工具，把省下的钱投入获客或产品开发。免费体验 5 次，无风险试用。",
         ],
       },
     ],
     cta: {
       title: "准备好发布你的 Changelog 了吗？",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月",
+      subtitle: "免费体验 5 次 · 之后 $29/月",
       button: "免费开始",
     },
   },

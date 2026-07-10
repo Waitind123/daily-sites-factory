@@ -21,7 +21,7 @@ export function PromoCrossSell({
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-2 px-4 py-2.5 sm:flex-row">
         <p className="text-center text-sm text-indigo-900 dark:text-indigo-100 sm:text-left">
           <span className="font-semibold">
-            {zh ? "🔥 限时 $9.9/月：AI 职业证件照" : "🔥 $9.9/mo: AI professional headshots"}
+            {zh ? "🔥 限时 $29/月：AI 职业证件照" : "🔥 $29/mo: AI professional headshots"}
           </span>
           <span className="mx-2 text-indigo-400">·</span>
           <span className="text-indigo-700 dark:text-indigo-200">

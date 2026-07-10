@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "SEMrush $130/mo? · $9.9/mo flat",
+    badge: "SEMrush $130/mo? · $29/mo flat",
     title: "Daily keyword rank tracking for indie sites",
     subtitle:
-      "Track Google positions for your keywords. 5 free rank checks, then $9.9/mo. No enterprise SEO bloat.",
+      "Track Google positions for your keywords. 5 free rank checks, then $29/mo. No enterprise SEO bloat.",
     ctaPrimary: "Track keywords free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free rank checks · then $9.9/mo",
+    note: "5 free rank checks · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs SEMrush $130+" },
+      { stat: "$29", label: "flat/mo vs SEMrush $130+" },
       { stat: "Daily", label: "rank position updates" },
       { stat: "30s", label: "to add your first keyword" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited keywords and rechecks. No per-seat fees like SEMrush Enterprise.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Solo SaaS founder",
-        text: "SEMrush wanted $130/mo for rank tracking alone. Rank Pulse gives me everything for $9.9.",
+        text: "SEMrush wanted $130/mo for rank tracking alone. Rank Pulse gives me everything for $29.",
       },
       {
         name: "Elena R.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Track keyword rankings without enterprise pricing",
-      subtitle: "5 free rank checks · then $9.9/mo for unlimited",
+      subtitle: "5 free rank checks · then $29/mo for unlimited",
       ctaPrimary: "Track keywords free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "SEMrush 要 $130/月？· $9.9/月一口价",
+    badge: "SEMrush 要 $130/月？· $29/月一口价",
     title: "独立站每日关键词排名追踪",
     subtitle:
-      "追踪 Google 关键词排名位置。免费体验 5 次排名查询，之后 $9.9/月。无企业级 SEO 臃肿功能。",
+      "追踪 Google 关键词排名位置。免费体验 5 次排名查询，之后 $29/月。无企业级 SEO 臃肿功能。",
     ctaPrimary: "免费追踪关键词",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，SEMrush 要 $130+" },
+      { stat: "$29", label: "一口价/月，SEMrush 要 $130+" },
       { stat: "每日", label: "排名位置更新" },
       { stat: "30 秒", label: "添加第一个关键词" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "关键词与复查不限量。无 SEMrush 企业版按席位收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "独立 SaaS 创始人",
-        text: "SEMrush 光排名追踪就要 $130/月。Rank Pulse $9.9 全搞定。",
+        text: "SEMrush 光排名追踪就要 $130/月。Rank Pulse $29 全搞定。",
       },
       {
         name: "Elena R.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用企业级价格追踪关键词排名",
-      subtitle: "免费体验 5 次排名查询 · 之后 $9.9/月无限使用",
+      subtitle: "免费体验 5 次排名查询 · 之后 $29/月无限使用",
       ctaPrimary: "免费追踪关键词",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Multiple domains per project",
       "CSV export (coming soon)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free rank checks, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "每个项目支持多域名",
       "CSV 导出（即将推出）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次排名查询，之后订阅？",

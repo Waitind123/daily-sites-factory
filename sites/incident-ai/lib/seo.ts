@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://incident-ai-seven.vercel.app",
     name: "Incident AI",
-    title: "Incident AI — AI incident communication for indie devs, $9.9/mo",
+    title: "Incident AI — AI incident communication for indie devs, $29/mo",
     description:
-      "5 free drafts. Statuspage $29/mo? $9.9/mo flat: paste alert → status update, customer email, Slack note, postmortem. Ship calm during outages.",
+      "5 free drafts. Statuspage $29/mo? $29/mo flat: paste alert → status update, customer email, Slack note, postmortem. Ship calm during outages.",
     keywords: [
       "AI incident communication",
       "status page alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://incident-ai-seven.vercel.app",
     name: "AI 事件摘要",
-    title: "AI 事件摘要 — Statuspage 平替，独立开发者 $9.9/月",
+    title: "AI 事件摘要 — Statuspage 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次。Statuspage 要 $29/月？$9.9/月一口价：粘贴告警 → 状态页更新、客户邮件、Slack 通知、复盘报告。宕机时从容沟通。",
+      "免费体验 5 次。Statuspage 要 $29/月？$29/月一口价：粘贴告警 → 状态页更新、客户邮件、Slack 通知、复盘报告。宕机时从容沟通。",
     keywords: [
       "AI 事件摘要",
       "状态页替代品",

@@ -6,14 +6,14 @@ export const guideCopy = {
       title:
         "2026 Guide: Find Startup Ideas from App Store Negative Reviews — AppGaps Method",
       description:
-        "Learn how indie hackers cluster 1-star App Store reviews into market gaps and SaaS opportunities. Compare AppGaps, NicheScout, and $9.9/mo flat-rate tools.",
+        "Learn how indie hackers cluster 1-star App Store reviews into market gaps and SaaS opportunities. Compare AppGaps, NicheScout, and $29/mo flat-rate tools.",
     },
     h1: "How to Find Startup Ideas from App Store 1-Star Reviews (2026 Guide)",
     updated: "Updated July 2026 · 14 min read",
     intro: [
       "The best product ideas hide in plain sight — inside angry App Store reviews. When users leave 1-star ratings, they are not just venting. They are writing free product specs: what is broken, what is missing, what is overpriced, and what competitor they wish existed.",
       "Hacker News thread AppGaps (#43942646) went viral because solo founders realized: reading hundreds of negative reviews manually is slow, but clustering them reveals repeatable market gaps. One founder found six invoice-app complaints in a single afternoon and shipped a Stripe-first invoicing tool the next weekend.",
-      "This guide explains the AppGaps method step by step: how to mine App Store negative reviews, cluster complaints into five signal types, score pain intensity, and validate your next micro-SaaS before writing code. We also compare 2026 market research tools — from $89 AI market studies to open-source Seer — and show why a $9.9/mo flat-rate scanner fits bootstrapped founders.",
+      "This guide explains the AppGaps method step by step: how to mine App Store negative reviews, cluster complaints into five signal types, score pain intensity, and validate your next micro-SaaS before writing code. We also compare 2026 market research tools — from $89 AI market studies to open-source Seer — and show why a $29/mo flat-rate scanner fits bootstrapped founders.",
       "Whether you are hunting your first indie product or expanding a portfolio, negative review mining beats guessing. Let us walk through the workflow.",
     ],
     sections: [
@@ -43,13 +43,13 @@ export const guideCopy = {
           "Score intensity: data loss and pricing bait-and-switch score 10/10; missing dark mode scores 7/10.",
           "Cross-reference clusters across 3+ competitor apps. Repeated themes = validated market gap.",
           "Draft a one-line value prop: \"Stripe-first invoicing that never loses your PDF exports.\"",
-          "Build MVP in a weekend, price at $9.9/mo, launch on Product Hunt and HN Show HN.",
+          "Build MVP in a weekend, price at $29/mo, launch on Product Hunt and HN Show HN.",
         ],
         afterLink: {
           prefix: "AppGap Pulse automates steps 2–4. ",
           href: "/mine",
           label: "Try 5 free scans",
-          suffix: " before subscribing at $9.9/mo.",
+          suffix: " before subscribing at $29/mo.",
         },
       },
       {
@@ -68,11 +68,11 @@ export const guideCopy = {
             p: "Structured 12-chapter market studies with TAM/SAM/SOM. Great for pitch decks, overkill when you only need \"what do invoice app users hate most?\"",
           },
           {
-            h3: "AppGap Pulse — $9.9/mo flat",
+            h3: "AppGap Pulse — $29/mo flat",
             p: "Enter a category keyword, get clustered 1-star reviews with intensity scores and competitor app context. Built for indie hackers who ship weekly, not quarterly.",
             link: {
               href: "/join",
-              text: "Subscribe at $9.9/mo",
+              text: "Subscribe at $29/mo",
               suffix: " · 5 free scans included",
             },
           },
@@ -82,14 +82,14 @@ export const guideCopy = {
         h2: "Real example: invoice category scan",
         paragraphs: [
           "Scanning the \"invoice\" category might surface clusters like: PDF export crashes (broken, 10/10), no Stripe integration (missing feature, 9/10), and subscription price hikes (overpriced, 10/10). Three separate apps complaining about Stripe means the gap is category-wide, not one bad vendor.",
-          "Your MVP scope becomes obvious: Stripe Checkout + reliable PDF export + flat $9.9/mo pricing. You are not inventing demand — you are answering complaints people already typed at 2 AM after a failed export.",
+          "Your MVP scope becomes obvious: Stripe Checkout + reliable PDF export + flat $29/mo pricing. You are not inventing demand — you are answering complaints people already typed at 2 AM after a failed export.",
           "Repeat the scan monthly. Incumbents add features and new complaints emerge. Subscription businesses live on recurring pain; your research should too.",
         ],
         closingLink: {
           prefix: "Ready to find your gap? ",
           href: "/mine",
           label: "Start scanning",
-          suffix: " — 5 free tries, then $9.9/mo unlimited.",
+          suffix: " — 5 free tries, then $29/mo unlimited.",
         },
       },
       {
@@ -102,7 +102,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Find your next SaaS idea in 12 seconds",
-      subtitle: "5 free App Store review scans · then $9.9/mo flat",
+      subtitle: "5 free App Store review scans · then $29/mo flat",
       button: "Scan reviews free",
       href: "/mine",
     },
@@ -111,14 +111,14 @@ export const guideCopy = {
     meta: {
       title: "2026 指南：从应用商店 1 星差评发现创业点子 — AppGaps 方法",
       description:
-        "教独立开发者如何将应用商店差评聚类为市场空白和 SaaS 机会。对比 AppGaps、NicheScout 及 $9.9/月 一口价工具。",
+        "教独立开发者如何将应用商店差评聚类为市场空白和 SaaS 机会。对比 AppGaps、NicheScout 及 $29/月 一口价工具。",
     },
     h1: "如何从应用商店 1 星差评发现创业点子（2026 指南）",
     updated: "更新于 2026 年 7 月 · 阅读约 14 分钟",
     intro: [
       "最好的产品点子就藏在愤怒的应用商店差评里。用户打 1 星不只是发泄 — 他们在写免费的产品需求文档：什么坏了、缺什么、贵在哪、他们希望有什么竞品替代。",
       "Hacker News 热议帖 AppGaps（#43942646）之所以爆火，是因为独立开发者发现：手动读几百条差评很慢，但聚类后能暴露可重复的市场空白。有位创始人一个下午就在发票品类找到 6 条投诉，下个周末就上线了 Stripe 直连发票工具。",
-      "本指南逐步讲解 AppGaps 方法：如何挖掘应用商店差评、将投诉聚类为五类信号、评估痛点强度，并在写代码前验证下一个微 SaaS。我们还会对比 2026 年市场调研工具 — 从 $89 的 AI 市场报告到开源 Seer — 并说明为什么 $9.9/月 一口价扫描器适合自举创始人。",
+      "本指南逐步讲解 AppGaps 方法：如何挖掘应用商店差评、将投诉聚类为五类信号、评估痛点强度，并在写代码前验证下一个微 SaaS。我们还会对比 2026 年市场调研工具 — 从 $89 的 AI 市场报告到开源 Seer — 并说明为什么 $29/月 一口价扫描器适合自举创始人。",
       "无论你是找第一个独立产品还是扩展产品组合，差评挖掘都比瞎猜强。下面走一遍完整流程。",
     ],
     sections: [
@@ -148,13 +148,13 @@ export const guideCopy = {
           "评估强度：数据丢失和定价 bait-and-switch 打 10/10；缺深色模式打 7/10。",
           "交叉对比 3 个以上竞品的簇。重复主题 = 已验证的市场空白。",
           "写一句价值主张：「Stripe 直连、PDF 导出永不丢数据的发票工具。」",
-          "周末做 MVP，定价 $9.9/月，在 Product Hunt 和 HN Show HN 发布。",
+          "周末做 MVP，定价 $29/月，在 Product Hunt 和 HN Show HN 发布。",
         ],
         afterLink: {
           prefix: "应用商店差评挖痛点自动完成第 2–4 步。",
           href: "/mine",
           label: "免费体验 5 次扫描",
-          suffix: "，之后 $9.9/月 订阅。",
+          suffix: "，之后 $29/月 订阅。",
         },
       },
       {
@@ -173,11 +173,11 @@ export const guideCopy = {
             p: "结构化 12 章市场研究含 TAM/SAM/SOM。适合融资路演，当你只需要「发票应用用户最恨什么」时就过剩了。",
           },
           {
-            h3: "应用商店差评挖痛点 — $9.9/月 一口价",
+            h3: "应用商店差评挖痛点 — $29/月 一口价",
             p: "输入品类关键词，获得聚类 1 星差评、强度分数和竞品应用上下文。为每周 ship 的独立开发者设计，不是季度才动一次的人。",
             link: {
               href: "/join",
-              text: "订阅 $9.9/月",
+              text: "订阅 $29/月",
               suffix: " · 含 5 次免费扫描",
             },
           },
@@ -187,14 +187,14 @@ export const guideCopy = {
         h2: "真实案例：发票品类扫描",
         paragraphs: [
           "扫描「invoice」品类可能得到：PDF 导出崩溃（严重故障 10/10）、无 Stripe 集成（功能缺失 9/10）、订阅涨价（定价过高 10/10）。三个不同应用都抱怨 Stripe，说明空白是品类级的，不是某一家烂。",
-          "MVP 范围一目了然：Stripe Checkout + 可靠 PDF 导出 + $9.9/月 一口价。你不是发明需求 — 你在回应用户凌晨 2 点导出失败后敲下的字。",
+          "MVP 范围一目了然：Stripe Checkout + 可靠 PDF 导出 + $29/月 一口价。你不是发明需求 — 你在回应用户凌晨 2 点导出失败后敲下的字。",
           "每月重复扫描。巨头会加功能，新投诉会出现。订阅生意靠持续痛点活着；你的调研也该如此。",
         ],
         closingLink: {
           prefix: "准备好找你的空白了吗？",
           href: "/mine",
           label: "开始扫描",
-          suffix: " — 免费 5 次，之后 $9.9/月 不限量。",
+          suffix: " — 免费 5 次，之后 $29/月 不限量。",
         },
       },
       {
@@ -207,7 +207,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "12 秒找到你的下一个 SaaS 点子",
-      subtitle: "免费 5 次应用商店差评扫描 · 之后 $9.9/月 一口价",
+      subtitle: "免费 5 次应用商店差评扫描 · 之后 $29/月 一口价",
       button: "免费扫描差评",
       href: "/mine",
     },

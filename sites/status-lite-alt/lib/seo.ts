@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://status-lite-alt.vercel.app",
     name: "Status Lite",
-    title: "Status Lite — Statuspage.io & StatusEmbed alternative, $9.9/mo flat",
+    title: "Status Lite — Statuspage.io & StatusEmbed alternative, $29/mo flat",
     description:
-      "5 free status pages. Statuspage.io $299/mo or StatusEmbed $15/mo? $9.9/mo flat: incident management, email subscribers, embeddable widget.",
+      "5 free status pages. Statuspage.io $299/mo or StatusEmbed $15/mo? $29/mo flat: incident management, email subscribers, embeddable widget.",
     keywords: [
       "status page",
       "Statuspage.io alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://status-lite-alt.vercel.app",
     name: "极简状态页",
-    title: "极简状态页 — Statuspage.io / StatusEmbed 平替，$9.9/月",
+    title: "极简状态页 — Statuspage.io / StatusEmbed 平替，$29/月",
     description:
-      "免费体验 5 个状态页。Statuspage.io $299/月或 StatusEmbed $15/月太贵？$9.9/月一口价：事件管理、邮件订阅、可嵌入组件。",
+      "免费体验 5 个状态页。Statuspage.io $299/月或 StatusEmbed $15/月太贵？$29/月一口价：事件管理、邮件订阅、可嵌入组件。",
     keywords: [
       "状态页",
       "Statuspage.io 替代品",

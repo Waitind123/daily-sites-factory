@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Rewardful $49+9%? · $9.9/mo flat",
+    badge: "Rewardful $49+9%? · $29/mo flat",
     title: "Stripe-native affiliate tracking without revenue share",
     subtitle:
-      "Create affiliate links, track clicks & conversions, calculate commissions. 5 free programs, then $9.9/mo. No 9% cut of your sales.",
+      "Create affiliate links, track clicks & conversions, calculate commissions. 5 free programs, then $29/mo. No 9% cut of your sales.",
     ctaPrimary: "Create program free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free programs · then $9.9/mo",
+    note: "5 free programs · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Rewardful $49+9%" },
+      { stat: "$29", label: "flat/mo vs Rewardful $49+9%" },
       { stat: "0%", label: "revenue share — keep 100% of affiliate sales" },
       { stat: "Stripe", label: "native conversion tracking via metadata" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited affiliates. No 9% revenue share like Rewardful on top of monthly fee.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Solo SaaS founder",
-        text: "Rewardful wanted $49/mo plus 9% of affiliate revenue. At $5k/mo in affiliate sales that's $499. Affiliate Pulse is $9.9 flat.",
+        text: "Rewardful wanted $49/mo plus 9% of affiliate revenue. At $5k/mo in affiliate sales that's $499. Affiliate Pulse is $29 flat.",
       },
       {
         name: "Lisa K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Run an affiliate program without giving away 9%",
-      subtitle: "5 free programs · then $9.9/mo for unlimited",
+      subtitle: "5 free programs · then $29/mo for unlimited",
       ctaPrimary: "Create program free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Rewardful $49+9%？· $9.9/月一口价",
+    badge: "Rewardful $49+9%？· $29/月一口价",
     title: "Stripe 原生联盟追踪，零收入分成",
     subtitle:
-      "创建联盟链接、追踪点击与转化、自动计算佣金。免费体验 5 个联盟计划，之后 $9.9/月。不从你的销售额中抽 9%。",
+      "创建联盟链接、追踪点击与转化、自动计算佣金。免费体验 5 个联盟计划，之后 $29/月。不从你的销售额中抽 9%。",
     ctaPrimary: "免费创建联盟计划",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Rewardful 要 $49+9%" },
+      { stat: "$29", label: "一口价/月，Rewardful 要 $49+9%" },
       { stat: "0%", label: "收入分成 — 联盟销售额 100% 归你" },
       { stat: "Stripe", label: "通过元数据原生追踪转化" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "联盟伙伴不限量。不像 Rewardful 月费之外再抽 9% 销售额。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "独立 SaaS 创始人",
-        text: "Rewardful 要 $49/月加联盟收入 9%。联盟月销 $5000 就是 $499。Affiliate Pulse 一口价 $9.9。",
+        text: "Rewardful 要 $49/月加联盟收入 9%。联盟月销 $5000 就是 $499。Affiliate Pulse 一口价 $29。",
       },
       {
         name: "Lisa K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "运营联盟计划，不必再让出 9%",
-      subtitle: "免费体验 5 个联盟计划 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 个联盟计划 · 之后 $29/月不限量",
       ctaPrimary: "免费创建联盟计划",
       ctaSecondary: "查看定价",
     },

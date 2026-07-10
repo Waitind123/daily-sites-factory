@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://coworking-pass-five.vercel.app",
     name: "Coworking Pass",
-    title: "Coworking Pass — Day pass booking for digital nomads, $9.9/mo",
+    title: "Coworking Pass — Day pass booking for digital nomads, $29/mo",
     description:
-      "5 free day-pass bookings. Croissant $49/mo? $9.9/mo flat: compare coworking day passes, WiFi data, instant booking across 40+ cities.",
+      "5 free day-pass bookings. Croissant $49/mo? $29/mo flat: compare coworking day passes, WiFi data, instant booking across 40+ cities.",
     keywords: [
       "coworking day pass",
       "Croissant alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://coworking-pass-five.vercel.app",
     name: "联合办公日票",
-    title: "联合办公日票 — 数字游民日票预订，$9.9/月",
+    title: "联合办公日票 — 数字游民日票预订，$29/月",
     description:
-      "免费体验 5 次日票预订。Croissant $49/月太贵？$9.9/月一口价：40+ 城市日票比价、WiFi 数据、即时预订。",
+      "免费体验 5 次日票预订。Croissant $49/月太贵？$29/月一口价：40+ 城市日票比价、WiFi 数据、即时预订。",
     keywords: [
       "联合办公日票",
       "Croissant 替代品",

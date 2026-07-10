@@ -37,7 +37,7 @@ export const boardsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 boards. Subscribe for unlimited boards, embed widgets, and voter notifications.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     trialLowTitle: "Only {remaining} free boards left",
     trialLowBody: "Subscribe now for unlimited boards — most founders upgrade after board #3.",
     trialLowCta: "View pricing",
@@ -53,7 +53,7 @@ export const boardsCopy = {
     openBoard: "Open board →",
     yourBoards: "Your boards",
     exampleTitle: "Example ideas on a board",
-    stickyCta: "Upgrade · $9.9/mo unlimited boards",
+    stickyCta: "Upgrade · $29/mo unlimited boards",
     stickyRemaining: "{remaining} free boards left",
   },
   zh: {
@@ -63,7 +63,7 @@ export const boardsCopy = {
     freeBoards: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个投票板。订阅后可无限创建、嵌入组件并通知投票者。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     trialLowTitle: "仅剩 {remaining} 个免费投票板",
     trialLowBody: "立即订阅解锁无限投票板 — 多数创始人在第 3 个板后升级。",
     trialLowCta: "查看定价",
@@ -79,7 +79,7 @@ export const boardsCopy = {
     openBoard: "打开投票板 →",
     yourBoards: "你的投票板",
     exampleTitle: "投票板上的示例想法",
-    stickyCta: "升级 · $9.9/月 无限投票板",
+    stickyCta: "升级 · $29/月 无限投票板",
     stickyRemaining: "剩余 {remaining} 个免费板",
   },
 } as const;

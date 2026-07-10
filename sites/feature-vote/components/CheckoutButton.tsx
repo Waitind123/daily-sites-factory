@@ -5,7 +5,7 @@ import { siteMeta } from "@/lib/site-meta";
 
 export function CheckoutButton({
   className = "",
-  label = "Subscribe · $9.9/mo",
+  label = "Subscribe · $29/mo",
   currency,
   plan,
 }: {

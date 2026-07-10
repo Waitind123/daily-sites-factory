@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pay-once-pulse.vercel.app",
     name: "PayOnce Pulse",
-    title: "PayOnce Pulse — one-time purchase SaaS alternatives directory $9.9/mo",
+    title: "PayOnce Pulse — one-time purchase SaaS alternatives directory $29/mo",
     description:
-      "5 free deep lookups. Curated pay-once & self-hostable alternatives to subscription SaaS — Canny, Typeform, Mixpanel, Trello & more. $9.9/mo unlimited.",
+      "5 free deep lookups. Curated pay-once & self-hostable alternatives to subscription SaaS — Canny, Typeform, Mixpanel, Trello & more. $29/mo unlimited.",
     keywords: [
       "pay once SaaS",
       "one time purchase software",
@@ -27,9 +27,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pay-once-pulse.vercel.app",
     name: "一次性买断工具目录",
-    title: "一次性买断工具目录 — 订阅制 SaaS 买断替代品 $9.9/月",
+    title: "一次性买断工具目录 — 订阅制 SaaS 买断替代品 $29/月",
     description:
-      "免费体验 5 次深度查询。精选一次性买断与可自托管的 SaaS 替代品 — 替代 Canny、Typeform、Mixpanel、Trello 等订阅工具。$9.9/月无限查阅。",
+      "免费体验 5 次深度查询。精选一次性买断与可自托管的 SaaS 替代品 — 替代 Canny、Typeform、Mixpanel、Trello 等订阅工具。$29/月无限查阅。",
     keywords: [
       "一次性买断软件",
       "SaaS 替代品",

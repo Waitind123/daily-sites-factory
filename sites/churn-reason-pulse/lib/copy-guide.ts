@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 SaaS Churn Reason Tracking Guide — ChartMogul Alternative for Indie Hackers",
       description:
-        "ChartMogul shows 4.2% churn but not why. Learn how indie SaaS founders track cancellation reasons, categorize exit feedback, and fix the real churn drivers for $9.9/mo.",
+        "ChartMogul shows 4.2% churn but not why. Learn how indie SaaS founders track cancellation reasons, categorize exit feedback, and fix the real churn drivers for $29/mo.",
     },
     h1: "2026 SaaS Churn Reason Tracking: Why Customers Cancel (ChartMogul Alternative)",
     updated: "Updated July 2026 · 12 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "Industry research consistently shows that 68% of SaaS churn is preventable if you know the reason within 48 hours of cancellation. Yet most indie founders only track churn rate — a lagging metric that tells you something went wrong without telling you what to fix.",
       "Enterprise tools like Baremetrics ($50+/mo) and ChartMogul ($99+/mo after free tier) excel at MRR, cohorts, and churn percentage. They were built for finance teams who need board-ready metrics. They were not built to answer: \"Why did Sarah cancel after 8 months?\"",
       "On Indie Hackers and r/SaaS, founders repeatedly ask: \"How do you track why customers churn?\" One wrote: \"I know my churn rate but I have no idea if it's price, onboarding, or competitors.\" Another: \"ChartMogul shows the number. I need the reason.\" If that sounds like you, this guide is for you.",
-      "This guide explains the churn reason taxonomy used by customer success teams, compares 2026 tracking approaches for bootstrapped founders, and shows you how to start logging cancellation reasons in 2 minutes for $9.9/mo flat.",
+      "This guide explains the churn reason taxonomy used by customer success teams, compares 2026 tracking approaches for bootstrapped founders, and shows you how to start logging cancellation reasons in 2 minutes for $29/mo flat.",
     ],
     sections: [
       {
@@ -63,7 +63,7 @@ export const guideCopy = {
             p: "Manual exit surveys work but data lives disconnected from MRR context. You know \"price\" was selected but not that it was a $99/mo customer vs $9/mo. No dashboard, no category breakdown over time.",
           },
           {
-            h3: "Churn Reason Pulse — $9.9/mo flat",
+            h3: "Churn Reason Pulse — $29/mo flat",
             p: "Purpose-built for indie founders: log email + MRR lost + reason category + free-text. Dashboard shows breakdown %, top reason, total MRR lost. 5 free logs to validate the pattern before subscribing.",
             link: { href: "/dashboard", text: "Log cancellations free", suffix: " — five logs, no credit card." },
           },
@@ -96,7 +96,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Start tracking why customers cancel",
-      subtitle: "5 free cancellation logs. Then $9.9/mo for unlimited reason tracking.",
+      subtitle: "5 free cancellation logs. Then $29/mo for unlimited reason tracking.",
       button: "Log cancellations free →",
     },
   },
@@ -104,7 +104,7 @@ export const guideCopy = {
     meta: {
       title: "2026 SaaS 流失原因追踪指南 — ChartMogul 替代品",
       description:
-        "ChartMogul 显示 4.2% 流失率却不告诉你为什么。独立开发者如何记录取消原因、分类退出反馈、修复真正的流失驱动因素，$9.9/月。",
+        "ChartMogul 显示 4.2% 流失率却不告诉你为什么。独立开发者如何记录取消原因、分类退出反馈、修复真正的流失驱动因素，$29/月。",
     },
     h1: "2026 SaaS 流失原因追踪：客户为什么取消（ChartMogul 替代品）",
     updated: "更新于 2026 年 7 月 · 阅读约 12 分钟",
@@ -113,7 +113,7 @@ export const guideCopy = {
       "行业研究一致表明：若在取消后 48 小时内知道原因，68% 的 SaaS 流失本可避免。但大多数独立开发者只追踪流失率 — 一个滞后指标，告诉你出了问题，却不告诉你该修什么。",
       "Baremetrics（$50+/月）和 ChartMogul（免费档过期后 $99+/月）擅长 MRR、队列和流失百分比，为需要董事会级指标的财务团队而建。它们不是为了回答：「Sarah 用了 8 个月为什么取消？」",
       "在 Indie Hackers 和 r/SaaS 上，创始人反复问：「你们怎么追踪客户为什么流失？」有人说：「我知道流失率，不知道是价格、引导还是竞品。」也有人说：「ChartMogul 给数字，我需要原因。」如果这像你说的，这篇指南就是为你写的。",
-      "本指南介绍客户成功团队使用的流失原因分类法、对比 2026 年自举创始人的追踪方案，并演示如何 2 分钟内开始记录取消原因，$9.9/月一口价。",
+      "本指南介绍客户成功团队使用的流失原因分类法、对比 2026 年自举创始人的追踪方案，并演示如何 2 分钟内开始记录取消原因，$29/月一口价。",
     ],
     sections: [
       {
@@ -162,7 +162,7 @@ export const guideCopy = {
             p: "手动退出调研可用，但数据与 MRR 上下文脱节。你知道选了「价格」却不知道是 $99/月还是 $9/月客户。无看板、无随时间分类占比。",
           },
           {
-            h3: "流失原因追踪 — $9.9/月一口价",
+            h3: "流失原因追踪 — $29/月一口价",
             p: "为独立开发者定制：记录邮箱 + 流失 MRR + 原因分类 + 自由文本。看板显示占比、首要原因、总流失 MRR。免费体验 5 次验证规律后再订阅。",
             link: { href: "/dashboard", text: "免费记录取消", suffix: " — 五次记录，无需信用卡。" },
           },
@@ -195,7 +195,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "开始追踪客户为什么取消",
-      subtitle: "免费体验 5 次记录。之后 $9.9/月不限量原因追踪。",
+      subtitle: "免费体验 5 次记录。之后 $29/月不限量原因追踪。",
       button: "免费记录取消 →",
     },
   },

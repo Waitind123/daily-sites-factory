@@ -71,8 +71,8 @@ const abTemplates = {
     },
     {
       element: "Annual pricing",
-      current: "$9.9/mo",
-      suggested: "$99/yr (save 17%)",
+      current: "$29/mo",
+      suggested: "$29/mo (save 17%)",
       expectedLift: "+8–14%",
     },
     {
@@ -91,7 +91,7 @@ const abTemplates = {
     },
     {
       element: "年付定价",
-      current: "$9.9/月",
+      current: "$29/月",
       suggested: "$99/年（省 17%）",
       expectedLift: "+8–14%",
     },

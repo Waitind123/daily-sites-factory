@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://testimonial-wall-sepia.vercel.app",
     name: "Testimonial Wall",
-    title: "Testimonial Wall — Testimonial.to alternative, $9.9/mo",
+    title: "Testimonial Wall — Testimonial.to alternative, $29/mo",
     description:
       "5 free tries. Collect user praise, embed Wall of Love. Built for indie hackers after Testimonial.to's $40/mo white-label hike.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://testimonial-wall-sepia.vercel.app",
     name: "独立开发者证言墙",
-    title: "独立开发者证言墙 — Testimonial.to 平替，$9.9/月",
+    title: "独立开发者证言墙 — Testimonial.to 平替，$29/月",
     description:
       "免费体验 5 次。收集用户好评，嵌入 Wall of Love。Testimonial.to 涨价后的极简替代，专为 indie hacker 打造。",
     keywords: [

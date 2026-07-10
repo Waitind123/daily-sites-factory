@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://seo-rank-tracker-lemon.vercel.app",
     name: "Rank Pulse",
-    title: "Rank Pulse — SEMrush alternative for indie devs, $9.9/mo flat",
+    title: "Rank Pulse — SEMrush alternative for indie devs, $29/mo flat",
     description:
-      "5 free rank checks. SEMrush $130/mo? $9.9/mo flat: daily keyword position tracking, rank history, 7-day trends. Ship SEO in 30 seconds.",
+      "5 free rank checks. SEMrush $130/mo? $29/mo flat: daily keyword position tracking, rank history, 7-day trends. Ship SEO in 30 seconds.",
     keywords: [
       "keyword rank tracker",
       "SEMrush alternative",
@@ -24,9 +24,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://seo-rank-tracker-lemon.vercel.app",
     name: "SEO 排名追踪",
-    title: "SEO 排名追踪 — SEMrush 平替，独立开发者 $9.9/月",
+    title: "SEO 排名追踪 — SEMrush 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次排名查询。SEMrush 要 $130/月？$9.9/月一口价：每日关键词排名追踪、历史图表、7 日趋势，30 秒上线。",
+      "免费体验 5 次排名查询。SEMrush 要 $130/月？$29/月一口价：每日关键词排名追踪、历史图表、7 日趋势，30 秒上线。",
     keywords: [
       "关键词排名追踪",
       "SEMrush 替代品",

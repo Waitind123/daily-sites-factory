@@ -9,7 +9,7 @@ export const studioCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free tries left`,
     paywallTitle: "Free trial used up",
-    paywallBody: "Subscribe $9.9/mo for unlimited OG images and meta tag export",
+    paywallBody: "Subscribe $29/mo for unlimited OG images and meta tag export",
     paywallCta: "Subscribe now",
     contentSection: "Content",
     titleLabel: "Headline *",
@@ -49,7 +49,7 @@ export const studioCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
     paywallTitle: "免费体验已用完",
-    paywallBody: "订阅 $9.9/月，无限生成 OG 图和 meta 标签",
+    paywallBody: "订阅 $29/月，无限生成 OG 图和 meta 标签",
     paywallCta: "立即订阅",
     contentSection: "内容",
     titleLabel: "主标题 *",

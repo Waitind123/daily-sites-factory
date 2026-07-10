@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://appgap-pulse.vercel.app",
     name: "AppGap Pulse",
-    title: "AppGap Pulse — App Store 1-star review mining for indie hackers, $9.9/mo",
+    title: "AppGap Pulse — App Store 1-star review mining for indie hackers, $29/mo",
     description:
-      "5 free scans. Cluster App Store negative reviews into startup ideas. Find market gaps from 1-star complaints before you build. $9.9/mo flat.",
+      "5 free scans. Cluster App Store negative reviews into startup ideas. Find market gaps from 1-star complaints before you build. $29/mo flat.",
     keywords: [
       "app store negative reviews",
       "startup ideas from reviews",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://appgap-pulse.vercel.app",
     name: "应用商店差评挖痛点",
-    title: "应用商店差评挖痛点 — 从 1 星评论发现创业机会，$9.9/月",
+    title: "应用商店差评挖痛点 — 从 1 星评论发现创业机会，$29/月",
     description:
-      "免费体验 5 次扫描。将应用商店差评聚类为创业点子，在开发前发现市场空白。$9.9/月一口价。",
+      "免费体验 5 次扫描。将应用商店差评聚类为创业点子，在开发前发现市场空白。$29/月一口价。",
     keywords: [
       "应用商店差评分析",
       "差评挖创业点子",

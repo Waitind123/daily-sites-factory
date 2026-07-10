@@ -5,14 +5,14 @@ export const guideCopy = {
     meta: {
       title: "2026 Local-First Freelance SaaS Alternative — Complete Guide",
       description:
-        "HoneyBook raised 89%. HN#47298161 showed freelancers replacing 5 SaaS with HTML files. Compare local-first freelance tools and find a $9.9/mo all-in-one kit.",
+        "HoneyBook raised 89%. HN#47298161 showed freelancers replacing 5 SaaS with HTML files. Compare local-first freelance tools and find a $29/mo all-in-one kit.",
     },
     h1: "2026 Local-First Freelance SaaS Alternative: Complete Guide",
     updated: "Updated July 2026 · 10 min read",
     intro: [
       "If you're a freelancer in 2026, you've probably felt the SaaS subscription creep. HoneyBook Starter went from $19/mo to $36/mo — an 89% increase. Bonsai starts at $24/mo plus transaction fees. AND.CO shut down entirely. You're paying $100+/month for tools that mostly generate PDFs.",
       "A viral Hacker News post (HN#47298161) showed a freelancer replacing their entire stack with five single-file HTML tools: invoices, proposals, contracts, expenses, and project roadmaps. No accounts, no subscriptions, data stays local. The community loved it — but many wanted a hosted version with export and client-ready formatting.",
-      "This guide compares 2026 freelance business tools, explains why local-first is trending, and how to pick a $9.9/mo all-in-one kit that replaces your stack without vendor lock-in.",
+      "This guide compares 2026 freelance business tools, explains why local-first is trending, and how to pick a $29/mo all-in-one kit that replaces your stack without vendor lock-in.",
     ],
     sections: [
       {
@@ -38,7 +38,7 @@ export const guideCopy = {
             p: "Five standalone HTML files inspired by the HN post. Works offline, no dependencies. Paid version removes watermark. Great for minimalists who don't need cloud sync.",
           },
           {
-            h3: "Local Freelance Kit — $9.9/mo",
+            h3: "Local Freelance Kit — $29/mo",
             p: "Hosted version of the HN concept. Five document types in one workspace: invoices, proposals, contracts, expenses, projects. JSON + markdown export. No CRM bloat, no per-seat fees.",
           },
         ],
@@ -63,7 +63,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Replace your freelance SaaS stack",
-      subtitle: "5 free documents · then $9.9/mo unlimited. Local export included.",
+      subtitle: "5 free documents · then $29/mo unlimited. Local export included.",
       button: "Open workspace free",
     },
   },
@@ -71,14 +71,14 @@ export const guideCopy = {
     meta: {
       title: "2026 本地优先自由职业 SaaS 替代品 — 完整指南",
       description:
-        "HoneyBook 涨价 89%。HN#47298161 展示自由职业者用 HTML 文件替代 5 个 SaaS。对比本地优先工具，找到 $9.9/月五合一套件。",
+        "HoneyBook 涨价 89%。HN#47298161 展示自由职业者用 HTML 文件替代 5 个 SaaS。对比本地优先工具，找到 $29/月五合一套件。",
     },
     h1: "2026 本地优先自由职业 SaaS 替代品：完整指南",
     updated: "2026 年 7 月更新 · 阅读约 10 分钟",
     intro: [
       "如果你是 2026 年的自由职业者，很可能感受到了 SaaS 订阅膨胀。HoneyBook Starter 从 $19/月涨到 $36/月，涨幅 89%。Bonsai 起步 $24/月加交易费。AND.CO 彻底关停。你每月为 mostly 生成 PDF 的工具付 $100+。",
       "一篇病毒式 Hacker News 帖子（HN#47298161）展示了一位自由职业者用五个单文件 HTML 工具替代整个工具栈：发票、报价、合同、费用、项目路线图。无需账号、无需订阅、数据留在本地。社区反响热烈 — 但很多人想要带导出和客户级排版的托管版。",
-      "本指南对比 2026 年自由职业商业工具、解释本地优先为何流行，以及如何选一款 $9.9/月五合一套件，替代工具栈且无供应商锁定。",
+      "本指南对比 2026 年自由职业商业工具、解释本地优先为何流行，以及如何选一款 $29/月五合一套件，替代工具栈且无供应商锁定。",
     ],
     sections: [
       {
@@ -104,7 +104,7 @@ export const guideCopy = {
             p: "受 HN 帖子启发的五个独立 HTML 文件。离线可用、无依赖。付费版去水印。适合不需要云同步的极简主义者。",
           },
           {
-            h3: "自由职业本地套件 — $9.9/月",
+            h3: "自由职业本地套件 — $29/月",
             p: "HN 概念的托管版。一个工作台五种文档：发票、报价、合同、报销、项目。JSON + Markdown 导出。无 CRM 臃肿、无按席位收费。",
           },
         ],
@@ -129,7 +129,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "替换你的自由职业 SaaS 工具栈",
-      subtitle: "免费体验 5 份 · 之后 $9.9/月不限量。含本地导出。",
+      subtitle: "免费体验 5 份 · 之后 $29/月不限量。含本地导出。",
       button: "免费打开工作台",
     },
   },

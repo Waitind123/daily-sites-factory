@@ -5,15 +5,15 @@ export const homeCopy = {
     badge: "Prefinery $99/mo? · AI validates every signup",
     title: "AI waitlist validation for indie launches",
     subtitle:
-      "Score signup quality, filter junk leads, get launch recommendations. Referral boost + public counter. 5 free analyses, then $9.9/mo.",
+      "Score signup quality, filter junk leads, get launch recommendations. Referral boost + public counter. 5 free analyses, then $29/mo.",
     ctaPrimary: "Create a waitlist free",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free AI analyses · then $9.9/mo",
+    note: "5 free AI analyses · then $29/mo",
     stats: [
       { stat: "A–F", label: "lead quality grades per signup" },
-      { stat: "$9.9", label: "flat/mo vs Prefinery $99+" },
+      { stat: "$29", label: "flat/mo vs Prefinery $99+" },
       { stat: "2 min", label: "to launch + AI score your list" },
     ],
     howItWorks: {
@@ -29,7 +29,7 @@ export const homeCopy = {
       { icon: "🤖", title: "AI lead scoring", desc: "Every signup gets an A–F grade. Corporate domains, disposable emails, and intent signals scored instantly." },
       { icon: "📊", title: "Waitlist health analysis", desc: "One-click analysis: quality breakdown, top signals, and actionable launch recommendations." },
       { icon: "🔗", title: "Referral boost", desc: "Each signup gets a referral link. Share to move up the queue — viral loops built in." },
-      { icon: "💰", title: "Flat $9.9/mo", desc: "Unlimited waitlists, AI analyses, and signups. No per-email fees like Prefinery." },
+      { icon: "💰", title: "Flat $29/mo", desc: "Unlimited waitlists, AI analyses, and signups. No per-email fees like Prefinery." },
     ],
     testimonialsTitle: "What indie hackers say",
     testimonials: [
@@ -39,7 +39,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Launch smarter with AI validation",
-      subtitle: "5 free AI analyses · then $9.9/mo for unlimited",
+      subtitle: "5 free AI analyses · then $29/mo for unlimited",
       ctaPrimary: "Create a waitlist free",
       ctaSecondary: "View pricing",
     },
@@ -53,15 +53,15 @@ export const homeCopy = {
   zh: {
     badge: "Prefinery $99/月？· AI 验证每个报名",
     title: "AI 驱动的等候名单验证",
-    subtitle: "为每个报名评分、过滤无效线索、获取上线建议。推荐裂变 + 公开计数。免费体验 5 次 AI 分析，之后 $9.9/月。",
+    subtitle: "为每个报名评分、过滤无效线索、获取上线建议。推荐裂变 + 公开计数。免费体验 5 次 AI 分析，之后 $29/月。",
     ctaPrimary: "免费创建等候名单",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 AI 分析 · 之后 $9.9/月",
+    note: "免费体验 5 次 AI 分析 · 之后 $29/月",
     stats: [
       { stat: "A–F", label: "每个报名的线索质量分级" },
-      { stat: "$9.9", label: "一口价/月，Prefinery 要 $99+" },
+      { stat: "$29", label: "一口价/月，Prefinery 要 $99+" },
       { stat: "2 分钟", label: "上线并对名单 AI 评分" },
     ],
     howItWorks: {
@@ -77,7 +77,7 @@ export const homeCopy = {
       { icon: "🤖", title: "AI 线索评分", desc: "每个报名获得 A–F 等级。企业域名、一次性邮箱、意向信号即时评分。" },
       { icon: "📊", title: "名单健康分析", desc: "一键分析：质量分布、主要信号、可执行的上线建议。" },
       { icon: "🔗", title: "推荐裂变", desc: "每位报名者获得专属推荐链接。分享可提升排队位置，自带传播闭环。" },
-      { icon: "💰", title: "$9.9/月 一口价", desc: "等候名单、AI 分析、报名不限量。不像 Prefinery 按邮箱收费。" },
+      { icon: "💰", title: "$29/月 一口价", desc: "等候名单、AI 分析、报名不限量。不像 Prefinery 按邮箱收费。" },
     ],
     testimonialsTitle: "独立开发者怎么说",
     testimonials: [
@@ -87,7 +87,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "用 AI 验证更聪明地上线",
-      subtitle: "免费 5 次 AI 分析 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次 AI 分析 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建等候名单",
       ctaSecondary: "查看定价",
     },
@@ -116,7 +116,7 @@ export const joinCopy = {
       "Referral boost & leaderboard",
       "CSV email export",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free analyses, then subscribe?",
@@ -142,7 +142,7 @@ export const joinCopy = {
       "推荐裂变与排行榜",
       "邮箱 CSV 导出",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次分析，之后订阅？",

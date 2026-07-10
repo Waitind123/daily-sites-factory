@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Sidepay $20/yr? · $9.9/mo unlimited",
+    badge: "Sidepay $20/yr? · $29/mo unlimited",
     title: "Minimal invoicing for solo devs — no HoneyBook bloat",
     subtitle:
-      "HN Show HN proved freelancers want $20/yr invoicing, not $66/mo CRM. Create invoices, track paid/unpaid, auto receipts. 5 free, then $9.9/mo.",
+      "HN Show HN proved freelancers want $20/yr invoicing, not $66/mo CRM. Create invoices, track paid/unpaid, auto receipts. 5 free, then $29/mo.",
     ctaPrimary: "Create invoice free",
     ctaPrimaryHref: "/invoices",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free invoices · then $9.9/mo",
+    note: "5 free invoices · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs HoneyBook $66+" },
+      { stat: "$29", label: "flat/mo vs HoneyBook $66+" },
       { stat: "60s", label: "to create & send an invoice" },
       { stat: "3-in-1", label: "invoice · payment · receipt" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited invoices & receipts. No per-client fees like Bonsai transaction cuts.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Maya R.",
         role: "Freelance designer",
-        text: "HoneyBook raised prices 89%. Invoice Desk does invoices + receipts for $9.9. That's all I need.",
+        text: "HoneyBook raised prices 89%. Invoice Desk does invoices + receipts for $29. That's all I need.",
       },
       {
         name: "Tom K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Send invoices without enterprise pricing",
-      subtitle: "5 free invoices · then $9.9/mo unlimited",
+      subtitle: "5 free invoices · then $29/mo unlimited",
       ctaPrimary: "Create invoice free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Sidepay $20/年？· $9.9/月不限量",
+    badge: "Sidepay $20/年？· $29/月不限量",
     title: "独立开发者极简发票 — 不交 HoneyBook 税",
     subtitle:
-      "HN Show HN 证明自由职业者要 $20/年开票工具，不是 $66/月 CRM。创建发票、追踪待收、自动生成收据。免费体验 5 张，之后 $9.9/月。",
+      "HN Show HN 证明自由职业者要 $20/年开票工具，不是 $66/月 CRM。创建发票、追踪待收、自动生成收据。免费体验 5 张，之后 $29/月。",
     ctaPrimary: "免费开发票",
     ctaPrimaryHref: "/invoices",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 张 · 之后 $9.9/月",
+    note: "免费体验 5 张 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，HoneyBook 要 $66+" },
+      { stat: "$29", label: "一口价/月，HoneyBook 要 $66+" },
       { stat: "60 秒", label: "创建并发送一张发票" },
       { stat: "三合一", label: "发票 · 收款 · 收据" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "发票与收据不限量。无 Bonsai 按客户收取的交易费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Maya R.",
         role: "自由设计师",
-        text: "HoneyBook 涨价 89%。发票收据管理用 $9.9 搞定发票和收据，正是我需要的。",
+        text: "HoneyBook 涨价 89%。发票收据管理用 $29 搞定发票和收据，正是我需要的。",
       },
       {
         name: "Tom K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用企业级定价也能开发票",
-      subtitle: "免费体验 5 张发票 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 张发票 · 之后 $29/月不限量",
       ctaPrimary: "免费开发票",
       ctaSecondary: "查看定价",
     },

@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "RelocateMe 2026 · Nomad List 18mo stale · $9.9/mo",
+    badge: "RelocateMe 2026 · Nomad List 18mo stale · $29/mo",
     title: "Real-time digital nomad visa policy tracking",
     subtitle:
-      "Policy changes, expiry reminders, and renewal alerts for 35+ programs. 5 free tracks, then $9.9/mo.",
+      "Policy changes, expiry reminders, and renewal alerts for 35+ programs. 5 free tracks, then $29/mo.",
     ctaPrimary: "Start tracking free",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tracks · then $9.9/mo",
+    note: "5 free tracks · then $29/mo",
     stats: [
       { stat: "35+", label: "visa programs monitored" },
       { stat: "<24h", label: "policy change alerts" },
@@ -43,12 +43,12 @@ export const homeCopy = {
     testimonials: [
       { name: "Marco", role: "Remote PM", text: "Thailand DTV expires in 8 days — got the urgent alert here. Nomad List doesn't even track expiry." },
       { name: "Yuki", role: "Freelance dev", text: "Portugal D8 income changed to €3,280. I saw the diff here before my renewal application." },
-      { name: "Elena", role: "Indie hacker", text: "$9.9/mo for real-time tracking vs $300/hr immigration lawyer. The expiry countdown alone is worth it." },
+      { name: "Elena", role: "Indie hacker", text: "$29/mo for real-time tracking vs $300/hr immigration lawyer. The expiry countdown alone is worth it." },
     ],
     closing: {
       title: "Stop relying on 18-month-old visa data",
-      subtitle: "$9.9/mo flat. Real-time policy tracking + expiry reminders for 35+ digital nomad visa programs.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+      subtitle: "$29/mo flat. Real-time policy tracking + expiry reminders for 35+ digital nomad visa programs.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Start tracking free",
     },
     productDemo: {
@@ -58,14 +58,14 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "RelocateMe 2026 · Nomad List 数据过时 18 个月 · $9.9/月",
+    badge: "RelocateMe 2026 · Nomad List 数据过时 18 个月 · $29/月",
     title: "数字游民签证政策实时追踪",
-    subtitle: "政策变更、到期提醒与续签告警，覆盖 35+ 签证项目。免费体验 5 次，之后 $9.9/月。",
+    subtitle: "政策变更、到期提醒与续签告警，覆盖 35+ 签证项目。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费开始追踪",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "35+", label: "监控签证项目" },
       { stat: "<24h", label: "政策变更告警" },
@@ -98,12 +98,12 @@ export const homeCopy = {
     testimonials: [
       { name: "马可", role: "远程产品经理", text: "泰国 DTV 还有 8 天到期 — 在这里收到紧急提醒。Nomad List 根本不追踪到期日。" },
       { name: "Yuki", role: "自由开发者", text: "葡萄牙 D8 收入改为 €3,280。续签申请前在这里看到了变更对比。" },
-      { name: "Elena", role: "独立开发者", text: "$9.9/月实时追踪对比 $300/小时移民律师。到期倒计时就值回票价。" },
+      { name: "Elena", role: "独立开发者", text: "$29/月实时追踪对比 $300/小时移民律师。到期倒计时就值回票价。" },
     ],
     closing: {
       title: "别再依赖 18 个月前的签证数据",
-      subtitle: "$9.9/月一口价。35+ 数字游民签证实时政策追踪 + 到期提醒。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "$29/月一口价。35+ 数字游民签证实时政策追踪 + 到期提醒。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费开始追踪",
     },
     productDemo: {

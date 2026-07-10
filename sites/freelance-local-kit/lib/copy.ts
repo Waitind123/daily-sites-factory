@@ -5,15 +5,15 @@ export const homeCopy = {
     badge: "HN#47298161 · Replace 5 SaaS with one kit",
     title: "Local-first freelance suite — no HoneyBook tax",
     subtitle:
-      "Invoices, proposals, contracts, expenses & project roadmaps in one workspace. Inspired by HN's single-file HTML tools — export locally, own your data. 5 free docs, then $9.9/mo.",
+      "Invoices, proposals, contracts, expenses & project roadmaps in one workspace. Inspired by HN's single-file HTML tools — export locally, own your data. 5 free docs, then $29/mo.",
     ctaPrimary: "Open workspace free",
     ctaPrimaryHref: "/workspace",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free documents · then $9.9/mo",
+    note: "5 free documents · then $29/mo",
     stats: [
       { stat: "5-in-1", label: "invoice · proposal · contract · expense · project" },
-      { stat: "$9.9", label: "flat/mo vs $66+ HoneyBook stack" },
+      { stat: "$29", label: "flat/mo vs $66+ HoneyBook stack" },
       { stat: "Local", label: "export JSON — your data stays yours" },
     ],
     howItWorks: {
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited documents. No per-seat fees, no transaction cuts like Bonsai.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Indie consultant",
-        text: "HN post about 5 HTML files hit home. This is the hosted version with export — $9.9 beats my old $120/mo stack.",
+        text: "HN post about 5 HTML files hit home. This is the hosted version with export — $29 beats my old $120/mo stack.",
       },
       {
         name: "Sarah L.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Replace your freelance SaaS stack today",
-      subtitle: "5 free documents · then $9.9/mo unlimited",
+      subtitle: "5 free documents · then $29/mo unlimited",
       ctaPrimary: "Open workspace free",
       ctaSecondary: "See pricing",
     },
@@ -87,22 +87,22 @@ export const homeCopy = {
       title: "Live workspace preview",
       caption: "Invoices · proposals · contracts · expenses · projects",
       preview:
-        "💼 Local Freelance Kit                  Local export: ON\n─────────────────────────────────────────────────────\n  [ Invoice ] [ Proposal ] [ Contract ] [ Expense ] [ Project ]\n─────────────────────────────────────────────────────\n  INV-K7X2M9    Web redesign · Acme Corp     $3,200\n  PROP-M3P1Q8   Logo package proposal        $1,200\n  CTR-R9T4N2    Service agreement            Signed\n  EXP-T2N8K1    Software subscriptions       $89\n  PRJ-W5L3P9    Q3 launch roadmap            Active\n─────────────────────────────────────────────────────\n  [ Copy markdown ]  [ Export JSON ]  [ + New doc ]\n─────────────────────────────────────────────────────\n  5 docs free · $9.9/mo unlimited · no vendor lock-in",
+        "💼 Local Freelance Kit                  Local export: ON\n─────────────────────────────────────────────────────\n  [ Invoice ] [ Proposal ] [ Contract ] [ Expense ] [ Project ]\n─────────────────────────────────────────────────────\n  INV-K7X2M9    Web redesign · Acme Corp     $3,200\n  PROP-M3P1Q8   Logo package proposal        $1,200\n  CTR-R9T4N2    Service agreement            Signed\n  EXP-T2N8K1    Software subscriptions       $89\n  PRJ-W5L3P9    Q3 launch roadmap            Active\n─────────────────────────────────────────────────────\n  [ Copy markdown ]  [ Export JSON ]  [ + New doc ]\n─────────────────────────────────────────────────────\n  5 docs free · $29/mo unlimited · no vendor lock-in",
     },
   },
   zh: {
     badge: "HN#47298161 · 5 个 SaaS 合一",
     title: "本地优先自由职业套件 — 不交 HoneyBook 税",
     subtitle:
-      "发票、报价、合同、费用报销、项目路线图，一个工作台搞定。灵感来自 HN 单文件 HTML 工具 — 本地导出，数据归你。免费体验 5 份文档，之后 $9.9/月。",
+      "发票、报价、合同、费用报销、项目路线图，一个工作台搞定。灵感来自 HN 单文件 HTML 工具 — 本地导出，数据归你。免费体验 5 份文档，之后 $29/月。",
     ctaPrimary: "免费打开工作台",
     ctaPrimaryHref: "/workspace",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 份 · 之后 $9.9/月",
+    note: "免费体验 5 份 · 之后 $29/月",
     stats: [
       { stat: "五合一", label: "发票 · 报价 · 合同 · 报销 · 项目" },
-      { stat: "$9.9", label: "一口价/月，HoneyBook 栈要 $66+" },
+      { stat: "$29", label: "一口价/月，HoneyBook 栈要 $66+" },
       { stat: "本地", label: "JSON 导出 — 数据留在你手里" },
     ],
     howItWorks: {
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "一口价 $9.9/月",
+        title: "一口价 $29/月",
         desc: "文档不限量。无按席位收费，无 Bonsai 式交易抽成。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "独立顾问",
-        text: "HN 上 5 个 HTML 文件的帖子说到心坎里。这是带导出的托管版 — $9.9 比我以前 $120/月的工具栈划算。",
+        text: "HN 上 5 个 HTML 文件的帖子说到心坎里。这是带导出的托管版 — $29 比我以前 $120/月的工具栈划算。",
       },
       {
         name: "Sarah L.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "今天替换你的自由职业 SaaS 工具栈",
-      subtitle: "免费体验 5 份 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 份 · 之后 $29/月不限量",
       ctaPrimary: "免费打开工作台",
       ctaSecondary: "查看定价",
     },
@@ -176,7 +176,7 @@ export const homeCopy = {
       title: "工作台实时预览",
       caption: "发票 · 报价 · 合同 · 报销 · 项目",
       preview:
-        "💼 自由职业本地套件                  本地导出：开启\n─────────────────────────────────────────────────────\n  [ 发票 ] [ 报价 ] [ 合同 ] [ 报销 ] [ 项目 ]\n─────────────────────────────────────────────────────\n  INV-K7X2M9    网站改版 · Acme 公司        $3,200\n  PROP-M3P1Q8   Logo 套餐报价               $1,200\n  CTR-R9T4N2    服务合同                    已签署\n  EXP-T2N8K1    软件订阅报销                $89\n  PRJ-W5L3P9    Q3 上线路线图               进行中\n─────────────────────────────────────────────────────\n  [ 复制 Markdown ]  [ 导出 JSON ]  [ + 新建 ]\n─────────────────────────────────────────────────────\n  免费 5 份 · $9.9/月不限量 · 无供应商锁定",
+        "💼 自由职业本地套件                  本地导出：开启\n─────────────────────────────────────────────────────\n  [ 发票 ] [ 报价 ] [ 合同 ] [ 报销 ] [ 项目 ]\n─────────────────────────────────────────────────────\n  INV-K7X2M9    网站改版 · Acme 公司        $3,200\n  PROP-M3P1Q8   Logo 套餐报价               $1,200\n  CTR-R9T4N2    服务合同                    已签署\n  EXP-T2N8K1    软件订阅报销                $89\n  PRJ-W5L3P9    Q3 上线路线图               进行中\n─────────────────────────────────────────────────────\n  [ 复制 Markdown ]  [ 导出 JSON ]  [ + 新建 ]\n─────────────────────────────────────────────────────\n  免费 5 份 · $29/月不限量 · 无供应商锁定",
     },
   },
 } as const;

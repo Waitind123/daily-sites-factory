@@ -9,7 +9,7 @@ export const wikiCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 wiki spaces. Subscribe for unlimited spaces, AI search, and MCP integration.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     siteTitle: "New wiki space",
     siteName: "Space name",
     siteNamePlaceholder: "e.g. Engineering Wiki",
@@ -31,7 +31,7 @@ export const wikiCopy = {
     freeSites: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个知识库空间。订阅后可无限创建、使用 AI 搜索和 MCP 集成。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     siteTitle: "新建知识库空间",
     siteName: "空间名称",
     siteNamePlaceholder: "例如：工程知识库",

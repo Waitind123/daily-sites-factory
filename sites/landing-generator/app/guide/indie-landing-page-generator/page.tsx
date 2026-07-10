@@ -100,7 +100,7 @@ export default function GuidePage() {
         </tbody>
       </table>
 
-      <h3>AI Landing Page 生成器（$9.9/月）</h3>
+      <h3>AI Landing Page 生成器（$29/月）</h3>
       <table>
         <thead>
           <tr>
@@ -199,7 +199,7 @@ export default function GuidePage() {
       </p>
 
       <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
-        <p className="font-semibold text-brand-800 mb-4">免费体验 5 次 · 之后 $9.9/月</p>
+        <p className="font-semibold text-brand-800 mb-4">免费体验 5 次 · 之后 $29/月</p>
         <Link
           href="/studio"
           className="inline-block bg-brand-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-brand-700"

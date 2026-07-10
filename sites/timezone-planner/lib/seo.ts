@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://timezone-planner-delta.vercel.app",
     name: "Timezone Planner",
-    title: "Timezone Planner — Fair cross-timezone meetings, $9.9/mo",
+    title: "Timezone Planner — Fair cross-timezone meetings, $29/mo",
     description:
       "5 free tries. Visualize global team work-hour overlap, get fair meeting slots with misery scores. Stop the Slack ping-pong.",
     keywords: [
@@ -24,7 +24,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://timezone-planner-delta.vercel.app",
     name: "跨时区会议",
-    title: "跨时区会议规划 — 远程团队时区重叠可视化，$9.9/月",
+    title: "跨时区会议规划 — 远程团队时区重叠可视化，$29/月",
     description:
       "免费体验 5 次。可视化全球团队工作时段重叠，自动推荐最公平会议时间，含痛苦指数和轮换建议。告别 Slack 里「什么时候方便？」",
     keywords: [

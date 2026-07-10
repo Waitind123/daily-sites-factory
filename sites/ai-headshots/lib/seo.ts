@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-headshots-navy.vercel.app",
     name: "AI Headshots",
-    title: "AI Headshots — LinkedIn professional portraits in 30 seconds, $9.9/mo",
+    title: "AI Headshots — LinkedIn professional portraits in 30 seconds, $29/mo",
     description:
-      "5 free tries. Upload a selfie, AI generates corporate, casual, creative headshots for LinkedIn & resume. $9.9/mo unlimited.",
+      "5 free tries. Upload a selfie, AI generates corporate, casual, creative headshots for LinkedIn & resume. $29/mo unlimited.",
     keywords: [
       "AI headshot",
       "LinkedIn headshot",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-headshots-navy.vercel.app",
     name: "AI 证件照",
-    title: "AI 证件照 — 30 秒生成领英专业头像，$9.9/月",
+    title: "AI 证件照 — 30 秒生成领英专业头像，$29/月",
     description:
-      "免费体验 5 次。上传自拍，AI 生成商务、休闲、创意专业证件照，适用于领英、简历、工牌。$9.9/月起不限量。",
+      "免费体验 5 次。上传自拍，AI 生成商务、休闲、创意专业证件照，适用于领英、简历、工牌。$29/月起不限量。",
     keywords: [
       "AI 证件照",
       "领英头像",

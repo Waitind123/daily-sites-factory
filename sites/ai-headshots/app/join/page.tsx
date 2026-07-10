@@ -36,7 +36,7 @@ export default async function JoinPage() {
           <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
           <div className="flex items-baseline justify-center gap-1">
             <span className="text-5xl font-bold text-foreground">
-              {locale === "zh" ? "¥69" : "$9.9"}
+              {locale === "zh" ? "¥199" : "$29"}
             </span>
             <span className="text-muted">{c.perMonth}</span>
           </div>
@@ -44,7 +44,7 @@ export default async function JoinPage() {
             <p className="mt-1 text-xs text-muted">
               {mode === "stripe"
                 ? "Stripe · 信用卡 / 支付宝 / 微信"
-                : "或美元 $9.9/月 · Polar 收款"}
+                : "或美元 $29/月 · Polar 收款"}
             </p>
           ) : (
             <p className="mt-1 text-xs text-muted">

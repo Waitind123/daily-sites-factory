@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://churn-pulse-pi.vercel.app",
     name: "Churn Pulse",
-    title: "Churn Pulse — Baremetrics alternative for indie devs, $9.9/mo customer health",
+    title: "Churn Pulse — Baremetrics alternative for indie devs, $29/mo customer health",
     description:
-      "5 free scans. Baremetrics $50+/mo? $9.9/mo flat: customer health scores, churn alerts, Stripe subscriptions only. Connect in 2 minutes.",
+      "5 free scans. Baremetrics $50+/mo? $29/mo flat: customer health scores, churn alerts, Stripe subscriptions only. Connect in 2 minutes.",
     keywords: [
       "customer health score",
       "churn prediction",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://churn-pulse-pi.vercel.app",
     name: "客户健康分",
-    title: "客户健康分 — Baremetrics 平替，独立开发者 $9.9/月流失预警",
+    title: "客户健康分 — Baremetrics 平替，独立开发者 $29/月流失预警",
     description:
-      "免费体验 5 次扫描。Baremetrics 要 $50+/月？$9.9/月一口价：客户健康分、流失告警、仅 Stripe 订阅数据，2 分钟接入。",
+      "免费体验 5 次扫描。Baremetrics 要 $50+/月？$29/月一口价：客户健康分、流失告警、仅 Stripe 订阅数据，2 分钟接入。",
     keywords: [
       "客户健康分",
       "流失预测",

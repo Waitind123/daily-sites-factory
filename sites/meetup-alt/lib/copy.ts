@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Meetup.com $25-45/mo · you own your data for $9.9/mo",
+    badge: "Meetup.com $25-45/mo · you own your data for $29/mo",
     title: "The Meetup.com alternative where your community owns the data",
     subtitle:
-      "Custom event pages, embeddable RSVP widget, CSV export anytime. No platform lock-in. 5 free event manages, then $9.9/mo.",
+      "Custom event pages, embeddable RSVP widget, CSV export anytime. No platform lock-in. 5 free event manages, then $29/mo.",
     ctaPrimary: "Try events free",
     ctaPrimaryHref: "/events",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "per month flat" },
+      { stat: "$29", label: "per month flat" },
       { stat: "100%", label: "data export included" },
       { stat: "0", label: "platform lock-in" },
     ],
@@ -76,12 +76,12 @@ export const homeCopy = {
       {
         name: "Jaimie",
         role: "Homeschool group organizer",
-        text: "Meetup hid essential features behind paywalls and deleted our past events. Switched here — $9.9/mo and I own the data.",
+        text: "Meetup hid essential features behind paywalls and deleted our past events. Switched here — $29/mo and I own the data.",
       },
       {
         name: "Andy",
         role: "UK tech meetup host",
-        text: "Meetup's pricing is confusing and not transparent. Flat $9.9/mo with export included is exactly what small groups need.",
+        text: "Meetup's pricing is confusing and not transparent. Flat $29/mo with export included is exactly what small groups need.",
       },
       {
         name: "Todd",
@@ -92,8 +92,8 @@ export const homeCopy = {
     closing: {
       title: "Stop paying rent on someone else's platform",
       subtitle:
-        "$9.9/mo flat. Your brand, your data, your RSVP widget. Built for indie communities who ship events, not enterprise conferences.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Your brand, your data, your RSVP widget. Built for indie communities who ship events, not enterprise conferences.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try events free",
     },
     productDemo: {
@@ -104,17 +104,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Meetup.com $25-45/月 · 我们 $9.9/月，数据归你",
+    badge: "Meetup.com $25-45/月 · 我们 $29/月，数据归你",
     title: "社区数据归你所有的 Meetup.com 替代品",
     subtitle:
-      "自定义活动页、可嵌入 RSVP 组件、随时 CSV 导出。无平台锁定。免费体验 5 次活动管理，之后 $9.9/月。",
+      "自定义活动页、可嵌入 RSVP 组件、随时 CSV 导出。无平台锁定。免费体验 5 次活动管理，之后 $29/月。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/events",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "每月固定价" },
+      { stat: "$29", label: "每月固定价" },
       { stat: "100%", label: "含数据导出" },
       { stat: "0", label: "平台锁定" },
     ],
@@ -178,12 +178,12 @@ export const homeCopy = {
       {
         name: "Jaimie",
         role: "家庭教育群组组织者",
-        text: "Meetup 把核心功能藏在付费墙后，还删除了我们的历史活动。换到这里 — $9.9/月，数据归我。",
+        text: "Meetup 把核心功能藏在付费墙后，还删除了我们的历史活动。换到这里 — $29/月，数据归我。",
       },
       {
         name: "Andy",
         role: "英国技术聚会主办",
-        text: "Meetup 定价混乱且不透明。$9.9/月固定价含导出，正是小群组需要的。",
+        text: "Meetup 定价混乱且不透明。$29/月固定价含导出，正是小群组需要的。",
       },
       {
         name: "Todd",
@@ -194,8 +194,8 @@ export const homeCopy = {
     closing: {
       title: "别再为别人平台交房租",
       subtitle:
-        "$9.9/月固定价。你的品牌、你的数据、你的 RSVP 组件。为 ship 活动的 indie 社区而生，不是企业会议平台。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "$29/月固定价。你的品牌、你的数据、你的 RSVP 组件。为 ship 活动的 indie 社区而生，不是企业会议平台。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {

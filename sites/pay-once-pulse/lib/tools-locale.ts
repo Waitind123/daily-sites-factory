@@ -84,7 +84,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
       alternatives: [
         { name: "Typeform", pricing: "$25/mo+", when: "Beautiful UI, don't want to self-host" },
         { name: "Tally", pricing: "Free unlimited", when: "Simple forms, accept tally.so domain" },
-        { name: "form-pulse", pricing: "$9.9/mo", when: "Drop-off analysis + embed widget" },
+        { name: "form-pulse", pricing: "$29/mo", when: "Drop-off analysis + embed widget" },
       ],
       pros: ["Open source self-hostable", "In-app survey widget", "Unlimited responses", "GDPR friendly"],
       cons: ["Self-host maintenance", "UI less polished than Typeform", "Advanced analytics on paid cloud"],
@@ -135,7 +135,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
         "Self-hosted $0 full features. vs Bonsai $25/mo, HoneyBook $39/mo — save $300–468/yr.",
       alternatives: [
         { name: "Bonsai", pricing: "$25/mo+", when: "Contract templates + US tax" },
-        { name: "invoice-desk", pricing: "$9.9/mo", when: "Minimal UI, Chinese localization" },
+        { name: "invoice-desk", pricing: "$29/mo", when: "Minimal UI, Chinese localization" },
         { name: "Wave", pricing: "Free", when: "North America SMB, accept ads" },
       ],
       pros: ["10-year open source history", "Stripe/PayPal integration", "Client portal", "Multi-currency"],
@@ -187,7 +187,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
         "Self-hosted $0. vs Calendly Standard $12/mo, Teams $20/mo — save $144–240/yr.",
       alternatives: [
         { name: "Calendly", pricing: "$12/mo+", when: "Don't self-host, want simplest UX" },
-        { name: "book-pulse", pricing: "$9.9/mo", when: "Minimal booking + project showcase" },
+        { name: "book-pulse", pricing: "$29/mo", when: "Minimal booking + project showcase" },
         { name: "TidyCal", pricing: "$29 lifetime", when: "Want lifetime deal, accept LTD" },
       ],
       pros: ["Fully open source", "White-label custom", "Stripe payment integration", "Team scheduling"],
@@ -212,7 +212,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
       pricingDetail:
         "Self-hosted $0. vs Statuspage $29/mo + UptimeRobot Pro $7/mo — save $432/yr.",
       alternatives: [
-        { name: "uptime-alt", pricing: "$9.9/mo", when: "Don't self-host, want managed" },
+        { name: "uptime-alt", pricing: "$29/mo", when: "Don't self-host, want managed" },
         { name: "Better Stack", pricing: "$20/mo+", when: "Logs + monitoring bundle" },
         { name: "Cachet", pricing: "Free self-hosted", when: "Status page only, no monitoring" },
       ],
@@ -291,7 +291,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
         "Self-hosted $0. vs Notion Plus $8/user/mo, GitBook $65/mo — save $480–780/yr for 5-person team.",
       alternatives: [
         { name: "Notion", pricing: "$8/user/mo", when: "Need databases + PM in one" },
-        { name: "docs-pulse", pricing: "$9.9/mo", when: "Pure API docs + llms.txt" },
+        { name: "docs-pulse", pricing: "$29/mo", when: "Pure API docs + llms.txt" },
         { name: "Outline", pricing: "Free self-hosted", when: "Mature wiki, have experience" },
       ],
       pros: ["Real-time collaboration", "Docker deploy", "Permission management", "Fully open source"],

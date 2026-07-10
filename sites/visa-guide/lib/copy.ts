@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Nomad List ignores visas · $9.9/mo flat",
+    badge: "Nomad List ignores visas · $29/mo flat",
     title: "Compare 28+ digital nomad visas in one place",
     subtitle:
-      "Income thresholds, stay duration, tax rules, Schengen access. 5 free detail views, then $9.9/mo.",
+      "Income thresholds, stay duration, tax rules, Schengen access. 5 free detail views, then $29/mo.",
     ctaPrimary: "Browse visas free",
     ctaPrimaryHref: "/visas",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free detail views · then $9.9/mo",
+    note: "5 free detail views · then $29/mo",
     stats: [
       { stat: "28+", label: "countries covered" },
       { stat: "35", label: "visa programs" },
@@ -90,14 +90,14 @@ export const homeCopy = {
       {
         name: "Wang",
         role: "Indie Hacker",
-        text: "$9.9 is 10,000× cheaper than an immigration consultant. Thailand DTV vs Georgia comparison is gold.",
+        text: "$29 is 10,000× cheaper than an immigration consultant. Thailand DTV vs Georgia comparison is gold.",
       },
     ],
     closing: {
       title: "Nomad List ignores visas. Immigration consultants charge $500+/hr.",
       subtitle:
-        "$9.9/mo flat. 28-country database + checklists + tax reference — verified by hand, not scraped.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. 28-country database + checklists + tax reference — verified by hand, not scraped.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Browse visas free",
     },
     productDemo: {
@@ -108,15 +108,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Nomad List 不管签证 · $9.9/月一口价",
+    badge: "Nomad List 不管签证 · $29/月一口价",
     title: "28+ 国数字游民签证一站对比",
     subtitle:
-      "收入门槛、停留时长、税务政策、申根通行。免费体验 5 次详情查询，之后 $9.9/月。",
+      "收入门槛、停留时长、税务政策、申根通行。免费体验 5 次详情查询，之后 $29/月。",
     ctaPrimary: "免费浏览签证",
     ctaPrimaryHref: "/visas",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "28+", label: "覆盖国家" },
       { stat: "35", label: "签证项目" },
@@ -196,14 +196,14 @@ export const homeCopy = {
       {
         name: "老王",
         role: "Indie Hacker",
-        text: "$9.9 比移民中介咨询费便宜一万倍。泰国 DTV 和格鲁吉亚的对比表太实用了。",
+        text: "$29 比移民中介咨询费便宜一万倍。泰国 DTV 和格鲁吉亚的对比表太实用了。",
       },
     ],
     closing: {
       title: "Nomad List 不管签证，移民中介太贵",
       subtitle:
-        "我们只要 $9.9/月。28 国签证数据库 + 材料清单 + 税务速查 — 人工核实，不是爬虫拼凑。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "我们只要 $29/月。28 国签证数据库 + 材料清单 + 税务速查 — 人工核实，不是爬虫拼凑。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费浏览签证",
     },
     productDemo: {

@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Bitly $35/mo? · $9.9/mo flat",
+    badge: "Bitly $35/mo? · $29/mo flat",
     title: "Branded short links with click analytics",
     subtitle:
-      "Create short links, track clicks, see referrers and UTM sources. 5 free links, then $9.9/mo. No enterprise bloat.",
+      "Create short links, track clicks, see referrers and UTM sources. 5 free links, then $29/mo. No enterprise bloat.",
     ctaPrimary: "Create links free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free links · then $9.9/mo",
+    note: "5 free links · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Bitly $35+" },
+      { stat: "$29", label: "flat/mo vs Bitly $35+" },
       { stat: "30s", label: "to create a tracked campaign link" },
       { stat: "UTM", label: "source / medium / campaign auto-captured" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited links and clicks. No per-seat fees like Bitly Enterprise.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo SaaS founder",
-        text: "Bitly wanted $35/mo for basic click stats. Link Pulse gives me everything for $9.9.",
+        text: "Bitly wanted $35/mo for basic click stats. Link Pulse gives me everything for $29.",
       },
       {
         name: "Sarah L.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Track every launch link without enterprise pricing",
-      subtitle: "5 free links · then $9.9/mo for unlimited",
+      subtitle: "5 free links · then $29/mo for unlimited",
       ctaPrimary: "Create links free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Bitly 要 $35/月？· $9.9/月一口价",
+    badge: "Bitly 要 $35/月？· $29/月一口价",
     title: "品牌短链 + 点击分析",
     subtitle:
-      "生成短链、追踪点击、查看来源与 UTM 参数。免费体验 5 条短链，之后 $9.9/月。无企业级臃肿功能。",
+      "生成短链、追踪点击、查看来源与 UTM 参数。免费体验 5 条短链，之后 $29/月。无企业级臃肿功能。",
     ctaPrimary: "免费创建短链",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 条 · 之后 $9.9/月",
+    note: "免费体验 5 条 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Bitly 要 $35+" },
+      { stat: "$29", label: "一口价/月，Bitly 要 $35+" },
       { stat: "30 秒", label: "创建带追踪的营销链接" },
       { stat: "UTM", label: "自动捕获来源/媒介/活动" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "短链与点击不限量。无 Bitly 企业版按席位收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "独立 SaaS 创始人",
-        text: "Bitly 基础点击统计要 $35/月。Link Pulse 用 $9.9 给我需要的一切。",
+        text: "Bitly 基础点击统计要 $35/月。Link Pulse 用 $29 给我需要的一切。",
       },
       {
         name: "Sarah L.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用企业级定价也能追踪每次发布链接",
-      subtitle: "免费体验 5 条短链 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 条短链 · 之后 $29/月不限量",
       ctaPrimary: "免费创建短链",
       ctaSecondary: "查看定价",
     },

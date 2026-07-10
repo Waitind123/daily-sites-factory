@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Changelog to Social Posts Guide for Indie Hackers",
       description:
-        "PushToPost starts at $9/mo and requires GitHub access. Compare changelog-to-social tools for indie SaaS releases. Find a $9.9/mo flat-rate tool that converts release notes to X, LinkedIn, and Threads.",
+        "PushToPost starts at $9/mo and requires GitHub access. Compare changelog-to-social tools for indie SaaS releases. Find a $29/mo flat-rate tool that converts release notes to X, LinkedIn, and Threads.",
     },
     h1: "2026 Changelog to Social Posts: Indie Hacker Release Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -51,9 +51,9 @@ export const guideCopy = {
             p: "40 minutes per release. Inconsistent tone. Easy to forget Threads. Works but doesn't scale past monthly releases.",
           },
           {
-            h3: "Release Pulse — $9.9/mo flat",
+            h3: "Release Pulse — $29/mo flat",
             p: "Built for indie hackers who paste release notes and get X, LinkedIn, and Threads variants. Version detection, bullet parsing, one-click copy. No GitHub required.",
-            link: { href: "/join", text: "5 free conversions to try", suffix: ", then $9.9/mo flat." },
+            link: { href: "/join", text: "5 free conversions to try", suffix: ", then $29/mo flat." },
           },
         ],
       },
@@ -65,7 +65,7 @@ export const guideCopy = {
           "Version detection — auto-detects v2.1.0 or requires manual entry?",
           "Platform limits — respects 280-char X, LinkedIn professional format, Threads thread style?",
           "No integration lock-in — can you paste from Notion, GitHub releases, or plain text?",
-          "Flat pricing — $9.9/mo unlimited beats per-repo or per-post pricing for monthly shippers",
+          "Flat pricing — $29/mo unlimited beats per-repo or per-post pricing for monthly shippers",
         ],
         after: [
           "For weekly shippers with active GitHub repos, PushToPost or BuildCast may be worth the setup. For monthly releases or pre-launch products, a paste-and-convert tool saves integration overhead.",
@@ -84,7 +84,7 @@ export const guideCopy = {
           "Link back to your changelog or /join page in LinkedIn CTA",
         ],
         after: [
-          "Total time: under 10 minutes. Compare that to 40+ minutes of manual rewriting. At $9.9/month, that's less than one hour of your time saved per release.",
+          "Total time: under 10 minutes. Compare that to 40+ minutes of manual rewriting. At $29/month, that's less than one hour of your time saved per release.",
         ],
       },
       {
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者发布日志转社交帖指南",
       description:
-        "PushToPost 要 $9+/月且需 GitHub 权限。对比 indie SaaS 发布通知工具，找到 $9.9/月一口价、将 release notes 转为 X、领英、Threads 帖子的方案。",
+        "PushToPost 要 $9+/月且需 GitHub 权限。对比 indie SaaS 发布通知工具，找到 $29/月一口价、将 release notes 转为 X、领英、Threads 帖子的方案。",
     },
     h1: "2026 发布日志转社交帖：独立开发者发布指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -160,9 +160,9 @@ export const guideCopy = {
             p: "每次发布 40 分钟。语气不一致。容易忘记 Threads。能用但超过每月发布就撑不住。",
           },
           {
-            h3: "发布日志转社交帖 — $9.9/月一口价",
+            h3: "发布日志转社交帖 — $29/月一口价",
             p: "为独立开发者打造：粘贴 release notes，生成 X、领英、Threads 变体。版本识别、要点解析、一键复制。无需 GitHub。",
-            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $9.9/月一口价。" },
+            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $29/月一口价。" },
           },
         ],
       },
@@ -174,7 +174,7 @@ export const guideCopy = {
           "版本识别——自动识别 v2.1.0 还是需要手动填写？",
           "平台限制——遵守 X 280 字、领英专业格式、Threads 串帖风格？",
           "无集成锁定——能从 Notion、GitHub Release 或纯文本粘贴？",
-          "一口价——对每月发布的开发者，$9.9/月无限比按仓库或按帖收费更划算",
+          "一口价——对每月发布的开发者，$29/月无限比按仓库或按帖收费更划算",
         ],
         after: [
           "对每周发布、GitHub 仓库活跃的开发者，PushToPost 或 BuildCast 值得配置。对每月发布或预发布产品，粘贴转换工具省去集成成本。",
@@ -191,7 +191,7 @@ export const guideCopy = {
           "在领英结尾链接到你的 changelog 或 /join 页面",
         ],
         after: [
-          "总耗时：不到 10 分钟。对比手动改写的 40+ 分钟。$9.9/月，每次发布节省的时间就值回票价。",
+          "总耗时：不到 10 分钟。对比手动改写的 40+ 分钟。$29/月，每次发布节省的时间就值回票价。",
         ],
       },
       {

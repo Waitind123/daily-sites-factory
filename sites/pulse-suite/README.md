@@ -1,6 +1,6 @@
 # Pulse Suite（监控状态一体）
 
-**Statuspage $29 + UptimeRobot $7? → $9.9/mo all-in-one**
+**Statuspage $29 + UptimeRobot $7? → $29/mo all-in-one**
 
 Uptime monitoring + public status pages + incident management for indie hackers.
 
@@ -10,7 +10,7 @@ Uptime monitoring + public status pages + incident management for indie hackers.
 - Public status pages with component health (API, Web, Database)
 - Incident management — post investigating → resolved updates
 - Email subscriber notifications
-- 5 free actions, then $9.9/mo flat subscription
+- 5 free actions, then $29/mo flat subscription
 - Demo checkout mode when no Stripe/Polar keys configured
 
 ## Stack

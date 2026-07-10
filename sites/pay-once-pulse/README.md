@@ -1,6 +1,6 @@
 # 独立开发者工具箱
 
-精选 indie hacker 工具目录 + 深度评测 SaaS。$9.9/月。
+精选 indie hacker 工具目录 + 深度评测 SaaS。$29/月。
 
 ## 功能
 

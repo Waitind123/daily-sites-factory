@@ -76,7 +76,7 @@ export default async function GuidePage() {
             评估标准：覆盖项目数量、变更推送速度、是否有 diff 对比、价格。Nomad List $99/年但数据滞后；移民律师 $300/小时实时但不可持续；Google Alerts 噪音太大且无法结构化对比。
           </p>
           <p className="text-foreground leading-relaxed mb-6">
-            <Link href="/alerts" className="text-brand-500 hover:underline">签证政策提醒</Link> 覆盖 35+ 数字游民签证项目，提供 24 小时内变更告警、新旧政策并排对比和 7 天变更历史流。免费体验 5 次政策关注，之后 $9.9/月 — 比移民律师便宜 3000 倍，比 Nomad List 数据新 18 个月。
+            <Link href="/alerts" className="text-brand-500 hover:underline">签证政策提醒</Link> 覆盖 35+ 数字游民签证项目，提供 24 小时内变更告警、新旧政策并排对比和 7 天变更历史流。免费体验 5 次政策关注，之后 $29/月 — 比移民律师便宜 3000 倍，比 Nomad List 数据新 18 个月。
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">设置你的第一个政策关注</h2>
@@ -84,12 +84,12 @@ export default async function GuidePage() {
             <li>打开<Link href="/alerts" className="text-brand-500 hover:underline">告警面板</Link>，选择你正在申请或持有的签证项目</li>
             <li>点击「开始关注」— 免费用户可关注 5 个项目</li>
             <li>政策变更时收到邮件告警，面板显示 diff 对比</li>
-            <li>需要无限关注？<Link href="/join" className="text-brand-500 hover:underline">订阅 $9.9/月</Link></li>
+            <li>需要无限关注？<Link href="/join" className="text-brand-500 hover:underline">订阅 $29/月</Link></li>
           </ol>
 
           <div className="rounded-xl border border-brand-600/30 bg-surface p-6 mt-10">
             <h3 className="font-bold text-lg mb-2">立即开始</h3>
-            <p className="text-muted mb-4">免费体验 5 次政策关注，之后 $9.9/月无限告警。</p>
+            <p className="text-muted mb-4">免费体验 5 次政策关注，之后 $29/月无限告警。</p>
             <div className="flex flex-wrap gap-3">
               <Link href="/alerts" className="rounded-lg bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700">
                 免费开始关注
@@ -131,10 +131,10 @@ export default async function GuidePage() {
 
           <h2 className="text-2xl font-bold mt-10 mb-4">How to choose an alert tool</h2>
           <p className="text-foreground leading-relaxed mb-4">
-            Evaluate by: program coverage, alert speed, diff view, and price. Nomad List is $99/yr but stale; immigration lawyers are $300/hr but unsustainable; Google Alerts are too noisy and unstructured.
+            Evaluate by: program coverage, alert speed, diff view, and price. Nomad List is $29/mo but stale; immigration lawyers are $300/hr but unsustainable; Google Alerts are too noisy and unstructured.
           </p>
           <p className="text-foreground leading-relaxed mb-6">
-            <Link href="/alerts" className="text-brand-500 hover:underline">Visa Alert</Link> covers 35+ digital nomad visa programs with 24h change alerts, side-by-side policy diffs, and a 7-day change feed. 5 free watches, then $9.9/mo — 3,000× cheaper than a lawyer, 18 months fresher than Nomad List.
+            <Link href="/alerts" className="text-brand-500 hover:underline">Visa Alert</Link> covers 35+ digital nomad visa programs with 24h change alerts, side-by-side policy diffs, and a 7-day change feed. 5 free watches, then $29/mo — 3,000× cheaper than a lawyer, 18 months fresher than Nomad List.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Set up your first policy watch</h2>
@@ -142,12 +142,12 @@ export default async function GuidePage() {
             <li>Open the <Link href="/alerts" className="text-brand-500 hover:underline">alert dashboard</Link> and pick programs you&apos;re applying for or holding</li>
             <li>Click &quot;Start watching&quot; — free users get 5 watches</li>
             <li>Get email alerts on changes with diff view in the dashboard</li>
-            <li>Need unlimited? <Link href="/join" className="text-brand-500 hover:underline">Subscribe at $9.9/mo</Link></li>
+            <li>Need unlimited? <Link href="/join" className="text-brand-500 hover:underline">Subscribe at $29/mo</Link></li>
           </ol>
 
           <div className="rounded-xl border border-brand-600/30 bg-surface p-6 mt-10">
             <h3 className="font-bold text-lg mb-2">Get started now</h3>
-            <p className="text-muted mb-4">5 free policy watches, then $9.9/mo for unlimited alerts.</p>
+            <p className="text-muted mb-4">5 free policy watches, then $29/mo for unlimited alerts.</p>
             <div className="flex flex-wrap gap-3">
               <Link href="/alerts" className="rounded-lg bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700">
                 Start watching free

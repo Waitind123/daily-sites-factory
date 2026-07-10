@@ -9,7 +9,7 @@ export const passesCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free bookings. Subscribe for unlimited day-pass bookings and price alerts.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     searchPlaceholder: "Search city or space name…",
     allCities: "All cities",
     videoOnly: "Video-call ready only",
@@ -33,7 +33,7 @@ export const passesCopy = {
     freeBookings: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费预订。订阅后可无限预订日票并接收降价提醒。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     searchPlaceholder: "搜索城市或空间名称…",
     allCities: "全部城市",
     videoOnly: "仅显示适合视频会议",

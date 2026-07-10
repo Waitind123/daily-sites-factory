@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Statuspage Embed Widget Alternative — One-Line Status Badge Guide",
       description:
-        "Statuspage embed widgets cost $299+/mo. Learn how indie SaaS founders add a live status badge to footers and docs with one line of code, auto incident detection, and $9.9/mo flat pricing.",
+        "Statuspage embed widgets cost $299+/mo. Learn how indie SaaS founders add a live status badge to footers and docs with one line of code, auto incident detection, and $29/mo flat pricing.",
     },
     h1: "2026 Statuspage Embed Widget Alternative: One-Line Status Badge Guide",
     updated: "Updated July 2026 · 12 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Build your own /status endpoint and iframe it. Free but requires maintenance, incident posting, and subscriber management you build yourself.",
           },
           {
-            h3: "Status Embed Lite — $9.9/mo flat",
+            h3: "Status Embed Lite — $29/mo flat",
             p: "Built for indie hackers who need a one-line embed widget without enterprise pricing. Auto incident detection from uptime pings, unlimited embeds, email subscribers.",
-            link: { href: "/join", text: "5 free embed widgets to try", suffix: ", then $9.9/mo flat. Copy-paste iframe in 60 seconds." },
+            link: { href: "/join", text: "5 free embed widgets to try", suffix: ", then $29/mo flat. Copy-paste iframe in 60 seconds." },
           },
         ],
       },
@@ -117,7 +117,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Statuspage 嵌入组件平替 — 一行状态角标完整指南",
       description:
-        "Statuspage 嵌入组件要 $299+/月。了解独立开发者如何用一行代码在页脚和文档添加实时状态角标、自动事件检测，$9.9/月 一口价。",
+        "Statuspage 嵌入组件要 $299+/月。了解独立开发者如何用一行代码在页脚和文档添加实时状态角标、自动事件检测，$29/月 一口价。",
     },
     h1: "2026 Statuspage 嵌入组件平替：一行状态角标完整指南",
     updated: "2026 年 7 月更新 · 阅读约 12 分钟",
@@ -162,9 +162,9 @@ export const guideCopy = {
             p: "自己做 /status 端点再 iframe。免费但要自己维护、发事件、管订阅者。",
           },
           {
-            h3: "极简状态页 — $9.9/月 一口价",
+            h3: "极简状态页 — $29/月 一口价",
             p: "为独立开发者打造：一行嵌入组件，无企业定价。uptime 心跳自动事件检测、嵌入不限量、邮件订阅者不限量。",
-            link: { href: "/join", text: "免费体验 5 个嵌入组件", suffix: "，之后 $9.9/月 一口价。60 秒复制粘贴 iframe。" },
+            link: { href: "/join", text: "免费体验 5 个嵌入组件", suffix: "，之后 $29/月 一口价。60 秒复制粘贴 iframe。" },
           },
         ],
       },

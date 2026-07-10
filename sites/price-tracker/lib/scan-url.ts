@@ -113,7 +113,7 @@ const knownHosts: Record<string, { en: Partial<ScanResult>; zh: Partial<ScanResu
         competitiveNotes: [
           "Crisp $25/mo flat — popular indie alternative",
           "Help Scout $20/user — simpler pricing",
-          "desk-pulse $9.9/mo — built for solo founders",
+          "desk-pulse $29/mo — built for solo founders",
         ],
         alertRecommendations: [
           "If you use Intercom, budget +90% YoY or migrate now",
@@ -162,7 +162,7 @@ const knownHosts: Record<string, { en: Partial<ScanResult>; zh: Partial<ScanResu
         competitiveNotes: [
           "Crisp $25/月固定价 — indie 热门替代",
           "Help Scout $20/用户 — 定价更简单",
-          "desk-pulse $9.9/月 — 为 solo 创始人打造",
+          "desk-pulse $29/月 — 为 solo 创始人打造",
         ],
         alertRecommendations: [
           "若在用 Intercom，预算需按年涨 90% 或立即迁移",
@@ -205,7 +205,7 @@ const knownHosts: Record<string, { en: Partial<ScanResult>; zh: Partial<ScanResu
         competitiveNotes: [
           "Freshdesk $15/agent — budget alternative",
           "Intercom Essential now $74/seat — both expensive",
-          "desk-pulse $9.9/mo flat for indie teams",
+          "desk-pulse $29/mo flat for indie teams",
         ],
         alertRecommendations: [
           "5-agent team now pays $345/mo vs $275 last year",
@@ -246,7 +246,7 @@ const knownHosts: Record<string, { en: Partial<ScanResult>; zh: Partial<ScanResu
         competitiveNotes: [
           "Freshdesk $15/客服 — 预算替代",
           "Intercom Essential 现 $74/席位 — 都很贵",
-          "desk-pulse $9.9/月固定价适合 indie 团队",
+          "desk-pulse $29/月固定价适合 indie 团队",
         ],
         alertRecommendations: [
           "5 人客服团队现 $345/月，去年 $275",

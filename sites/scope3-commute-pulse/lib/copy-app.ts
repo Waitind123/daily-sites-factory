@@ -8,7 +8,7 @@ export const surveyCopy = {
       "Add employees with commute data. Get instant Scope 3 Cat.7 team rollup with transport breakdown.",
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free team baselines left`,
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited baselines + CSRD export",
     addEmployee: "Add employee",
     removeEmployee: "Remove",
@@ -48,7 +48,7 @@ export const surveyCopy = {
     subtitle: "添加员工通勤数据，即时获得 Scope 3 第 7 类团队汇总与交通方式拆分。",
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费团队基线`,
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限基线 + CSRD 导出",
     addEmployee: "添加员工",
     removeEmployee: "删除",

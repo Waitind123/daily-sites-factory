@@ -8,7 +8,7 @@ export const trackCopy = {
     completed: (done: number, total: number) => `Completed ${done}/${total}`,
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free check-ins left`,
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited check-ins",
     checkIn: "Check in",
     done: "Done ✓",
@@ -27,7 +27,7 @@ export const trackCopy = {
     completed: (done: number, total: number) => `已完成 ${done}/${total}`,
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限打卡",
     checkIn: "打卡",
     done: "已完成 ✓",

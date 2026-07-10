@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-contract-review-three.vercel.app",
     name: "Contract Review Pulse",
-    title: "Contract Review Pulse — AI contract risk scan for freelancers, $9.9/mo",
+    title: "Contract Review Pulse — AI contract risk scan for freelancers, $29/mo",
     description:
-      "5 free contract reviews. Lawyer $300+/hr is overkill. Paste freelance contracts, get risk score, flagged clauses, and negotiation email. $9.9/mo flat.",
+      "5 free contract reviews. Lawyer $300+/hr is overkill. Paste freelance contracts, get risk score, flagged clauses, and negotiation email. $29/mo flat.",
     keywords: [
       "AI contract review",
       "freelance contract review",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-contract-review-three.vercel.app",
     name: "合同审查助手",
-    title: "合同审查助手 — 自由职业者 AI 合同风险扫描，$9.9/月",
+    title: "合同审查助手 — 自由职业者 AI 合同风险扫描，$29/月",
     description:
-      "免费体验 5 次。律师 $300+/小时太贵。粘贴自由职业合同，获得风险评分、问题条款和谈判邮件。$9.9/月一口价。",
+      "免费体验 5 次。律师 $300+/小时太贵。粘贴自由职业合同，获得风险评分、问题条款和谈判邮件。$29/月一口价。",
     keywords: [
       "AI 合同审查",
       "自由职业合同审查",

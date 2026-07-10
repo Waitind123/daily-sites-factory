@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Reddit Lead Generation for Indie Hackers — SubWatch Alternative Guide",
       description:
-        "SubWatch costs $29/mo. StackLead $49/mo. Learn how to find high-intent Reddit leads with switching, alternative & pricing signals for $9.9/mo.",
+        "SubWatch costs $29/mo. StackLead $49/mo. Learn how to find high-intent Reddit leads with switching, alternative & pricing signals for $29/mo.",
     },
     h1: "2026 Reddit Lead Generation Guide: Find Buyers on r/SaaS Before Your Competitors",
     updated: "Updated June 2026 · 12 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "Your ideal customers are already on Reddit asking for tool recommendations. They post \"switching from Harvest — what's everyone using now?\" in r/SaaS. They complain about StackLead pricing in r/indiehackers. They ask for SubWatch alternatives under $15/mo.",
       "These are not dreamers typing \"I wish there was.\" These are buyers with budget, workflow, and urgency. The difference between \"I wish\" and \"I'm switching\" is the difference between a fantasy and a transaction waiting to happen.",
       "SubWatch ($29/mo), StackLead ($49/mo), ReplyGain ($39/mo), and Subreach ($79/mo) all monitor Reddit for leads. They work — but solo bootstrappers need intent scoring and high-signal filtering without enterprise CRM pricing.",
-      "This guide explains why Reddit lead gen beats cold outreach for indie SaaS, compares 2026 monitoring tools, and shows you how to find high-intent threads in r/SaaS, r/Entrepreneur, r/indiehackers & r/startups for $9.9/mo.",
+      "This guide explains why Reddit lead gen beats cold outreach for indie SaaS, compares 2026 monitoring tools, and shows you how to find high-intent threads in r/SaaS, r/Entrepreneur, r/indiehackers & r/startups for $29/mo.",
       "Reddit Leads was built for the levelsio playbook: find buyers already asking, reply with value, charge from day one. Five free scans, then unlimited monitoring.",
     ],
     sections: [
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "Multi-platform (Reddit, HN, X, Bluesky). Great for agencies but overkill if Reddit is your primary channel.",
           },
           {
-            h3: "Reddit Leads — $9.9/mo flat",
+            h3: "Reddit Leads — $29/mo flat",
             p: "Built for indie hackers: monitor r/SaaS, r/Entrepreneur, r/indiehackers & r/startups. Intent score 1–10, four signal types, high-intent filtering. 5 free scans, then unlimited.",
             link: { href: "/monitor", text: "Monitor Reddit leads free", suffix: " — five scans, no credit card." },
           },
@@ -76,7 +76,7 @@ export const guideCopy = {
         h2: "Real example: one Reddit thread, three trial signups",
         paragraphs: [
           "A solo SaaS founder monitored \"harvest\" on Reddit Leads and found a 10/10 intent thread: \"Harvest raised prices from $12 to $1,900/mo — what's everyone switching to?\" Posted 2 hours ago in r/SaaS with 47 comments.",
-          "They replied with a genuine comparison (not a link drop), mentioned their $9.9/mo time tracker, and got 3 trial signups from that single thread. Paid for a year of Reddit Leads in one day.",
+          "They replied with a genuine comparison (not a link drop), mentioned their $29/mo time tracker, and got 3 trial signups from that single thread. Paid for a year of Reddit Leads in one day.",
           "This is the levelsio playbook: your customers are already asking on Reddit. You just need to listen at scale and reply while the thread is hot.",
         ],
       },
@@ -92,7 +92,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Reddit Leads free",
-          prefix: "SubWatch costs $29/mo and StackLead $49/mo. If you need high-intent Reddit monitoring, intent scoring, and $9.9/mo flat pricing, ",
+          prefix: "SubWatch costs $29/mo and StackLead $49/mo. If you need high-intent Reddit monitoring, intent scoring, and $29/mo flat pricing, ",
           suffix: ". Five scans, no credit card. Your buyers are already on Reddit.",
         },
       },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Reddit 线索挖掘指南 — 独立开发者 SubWatch 替代品",
       description:
-        "SubWatch $29/月，StackLead $49/月。学习如何用切换、替代与价格信号以 $9.9/月找到高意向 Reddit 线索。",
+        "SubWatch $29/月，StackLead $49/月。学习如何用切换、替代与价格信号以 $29/月找到高意向 Reddit 线索。",
     },
     h1: "2026 Reddit 线索挖掘完整指南：在竞争对手之前于 r/SaaS 找到买家",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -115,7 +115,7 @@ export const guideCopy = {
       "你的理想客户已经在 Reddit 上求推荐工具了。他们在 r/SaaS 发「正在从 Harvest 切换 — 大家都在用什么？」在 r/indiehackers 抱怨 StackLead 定价，在找 $15/月以下的 SubWatch 替代品。",
       "这些不是打「我希望有」的梦想家，而是有预算、有工作流、有紧迫感的买家。「我希望」和「我正在切换」的区别，就是幻想和即将发生的交易之间的区别。",
       "SubWatch（$29/月）、StackLead（$49/月）、ReplyGain（$39/月）和 Subreach（$79/月）都能监控 Reddit 线索。它们有效 — 但自举独立开发者需要意向评分和高信号过滤，而不是企业级 CRM 定价。",
-      "本指南解释为什么 Reddit 线索挖掘优于冷启动外展、对比 2026 年监控工具，以及如何用 $9.9/月在 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups 找到高意向帖。",
+      "本指南解释为什么 Reddit 线索挖掘优于冷启动外展、对比 2026 年监控工具，以及如何用 $29/月在 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups 找到高意向帖。",
       "Reddit 线索挖掘为 levelsio 路径打造：找到正在提问的买家，用价值回复，第一天就收费。免费 5 次扫描，之后监控不限量。",
     ],
     sections: [
@@ -151,7 +151,7 @@ export const guideCopy = {
             p: "多平台（Reddit、HN、X、Bluesky）。适合代理商，但如果 Reddit 是主渠道就过度了。",
           },
           {
-            h3: "Reddit 线索挖掘 — $9.9/月 一口价",
+            h3: "Reddit 线索挖掘 — $29/月 一口价",
             p: "为独立开发者打造：监控 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups。意向分 1–10、四类信号、高意向过滤。免费 5 次，之后不限量。",
             link: { href: "/monitor", text: "免费监控 Reddit 线索", suffix: " — 五次扫描，无需信用卡。" },
           },
@@ -178,7 +178,7 @@ export const guideCopy = {
         h2: "真实案例：一条 Reddit 帖，三个试用注册",
         paragraphs: [
           "一位独立 SaaS 创始人监控「harvest」，发现 10/10 意向帖：「Harvest 从 $12 涨到 $1,900/月 — 大家都在换什么？」2 小时前发在 r/SaaS，47 条评论。",
-          "他用真实对比回复（不是丢链接），提到自己的 $9.9/月 时间追踪工具，从这一条帖获得 3 个试用注册。一天就赚回一年 Reddit 线索挖掘的费用。",
+          "他用真实对比回复（不是丢链接），提到自己的 $29/月 时间追踪工具，从这一条帖获得 3 个试用注册。一天就赚回一年 Reddit 线索挖掘的费用。",
           "这就是 levelsio playbook：你的客户已经在 Reddit 上提问了。你只需要规模化监听，在线还热的时候回复。",
         ],
       },
@@ -194,7 +194,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Reddit 线索挖掘",
-          prefix: "SubWatch $29/月，StackLead $49/月。若你需要高意向 Reddit 监控、意向评分、$9.9/月 一口价，可",
+          prefix: "SubWatch $29/月，StackLead $49/月。若你需要高意向 Reddit 监控、意向评分、$29/月 一口价，可",
           suffix: "。五次扫描，无需信用卡。你的买家已经在 Reddit 上了。",
         },
       },

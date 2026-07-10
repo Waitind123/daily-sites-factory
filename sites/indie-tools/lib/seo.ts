@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://indie-tools-rho.vercel.app",
     name: "Indie Tools",
-    title: "Indie Tools — curated indie hacker tool reviews & stack picks $9.9/mo",
+    title: "Indie Tools — curated indie hacker tool reviews & stack picks $29/mo",
     description:
-      "5 free deep reviews. Hand-picked payment, email, hosting & analytics tools with pricing comparisons, alternatives & setup guides. $9.9/mo unlimited.",
+      "5 free deep reviews. Hand-picked payment, email, hosting & analytics tools with pricing comparisons, alternatives & setup guides. $29/mo unlimited.",
     keywords: [
       "indie hacker tools",
       "indie developer tool stack",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://indie-tools-rho.vercel.app",
     name: "独立开发者工具箱",
-    title: "独立开发者工具箱 — 精选 Indie 工具评测与选型 $9.9/月",
+    title: "独立开发者工具箱 — 精选 Indie 工具评测与选型 $29/月",
     description:
-      "免费体验 5 次深度评测。为 indie hacker 精选支付、邮件、托管、分析等工具，含定价对比、替代方案与实战选型建议。$9.9/月无限查阅。",
+      "免费体验 5 次深度评测。为 indie hacker 精选支付、邮件、托管、分析等工具，含定价对比、替代方案与实战选型建议。$29/月无限查阅。",
     keywords: [
       "独立开发者工具",
       "indie hacker tools",

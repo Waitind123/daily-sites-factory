@@ -13,7 +13,7 @@ export const guideCopy = {
       "If you're a freelancer billing clients in Poland or anywhere in the EU, April 2026 is a deadline you cannot ignore. Poland's Ministry of Finance made structured e-invoicing mandatory through the KSeF (National e-Invoice System). Paper PDFs and simple email attachments no longer cut it — you need machine-readable UBL 2.1 XML that passes EN16931 validation.",
       "HN thread #47625069 lit up when easyinvoicepdf launched: founders asked \"why does every e-invoice tool cost €50/month?\" Reddit r/SaaS filled with posts from Warsaw consultants panicking about KSeF onboarding. Indie Hackers threads compare Vatify, Basware, and enterprise suites that price out solo freelancers.",
       "The uncomfortable truth: most EU freelancers don't need a full ERP. They need five things: enter seller and buyer VAT IDs, add line items in EUR or PLN, validate mandatory fields, export UBL XML, and submit to KSeF or send via Peppol. That's it.",
-      "Enterprise tax suites charge per invoice or per legal entity. A Warsaw designer billing 4 clients per month doesn't need SAP. They need a browser tool that generates compliant XML in 5 minutes for $9.9/month.",
+      "Enterprise tax suites charge per invoice or per legal entity. A Warsaw designer billing 4 clients per month doesn't need SAP. They need a browser tool that generates compliant XML in 5 minutes for $29/month.",
       "This guide explains Poland's 2026 e-invoice mandate, what EN16931 and Peppol billing 3.0 mean in practice, and how to pick a tool that won't eat your project margins.",
     ],
     sections: [
@@ -51,7 +51,7 @@ export const guideCopy = {
             p: "Polish market leader. Strong for domestic businesses. UI and docs primarily Polish — harder for international freelancers billing in EUR.",
           },
           {
-            h3: "EU E-Invoice Compliance — $9.9/mo",
+            h3: "EU E-Invoice Compliance — $29/mo",
             p: "Browser-side UBL 2.1 generator with live EN16931 compliance score. Multi-currency EUR/PLN/USD/GBP. 5 free invoices to test with your accountant. Peppol billing 3.0 profile built in.",
           },
         ],
@@ -68,7 +68,7 @@ export const guideCopy = {
           "Peppol profile ID — future-proof for cross-border B2B via the Peppol network",
         ],
         after: [
-          "Skip features you'll never use: purchase order matching, three-way invoice approval, and ERP integrations. A $9.9/month UBL generator beats a €100/month suite you use 5% of.",
+          "Skip features you'll never use: purchase order matching, three-way invoice approval, and ERP integrations. A $29/month UBL generator beats a €100/month suite you use 5% of.",
         ],
       },
       {
@@ -79,17 +79,17 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "Pricing math: why $9.9/mo beats per-invoice fees",
+        h2: "Pricing math: why $29/mo beats per-invoice fees",
         paragraphs: [
           "Some tools charge €2–5 per UBL export. On 20 invoices per month, that's €40–100 — 4–10× the cost of a flat subscription.",
           "Enterprise suites start at €50/month with annual contracts. A solo freelancer billing €5,000/month shouldn't spend 2% of revenue on invoicing software.",
-          "A flat $9.9/month tool with 5 free trial invoices lets you validate with your accountant before committing. No surprise price hikes like HoneyBook's 89% increase taught US freelancers.",
+          "A flat $29/month tool with 5 free trial invoices lets you validate with your accountant before committing. No surprise price hikes like HoneyBook's 89% increase taught US freelancers.",
         ],
       },
     ],
     cta: {
       title: "Try EU E-Invoice Compliance free — 5 UBL exports, no credit card",
-      subtitle: "Generate your first KSeF-ready invoice in 5 minutes · $9.9/mo unlimited",
+      subtitle: "Generate your first KSeF-ready invoice in 5 minutes · $29/mo unlimited",
       button: "Generate UBL invoice free →",
     },
   },
@@ -105,7 +105,7 @@ export const guideCopy = {
       "如果你在波兰或欧盟任何地方向客户开票，2026 年 4 月是一个不能忽视的截止日期。波兰财政部通过 KSeF（国家电子发票系统）强制推行结构化电子发票。纸质 PDF 和简单邮件附件已不够用 — 你需要能通过 EN16931 校验的机器可读 UBL 2.1 XML。",
       "HN 帖子 #47625069 在 easyinvoicepdf 上线后引发热议：创始人问「为什么每个电子发票工具都要 €50/月？」Reddit r/SaaS 上华沙顾问们为 KSeF 接入恐慌发帖。Indie Hackers 上比较 Vatify、Basware 等定价把独立自由职业者挡在门外的企业套件。",
       "令人不适的真相：大多数欧盟自由职业者不需要完整 ERP。他们需要五件事：填写买卖双方增值税号、用欧元或兹罗提添加明细、校验必填字段、导出 UBL XML、提交到 KSeF 或通过 Peppol 发送。仅此而已。",
-      "企业税务套件按发票或法人实体收费。一个月给 4 个客户开单的华沙设计师不需要 SAP。他们需要一个浏览器工具，5 分钟生成合规 XML，$9.9/月。",
+      "企业税务套件按发票或法人实体收费。一个月给 4 个客户开单的华沙设计师不需要 SAP。他们需要一个浏览器工具，5 分钟生成合规 XML，$29/月。",
       "本指南解释波兰 2026 电子发票强制令、EN16931 和 Peppol billing 3.0 的实际含义，以及如何选一款不会吃掉项目利润的工具。",
     ],
     sections: [
@@ -143,7 +143,7 @@ export const guideCopy = {
             p: "波兰市场领导者。本土企业很强。界面和文档主要是波兰语 — 用欧元开票的国际自由职业者较难上手。",
           },
           {
-            h3: "欧盟电子发票合规 — $9.9/月",
+            h3: "欧盟电子发票合规 — $29/月",
             p: "浏览器端 UBL 2.1 生成器，实时 EN16931 合规评分。多币种欧元/兹罗提/美元/英镑。5 张免费发票与会计师测试。内置 Peppol billing 3.0 配置。",
           },
         ],
@@ -160,7 +160,7 @@ export const guideCopy = {
           "Peppol 配置 ID — 为跨境 B2B 经 Peppol 网络未来做准备",
         ],
         after: [
-          "跳过永远用不上的功能：采购订单匹配、三方发票审批、ERP 集成。$9.9/月的 UBL 生成器胜过你只用到 5% 的 €100/月套件。",
+          "跳过永远用不上的功能：采购订单匹配、三方发票审批、ERP 集成。$29/月的 UBL 生成器胜过你只用到 5% 的 €100/月套件。",
         ],
       },
       {
@@ -171,17 +171,17 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "定价算账：为什么 $9.9/月胜过按张收费",
+        h2: "定价算账：为什么 $29/月胜过按张收费",
         paragraphs: [
           "有些工具每张 UBL 收 €2–5。月开 20 张就是 €40–100 — 是 flat 订阅的 4–10 倍。",
           "企业套件 €50/月起且常要年约。月开票 €5,000 的独立自由职业者不应把 2% 收入花在开票软件上。",
-          "$9.9/月一口价加 5 张免费试用，可先与会计师验证再付费。不会像 HoneyBook 涨价 89% 那样给美国自由职业者惊喜。",
+          "$29/月一口价加 5 张免费试用，可先与会计师验证再付费。不会像 HoneyBook 涨价 89% 那样给美国自由职业者惊喜。",
         ],
       },
     ],
     cta: {
       title: "免费试用欧盟电子发票合规 — 5 次 UBL 导出，无需信用卡",
-      subtitle: "5 分钟生成第一张 KSeF 就绪发票 · $9.9/月不限量",
+      subtitle: "5 分钟生成第一张 KSeF 就绪发票 · $29/月不限量",
       button: "免费生成 UBL 发票 →",
     },
   },

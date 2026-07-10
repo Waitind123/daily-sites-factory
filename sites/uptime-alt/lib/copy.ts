@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "UptimeRobot 4× price hike? · $9.9/mo flat",
+    badge: "UptimeRobot 4× price hike? · $29/mo flat",
     title: "Uptime monitoring + status pages after the hike",
     subtitle:
-      "UptimeRobot went from $8 to $34/mo. Get 1-minute checks, public status pages, and incident posts in one tool. 5 free actions, then $9.9/mo.",
+      "UptimeRobot went from $8 to $34/mo. Get 1-minute checks, public status pages, and incident posts in one tool. 5 free actions, then $29/mo.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free actions · then $9.9/mo",
+    note: "5 free actions · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs UptimeRobot $34+" },
+      { stat: "$29", label: "flat/mo vs UptimeRobot $34+" },
       { stat: "60s", label: "downtime detection" },
       { stat: "2-in-1", label: "monitor + status page" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "One price after UptimeRobot's 4× hike. Monitoring + status pages, no per-monitor fees.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Indie SaaS founder",
-        text: "UptimeRobot went from $8 to $34 overnight. UptimeAlt does monitoring + status page for $9.9.",
+        text: "UptimeRobot went from $8 to $34 overnight. UptimeAlt does monitoring + status page for $29.",
       },
       {
         name: "Mia Chen",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Don't let a price hike break your reliability stack",
-      subtitle: "5 free actions · then $9.9/mo for unlimited monitoring + status",
+      subtitle: "5 free actions · then $29/mo for unlimited monitoring + status",
       ctaPrimary: "Try free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "UptimeRobot 涨价 4 倍？· $9.9/月一口价",
+    badge: "UptimeRobot 涨价 4 倍？· $29/月一口价",
     title: "涨价后的 Uptime 监控 + 状态页",
     subtitle:
-      "UptimeRobot 从 $8 涨到 $34/月。1 分钟检测、公开状态页、事件发布，一个工具搞定。免费体验 5 次，之后 $9.9/月。",
+      "UptimeRobot 从 $8 涨到 $34/月。1 分钟检测、公开状态页、事件发布，一个工具搞定。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费试用",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价 vs UptimeRobot $34+" },
+      { stat: "$29", label: "一口价 vs UptimeRobot $34+" },
       { stat: "60 秒", label: "故障检测" },
       { stat: "二合一", label: "监控 + 状态页" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "UptimeRobot 涨价 4 倍后的替代方案。监控 + 状态页，不按监控数收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "独立 SaaS 创始人",
-        text: "UptimeRobot 一夜之间从 $8 涨到 $34。UptimeAlt 监控 + 状态页只要 $9.9。",
+        text: "UptimeRobot 一夜之间从 $8 涨到 $34。UptimeAlt 监控 + 状态页只要 $29。",
       },
       {
         name: "Mia Chen",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别让涨价毁掉你的可靠性栈",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限监控 + 状态页",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限监控 + 状态页",
       ctaPrimary: "免费试用",
       ctaSecondary: "查看定价",
     },

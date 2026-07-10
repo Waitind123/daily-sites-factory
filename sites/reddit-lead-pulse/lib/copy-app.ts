@@ -55,7 +55,7 @@ export const monitorCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 scans. Subscribe for unlimited Reddit lead monitoring, intent scoring, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Monitor a keyword",
     keyword: "Keyword or competitor",
     keywordPlaceholder: "e.g. harvest, calendly, subwatch, analytics",
@@ -77,7 +77,7 @@ export const monitorCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次扫描。订阅后可无限 Reddit 线索监控、意向评分并导出。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "监控关键词",
     keyword: "关键词或竞品",
     keywordPlaceholder: "例如：harvest、calendly、subwatch、分析工具",

@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Wynter $500/test? · $9.9/mo flat",
+    badge: "Wynter $500/test? · $29/mo flat",
     title: "AI pricing page optimizer for indie hackers",
     subtitle:
-      "Paste your /pricing URL — AI rewrites copy, diagnoses layout issues, and ships A/B test ideas in 2 minutes. 5 free optimizations, then $9.9/mo.",
+      "Paste your /pricing URL — AI rewrites copy, diagnoses layout issues, and ships A/B test ideas in 2 minutes. 5 free optimizations, then $29/mo.",
     ctaPrimary: "Optimize my pricing page",
     ctaPrimaryHref: "/analyze",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free optimizations · then $9.9/mo",
+    note: "5 free optimizations · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Wynter $500+/test" },
+      { stat: "$29", label: "flat/mo vs Wynter $500+/test" },
       { stat: "2 min", label: "AI audit + copy rewrites" },
       { stat: "+19%", label: "avg conversion lift after fixes" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited AI optimizations. No per-test fees like Wynter or Evelance.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Sam R.",
         role: "Solo SaaS founder",
-        text: "Wynter wanted $500 for one pricing page test. PricePulse AI gave me copy rewrites + layout fixes in 2 minutes for $9.9/mo.",
+        text: "Wynter wanted $500 for one pricing page test. PricePulse AI gave me copy rewrites + layout fixes in 2 minutes for $29/mo.",
       },
       {
         name: "Nina L.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing your pricing page copy",
-      subtitle: "5 free AI optimizations · then $9.9/mo unlimited",
+      subtitle: "5 free AI optimizations · then $29/mo unlimited",
       ctaPrimary: "Optimize my pricing page",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Wynter $500/次？· $9.9/月一口价",
+    badge: "Wynter $500/次？· $29/月一口价",
     title: "独立开发者的 AI 定价页优化",
     subtitle:
-      "粘贴 /pricing 链接 — AI 改写文案、诊断布局问题、输出 A/B 测试方案，2 分钟出报告。免费体验 5 次，之后 $9.9/月。",
+      "粘贴 /pricing 链接 — AI 改写文案、诊断布局问题、输出 A/B 测试方案，2 分钟出报告。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "优化我的定价页",
     ctaPrimaryHref: "/analyze",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Wynter 单次 $500+" },
+      { stat: "$29", label: "一口价/月，Wynter 单次 $500+" },
       { stat: "2 分钟", label: "AI 诊断 + 文案改写" },
       { stat: "+19%", label: "修复后平均转化提升" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "AI 优化不限次数，不像 Wynter 或 Evelance 按次收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Sam R.",
         role: "一人 SaaS 创始人",
-        text: "Wynter 一次定价页测试要 $500。PricePulse AI 两分钟给出文案改写和布局方案，$9.9/月刚好够用。",
+        text: "Wynter 一次定价页测试要 $500。PricePulse AI 两分钟给出文案改写和布局方案，$29/月刚好够用。",
       },
       {
         name: "Nina L.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜定价页文案该怎么写",
-      subtitle: "免费 5 次 AI 优化 · 之后 $9.9/月 不限次数",
+      subtitle: "免费 5 次 AI 优化 · 之后 $29/月 不限次数",
       ctaPrimary: "优化我的定价页",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Conversion score tracking",
       "Export reports (PDF)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free optimizations, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "转化评分追踪",
       "报告导出（PDF）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

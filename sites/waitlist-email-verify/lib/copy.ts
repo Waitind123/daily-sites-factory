@@ -5,15 +5,15 @@ export const homeCopy = {
     badge: "Waitle validates emails · we add AI conversion insights",
     title: "Waitlist email validation that actually converts",
     subtitle:
-      "MX checks, typo fix, disposable filter, double opt-in — plus AI conversion scoring. 5 free audits, then $9.9/mo flat.",
+      "MX checks, typo fix, disposable filter, double opt-in — plus AI conversion scoring. 5 free audits, then $29/mo flat.",
     ctaPrimary: "Create a waitlist free",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free email audits · then $9.9/mo",
+    note: "5 free email audits · then $29/mo",
     stats: [
       { stat: "99%", label: "typo emails caught before signup" },
-      { stat: "$9.9", label: "flat/mo vs Waitle + Lineup $9+ each" },
+      { stat: "$29", label: "flat/mo vs Waitle + Lineup $9+ each" },
       { stat: "2 min", label: "to launch with email verification" },
     ],
     howItWorks: {
@@ -29,7 +29,7 @@ export const homeCopy = {
       { icon: "✉️", title: "MX + typo validation", desc: "Every email checked for MX records, disposable domains, and common typos with one-click fix suggestions." },
       { icon: "🔒", title: "Double opt-in", desc: "Require email confirmation before counting signups — blocks bots and fake addresses." },
       { icon: "🤖", title: "AI conversion scoring", desc: "Beyond validation: A–F grades, B2B signal detection, and launch-readiness recommendations." },
-      { icon: "💰", title: "Flat $9.9/mo", desc: "Unlimited waitlists, verified signups, and AI audits. No per-email fees." },
+      { icon: "💰", title: "Flat $29/mo", desc: "Unlimited waitlists, verified signups, and AI audits. No per-email fees." },
     ],
     testimonialsTitle: "What indie hackers say",
     testimonials: [
@@ -39,7 +39,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Launch with a clean, verified waitlist",
-      subtitle: "5 free email audits · then $9.9/mo for unlimited",
+      subtitle: "5 free email audits · then $29/mo for unlimited",
       ctaPrimary: "Create a waitlist free",
       ctaSecondary: "View pricing",
     },
@@ -53,15 +53,15 @@ export const homeCopy = {
   zh: {
     badge: "Waitle 能验证邮箱 · 我们加上 AI 转化洞察",
     title: "真正能转化的等候名单邮件验证",
-    subtitle: "MX 检测、拼写纠错、一次性邮箱过滤、双重确认 — 外加 AI 转化评分。免费体验 5 次审计，之后 $9.9/月一口价。",
+    subtitle: "MX 检测、拼写纠错、一次性邮箱过滤、双重确认 — 外加 AI 转化评分。免费体验 5 次审计，之后 $29/月一口价。",
     ctaPrimary: "免费创建等候名单",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次邮箱审计 · 之后 $9.9/月",
+    note: "免费体验 5 次邮箱审计 · 之后 $29/月",
     stats: [
       { stat: "99%", label: "报名前拦截拼写错误邮箱" },
-      { stat: "$9.9", label: "一口价/月，Waitle + Lineup 各 $9+" },
+      { stat: "$29", label: "一口价/月，Waitle + Lineup 各 $9+" },
       { stat: "2 分钟", label: "上线带邮箱验证的等候名单" },
     ],
     howItWorks: {
@@ -77,7 +77,7 @@ export const homeCopy = {
       { icon: "✉️", title: "MX + 拼写验证", desc: "每个邮箱检测 MX 记录、一次性域名、常见拼写错误，支持一键纠错建议。" },
       { icon: "🔒", title: "双重确认", desc: "报名需邮件确认后才计入名单 — 拦截机器人和虚假地址。" },
       { icon: "🤖", title: "AI 转化评分", desc: "不止验证：A–F 分级、B2B 信号检测、上线就绪建议。" },
-      { icon: "💰", title: "$9.9/月 一口价", desc: "等候名单、已验证报名、AI 审计不限量。不按邮箱收费。" },
+      { icon: "💰", title: "$29/月 一口价", desc: "等候名单、已验证报名、AI 审计不限量。不按邮箱收费。" },
     ],
     testimonialsTitle: "独立开发者怎么说",
     testimonials: [
@@ -87,7 +87,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "用干净、已验证的名单上线",
-      subtitle: "免费 5 次邮箱审计 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次邮箱审计 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建等候名单",
       ctaSecondary: "查看定价",
     },
@@ -116,7 +116,7 @@ export const joinCopy = {
       "Referral boost & leaderboard",
       "CSV verified email export",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free audits, then subscribe?",
@@ -142,7 +142,7 @@ export const joinCopy = {
       "推荐裂变与排行榜",
       "已验证邮箱 CSV 导出",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次审计，之后订阅？",

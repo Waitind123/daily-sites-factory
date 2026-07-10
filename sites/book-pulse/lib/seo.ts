@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://book-pulse-lovat.vercel.app",
     name: "Book Pulse",
-    title: "Book Pulse — Calendly alternative for indie hackers, $9.9/mo scheduling",
+    title: "Book Pulse — Calendly alternative for indie hackers, $29/mo scheduling",
     description:
-      "5 free publishes. Calendly $12+/mo? $9.9/mo flat: indie booking pages, time zone sync, project showcase. No cookie banner. Bilingual EN/ZH.",
+      "5 free publishes. Calendly $12+/mo? $29/mo flat: indie booking pages, time zone sync, project showcase. No cookie banner. Bilingual EN/ZH.",
     keywords: [
       "Calendly alternative",
       "indie hacker scheduling",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://book-pulse-lovat.vercel.app",
     name: "Book Pulse",
-    title: "Book Pulse — Calendly 平替，独立开发者 $9.9/月预约页",
+    title: "Book Pulse — Calendly 平替，独立开发者 $29/月预约页",
     description:
-      "免费发布 5 次。Calendly 要 $12+/月？$9.9/月一口价：独立开发者预约页、时区同步、项目展示。无 Cookie 弹窗，中英双语。",
+      "免费发布 5 次。Calendly 要 $12+/月？$29/月一口价：独立开发者预约页、时区同步、项目展示。无 Cookie 弹窗，中英双语。",
     keywords: [
       "Calendly 替代品",
       "独立开发者预约",

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Prefinery Alternative for Indie Hackers — Product Waitlist Guide",
       description:
-        "Prefinery costs $99/mo before you have traction. Compare launch waitlist tools for indie SaaS. Find a $9.9/mo flat-rate alternative with referral boost and unlimited signups.",
+        "Prefinery costs $99/mo before you have traction. Compare launch waitlist tools for indie SaaS. Find a $29/mo flat-rate alternative with referral boost and unlimited signups.",
     },
     h1: "2026 Prefinery Alternative for Indie Hackers: Product Waitlist Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -48,9 +48,9 @@ export const guideCopy = {
             p: "Works if you already use Mailchimp. Not built for referral loops or queue position. Feels like email marketing, not a product launch.",
           },
           {
-            h3: "Waitlist Pulse — $9.9/mo flat",
+            h3: "Waitlist Pulse — $29/mo flat",
             p: "Built for indie hackers who want Prefinery-style waitlists without per-campaign pricing. Unlimited lists, unlimited signups, referral boost, live counter.",
-            link: { href: "/join", text: "5 free waitlists to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free waitlists to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Prefinery 平替指南 — 产品等候名单",
       description:
-        "Prefinery 还没起量就要 $99/月。对比上线前等候名单工具，找到 $9.9/月 一口价、支持推荐裂变与不限报名的平替方案。",
+        "Prefinery 还没起量就要 $99/月。对比上线前等候名单工具，找到 $29/月 一口价、支持推荐裂变与不限报名的平替方案。",
     },
     h1: "2026 独立开发者 Prefinery 平替：产品等候名单完整指南",
     updated: "2026 年 6 月更新 · 阅读约 10 分钟",
@@ -157,9 +157,9 @@ export const guideCopy = {
             p: "已在用 Mailchimp 可以考虑。不是为推荐裂变或排队位置设计的，更像邮件营销而非产品上线。",
           },
           {
-            h3: "产品等候名单 — $9.9/月 一口价",
+            h3: "产品等候名单 — $29/月 一口价",
             p: "为独立开发者打造：Prefinery 式等候名单，不按活动收费。名单不限量、报名不限量、推荐裂变、实时计数。",
-            link: { href: "/join", text: "免费体验 5 个等候名单", suffix: "，之后 $9.9/月 一口价，无年约。" },
+            link: { href: "/join", text: "免费体验 5 个等候名单", suffix: "，之后 $29/月 一口价，无年约。" },
           },
         ],
       },

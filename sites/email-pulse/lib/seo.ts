@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://email-pulse.vercel.app",
     name: "Email Pulse",
-    title: "Email Pulse — HTML email builder for indie devs, $9.9/mo flat",
+    title: "Email Pulse — HTML email builder for indie devs, $29/mo flat",
     description:
-      "5 free templates. Build product update emails, preview live, copy HTML for Resend/Postmark. Mailchimp alternative at $9.9/mo flat.",
+      "5 free templates. Build product update emails, preview live, copy HTML for Resend/Postmark. Mailchimp alternative at $29/mo flat.",
     keywords: [
       "HTML email builder",
       "Mailchimp alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://email-pulse.vercel.app",
     name: "HTML 邮件构建器",
-    title: "HTML 邮件构建器 — Mailchimp 平替，独立开发者 $9.9/月",
+    title: "HTML 邮件构建器 — Mailchimp 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个模板。搭建产品更新邮件、实时预览、复制 HTML 用于 Resend/Postmark。$9.9/月一口价。",
+      "免费体验 5 个模板。搭建产品更新邮件、实时预览、复制 HTML 用于 Resend/Postmark。$29/月一口价。",
     keywords: [
       "HTML 邮件构建器",
       "Mailchimp 替代品",

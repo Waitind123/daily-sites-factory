@@ -26,7 +26,7 @@ export const guideCopy = {
           "Paying for features you don't use — Canny's CRM integrations when you have 50 users",
         ],
         after: [
-          "A bootstrapped founder spending $200/mo on tools needs ~20 paying users at $9.9/mo just to break even on software. Before first revenue, target under $30/mo total.",
+          "A bootstrapped founder spending $200/mo on tools needs ~20 paying users at $29/mo just to break even on software. Before first revenue, target under $30/mo total.",
         ],
       },
       {
@@ -124,14 +124,14 @@ export const guideCopy = {
           "4. Migrate one tool, cancel one subscription, redirect savings to marketing",
         ],
         after: [
-          "Want savings math, migration checklists, and Docker setup for every alternative? Browse our curated directory — 5 free deep lookups, then $9.9/mo unlimited.",
+          "Want savings math, migration checklists, and Docker setup for every alternative? Browse our curated directory — 5 free deep lookups, then $29/mo unlimited.",
         ],
       },
     ],
     cta: {
       title: "Don't want to research each alternative?",
       subtitle: "12+ pay-once tools with savings calculators and migration guides",
-      button: "Subscribe $9.9/mo · unlimited lookups",
+      button: "Subscribe $29/mo · unlimited lookups",
     },
   },
   zh: {
@@ -159,7 +159,7 @@ export const guideCopy = {
           "为不用的功能付费 — 50 个用户却买 Canny 的 CRM 集成",
         ],
         after: [
-          "Bootstrap 创始人月花 $200 买工具，需要约 20 个 $9.9/月的付费用户才能打平软件成本。第一笔收入前，总月费应控制在 $30 以内。",
+          "Bootstrap 创始人月花 $200 买工具，需要约 20 个 $29/月的付费用户才能打平软件成本。第一笔收入前，总月费应控制在 $30 以内。",
         ],
       },
       {
@@ -257,14 +257,14 @@ export const guideCopy = {
           "4. 迁移一个工具，取消一个订阅，把省下的钱投入营销",
         ],
         after: [
-          "想要每个替代品的省钱计算、迁移清单和 Docker 部署步骤？浏览精选目录 — 免费体验 5 次深度查询，之后 $9.9/月无限查阅。",
+          "想要每个替代品的省钱计算、迁移清单和 Docker 部署步骤？浏览精选目录 — 免费体验 5 次深度查询，之后 $29/月无限查阅。",
         ],
       },
     ],
     cta: {
       title: "不想一个个调研替代品？",
       subtitle: "12+ 买断工具，含省钱计算器和迁移指南",
-      button: "订阅 $9.9/月 · 无限查询",
+      button: "订阅 $29/月 · 无限查询",
     },
   },
 } as const;

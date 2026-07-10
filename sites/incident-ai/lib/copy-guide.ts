@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI Incident Communication Guide for Indie Hackers",
       description:
-        "Statuspage.io starts at $29/mo without AI drafting. Compare incident communication tools for indie SaaS. Find a $9.9/mo flat-rate tool that turns alerts into status updates, emails, and postmortems.",
+        "Statuspage.io starts at $29/mo without AI drafting. Compare incident communication tools for indie SaaS. Find a $29/mo flat-rate tool that turns alerts into status updates, emails, and postmortems.",
     },
     h1: "2026 AI Incident Communication: Indie Hacker Outage Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -51,7 +51,7 @@ export const guideCopy = {
             p: "Webhook ingest from PagerDuty/Datadog. AI drafts status updates and postmortems. Newer player, focused purely on communication layer.",
           },
           {
-            h3: "Incident AI — $9.9/mo flat",
+            h3: "Incident AI — $29/mo flat",
             p: "Paste any alert → status page update, customer email, Slack note, postmortem. No monitoring bundle, no GitHub OAuth. Built for founders who already have uptime tools.",
             link: {
               href: "/draft",
@@ -112,7 +112,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 AI 事件沟通指南",
       description:
-        "Statuspage.io 起步 $29/月且无 AI 草稿。对比独立 SaaS 事件沟通工具。找到 $9.9/月一口价、将告警转为状态页更新、邮件和复盘报告的工具。",
+        "Statuspage.io 起步 $29/月且无 AI 草稿。对比独立 SaaS 事件沟通工具。找到 $29/月一口价、将告警转为状态页更新、邮件和复盘报告的工具。",
     },
     h1: "2026 AI 事件沟通：独立开发者宕机应对指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -158,7 +158,7 @@ export const guideCopy = {
             p: "从 PagerDuty/Datadog 接入 Webhook。AI 草稿状态更新和复盘报告。较新玩家，纯聚焦沟通层。",
           },
           {
-            h3: "AI 事件摘要 — $9.9/月一口价",
+            h3: "AI 事件摘要 — $29/月一口价",
             p: "粘贴任意告警 → 状态页更新、客户邮件、Slack 通知、复盘报告。不捆绑监控，无需 GitHub OAuth。为已有 uptime 工具的创始人打造。",
             link: {
               href: "/draft",

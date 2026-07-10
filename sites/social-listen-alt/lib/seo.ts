@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://social-listen-alt.vercel.app",
     name: "Listen Pulse",
-    title: "Listen Pulse — Brand24 & Mention alternative for indie hackers, $9.9/mo",
+    title: "Listen Pulse — Brand24 & Mention alternative for indie hackers, $29/mo",
     description:
-      "5 free scans. Monitor Reddit & X for high-intent signals — alternative to, switching from, pricing pain. No Brand24 noise. Intent scoring for founders. $9.9/mo flat.",
+      "5 free scans. Monitor Reddit & X for high-intent signals — alternative to, switching from, pricing pain. No Brand24 noise. Intent scoring for founders. $29/mo flat.",
     keywords: [
       "Brand24 alternative",
       "Mention alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://social-listen-alt.vercel.app",
     name: "社交监听替代品",
-    title: "社交监听替代品 — Brand24/Mention 平替，独立开发者 $9.9/月",
+    title: "社交监听替代品 — Brand24/Mention 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次扫描。监控 Reddit 与 X 的高意向信号 — 寻找替代、正在切换、价格不满。过滤 Brand24 噪音，意向评分，$9.9/月一口价。",
+      "免费体验 5 次扫描。监控 Reddit 与 X 的高意向信号 — 寻找替代、正在切换、价格不满。过滤 Brand24 噪音，意向评分，$29/月一口价。",
     keywords: [
       "Brand24 替代品",
       "Mention 替代品",

@@ -48,7 +48,7 @@ export const guideCopy = {
         text: "Start with one habit, add a second after 2 weeks. Our {link0} offers reading, exercise, meditation, water, and journal templates. Non-members get 5 free check-ins, then {link1} for unlimited habits.",
         links: [
           { href: "/track", label: "check-in page" },
-          { href: "/join", label: "$9.9/mo" },
+          { href: "/join", label: "$29/mo" },
         ],
       },
       {
@@ -102,7 +102,7 @@ export const guideCopy = {
         text: "There is no perfect moment. Open the {link0}, pick the smallest habit, tap once. That is day 1. Try 5 free check-ins, feel the streak pull, then {link1} — less than a coffee, but it might change your next 365 days.",
         links: [
           { href: "/track", label: "check-in page" },
-          { href: "/join", label: "subscribe at $9.9/mo" },
+          { href: "/join", label: "subscribe at $29/mo" },
         ],
       },
     ],
@@ -154,7 +154,7 @@ export const guideCopy = {
         text: "先从 1 个习惯开始，坚持 2 周再加第二个。我们的{link0}默认提供阅读、运动、冥想、喝水、日记 5 个模板。非会员可免费体验 5 次打卡，之后{link1}无限习惯。",
         links: [
           { href: "/track", label: "打卡页面" },
-          { href: "/join", label: "$9.9/月" },
+          { href: "/join", label: "$29/月" },
         ],
       },
       {
@@ -209,7 +209,7 @@ export const guideCopy = {
         text: "习惯养成没有完美时机。你不需要等周一、等月初、等买了新 App。现在打开{link0}，选一个最小的习惯，点一下。这就是第 1 天。免费体验 5 次，感受连续天数的推力。觉得有用就{link1}——比一杯咖啡还便宜，但可能改变接下来 365 天的你。",
         links: [
           { href: "/track", label: "习惯打卡" },
-          { href: "/join", label: "订阅 $9.9/月" },
+          { href: "/join", label: "订阅 $29/月" },
         ],
       },
     ],

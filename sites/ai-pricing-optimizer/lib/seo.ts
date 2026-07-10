@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-pricing-optimizer.vercel.app",
     name: "PricePulse AI",
-    title: "PricePulse AI — AI pricing page optimizer for indie hackers, $9.9/mo",
+    title: "PricePulse AI — AI pricing page optimizer for indie hackers, $29/mo",
     description:
-      "5 free AI optimizations. Wynter $500/test? $9.9/mo flat: AI copy rewrites, layout diagnosis, A/B playbook — ship pricing pages that convert.",
+      "5 free AI optimizations. Wynter $500/test? $29/mo flat: AI copy rewrites, layout diagnosis, A/B playbook — ship pricing pages that convert.",
     keywords: [
       "AI pricing page optimizer",
       "pricing page copy",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-pricing-optimizer.vercel.app",
     name: "AI 定价页优化",
-    title: "AI 定价页优化 — 独立开发者 AI 文案改写与布局诊断，$9.9/月",
+    title: "AI 定价页优化 — 独立开发者 AI 文案改写与布局诊断，$29/月",
     description:
-      "免费体验 5 次 AI 优化。Wynter 单次 $500？$9.9/月一口价：AI 文案改写、布局诊断、A/B 方案 — 打造高转化定价页。",
+      "免费体验 5 次 AI 优化。Wynter 单次 $500？$29/月一口价：AI 文案改写、布局诊断、A/B 方案 — 打造高转化定价页。",
     keywords: [
       "AI 定价页优化",
       "定价页文案",

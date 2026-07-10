@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Waitlist Email Validation Guide — MX Checks, Typo Fix, Double Opt-in for Indie Hackers",
       description:
-        "30% of waitlist signups may be typos or disposable emails. Learn MX validation, typo detection, double opt-in, and AI conversion scoring. $9.9/mo alternative to Waitle + Lineup.",
+        "30% of waitlist signups may be typos or disposable emails. Learn MX validation, typo detection, double opt-in, and AI conversion scoring. $29/mo alternative to Waitle + Lineup.",
     },
     h1: "2026 Waitlist Email Validation for Indie Hackers: Clean Your List Before Launch",
     updated: "Updated July 2026 · 10 min read",
@@ -64,9 +64,9 @@ export const guideCopy = {
             p: "Double opt-in and email verification free. Good for budget founders. No AI scoring or B2B signal detection.",
           },
           {
-            h3: "Waitlist Verify — $9.9/mo flat",
+            h3: "Waitlist Verify — $29/mo flat",
             p: "MX + typo + disposable validation, double opt-in, plus AI conversion scoring on every signup. Launch-readiness recommendations included.",
-            link: { href: "/join", text: "5 free email audits to try", suffix: ", then $9.9/mo flat." },
+            link: { href: "/join", text: "5 free email audits to try", suffix: ", then $29/mo flat." },
           },
         ],
       },
@@ -102,7 +102,7 @@ export const guideCopy = {
     meta: {
       title: "2026 等候名单邮件验证指南 — MX 检测、拼写纠错、双重确认",
       description:
-        "30% 的等候名单报名可能是拼写错误或一次性邮箱。学习 MX 验证、拼写检测、双重确认与 AI 转化评分。$9.9/月 Waitle + Lineup 替代方案。",
+        "30% 的等候名单报名可能是拼写错误或一次性邮箱。学习 MX 验证、拼写检测、双重确认与 AI 转化评分。$29/月 Waitle + Lineup 替代方案。",
     },
     h1: "2026 独立开发者等候名单邮件验证：上线前清理你的名单",
     updated: "更新于 2026 年 7 月 · 阅读约 10 分钟",
@@ -159,9 +159,9 @@ export const guideCopy = {
             p: "双重确认与邮箱验证免费。适合预算紧张的创始人。无 AI 评分或 B2B 信号检测。",
           },
           {
-            h3: "等候名单邮件验证 — $9.9/月一口价",
+            h3: "等候名单邮件验证 — $29/月一口价",
             p: "MX + 拼写 + 一次性验证、双重确认，外加每个报名的 AI 转化评分。含上线就绪建议。",
-            link: { href: "/join", text: "免费体验 5 次邮箱审计", suffix: "，之后 $9.9/月一口价。" },
+            link: { href: "/join", text: "免费体验 5 次邮箱审计", suffix: "，之后 $29/月一口价。" },
           },
         ],
       },

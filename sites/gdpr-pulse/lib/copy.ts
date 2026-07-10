@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Vanta $10K/yr? · $9.9/mo flat",
+    badge: "Vanta $10K/yr? · $29/mo flat",
     title: "GDPR compliance self-check for indie SaaS",
     subtitle:
-      "Scan your stack, score GDPR gaps, and generate a privacy policy draft. 5 free scans, then $9.9/mo.",
+      "Scan your stack, score GDPR gaps, and generate a privacy policy draft. 5 free scans, then $29/mo.",
     ctaPrimary: "Run free GDPR scan",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Vanta $10K/yr" },
+      { stat: "$29", label: "flat/mo vs Vanta $10K/yr" },
       { stat: "258+", label: "GDPR checkpoints" },
       { stat: "3 min", label: "to first compliance report" },
     ],
@@ -83,7 +83,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited scans. No $10K/year Vanta contracts for bootstrapped founders.",
       },
     ],
@@ -107,7 +107,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Ship to EU customers without $10K compliance tools",
-      subtitle: "5 free scans · then $9.9/mo unlimited",
+      subtitle: "5 free scans · then $29/mo unlimited",
       ctaPrimary: "Run free GDPR scan",
       ctaSecondary: "View pricing",
     },
@@ -119,17 +119,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Vanta 年费 $10K？· $9.9/月一口价",
+    badge: "Vanta 年费 $10K？· $29/月一口价",
     title: "独立开发者 GDPR 合规自检",
     subtitle:
-      "扫描技术栈、评分合规缺口、生成隐私政策草稿。免费体验 5 次，之后 $9.9/月。",
+      "扫描技术栈、评分合规缺口、生成隐私政策草稿。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费 GDPR 自检",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月 vs Vanta $10K/年" },
+      { stat: "$29", label: "一口价/月 vs Vanta $10K/年" },
       { stat: "258+", label: "GDPR 检查点" },
       { stat: "3 分钟", label: "出首份合规报告" },
     ],
@@ -200,7 +200,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限扫描。自举创始人不必签 $10K/年 Vanta 合同。",
       },
     ],
@@ -224,7 +224,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用 $10K 合规工具也能服务欧盟客户",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月无限扫描",
+      subtitle: "免费体验 5 次 · 之后 $29/月无限扫描",
       ctaPrimary: "免费 GDPR 自检",
       ctaSecondary: "查看定价",
     },
@@ -253,7 +253,7 @@ export const joinCopy = {
       "Cookie consent audit",
       "Priority support for indie founders",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -279,7 +279,7 @@ export const joinCopy = {
       "Cookie 同意审计",
       "独立开发者优先支持",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Dynares $99/mo · we batch 20 keyword pages for $9.9/mo",
+    badge: "Dynares $99/mo · we batch 20 keyword pages for $29/mo",
     title: "Bulk landing pages for Google Ads keywords",
     subtitle:
-      "Paste your keyword list, get a customized landing page per keyword in 60 seconds. SEO meta, 4 styles, HTML export. 5 free batch runs, then $9.9/mo.",
+      "Paste your keyword list, get a customized landing page per keyword in 60 seconds. SEO meta, 4 styles, HTML export. 5 free batch runs, then $29/mo.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/studio",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free batch runs · then $9.9/mo",
+    note: "5 free batch runs · then $29/mo",
     stats: [
       { stat: "20", label: "keywords per batch" },
       { stat: "60s", label: "avg batch time" },
@@ -81,7 +81,7 @@ export const homeCopy = {
       {
         name: "Lisa",
         role: "Indie Hacker",
-        text: "Dynares wanted $99/mo. This does 80% of the job for $9.9 — perfect for indie ad budgets.",
+        text: "Dynares wanted $99/mo. This does 80% of the job for $29 — perfect for indie ad budgets.",
       },
       {
         name: "Tom",
@@ -92,8 +92,8 @@ export const homeCopy = {
     closing: {
       title: "Stop sending all ads to one generic page",
       subtitle:
-        "Google rewards keyword relevance. Batch generate landing pages, boost Quality Score, lower CPC. $9.9/mo unlimited batches.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "Google rewards keyword relevance. Batch generate landing pages, boost Quality Score, lower CPC. $29/mo unlimited batches.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try free",
     },
     productDemo: {
@@ -127,15 +127,15 @@ export const homeCopy = {
     ],
   },
   zh: {
-    badge: "Dynares $99/月 · 我们 $9.9/月批量生成 20 个关键词落地页",
+    badge: "Dynares $99/月 · 我们 $29/月批量生成 20 个关键词落地页",
     title: "Google Ads 关键词批量落地页生成器",
     subtitle:
-      "粘贴关键词列表，每个关键词 60 秒生成定制落地页。SEO meta、4 种风格、HTML 导出。免费体验 5 次批量生成，之后 $9.9/月。",
+      "粘贴关键词列表，每个关键词 60 秒生成定制落地页。SEO meta、4 种风格、HTML 导出。免费体验 5 次批量生成，之后 $29/月。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/studio",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "20", label: "关键词/批次" },
       { stat: "60 秒", label: "平均批量生成" },
@@ -206,7 +206,7 @@ export const homeCopy = {
       {
         name: "Lisa",
         role: "Indie Hacker",
-        text: "Dynares 要 $99/月。这个 $9.9 做到 80% 功能 — 适合 indie 广告预算。",
+        text: "Dynares 要 $99/月。这个 $29 做到 80% 功能 — 适合 indie 广告预算。",
       },
       {
         name: "Tom",
@@ -217,8 +217,8 @@ export const homeCopy = {
     closing: {
       title: "别再让所有广告指向同一个通用页面",
       subtitle:
-        "Google 奖励关键词相关性。批量生成落地页，提升质量得分，降低 CPC。$9.9/月无限批量生成。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "Google 奖励关键词相关性。批量生成落地页，提升质量得分，降低 CPC。$29/月无限批量生成。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {

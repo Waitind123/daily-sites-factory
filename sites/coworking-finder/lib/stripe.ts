@@ -21,8 +21,8 @@ export function getStripe() {
   });
 }
 
-export const PRICE_USD = 990;
-export const PRICE_CNY_MONTHLY = 6900;
+export const PRICE_USD = 2900;
+export const PRICE_CNY_MONTHLY = 19900;
 
 export async function createCnyCheckoutSession(origin: string, locale: Locale = "en") {
   const product = getStripeProductCopy(locale);
@@ -61,13 +61,6 @@ export async function createCheckoutSession(
   payCurrency: "cny" | "usd" = "usd"
 ) {
   const product = getStripeProductCopy(locale);
-  if (payCurrency !== "cny") {
-    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency: payCurrency });
-    if (polarUrl) {
-      return { demo: false as const, url: polarUrl };
-    }
-  }
-
   const stripe = getStripe();
 
   if (!stripe) {

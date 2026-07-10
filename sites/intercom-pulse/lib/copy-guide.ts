@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Intercom Alternative for Indie Hackers — Customer Chat Guide",
       description:
-        "Intercom starts at $29/seat plus $0.99 per Fin resolution. Compare customer chat tools for indie SaaS. Find a $9.9/mo flat-rate alternative with AI agent and help center.",
+        "Intercom starts at $29/seat plus $0.99 per Fin resolution. Compare customer chat tools for indie SaaS. Find a $29/mo flat-rate alternative with AI agent and help center.",
     },
     h1: "2026 Intercom Alternative for Indie Hackers: Customer Chat Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Calm inbox for SaaS founders. AI agents included without per-resolution fees. Per-user pricing adds up when you hire help.",
           },
           {
-            h3: "Intercom Pulse — $9.9/mo flat",
+            h3: "Intercom Pulse — $29/mo flat",
             p: "Built for indie hackers who rage-quit Intercom pricing. Live chat widget, AI agent from keyword-matched help center, shared inbox. No per-seat or per-resolution fees.",
-            link: { href: "/join", text: "5 free conversation actions", suffix: ", then $9.9/mo flat. Cancel anytime." },
+            link: { href: "/join", text: "5 free conversation actions", suffix: ", then $29/mo flat. Cancel anytime." },
           },
         ],
       },
@@ -97,7 +97,7 @@ export const guideCopy = {
         h2: "Pricing math for bootstrapped founders",
         paragraphs: [
           "Intercom Essential + Fin (moderate volume): $29/seat + ~$300 Fin/mo × 12 = ~$3,948/year for one founder with modest AI usage.",
-          "Intercom Pulse: $9.9/mo × 12 = $118.80/year, unlimited conversations and AI replies. Add a VA without adding a seat fee.",
+          "Intercom Pulse: $29/mo × 12 = $118.80/year, unlimited conversations and AI replies. Add a VA without adding a seat fee.",
           "For bootstrapped founders, flat pricing means you can afford to actually talk to customers. Metered AI tools train you to hide the chat widget until churn spikes.",
         ],
         after: [
@@ -107,7 +107,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Open your chat inbox free",
-      subtitle: "5 free conversation actions · AI agent · $9.9/mo unlimited",
+      subtitle: "5 free conversation actions · AI agent · $29/mo unlimited",
       button: "Start chatting →",
     },
   },
@@ -115,7 +115,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Intercom 平替指南 — 客户聊天选型",
       description:
-        "Intercom 起步 $29/坐席/月，Fin AI 另收 $0.99/次。对比独立开发者客户聊天工具，找到 $9.9/月一口价、AI 客服与帮助中心的替代方案。",
+        "Intercom 起步 $29/坐席/月，Fin AI 另收 $0.99/次。对比独立开发者客户聊天工具，找到 $29/月一口价、AI 客服与帮助中心的替代方案。",
     },
     h1: "2026 独立开发者 Intercom 平替：客户聊天选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -160,9 +160,9 @@ export const guideCopy = {
             p: "面向 SaaS 创始人的简洁收件箱。AI 客服含在价内不按次收费。按人头加价，招人帮忙就疼。",
           },
           {
-            h3: "Intercom 平替 — $9.9/月 一口价",
+            h3: "Intercom 平替 — $29/月 一口价",
             p: "为怒退 Intercom 定价的独立开发者打造。在线聊天组件、关键词匹配帮助中心的 AI 客服、共享收件箱。不按坐席或按次 AI 收费。",
-            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $9.9/月一口价。随时可取消。" },
+            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $29/月一口价。随时可取消。" },
           },
         ],
       },
@@ -207,7 +207,7 @@ export const guideCopy = {
         h2: "自举创始人的定价账",
         paragraphs: [
           "Intercom Essential + Fin（中等用量）：$29/坐席 + 约 $300 Fin/月 × 12 = 约 $3,948/年（一人创始人适度 AI 使用）。",
-          "Intercom 平替：$9.9/月 × 12 = $118.80/年，对话与 AI 回复不限量。加助理不加坐席费。",
+          "Intercom 平替：$29/月 × 12 = $118.80/年，对话与 AI 回复不限量。加助理不加坐席费。",
           "对自举创始人，一口价意味着你付得起真正与客户对话。按次 AI 工具训练你藏起聊天组件直到流失飙升。",
         ],
         after: [
@@ -217,7 +217,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费打开聊天收件箱",
-      subtitle: "免费体验 5 次 · AI 客服 · $9.9/月 不限量",
+      subtitle: "免费体验 5 次 · AI 客服 · $29/月 不限量",
       button: "开始聊天 →",
     },
   },

@@ -7,7 +7,7 @@ export const calcCopy = {
       "Enter commute parameters and compare annual CO₂e across full office, hybrid, and fully remote scenarios.",
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free calculations left`,
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited calculations + report export",
     commuteLabel: (km: number) => `One-way commute distance: ${km} km`,
     officeDaysLabel: (days: number) => `Office days per week: ${days} days`,
@@ -44,7 +44,7 @@ export const calcCopy = {
     subtitle: "输入通勤参数，对比全勤、混合、完全远程三种场景的年度 CO₂e 排放。",
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限计算 + 报告导出",
     commuteLabel: (km: number) => `单程通勤距离：${km} km`,
     officeDaysLabel: (days: number) => `每周到岗天数：${days} 天`,

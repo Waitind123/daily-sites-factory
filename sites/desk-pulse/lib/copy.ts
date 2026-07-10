@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Zendesk $98/agent? · $9.9/mo flat",
+    badge: "Zendesk $98/agent? · $29/mo flat",
     title: "Help desk for indie hackers — without the Zendesk tax",
     subtitle:
-      "Shared inbox, AI reply suggestions, built-in knowledge base. 5 free tickets, then $9.9/mo unlimited.",
+      "Shared inbox, AI reply suggestions, built-in knowledge base. 5 free tickets, then $29/mo unlimited.",
     ctaPrimary: "Open inbox free",
     ctaPrimaryHref: "/inbox",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Zendesk $98+/agent" },
+      { stat: "$29", label: "flat/mo vs Zendesk $98+/agent" },
       { stat: "AI", label: "reply suggestions from your KB" },
       { stat: "2 min", label: "to handle your first ticket" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited tickets and AI suggestions. No per-seat fees like Zendesk $98/agent.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "SaaS founder",
-        text: "Zendesk wanted $98/agent for me and my VA. Desk Pulse handles both for $9.9/mo.",
+        text: "Zendesk wanted $98/agent for me and my VA. Desk Pulse handles both for $29/mo.",
       },
       {
         name: "Yuki K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying per agent",
-      subtitle: "5 free tickets · then $9.9/mo for unlimited inbox + AI",
+      subtitle: "5 free tickets · then $29/mo for unlimited inbox + AI",
       ctaPrimary: "Open inbox free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Zendesk $98/坐席？· $9.9/月一口价",
+    badge: "Zendesk $98/坐席？· $29/月一口价",
     title: "独立开发者的极简客服 — 不交 Zendesk 税",
     subtitle:
-      "共享收件箱、AI 回复建议、内置知识库。免费体验 5 次，之后 $9.9/月不限量。",
+      "共享收件箱、AI 回复建议、内置知识库。免费体验 5 次，之后 $29/月不限量。",
     ctaPrimary: "免费打开收件箱",
     ctaPrimaryHref: "/inbox",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Zendesk 要 $98+/坐席" },
+      { stat: "$29", label: "一口价/月，Zendesk 要 $98+/坐席" },
       { stat: "AI", label: "基于知识库生成回复建议" },
       { stat: "2 分钟", label: "处理第一张工单" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "工单与 AI 建议不限量。不像 Zendesk 按 $98/坐席收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "SaaS 创始人",
-        text: "Zendesk 我和助理两个人要 $98/坐席。极简客服 $9.9/月全搞定。",
+        text: "Zendesk 我和助理两个人要 $98/坐席。极简客服 $29/月全搞定。",
       },
       {
         name: "Yuki K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再按坐席付费",
-      subtitle: "免费 5 次 · 之后 $9.9/月 无限收件箱 + AI",
+      subtitle: "免费 5 次 · 之后 $29/月 无限收件箱 + AI",
       ctaPrimary: "免费打开收件箱",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Open / pending / resolved tracking",
       "No per-agent fees",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "待处理 / 跟进 / 已解决追踪",
       "不按坐席收费",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

@@ -1,6 +1,6 @@
 # WCAG Alt-Text 生成器
 
-网页代理商 WCAG alt 文本批量生成 SaaS — $9.9/月，免费体验 5 次。
+网页代理商 WCAG alt 文本批量生成 SaaS — $29/月，免费体验 5 次。
 
 ## 开发
 

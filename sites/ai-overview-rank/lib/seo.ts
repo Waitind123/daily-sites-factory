@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-overview-rank.vercel.app",
     name: "AIO Rank",
-    title: "AIO Rank — AI Overview + classic SERP tracking for indie devs, $9.9/mo",
+    title: "AIO Rank — AI Overview + classic SERP tracking for indie devs, $29/mo",
     description:
-      "5 free dual-track checks. Track Google classic rank AND AI Overview citations. SEMrush ignores AI Overviews — $9.9/mo flat for indie sites.",
+      "5 free dual-track checks. Track Google classic rank AND AI Overview citations. SEMrush ignores AI Overviews — $29/mo flat for indie sites.",
     keywords: [
       "AI Overview rank tracker",
       "Google AI Overview SEO",
@@ -24,9 +24,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-overview-rank.vercel.app",
     name: "AI Overview 排名追踪",
-    title: "AI Overview 排名追踪 — 经典排名 + AI 摘要双轨，独立开发者 $9.9/月",
+    title: "AI Overview 排名追踪 — 经典排名 + AI 摘要双轨，独立开发者 $29/月",
     description:
-      "免费体验 5 次双轨查询。同时追踪 Google 经典排名与 AI Overview 引用。SEMrush 忽略 AI 摘要 — $9.9/月一口价。",
+      "免费体验 5 次双轨查询。同时追踪 Google 经典排名与 AI Overview 引用。SEMrush 忽略 AI 摘要 — $29/月一口价。",
     keywords: [
       "AI Overview 排名追踪",
       "Google AI 摘要 SEO",

@@ -40,7 +40,7 @@ export const analyzeCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free diagnoses. Subscribe for unlimited conversion scans, drop-off reports, and A/B playbooks.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Diagnose a pricing page",
     pageUrl: "Pricing page URL",
     pageUrlPlaceholder: "https://yoursite.com/pricing",
@@ -74,7 +74,7 @@ export const analyzeCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费诊断。订阅后可无限转化扫描、流失报告与 A/B 方案。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "诊断定价页",
     pageUrl: "定价页链接",
     pageUrlPlaceholder: "https://你的网站.com/pricing",

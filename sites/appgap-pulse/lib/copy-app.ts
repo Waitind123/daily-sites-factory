@@ -50,7 +50,7 @@ export const mineCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 scans. Subscribe for unlimited review clustering, scoring, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Scan a category",
     keyword: "Category keyword",
     keywordPlaceholder: "e.g. invoice, habit, booking, fitness, notes",
@@ -71,7 +71,7 @@ export const mineCopy = {
     freeSearches: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次扫描。订阅后可无限聚类、评分并导出机会列表。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "扫描品类",
     keyword: "品类关键词",
     keywordPlaceholder: "例如：发票、习惯、预约、健身、笔记",

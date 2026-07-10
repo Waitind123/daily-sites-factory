@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-waitlist-orpin.vercel.app",
     name: "AI Waitlist",
-    title: "AI Waitlist — AI-powered waitlist validation for indie devs, $9.9/mo",
+    title: "AI Waitlist — AI-powered waitlist validation for indie devs, $29/mo",
     description:
-      "5 free AI waitlist analyses. Prefinery $99/mo? $9.9/mo flat: lead scoring, signup quality grades, launch recommendations, referral boost.",
+      "5 free AI waitlist analyses. Prefinery $99/mo? $29/mo flat: lead scoring, signup quality grades, launch recommendations, referral boost.",
     keywords: [
       "AI waitlist",
       "waitlist validation",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-waitlist-orpin.vercel.app",
     name: "AI 等候名单验证",
-    title: "AI 等候名单验证 — AI 驱动报名质量评分，独立开发者 $9.9/月",
+    title: "AI 等候名单验证 — AI 驱动报名质量评分，独立开发者 $29/月",
     description:
-      "免费体验 5 次 AI 分析。Prefinery $99/月太贵？$9.9/月一口价：线索评分、报名质量分级、上线建议、推荐裂变。",
+      "免费体验 5 次 AI 分析。Prefinery $99/月太贵？$29/月一口价：线索评分、报名质量分级、上线建议、推荐裂变。",
     keywords: [
       "AI 等候名单",
       "等候名单验证",

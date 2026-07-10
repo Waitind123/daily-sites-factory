@@ -9,7 +9,7 @@ export const bookmarksCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've saved 5 links. Subscribe for unlimited bookmarks, folders, and public share pages.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     searchPlaceholder: "Search bookmarks… (⌘K)",
     formTitle: "Save a link",
     urlLabel: "URL",
@@ -37,7 +37,7 @@ export const bookmarksCopy = {
     freeSaves: "免费额度",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已保存 5 个链接。订阅后可无限保存、创建文件夹与公开分享页。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     searchPlaceholder: "搜索书签…（⌘K）",
     formTitle: "保存链接",
     urlLabel: "链接",

@@ -90,7 +90,7 @@ export default function GuidePage() {
       <p>
         非会员可免费体验 5 次共工会话。体验后如果觉得有效，{" "}
         <Link href="/join" className="text-brand-500 hover:underline">
-          $9.9/月
+          $29/月
         </Link>{" "}
         即可无限使用。比 Focusmate 的 $5/周（1v1 视频）便宜，比咖啡馆日票更安静。
       </p>
@@ -149,7 +149,7 @@ export default function GuidePage() {
           </tr>
           <tr>
             <td>远程共工室</td>
-            <td>$9.9/月</td>
+            <td>$29/月</td>
             <td>零</td>
             <td>即时</td>
             <td>独立开发者、写作者、远程工程师</td>
@@ -174,7 +174,7 @@ export default function GuidePage() {
         不需要注册复杂账号，不需要下载 App，打开浏览器就能开始。建议第一次选<strong>番茄钟模式 + 雨声环境音</strong>，25 分钟后你会感受到差异。
       </p>
       <p>
-        如果 5 次免费体验后你觉得有价值，$9.9/月解锁无限会话。没有年付绑架，没有功能分级——一个价格，全部功能。这就是 levelsio 风格的定价：简单、直接、第一天就收费。
+        如果 5 次免费体验后你觉得有价值，$29/月解锁无限会话。没有年付绑架，没有功能分级——一个价格，全部功能。这就是 levelsio 风格的定价：简单、直接、第一天就收费。
       </p>
 
       <div className="not-prose mt-10 rounded-2xl bg-brand-600/10 border border-brand-200 p-8 text-center">
@@ -191,7 +191,7 @@ export default function GuidePage() {
             href="/join"
             className="inline-block rounded-xl border border-brand-300 px-8 py-3 text-brand-500 font-semibold hover:bg-brand-100 transition-colors"
           >
-            订阅 $9.9/月
+            订阅 $29/月
           </Link>
         </div>
       </div>

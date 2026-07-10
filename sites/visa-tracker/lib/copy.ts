@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Nomad List visa data 18mo stale · $9.9/mo",
+    badge: "Nomad List visa data 18mo stale · $29/mo",
     title: "Track digital nomad visa policies & expiry dates",
     subtitle:
-      "Real-time policy updates, expiry reminders, and change alerts for 35+ programs. 5 free tracks, then $9.9/mo.",
+      "Real-time policy updates, expiry reminders, and change alerts for 35+ programs. 5 free tracks, then $29/mo.",
     ctaPrimary: "Start tracking free",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tracks · then $9.9/mo",
+    note: "5 free tracks · then $29/mo",
     stats: [
       { stat: "35+", label: "visa programs monitored" },
       { stat: "7d", label: "policy change alerts" },
@@ -90,14 +90,14 @@ export const homeCopy = {
       {
         name: "Elena",
         role: "Indie hacker",
-        text: "$9.9/mo vs immigration lawyer $300/hr. The policy diff view alone is worth it.",
+        text: "$29/mo vs immigration lawyer $300/hr. The policy diff view alone is worth it.",
       },
     ],
     closing: {
       title: "Stop relying on 18-month-old visa data",
       subtitle:
-        "$9.9/mo flat. Real-time policy tracking + expiry reminders for 35+ digital nomad visas.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Real-time policy tracking + expiry reminders for 35+ digital nomad visas.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Start tracking free",
     },
     productDemo: {
@@ -108,15 +108,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Nomad List 签证数据过时 18 个月 · $9.9/月",
+    badge: "Nomad List 签证数据过时 18 个月 · $29/月",
     title: "追踪数字游民签证政策与到期日",
     subtitle:
-      "实时政策更新、到期提醒与变更告警，覆盖 35+ 签证项目。免费追踪 5 次，之后 $9.9/月。",
+      "实时政策更新、到期提醒与变更告警，覆盖 35+ 签证项目。免费追踪 5 次，之后 $29/月。",
     ctaPrimary: "免费开始追踪",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "35+", label: "监控签证项目" },
       { stat: "7天", label: "政策变更告警" },
@@ -196,13 +196,13 @@ export const homeCopy = {
       {
         name: "Elena",
         role: "独立开发者",
-        text: "$9.9/月对比移民律师 $300/小时。政策对比视图就值回票价。",
+        text: "$29/月对比移民律师 $300/小时。政策对比视图就值回票价。",
       },
     ],
     closing: {
       title: "别再依赖 18 个月前的签证数据",
-      subtitle: "$9.9/月一口价。35+ 数字游民签证实时政策追踪 + 到期提醒。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "$29/月一口价。35+ 数字游民签证实时政策追踪 + 到期提醒。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费开始追踪",
     },
     productDemo: {

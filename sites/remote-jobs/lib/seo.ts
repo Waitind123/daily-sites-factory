@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://remote-jobs-azure.vercel.app",
     name: "Remote Jobs",
-    title: "Remote Jobs — Curated remote board for indie hackers, $9.9/mo",
+    title: "Remote Jobs — Curated remote board for indie hackers, $29/mo",
     description:
-      "5 free job detail views. We Work Remotely $149/yr? $9.9/mo flat: 200+ remote roles, transparent salaries, stack filters, unlimited company posts.",
+      "5 free job detail views. We Work Remotely $149/yr? $29/mo flat: 200+ remote roles, transparent salaries, stack filters, unlimited company posts.",
     keywords: [
       "remote jobs",
       "remote work board",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://remote-jobs-azure.vercel.app",
     name: "远程工作板",
-    title: "远程工作板 — 独立开发者远程职位聚合，$9.9/月",
+    title: "远程工作板 — 独立开发者远程职位聚合，$29/月",
     description:
-      "免费体验 5 次查看职位详情。We Work Remotely $149/年太贵？$9.9/月一口价：200+ 远程岗位、透明薪资、技术栈筛选、企业无限发帖。",
+      "免费体验 5 次查看职位详情。We Work Remotely $149/年太贵？$29/月一口价：200+ 远程岗位、透明薪资、技术栈筛选、企业无限发帖。",
     keywords: [
       "远程工作",
       "remote jobs",

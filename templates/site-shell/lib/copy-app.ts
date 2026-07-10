@@ -5,12 +5,12 @@ export const joinCopy = {
   en: {
     title: "Subscribe",
     subtitle: "One price, all features.",
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
   },
   zh: {
     title: "订阅",
     subtitle: "一口价，全功能。",
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
   },
 } as const;
 

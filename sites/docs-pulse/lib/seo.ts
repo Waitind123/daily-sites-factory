@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://docs-pulse.vercel.app",
     name: "Docs Pulse",
-    title: "Docs Pulse — GitBook alternative for indie devs, $9.9/mo flat",
+    title: "Docs Pulse — GitBook alternative for indie devs, $29/mo flat",
     description:
-      "5 free doc sites. GitBook $65/mo + per seat? $9.9/mo flat: unlimited pages, custom domain, auto llms.txt, markdown editor.",
+      "5 free doc sites. GitBook $65/mo + per seat? $29/mo flat: unlimited pages, custom domain, auto llms.txt, markdown editor.",
     keywords: [
       "API documentation",
       "GitBook alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://docs-pulse.vercel.app",
     name: "API 文档托管",
-    title: "API 文档托管 — GitBook 平替，独立开发者 $9.9/月",
+    title: "API 文档托管 — GitBook 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个文档站。GitBook $65/月 + 按人头？$9.9/月一口价：无限页面、自定义域名、自动 llms.txt、Markdown 编辑。",
+      "免费体验 5 个文档站。GitBook $65/月 + 按人头？$29/月一口价：无限页面、自定义域名、自动 llms.txt、Markdown 编辑。",
     keywords: [
       "API 文档托管",
       "GitBook 替代品",

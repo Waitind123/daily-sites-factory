@@ -6,8 +6,8 @@ export const siteMeta = {
     zh: "签证追踪器",
   },
   joinLabel: {
-    en: "Subscribe · $9.9/mo",
-    zh: "订阅 · $9.9/月",
+    en: "Subscribe · $29/mo",
+    zh: "订阅 · $29/月",
   },
   nav: [
     {

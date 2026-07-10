@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Intercom $29/seat + $0.99/resolution? · $9.9/mo flat",
+    badge: "Intercom $29/seat + $0.99/resolution? · $29/mo flat",
     title: "Customer chat for indie SaaS — without the Intercom bill",
     subtitle:
-      "Live chat widget, shared inbox, AI agent, built-in help center. 5 free conversations, then $9.9/mo unlimited.",
+      "Live chat widget, shared inbox, AI agent, built-in help center. 5 free conversations, then $29/mo unlimited.",
     ctaPrimary: "Open inbox free",
     ctaPrimaryHref: "/inbox",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Intercom $29+/seat + Fin fees" },
+      { stat: "$29", label: "flat/mo vs Intercom $29+/seat + Fin fees" },
       { stat: "AI", label: "agent with zero per-resolution charges" },
       { stat: "2 min", label: "to embed chat on your site" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited conversations and AI replies. No per-seat or per-resolution surprise bills.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex P.",
         role: "SaaS founder",
-        text: "Intercom Fin wanted $990/mo on top of seats for 2k chats. Intercom Pulse handles it for $9.9 flat.",
+        text: "Intercom Fin wanted $990/mo on top of seats for 2k chats. Intercom Pulse handles it for $29 flat.",
       },
       {
         name: "Lin M.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying per seat and per resolution",
-      subtitle: "5 free conversations · then $9.9/mo for chat + AI + inbox",
+      subtitle: "5 free conversations · then $29/mo for chat + AI + inbox",
       ctaPrimary: "Open inbox free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Intercom $29/坐席 + $0.99/次 AI？· $9.9/月一口价",
+    badge: "Intercom $29/坐席 + $0.99/次 AI？· $29/月一口价",
     title: "独立开发者的客户聊天 — 不交 Intercom 税",
     subtitle:
-      "在线聊天组件、共享收件箱、AI 客服、内置帮助中心。免费体验 5 次，之后 $9.9/月不限量。",
+      "在线聊天组件、共享收件箱、AI 客服、内置帮助中心。免费体验 5 次，之后 $29/月不限量。",
     ctaPrimary: "免费打开收件箱",
     ctaPrimaryHref: "/inbox",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Intercom 要 $29+/坐席 + Fin 费" },
+      { stat: "$29", label: "一口价/月，Intercom 要 $29+/坐席 + Fin 费" },
       { stat: "AI", label: "客服零按次收费" },
       { stat: "2 分钟", label: "嵌入网站聊天组件" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "对话与 AI 回复不限量。没有按坐席或按次 AI 的意外账单。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex P.",
         role: "SaaS 创始人",
-        text: "Intercom Fin 在坐席费之外每月还要 $990（2000 次对话）。Intercom 平替 $9.9 一口价搞定。",
+        text: "Intercom Fin 在坐席费之外每月还要 $990（2000 次对话）。Intercom 平替 $29 一口价搞定。",
       },
       {
         name: "Lin M.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再按坐席和按次 AI 付费",
-      subtitle: "免费 5 次 · 之后 $9.9/月 聊天 + AI + 收件箱",
+      subtitle: "免费 5 次 · 之后 $29/月 聊天 + AI + 收件箱",
       ctaPrimary: "免费打开收件箱",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Unlimited conversations",
       "No per-seat pricing",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "对话不限量",
       "不按坐席收费",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

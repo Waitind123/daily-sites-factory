@@ -40,8 +40,8 @@ bash scripts/setup-github-stripe-secret.sh
 | 站点 | 地址 | 收款方式 |
 |------|------|----------|
 | ai-headshots | https://ai-headshots-navy.vercel.app/join | Stripe 优先（覆盖 Polar） |
-| nomad-cities | https://nomad-cities.vercel.app/join | Stripe ¥699/年 |
-| remote-jobs | https://remote-jobs-azure.vercel.app/join | Stripe ¥699/年 |
+| nomad-cities | https://nomad-cities.vercel.app/join | Stripe ¥199/月 |
+| remote-jobs | https://remote-jobs-azure.vercel.app/join | Stripe ¥199/月 |
 
 以后每次 **Deploy site on push** 也会自动同步 Stripe 密钥，无需再手动配 Vercel。
 

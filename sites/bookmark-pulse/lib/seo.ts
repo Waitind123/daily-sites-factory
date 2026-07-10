@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://bookmark-pulse.vercel.app",
     name: "Bookmark Pulse",
-    title: "Bookmark Pulse — Pocket alternative for indie hackers, $9.9/mo flat",
+    title: "Bookmark Pulse — Pocket alternative for indie hackers, $29/mo flat",
     description:
-      "5 free bookmark saves. Mozilla killed Pocket? $9.9/mo flat: folders, public share links, instant search. No AI second brain.",
+      "5 free bookmark saves. Mozilla killed Pocket? $29/mo flat: folders, public share links, instant search. No AI second brain.",
     keywords: [
       "Pocket alternative",
       "bookmark manager",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://bookmark-pulse.vercel.app",
     name: "书签收藏平替",
-    title: "Bookmark Pulse — Pocket 平替，独立开发者 $9.9/月",
+    title: "Bookmark Pulse — Pocket 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次保存。Mozilla 关停 Pocket？$9.9/月一口价：文件夹、公开分享、即时搜索。不要 AI 第二大脑。",
+      "免费体验 5 次保存。Mozilla 关停 Pocket？$29/月一口价：文件夹、公开分享、即时搜索。不要 AI 第二大脑。",
     keywords: [
       "Pocket 替代品",
       "书签管理",

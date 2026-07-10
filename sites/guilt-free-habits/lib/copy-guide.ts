@@ -5,7 +5,7 @@ export const guideCopy = {
     metaTitle:
       "Streak Anxiety Habit Tracker Alternative — Why Missing One Day Should Not Reset Progress",
     metaDescription:
-      "Streaks and Habitica punish missed days. Learn Lally 2010 habit research, weekly 4/7 goals, and a guilt-free tracker at $9.9/mo.",
+      "Streaks and Habitica punish missed days. Learn Lally 2010 habit research, weekly 4/7 goals, and a guilt-free tracker at $29/mo.",
     title: "Streak Anxiety Habit Tracker Alternative: Why Missing One Day Should Not Reset Progress",
     updated: "Updated June 2026 · 10 min read",
     ctaTitle: "Ready to try weekly goals instead of streaks?",
@@ -53,7 +53,7 @@ export const guideCopy = {
         text: "Instead of \"did you do it today or lose everything\", ask \"did you show up 4 times this week?\" That matches how real humans live: travel Tuesdays, low-energy Fridays, recovery Sundays. Our {link0} defaults to weekly targets. Non-members get 5 free check-ins, then {link1} for unlimited habits and reports.",
         links: [
           { href: "/track", label: "tracking page" },
-          { href: "/join", label: "$9.9/mo" },
+          { href: "/join", label: "$29/mo" },
         ],
       },
       {
@@ -75,7 +75,7 @@ export const guideCopy = {
           ["Miss one day → streak resets", "Miss one day → week continues"],
           ["Red X and guilt screens", "Neutral progress curve"],
           ["Habitica RPG quests", "3-second tap check-in"],
-          ["$5–12/mo for anxiety", "$9.9/mo flat, cancel anytime"],
+          ["$5–12/mo for anxiety", "$29/mo flat, cancel anytime"],
         ],
       },
       {
@@ -95,7 +95,7 @@ export const guideCopy = {
         text: "You do not need another 100-day streak photo. Open the {link0}, pick the smallest habit, tap once. That is day 1 of a weekly rhythm. Try 5 free check-ins. If 4/7 feels kinder than 47→0, {link1} — less than a coffee, sustainable for the builder maintaining it.",
         links: [
           { href: "/track", label: "guilt-free tracker" },
-          { href: "/join", label: "subscribe at $9.9/mo" },
+          { href: "/join", label: "subscribe at $29/mo" },
         ],
       },
     ],
@@ -103,7 +103,7 @@ export const guideCopy = {
   zh: {
     metaTitle: "连续天数焦虑的习惯 App 替代品 — 为什么错过一天不该归零进度",
     metaDescription:
-      "Streaks 和 Habitica 惩罚错过的一天。了解 Lally 2010 习惯研究、每周 4/7 目标制，以及 $9.9/月的无罪恶感打卡工具。",
+      "Streaks 和 Habitica 惩罚错过的一天。了解 Lally 2010 习惯研究、每周 4/7 目标制，以及 $29/月的无罪恶感打卡工具。",
     title: "连续天数焦虑的习惯 App 替代品：为什么错过一天不该归零你的进度",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
     ctaTitle: "准备好用周目标替代连续天数了吗？",
@@ -151,7 +151,7 @@ export const guideCopy = {
         text: "不再问「今天做了没，否则一切归零」，而是问「这周出现了 4 次吗？」这符合真实生活：周二出差、周五低能量、周日恢复。我们的{link0}默认周目标制。非会员可免费体验 5 次打卡，之后{link1}无限习惯与报表。",
         links: [
           { href: "/track", label: "习惯追踪页" },
-          { href: "/join", label: "$9.9/月" },
+          { href: "/join", label: "$29/月" },
         ],
       },
       {
@@ -174,7 +174,7 @@ export const guideCopy = {
           ["错过一天 → 连续归零", "错过一天 → 本周继续"],
           ["红色叉号与罪恶感弹窗", "中性进度曲线"],
           ["Habitica RPG 任务", "3 秒一键打卡"],
-          ["$5–12/月买来焦虑", "$9.9/月一口价，随时取消"],
+          ["$5–12/月买来焦虑", "$29/月一口价，随时取消"],
         ],
       },
       {
@@ -194,7 +194,7 @@ export const guideCopy = {
         text: "你不需要又一张 100 天连续打卡截图。现在打开{link0}，选最小的习惯，点一下。这是每周节奏的第 1 天。免费体验 5 次。如果 4/7 比 47→0 更温柔，就{link1}——比一杯咖啡便宜，也能让维护它的开发者持续运营。",
         links: [
           { href: "/track", label: "无罪恶感习惯打卡" },
-          { href: "/join", label: "订阅 $9.9/月" },
+          { href: "/join", label: "订阅 $29/月" },
         ],
       },
     ],

@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://carbon-calculator-wine.vercel.app",
     name: "Carbon Calculator",
-    title: "Carbon Calculator — Remote work emissions, $9.9/mo",
+    title: "Carbon Calculator — Remote work emissions, $29/mo",
     description:
       "5 free calculations. Compare full office vs hybrid vs fully remote CO₂e. ESG baseline tool for indie devs and SMB teams.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://carbon-calculator-wine.vercel.app",
     name: "远程碳足迹",
-    title: "远程碳足迹 — 混合办公碳排放计算器，$9.9/月",
+    title: "远程碳足迹 — 混合办公碳排放计算器，$29/月",
     description:
       "免费体验 5 次。计算远程 vs 通勤碳排放，三场景对比，支持 ESG 报告导出。独立开发者 & 中小团队 Scope 3 基线工具。",
     keywords: [

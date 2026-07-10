@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Meetup.com $170/yr · we do RSVP + waitlist for $9.9/mo",
+    badge: "Meetup.com $170/yr · we do RSVP + waitlist for $29/mo",
     title: "Lightweight meetup RSVP, waitlist & check-in for indie organizers",
     subtitle:
-      "Auto capacity control, waitlist notifications, check-in view & reminder templates. 5 free event manages, then $9.9/mo.",
+      "Auto capacity control, waitlist notifications, check-in view & reminder templates. 5 free event manages, then $29/mo.",
     ctaPrimary: "Try events free",
     ctaPrimaryHref: "/events",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
       { stat: "5", label: "sample events" },
       { stat: "6", label: "cities covered" },
@@ -76,7 +76,7 @@ export const homeCopy = {
       {
         name: "Ken",
         role: "Shanghai indie organizer",
-        text: "Meetup.com is $170/yr. This is $9.9/mo for RSVP + waitlist. Saves 2+ hours/week on spreadsheets.",
+        text: "Meetup.com is $170/yr. This is $29/mo for RSVP + waitlist. Saves 2+ hours/week on spreadsheets.",
       },
       {
         name: "David",
@@ -92,8 +92,8 @@ export const homeCopy = {
     closing: {
       title: "Meetup.com is expensive. Google Forms is clumsy.",
       subtitle:
-        "$9.9/mo flat. RSVP + waitlist + check-in + reminders. Built for indie organizers who ship community, not enterprise events.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. RSVP + waitlist + check-in + reminders. Built for indie organizers who ship community, not enterprise events.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try events free",
     },
     productDemo: {
@@ -104,15 +104,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Meetup.com 一年 $170 · 我们 $9.9/月搞定 RSVP + 候补",
+    badge: "Meetup.com 一年 $170 · 我们 $29/月搞定 RSVP + 候补",
     title: "轻量线下聚会 RSVP、候补与签到管理",
     subtitle:
-      "自动容量控制、候补通知、签到视图与提醒模板。免费体验 5 次活动管理，之后 $9.9/月。",
+      "自动容量控制、候补通知、签到视图与提醒模板。免费体验 5 次活动管理，之后 $29/月。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/events",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "5", label: "示例活动" },
       { stat: "6", label: "覆盖城市" },
@@ -178,7 +178,7 @@ export const homeCopy = {
       {
         name: "小林",
         role: "上海 Indie 组织者",
-        text: "Meetup.com 一年 $170，这个 $9.9/月搞定 RSVP + 候补。省了每周 2 小时手动管表格。",
+        text: "Meetup.com 一年 $170，这个 $29/月搞定 RSVP + 候补。省了每周 2 小时手动管表格。",
       },
       {
         name: "大伟",
@@ -194,8 +194,8 @@ export const homeCopy = {
     closing: {
       title: "Meetup.com 太贵，Google Forms 太笨",
       subtitle:
-        "我们只要 $9.9/月。RSVP + 候补 + 签到 + 提醒。为 indie 组织者而生，不是企业活动平台。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "我们只要 $29/月。RSVP + 候补 + 签到 + 提醒。为 indie 组织者而生，不是企业活动平台。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {

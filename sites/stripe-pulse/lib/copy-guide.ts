@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 ChartMogul Alternative for Indie Hackers — Stripe Metrics Guide",
       description:
-        "ChartMogul starts at $79/mo. Compare Stripe revenue dashboards for indie SaaS. Find a $9.9/mo flat-rate MRR/ARR/churn tool without per-customer fees.",
+        "ChartMogul starts at $79/mo. Compare Stripe revenue dashboards for indie SaaS. Find a $29/mo flat-rate MRR/ARR/churn tool without per-customer fees.",
     },
     h1: "2026 ChartMogul Alternative for Indie Hackers: Stripe Metrics Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Manual MRR calculation every Monday. Error-prone. Breaks when you add annual plans or prorations. Works until you have 50+ customers.",
           },
           {
-            h3: "Stripe Pulse — $9.9/mo flat",
+            h3: "Stripe Pulse — $29/mo flat",
             p: "Built for indie hackers who want MRR/ARR/churn without per-customer fees. Connect Stripe in 2 minutes, sync weekly, see customer movements.",
-            link: { href: "/join", text: "5 free syncs to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free syncs to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -96,7 +96,7 @@ export const guideCopy = {
         paragraphs: [
           "ChartMogul Starter: $79/mo × 12 = $948/year. At $3K MRR, that's 2.6% of revenue.",
           "Baremetrics at $50/mo: $600/year, plus price increases as MRR grows.",
-          "Stripe Pulse: $9.9/mo × 12 = $118.80/year. Flat pricing regardless of customer count.",
+          "Stripe Pulse: $29/mo × 12 = $118.80/year. Flat pricing regardless of customer count.",
           "For bootstrapped founders, the break-even is immediate. One saved churned customer pays for years of dashboard access.",
         ],
         after: [
@@ -106,7 +106,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Connect Stripe and see your MRR free",
-      subtitle: "5 free syncs · MRR/ARR/churn · $9.9/mo unlimited",
+      subtitle: "5 free syncs · MRR/ARR/churn · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 ChartMogul 平替指南 — Stripe 指标仪表盘选型",
       description:
-        "ChartMogul 起步 $79/月。对比独立开发者 Stripe 收入仪表盘，找到 $9.9/月一口价、无按客户收费的 MRR/ARR/流失分析工具。",
+        "ChartMogul 起步 $79/月。对比独立开发者 Stripe 收入仪表盘，找到 $29/月一口价、无按客户收费的 MRR/ARR/流失分析工具。",
     },
     h1: "2026 独立开发者 ChartMogul 平替：Stripe 指标仪表盘选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -159,9 +159,9 @@ export const guideCopy = {
             p: "每周一手动算 MRR。容易出错。加入年付或按比例退款就崩。50 个客户以下还能凑合。",
           },
           {
-            h3: "Stripe 收入仪表盘 — $9.9/月 一口价",
+            h3: "Stripe 收入仪表盘 — $29/月 一口价",
             p: "为想要 MRR/ARR/流失率、不想按客户付费的独立开发者打造。2 分钟连接 Stripe，每周同步，查看客户变动。",
-            link: { href: "/join", text: "免费体验 5 次同步", suffix: "，之后 $9.9/月一口价。无年付绑定。" },
+            link: { href: "/join", text: "免费体验 5 次同步", suffix: "，之后 $29/月一口价。无年付绑定。" },
           },
         ],
       },
@@ -205,7 +205,7 @@ export const guideCopy = {
         paragraphs: [
           "ChartMogul 入门版：$79/月 × 12 = $948/年。$3K MRR 时占收入 2.6%。",
           "Baremetrics $50/月：$600/年，MRR 增长还会涨价。",
-          "Stripe 收入仪表盘：$9.9/月 × 12 = $118.80/年。不论客户数一口价。",
+          "Stripe 收入仪表盘：$29/月 × 12 = $118.80/年。不论客户数一口价。",
           "对自举创始人，回本立竿见影。挽回一个流失客户够付数年仪表盘费用。",
         ],
         after: [
@@ -215,7 +215,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费连接 Stripe 查看 MRR",
-      subtitle: "免费 5 次同步 · MRR/ARR/流失率 · $9.9/月 不限量",
+      subtitle: "免费 5 次同步 · MRR/ARR/流失率 · $29/月 不限量",
       button: "打开仪表盘 →",
     },
   },

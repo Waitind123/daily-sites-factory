@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "GummySearch shut down · $9.9/mo flat",
+    badge: "GummySearch shut down · $29/mo flat",
     title: "Mine Reddit pain points for your next SaaS",
     subtitle:
-      "Find 'I wish' and 'looking for alternative' posts in seconds. Validate ideas before you build. 5 free searches, then $9.9/mo.",
+      "Find 'I wish' and 'looking for alternative' posts in seconds. Validate ideas before you build. 5 free searches, then $29/mo.",
     ctaPrimary: "Mine pain points free",
     ctaPrimaryHref: "/mine",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free searches · then $9.9/mo",
+    note: "5 free searches · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs GummySearch $79+" },
+      { stat: "$29", label: "flat/mo vs GummySearch $79+" },
       { stat: "8 sec", label: "to extract pain signals" },
       { stat: "4 types", label: "I wish · alternative · frustrated · would pay" },
     ],
@@ -32,7 +32,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "Build what they want",
-          desc: "Ship a $9.9/mo micro-SaaS solving the top pain point",
+          desc: "Ship a $29/mo micro-SaaS solving the top pain point",
         },
       ],
     },
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited niche searches. No $199/mo enterprise audience research pricing.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "Solo founder",
-        text: "GummySearch died and SpyCenter wants $199/mo. Reddit Pulse found 8 pain points in my niche for $9.9.",
+        text: "GummySearch died and SpyCenter wants $199/mo. Reddit Pulse found 8 pain points in my niche for $29.",
       },
       {
         name: "Tom R.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing what to build",
-      subtitle: "5 free searches · then $9.9/mo for unlimited mining",
+      subtitle: "5 free searches · then $29/mo for unlimited mining",
       ctaPrimary: "Mine pain points free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "GummySearch 已关停 · $9.9/月一口价",
+    badge: "GummySearch 已关停 · $29/月一口价",
     title: "挖掘 Reddit 痛点，找到下一个 SaaS 方向",
     subtitle:
-      "秒级提取「我希望有」和「寻找替代」类帖子，先验证再开发。免费体验 5 次搜索，之后 $9.9/月。",
+      "秒级提取「我希望有」和「寻找替代」类帖子，先验证再开发。免费体验 5 次搜索，之后 $29/月。",
     ctaPrimary: "免费挖掘痛点",
     ctaPrimaryHref: "/mine",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，GummySearch 要 $79+" },
+      { stat: "$29", label: "一口价/月，GummySearch 要 $79+" },
       { stat: "8 秒", label: "提取痛点信号" },
       { stat: "4 类", label: "我希望 · 寻找替代 · 不满 · 愿意付费" },
     ],
@@ -121,7 +121,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "做用户想要的东西",
-          desc: "针对最高分痛点，快速上线 $9.9/月 微 SaaS",
+          desc: "针对最高分痛点，快速上线 $29/月 微 SaaS",
         },
       ],
     },
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "细分领域搜索不限量，不像企业受众研究工具收 $199/月。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "一人创始人",
-        text: "GummySearch 关了，SpyCenter 要 $199/月。Reddit Pulse $9.9 就在我的细分领域找到 8 条痛点。",
+        text: "GummySearch 关了，SpyCenter 要 $199/月。Reddit Pulse $29 就在我的细分领域找到 8 条痛点。",
       },
       {
         name: "Tom R.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜该做什么产品",
-      subtitle: "免费 5 次搜索 · 之后 $9.9/月 不限量挖掘",
+      subtitle: "免费 5 次搜索 · 之后 $29/月 不限量挖掘",
       ctaPrimary: "免费挖掘痛点",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Export pain point lists",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free searches, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "痛点列表导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次搜索，之后订阅？",

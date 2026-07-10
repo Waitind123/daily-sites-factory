@@ -9,7 +9,7 @@ export const dashboardCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free syncs. Subscribe for unlimited Stripe syncs, full history, and CSV export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     createTitle: "New dashboard",
     productName: "Product name",
     productNamePlaceholder: "e.g. My SaaS App",
@@ -41,7 +41,7 @@ export const dashboardCopy = {
     freeSyncs: "剩余免费同步次数：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费同步。订阅后可无限同步 Stripe 数据、查看完整历史并导出 CSV。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     createTitle: "新建仪表盘",
     productName: "产品名称",
     productNamePlaceholder: "例如：我的 SaaS 应用",

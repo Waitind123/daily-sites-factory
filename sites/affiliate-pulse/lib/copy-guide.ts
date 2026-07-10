@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Rewardful Alternative for Indie Hackers — Affiliate Tracking Guide",
       description:
-        "Rewardful charges $49/mo plus 9% of affiliate revenue. Compare Stripe-native affiliate tools for indie SaaS. Find a $9.9/mo flat-rate alternative with zero revenue share.",
+        "Rewardful charges $49/mo plus 9% of affiliate revenue. Compare Stripe-native affiliate tools for indie SaaS. Find a $29/mo flat-rate alternative with zero revenue share.",
     },
     h1: "2026 Rewardful Alternative for Indie Hackers: Affiliate Tracking Guide",
     updated: "Updated July 2026 · 12 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "Rewardful is the default choice for Stripe-based SaaS. Connect Stripe, generate affiliate links, track conversions, pay commissions. Solid product. But the pricing model punishes growth: $49/month base fee plus 9% of everything your affiliates sell. At $10,000 in affiliate-driven revenue, you pay Rewardful $949 that month. For software.",
       "Alternatives emerged: Komissio at $49 flat (no revenue share), Affilut at $19/mo, Refgrow at $29/mo, Referralful with pay-per-payout pricing. All better than 9% revenue share — but still $19–49/month before you make a single affiliate sale.",
       "On Indie Hackers and r/SaaS, founders repeatedly ask: \"What's the cheapest affiliate tracking tool for Stripe?\" Another wrote: \"I just want to know what I owe each affiliate at month-end — Rewardful's 9% cut feels like a tax on my own growth.\" If that sounds like you, this guide is for you.",
-      "This guide explains how Stripe-native affiliate tracking works, compares 2026 tools for bootstrapped founders, and shows you how to launch an affiliate program in under 15 minutes for $9.9/mo with zero revenue share.",
+      "This guide explains how Stripe-native affiliate tracking works, compares 2026 tools for bootstrapped founders, and shows you how to launch an affiliate program in under 15 minutes for $29/mo with zero revenue share.",
     ],
     sections: [
       {
@@ -50,8 +50,8 @@ export const guideCopy = {
             p: "Built specifically as a Rewardful alternative with zero revenue share. $49/mo flat regardless of affiliate volume. Good if you're already doing $5k+/mo in affiliate sales.",
           },
           {
-            h3: "Affiliate Pulse — $9.9/mo flat",
-            p: "Built for indie hackers: create affiliate programs, generate tracking links, see clicks/conversions/commission owed. Stripe metadata attribution. 5 free programs, then $9.9/mo unlimited. Zero revenue share.",
+            h3: "Affiliate Pulse — $29/mo flat",
+            p: "Built for indie hackers: create affiliate programs, generate tracking links, see clicks/conversions/commission owed. Stripe metadata attribution. 5 free programs, then $29/mo unlimited. Zero revenue share.",
             link: { href: "/dashboard", text: "Create affiliate program free", suffix: " — five programs, no credit card." },
           },
         ],
@@ -88,7 +88,7 @@ export const guideCopy = {
           "At $1,000/mo affiliate sales: $49 + $90 = $139/mo total.",
           "At $5,000/mo affiliate sales: $49 + $450 = $499/mo total.",
           "At $10,000/mo affiliate sales: $49 + $900 = $949/mo total.",
-          "Affiliate Pulse: $9.9/mo flat. Whether affiliates drive $1,000 or $100,000, you pay $9.9.",
+          "Affiliate Pulse: $29/mo flat. Whether affiliates drive $1,000 or $100,000, you pay $29.",
           "For bootstrapped founders with early affiliate programs doing $500–5,000/mo, the savings are $100–500/month — money that should go to product development, not affiliate software markup.",
         ],
         after: [
@@ -98,7 +98,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Create affiliate programs free",
-      subtitle: "5 free programs · Stripe tracking · $9.9/mo unlimited",
+      subtitle: "5 free programs · Stripe tracking · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -106,7 +106,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Rewardful 平替指南 — 联盟追踪选型",
       description:
-        "Rewardful 收 $49/月加联盟收入 9%。对比 Stripe 原生联盟工具，找到 $9.9/月一口价、零收入分成的独立开发者方案。",
+        "Rewardful 收 $49/月加联盟收入 9%。对比 Stripe 原生联盟工具，找到 $29/月一口价、零收入分成的独立开发者方案。",
     },
     h1: "2026 独立开发者 Rewardful 平替：联盟追踪选型指南",
     updated: "更新于 2026 年 7 月 · 阅读约 12 分钟",
@@ -115,7 +115,7 @@ export const guideCopy = {
       "Rewardful 是 Stripe 系 SaaS 的默认选择。连接 Stripe、生成联盟链接、追踪转化、支付佣金。产品扎实。但定价模式惩罚增长：$49/月基础费加联盟销售额的 9%。联盟月收入 $10000 时，你当月付 Rewardful $949。买软件。",
       "替代品出现了：Komissio $49 一口价（无收入分成）、Affilut $19/月、Refgrow $29/月、Referralful 按打款量计费。都比 9% 分成好 — 但在联盟带来第一笔销售前仍要 $19–49/月。",
       "在 Indie Hackers 和 r/SaaS 上，创始人反复问：「最便宜的 Stripe 联盟追踪工具是什么？」还有人写：「我只想知道月底该付每位联盟伙伴多少 — Rewardful 的 9% 抽成像是对自己增长的税。」如果这像你说的，这篇指南就是为你写的。",
-      "本指南说明 Stripe 原生联盟追踪如何工作、对比 2026 年适合自举创始人的工具，并展示如何 15 分钟内以 $9.9/月零收入分成上线联盟计划。",
+      "本指南说明 Stripe 原生联盟追踪如何工作、对比 2026 年适合自举创始人的工具，并展示如何 15 分钟内以 $29/月零收入分成上线联盟计划。",
     ],
     sections: [
       {
@@ -151,8 +151,8 @@ export const guideCopy = {
             p: "专为替代 Rewardful 打造，零收入分成。联盟量多大都 $49/月。联盟月销已 $5k+ 时不错。",
           },
           {
-            h3: "联盟追踪平替 — $9.9/月 一口价",
-            p: "为独立开发者打造：创建联盟计划、生成追踪链接、查看点击/转化/应付佣金。Stripe 元数据归因。免费 5 个计划，之后 $9.9/月不限量。零收入分成。",
+            h3: "联盟追踪平替 — $29/月 一口价",
+            p: "为独立开发者打造：创建联盟计划、生成追踪链接、查看点击/转化/应付佣金。Stripe 元数据归因。免费 5 个计划，之后 $29/月不限量。零收入分成。",
             link: { href: "/dashboard", text: "免费创建联盟计划", suffix: " — 五个计划，无需信用卡。" },
           },
         ],
@@ -189,7 +189,7 @@ export const guideCopy = {
           "联盟月销 $1000：$49 + $90 = 总计 $139/月。",
           "联盟月销 $5000：$49 + $450 = 总计 $499/月。",
           "联盟月销 $10000：$49 + $900 = 总计 $949/月。",
-          "联盟追踪平替：$9.9/月 一口价。联盟带来 $1000 还是 $100000，你都付 $9.9。",
+          "联盟追踪平替：$29/月 一口价。联盟带来 $1000 还是 $100000，你都付 $29。",
           "对早期联盟月销 $500–5000 的自举创始人，每月省 $100–500 — 这些钱应投入产品开发，而非联盟软件加价。",
         ],
         after: [
@@ -199,7 +199,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费创建联盟计划",
-      subtitle: "免费 5 个计划 · Stripe 追踪 · $9.9/月 不限量",
+      subtitle: "免费 5 个计划 · Stripe 追踪 · $29/月 不限量",
       button: "打开控制台 →",
     },
   },

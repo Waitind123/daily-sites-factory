@@ -30,7 +30,7 @@ export const mineCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 searches. Subscribe for unlimited pain point mining, scoring, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Mine a niche",
     keyword: "Niche keyword",
     keywordPlaceholder: "e.g. analytics, gummysearch, freelance booking",
@@ -51,7 +51,7 @@ export const mineCopy = {
     freeSearches: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次搜索。订阅后可无限挖掘、评分并导出痛点。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "挖掘细分领域",
     keyword: "细分领域关键词",
     keywordPlaceholder: "例如：分析工具、gummysearch、自由职业预约",

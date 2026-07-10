@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Calendly Alternative for Indie Hackers — Scheduling Page Guide",
       description:
-        "Calendly starts at $12/mo with cookie banners and no i18n. Compare indie scheduling tools. Find a $9.9/mo flat-rate booking page with project showcase and time zone sync.",
+        "Calendly starts at $12/mo with cookie banners and no i18n. Compare indie scheduling tools. Find a $29/mo flat-rate booking page with project showcase and time zone sync.",
     },
     h1: "2026 Calendly Alternative for Indie Hackers: Scheduling Page Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -25,7 +25,7 @@ export const guideCopy = {
           "Clean embed — no third-party cookie banner on your homepage",
           "Full i18n — switch to Chinese and every label translates, including errors",
           "Simple slots — Mon/Wed/Fri coffee chats, not round-robin team routing",
-          "Flat pricing — $9.9/mo beats $12+ when you're bootstrapping at $2K MRR",
+          "Flat pricing — $29/mo beats $12+ when you're bootstrapping at $2K MRR",
           "Fast setup — publish a booking link in 2 minutes, not a 30-minute onboarding",
         ],
         after: [
@@ -56,9 +56,9 @@ export const guideCopy = {
             p: "Popular AppSumo deal. One-time payment attractive but limited updates and no indie-specific features like project showcase.",
           },
           {
-            h3: "Book Pulse — $9.9/mo flat",
+            h3: "Book Pulse — $29/mo flat",
             p: "Built for indie hackers who want booking pages with project showcase, time zone sync, and bilingual EN/ZH. No cookie banner on embed. Publish /b/your-slug in 2 minutes.",
-            link: { href: "/join", text: "5 free publishes to try", suffix: ", then $9.9/mo flat. Cancel anytime." },
+            link: { href: "/join", text: "5 free publishes to try", suffix: ", then $29/mo flat. Cancel anytime." },
           },
         ],
       },
@@ -90,14 +90,14 @@ export const guideCopy = {
       {
         h2: "When to upgrade from free to paid",
         paragraphs: [
-          "Five free publishes is enough to validate: create your personal page, a product demo page, and a collab page. If you're booking 2+ calls per week from your link, the $9.9/mo unlimited plan pays for itself with one consulting hour saved on scheduling back-and-forth.",
+          "Five free publishes is enough to validate: create your personal page, a product demo page, and a collab page. If you're booking 2+ calls per week from your link, the $29/mo unlimited plan pays for itself with one consulting hour saved on scheduling back-and-forth.",
           "The upgrade moment usually comes when you hit the trial limit mid-launch — you've got traction on HN, three people want to book, and you need unlimited pages for different products. That's the levelsio moment: charge from day one, but let people experience value first.",
         ],
       },
     ],
     cta: {
       title: "Ready to ditch the Calendly cookie banner?",
-      subtitle: "Create your indie booking page — 5 free publishes, then $9.9/mo.",
+      subtitle: "Create your indie booking page — 5 free publishes, then $29/mo.",
       button: "Create booking page →",
     },
   },
@@ -105,7 +105,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Calendly 平替指南 — 预约页选型",
       description:
-        "Calendly $12/月起且有 Cookie 弹窗、无完整中文。对比独立开发者预约工具，找到 $9.9/月一口价、带项目展示和时区同步的预约页。",
+        "Calendly $12/月起且有 Cookie 弹窗、无完整中文。对比独立开发者预约工具，找到 $29/月一口价、带项目展示和时区同步的预约页。",
     },
     h1: "2026 独立开发者 Calendly 平替：预约页选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -125,7 +125,7 @@ export const guideCopy = {
           "干净嵌入 — 首页不要第三方 Cookie 弹窗",
           "完整 i18n — 切中文后每个标签都翻译，含错误提示",
           "简单时段 — 周一/三/五咖啡聊，不要团队轮询路由",
-          "一口价 — 自举 $2K MRR 时 $9.9/月 胜过 $12+",
+          "一口价 — 自举 $2K MRR 时 $29/月 胜过 $12+",
           "快速上线 — 2 分钟发布预约链接，不要 30 分钟引导",
         ],
         after: [
@@ -156,9 +156,9 @@ export const guideCopy = {
             p: "AppSumo 热门 deal。一次性付费吸引人但更新有限，无项目展示等 indie 特性。",
           },
           {
-            h3: "Book Pulse — $9.9/月一口价",
+            h3: "Book Pulse — $29/月一口价",
             p: "为独立开发者打造 — 带项目展示、时区同步、中英双语。嵌入无 Cookie 弹窗。2 分钟发布 /b/别名。",
-            link: { href: "/join", text: "免费发布 5 次试用", suffix: "，之后 $9.9/月一口价，随时可取消。" },
+            link: { href: "/join", text: "免费发布 5 次试用", suffix: "，之后 $29/月一口价，随时可取消。" },
           },
         ],
       },
@@ -190,14 +190,14 @@ export const guideCopy = {
       {
         h2: "何时从免费升级到付费",
         paragraphs: [
-          "五次免费发布够验证：个人页、产品演示页、合作页。若每周从你的链接约 2+ 次通话，$9.9/月 无限方案一次咨询省下的扯皮时间就够了。",
+          "五次免费发布够验证：个人页、产品演示页、合作页。若每周从你的链接约 2+ 次通话，$29/月 无限方案一次咨询省下的扯皮时间就够了。",
           "升级时刻通常是发布中途触达试用上限 — HN 有热度、三个人想约、你需要多产品无限页面。这就是 levelsio 时刻：第一天设计收费点，但先让人体验价值。",
         ],
       },
     ],
     cta: {
       title: "准备好告别 Calendly Cookie 弹窗了吗？",
-      subtitle: "创建你的 indie 预约页 — 免费发布 5 次，之后 $9.9/月。",
+      subtitle: "创建你的 indie 预约页 — 免费发布 5 次，之后 $29/月。",
       button: "创建预约页 →",
     },
   },

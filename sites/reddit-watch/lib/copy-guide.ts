@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "SubWatch Alternative 2026 — 24/7 Reddit Keyword Monitoring for Indie Hackers",
       description:
-        "SubWatch $29/mo. Mentionly $39/mo. Learn how Reddit Watch delivers 24/7 keyword alerts with intent scoring for switching, alternative & pricing signals at $9.9/mo.",
+        "SubWatch $29/mo. Mentionly $39/mo. Learn how Reddit Watch delivers 24/7 keyword alerts with intent scoring for switching, alternative & pricing signals at $29/mo.",
     },
     h1: "SubWatch Alternative Guide: 24/7 Reddit Keyword Monitoring That Only Alerts on Buyers",
     updated: "Updated June 2026 · 11 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "Every morning, indie founders open r/SaaS and r/indiehackers hoping to catch a buyer thread before it goes cold. SubWatch ($29/mo) sends keyword pings — but most alerts are noise. StackLead ($49/mo) adds intent scoring but prices out solo bootstrappers.",
       "Reddit Watch was built as a SubWatch alternative with one difference: we only alert when someone is switching from a competitor, asking for an alternative, or complaining about pricing. Not when they type \"I wish there was.\"",
       "A DEV.to scan of 437 Reddit posts in 2026 found that \"alternative to [X]\" threads convert 2.6× better than \"I wish\" posts. Buyers with budget use different language than dreamers.",
-      "This guide compares 2026 Reddit monitoring tools, explains the four high-intent signal types, and shows how to set up a keyword watchlist on r/SaaS, r/Entrepreneur, r/indiehackers & r/startups for $9.9/mo flat.",
+      "This guide compares 2026 Reddit monitoring tools, explains the four high-intent signal types, and shows how to set up a keyword watchlist on r/SaaS, r/Entrepreneur, r/indiehackers & r/startups for $29/mo flat.",
       "Reddit Watch follows the levelsio playbook: ship fast, charge from day one, five free scans then subscribe. Your customers are already posting — you just need alerts that fire on buyers, not noise.",
     ],
     sections: [
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "AI intent scoring with reply drafts. Powerful but priced for startups with sales teams, not solo founders doing Reddit outbound.",
           },
           {
-            h3: "Reddit Watch — $9.9/mo flat",
+            h3: "Reddit Watch — $29/mo flat",
             p: "SubWatch alternative with 24/7 keyword watchlist, intent score 1–10, four buyer signal filters, email + webhook alerts. Monitor r/SaaS, r/Entrepreneur, r/indiehackers & r/startups. 5 free scans, then unlimited.",
             link: { href: "/monitor", text: "Start monitoring free", suffix: " — five scans, no credit card." },
           },
@@ -83,7 +83,7 @@ export const guideCopy = {
       {
         h2: "SEO and distribution for Reddit monitoring tools",
         paragraphs: [
-          "Long-tail keywords like \"SubWatch alternative\", \"Reddit keyword monitoring indie hackers\", and \"Reddit lead alerts $9.9\" rank within 1–3 months on a custom domain. Submit your sitemap to Google Search Console.",
+          "Long-tail keywords like \"SubWatch alternative\", \"Reddit keyword monitoring indie hackers\", and \"Reddit lead alerts $29\" rank within 1–3 months on a custom domain. Submit your sitemap to Google Search Console.",
           "Distribution checklist: Product Hunt launch, Hacker News Show HN, Reddit r/SideProject (share a real alert you caught), Twitter/X thread comparing SubWatch vs intent-scored monitoring, Indie Hackers milestone post.",
         ],
       },
@@ -92,7 +92,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Reddit Watch free",
-          prefix: "SubWatch costs $29/mo for basic keyword pings. If you need 24/7 monitoring with intent scoring and buyer-only alerts at $9.9/mo, ",
+          prefix: "SubWatch costs $29/mo for basic keyword pings. If you need 24/7 monitoring with intent scoring and buyer-only alerts at $29/mo, ",
           suffix: ". Five scans, no credit card. Your buyers are already posting on Reddit.",
         },
       },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "SubWatch 替代品 2026 — 独立开发者全天候 Reddit 关键词监控",
       description:
-        "SubWatch $29/月，Mentionly $39/月。了解 Reddit Watch 如何以 $9.9/月提供全天候关键词提醒与切换/替代/价格信号的意向评分。",
+        "SubWatch $29/月，Mentionly $39/月。了解 Reddit Watch 如何以 $29/月提供全天候关键词提醒与切换/替代/价格信号的意向评分。",
     },
     h1: "SubWatch 替代品指南：只在买家发帖时提醒的 Reddit 关键词监控",
     updated: "更新于 2026 年 6 月 · 阅读约 11 分钟",
@@ -115,7 +115,7 @@ export const guideCopy = {
       "每天早上，独立开发者打开 r/SaaS 和 r/indiehackers，希望在线还热时抓住买家帖。SubWatch（$29/月）发关键词提醒 — 但大部分提醒是噪音。StackLead（$49/月）加了意向评分，但定价超出自举独立开发者承受范围。",
       "Reddit Watch 作为 SubWatch 平替，有一个关键区别：只在有人正在切换竞品、寻找替代或抱怨价格时才提醒。不会在有人打「我希望有」时打扰你。",
       "DEV.to 2026 年对 437 条 Reddit 帖的扫描发现，「寻找 [X] 替代品」帖转化率比「我希望」帖高 2.6 倍。有预算的买家和梦想家用不同的语言。",
-      "本指南对比 2026 年 Reddit 监控工具、解释四类高意向信号，并展示如何在 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups 以 $9.9/月 一口价设置关键词监控列表。",
+      "本指南对比 2026 年 Reddit 监控工具、解释四类高意向信号，并展示如何在 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups 以 $29/月 一口价设置关键词监控列表。",
       "Reddit Watch 遵循 levelsio 路径：快速上线、第一天收费、免费 5 次扫描后订阅。你的客户已经在发帖 — 你只需要在买家出现时收到提醒，而不是噪音。",
     ],
     sections: [
@@ -151,7 +151,7 @@ export const guideCopy = {
             p: "AI 意向分加回复草稿。功能强大但定价面向有销售团队的创业公司，不是做 Reddit 外展的独立开发者。",
           },
           {
-            h3: "Reddit Watch — $9.9/月 一口价",
+            h3: "Reddit Watch — $29/月 一口价",
             p: "SubWatch 平替：全天候关键词监控列表、意向分 1–10、四类买家信号过滤、邮件 + Webhook 提醒。监控 r/SaaS、r/Entrepreneur、r/indiehackers 与 r/startups。免费 5 次，之后不限量。",
             link: { href: "/monitor", text: "免费开始监控", suffix: " — 五次扫描，无需信用卡。" },
           },
@@ -185,7 +185,7 @@ export const guideCopy = {
       {
         h2: "Reddit 监控工具的 SEO 与分发",
         paragraphs: [
-          "「SubWatch 替代品」「Reddit 关键词监控独立开发者」「Reddit 线索提醒 $9.9」等长尾词在自定义域名下 1–3 个月可排名。向 Google Search Console 提交 sitemap。",
+          "「SubWatch 替代品」「Reddit 关键词监控独立开发者」「Reddit 线索提醒 $29」等长尾词在自定义域名下 1–3 个月可排名。向 Google Search Console 提交 sitemap。",
           "分发清单：Product Hunt 发布、Hacker News Show HN、Reddit r/SideProject（分享你抓到的真实提醒）、推特长文对比 SubWatch 与意向评分监控、Indie Hackers 里程碑帖。",
         ],
       },
@@ -194,7 +194,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Reddit Watch",
-          prefix: "SubWatch 基础关键词提醒要 $29/月。若你需要全天候监控、意向评分、只看买家的提醒、$9.9/月 一口价，可",
+          prefix: "SubWatch 基础关键词提醒要 $29/月。若你需要全天候监控、意向评分、只看买家的提醒、$29/月 一口价，可",
           suffix: "。五次扫描，无需信用卡。你的买家已经在 Reddit 上发帖了。",
         },
       },

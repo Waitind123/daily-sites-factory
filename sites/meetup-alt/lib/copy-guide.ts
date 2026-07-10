@@ -33,7 +33,7 @@ export const guideCopy = {
           "Meetup.com — $25-45/mo organizer fee, discovery network, data export extra, high lock-in",
           "Heylo — free tier for small groups, mobile app, limited embed, growing discovery",
           "Luma — free for RSVP-only, 5% fee on paid tickets, polished event pages, tech-focused",
-          "MeetupAlt — $9.9/mo flat, embed RSVP widget, CSV export included, no lock-in",
+          "MeetupAlt — $29/mo flat, embed RSVP widget, CSV export included, no lock-in",
         ],
         after: [
           "For organizers who already have an audience (newsletter, Discord, Twitter), you don't need Meetup's cold discovery. You need RSVP + waitlist + export at a fair price.",
@@ -49,7 +49,7 @@ export const guideCopy = {
           "No lock-in — cancel anytime, keep your history",
         ],
         after: [
-          "MeetupAlt checks all five for $9.9/mo. Try 5 event manages free before subscribing.",
+          "MeetupAlt checks all five for $29/mo. Try 5 event manages free before subscribing.",
         ],
         link: { href: "/join", text: "Try MeetupAlt free", suffix: " — 5 event manages included." },
       },
@@ -73,7 +73,7 @@ export const guideCopy = {
           "Meetup.com Pro: $25-45/mo with multi-group management",
           "Heylo: free for basic, paid tiers for email blasts and forms",
           "Luma: free RSVP, 5% platform fee on paid events + Stripe fees",
-          "MeetupAlt: $9.9/mo flat, unlimited events, export included, 5 free tries",
+          "MeetupAlt: $29/mo flat, unlimited events, export included, 5 free tries",
         ],
       },
       {
@@ -87,8 +87,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready to leave Meetup.com?",
-      body: "5 free event manages. Branded pages, embed widget, CSV export for $9.9/mo.",
-      primary: "Subscribe · $9.9/mo",
+      body: "5 free event manages. Branded pages, embed widget, CSV export for $29/mo.",
+      primary: "Subscribe · $29/mo",
       secondary: "Browse sample events",
     },
   },
@@ -124,7 +124,7 @@ export const guideCopy = {
           "Meetup.com — $25-45/月组织者费，有发现网络，数据导出额外付费，锁定度高",
           "Heylo — 小群组免费档，有 App，嵌入有限，发现功能在增长",
           "Luma — RSVP 免费，付费活动收 5% 平台费，活动页精美，偏科技圈",
-          "Meetup 替代品 — $9.9/月固定价，可嵌入 RSVP 组件，含 CSV 导出，无锁定",
+          "Meetup 替代品 — $29/月固定价，可嵌入 RSVP 组件，含 CSV 导出，无锁定",
         ],
         after: [
           "对已有受众的组织者（Newsletter、Discord、微博），你不需要 Meetup 的冷启动发现。你需要的是 RSVP + 候补 + 导出，且价格公道。",
@@ -140,7 +140,7 @@ export const guideCopy = {
           "无锁定 — 随时取消，保留历史",
         ],
         after: [
-          "Meetup 替代品五项全满足，$9.9/月。订阅前免费体验 5 次活动管理。",
+          "Meetup 替代品五项全满足，$29/月。订阅前免费体验 5 次活动管理。",
         ],
         link: { href: "/join", text: "免费体验 Meetup 替代品", suffix: " — 含 5 次活动管理。" },
       },
@@ -164,7 +164,7 @@ export const guideCopy = {
           "Meetup.com Pro：$25-45/月，支持多群组管理",
           "Heylo：基础免费，邮件群发和表单需付费档",
           "Luma：RSVP 免费，付费活动 5% 平台费 + Stripe 手续费",
-          "Meetup 替代品：$9.9/月固定价，无限活动，含导出，免费体验 5 次",
+          "Meetup 替代品：$29/月固定价，无限活动，含导出，免费体验 5 次",
         ],
       },
       {
@@ -178,8 +178,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好离开 Meetup.com 了吗？",
-      body: "免费体验 5 次活动管理。品牌页面、嵌入组件、CSV 导出，$9.9/月。",
-      primary: "立即订阅 $9.9/月",
+      body: "免费体验 5 次活动管理。品牌页面、嵌入组件、CSV 导出，$29/月。",
+      primary: "立即订阅 $29/月",
       secondary: "浏览示例活动",
     },
   },

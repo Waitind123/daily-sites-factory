@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Stripe Failed Payment Recovery Guide — Dunning for Indie SaaS",
       description:
-        "9% of MRR leaks to failed payments monthly. Compare Churnkey, SubRevival, and Stripe Smart Retries. Learn how indie hackers recover 50%+ with reason-specific dunning emails for $9.9/mo.",
+        "9% of MRR leaks to failed payments monthly. Compare Churnkey, SubRevival, and Stripe Smart Retries. Learn how indie hackers recover 50%+ with reason-specific dunning emails for $29/mo.",
     },
     h1: "2026 Stripe Failed Payment Recovery: Dunning Guide for Indie Hackers",
     updated: "Updated July 2026 · 14 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "Failed payments are the silent killer of bootstrapped SaaS. Industry data shows roughly 9% of monthly recurring revenue fails to collect each billing cycle. Of that, about 57% is recoverable — but only if you have a real dunning stack: branded emails, card-update links, and reason-specific messaging.",
       "Enterprise tools like Churnkey ($199+/mo) and Recoverly ($199+/mo) target companies doing $50K+ MRR. SubRevival starts at $19/mo. RecoverKit at €29/mo. All better than losing MRR — but still expensive before you've validated product-market fit.",
       "On Indie Hackers and r/SaaS, founders repeatedly ask: \"What's the cheapest dunning tool for Stripe?\" Another wrote: \"Stripe retries get 30% but my customers never get an email asking them to update their card.\" If that sounds like you, this guide is for you.",
-      "This guide explains how Stripe dunning works, compares 2026 recovery tools for bootstrapped founders, and shows you how to launch your first recovery campaign in 5 minutes for $9.9/mo flat.",
+      "This guide explains how Stripe dunning works, compares 2026 recovery tools for bootstrapped founders, and shows you how to launch your first recovery campaign in 5 minutes for $29/mo flat.",
     ],
     sections: [
       {
@@ -50,8 +50,8 @@ export const guideCopy = {
             p: "Built for indie founders €3K-50K MRR. Automated email sequences, decline code classification. 4-email dunning sequence included. European pricing.",
           },
           {
-            h3: "Dunning Pulse — $9.9/mo flat",
-            p: "Built for indie hackers: create recovery campaigns, reason-specific dunning sequences (expired card vs insufficient funds), recovery dashboard. 5 free campaigns, then $9.9/mo unlimited. Zero % of recovered revenue.",
+            h3: "Dunning Pulse — $29/mo flat",
+            p: "Built for indie hackers: create recovery campaigns, reason-specific dunning sequences (expired card vs insufficient funds), recovery dashboard. 5 free campaigns, then $29/mo unlimited. Zero % of recovered revenue.",
             link: { href: "/dashboard", text: "Create recovery campaign free", suffix: " — five campaigns, no credit card." },
           },
         ],
@@ -78,7 +78,7 @@ export const guideCopy = {
           href: "/dashboard",
           label: "Dunning Pulse",
           prefix: "Use ",
-          suffix: " — 5 free campaigns, $9.9/mo after.",
+          suffix: " — 5 free campaigns, $29/mo after.",
         },
       },
       {
@@ -106,13 +106,13 @@ export const guideCopy = {
           "You need a hosted card-update page",
         ],
         after: [
-          "At $9.9/mo, a dunning tool pays for itself when it recovers a single $29/month subscription. Most indie SaaS founders hit that threshold within the first month.",
+          "At $29/mo, a dunning tool pays for itself when it recovers a single $29/month subscription. Most indie SaaS founders hit that threshold within the first month.",
         ],
       },
     ],
     cta: {
       title: "Start recovering failed payments today",
-      subtitle: "5 free recovery campaigns. Reason-specific dunning. $9.9/mo after.",
+      subtitle: "5 free recovery campaigns. Reason-specific dunning. $29/mo after.",
       button: "Create recovery campaign free →",
     },
   },
@@ -120,7 +120,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Stripe 失败支付恢复指南 — 独立开发者催款教程",
       description:
-        "每月约 9% MRR 因支付失败流失。对比 Churnkey、SubRevival 与 Stripe 智能重试。了解独立开发者如何用 $9.9/月按原因定制催款邮件恢复 50%+ 收入。",
+        "每月约 9% MRR 因支付失败流失。对比 Churnkey、SubRevival 与 Stripe 智能重试。了解独立开发者如何用 $29/月按原因定制催款邮件恢复 50%+ 收入。",
     },
     h1: "2026 Stripe 失败支付恢复：独立开发者催款指南",
     updated: "2026 年 7 月更新 · 阅读约 14 分钟",
@@ -129,7 +129,7 @@ export const guideCopy = {
       "失败支付是自举 SaaS 的隐形杀手。行业数据显示每月约 9% 的经常性收入扣款失败。其中约 57% 可恢复 — 但前提是你有完整的催款栈：品牌化邮件、更新卡片链接、按原因定制的消息。",
       "Churnkey（$199+/月）和 Recoverly（$199+/月）等企业工具面向 $50K+ MRR 公司。SubRevival 从 $19/月起。RecoverKit €29/月。都比流失 MRR 好 — 但在验证产品市场契合前仍然偏贵。",
       "Indie Hackers 和 r/SaaS 上创始人反复问：「Stripe 最便宜的催款工具是什么？」还有人写：「Stripe 重试能恢复 30%，但客户从没收到更新卡片的邮件。」如果这像你说的情况，这篇指南就是为你写的。",
-      "本指南解释 Stripe 催款如何运作、对比 2026 年自举创始人恢复工具，并展示如何 5 分钟以 $9.9/月一口价上线首个恢复活动。",
+      "本指南解释 Stripe 催款如何运作、对比 2026 年自举创始人恢复工具，并展示如何 5 分钟以 $29/月一口价上线首个恢复活动。",
     ],
     sections: [
       {
@@ -165,8 +165,8 @@ export const guideCopy = {
             p: "面向 €3K-50K MRR 独立创始人。自动邮件序列、拒绝码分类。含 4 封催款邮件。欧洲定价。",
           },
           {
-            h3: "失败支付恢复 — $9.9/月一口价",
-            p: "为独立开发者打造：创建恢复活动、按原因定制催款序列（过期卡 vs 余额不足）、恢复看板。免费 5 个活动，之后 $9.9/月不限量。零恢复收入分成。",
+            h3: "失败支付恢复 — $29/月一口价",
+            p: "为独立开发者打造：创建恢复活动、按原因定制催款序列（过期卡 vs 余额不足）、恢复看板。免费 5 个活动，之后 $29/月不限量。零恢复收入分成。",
             link: { href: "/dashboard", text: "免费创建恢复活动", suffix: " — 五个活动，无需信用卡。" },
           },
         ],
@@ -193,7 +193,7 @@ export const guideCopy = {
           href: "/dashboard",
           label: "失败支付恢复",
           prefix: "使用 ",
-          suffix: " — 免费 5 个活动，之后 $9.9/月。",
+          suffix: " — 免费 5 个活动，之后 $29/月。",
         },
       },
       {
@@ -221,13 +221,13 @@ export const guideCopy = {
           "需要托管更新卡片页",
         ],
         after: [
-          "$9.9/月 的催款工具，恢复一个 $29/月订阅就回本。多数独立 SaaS 创始人首月即达到这个门槛。",
+          "$29/月 的催款工具，恢复一个 $29/月订阅就回本。多数独立 SaaS 创始人首月即达到这个门槛。",
         ],
       },
     ],
     cta: {
       title: "今天就开始恢复失败支付",
-      subtitle: "免费 5 个恢复活动。按原因定制催款。之后 $9.9/月。",
+      subtitle: "免费 5 个恢复活动。按原因定制催款。之后 $29/月。",
       button: "免费创建恢复活动 →",
     },
   },

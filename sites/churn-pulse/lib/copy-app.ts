@@ -9,7 +9,7 @@ export const dashboardCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free scans. Subscribe for unlimited health monitoring, churn alerts, and CSV export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     createTitle: "New workspace",
     productName: "Product name",
     productNamePlaceholder: "e.g. My SaaS App",
@@ -46,7 +46,7 @@ export const dashboardCopy = {
     freeScans: "剩余免费扫描次数：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费扫描。订阅后可无限健康监控、流失告警并导出 CSV。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     createTitle: "新建工作区",
     productName: "产品名称",
     productNamePlaceholder: "例如：我的 SaaS 应用",

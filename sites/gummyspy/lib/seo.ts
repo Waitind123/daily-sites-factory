@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://gummyspy.vercel.app",
     name: "GummySpy",
-    title: "GummySpy — GummySearch replacement with competitor ad spy, $9.9/mo",
+    title: "GummySpy — GummySearch replacement with competitor ad spy, $29/mo",
     description:
-      "5 free uses. Audience pain mining across Reddit, HN & Product Hunt + competitor Meta/Google ad intelligence. GummySearch alternative at $9.9/mo.",
+      "5 free uses. Audience pain mining across Reddit, HN & Product Hunt + competitor Meta/Google ad intelligence. GummySearch alternative at $29/mo.",
     keywords: [
       "GummySearch alternative",
       "competitor ad spy",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://gummyspy.vercel.app",
     name: "GummySearch 替代品",
-    title: "GummySearch 替代品 — 受众痛点 + 竞品广告情报，$9.9/月",
+    title: "GummySearch 替代品 — 受众痛点 + 竞品广告情报，$29/月",
     description:
-      "免费体验 5 次。跨 Reddit、HN、Product Hunt 受众痛点挖掘 + 竞品 Meta/Google 广告情报。GummySearch 平替，$9.9/月一口价。",
+      "免费体验 5 次。跨 Reddit、HN、Product Hunt 受众痛点挖掘 + 竞品 Meta/Google 广告情报。GummySearch 平替，$29/月一口价。",
     keywords: [
       "GummySearch 替代品",
       "竞品广告侦察",

@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "DocSend $45–300/mo · Peony free tier · $9.9/mo",
+    badge: "DocSend $45–300/mo · Peony free tier · $29/mo",
     title: "Secure document sharing with page-level analytics — without the DocSend tax",
     subtitle:
-      "Share pitch decks, proposals, and contracts with trackable links. See who viewed what page, for how long. 5 free shares, then $9.9/mo flat.",
+      "Share pitch decks, proposals, and contracts with trackable links. See who viewed what page, for how long. 5 free shares, then $29/mo flat.",
     ctaPrimary: "Share document free",
     ctaPrimaryHref: "/share",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tracked shares · then $9.9/mo",
+    note: "5 free tracked shares · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs DocSend $45+/user" },
+      { stat: "$29", label: "flat/mo vs DocSend $45+/user" },
       { stat: "Page-level", label: "analytics on every view" },
       { stat: "2 min", label: "to send your first tracked deck" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited tracked shares. No $150/mo Advanced tier for watermarks.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Jenny R.",
         role: "Solo founder",
-        text: "DocSend wanted $45/user/month. I just needed to track one investor deck. $9.9/mo is perfect.",
+        text: "DocSend wanted $45/user/month. I just needed to track one investor deck. $29/mo is perfect.",
       },
       {
         name: "Alex K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing if investors read your deck",
-      subtitle: "5 free tracked shares · then $9.9/mo for unlimited page-level analytics",
+      subtitle: "5 free tracked shares · then $29/mo for unlimited page-level analytics",
       ctaPrimary: "Share document free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "DocSend $45–300/月 · Peony 免费档 · $9.9/月",
+    badge: "DocSend $45–300/月 · Peony 免费档 · $29/月",
     title: "安全文档分享 + 逐页分析 — 不用交 DocSend 的席位税",
     subtitle:
-      "用可追踪链接分享路演稿、方案与合同。看清谁看了哪一页、停留多久。免费体验 5 次，之后 $9.9/月 固定价。",
+      "用可追踪链接分享路演稿、方案与合同。看清谁看了哪一页、停留多久。免费体验 5 次，之后 $29/月 固定价。",
     ctaPrimary: "免费分享文档",
     ctaPrimaryHref: "/share",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次追踪分享 · 之后 $9.9/月",
+    note: "免费体验 5 次追踪分享 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "固定月费 vs DocSend $45+/席位" },
+      { stat: "$29", label: "固定月费 vs DocSend $45+/席位" },
       { stat: "逐页", label: "每次浏览都有分析" },
       { stat: "2 分钟", label: "发出第一份追踪路演稿" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "固定 $9.9/月",
+        title: "固定 $29/月",
         desc: "无限追踪分享。不用为水印付 $150/月 高级版。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "李雪",
         role: "独立创始人",
-        text: "DocSend 要 $45/席位/月。我只需追踪一份投资人路演稿。$9.9/月 刚好。",
+        text: "DocSend 要 $45/席位/月。我只需追踪一份投资人路演稿。$29/月 刚好。",
       },
       {
         name: "王磊",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜投资人有没有看完你的路演稿",
-      subtitle: "免费体验 5 次追踪分享 · 之后 $9.9/月 无限逐页分析",
+      subtitle: "免费体验 5 次追踪分享 · 之后 $29/月 无限逐页分析",
       ctaPrimary: "免费分享文档",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "View notifications via email",
       "Export analytics (CSV)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free shares, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "浏览邮件通知",
       "分析导出（CSV）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

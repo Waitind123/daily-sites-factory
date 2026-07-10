@@ -18,9 +18,9 @@ export function getStripe() {
   });
 }
 
-export const PRICE_CNY_MONTHLY = 6900;
+export const PRICE_CNY_MONTHLY = 19900;
 export const PRICE_CNY = 69900;
-export const PRICE_USD = 9900;
+export const PRICE_USD = 2900;
 
 async function createStripeSession(
   stripe: Stripe,
@@ -83,13 +83,6 @@ export async function createCheckoutSession(
       url: session.url!,
       sessionId: session.id,
     };
-  }
-
-  if (currency !== "cny") {
-    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
-    if (polarUrl) {
-      return { demo: false as const, url: polarUrl };
-    }
   }
 
   return {

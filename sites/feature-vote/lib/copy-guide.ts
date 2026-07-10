@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Canny Alternative for Indie Hackers — Feature Voting Guide",
       description:
-        "Canny costs $79/mo for solo founders. Compare feature voting tools for indie SaaS: Canny, UserJot, Feature Upvote. Find a $9.9/mo flat-rate alternative with unlimited voters.",
+        "Canny costs $79/mo for solo founders. Compare feature voting tools for indie SaaS: Canny, UserJot, Feature Upvote. Find a $29/mo flat-rate alternative with unlimited voters.",
     },
     h1: "2026 Canny Alternative for Indie Hackers: Feature Voting & Roadmap Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -51,9 +51,9 @@ export const guideCopy = {
             p: "Newer affordable alternatives with flat pricing, public roadmaps, and embed widgets. Feature sets vary — some focus on bug reports, others on product ideas.",
           },
           {
-            h3: "Feature Vote — $9.9/mo flat",
+            h3: "Feature Vote — $29/mo flat",
             p: "Built for indie hackers who want Canny-style voting without per-user pricing. Unlimited boards, unlimited voters, public roadmap columns, embed widget.",
-            link: { href: "/join", text: "5 free boards to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free boards to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -100,7 +100,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Feature Vote free",
-          prefix: "Canny is excellent software priced for teams, not solo founders shipping their first paid product. If you need unlimited voters, a public roadmap, and flat $9.9/mo pricing, ",
+          prefix: "Canny is excellent software priced for teams, not solo founders shipping their first paid product. If you need unlimited voters, a public roadmap, and flat $29/mo pricing, ",
           suffix: ". Five boards, no credit card. Ship what your users actually want.",
         },
       },
@@ -115,7 +115,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Canny 替代品指南 — 功能投票与路线图",
       description:
-        "Canny 对一人团队要 $79/月。对比 Canny、UserJot、Feature Upvote 等功能投票工具，找到 $9.9/月一口价、投票人数不限的平替方案。",
+        "Canny 对一人团队要 $79/月。对比 Canny、UserJot、Feature Upvote 等功能投票工具，找到 $29/月一口价、投票人数不限的平替方案。",
     },
     h1: "2026 独立开发者 Canny 替代品：功能投票与路线图完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -159,9 +159,9 @@ export const guideCopy = {
             p: "较新的平价替代，一口价、公开路线图、嵌入组件。功能侧重不同，有的偏 bug，有的偏产品想法。",
           },
           {
-            h3: "功能投票板 — $9.9/月 一口价",
+            h3: "功能投票板 — $29/月 一口价",
             p: "为想要 Canny 式投票、又不想按人头付费的独立开发者打造。无限投票板、无限投票者、公开路线图、嵌入组件。",
-            link: { href: "/join", text: "免费体验 5 个投票板", suffix: "，之后 $9.9/月 一口价，无需年约。" },
+            link: { href: "/join", text: "免费体验 5 个投票板", suffix: "，之后 $29/月 一口价，无需年约。" },
           },
         ],
       },
@@ -208,7 +208,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用功能投票板",
-          prefix: "Canny 是优秀软件，但定价面向团队，不是刚推出付费产品的一人开发者。若你需要无限投票者、公开路线图、$9.9/月 一口价，可",
+          prefix: "Canny 是优秀软件，但定价面向团队，不是刚推出付费产品的一人开发者。若你需要无限投票者、公开路线图、$29/月 一口价，可",
           suffix: "。五个板，无需信用卡。做用户真正想要的。",
         },
       },

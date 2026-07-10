@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 GitBook Alternative for Indie Hackers — API Docs Hosting Guide",
       description:
-        "GitBook charges $65/mo plus $12 per editor. Compare API documentation platforms for indie SaaS. Find a $9.9/mo flat-rate alternative with custom domain and llms.txt.",
+        "GitBook charges $65/mo plus $12 per editor. Compare API documentation platforms for indie SaaS. Find a $29/mo flat-rate alternative with custom domain and llms.txt.",
     },
     h1: "2026 GitBook Alternative for Indie Hackers: API Docs Hosting Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -49,9 +49,9 @@ export const guideCopy = {
             p: "Open source, full control, zero subscription. Requires engineering time to set up, deploy, and maintain. Fine if you enjoy DevOps; slow if you want docs live today.",
           },
           {
-            h3: "Docs Pulse — $9.9/mo flat",
+            h3: "Docs Pulse — $29/mo flat",
             p: "Built for indie hackers who want GitBook-quality docs without per-seat pricing. Unlimited doc sites, unlimited pages, auto llms.txt, custom domain.",
-            link: { href: "/join", text: "5 free doc sites to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free doc sites to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -80,14 +80,14 @@ export const guideCopy = {
         h2: "Pricing reality for solo founders",
         paragraphs: [
           "GitBook's per-site plus per-editor model means costs scale with team size, not value received. A solo founder paying $65/month for docs that get 200 views/month is paying $0.32 per view.",
-          "Flat-rate tools at $9.9/month align incentives: you pay for hosting and features, not headcount. When you hire your first engineer, docs pricing stays the same.",
-          "Free tiers are fine for validation. But if docs are customer-facing (API product, developer tool), professional branding and custom domain justify $9.9/month from day one.",
+          "Flat-rate tools at $29/month align incentives: you pay for hosting and features, not headcount. When you hire your first engineer, docs pricing stays the same.",
+          "Free tiers are fine for validation. But if docs are customer-facing (API product, developer tool), professional branding and custom domain justify $29/month from day one.",
         ],
       },
     ],
     cta: {
       title: "Ready to ship your API docs?",
-      subtitle: "Create your first doc site free. 5 sites included, then $9.9/mo flat.",
+      subtitle: "Create your first doc site free. 5 sites included, then $29/mo flat.",
       button: "Start building →",
     },
   },
@@ -95,7 +95,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 GitBook 替代品指南 — API 文档托管",
       description:
-        "GitBook $65/月 + $12/编辑者。对比独立开发者 API 文档平台，找到 $9.9/月一口价、支持自定义域名和 llms.txt 的替代方案。",
+        "GitBook $65/月 + $12/编辑者。对比独立开发者 API 文档平台，找到 $29/月一口价、支持自定义域名和 llms.txt 的替代方案。",
     },
     h1: "2026 独立开发者 GitBook 替代品：API 文档托管指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -139,9 +139,9 @@ export const guideCopy = {
             p: "开源、完全控制、零订阅。需要工程时间搭建、部署和维护。喜欢 DevOps 可以；想今天上线文档就太慢。",
           },
           {
-            h3: "API 文档托管 — $9.9/月一口价",
+            h3: "API 文档托管 — $29/月一口价",
             p: "为独立开发者打造，GitBook 品质文档、无按人头收费。无限文档站、无限页面、自动 llms.txt、自定义域名。",
-            link: { href: "/join", text: "免费体验 5 个文档站", suffix: "，之后 $9.9/月一口价。无年付锁定。" },
+            link: { href: "/join", text: "免费体验 5 个文档站", suffix: "，之后 $29/月一口价。无年付锁定。" },
           },
         ],
       },
@@ -170,14 +170,14 @@ export const guideCopy = {
         h2: "独立开发者的定价现实",
         paragraphs: [
           "GitBook 按站加按编辑者计费，成本随团队人数涨，不随价值涨。独立开发者每月 $65 买月浏览 200 次的文档，相当于每次浏览 $0.32。",
-          "$9.9/月一口价工具利益一致：你为托管和功能付费，不为人数付费。招第一个工程师时，文档价格不变。",
-          "免费档适合验证。但如果文档面向客户（API 产品、开发者工具），专业品牌和自定义域名从第一天就值 $9.9/月。",
+          "$29/月一口价工具利益一致：你为托管和功能付费，不为人数付费。招第一个工程师时，文档价格不变。",
+          "免费档适合验证。但如果文档面向客户（API 产品、开发者工具），专业品牌和自定义域名从第一天就值 $29/月。",
         ],
       },
     ],
     cta: {
       title: "准备好发布 API 文档了吗？",
-      subtitle: "免费创建第一个文档站。含 5 个站点，之后 $9.9/月一口价。",
+      subtitle: "免费创建第一个文档站。含 5 个站点，之后 $29/月一口价。",
       button: "开始创建 →",
     },
   },

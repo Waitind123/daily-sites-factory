@@ -22,7 +22,7 @@ export const diagnoseCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free AI diagnoses. Subscribe for unlimited diagnoses, prioritized fix plans, and export.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New diagnosis",
     funnelName: "Funnel name",
     funnelNamePlaceholder: "e.g. SaaS signup flow",
@@ -55,7 +55,7 @@ export const diagnoseCopy = {
     freeDiagnoses: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费 AI 诊断。订阅后可无限诊断、优先级修复方案和导出。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建诊断",
     funnelName: "漏斗名称",
     funnelNamePlaceholder: "例如：SaaS 注册流程",

@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pricing-heatmap-zeta.vercel.app",
     name: "Indie Pricing Heatmap",
-    title: "Indie Pricing Heatmap — Hotjar alternative for /pricing pages, $9.9/mo",
+    title: "Indie Pricing Heatmap — Hotjar alternative for /pricing pages, $29/mo",
     description:
-      "5 free heatmap scans. Hotjar $39+/mo? $9.9/mo flat: attention heatmaps, drop-off analysis, layout fixes, and A/B playbook for indie SaaS pricing pages.",
+      "5 free heatmap scans. Hotjar $39+/mo? $29/mo flat: attention heatmaps, drop-off analysis, layout fixes, and A/B playbook for indie SaaS pricing pages.",
     keywords: [
       "pricing page heatmap",
       "Hotjar alternative indie",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pricing-heatmap-zeta.vercel.app",
     name: "独立开发者定价页热力图",
-    title: "定价页热力图 — Hotjar 替代品，独立开发者 $9.9/月",
+    title: "定价页热力图 — Hotjar 替代品，独立开发者 $29/月",
     description:
-      "免费体验 5 次扫描。Hotjar $39+/月？$9.9/月一口价：注意力热力图、流失分析、布局修复与 A/B 测试方案。",
+      "免费体验 5 次扫描。Hotjar $39+/月？$29/月一口价：注意力热力图、流失分析、布局修复与 A/B 测试方案。",
     keywords: [
       "定价页热力图",
       "Hotjar 替代品",

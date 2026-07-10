@@ -312,7 +312,7 @@ export const testimonials = [
   {
     name: "Emma Walsh",
     role: "UX Designer · Digital Nomad",
-    text: "Finally a coworking directory with actual WiFi speeds and day-pass prices. Worth every penny of the $9.9.",
+    text: "Finally a coworking directory with actual WiFi speeds and day-pass prices. Worth every penny of the $29.",
   },
   {
     name: "田中健太",

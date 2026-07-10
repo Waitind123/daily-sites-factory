@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://release-pulse.vercel.app",
     name: "Release Pulse",
-    title: "Release Pulse — Changelog to social posts for indie devs, $9.9/mo",
+    title: "Release Pulse — Changelog to social posts for indie devs, $29/mo",
     description:
-      "5 free conversions. PushToPost $9/mo? $9.9/mo flat: paste release notes → X, LinkedIn, Threads. Ship announcements in 30 seconds.",
+      "5 free conversions. PushToPost $9/mo? $29/mo flat: paste release notes → X, LinkedIn, Threads. Ship announcements in 30 seconds.",
     keywords: [
       "changelog to social media",
       "release notes converter",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://release-pulse.vercel.app",
     name: "发布日志转社交帖",
-    title: "发布日志转社交帖 — PushToPost 平替，独立开发者 $9.9/月",
+    title: "发布日志转社交帖 — PushToPost 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次。PushToPost 要 $9/月？$9.9/月一口价：粘贴 release notes → X、领英、Threads，30 秒完成发布通知。",
+      "免费体验 5 次。PushToPost 要 $9/月？$29/月一口价：粘贴 release notes → X、领英、Threads，30 秒完成发布通知。",
     keywords: [
       "发布日志转社交帖",
       "changelog 改写工具",

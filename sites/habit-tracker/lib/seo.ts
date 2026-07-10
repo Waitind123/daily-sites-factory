@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://habit-tracker-opal-rho.vercel.app",
     name: "Habit Tracker",
-    title: "Habit Tracker — Minimal daily check-in, $9.9/mo",
+    title: "Habit Tracker — Minimal daily check-in, $29/mo",
     description:
-      "5 free check-ins. Habitica too gamified? $9.9/mo flat: one-tap check-in, streak tracking, weekly reports — no RPG quests.",
+      "5 free check-ins. Habitica too gamified? $29/mo flat: one-tap check-in, streak tracking, weekly reports — no RPG quests.",
     keywords: [
       "habit tracker",
       "Habitica alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://habit-tracker-opal-rho.vercel.app",
     name: "习惯打卡",
-    title: "习惯打卡 — 极简习惯追踪，$9.9/月",
+    title: "习惯打卡 — 极简习惯追踪，$29/月",
     description:
-      "免费体验 5 次打卡。Habitica 太游戏化？$9.9/月一口价：一键打卡、连续天数、周报表，没有 RPG 任务。",
+      "免费体验 5 次打卡。Habitica 太游戏化？$29/月一口价：一键打卡、连续天数、周报表，没有 RPG 任务。",
     keywords: [
       "习惯打卡",
       "习惯追踪",

@@ -1,6 +1,6 @@
 # Coworking Pass
 
-联合办公日票预订 — 数字游民日票比价 + 即时预订，Croissant/Deskpass 平替 $9.9/月。
+联合办公日票预订 — 数字游民日票比价 + 即时预订，Croissant/Deskpass 平替 $29/月。
 
 ## 核心功能
 

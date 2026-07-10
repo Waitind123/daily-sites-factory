@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://visa-alert-one.vercel.app",
     name: "Visa Alert",
-    title: "Visa Alert — Digital nomad visa policy change notifications, $9.9/mo",
+    title: "Visa Alert — Digital nomad visa policy change notifications, $29/mo",
     description:
-      "Get instant alerts when digital nomad visa policies change — income thresholds, processing times, tax rules. 5 free watches, then $9.9/mo.",
+      "Get instant alerts when digital nomad visa policies change — income thresholds, processing times, tax rules. 5 free watches, then $29/mo.",
     keywords: [
       "visa policy change alert",
       "digital nomad visa updates",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://visa-alert-one.vercel.app",
     name: "签证政策提醒",
-    title: "签证政策提醒 — 数字游民签证政策变更通知，$9.9/月",
+    title: "签证政策提醒 — 数字游民签证政策变更通知，$29/月",
     description:
-      "数字游民签证政策变更即时通知 — 收入门槛、审批时长、税务规则。免费体验 5 次，之后 $9.9/月。",
+      "数字游民签证政策变更即时通知 — 收入门槛、审批时长、税务规则。免费体验 5 次，之后 $29/月。",
     keywords: [
       "签证政策变更提醒",
       "数字游民签证更新",

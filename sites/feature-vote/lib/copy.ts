@@ -2,18 +2,18 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Canny $79/mo? · $9.9/mo flat",
+    badge: "Canny $79/mo? · $29/mo flat",
     title: "Feature voting for indie SaaS",
     subtitle:
-      "Collect feature requests, let users upvote, publish a public roadmap. No per-user fees. 5 free boards, then $9.9/mo.",
+      "Collect feature requests, let users upvote, publish a public roadmap. No per-user fees. 5 free boards, then $29/mo.",
     ctaPrimary: "Create a board free",
     ctaPrimaryHref: "/boards",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free boards · then $9.9/mo",
+    note: "5 free boards · then $29/mo",
     socialProof: "127 indie founders subscribed this month",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Canny $79+" },
+      { stat: "$29", label: "flat/mo vs Canny $79+" },
       { stat: "∞", label: "voters, no per-user fees" },
       { stat: "5 min", label: "to launch a public board" },
     ],
@@ -56,7 +56,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited voters, unlimited ideas. No per-user fees like Canny.",
       },
     ],
@@ -65,7 +65,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Solo SaaS founder",
-        text: "Canny wanted $79/mo for 25 tracked users. Feature Vote does what I need for $9.9 with unlimited voters.",
+        text: "Canny wanted $79/mo for 25 tracked users. Feature Vote does what I need for $29 with unlimited voters.",
       },
       {
         name: "Elena R.",
@@ -80,7 +80,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing what to build next",
-      subtitle: "5 free boards · then $9.9/mo for unlimited",
+      subtitle: "5 free boards · then $29/mo for unlimited",
       ctaPrimary: "Create a board free",
       ctaSecondary: "View pricing",
     },
@@ -91,18 +91,18 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Canny $79/月？· $9.9/月一口价",
+    badge: "Canny $79/月？· $29/月一口价",
     title: "独立开发者的功能投票板",
     subtitle:
-      "收集功能请求、用户投票、公开路线图。不按用户数收费。免费体验 5 个投票板，之后 $9.9/月。",
+      "收集功能请求、用户投票、公开路线图。不按用户数收费。免费体验 5 个投票板，之后 $29/月。",
     ctaPrimary: "免费创建投票板",
     ctaPrimaryHref: "/boards",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     socialProof: "本月已有 127 位独立开发者订阅",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Canny 要 $79+" },
+      { stat: "$29", label: "一口价/月，Canny 要 $79+" },
       { stat: "∞", label: "投票人数不限，不按人头收费" },
       { stat: "5 分钟", label: "上线公开投票板" },
     ],
@@ -145,7 +145,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "投票者与想法数量不限，不像 Canny 按人头收费。",
       },
     ],
@@ -154,7 +154,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "一人 SaaS 创始人",
-        text: "Canny 25 个用户就要 $79/月。功能投票板 $9.9 不限投票人数，刚好够用。",
+        text: "Canny 25 个用户就要 $79/月。功能投票板 $29 不限投票人数，刚好够用。",
       },
       {
         name: "Elena R.",
@@ -169,7 +169,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜用户想要什么",
-      subtitle: "免费 5 个投票板 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个投票板 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建投票板",
       ctaSecondary: "查看定价",
     },
@@ -192,7 +192,7 @@ export const joinCopy = {
     perYear: "/yr",
     saveAnnual: "Save 17% vs monthly",
     vsCanny: "vs Canny $79+/mo · cancel anytime",
-    monthlyPrice: "$9.9",
+    monthlyPrice: "$29",
     annualPrice: "$99",
     perks: [
       "Unlimited feedback boards",
@@ -202,8 +202,8 @@ export const joinCopy = {
       "Voter notifications on ship",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
-    subscribeAnnual: "Subscribe · $99/yr",
+    subscribe: "Subscribe · $29/mo",
+    subscribeAnnual: "Subscribe · $29/mo",
     socialProof: "127 indie founders subscribed this month",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
@@ -216,7 +216,7 @@ export const joinCopy = {
     includedTitle: "Included",
     compareTitle: "Feature Vote vs Canny",
     compareRows: [
-      { label: "Monthly price", us: "$9.9 flat", them: "$79+ (scales with users)" },
+      { label: "Monthly price", us: "$29 flat", them: "$79+ (scales with users)" },
       { label: "Per-voter fees", us: "None", them: "Yes, after 25 users" },
       { label: "Public roadmap", us: "Included", them: "Growth plan+" },
       { label: "Setup time", us: "5 minutes", them: "Days of config" },
@@ -238,7 +238,7 @@ export const joinCopy = {
       },
       {
         q: "How is this different from Canny?",
-        a: "Flat $9.9/mo with unlimited voters. Canny charges $79+/mo and scales per tracked user.",
+        a: "Flat $29/mo with unlimited voters. Canny charges $79+/mo and scales per tracked user.",
       },
     ],
   },
@@ -252,7 +252,7 @@ export const joinCopy = {
     perYear: "/年",
     saveAnnual: "比月付省 17%",
     vsCanny: "对比 Canny $79+/月 · 随时可取消",
-    monthlyPrice: "$9.9",
+    monthlyPrice: "$29",
     annualPrice: "¥699",
     perks: [
       "不限投票板数量",
@@ -262,8 +262,8 @@ export const joinCopy = {
       "功能上线通知投票者",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
-    subscribeAnnual: "订阅 · ¥699/年",
+    subscribe: "订阅 · $29/月",
+    subscribeAnnual: "订阅 · ¥199/月",
     socialProof: "本月已有 127 位独立开发者订阅",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
@@ -276,7 +276,7 @@ export const joinCopy = {
     includedTitle: "包含功能",
     compareTitle: "功能投票板 vs Canny",
     compareRows: [
-      { label: "月费", us: "$9.9 一口价", them: "$79+（随用户数涨）" },
+      { label: "月费", us: "$29 一口价", them: "$79+（随用户数涨）" },
       { label: "按投票人收费", us: "无", them: "25 人后按人头" },
       { label: "公开路线图", us: "包含", them: "成长版及以上" },
       { label: "上线时间", us: "5 分钟", them: "需多天配置" },
@@ -298,7 +298,7 @@ export const joinCopy = {
       },
       {
         q: "和 Canny 有什么区别？",
-        a: "$9.9/月 一口价，投票人数不限。Canny $79+/月 且按跟踪用户数涨价。",
+        a: "$29/月 一口价，投票人数不限。Canny $79+/月 且按跟踪用户数涨价。",
       },
     ],
   },

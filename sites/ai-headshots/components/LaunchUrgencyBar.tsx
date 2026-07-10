@@ -52,7 +52,7 @@ export function LaunchUrgencyBar({
           <span className="text-amber-200">
             {zh ? `还剩 ${daysLeft} 天` : `${daysLeft}d left`}
           </span>
-          <span className="hidden sm:inline text-amber-300/80"> · $9.9/mo · ¥69/月</span>
+          <span className="hidden sm:inline text-amber-300/80"> · $29/mo · ¥199/月</span>
         </p>
         <CheckoutButton
           label={zh ? "立即订阅" : "Subscribe"}

@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://guilt-free-habits.vercel.app",
     name: "Guilt-Free Habits",
-    title: "Guilt-Free Habits — Weekly goals, no streak anxiety, $9.9/mo",
+    title: "Guilt-Free Habits — Weekly goals, no streak anxiety, $29/mo",
     description:
-      "5 free check-ins. Streaks reset to zero? $9.9/mo flat: weekly 4/7 goals, no guilt on missed days — based on Lally 2010 habit research.",
+      "5 free check-ins. Streaks reset to zero? $29/mo flat: weekly 4/7 goals, no guilt on missed days — based on Lally 2010 habit research.",
     keywords: [
       "guilt free habit tracker",
       "Streaks alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://guilt-free-habits.vercel.app",
     name: "无罪恶感习惯",
-    title: "无罪恶感习惯 — 周目标制打卡，告别连续天数焦虑，$9.9/月",
+    title: "无罪恶感习惯 — 周目标制打卡，告别连续天数焦虑，$29/月",
     description:
-      "免费体验 5 次打卡。连续天数断链归零？$9.9/月一口价：每周 4/7 天达标即可，错过一天不重置进度，基于 Lally 2010 习惯研究。",
+      "免费体验 5 次打卡。连续天数断链归零？$29/月一口价：每周 4/7 天达标即可，错过一天不重置进度，基于 Lally 2010 习惯研究。",
     keywords: [
       "无罪恶感习惯打卡",
       "习惯追踪",

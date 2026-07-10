@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI Overview Rank Tracking Guide for Indie Hackers",
       description:
-        "Google AI Overviews changed SEO. Learn how to track classic SERP rank AND AI citation status. Compare tools and pick a $9.9/mo dual-track tracker.",
+        "Google AI Overviews changed SEO. Learn how to track classic SERP rank AND AI citation status. Compare tools and pick a $29/mo dual-track tracker.",
     },
     h1: "2026 AI Overview Rank Tracking for Indie Hackers: Complete Guide",
     updated: "Updated June 2026 · 14 min read",
@@ -51,9 +51,9 @@ export const guideCopy = {
             p: "AI Overviews vary by location, account, and personalization. Manual checks don't scale and miss daily citation changes.",
           },
           {
-            h3: "AIO Rank — $9.9/mo flat",
+            h3: "AIO Rank — $29/mo flat",
             p: "Built for indie hackers who need dual-track monitoring: classic SERP position plus AI Overview citation status, position, and competitor sources.",
-            link: { href: "/join", text: "5 free dual-track checks to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free dual-track checks to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -99,7 +99,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready to track classic rank AND AI citations?",
-      subtitle: "5 free dual-track checks · daily updates · $9.9/mo unlimited",
+      subtitle: "5 free dual-track checks · daily updates · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 AI Overview 排名追踪完整指南",
       description:
-        "Google AI 摘要改变了 SEO。学习如何同时追踪经典 SERP 排名与 AI 引用状态。对比工具，选择 $9.9/月双轨追踪器。",
+        "Google AI 摘要改变了 SEO。学习如何同时追踪经典 SERP 排名与 AI 引用状态。对比工具，选择 $29/月双轨追踪器。",
     },
     h1: "2026 独立开发者 AI Overview 排名追踪完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 14 分钟",
@@ -153,9 +153,9 @@ export const guideCopy = {
             p: "AI 摘要因地区、账号和个性化而异。手动检查无法扩展，且会错过每日引用变化。",
           },
           {
-            h3: "AI Overview 排名追踪 — $9.9/月一口价",
+            h3: "AI Overview 排名追踪 — $29/月一口价",
             p: "为需要双轨监控的独立开发者打造：经典 SERP 排名 + AI Overview 引用状态、位置与竞品来源。",
-            link: { href: "/join", text: "免费体验 5 次双轨查询", suffix: "，之后 $9.9/月一口价，无年付锁定。" },
+            link: { href: "/join", text: "免费体验 5 次双轨查询", suffix: "，之后 $29/月一口价，无年付锁定。" },
           },
         ],
       },
@@ -201,7 +201,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好追踪经典排名与 AI 引用了吗？",
-      subtitle: "免费体验 5 次双轨查询 · 每日更新 · $9.9/月不限量",
+      subtitle: "免费体验 5 次双轨查询 · 每日更新 · $29/月不限量",
       button: "打开控制台 →",
     },
   },

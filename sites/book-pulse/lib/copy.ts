@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Calendly $12/mo? · $9.9/mo flat",
+    badge: "Calendly $12/mo? · $29/mo flat",
     title: "Scheduling pages built for indie hackers",
     subtitle:
-      "Share your project, sync time zones, book coffee chats in 2 minutes. No cookie banners, full i18n. 5 free publishes, then $9.9/mo.",
+      "Share your project, sync time zones, book coffee chats in 2 minutes. No cookie banners, full i18n. 5 free publishes, then $29/mo.",
     ctaPrimary: "Create booking page",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free publishes · then $9.9/mo",
+    note: "5 free publishes · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Calendly $12+" },
+      { stat: "$29", label: "flat/mo vs Calendly $12+" },
       { stat: "2 min", label: "to publish your booking link" },
       { stat: "100%", label: "bilingual EN/ZH — no cookie popup" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited pages and bookings. No per-seat fees like SavvyCal.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Book collabs without Calendly bloat",
-      subtitle: "5 free publishes · then $9.9/mo for unlimited booking pages",
+      subtitle: "5 free publishes · then $29/mo for unlimited booking pages",
       ctaPrimary: "Create booking page",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Calendly 要 $12/月？· $9.9/月一口价",
+    badge: "Calendly 要 $12/月？· $29/月一口价",
     title: "为独立开发者打造的预约页",
     subtitle:
-      "展示你在做的项目、同步时区、2 分钟发布预约链接。无 Cookie 弹窗、完整中英双语。免费发布 5 次，之后 $9.9/月。",
+      "展示你在做的项目、同步时区、2 分钟发布预约链接。无 Cookie 弹窗、完整中英双语。免费发布 5 次，之后 $29/月。",
     ctaPrimary: "创建预约页",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费发布 5 次 · 之后 $9.9/月",
+    note: "免费发布 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Calendly 要 $12+" },
+      { stat: "$29", label: "一口价/月，Calendly 要 $12+" },
       { stat: "2 分钟", label: "发布你的预约链接" },
       { stat: "100%", label: "中英双语 — 无 Cookie 弹窗" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限预约页和预约次数。无 SavvyCal 式按席位收费。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "不用 Calendly 臃肿功能也能预约",
-      subtitle: "免费发布 5 次 · 之后 $9.9/月无限预约页",
+      subtitle: "免费发布 5 次 · 之后 $29/月无限预约页",
       ctaPrimary: "创建预约页",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Bilingual EN/ZH with zero English in Chinese mode",
       "No Calendly cookie banner on your site",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free publishes, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "中英双语，中文模式全站零英文",
       "你的网站无 Calendly Cookie 弹窗",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费发布 5 次，之后订阅？",

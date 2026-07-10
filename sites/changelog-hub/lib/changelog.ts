@@ -73,8 +73,8 @@ export const features = [
   },
   {
     icon: "💰",
-    title: "$9.9 vs $49",
-    desc: "Beamer $49/月，我们 $9.9/月全包 changelog + 状态页",
+    title: "$29 vs $49",
+    desc: "Beamer $49/月，我们 $29/月全包 changelog + 状态页",
   },
   {
     icon: "⚡",
@@ -92,7 +92,7 @@ export const testimonials = [
   {
     name: "Tom Wright",
     role: "Indie Hacker",
-    text: "Finally a changelog tool that doesn't charge per MAU. $9.9 flat is perfect for bootstrapped products.",
+    text: "Finally a changelog tool that doesn't charge per MAU. $29 flat is perfect for bootstrapped products.",
   },
   {
     name: "赵婷",

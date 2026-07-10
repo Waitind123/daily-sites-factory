@@ -1,6 +1,6 @@
 # Changelog Hub
 
-Indie Changelog 发布台 — Beamer/AnnounceKit 平替，$9.9/月。
+Indie Changelog 发布台 — Beamer/AnnounceKit 平替，$29/月。
 
 ## 功能
 

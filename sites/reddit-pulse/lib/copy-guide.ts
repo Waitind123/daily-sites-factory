@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 GummySearch Alternative for Indie Hackers — Reddit Pain Point Mining Guide",
       description:
-        "GummySearch shut down in 2025. Compare Reddit audience research tools: GummySearch, SpyCenter, BuildWhatTheyWant. Find a $9.9/mo flat-rate alternative for mining pain points.",
+        "GummySearch shut down in 2025. Compare Reddit audience research tools: GummySearch, SpyCenter, BuildWhatTheyWant. Find a $29/mo flat-rate alternative for mining pain points.",
     },
     h1: "2026 GummySearch Alternative for Indie Hackers: Reddit Pain Point Mining Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -14,7 +14,7 @@ export const guideCopy = {
       "The best validation signal is not a survey. It is a stranger on Reddit typing: \"I wish there was a tool that…\" or \"Looking for an alternative to [expensive tool] under $20/mo.\" These are pre-qualified buyers describing exactly what they would pay for — in their own words.",
       "GummySearch was the gold standard for this. 135,000+ founders used it to mine Reddit for audience insights. Then it shut down on November 30, 2025. Overnight, the indie hacker community lost its primary research tool.",
       "Replacements emerged fast: SpyCenter at $79–199/mo, BuildWhatTheyWant, ThreddIQ, BigIdeasDB. All useful — but most price out solo founders who just need to find 10 pain points in a niche before shipping an MVP.",
-      "This guide explains how Reddit pain point mining works, compares 2026 audience research tools for bootstrapped founders, and shows you how to validate your next SaaS idea in under 10 minutes for $9.9/mo.",
+      "This guide explains how Reddit pain point mining works, compares 2026 audience research tools for bootstrapped founders, and shows you how to validate your next SaaS idea in under 10 minutes for $29/mo.",
     ],
     sections: [
       {
@@ -49,8 +49,8 @@ export const guideCopy = {
             p: "Scans 65+ subreddits for pay signals and frustration scores. Good for idea discovery. Less focused on verbatim quote extraction and niche keyword mining.",
           },
           {
-            h3: "Reddit Pulse — $9.9/mo flat",
-            p: "Built for indie hackers: enter a niche keyword, get ranked pain quotes with signal classification and frustration scores. 5 free searches, then $9.9/mo unlimited. No enterprise pricing.",
+            h3: "Reddit Pulse — $29/mo flat",
+            p: "Built for indie hackers: enter a niche keyword, get ranked pain quotes with signal classification and frustration scores. 5 free searches, then $29/mo unlimited. No enterprise pricing.",
             link: { href: "/mine", text: "Mine pain points free", suffix: " — five searches, no credit card." },
           },
         ],
@@ -63,7 +63,7 @@ export const guideCopy = {
           "Enter the keyword in Reddit Pulse — we scan r/SaaS, r/indiehackers, r/Entrepreneur",
           "Review top pain quotes ranked by frustration intensity",
           "Filter for \"would pay\" and \"looking for alternative\" signals first",
-          "Ship a $9.9/mo micro-SaaS solving the #1 pain point this week",
+          "Ship a $29/mo micro-SaaS solving the #1 pain point this week",
         ],
         afterLink: {
           href: "/mine",
@@ -92,7 +92,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Reddit Pulse free",
-          prefix: "GummySearch is gone and enterprise replacements cost $79+/mo. If you need niche pain point mining, frustration scoring, and $9.9/mo flat pricing, ",
+          prefix: "GummySearch is gone and enterprise replacements cost $79+/mo. If you need niche pain point mining, frustration scoring, and $29/mo flat pricing, ",
           suffix: ". Five searches, no credit card. Stop guessing — start mining.",
         },
       },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 GummySearch 替代品指南 — Reddit 痛点挖掘",
       description:
-        "GummySearch 于 2025 年关停。对比 GummySearch、SpyCenter、BuildWhatTheyWant 等 Reddit 受众研究工具，找到 $9.9/月一口价的痛点挖掘替代方案。",
+        "GummySearch 于 2025 年关停。对比 GummySearch、SpyCenter、BuildWhatTheyWant 等 Reddit 受众研究工具，找到 $29/月一口价的痛点挖掘替代方案。",
     },
     h1: "2026 独立开发者 GummySearch 替代品：Reddit 痛点挖掘完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -116,7 +116,7 @@ export const guideCopy = {
       "最好的验证信号不是问卷，而是 Reddit 上陌生人说：「我希望有个工具能…」或「寻找 $20/月以下的 [贵工具] 替代品。」这是预筛选的买家用自己的话描述他们愿意付费的需求。",
       "GummySearch 曾是这个领域的标杆，13.5 万+ 创始人用它挖掘 Reddit 受众洞察。2025 年 11 月 30 日关停后，独立开发者社区一夜之间失去了主要调研工具。",
       "替代品很快出现：SpyCenter $79–199/月、BuildWhatTheyWant、ThreddIQ、BigIdeasDB。都有用 — 但对只想在细分领域找 10 条痛点再 ship MVP 的独立开发者来说，价格太高。",
-      "本指南解释 Reddit 痛点挖掘如何运作、对比 2026 年适合自举创始人的受众研究工具，以及如何用 $9.9/月 在 10 分钟内验证下一个 SaaS 想法。",
+      "本指南解释 Reddit 痛点挖掘如何运作、对比 2026 年适合自举创始人的受众研究工具，以及如何用 $29/月 在 10 分钟内验证下一个 SaaS 想法。",
     ],
     sections: [
       {
@@ -151,8 +151,8 @@ export const guideCopy = {
             p: "扫描 65+ 子版块寻找付费信号和挫败感分数。适合发现点子，较少聚焦原文引用提取和细分领域关键词挖掘。",
           },
           {
-            h3: "Reddit Pulse — $9.9/月 一口价",
-            p: "为独立开发者打造：输入细分领域关键词，获得带信号分类和挫败感评分的排序痛点引用。免费 5 次搜索，之后 $9.9/月 不限量，无企业定价。",
+            h3: "Reddit Pulse — $29/月 一口价",
+            p: "为独立开发者打造：输入细分领域关键词，获得带信号分类和挫败感评分的排序痛点引用。免费 5 次搜索，之后 $29/月 不限量，无企业定价。",
             link: { href: "/mine", text: "免费挖掘痛点", suffix: " — 五次搜索，无需信用卡。" },
           },
         ],
@@ -165,7 +165,7 @@ export const guideCopy = {
           "在 Reddit Pulse 输入关键词 — 扫描 r/SaaS、r/indiehackers、r/Entrepreneur",
           "查看按挫败感强度排序的痛点引用",
           "优先筛选「愿意付费」和「寻找替代」信号",
-          "本周就 ship 一个 $9.9/月 微 SaaS 解决排名第一的痛点",
+          "本周就 ship 一个 $29/月 微 SaaS 解决排名第一的痛点",
         ],
         afterLink: {
           href: "/mine",
@@ -194,7 +194,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Reddit Pulse",
-          prefix: "GummySearch 已消失，企业替代品要 $79+/月。若你需要细分领域痛点挖掘、挫败感评分、$9.9/月 一口价，可",
+          prefix: "GummySearch 已消失，企业替代品要 $79+/月。若你需要细分领域痛点挖掘、挫败感评分、$29/月 一口价，可",
           suffix: "。五次搜索，无需信用卡。别再猜 — 开始挖掘。",
         },
       },

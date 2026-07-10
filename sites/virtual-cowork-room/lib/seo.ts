@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://virtual-cowork-room.vercel.app",
     name: "Virtual Cowork",
-    title: "Virtual Cowork — Quiet focus room for remote workers, $9.9/mo",
+    title: "Virtual Cowork — Quiet focus room for remote workers, $29/mo",
     description:
-      "5 free cowork sessions. Flow Club $40/mo? $9.9/mo flat: pomodoro, ambient sounds, body doubling — beat remote-work loneliness.",
+      "5 free cowork sessions. Flow Club $40/mo? $29/mo flat: pomodoro, ambient sounds, body doubling — beat remote-work loneliness.",
     keywords: [
       "virtual coworking",
       "Flow Club alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://virtual-cowork-room.vercel.app",
     name: "远程共工室",
-    title: "远程共工室 — 虚拟专注空间，告别远程孤独，$9.9/月",
+    title: "远程共工室 — 虚拟专注空间，告别远程孤独，$29/月",
     description:
-      "免费体验 5 次共工会话。Flow Club $40/月太贵？$9.9/月一口价：番茄钟、白噪音、虚拟同伴陪伴，远程工作者不再独自办公。",
+      "免费体验 5 次共工会话。Flow Club $40/月太贵？$29/月一口价：番茄钟、白噪音、虚拟同伴陪伴，远程工作者不再独自办公。",
     keywords: [
       "远程共工室",
       "虚拟共工",

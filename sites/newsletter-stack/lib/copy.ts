@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Kit $29/mo? · Compare for $9.9/mo",
+    badge: "Kit $29/mo? · Compare for $29/mo",
     title: "Pick the right newsletter tool — without overpaying",
     subtitle:
-      "Deep comparisons of Substack, Beehiiv, Kit, Mailchimp & more. 5 free reports, then $9.9/mo. Stop guessing, start shipping.",
+      "Deep comparisons of Substack, Beehiiv, Kit, Mailchimp & more. 5 free reports, then $29/mo. Stop guessing, start shipping.",
     ctaPrimary: "Compare free",
     ctaPrimaryHref: "/compare",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free comparisons · then $9.9/mo",
+    note: "5 free comparisons · then $29/mo",
     statsTitle: "Why compare before you commit?",
     toolsTitle: "Popular tools at a glance",
     testimonialsTitle: "What creators say",
@@ -18,13 +18,13 @@ export const homeCopy = {
     closing: {
       title: "Paying 10% to Substack for two years?",
       subtitle:
-        "At $800 MRR you lose $80/mo to platform fees. One comparison could save $960/year. $9.9/mo beats picking the wrong platform.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "At $800 MRR you lose $80/mo to platform fees. One comparison could save $960/year. $29/mo beats picking the wrong platform.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Compare free",
     },
     stats: [
       { stat: "6+", label: "platforms compared" },
-      { stat: "$9.9", label: "flat/mo vs $49+ tools" },
+      { stat: "$29", label: "flat/mo vs $49+ tools" },
       { stat: "5", label: "free deep comparisons" },
     ],
     howItWorks: {
@@ -104,15 +104,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Kit 要 $29/月？· $9.9/月帮你选对",
+    badge: "Kit 要 $29/月？· $29/月帮你选对",
     title: "选对 Newsletter 工具 — 不再多付钱",
     subtitle:
-      "Substack、Beehiiv、Kit、Mailchimp 等平台深度对比。免费体验 5 次，之后 $9.9/月。别猜了，直接选。",
+      "Substack、Beehiiv、Kit、Mailchimp 等平台深度对比。免费体验 5 次，之后 $29/月。别猜了，直接选。",
     ctaPrimary: "免费对比",
     ctaPrimaryHref: "/compare",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     statsTitle: "为什么需要工具对比？",
     toolsTitle: "热门工具速览",
     testimonialsTitle: "创作者怎么说",
@@ -120,13 +120,13 @@ export const homeCopy = {
     closing: {
       title: "在 Substack 交了两年 10% 抽成？",
       subtitle:
-        "MRR $800 时每月多付 $80。对比一次，可能省下 $960/年。$9.9/月 比选错平台便宜 100 倍。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "MRR $800 时每月多付 $80。对比一次，可能省下 $960/年。$29/月 比选错平台便宜 100 倍。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费对比",
     },
     stats: [
       { stat: "6+", label: "平台深度对比" },
-      { stat: "$9.9", label: "一口价/月，对比工具 $49+" },
+      { stat: "$29", label: "一口价/月，对比工具 $49+" },
       { stat: "5", label: "次免费深度对比" },
     ],
     howItWorks: {

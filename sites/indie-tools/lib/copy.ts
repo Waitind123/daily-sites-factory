@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Product Hunt has 5000 directories · none help you choose · $9.9/mo",
+    badge: "Product Hunt has 5000 directories · none help you choose · $29/mo",
     title: "Curated indie hacker tool reviews — pick your stack in an hour",
     subtitle:
-      "40+ hand-picked tools with pricing comparisons, alternatives & setup checklists. 5 free deep reviews, then $9.9/mo.",
+      "40+ hand-picked tools with pricing comparisons, alternatives & setup checklists. 5 free deep reviews, then $29/mo.",
     ctaPrimary: "Browse tools free",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free deep reviews · then $9.9/mo",
+    note: "5 free deep reviews · then $29/mo",
     stats: [
       { stat: "40+", label: "curated indie tools" },
       { stat: "6", label: "stack categories" },
@@ -83,7 +83,7 @@ export const homeCopy = {
       {
         name: "Amy",
         role: "Side-project SaaS founder",
-        text: "Too many tool lists, zero depth. Every tool here has a review and setup steps. $9.9 is a steal.",
+        text: "Too many tool lists, zero depth. Every tool here has a review and setup steps. $29 is a steal.",
       },
       {
         name: "Zhou",
@@ -94,8 +94,8 @@ export const homeCopy = {
     closing: {
       title: "Product Hunt lists tools. We help you choose.",
       subtitle:
-        "$9.9/mo flat. Deep reviews + pricing comparisons + alternatives + setup guides. Charge from day 1.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Deep reviews + pricing comparisons + alternatives + setup guides. Charge from day 1.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Browse tools free",
     },
     productDemo: {
@@ -106,15 +106,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Product Hunt 有 5000 个目录 · 没有一个帮你选型 · $9.9/月",
+    badge: "Product Hunt 有 5000 个目录 · 没有一个帮你选型 · $29/月",
     title: "精选 indie 工具深度评测 — 1 小时定技术栈",
     subtitle:
-      "40+ 精选工具，含定价对比、替代方案与接入清单。免费体验 5 次深度评测，之后 $9.9/月。",
+      "40+ 精选工具，含定价对比、替代方案与接入清单。免费体验 5 次深度评测，之后 $29/月。",
     ctaPrimary: "免费浏览工具",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "40+", label: "精选 indie 工具" },
       { stat: "6", label: "技术栈分类" },
@@ -187,7 +187,7 @@ export const homeCopy = {
       {
         name: "Amy",
         role: "副业 SaaS 创始人",
-        text: "工具目录太多太杂，这里每个都有深度评测和 setup 步骤，$9.9 值。",
+        text: "工具目录太多太杂，这里每个都有深度评测和 setup 步骤，$29 值。",
       },
       {
         name: "老周",
@@ -198,8 +198,8 @@ export const homeCopy = {
     closing: {
       title: "Product Hunt 有 5000 个工具目录，没有一个帮你选型",
       subtitle:
-        "我们只要 $9.9/月。深度评测 + 定价对比 + 替代方案 + 接入指南。第一天收费，因为调研每个工具也要时间。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "我们只要 $29/月。深度评测 + 定价对比 + 替代方案 + 接入指南。第一天收费，因为调研每个工具也要时间。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费浏览工具",
     },
     productDemo: {

@@ -58,7 +58,7 @@ export const analyzeCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free optimizations. Subscribe for unlimited AI scans, copy rewrites, and layout reports.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Optimize a pricing page",
     pageUrl: "Pricing page URL",
     pageUrlPlaceholder: "https://yoursite.com/pricing",
@@ -88,7 +88,7 @@ export const analyzeCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费优化。订阅后可无限 AI 扫描、文案改写与布局报告。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "优化定价页",
     pageUrl: "定价页链接",
     pageUrlPlaceholder: "https://你的网站.com/pricing",

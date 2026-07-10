@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://freelance-local-kit.vercel.app",
     name: "Local Freelance Kit",
-    title: "Local Freelance Kit — HN#47298161 inspired, $9.9/mo all-in-one",
+    title: "Local Freelance Kit — HN#47298161 inspired, $29/mo all-in-one",
     description:
-      "5 free documents. Replace HoneyBook + Bonsai stack with invoices, proposals, contracts, expenses & projects. Local JSON export. $9.9/mo flat.",
+      "5 free documents. Replace HoneyBook + Bonsai stack with invoices, proposals, contracts, expenses & projects. Local JSON export. $29/mo flat.",
     keywords: [
       "freelance tools",
       "local first invoicing",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://freelance-local-kit.vercel.app",
     name: "自由职业本地套件",
-    title: "自由职业本地套件 — HN 五合一平替，$9.9/月",
+    title: "自由职业本地套件 — HN 五合一平替，$29/月",
     description:
-      "免费体验 5 份文档。用发票、报价、合同、报销、项目替代 HoneyBook + Bonsai 工具栈。本地 JSON 导出，$9.9/月一口价。",
+      "免费体验 5 份文档。用发票、报价、合同、报销、项目替代 HoneyBook + Bonsai 工具栈。本地 JSON 导出，$29/月一口价。",
     keywords: [
       "自由职业工具",
       "本地优先发票",

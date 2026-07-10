@@ -185,7 +185,7 @@ export const indieTools: IndieTool[] = [
       alternatives: [
         { name: "Calendly", pricing: "$12+/月", when: "不需要自托管、要最大品牌信任" },
         { name: "TidyCal", pricing: "$29 终身", when: "一次性付费、功能够用" },
-        { name: "BookPulse", pricing: "$9.9/月", when: "极简 indie 预约页" },
+        { name: "BookPulse", pricing: "$29/月", when: "极简 indie 预约页" },
       ],
       pros: ["完全开源", "Stripe 付费预约", "白标/custom domain", "团队调度"],
       cons: ["自托管需维护", "Google Calendar 同步偶发问题", "移动端 UI 一般"],

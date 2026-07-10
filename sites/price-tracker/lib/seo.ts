@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://price-tracker-seven-tan.vercel.app",
     name: "SaaS Price Tracker",
-    title: "SaaS Price Tracker — competitor pricing monitor & history $9.9/mo",
+    title: "SaaS Price Tracker — competitor pricing monitor & history $29/mo",
     description:
       "5 free deep-dives. Auto-track Notion, Linear, Cursor pricing changes — 90-day history, trend analysis, email alerts. 5x cheaper than RivalPeek.",
     keywords: [
@@ -26,7 +26,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://price-tracker-seven-tan.vercel.app",
     name: "SaaS 价格追踪",
-    title: "SaaS 价格追踪 — 竞品定价变动监控与历史分析 $9.9/月",
+    title: "SaaS 价格追踪 — 竞品定价变动监控与历史分析 $29/月",
     description:
       "免费体验 5 次深度追踪。自动监控 Notion、Linear、Cursor 等竞品定价变动，90 天历史、趋势分析、邮件提醒。比 RivalPeek $49/月便宜 5 倍。",
     keywords: [

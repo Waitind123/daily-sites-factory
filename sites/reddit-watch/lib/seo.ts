@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://reddit-watch-rho.vercel.app",
     name: "Reddit Watch",
-    title: "Reddit Watch — 24/7 keyword monitoring for indie hackers, $9.9/mo",
+    title: "Reddit Watch — 24/7 keyword monitoring for indie hackers, $29/mo",
     description:
-      "5 free scans. SubWatch alternative with 24/7 keyword alerts, intent scoring 1–10, and switching/alternative signal filtering. Monitor r/SaaS & r/indiehackers for $9.9/mo.",
+      "5 free scans. SubWatch alternative with 24/7 keyword alerts, intent scoring 1–10, and switching/alternative signal filtering. Monitor r/SaaS & r/indiehackers for $29/mo.",
     keywords: [
       "SubWatch alternative",
       "Reddit keyword monitoring",
@@ -18,16 +18,16 @@ const siteConfigByLocale = {
       "switching from alternative to Reddit",
       "Mentionly alternative",
       "StackLead alternative",
-      "Reddit monitoring tool $9.9",
+      "Reddit monitoring tool $29",
     ],
     locale: "en_US",
   },
   zh: {
     url: "https://reddit-watch-rho.vercel.app",
     name: "Reddit 线索监控",
-    title: "Reddit 线索监控 — 全天候关键词提醒，$9.9/月",
+    title: "Reddit 线索监控 — 全天候关键词提醒，$29/月",
     description:
-      "免费体验 5 次扫描。SubWatch 平替：全天候关键词提醒、意向分 1–10、切换/替代信号过滤。监控 r/SaaS 与 r/indiehackers，$9.9/月一口价。",
+      "免费体验 5 次扫描。SubWatch 平替：全天候关键词提醒、意向分 1–10、切换/替代信号过滤。监控 r/SaaS 与 r/indiehackers，$29/月一口价。",
     keywords: [
       "SubWatch 替代品",
       "Reddit 关键词监控",
@@ -35,7 +35,7 @@ const siteConfigByLocale = {
       "正在切换寻找替代 Reddit",
       "Mentionly 替代品",
       "StackLead 替代品",
-      "Reddit 监控工具 $9.9",
+      "Reddit 监控工具 $29",
     ],
     locale: "zh_CN",
   },

@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Reddit-first · $9.9/mo flat",
+    badge: "Reddit-first · $29/mo flat",
     title: "Reddit social listening without the noise",
     subtitle:
-      "Brand24 starts at $199/mo. F5Bot spams you with keywords. Monitor Reddit for high-intent signals only — alternative to, switching from, pricing pain. 5 free scans, then $9.9/mo.",
+      "Brand24 starts at $199/mo. F5Bot spams you with keywords. Monitor Reddit for high-intent signals only — alternative to, switching from, pricing pain. 5 free scans, then $29/mo.",
     ctaPrimary: "Scan Reddit intent free",
     ctaPrimaryHref: "/monitor",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
       { stat: "10", label: "max intent score / 10" },
       { stat: "4", label: "subreddits: SaaS, IH, startups" },
-      { stat: "$9.9", label: "flat/mo vs Brand24 $199+" },
+      { stat: "$29", label: "flat/mo vs Brand24 $199+" },
     ],
     howItWorks: {
       title: "Three steps to Reddit buyers",
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited keyword monitoring. No $199/mo enterprise listening.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Your buyers are already asking on Reddit",
-      subtitle: "5 free scans · then $9.9/mo for unlimited high-intent monitoring",
+      subtitle: "5 free scans · then $29/mo for unlimited high-intent monitoring",
       ctaPrimary: "Scan Reddit intent free",
       ctaSecondary: "View pricing",
     },
@@ -91,19 +91,19 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Reddit 专注 · $9.9/月一口价",
+    badge: "Reddit 专注 · $29/月一口价",
     title: "Reddit 社交监听，没有 Brand24 的噪音",
     subtitle:
-      "Brand24 起步 $199/月，F5Bot 关键词轰炸。只监控 Reddit 高意向信号 — 寻找替代、正在切换、价格不满。免费体验 5 次，之后 $9.9/月。",
+      "Brand24 起步 $199/月，F5Bot 关键词轰炸。只监控 Reddit 高意向信号 — 寻找替代、正在切换、价格不满。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费扫描 Reddit 意向",
     ctaPrimaryHref: "/monitor",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "10", label: "最高意向分 / 10" },
       { stat: "4", label: "子版块：SaaS、IH、创业" },
-      { stat: "$9.9", label: "一口价/月，Brand24 要 $199+" },
+      { stat: "$29", label: "一口价/月，Brand24 要 $199+" },
     ],
     howItWorks: {
       title: "三步找到 Reddit 买家",
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "关键词监控不限量。不需要 $199/月 的企业级监听。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "你的买家已经在 Reddit 上提问了",
-      subtitle: "免费 5 次扫描 · 之后 $9.9/月 高意向监控不限量",
+      subtitle: "免费 5 次扫描 · 之后 $29/月 高意向监控不限量",
       ctaPrimary: "免费扫描 Reddit 意向",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Export signal lists",
       "Noise filtering (no vanity mentions)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "信号列表导出",
       "噪音过滤（无虚荣提及）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次扫描，之后订阅？",

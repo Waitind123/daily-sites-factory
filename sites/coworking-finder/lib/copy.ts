@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Coworker.com has no live inventory · $9.9/mo flat",
+    badge: "Coworker.com has no live inventory · $29/mo flat",
     title: "Find coworking spaces with real WiFi data",
     subtitle:
-      "120+ global coworking spaces. Day-pass prices, WiFi speeds, insider tips. 5 free views, then $9.9/mo.",
+      "120+ global coworking spaces. Day-pass prices, WiFi speeds, insider tips. 5 free views, then $29/mo.",
     ctaPrimary: "Browse spaces free",
     ctaPrimaryHref: "/spaces",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free space views · then $9.9/mo",
+    note: "5 free space views · then $29/mo",
     stats: [
       { stat: "120+", label: "verified coworking spaces" },
       { stat: "40+", label: "cities worldwide" },
-      { stat: "$9.9", label: "flat/mo vs hotel meeting rooms" },
+      { stat: "$29", label: "flat/mo vs hotel meeting rooms" },
     ],
     previewTitle: "Featured spaces preview",
     previewNote: "Full WiFi data, insider tips & booking links require",
@@ -82,7 +82,7 @@ export const homeCopy = {
       {
         name: "Emma Walsh",
         role: "UX Designer · Digital Nomad",
-        text: "Finally a coworking directory with actual WiFi speeds and day-pass prices. Worth every penny of the $9.9.",
+        text: "Finally a coworking directory with actual WiFi speeds and day-pass prices. Worth every penny of the $29.",
       },
       {
         name: "Kenta Tanaka",
@@ -92,8 +92,8 @@ export const homeCopy = {
     ],
     closing: {
       title: "Coworker.com has no live inventory. Hotel meeting rooms cost $50+/hr.",
-      subtitle: "$9.9/mo flat. Day-pass prices + WiFi data + insider tips — find a desk in 10 minutes.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+      subtitle: "$29/mo flat. Day-pass prices + WiFi data + insider tips — find a desk in 10 minutes.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Browse spaces free",
     },
     productDemo: {
@@ -104,19 +104,19 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Coworker.com 没实时库存 · $9.9/月一口价",
+    badge: "Coworker.com 没实时库存 · $29/月一口价",
     title: "用真实 WiFi 数据找到靠谱联合办公",
     subtitle:
-      "120+ 全球联合办公空间。日票价格、WiFi 实测、内部贴士。免费体验 5 次，之后 $9.9/月。",
+      "120+ 全球联合办公空间。日票价格、WiFi 实测、内部贴士。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费浏览空间",
     ctaPrimaryHref: "/spaces",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "120+", label: "已验证联合办公空间" },
       { stat: "40+", label: "覆盖全球城市" },
-      { stat: "$9.9", label: "一口价/月，比酒店会议室便宜" },
+      { stat: "$29", label: "一口价/月，比酒店会议室便宜" },
     ],
     previewTitle: "精选空间预览",
     previewNote: "完整 WiFi 数据、内部贴士和预订方式需",
@@ -184,7 +184,7 @@ export const homeCopy = {
       {
         name: "Emma Walsh",
         role: "UX 设计师 · 数字游民",
-        text: "终于有一个标注真实 WiFi 速度和日票价格的联合办公目录。$9.9 完全值得。",
+        text: "终于有一个标注真实 WiFi 速度和日票价格的联合办公目录。$29 完全值得。",
       },
       {
         name: "田中健太",
@@ -194,8 +194,8 @@ export const homeCopy = {
     ],
     closing: {
       title: "Coworker.com 没实时库存，酒店会议室太贵",
-      subtitle: "我们只要 $9.9/月。日票价格 + WiFi 实测 + 内部贴士，10 分钟找到靠谱工位。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "我们只要 $29/月。日票价格 + WiFi 实测 + 内部贴士，10 分钟找到靠谱工位。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费浏览空间",
     },
     productDemo: {

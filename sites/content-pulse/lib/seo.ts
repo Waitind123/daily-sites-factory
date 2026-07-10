@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://content-pulse-murex.vercel.app",
     name: "Content Pulse",
-    title: "Content Pulse — Buffer alternative for indie devs, $9.9/mo flat",
+    title: "Content Pulse — Buffer alternative for indie devs, $29/mo flat",
     description:
-      "5 free reposts. Buffer $15/mo? $9.9/mo flat: one paste → X, LinkedIn, Threads, Reddit, Product Hunt. Ship launches in 30 seconds.",
+      "5 free reposts. Buffer $15/mo? $29/mo flat: one paste → X, LinkedIn, Threads, Reddit, Product Hunt. Ship launches in 30 seconds.",
     keywords: [
       "multi-platform repost",
       "social media scheduler",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://content-pulse-murex.vercel.app",
     name: "内容多平台分发",
-    title: "内容多平台分发 — Buffer 平替，独立开发者 $9.9/月",
+    title: "内容多平台分发 — Buffer 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次。Buffer 要 $15/月？$9.9/月一口价：一次粘贴 → X、领英、Threads、Reddit、Product Hunt，30 秒完成发布分发。",
+      "免费体验 5 次。Buffer 要 $15/月？$29/月一口价：一次粘贴 → X、领英、Threads、Reddit、Product Hunt，30 秒完成发布分发。",
     keywords: [
       "多平台内容分发",
       "社交媒体定时发布",

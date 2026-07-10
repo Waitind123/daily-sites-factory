@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Reddit Social Listening Guide for Indie Hackers — Brand24 Alternative",
       description:
-        "Brand24 starts at $199/mo. F5Bot spams keywords. Learn how to monitor Reddit for high-intent signals — alternative to, switching from — for $9.9/mo.",
+        "Brand24 starts at $199/mo. F5Bot spams keywords. Learn how to monitor Reddit for high-intent signals — alternative to, switching from — for $29/mo.",
     },
     h1: "2026 Reddit Social Listening Guide: Find Buyers Without Brand24 Noise",
     updated: "Updated July 2026 · 12 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "Enterprise social listening tools were built for PR teams tracking every brand mention across 25 million sources. Indie hackers don't need podcast monitoring or influencer reach scores — they need Reddit threads where someone says \"switching from Mention\" or \"Brand24 alternative under $20/mo.\"",
       "Brand24's Individual plan costs $199/mo for 3 keywords with 12-hour update intervals. F5Bot is free but sends 50+ keyword alerts per day with zero intent scoring. LeadsRadar and Wayfind.so fill gaps at $19/mo but still lack the noise filtering solo founders need.",
       "The difference between vanity mention counts and intent signals is the difference between drowning in noise and landing your next 10 customers. \"I wish there was\" posts get upvotes. \"What's everyone switching to after Harvest raised prices?\" posts get credit cards.",
-      "This guide compares 2026 Reddit social listening tools for indie hackers, explains why intent filtering beats volume dashboards, and shows how to find high-intent threads on r/SaaS and r/indiehackers for $9.9/mo flat.",
+      "This guide compares 2026 Reddit social listening tools for indie hackers, explains why intent filtering beats volume dashboards, and shows how to find high-intent threads on r/SaaS and r/indiehackers for $29/mo flat.",
       "Reddit Radar follows the levelsio playbook: charge from day one, ship fast, filter for buyers already asking. Five free scans, then unlimited Reddit monitoring.",
     ],
     sections: [
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "Reddit + HN with AI scoring and reply drafts. Good but still priced above bootstrappers who need monitoring only.",
           },
           {
-            h3: "Reddit Radar — $9.9/mo flat",
+            h3: "Reddit Radar — $29/mo flat",
             p: "Built for indie hackers: monitor Reddit for switching, alternative & pricing signals. Intent score 1–10, noise filtering, 5 free scans then unlimited.",
             link: { href: "/monitor", text: "Scan Reddit intent free", suffix: " — five scans, no credit card." },
           },
@@ -76,7 +76,7 @@ export const guideCopy = {
         h2: "Real example: one Reddit thread, two trial signups",
         paragraphs: [
           "A solo SaaS founder monitored \"brand24\" on Reddit Radar and found a 10/10 intent thread: \"Brand24 $199/mo for 3 keywords — cheaper Reddit-focused alternative?\" Posted 3 hours ago in r/SaaS with 31 comments.",
-          "They replied with a genuine comparison (not a link drop), mentioned their $9.9/mo Reddit intent monitor, and got 2 trial signups from that single thread. Paid for a year of Reddit Radar in one day.",
+          "They replied with a genuine comparison (not a link drop), mentioned their $29/mo Reddit intent monitor, and got 2 trial signups from that single thread. Paid for a year of Reddit Radar in one day.",
           "This is the levelsio playbook: your customers are already asking on Reddit. You just need to listen at scale and reply while the thread is hot.",
         ],
       },
@@ -92,7 +92,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Reddit Radar free",
-          prefix: "Brand24 costs $199/mo and F5Bot floods your inbox. If you need high-intent Reddit monitoring, intent scoring, and $9.9/mo flat pricing, ",
+          prefix: "Brand24 costs $199/mo and F5Bot floods your inbox. If you need high-intent Reddit monitoring, intent scoring, and $29/mo flat pricing, ",
           suffix: ". Five scans, no credit card. Your buyers are already asking on Reddit.",
         },
       },
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Reddit 社交监听指南 — Brand24 替代品独立开发者",
       description:
-        "Brand24 起步 $199/月，F5Bot 关键词轰炸。学习如何用切换、替代与价格信号以 $9.9/月监控 Reddit 高意向帖。",
+        "Brand24 起步 $199/月，F5Bot 关键词轰炸。学习如何用切换、替代与价格信号以 $29/月监控 Reddit 高意向帖。",
     },
     h1: "2026 Reddit 社交监听完整指南：没有 Brand24 噪音，在 Reddit 找到买家",
     updated: "更新于 2026 年 7 月 · 阅读约 12 分钟",
@@ -115,7 +115,7 @@ export const guideCopy = {
       "企业级社交监听工具为公关团队设计，追踪 2500 万来源的每一条品牌提及。独立开发者不需要播客监控或达人影响力分数 — 他们需要 Reddit 上有人发「正在从 Mention 切换」或「$20/月以下的 Brand24 替代品」的帖子。",
       "Brand24 个人版 $199/月仅 3 个关键词，12 小时更新间隔。F5Bot 免费但每天发 50+ 关键词提醒，零意向评分。LeadsRadar 和 Wayfind.so 以 $19/月填补缺口，但自举创始人仍缺噪音过滤。",
       "虚荣提及数与高意向信号的区别，就是淹没在噪音里与拿下下 10 个客户之间的区别。「我希望有」帖获赞，「Harvest 涨价后大家都在换什么？」帖刷信用卡。",
-      "本指南对比 2026 年独立开发者 Reddit 社交监听工具，解释为什么意向过滤优于体量仪表盘，以及如何用 $9.9/月 一口价在 r/SaaS 与 r/indiehackers 找到高意向帖。",
+      "本指南对比 2026 年独立开发者 Reddit 社交监听工具，解释为什么意向过滤优于体量仪表盘，以及如何用 $29/月 一口价在 r/SaaS 与 r/indiehackers 找到高意向帖。",
       "Reddit 社交监听平替遵循 levelsio 路径：第一天收费、快速上线、过滤正在提问的买家。免费 5 次扫描，之后 Reddit 监控不限量。",
     ],
     sections: [
@@ -151,7 +151,7 @@ export const guideCopy = {
             p: "Reddit + HN 加 AI 评分与回复草稿。不错，但定价仍高于只需监控的自举者。",
           },
           {
-            h3: "Reddit 社交监听平替 — $9.9/月 一口价",
+            h3: "Reddit 社交监听平替 — $29/月 一口价",
             p: "为独立开发者打造：监控 Reddit 切换、替代与价格信号。意向分 1–10、噪音过滤。免费 5 次，之后不限量。",
             link: { href: "/monitor", text: "免费扫描 Reddit 意向", suffix: " — 五次扫描，无需信用卡。" },
           },
@@ -178,7 +178,7 @@ export const guideCopy = {
         h2: "真实案例：一条 Reddit 帖，两个试用注册",
         paragraphs: [
           "一位独立 SaaS 创始人监控「brand24」，发现 10/10 意向帖：「Brand24 3 个关键词 $199/月 — 有更便宜的 Reddit 专注替代品吗？」3 小时前发在 r/SaaS，31 条评论。",
-          "他用真实对比回复（不是丢链接），提到自己的 $9.9/月 Reddit 意向监控，从这一条帖获得 2 个试用注册。一天就赚回一年订阅费。",
+          "他用真实对比回复（不是丢链接），提到自己的 $29/月 Reddit 意向监控，从这一条帖获得 2 个试用注册。一天就赚回一年订阅费。",
           "这就是 levelsio playbook：你的客户已经在 Reddit 上提问了。你只需要规模化监听，在线还热的时候回复。",
         ],
       },
@@ -194,7 +194,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Reddit 社交监听平替",
-          prefix: "Brand24 $199/月，F5Bot 轰炸收件箱。若你需要 Reddit 高意向监控、意向评分、$9.9/月 一口价，可",
+          prefix: "Brand24 $199/月，F5Bot 轰炸收件箱。若你需要 Reddit 高意向监控、意向评分、$29/月 一口价，可",
           suffix: "。五次扫描，无需信用卡。你的买家已经在 Reddit 上提问了。",
         },
       },

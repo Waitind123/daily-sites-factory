@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://meetup-host.vercel.app",
     name: "Meetup Host",
-    title: "Meetup Host — lightweight RSVP, waitlist & check-in $9.9/mo",
+    title: "Meetup Host — lightweight RSVP, waitlist & check-in $29/mo",
     description:
-      "5 free event manages. Cheaper than Meetup.com for indie organizers: auto waitlist, capacity control, check-in view & reminder templates. $9.9/mo unlimited.",
+      "5 free event manages. Cheaper than Meetup.com for indie organizers: auto waitlist, capacity control, check-in view & reminder templates. $29/mo unlimited.",
     keywords: [
       "meetup organizer tool",
       "event RSVP management",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://meetup-host.vercel.app",
     name: "线下 Meetup 组织",
-    title: "线下 Meetup 组织 — 轻量 RSVP 候补与签到管理 $9.9/月",
+    title: "线下 Meetup 组织 — 轻量 RSVP 候补与签到管理 $29/月",
     description:
-      "免费体验 5 次活动管理。比 Meetup.com 便宜 10 倍的 indie 线下聚会工具：自动候补队列、容量控制、签到视图、提醒模板。$9.9/月无限活动。",
+      "免费体验 5 次活动管理。比 Meetup.com 便宜 10 倍的 indie 线下聚会工具：自动候补队列、容量控制、签到视图、提醒模板。$29/月无限活动。",
     keywords: [
       "meetup 组织工具",
       "活动 RSVP 管理",

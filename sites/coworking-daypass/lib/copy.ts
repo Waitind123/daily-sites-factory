@@ -8,11 +8,11 @@ export const homeCopy = {
       "See live inventory, verified WiFi speeds, and video-call-ready spaces. Book today's pass in 10 minutes — not another $49/mo membership.",
     ctaPrimary: "Book free",
     ctaPrimaryHref: "/passes",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free bookings · then $9.9/mo",
+    note: "5 free bookings · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Croissant $49" },
+      { stat: "$29", label: "flat/mo vs Croissant $49" },
       { stat: "40+", label: "cities with live inventory" },
       { stat: "10 min", label: "from landing to booked" },
     ],
@@ -52,7 +52,7 @@ export const homeCopy = {
       {
         name: "Marcus Chen",
         role: "Indie hacker · digital nomad",
-        text: "Deskpass is US-only. This shows real Asia and Europe day passes. Worth $9.9.",
+        text: "Deskpass is US-only. This shows real Asia and Europe day passes. Worth $29.",
       },
       {
         name: "Misa Sato",
@@ -63,7 +63,7 @@ export const homeCopy = {
     closing: {
       title: "Deskpass is limited. Hotel meeting rooms are $80/day.",
       subtitle:
-        "$9.9/mo for live inventory, WiFi data, and booking confirmations. Day-one pricing — verifying venues costs real work.",
+        "$29/mo for live inventory, WiFi data, and booking confirmations. Day-one pricing — verifying venues costs real work.",
       ctaPrimary: "Book a pass",
       ctaSecondary: "View pricing",
     },
@@ -81,11 +81,11 @@ export const homeCopy = {
       "查看实时库存、WiFi 实测、视频会议友好场地。10 分钟订好当日日票——不必再为 Croissant $49/月 买单。",
     ctaPrimary: "免费预订",
     ctaPrimaryHref: "/passes",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Croissant $49 更贵" },
+      { stat: "$29", label: "一口价/月，Croissant $49 更贵" },
       { stat: "40+", label: "城市实时库存" },
       { stat: "10 分钟", label: "落地到订好工位" },
     ],
@@ -125,7 +125,7 @@ export const homeCopy = {
       {
         name: "Marcus Chen",
         role: "独立开发者 · 数字游民",
-        text: "Deskpass 只覆盖美国。这个工具覆盖亚洲和欧洲日票，$9.9 很值。",
+        text: "Deskpass 只覆盖美国。这个工具覆盖亚洲和欧洲日票，$29 很值。",
       },
       {
         name: "佐藤美咲",
@@ -136,7 +136,7 @@ export const homeCopy = {
     closing: {
       title: "Deskpass 覆盖有限，酒店会议室太贵",
       subtitle:
-        "$9.9/月换实时库存、WiFi 实测和预订确认单。第一天收费，因为场地数据验证有成本。",
+        "$29/月换实时库存、WiFi 实测和预订确认单。第一天收费，因为场地数据验证有成本。",
       ctaPrimary: "立即预订",
       ctaSecondary: "查看定价",
     },
@@ -165,14 +165,14 @@ export const joinCopy = {
       "Smart filters by city, price, amenities",
       "Email alerts when new venues go live",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · cards accepted",
     whyTitle: "Why 5 free bookings, then subscribe?",
     whyItems: [
       "Every venue's inventory and WiFi needs hands-on verification",
       "Paying users = quality community, no spam listings",
-      "Solo-maintained — $9.9 keeps it sustainable",
+      "Solo-maintained — $29 keeps it sustainable",
     ],
     includedTitle: "Included",
   },
@@ -191,7 +191,7 @@ export const joinCopy = {
       "按城市/价格/设施智能筛选",
       "新场地上线邮件提醒",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，点击支付将模拟成功",
     checkoutNote: "Stripe / Polar 安全支付 · 支持信用卡",
     whyTitle: "免费体验 5 次，之后订阅，因为：",

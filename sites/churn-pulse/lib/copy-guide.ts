@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Baremetrics Alternative for Indie Hackers — Customer Health Score Guide",
       description:
-        "Baremetrics starts at $50+/mo. Compare customer health score tools for indie SaaS. Find a $9.9/mo flat-rate churn alert tool that connects only to Stripe subscriptions.",
+        "Baremetrics starts at $50+/mo. Compare customer health score tools for indie SaaS. Find a $29/mo flat-rate churn alert tool that connects only to Stripe subscriptions.",
     },
     h1: "2026 Baremetrics Alternative for Indie Hackers: Customer Health Score Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -56,9 +56,9 @@ export const guideCopy = {
             p: "Log last login dates in a spreadsheet. Update weekly. Breaks when you have 50+ customers. Works until you forget to check for 3 weeks.",
           },
           {
-            h3: "Churn Pulse — $9.9/mo flat",
+            h3: "Churn Pulse — $29/mo flat",
             p: "Built for indie hackers who want health scores and churn alerts without per-customer fees. Connect Stripe in 2 minutes, scan weekly, see at-risk customers ranked by score.",
-            link: { href: "/join", text: "5 free scans to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free scans to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -103,7 +103,7 @@ export const guideCopy = {
         paragraphs: [
           "Baremetrics at $50/mo: $600/year. At $4K MRR, that's 1.25% of revenue.",
           "Vitally at $500/mo: $6,000/year — more than many indie products' entire profit.",
-          "Churn Pulse: $9.9/mo × 12 = $118.80/year. Flat pricing regardless of customer count.",
+          "Churn Pulse: $29/mo × 12 = $118.80/year. Flat pricing regardless of customer count.",
           "For bootstrapped founders, the break-even is immediate. One saved churned customer pays for years of health monitoring.",
         ],
         after: [
@@ -113,7 +113,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Scan your customers' health free",
-      subtitle: "5 free scans · health scores · churn alerts · $9.9/mo unlimited",
+      subtitle: "5 free scans · health scores · churn alerts · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -121,7 +121,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Baremetrics 平替指南 — 客户健康分与流失预警",
       description:
-        "Baremetrics 起步 $50+/月。对比独立开发者客户健康分工具，找到 $9.9/月一口价、仅连 Stripe 订阅的流失告警工具。",
+        "Baremetrics 起步 $50+/月。对比独立开发者客户健康分工具，找到 $29/月一口价、仅连 Stripe 订阅的流失告警工具。",
     },
     h1: "2026 独立开发者 Baremetrics 平替：客户健康分与流失预警指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -172,9 +172,9 @@ export const guideCopy = {
             p: "在表格记录最后登录日期。每周更新。50+ 客户就崩。三周没看就忘了。",
           },
           {
-            h3: "客户健康分 — $9.9/月 一口价",
+            h3: "客户健康分 — $29/月 一口价",
             p: "为想要健康分和流失告警、不想按客户付费的独立开发者打造。2 分钟连接 Stripe，每周扫描，按分数排序查看风险客户。",
-            link: { href: "/join", text: "免费体验 5 次扫描", suffix: "，之后 $9.9/月一口价。无年付绑定。" },
+            link: { href: "/join", text: "免费体验 5 次扫描", suffix: "，之后 $29/月一口价。无年付绑定。" },
           },
         ],
       },
@@ -219,7 +219,7 @@ export const guideCopy = {
         paragraphs: [
           "Baremetrics $50/月：$600/年。$4K MRR 时占收入 1.25%。",
           "Vitally $500/月：$6,000/年 — 超过许多 indie 产品全部利润。",
-          "客户健康分：$9.9/月 × 12 = $118.80/年。不论客户数一口价。",
+          "客户健康分：$29/月 × 12 = $118.80/年。不论客户数一口价。",
           "对自举创始人，回本立竿见影。挽回一个流失客户够付数年健康监控。",
         ],
         after: [
@@ -229,7 +229,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费扫描客户健康分",
-      subtitle: "免费 5 次扫描 · 健康分 · 流失告警 · $9.9/月 不限量",
+      subtitle: "免费 5 次扫描 · 健康分 · 流失告警 · $29/月 不限量",
       button: "打开仪表盘 →",
     },
   },

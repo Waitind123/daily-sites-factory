@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://coworking-daypass.vercel.app",
     name: "DayPass Hub",
-    title: "DayPass Hub — Book coworking day passes same-day, $9.9/mo",
+    title: "DayPass Hub — Book coworking day passes same-day, $29/mo",
     description:
       "5 free bookings. Live inventory, verified WiFi, video-call-ready spaces for traveling nomads. Croissant/Deskpass alternative.",
     keywords: [
@@ -26,7 +26,7 @@ const siteConfigByLocale = {
     name: "日票通",
     title: "日票通 — 联合办公日票当日预订，WiFi 稳定有保障",
     description:
-      "免费体验 5 次预订联合办公日票。出差数字游民当日可用工位，实时库存、WiFi 实测、视频会议友好筛选。$9.9/月无限预订。",
+      "免费体验 5 次预订联合办公日票。出差数字游民当日可用工位，实时库存、WiFi 实测、视频会议友好筛选。$29/月无限预订。",
     keywords: [
       "联合办公日票",
       "coworking day pass",

@@ -1,6 +1,6 @@
 # Cron Heartbeat
 
-独立开发者 Cron 心跳监控 — Healthchecks.io 平替，$9.9/月。
+独立开发者 Cron 心跳监控 — Healthchecks.io 平替，$29/月。
 
 ## 功能
 

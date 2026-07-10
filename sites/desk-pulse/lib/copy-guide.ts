@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Zendesk Alternative for Indie Hackers — Help Desk Guide",
       description:
-        "Zendesk starts at $98/agent/month. Compare help desk tools for indie SaaS. Find a $9.9/mo flat-rate alternative with AI reply suggestions and shared inbox.",
+        "Zendesk starts at $98/agent/month. Compare help desk tools for indie SaaS. Find a $29/mo flat-rate alternative with AI reply suggestions and shared inbox.",
     },
     h1: "2026 Zendesk Alternative for Indie Hackers: Help Desk Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Live chat focused. Ticketing exists but secondary. Good for chat-first products, less ideal for email-heavy async support.",
           },
           {
-            h3: "Desk Pulse — $9.9/mo flat",
+            h3: "Desk Pulse — $29/mo flat",
             p: "Built for indie hackers who rage-quit Zendesk pricing. Unlimited tickets, AI reply suggestions from keyword-matched knowledge base, shared inbox. No per-agent fees.",
-            link: { href: "/join", text: "5 free ticket actions", suffix: ", then $9.9/mo flat. Cancel anytime." },
+            link: { href: "/join", text: "5 free ticket actions", suffix: ", then $29/mo flat. Cancel anytime." },
           },
         ],
       },
@@ -96,7 +96,7 @@ export const guideCopy = {
         h2: "Pricing math for bootstrapped founders",
         paragraphs: [
           "Zendesk Suite Team: $55/agent/mo × 2 agents × 12 = $1,320/year. Suite Professional with AI: $115 × 2 × 12 = $2,760/year.",
-          "Desk Pulse: $9.9/mo × 12 = $118.80/year, unlimited tickets and AI suggestions. Add a VA without adding a seat fee.",
+          "Desk Pulse: $29/mo × 12 = $118.80/year, unlimited tickets and AI suggestions. Add a VA without adding a seat fee.",
           "For bootstrapped founders, flat pricing means you can afford to actually respond to customers. Per-seat tools train you to ignore support until it's painful.",
         ],
         after: [
@@ -106,7 +106,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Open your inbox free",
-      subtitle: "5 free ticket actions · AI reply suggestions · $9.9/mo unlimited",
+      subtitle: "5 free ticket actions · AI reply suggestions · $29/mo unlimited",
       button: "Start supporting →",
     },
   },
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Zendesk 平替指南 — 客服工单选型",
       description:
-        "Zendesk 起步 $98/坐席/月。对比独立开发者客服工具，找到 $9.9/月一口价、AI 回复建议与共享收件箱的替代方案。",
+        "Zendesk 起步 $98/坐席/月。对比独立开发者客服工具，找到 $29/月一口价、AI 回复建议与共享收件箱的替代方案。",
     },
     h1: "2026 独立开发者 Zendesk 平替：客服工单选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -159,9 +159,9 @@ export const guideCopy = {
             p: "以在线聊天为主。工单功能是配角。适合聊天优先的产品，邮件异步支持较弱。",
           },
           {
-            h3: "极简客服工单 — $9.9/月一口价",
+            h3: "极简客服工单 — $29/月一口价",
             p: "为怒退 Zendesk 定价的独立开发者打造。工单不限量、关键词匹配知识库的 AI 回复建议、共享收件箱。不按坐席收费。",
-            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $9.9/月一口价。随时可取消。" },
+            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $29/月一口价。随时可取消。" },
           },
         ],
       },
@@ -205,7 +205,7 @@ export const guideCopy = {
         h2: "自举创始人的定价账",
         paragraphs: [
           "Zendesk Suite Team：$55/坐席/月 × 2 坐席 × 12 = $1,320/年。带 AI 的 Professional：$115 × 2 × 12 = $2,760/年。",
-          "极简客服工单：$9.9/月 × 12 = $118.80/年，工单与 AI 建议不限量。加助理不加坐席费。",
+          "极简客服工单：$29/月 × 12 = $118.80/年，工单与 AI 建议不限量。加助理不加坐席费。",
           "对自举创始人，一口价意味着你付得起真正回复客户。按坐席工具训练你忽略客服直到痛不欲生。",
         ],
         after: [
@@ -215,7 +215,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费打开收件箱",
-      subtitle: "免费体验 5 次 · AI 回复建议 · $9.9/月 不限量",
+      subtitle: "免费体验 5 次 · AI 回复建议 · $29/月 不限量",
       button: "开始处理工单 →",
     },
   },

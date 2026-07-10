@@ -1,6 +1,6 @@
 # OG Image Studio
 
-独立开发者 OG 社交分享图生成器 — Bannerbear 平替，$9.9/月。
+独立开发者 OG 社交分享图生成器 — Bannerbear 平替，$29/月。
 
 ## 功能
 

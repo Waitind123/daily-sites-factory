@@ -2,18 +2,18 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Hotjar $39/mo? · $9.9/mo flat",
+    badge: "Hotjar $39/mo? · $29/mo flat",
     title: "Pricing page conversion audit for indie hackers",
     subtitle:
-      "Paste your /pricing URL, get heatmap zones, drop-off points, and A/B test ideas. 85% of visitors leave without buying — fix that. 5 free scans, then $9.9/mo.",
+      "Paste your /pricing URL, get heatmap zones, drop-off points, and A/B test ideas. 85% of visitors leave without buying — fix that. 5 free scans, then $29/mo.",
     ctaPrimary: "Audit my pricing page",
     ctaPrimaryHref: "/analyze",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free audits · then $9.9/mo",
+    note: "5 free audits · then $29/mo",
     stats: [
       { stat: "85%", label: "visitors leave pricing without buying" },
-      { stat: "$9.9", label: "flat/mo vs Hotjar $39+" },
+      { stat: "$29", label: "flat/mo vs Hotjar $39+" },
       { stat: "2 min", label: "to get your first audit report" },
     ],
     howItWorks: {
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited pricing page audits. No per-session fees like enterprise heatmap tools.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Solo SaaS founder",
-        text: "Hotjar wanted $39/mo just to see where people click on my pricing page. PriceLens gives me the audit in 2 minutes for $9.9.",
+        text: "Hotjar wanted $39/mo just to see where people click on my pricing page. PriceLens gives me the audit in 2 minutes for $29.",
       },
       {
         name: "Mia T.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop losing 85% of pricing page visitors",
-      subtitle: "5 free audits · then $9.9/mo for unlimited scans",
+      subtitle: "5 free audits · then $29/mo for unlimited scans",
       ctaPrimary: "Audit my pricing page",
       ctaSecondary: "See pricing",
     },
@@ -91,18 +91,18 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Hotjar $39/月？· $9.9/月一口价",
+    badge: "Hotjar $39/月？· $29/月一口价",
     title: "独立开发者的定价页转化诊断",
     subtitle:
-      "粘贴 /pricing 链接，获取热力图分区、流失节点与 A/B 测试建议。85% 访客看完定价页不买 — 找到原因。免费体验 5 次，之后 $9.9/月。",
+      "粘贴 /pricing 链接，获取热力图分区、流失节点与 A/B 测试建议。85% 访客看完定价页不买 — 找到原因。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "诊断我的定价页",
     ctaPrimaryHref: "/analyze",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "85%", label: "访客离开定价页未购买" },
-      { stat: "$9.9", label: "一口价/月，Hotjar 要 $39+" },
+      { stat: "$29", label: "一口价/月，Hotjar 要 $39+" },
       { stat: "2 分钟", label: "拿到第一份诊断报告" },
     ],
     howItWorks: {
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "定价页诊断不限次数，不像企业热力图工具按会话收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "一人 SaaS 创始人",
-        text: "Hotjar 只看定价页点击就要 $39/月。PriceLens 两分钟出报告，$9.9 刚好够用。",
+        text: "Hotjar 只看定价页点击就要 $39/月。PriceLens 两分钟出报告，$29 刚好够用。",
       },
       {
         name: "Mia T.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再流失 85% 的定价页访客",
-      subtitle: "免费 5 次诊断 · 之后 $9.9/月 不限次数",
+      subtitle: "免费 5 次诊断 · 之后 $29/月 不限次数",
       ctaPrimary: "诊断我的定价页",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Conversion score tracking",
       "Export reports (PDF)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free audits, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "转化评分追踪",
       "报告导出（PDF）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

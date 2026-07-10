@@ -5,14 +5,14 @@ export const guideCopy = {
     meta: {
       title: "Team LinkedIn Headshots Guide 2026 — Batch AI for Startups",
       description:
-        "How to get consistent LinkedIn headshots for your whole team with AI. Compare HeadshotPro, PhotoAI team plans vs $9.9/mo flat. 5 free tries.",
+        "How to get consistent LinkedIn headshots for your whole team with AI. Compare HeadshotPro, PhotoAI team plans vs $29/mo flat. 5 free tries.",
     },
     h1: "How to Get Consistent Team LinkedIn Headshots with AI (2026 Guide)",
     updated: "Updated June 2026 · 9 min read",
     intro: [
       "When a startup hits 5–10 people, your LinkedIn team page becomes a trust signal for investors, candidates, and customers. Mixed vacation selfies and cropped group photos scream 'we're not ready yet.'",
       "Traditional team photography costs $150–400 per person, requires scheduling everyone in one room, and falls apart when you hire remotely. HeadshotPro charges $59/person for bulk AI. PhotoAI's team tier starts around $99/month.",
-      "Team Headshots gives small teams unified corporate portraits for $9.9/month flat — up to 10 members, one style, batch generation in under an hour. This guide covers why team photo consistency matters, how to shoot source selfies, and a step-by-step batch workflow.",
+      "Team Headshots gives small teams unified corporate portraits for $29/month flat — up to 10 members, one style, batch generation in under an hour. This guide covers why team photo consistency matters, how to shoot source selfies, and a step-by-step batch workflow.",
     ],
     sections: [
       {
@@ -44,12 +44,12 @@ export const guideCopy = {
             p: "High volume, many styles. Built for creators generating hundreds of images — overkill for a startup that needs 10 matching LinkedIn shots.",
           },
           {
-            h3: "Team Headshots — $9.9/month flat",
+            h3: "Team Headshots — $29/month flat",
             p: "Built for 5–10 person indie teams and startups who need one unified look, not a photo factory.",
             link: {
               href: "/team",
               text: "5 free tries in team studio",
-              suffix: ", then $9.9/mo for up to 10 members. Corporate, casual, creative, academic styles.",
+              suffix: ", then $29/mo for up to 10 members. Corporate, casual, creative, academic styles.",
             },
           },
         ],
@@ -107,14 +107,14 @@ export const guideCopy = {
     meta: {
       title: "团队领英头像指南 2026 — 创业公司批量 AI 证件照",
       description:
-        "如何为全团队生成统一领英专业头像。对比 HeadshotPro、PhotoAI 团队版与 $9.9/月一口价。免费体验 5 次。",
+        "如何为全团队生成统一领英专业头像。对比 HeadshotPro、PhotoAI 团队版与 $29/月一口价。免费体验 5 次。",
     },
     h1: "团队领英头像怎么统一？AI 批量证件照完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 9 分钟",
     intro: [
       "当创业团队达到 5–10 人，领英公司页的团队成员照片就成了投资人、候选人和客户的第一信任信号。旅游自拍混搭、裁剪过的合影，传递的是「我们还没准备好」。",
       "传统团队摄影每人 ¥199–399，要协调所有人同一时间到场，远程员工更是难上加难。HeadshotPro 批量 AI 每人 $29–59。PhotoAI 团队版 $99+/月起。",
-      "团队 AI 头像为小团队提供 $9.9/月一口价——最多 10 人、一种风格、一小时内批量生成。本指南涵盖团队照片一致性的价值、如何收集源自拍，以及完整批量工作流。",
+      "团队 AI 头像为小团队提供 $29/月一口价——最多 10 人、一种风格、一小时内批量生成。本指南涵盖团队照片一致性的价值、如何收集源自拍，以及完整批量工作流。",
     ],
     sections: [
       {
@@ -146,12 +146,12 @@ export const guideCopy = {
             p: "高产量、多风格。面向每月生成数百张图的创作者——对只需 10 张统一领英头像的创业公司来说过重。",
           },
           {
-            h3: "团队 AI 头像 — $9.9/月一口价",
+            h3: "团队 AI 头像 — $29/月一口价",
             p: "面向 5–10 人独立团队与创业公司——你需要一套统一造型，而不是图片工厂。",
             link: {
               href: "/team",
               text: "团队工作室免费体验 5 次",
-              suffix: "，之后 $9.9/月最多 10 人。商务、休闲、创意、学术四种风格。",
+              suffix: "，之后 $29/月最多 10 人。商务、休闲、创意、学术四种风格。",
             },
           },
         ],

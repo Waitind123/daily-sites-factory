@@ -121,7 +121,7 @@ const copyRewriteTemplates = {
     {
       element: "Subheadline",
       before: "Choose the plan that works for you",
-      after: "5 free optimizations · then $9.9/mo — cancel anytime",
+      after: "5 free optimizations · then $29/mo — cancel anytime",
       rationale: "Risk reversal + price anchor reduces bounce at hero",
     },
     {
@@ -147,7 +147,7 @@ const copyRewriteTemplates = {
     {
       element: "副标题",
       before: "选择适合你的方案",
-      after: "免费体验 5 次 · 之后 $9.9/月 — 随时可取消",
+      after: "免费体验 5 次 · 之后 $29/月 — 随时可取消",
       rationale: "风险逆转 + 价格锚点降低首屏跳出率",
     },
     {

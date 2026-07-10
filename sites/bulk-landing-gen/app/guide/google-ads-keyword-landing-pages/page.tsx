@@ -14,8 +14,8 @@ export async function generateMetadata(): Promise<Metadata> {
         : "Google Ads keyword landing pages guide — batch generate for Quality Score",
     description:
       locale === "zh"
-        ? "独立开发者 Google Ads 投放完整指南：为什么每个关键词需要定制落地页、如何批量生成、URL 结构、UTM 参数、质量得分优化。Dynares 替代方案 $9.9/月。"
-        : "Indie developer Google Ads playbook: per-keyword landing pages, batch generation, URL structure, UTM params, Quality Score tips. Dynares alternative at $9.9/mo.",
+        ? "独立开发者 Google Ads 投放完整指南：为什么每个关键词需要定制落地页、如何批量生成、URL 结构、UTM 参数、质量得分优化。Dynares 替代方案 $29/月。"
+        : "Indie developer Google Ads playbook: per-keyword landing pages, batch generation, URL structure, UTM params, Quality Score tips. Dynares alternative at $29/mo.",
   });
 }
 
@@ -39,7 +39,7 @@ export default async function GuidePage() {
         <h2>Why per-keyword landing pages matter</h2>
         <p>
           Dynares and enterprise tools charge $99+/mo for this. For indie ad budgets ($50–500/mo),
-          you need a $9.9/mo batch generator that creates customized pages per keyword with
+          you need a $29/mo batch generator that creates customized pages per keyword with
           matching headlines and meta tags.
         </p>
         <h2>How to batch generate</h2>
@@ -60,7 +60,7 @@ export default async function GuidePage() {
           </Link>
           {" · "}
           <Link href="/join" className="text-brand-500 font-semibold hover:underline">
-            Subscribe $9.9/mo
+            Subscribe $29/mo
           </Link>
         </p>
       </article>
@@ -81,7 +81,7 @@ export default async function GuidePage() {
       </p>
       <p>
         HN 上 dynares 的案例研究证明：为每个关键词定制落地页可将转化率提升 2–3 倍。但 Dynares
-        等企业工具 $99+/月，对 indie 广告预算（$50–500/月）太贵。你需要 $9.9/月的批量生成工具。
+        等企业工具 $99+/月，对 indie 广告预算（$50–500/月）太贵。你需要 $29/月的批量生成工具。
       </p>
 
       <h2>一、为什么每个关键词需要独立落地页？</h2>
@@ -119,7 +119,7 @@ export default async function GuidePage() {
         </li>
       </ol>
       <p>
-        免费体验 5 次批量生成，每次最多 20 个关键词。会员 $9.9/月无限批量 — 比 Dynares $99/月便宜
+        免费体验 5 次批量生成，每次最多 20 个关键词。会员 $29/月无限批量 — 比 Dynares $99/月便宜
         10 倍。
       </p>
 
@@ -164,7 +164,7 @@ export default async function GuidePage() {
           </tr>
           <tr className="border-t border-border">
             <td className="p-3">批量落地页生成</td>
-            <td className="p-3">$9.9/月</td>
+            <td className="p-3">$29/月</td>
             <td className="p-3">~60 秒</td>
           </tr>
           <tr className="border-t border-border">
@@ -178,7 +178,7 @@ export default async function GuidePage() {
       <h2>六、第一天收费：levelsio 思路</h2>
       <p>
         不要等广告跑顺了再考虑收费。落地页生成本身就是付费产品 — 免费体验 5 次批量生成，让用户感受「20
-        个关键词页面 60 秒完成」的价值，然后 $9.9/月订阅。你的 Google Ads 落地页和用户订阅你的工具，是同一个增长飞轮。
+        个关键词页面 60 秒完成」的价值，然后 $29/月订阅。你的 Google Ads 落地页和用户订阅你的工具，是同一个增长飞轮。
       </p>
 
       <p className="not-prose mt-8 flex flex-wrap gap-4">
@@ -192,7 +192,7 @@ export default async function GuidePage() {
           href="/join"
           className="inline-block border border-brand-600 text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-600/10"
         >
-          订阅 $9.9/月
+          订阅 $29/月
         </Link>
       </p>
     </article>

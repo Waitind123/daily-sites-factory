@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "GitBook $65/mo + per seat? · $9.9/mo flat",
+    badge: "GitBook $65/mo + per seat? · $29/mo flat",
     title: "API docs that ship — without the GitBook tax",
     subtitle:
-      "Visual editor, custom domain, auto llms.txt. 5 free doc sites, then $9.9/mo unlimited pages.",
+      "Visual editor, custom domain, auto llms.txt. 5 free doc sites, then $29/mo unlimited pages.",
     ctaPrimary: "Create docs free",
     ctaPrimaryHref: "/docs",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free doc sites · then $9.9/mo",
+    note: "5 free doc sites · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs GitBook $65+" },
+      { stat: "$29", label: "flat/mo vs GitBook $65+" },
       { stat: "∞", label: "pages, no per-seat fees" },
       { stat: "5 min", label: "to publish your first docs" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited doc sites and pages. No per-editor or per-seat pricing.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo founder",
-        text: "GitBook wanted $65/mo plus $12 per editor. Docs Pulse gave me unlimited docs for $9.9/mo.",
+        text: "GitBook wanted $65/mo plus $12 per editor. Docs Pulse gave me unlimited docs for $29/mo.",
       },
       {
         name: "Priya S.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying per seat for docs",
-      subtitle: "5 free doc sites · then $9.9/mo for unlimited",
+      subtitle: "5 free doc sites · then $29/mo for unlimited",
       ctaPrimary: "Create docs free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "GitBook $65/月 + 按人头？· $9.9/月一口价",
+    badge: "GitBook $65/月 + 按人头？· $29/月一口价",
     title: "快速上线 API 文档 — 不用交 GitBook 税",
     subtitle:
-      "可视化编辑、自定义域名、自动生成 llms.txt。免费体验 5 个文档站，之后 $9.9/月无限页面。",
+      "可视化编辑、自定义域名、自动生成 llms.txt。免费体验 5 个文档站，之后 $29/月无限页面。",
     ctaPrimary: "免费创建文档",
     ctaPrimaryHref: "/docs",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，GitBook 要 $65+" },
+      { stat: "$29", label: "一口价/月，GitBook 要 $65+" },
       { stat: "∞", label: "页面不限量，无按人头收费" },
       { stat: "5 分钟", label: "发布第一份 API 文档" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "文档站与页面不限量。无按编辑者或人头收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "一人创始人",
-        text: "GitBook 要 $65/月再加 $12/编辑者。API 文档托管 $9.9/月无限用。",
+        text: "GitBook 要 $65/月再加 $12/编辑者。API 文档托管 $29/月无限用。",
       },
       {
         name: "Priya S.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再按人头为文档付费",
-      subtitle: "免费 5 个文档站 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个文档站 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建文档",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Markdown + code blocks",
       "SEO metadata per page",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free doc sites, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "Markdown + 代码块",
       "每页 SEO 元数据",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个文档站，之后订阅？",

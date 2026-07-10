@@ -78,7 +78,7 @@ export default async function GuidePage() {
 
           <h2 className="text-2xl font-bold mt-10 mb-4">Visa Tracker 如何帮你</h2>
           <p className="text-muted leading-relaxed mb-4">
-            <Link href="/track" className="text-brand-500 hover:underline">签证追踪器</Link> 覆盖 35+ 数字游民签证项目，提供到期倒计时、政策变更对比和续签清单。免费体验 5 次追踪，之后 $9.9/月 — 比移民律师便宜 3000 倍。
+            <Link href="/track" className="text-brand-500 hover:underline">签证追踪器</Link> 覆盖 35+ 数字游民签证项目，提供到期倒计时、政策变更对比和续签清单。免费体验 5 次追踪，之后 $29/月 — 比移民律师便宜 3000 倍。
           </p>
 
           <div className="mt-10 rounded-xl bg-brand-600/10 border border-brand-600/30 p-6 text-center">
@@ -129,7 +129,7 @@ export default async function GuidePage() {
 
           <h2 className="text-2xl font-bold mt-10 mb-4">How Visa Tracker helps</h2>
           <p className="text-muted leading-relaxed mb-4">
-            <Link href="/track" className="text-brand-500 hover:underline">Visa Tracker</Link> covers 35+ digital nomad visa programs with expiry countdowns, policy change diffs, and renewal checklists. 5 free tracks, then $9.9/mo — 3,000× cheaper than an immigration lawyer.
+            <Link href="/track" className="text-brand-500 hover:underline">Visa Tracker</Link> covers 35+ digital nomad visa programs with expiry countdowns, policy change diffs, and renewal checklists. 5 free tracks, then $29/mo — 3,000× cheaper than an immigration lawyer.
           </p>
 
           <div className="mt-10 rounded-xl bg-brand-600/10 border border-brand-600/30 p-6 text-center">

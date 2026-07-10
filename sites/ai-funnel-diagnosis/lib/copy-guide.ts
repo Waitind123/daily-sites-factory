@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI Funnel Diagnosis Guide — Mixpanel Alternative for Indie Hackers",
       description:
-        "Mixpanel shows drop-off charts but not what to fix. Learn how AI funnel diagnosis helps indie SaaS founders find conversion leaks and get prioritized fix suggestions for $9.9/mo.",
+        "Mixpanel shows drop-off charts but not what to fix. Learn how AI funnel diagnosis helps indie SaaS founders find conversion leaks and get prioritized fix suggestions for $29/mo.",
     },
     h1: "2026 AI Funnel Diagnosis: Mixpanel Alternative for Indie Hackers",
     updated: "Updated July 2026 · 10 min read",
@@ -48,8 +48,8 @@ export const guideCopy = {
             p: "Privacy-friendly traffic analytics. No funnel tracking, no drop-off analysis, no fix suggestions.",
           },
           {
-            h3: "AI Funnel Diagnosis — $9.9/mo flat",
-            p: "Paste funnel steps + user counts, get instant AI analysis with prioritized fix plan. 5 free diagnoses, then $9.9/mo unlimited. Built for indie hackers who want action, not dashboards.",
+            h3: "AI Funnel Diagnosis — $29/mo flat",
+            p: "Paste funnel steps + user counts, get instant AI analysis with prioritized fix plan. 5 free diagnoses, then $29/mo unlimited. Built for indie hackers who want action, not dashboards.",
             link: { href: "/diagnose", text: "Run free AI diagnosis", suffix: " — five diagnoses, no credit card." },
           },
         ],
@@ -107,7 +107,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI 漏斗诊断指南 — 独立开发者 Mixpanel 替代品",
       description:
-        "Mixpanel 只显示流失图表，不告诉你怎么修。了解 AI 漏斗诊断如何帮助独立 SaaS 创始人找到转化漏洞并获得优先级修复建议，$9.9/月。",
+        "Mixpanel 只显示流失图表，不告诉你怎么修。了解 AI 漏斗诊断如何帮助独立 SaaS 创始人找到转化漏洞并获得优先级修复建议，$29/月。",
     },
     h1: "2026 AI 漏斗诊断：独立开发者 Mixpanel 替代品指南",
     updated: "更新于 2026 年 7 月 · 阅读约 10 分钟",
@@ -150,8 +150,8 @@ export const guideCopy = {
             p: "注重隐私的流量分析。无漏斗追踪、无流失分析、无修复建议。",
           },
           {
-            h3: "AI 漏斗诊断 — $9.9/月 一口价",
-            p: "粘贴漏斗步骤 + 用户数量，获得即时 AI 分析和优先级修复方案。免费 5 次诊断，之后 $9.9/月 不限量。为想要行动而非仪表盘的独立开发者打造。",
+            h3: "AI 漏斗诊断 — $29/月 一口价",
+            p: "粘贴漏斗步骤 + 用户数量，获得即时 AI 分析和优先级修复方案。免费 5 次诊断，之后 $29/月 不限量。为想要行动而非仪表盘的独立开发者打造。",
             link: { href: "/diagnose", text: "免费运行 AI 诊断", suffix: " — 五次诊断，无需信用卡。" },
           },
         ],

@@ -43,7 +43,7 @@ export function LaunchUrgencyBar({
     >
       <div className="mx-auto flex max-w-5xl items-center gap-2">
         <p className="min-w-0 flex-1 text-xs leading-snug text-indigo-100 sm:text-sm">
-          <span className="font-semibold text-white">Launch $9.9/mo · ¥69/月</span>
+          <span className="font-semibold text-white">Launch $29/mo · ¥199/月</span>
           <span className="mx-1 text-indigo-400">·</span>
           <span className="text-indigo-200">
             {daysLeft} 天 left

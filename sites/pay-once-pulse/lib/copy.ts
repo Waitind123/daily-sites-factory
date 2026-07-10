@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HN#41614926 · subscription fatigue is real · $9.9/mo",
+    badge: "HN#41614926 · subscription fatigue is real · $29/mo",
     title: "Pay-once & self-hostable SaaS alternatives — escape subscription hell",
     subtitle:
-      "12+ curated buy-once tools replacing Canny, Typeform, Mixpanel, Trello & more. 5 free deep lookups, then $9.9/mo.",
+      "12+ curated buy-once tools replacing Canny, Typeform, Mixpanel, Trello & more. 5 free deep lookups, then $29/mo.",
     ctaPrimary: "Browse directory free",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free deep lookups · then $9.9/mo",
+    note: "5 free deep lookups · then $29/mo",
     stats: [
       { stat: "12+", label: "pay-once alternatives" },
       { stat: "7", label: "SaaS categories" },
@@ -94,8 +94,8 @@ export const homeCopy = {
     closing: {
       title: "payoncealternatives.com lists tools. We help you switch.",
       subtitle:
-        "$9.9/mo flat. Deep lookups + savings math + migration guides + self-host setup. Charge from day 1.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Deep lookups + savings math + migration guides + self-host setup. Charge from day 1.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Browse directory free",
     },
     productDemo: {
@@ -106,15 +106,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HN#41614926 · 订阅疲劳已成共识 · $9.9/月",
+    badge: "HN#41614926 · 订阅疲劳已成共识 · $29/月",
     title: "一次性买断 & 自托管 SaaS 替代品 — 逃离订阅地狱",
     subtitle:
-      "12+ 精选买断工具，替代 Canny、Typeform、Mixpanel、Trello 等订阅 SaaS。免费体验 5 次深度查询，之后 $9.9/月。",
+      "12+ 精选买断工具，替代 Canny、Typeform、Mixpanel、Trello 等订阅 SaaS。免费体验 5 次深度查询，之后 $29/月。",
     ctaPrimary: "免费浏览目录",
     ctaPrimaryHref: "/tools",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "12+", label: "买断替代品" },
       { stat: "7", label: "SaaS 分类" },
@@ -198,8 +198,8 @@ export const homeCopy = {
     closing: {
       title: "payoncealternatives.com 列工具，我们帮你切换",
       subtitle:
-        "只要 $9.9/月。深度查询 + 省钱计算 + 迁移指南 + 自托管部署。第一天收费，因为调研每个工具也要时间。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "只要 $29/月。深度查询 + 省钱计算 + 迁移指南 + 自托管部署。第一天收费，因为调研每个工具也要时间。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费浏览目录",
     },
     productDemo: {

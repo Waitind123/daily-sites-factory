@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Nomad List data 18mo stale · $9.9/mo alerts",
+    badge: "Nomad List data 18mo stale · $29/mo alerts",
     title: "Get notified when nomad visa policies change",
     subtitle:
-      "Income thresholds, processing times, tax rules — instant alerts for 35+ programs. 5 free watches, then $9.9/mo.",
+      "Income thresholds, processing times, tax rules — instant alerts for 35+ programs. 5 free watches, then $29/mo.",
     ctaPrimary: "Start watching free",
     ctaPrimaryHref: "/alerts",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free watches · then $9.9/mo",
+    note: "5 free watches · then $29/mo",
     stats: [
       { stat: "35+", label: "visa programs monitored" },
       { stat: "<24h", label: "alert after policy change" },
@@ -90,14 +90,14 @@ export const homeCopy = {
       {
         name: "Elena",
         role: "Indie hacker",
-        text: "$9.9/mo vs checking 35 embassy sites weekly. The diff view alone saves hours.",
+        text: "$29/mo vs checking 35 embassy sites weekly. The diff view alone saves hours.",
       },
     ],
     closing: {
       title: "Stop relying on 18-month-old visa data",
       subtitle:
-        "$9.9/mo flat. Real-time policy change alerts for 35+ digital nomad visa programs.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Real-time policy change alerts for 35+ digital nomad visa programs.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Start watching free",
     },
     productDemo: {
@@ -108,15 +108,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Nomad List 数据过时 18 个月 · $9.9/月告警",
+    badge: "Nomad List 数据过时 18 个月 · $29/月告警",
     title: "数字游民签证政策变更，即时通知",
     subtitle:
-      "收入门槛、审批时长、税务规则 — 35+ 签证项目变更告警。免费体验 5 次，之后 $9.9/月。",
+      "收入门槛、审批时长、税务规则 — 35+ 签证项目变更告警。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费开始关注",
     ctaPrimaryHref: "/alerts",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "35+", label: "监控签证项目" },
       { stat: "<24h", label: "变更后推送告警" },
@@ -196,13 +196,13 @@ export const homeCopy = {
       {
         name: "Elena",
         role: "独立开发者",
-        text: "$9.9/月对比每周查 35 个使馆网站。变更对比视图就值回票价。",
+        text: "$29/月对比每周查 35 个使馆网站。变更对比视图就值回票价。",
       },
     ],
     closing: {
       title: "别再依赖 18 个月前的签证数据",
-      subtitle: "$9.9/月一口价。35+ 数字游民签证实时政策变更告警。",
-      ctaPrimary: "立即订阅 $9.9/月",
+      subtitle: "$29/月一口价。35+ 数字游民签证实时政策变更告警。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费开始关注",
     },
     productDemo: {

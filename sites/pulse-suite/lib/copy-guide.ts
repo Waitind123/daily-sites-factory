@@ -5,14 +5,14 @@ export const guideCopy = {
     meta: {
       title: "2026 Uptime Monitoring + Status Page Guide for Indie Hackers",
       description:
-        "Statuspage.io starts at $29/mo without monitoring. UptimeRobot has basic status pages. Compare all-in-one tools for indie SaaS. Find a $9.9/mo flat-rate monitor + status page combo.",
+        "Statuspage.io starts at $29/mo without monitoring. UptimeRobot has basic status pages. Compare all-in-one tools for indie SaaS. Find a $29/mo flat-rate monitor + status page combo.",
     },
     h1: "2026 Uptime + Status Page: Indie Hacker Reliability Guide",
     updated: "Updated June 2026 · 10 min read",
     intro: [
       "Every indie SaaS founder faces the same reliability stack: monitor your endpoints, tell users when things break. The classic setup? UptimeRobot for pings ($7–34/mo) plus Statuspage.io for customer communication ($29+/mo). Two subscriptions, two dashboards, two logins.",
       "On r/SaaS and Indie Hackers, founders repeatedly ask: \"Is there a tool that does uptime monitoring AND a proper status page?\" Another wrote: \"I wish UptimeRobot's status page wasn't so bare-bones.\" Statuspage.io doesn't include monitoring at all — you pay $29 just for the green dot.",
-      "Chirp, StillUp, and StillOnline emerged in 2026 to fill this gap. But many solo founders want something simpler: add URLs, get alerts, publish a status page, post incidents — flat $9.9/mo, no enterprise sales call.",
+      "Chirp, StillUp, and StillOnline emerged in 2026 to fill this gap. But many solo founders want something simpler: add URLs, get alerts, publish a status page, post incidents — flat $29/mo, no enterprise sales call.",
       "This guide compares 2026 uptime + status page tools for solo founders, what 'all-in-one' actually means, and how to pick a stack that won't eat your runway before your first paying customer.",
     ],
     sections: [
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Built for indie hackers with AI incident summaries. Monitoring + status pages included. Newer player with solid free tier.",
           },
           {
-            h3: "Pulse Suite — $9.9/mo flat",
+            h3: "Pulse Suite — $29/mo flat",
             p: "Built for indie hackers who want monitoring + status pages in one dashboard. 1-minute checks, incident posts, email subscribers. No per-monitor fees.",
-            link: { href: "/join", text: "5 free actions to try", suffix: ", then $9.9/mo flat." },
+            link: { href: "/join", text: "5 free actions to try", suffix: ", then $29/mo flat." },
           },
         ],
       },
@@ -63,7 +63,7 @@ export const guideCopy = {
           "Check interval — 1-minute detection vs 5-minute free tiers that miss short outages",
           "Status page quality — component health, incident timeline, subscriber emails (not just a green dot)",
           "Incident workflow — can you post investigating → resolved updates without switching tools?",
-          "Flat pricing — $9.9/mo unlimited beats per-monitor + per-status-page stacking",
+          "Flat pricing — $29/mo unlimited beats per-monitor + per-status-page stacking",
           "Setup time — live in 5 minutes, not 45 minutes of webhook configuration",
         ],
         after: [
@@ -96,13 +96,13 @@ export const guideCopy = {
           "5-minute check intervals that miss brief outages",
         ],
         after: [
-          "Once you have paying customers, $9.9/mo for professional reliability infrastructure is the cheapest insurance you'll buy. One prevented churn event pays for a year.",
+          "Once you have paying customers, $29/mo for professional reliability infrastructure is the cheapest insurance you'll buy. One prevented churn event pays for a year.",
         ],
       },
     ],
     cta: {
       title: "Ready to stop juggling two reliability tools?",
-      subtitle: "Try Pulse Suite free — 5 actions to test monitoring and status pages. Then $9.9/mo flat.",
+      subtitle: "Try Pulse Suite free — 5 actions to test monitoring and status pages. Then $29/mo flat.",
       button: "Try free",
       href: "/dashboard",
     },
@@ -111,14 +111,14 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Uptime 监控 + 状态页指南",
       description:
-        "Statuspage.io $29/月起且不含监控。UptimeRobot 状态页过于简陋。对比一体化工具，找到 $9.9/月监控+状态页组合。",
+        "Statuspage.io $29/月起且不含监控。UptimeRobot 状态页过于简陋。对比一体化工具，找到 $29/月监控+状态页组合。",
     },
     h1: "2026 Uptime 监控 + 状态页：独立开发者可靠性指南",
     updated: "2026 年 6 月更新 · 阅读约 10 分钟",
     intro: [
       "每个独立 SaaS 创始人都面临同样的可靠性栈：监控端点，故障时通知用户。经典方案？UptimeRobot 做检测（$7–34/月）加 Statuspage.io 做客户沟通（$29+/月）。两个订阅、两个控制台、两套登录。",
       "在 r/SaaS 和 Indie Hackers 上，创始人反复问：「有没有同时做 Uptime 监控和正经状态页的工具？」还有人写：「希望 UptimeRobot 的状态页别那么简陋。」Statuspage.io 根本不含监控 — 你付 $29 只为一个绿点。",
-      "2026 年 Chirp、StillUp、StillOnline 填补了这个空白。但很多 solo 创始人想要更简单的：加 URL、收告警、发状态页、发事件 — $9.9/月一口价，不用企业销售电话。",
+      "2026 年 Chirp、StillUp、StillOnline 填补了这个空白。但很多 solo 创始人想要更简单的：加 URL、收告警、发状态页、发事件 — $29/月一口价，不用企业销售电话。",
       "本指南对比 2026 年面向 solo 创始人的监控+状态页工具、「一体化」真正意味着什么，以及如何选型不至于在第一个付费客户前就烧光跑道。",
     ],
     sections: [
@@ -156,9 +156,9 @@ export const guideCopy = {
             p: "为独立开发者打造，含 AI 事件摘要。监控+状态页一体。较新玩家，免费层不错。",
           },
           {
-            h3: "监控状态一体 — $9.9/月一口价",
+            h3: "监控状态一体 — $29/月一口价",
             p: "为想要监控+状态页一个控制台的独立开发者打造。1 分钟检测、事件发布、邮件订阅者。不按监控数收费。",
-            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $9.9/月一口价。" },
+            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $29/月一口价。" },
           },
         ],
       },
@@ -169,7 +169,7 @@ export const guideCopy = {
           "检测间隔 — 1 分钟发现 vs 5 分钟免费层漏掉短暂故障",
           "状态页质量 — 组件健康、事件时间线、订阅者邮件（不只是绿点）",
           "事件流程 — 能否在同一工具发调查中 → 已解决更新？",
-          "一口价 — $9.9/月无限优于按监控数+按状态页叠加",
+          "一口价 — $29/月无限优于按监控数+按状态页叠加",
           "配置时间 — 5 分钟上线，不是 45 分钟 webhook 配置",
         ],
         after: [
@@ -202,13 +202,13 @@ export const guideCopy = {
           "5 分钟检测间隔漏掉短暂故障",
         ],
         after: [
-          "一旦有付费客户，$9.9/月买专业可靠性基础设施是最便宜的保险。少流失一个客户就值一年订阅。",
+          "一旦有付费客户，$29/月买专业可靠性基础设施是最便宜的保险。少流失一个客户就值一年订阅。",
         ],
       },
     ],
     cta: {
       title: "准备好不再 juggling 两个可靠性工具？",
-      subtitle: "免费试用监控状态一体 — 5 次操作测试监控与状态页。之后 $9.9/月一口价。",
+      subtitle: "免费试用监控状态一体 — 5 次操作测试监控与状态页。之后 $29/月一口价。",
       button: "免费试用",
       href: "/dashboard",
     },

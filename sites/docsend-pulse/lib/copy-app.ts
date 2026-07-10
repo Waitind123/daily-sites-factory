@@ -32,7 +32,7 @@ export const shareCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free tracked shares. Subscribe for unlimited secure links, page analytics, and view notifications.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Share a document",
     docTitle: "Document title",
     docTitlePlaceholder: "Seed Deck v3 — Q2 2026",
@@ -70,7 +70,7 @@ export const shareCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费追踪分享。订阅后可无限安全链接、逐页分析与浏览通知。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "分享文档",
     docTitle: "文档标题",
     docTitlePlaceholder: "种子轮路演 v3 — 2026 Q2",
@@ -186,12 +186,12 @@ export function getJoinCopy(locale: Locale) {
     en: {
       title: "Join DocSend Pulse",
       subtitle: "One price, unlimited secure document shares.",
-      subscribe: "Subscribe · $9.9/mo",
+      subscribe: "Subscribe · $29/mo",
     },
     zh: {
       title: "订阅文档追踪脉冲",
       subtitle: "一口价，安全文档分享不限次数。",
-      subscribe: "订阅 · $9.9/月",
+      subscribe: "订阅 · $29/月",
     },
   }[locale];
 }

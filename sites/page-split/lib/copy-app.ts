@@ -64,7 +64,7 @@ export const experimentsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 experiments. Subscribe for unlimited tests, live dashboards, and auto winner detection.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New A/B experiment",
     expName: "Experiment name",
     expNamePlaceholder: "e.g. Hero headline test",
@@ -90,7 +90,7 @@ export const experimentsCopy = {
     freeExperiments: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个实验。订阅后可无限测试、实时看板与自动判定赢家。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建 A/B 实验",
     expName: "实验名称",
     expNamePlaceholder: "例如：首屏标题测试",

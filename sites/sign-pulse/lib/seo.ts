@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://sign-pulse.vercel.app",
     name: "Sign Pulse",
-    title: "Sign Pulse — PandaDoc alternative for small teams, $9.9/mo flat",
+    title: "Sign Pulse — PandaDoc alternative for small teams, $29/mo flat",
     description:
-      "5 free document actions. PandaDoc $19–49/user? $9.9/mo flat: proposals, e-signatures, contracts — no per-seat tax.",
+      "5 free document actions. PandaDoc $19–49/user? $29/mo flat: proposals, e-signatures, contracts — no per-seat tax.",
     keywords: [
       "PandaDoc alternative",
       "e-signature",
@@ -27,9 +27,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://sign-pulse.vercel.app",
     name: "极简签署台",
-    title: "极简签署台 — PandaDoc 平替，小团队 $9.9/月",
+    title: "极简签署台 — PandaDoc 平替，小团队 $29/月",
     description:
-      "免费体验 5 次。PandaDoc $19–49/席位？$9.9/月一口价：提案、电子签名、合同管理 — 不按人头收费。",
+      "免费体验 5 次。PandaDoc $19–49/席位？$29/月一口价：提案、电子签名、合同管理 — 不按人头收费。",
     keywords: [
       "PandaDoc 替代品",
       "电子签名",

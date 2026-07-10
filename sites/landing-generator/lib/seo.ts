@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://landing-generator-opal.vercel.app",
     name: "Landing Generator",
-    title: "Landing Generator — AI landing page HTML in 30s $9.9/mo",
+    title: "Landing Generator — AI landing page HTML in 30s $29/mo",
     description:
       "5 free tries. Describe your product, get deployable HTML in 30 seconds. 4 styles, SEO meta, export to Vercel. Cheaper and faster than Carrd or Webflow.",
     keywords: [
@@ -26,7 +26,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://landing-generator-opal.vercel.app",
     name: "Landing Page 生成器",
-    title: "Landing Page 生成器 — AI 一键生成落地页 HTML $9.9/月",
+    title: "Landing Page 生成器 — AI 一键生成落地页 HTML $29/月",
     description:
       "免费体验 5 次。输入产品描述，30 秒生成 levelsio 风格落地页，导出 HTML 或一键托管。比 Carrd $19/年 更灵活，比 Webflow 快 10 倍。",
     keywords: [

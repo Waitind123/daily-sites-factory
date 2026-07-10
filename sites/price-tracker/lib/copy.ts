@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Intercom +90% in 90d · CostPeek $9/mo · we track for $9.9/mo",
+    badge: "Intercom +90% in 90d · CostPeek $9/mo · we track for $29/mo",
     title: "Auto-track SaaS competitor pricing changes",
     subtitle:
-      "90-day history, trend analysis, email alerts within 24h. 5 free deep-dives, then $9.9/mo. Built for indie founders who ship fast.",
+      "90-day history, trend analysis, email alerts within 24h. 5 free deep-dives, then $29/mo. Built for indie founders who ship fast.",
     ctaPrimary: "Try tracking free",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
       { stat: "8", label: "products tracked" },
       { stat: "2", label: "avg changes/90d" },
@@ -77,7 +77,7 @@ export const homeCopy = {
       {
         name: "Jay",
         role: "SaaS founder",
-        text: "Competitor cut prices 3 weeks before I knew — lost a deal. Now tracked daily for $9.9/mo.",
+        text: "Competitor cut prices 3 weeks before I knew — lost a deal. Now tracked daily for $29/mo.",
       },
       {
         name: "Mia",
@@ -87,21 +87,21 @@ export const homeCopy = {
       {
         name: "Kevin",
         role: "Indie Hacker",
-        text: "RivalPeek $49/mo with 0 customers. This does the job at $9.9. levelsio was right.",
+        text: "RivalPeek $49/mo with 0 customers. This does the job at $29. levelsio was right.",
       },
     ],
     closing: {
       title: "Stop screenshotting pricing pages every Monday",
       subtitle:
-        "$9.9/mo flat. Daily checks, 90-day history, email alerts. Built for indie founders, not enterprise CI teams.",
-      ctaPrimary: "Subscribe · $9.9/mo",
+        "$29/mo flat. Daily checks, 90-day history, email alerts. Built for indie founders, not enterprise CI teams.",
+      ctaPrimary: "Subscribe · $29/mo",
       ctaSecondary: "Try tracking free",
     },
     productDemo: {
       title: "Live pricing change preview",
       caption: "History · alerts · competitive notes · strategy tips",
       preview:
-        "📊 SaaS Price Tracker — Intercom\n─────────────────────────────────────────────────────\n  📈 90-day     3 changes · Essential $39→$74/seat (+90%)\n  🔔 Alert      Free tier removed for new signups\n  🎯 Compete    Crisp $25/mo · desk-pulse $9.9/mo flat\n  💡 Strategy   Pitch「we didn't 2x in 90 days」now\n─────────────────────────────────────────────────────\n  [ View history ]    [ Set alert ]    [ Compare ]",
+        "📊 SaaS Price Tracker — Intercom\n─────────────────────────────────────────────────────\n  📈 90-day     3 changes · Essential $39→$74/seat (+90%)\n  🔔 Alert      Free tier removed for new signups\n  🎯 Compete    Crisp $25/mo · desk-pulse $29/mo flat\n  💡 Strategy   Pitch「we didn't 2x in 90 days」now\n─────────────────────────────────────────────────────\n  [ View history ]    [ Set alert ]    [ Compare ]",
     },
     emailAlertDemo: {
       title: "Email alert within 24h",
@@ -120,15 +120,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Intercom 90 天涨 90% · CostPeek $9/月 · 我们 $9.9/月自动追踪",
+    badge: "Intercom 90 天涨 90% · CostPeek $9/月 · 我们 $29/月自动追踪",
     title: "自动追踪 SaaS 竞品定价变动",
     subtitle:
-      "90 天历史、趋势分析、24h 内邮件提醒。免费体验 5 次深度追踪，之后 $9.9/月。为快速 ship 的 indie 创始人而生。",
+      "90 天历史、趋势分析、24h 内邮件提醒。免费体验 5 次深度追踪，之后 $29/月。为快速 ship 的 indie 创始人而生。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/track",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "8", label: "追踪产品" },
       { stat: "2", label: "平均变动/90天" },
@@ -195,7 +195,7 @@ export const homeCopy = {
       {
         name: "阿杰",
         role: "SaaS 创始人",
-        text: "竞品降价 3 周后我才知道，丢了一单。现在每天自动追踪，$9.9/月太值了。",
+        text: "竞品降价 3 周后我才知道，丢了一单。现在每天自动追踪，$29/月太值了。",
       },
       {
         name: "Mia",
@@ -205,21 +205,21 @@ export const homeCopy = {
       {
         name: "Kevin",
         role: "Indie Hacker",
-        text: "RivalPeek $49/月 0 客户，这个 $9.9/月 功能够用。levelsio 思路对了。",
+        text: "RivalPeek $49/月 0 客户，这个 $29/月 功能够用。levelsio 思路对了。",
       },
     ],
     closing: {
       title: "每周开 5 个标签页截图？该停了",
       subtitle:
-        "只要 $9.9/月。每日检查、90 天历史、邮件提醒。为 indie 创始人而生，不是企业 CI 团队。",
-      ctaPrimary: "立即订阅 $9.9/月",
+        "只要 $29/月。每日检查、90 天历史、邮件提醒。为 indie 创始人而生，不是企业 CI 团队。",
+      ctaPrimary: "立即订阅 $29/月",
       ctaSecondary: "免费体验",
     },
     productDemo: {
       title: "定价变动实时预览",
       caption: "历史 · 提醒 · 竞争分析 · 策略建议",
       preview:
-        "📊 SaaS 价格追踪 — Intercom\n─────────────────────────────────────────────────────\n  📈 90 天     3 次变动 · Essential $39→$74/席位（+90%）\n  🔔 提醒      新账号取消免费层\n  🎯 竞争      Crisp $25/月 · desk-pulse $9.9/月固定价\n  💡 策略      现在推「我们 90 天没涨 2 倍」\n─────────────────────────────────────────────────────\n  [ 查看历史 ]    [ 设置提醒 ]    [ 对比 ]",
+        "📊 SaaS 价格追踪 — Intercom\n─────────────────────────────────────────────────────\n  📈 90 天     3 次变动 · Essential $39→$74/席位（+90%）\n  🔔 提醒      新账号取消免费层\n  🎯 竞争      Crisp $25/月 · desk-pulse $29/月固定价\n  💡 策略      现在推「我们 90 天没涨 2 倍」\n─────────────────────────────────────────────────────\n  [ 查看历史 ]    [ 设置提醒 ]    [ 对比 ]",
     },
     emailAlertDemo: {
       title: "24 小时内邮件提醒",

@@ -104,18 +104,18 @@ export const guideCopy = {
         paragraphs: [
           "1. Run the decision tree above",
           "2. Create a Vercel project, git push deploy",
-          "3. Wire Polar/Stripe and publish a $9.9/mo pricing page",
+          "3. Wire Polar/Stripe and publish a $29/mo pricing page",
           "4. Ship MVP and post Show HN for first users",
         ],
         after: [
-          "Want pricing comparisons, alternatives and setup checklists for each tool? Browse our curated directory — 5 free deep reviews, then $9.9/mo unlimited.",
+          "Want pricing comparisons, alternatives and setup checklists for each tool? Browse our curated directory — 5 free deep reviews, then $29/mo unlimited.",
         ],
       },
     ],
     cta: {
       title: "Don't want to research each tool?",
       subtitle: "40+ indie tools reviewed with pricing tables and 5-minute setup guides",
-      button: "Subscribe $9.9/mo · unlimited reviews",
+      button: "Subscribe $29/mo · unlimited reviews",
     },
   },
   zh: {
@@ -221,7 +221,7 @@ export const guideCopy = {
         paragraphs: [
           "1. 用上面的决策树确定你的 6 个工具",
           "2. 在 Vercel 创建项目，git push 部署",
-          "3. 接入 Polar/Stripe，设计 $9.9/月定价页",
+          "3. 接入 Polar/Stripe，设计 $29/月定价页",
           "4. 本周末 ship MVP，Show HN 获取第一批用户",
         ],
         after: [
@@ -232,7 +232,7 @@ export const guideCopy = {
     cta: {
       title: "不想一个个调研？",
       subtitle: "我们已评测 40+ indie 工具，含定价对比和 5 分钟接入指南",
-      button: "订阅 $9.9/月 · 无限查阅",
+      button: "订阅 $29/月 · 无限查阅",
     },
   },
 } as const;

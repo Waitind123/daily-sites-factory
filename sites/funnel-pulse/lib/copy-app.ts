@@ -22,7 +22,7 @@ export const funnelsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 funnels. Subscribe for unlimited funnels, drop-off charts, and leak detection.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New funnel",
     funnelName: "Funnel name",
     funnelNamePlaceholder: "e.g. SaaS signup flow",
@@ -48,7 +48,7 @@ export const funnelsCopy = {
     freeFunnels: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个漏斗。订阅后可无限创建、流失图表与漏洞检测。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建漏斗",
     funnelName: "漏斗名称",
     funnelNamePlaceholder: "例如：SaaS 注册流程",

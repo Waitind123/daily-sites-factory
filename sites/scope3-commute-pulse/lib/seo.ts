@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://scope3-commute-pulse.vercel.app",
     name: "Scope3 Commute Pulse",
-    title: "Scope3 Commute Pulse — CSRD employee commuting, $9.9/mo",
+    title: "Scope3 Commute Pulse — CSRD employee commuting, $29/mo",
     description:
       "5 free team baselines. Collect employee commute data, calculate Scope 3 Cat.7 emissions, export CSRD-ready reports. Watershed alternative for SMEs.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://scope3-commute-pulse.vercel.app",
     name: "Scope 3 员工通勤",
-    title: "Scope 3 员工通勤 — CSRD 通勤排放基线，$9.9/月",
+    title: "Scope 3 员工通勤 — CSRD 通勤排放基线，$29/月",
     description:
       "免费体验 5 次团队基线。收集员工通勤数据，计算 Scope 3 第 7 类排放，导出 CSRD 合规报告。中小企业 Watershed 平替。",
     keywords: [

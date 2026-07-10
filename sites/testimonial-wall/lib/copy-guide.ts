@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Testimonial.to Alternative for Indie Hackers — Complete Guide",
       description:
-        "Testimonial.to white-label $40/mo, Senja $29/mo too expensive? Compare 2026 testimonial tools and find a $9.9/mo minimalist alternative for bootstrapped founders.",
+        "Testimonial.to white-label $40/mo, Senja $29/mo too expensive? Compare 2026 testimonial tools and find a $29/mo minimalist alternative for bootstrapped founders.",
     },
     h1: "2026 Testimonial.to Alternative for Indie Hackers: Complete Guide",
     updated: "Updated June 2026 · 12 min read",
@@ -46,7 +46,7 @@ export const guideCopy = {
             p: "2026 indie-friendly option with white-label at $12/mo. Fast load (~200ms), focused core loop. Good for early adopters.",
           },
           {
-            h3: "Testimonial Wall — $9.9/mo",
+            h3: "Testimonial Wall — $29/mo",
             p: "Does one thing well: fast embeddable Wall of Love + collection email template. No video, no Chrome extension, no 10-platform import. Pure HTML/CSS embed, zero third-party JS.",
             link: { href: "/wall", text: "Testimonial Wall", suffix: " offers 5 free tries before you subscribe." },
           },
@@ -70,7 +70,7 @@ export const guideCopy = {
           },
         ],
         after: [
-          "For text-only testimonials, budget-sensitive, minimalist embed — Testimonial Wall at $9.9/mo is likely the best value in 2026.",
+          "For text-only testimonials, budget-sensitive, minimalist embed — Testimonial Wall at $29/mo is likely the best value in 2026.",
         ],
       },
       {
@@ -102,13 +102,13 @@ export const guideCopy = {
         h2: "Summary",
         paragraphs: [
           "2026 testimonial tools are mature but price-tiered. Testimonial.to and Senja serve growth-stage products; Tarvio and Testimonial Wall serve bootstrapped indie hackers.",
-          "If you need text testimonials, minimalist embed, and budget sensitivity — Testimonial Wall at $9.9/mo may be the best value. 5 free tries, zero risk.",
+          "If you need text testimonials, minimalist embed, and budget sensitivity — Testimonial Wall at $29/mo may be the best value. 5 free tries, zero risk.",
         ],
       },
     ],
     cta: {
       title: "Ready to build your testimonial wall?",
-      subtitle: "5 free tries · then $9.9/mo",
+      subtitle: "5 free tries · then $29/mo",
       button: "Create wall now",
     },
   },
@@ -116,7 +116,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Testimonial.to 替代方案 — 完整指南",
       description:
-        "Testimonial.to 去品牌 $40/月、Senja $29/月太贵？对比 2026 年证言工具，找到 $9.9/月的极简替代方案。",
+        "Testimonial.to 去品牌 $40/月、Senja $29/月太贵？对比 2026 年证言工具，找到 $29/月的极简替代方案。",
     },
     h1: "2026 独立开发者 Testimonial.to 替代方案：完整指南",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -155,7 +155,7 @@ export const guideCopy = {
             p: "2026 年新兴的 indie-friendly 选择，$12/月包含去品牌。加载快，专注核心 loop。",
           },
           {
-            h3: "证言墙 — $9.9/月",
+            h3: "证言墙 — $29/月",
             p: "专注做一件事：快速生成可嵌入的 Wall of Love + 收集邮件模板。纯 HTML/CSS 嵌入，零第三方 JS。",
             link: { href: "/wall", text: "证言墙", suffix: " 可以免费体验 5 次，感受生成速度后再决定是否订阅。" },
           },
@@ -179,7 +179,7 @@ export const guideCopy = {
           },
         ],
         after: [
-          "如果你只需要文字证言、追求极简嵌入、预算敏感——证言墙 $9.9/月 可能是目前性价比最高的选择。",
+          "如果你只需要文字证言、追求极简嵌入、预算敏感——证言墙 $29/月 可能是目前性价比最高的选择。",
         ],
       },
       {
@@ -211,13 +211,13 @@ export const guideCopy = {
         h2: "总结",
         paragraphs: [
           "2026 年的证言工具市场已经成熟，但价格分层明显。Testimonial.to 和 Senja 服务 growth stage 产品；Tarvio 和证言墙服务 bootstrapped indie hacker。",
-          "如果你只需要文字证言、追求极简嵌入、预算敏感——证言墙 $9.9/月 可能是目前性价比最高的选择。免费体验 5 次，无风险试用。",
+          "如果你只需要文字证言、追求极简嵌入、预算敏感——证言墙 $29/月 可能是目前性价比最高的选择。免费体验 5 次，无风险试用。",
         ],
       },
     ],
     cta: {
       title: "准备好搭建你的证言墙了吗？",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月",
+      subtitle: "免费体验 5 次 · 之后 $29/月",
       button: "立即创建证言墙",
     },
   },

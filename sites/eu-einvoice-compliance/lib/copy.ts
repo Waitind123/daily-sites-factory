@@ -5,12 +5,12 @@ export const homeCopy = {
     badge: "Poland e-invoice Apr 2026 · UBL 2.1 compliant",
     title: "EU e-invoice compliance in your browser — no enterprise tax software",
     subtitle:
-      "Poland mandates KSeF e-invoices from April 2026. Generate EN16931 UBL XML, validate VAT fields, export multi-currency invoices. 5 free, then $9.9/mo.",
+      "Poland mandates KSeF e-invoices from April 2026. Generate EN16931 UBL XML, validate VAT fields, export multi-currency invoices. 5 free, then $29/mo.",
     ctaPrimary: "Generate UBL invoice free",
     ctaPrimaryHref: "/invoices",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free invoices · then $9.9/mo",
+    note: "5 free invoices · then $29/mo",
     stats: [
       { stat: "UBL 2.1", label: "EN16931 compliant XML export" },
       { stat: "5 min", label: "from form to KSeF-ready file" },
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited UBL exports. No per-invoice fees like enterprise tax suites.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Anna K.",
         role: "Warsaw consultant",
-        text: "Poland e-invoice deadline scared me. This generates KSeF-ready UBL in 5 minutes for $9.9/mo.",
+        text: "Poland e-invoice deadline scared me. This generates KSeF-ready UBL in 5 minutes for $29/mo.",
       },
       {
         name: "Marco B.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Ship EU-compliant invoices before the deadline",
-      subtitle: "5 free UBL exports · then $9.9/mo unlimited",
+      subtitle: "5 free UBL exports · then $29/mo unlimited",
       ctaPrimary: "Generate UBL invoice free",
       ctaSecondary: "View pricing",
     },
@@ -94,12 +94,12 @@ export const homeCopy = {
     badge: "波兰 2026 年 4 月强制电子发票 · UBL 2.1 合规",
     title: "浏览器端欧盟电子发票合规 — 不用企业税务软件",
     subtitle:
-      "波兰 2026 年 4 月起强制 KSeF 电子发票。生成 EN16931 UBL XML、校验增值税字段、多币种导出。免费体验 5 张，之后 $9.9/月。",
+      "波兰 2026 年 4 月起强制 KSeF 电子发票。生成 EN16931 UBL XML、校验增值税字段、多币种导出。免费体验 5 张，之后 $29/月。",
     ctaPrimary: "免费生成 UBL 发票",
     ctaPrimaryHref: "/invoices",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 张 · 之后 $9.9/月",
+    note: "免费体验 5 张 · 之后 $29/月",
     stats: [
       { stat: "UBL 2.1", label: "EN16931 合规 XML 导出" },
       { stat: "5 分钟", label: "从表单到 KSeF 就绪文件" },
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "UBL 导出不限量。无企业税务套件按张收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Anna K.",
         role: "华沙顾问",
-        text: "波兰电子发票截止日期让我很慌。这个工具 5 分钟生成 KSeF 就绪 UBL，$9.9/月。",
+        text: "波兰电子发票截止日期让我很慌。这个工具 5 分钟生成 KSeF 就绪 UBL，$29/月。",
       },
       {
         name: "Marco B.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "在截止日期前上线欧盟合规发票",
-      subtitle: "免费体验 5 次 UBL 导出 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 次 UBL 导出 · 之后 $29/月不限量",
       ctaPrimary: "免费生成 UBL 发票",
       ctaSecondary: "查看定价",
     },

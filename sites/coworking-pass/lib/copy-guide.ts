@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Coworking Day Pass Alternative for Digital Nomads — Croissant & Deskpass Guide",
       description:
-        "Croissant costs $49+/mo for 10 hours. Compare coworking day-pass tools for digital nomads: Croissant, Deskpass, LiquidSpace. Find a $9.9/mo flat-rate alternative with instant booking.",
+        "Croissant costs $49+/mo for 10 hours. Compare coworking day-pass tools for digital nomads: Croissant, Deskpass, LiquidSpace. Find a $29/mo flat-rate alternative with instant booking.",
     },
     h1: "2026 Coworking Day Pass Alternative for Digital Nomads: Croissant & Deskpass Guide",
     updated: "Updated June 2026 · 11 min read",
@@ -49,9 +49,9 @@ export const guideCopy = {
             p: "The largest coworking directory with reviews. Excellent for research in a new city. But it's a directory, not a booking engine — you still call or email each space individually. No price comparison across spaces in one view.",
           },
           {
-            h3: "Coworking Pass — $9.9/mo flat",
+            h3: "Coworking Pass — $29/mo flat",
             p: "Built for nomads who want day-pass comparison and instant booking without hourly credits. 40+ cities, WiFi speed data, video-call filters, insider tips from real travelers.",
-            link: { href: "/join", text: "5 free bookings to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free bookings to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -98,7 +98,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Coworking Pass free",
-          prefix: "Croissant and Deskpass are excellent for frequent local users, not nomads who need a desk on landing day. If you want day-pass comparison, WiFi data, and flat $9.9/mo pricing, ",
+          prefix: "Croissant and Deskpass are excellent for frequent local users, not nomads who need a desk on landing day. If you want day-pass comparison, WiFi data, and flat $29/mo pricing, ",
           suffix: ". Five free bookings, no credit card. Land. Book. Work.",
         },
       },
@@ -113,7 +113,7 @@ export const guideCopy = {
     meta: {
       title: "2026 数字游民联合办公日票指南 — Croissant 与 Deskpass 平替",
       description:
-        "Croissant $49+/月才 10 小时。对比 Croissant、Deskpass、LiquidSpace 等日票工具，找到 $9.9/月一口价、即时预订的平替方案。",
+        "Croissant $49+/月才 10 小时。对比 Croissant、Deskpass、LiquidSpace 等日票工具，找到 $29/月一口价、即时预订的平替方案。",
     },
     h1: "2026 数字游民联合办公日票指南：Croissant 与 Deskpass 平替完整对比",
     updated: "更新于 2026 年 6 月 · 阅读约 11 分钟",
@@ -157,9 +157,9 @@ export const guideCopy = {
             p: "最大联合办公目录，带评价。新城市调研很好用。但是目录不是预订引擎 — 还得逐家打电话或发邮件。无法在一个视图里跨空间比价。",
           },
           {
-            h3: "联合办公日票 — $9.9/月 一口价",
+            h3: "联合办公日票 — $29/月 一口价",
             p: "为想要日票比价和即时预订、不想算小时积分的游民打造。40+ 城市、WiFi 数据、视频会议筛选、真实旅行者内部贴士。",
-            link: { href: "/join", text: "免费体验 5 次预订", suffix: "，之后 $9.9/月 一口价，无需年约。" },
+            link: { href: "/join", text: "免费体验 5 次预订", suffix: "，之后 $29/月 一口价，无需年约。" },
           },
         ],
       },
@@ -206,7 +206,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用联合办公日票",
-          prefix: "Croissant 和 Deskpass 对本地常客很优秀，不适合落地当天只要一张桌子的游民。若你需要日票比价、WiFi 数据、$9.9/月 一口价，可",
+          prefix: "Croissant 和 Deskpass 对本地常客很优秀，不适合落地当天只要一张桌子的游民。若你需要日票比价、WiFi 数据、$29/月 一口价，可",
           suffix: "。五次免费预订，无需信用卡。落地。预订。开工。",
         },
       },

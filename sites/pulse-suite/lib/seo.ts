@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pulse-suite-ochre.vercel.app",
     name: "Pulse Suite",
-    title: "Pulse Suite — Uptime monitoring + status pages for indie devs, $9.9/mo",
+    title: "Pulse Suite — Uptime monitoring + status pages for indie devs, $29/mo",
     description:
-      "5 free actions. Statuspage $29 + UptimeRobot $7? $9.9/mo flat: 1-minute checks, public status pages, incident posts — one dashboard.",
+      "5 free actions. Statuspage $29 + UptimeRobot $7? $29/mo flat: 1-minute checks, public status pages, incident posts — one dashboard.",
     keywords: [
       "uptime monitoring status page",
       "Statuspage alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pulse-suite-ochre.vercel.app",
     name: "监控状态一体",
-    title: "监控状态一体 — Uptime 监控 + 状态页，独立开发者 $9.9/月",
+    title: "监控状态一体 — Uptime 监控 + 状态页，独立开发者 $29/月",
     description:
-      "免费体验 5 次。Statuspage $29 + UptimeRobot $7？$9.9/月一口价：1 分钟检测、公开状态页、事件发布 — 一个控制台。",
+      "免费体验 5 次。Statuspage $29 + UptimeRobot $7？$29/月一口价：1 分钟检测、公开状态页、事件发布 — 一个控制台。",
     keywords: [
       "uptime 监控 状态页",
       "Statuspage 替代品",

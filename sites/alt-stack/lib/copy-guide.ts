@@ -87,7 +87,7 @@ export const guideCopy = {
       {
         h2: "Getting started with Alt Stack",
         paragraphs: [
-          "Alt Stack curates 50+ open-source alternatives with Docker Compose configs, savings calculators, and sovereignty scores. Free trial: 5 deep dives. Unlimited access: $9.9/mo.",
+          "Alt Stack curates 50+ open-source alternatives with Docker Compose configs, savings calculators, and sovereignty scores. Free trial: 5 deep dives. Unlimited access: $29/mo.",
           "Start by browsing the directory, pick your highest-cost SaaS subscription, and read the deep dive for its open-source replacement. Most migrations take one weekend.",
         ],
         after: [
@@ -98,7 +98,7 @@ export const guideCopy = {
     cta: {
       title: "Don't want to hunt Docker configs across 10 repos?",
       subtitle: "50+ alternatives with deployment files, savings calc & migration guides",
-      button: "Subscribe $9.9/mo · unlimited deep dives",
+      button: "Subscribe $29/mo · unlimited deep dives",
     },
   },
   zh: {
@@ -187,7 +187,7 @@ export const guideCopy = {
       {
         h2: "从 Alt Stack 开始",
         paragraphs: [
-          "Alt Stack 精选 50+ 开源替代品，含 Docker Compose 配置、节省计算器和主权评分。免费体验 5 次深度查阅。无限访问：$9.9/月。",
+          "Alt Stack 精选 50+ 开源替代品，含 Docker Compose 配置、节省计算器和主权评分。免费体验 5 次深度查阅。无限访问：$29/月。",
           "先浏览目录，找到月费最高的 SaaS 订阅，查阅其开源替代品的深度指南。大多数迁移一个周末搞定。",
         ],
         after: [
@@ -198,7 +198,7 @@ export const guideCopy = {
     cta: {
       title: "不想在 10 个 repo 里找 Docker 配置？",
       subtitle: "50+ 替代品含部署文件、节省计算与迁移指南",
-      button: "订阅 $9.9/月 · 无限深度查阅",
+      button: "订阅 $29/月 · 无限深度查阅",
     },
   },
 } as const;

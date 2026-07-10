@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Baremetrics $50+/mo? · $9.9/mo flat",
+    badge: "Baremetrics $50+/mo? · $29/mo flat",
     title: "Customer health scores for indie SaaS",
     subtitle:
-      "Spot churn before it happens. Health scores, at-risk alerts, Stripe-only — connect in 2 minutes. 5 free scans, then $9.9/mo.",
+      "Spot churn before it happens. Health scores, at-risk alerts, Stripe-only — connect in 2 minutes. 5 free scans, then $29/mo.",
     ctaPrimary: "Scan customers free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Baremetrics $50+" },
+      { stat: "$29", label: "flat/mo vs Baremetrics $50+" },
       { stat: "8", label: "health signals per customer" },
       { stat: "2 min", label: "to connect Stripe & see at-risk" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited scans, unlimited customers. No per-seat fees like Baremetrics.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Save customers before they cancel",
-      subtitle: "5 free scans · then $9.9/mo for unlimited health monitoring",
+      subtitle: "5 free scans · then $29/mo for unlimited health monitoring",
       ctaPrimary: "Scan customers free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Baremetrics 要 $50+/月？· $9.9/月一口价",
+    badge: "Baremetrics 要 $50+/月？· $29/月一口价",
     title: "独立开发者客户健康分",
     subtitle:
-      "在流失发生前预警。健康分、风险告警、仅连 Stripe — 2 分钟接入。免费体验 5 次扫描，之后 $9.9/月。",
+      "在流失发生前预警。健康分、风险告警、仅连 Stripe — 2 分钟接入。免费体验 5 次扫描，之后 $29/月。",
     ctaPrimary: "免费扫描客户",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Baremetrics 要 $50+" },
+      { stat: "$29", label: "一口价/月，Baremetrics 要 $50+" },
       { stat: "8", label: "每位客户的健康信号" },
       { stat: "2 分钟", label: "连接 Stripe 查看风险客户" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限扫描、无限客户数。无 Baremetrics 式按席位收费。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "在客户取消前挽回他们",
-      subtitle: "免费体验 5 次扫描 · 之后 $9.9/月无限健康监控",
+      subtitle: "免费体验 5 次扫描 · 之后 $29/月无限健康监控",
       ctaPrimary: "免费扫描客户",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "CSV export of at-risk customers",
       "Read-only Stripe key (secure)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "风险客户 CSV 导出",
       "只读 Stripe 密钥（安全）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次扫描，之后订阅？",

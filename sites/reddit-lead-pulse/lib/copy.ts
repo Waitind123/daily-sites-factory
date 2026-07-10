@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Reddit · $9.9/mo flat",
+    badge: "Reddit · $29/mo flat",
     title: "Find Reddit buyers before your competitors do",
     subtitle:
-      "SubWatch costs $29/mo. StackLead $49/mo. Monitor r/SaaS, r/Entrepreneur & r/indiehackers for high-intent signals — switching from, alternative to, pricing complaints. 5 free scans, then $9.9/mo.",
+      "SubWatch costs $29/mo. StackLead $49/mo. Monitor r/SaaS, r/Entrepreneur & r/indiehackers for high-intent signals — switching from, alternative to, pricing complaints. 5 free scans, then $29/mo.",
     ctaPrimary: "Monitor Reddit leads free",
     ctaPrimaryHref: "/monitor",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
       { stat: "10", label: "max intent score / 10" },
       { stat: "4", label: "subreddits: SaaS · Entrepreneur · IH · Startups" },
-      { stat: "$9.9", label: "flat/mo vs SubWatch $29+" },
+      { stat: "$29", label: "flat/mo vs SubWatch $29+" },
     ],
     howItWorks: {
       title: "Three steps to warm leads",
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited keyword monitoring. No $79/mo CRM you don't need.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Jake R.",
         role: "Solo SaaS founder",
-        text: "SubWatch was $29/mo for basic alerts. Reddit Lead Pulse finds the same switching threads with intent scores for $9.9.",
+        text: "SubWatch was $29/mo for basic alerts. Reddit Lead Pulse finds the same switching threads with intent scores for $29.",
       },
       {
         name: "Mia T.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Your customers are already asking on Reddit",
-      subtitle: "5 free scans · then $9.9/mo for unlimited high-intent monitoring",
+      subtitle: "5 free scans · then $29/mo for unlimited high-intent monitoring",
       ctaPrimary: "Monitor Reddit leads free",
       ctaSecondary: "View pricing",
     },
@@ -91,19 +91,19 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Reddit · $9.9/月一口价",
+    badge: "Reddit · $29/月一口价",
     title: "在竞争对手之前找到 Reddit 上的买家",
     subtitle:
-      "SubWatch $29/月，StackLead $49/月。监控 r/SaaS、r/Entrepreneur 与 r/indiehackers 的高意向信号 — 正在切换、寻找替代、价格抱怨。免费体验 5 次，之后 $9.9/月。",
+      "SubWatch $29/月，StackLead $49/月。监控 r/SaaS、r/Entrepreneur 与 r/indiehackers 的高意向信号 — 正在切换、寻找替代、价格抱怨。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费监控 Reddit 线索",
     ctaPrimaryHref: "/monitor",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "10", label: "最高意向分 / 10" },
       { stat: "4", label: "个子版块：SaaS · 创业者 · IH · 创业" },
-      { stat: "$9.9", label: "一口价/月，SubWatch 要 $29+" },
+      { stat: "$29", label: "一口价/月，SubWatch 要 $29+" },
     ],
     howItWorks: {
       title: "三步找到温线索",
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "关键词监控不限量。不需要 $79/月 的 CRM。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Jake R.",
         role: "一人 SaaS 创始人",
-        text: "SubWatch 基础提醒就要 $29/月。Reddit Lead Pulse $9.9 就能找到同样的切换帖，还带意向分。",
+        text: "SubWatch 基础提醒就要 $29/月。Reddit Lead Pulse $29 就能找到同样的切换帖，还带意向分。",
       },
       {
         name: "Mia T.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "你的客户已经在 Reddit 上提问了",
-      subtitle: "免费 5 次扫描 · 之后 $9.9/月 高意向监控不限量",
+      subtitle: "免费 5 次扫描 · 之后 $29/月 高意向监控不限量",
       ctaPrimary: "免费监控 Reddit 线索",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Export lead lists",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "线索列表导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次扫描，之后订阅？",

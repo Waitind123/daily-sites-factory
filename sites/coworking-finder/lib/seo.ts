@@ -10,7 +10,7 @@ const siteConfigByLocale = {
     name: "Coworking Finder",
     title: "Coworking Finder — global coworking directory, day-pass prices + WiFi data",
     description:
-      "5 free space views. 120+ global coworking spaces with day-pass prices, WiFi speeds, video-call filters. $9.9/mo unlimited.",
+      "5 free space views. 120+ global coworking spaces with day-pass prices, WiFi speeds, video-call filters. $29/mo unlimited.",
     keywords: [
       "coworking space",
       "coworking finder",
@@ -27,7 +27,7 @@ const siteConfigByLocale = {
     name: "联合办公 Finder",
     title: "联合办公 Finder — 全球 Coworking 空间目录，日票价格 + WiFi 实测",
     description:
-      "免费体验 5 次查看完整空间详情。120+ 全球联合办公空间，日票价格透明，WiFi 实测数据，视频会议友好筛选。$9.9/月无限查看。",
+      "免费体验 5 次查看完整空间详情。120+ 全球联合办公空间，日票价格透明，WiFi 实测数据，视频会议友好筛选。$29/月无限查看。",
     keywords: [
       "联合办公",
       "coworking space",

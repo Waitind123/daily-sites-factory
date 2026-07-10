@@ -34,7 +34,7 @@ export const testimonials = [
   {
     name: "Alex K.",
     role: "Indie SaaS founder",
-    text: "UptimeRobot went from $8 to $34/month overnight. Uptime Pulse does what I need for $9.9.",
+    text: "UptimeRobot went from $8 to $34/month overnight. Uptime Pulse does what I need for $29.",
   },
   {
     name: "Mia Chen",

@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://intercom-pulse.vercel.app",
     name: "Intercom Pulse",
-    title: "Intercom Pulse — Intercom alternative for indie devs, $9.9/mo flat",
+    title: "Intercom Pulse — Intercom alternative for indie devs, $29/mo flat",
     description:
-      "5 free conversation actions. Intercom $29/seat + Fin fees? $9.9/mo flat: live chat widget, AI agent, help center, shared inbox.",
+      "5 free conversation actions. Intercom $29/seat + Fin fees? $29/mo flat: live chat widget, AI agent, help center, shared inbox.",
     keywords: [
       "Intercom alternative",
       "customer chat",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://intercom-pulse.vercel.app",
     name: "Intercom 平替",
-    title: "Intercom 平替 — 独立开发者客户聊天，$9.9/月一口价",
+    title: "Intercom 平替 — 独立开发者客户聊天，$29/月一口价",
     description:
-      "免费体验 5 次。Intercom $29/坐席 + Fin 费？$9.9/月一口价：在线聊天组件、AI 客服、帮助中心、共享收件箱。",
+      "免费体验 5 次。Intercom $29/坐席 + Fin 费？$29/月一口价：在线聊天组件、AI 客服、帮助中心、共享收件箱。",
     keywords: [
       "Intercom 替代品",
       "客户聊天",

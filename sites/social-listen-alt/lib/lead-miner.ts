@@ -126,7 +126,7 @@ const LEAD_DATABASE: LeadPost[] = [
   {
     id: "l11",
     quote:
-      "RedNudge at $7/mo is Reddit-only. Need Reddit + X with intent scores for $9.9 — does it exist?",
+      "RedNudge at $7/mo is Reddit-only. Need Reddit + X with intent scores for $29 — does it exist?",
     subreddit: "indiehackers",
     source: "r/indiehackers",
     signal: "recommendation",

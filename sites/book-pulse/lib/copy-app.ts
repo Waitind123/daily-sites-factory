@@ -9,7 +9,7 @@ export const dashboardCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 free publishes. Subscribe for unlimited booking pages, embed widgets, and custom slugs.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     createTitle: "New booking page",
     displayName: "Your name",
     displayNamePlaceholder: "e.g. Alex Chen",
@@ -41,7 +41,7 @@ export const dashboardCopy = {
     freePublishes: "剩余免费发布次数：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次免费发布。订阅后可无限预约页、嵌入小部件和自定义链接。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     createTitle: "新建预约页",
     displayName: "你的名字",
     displayNamePlaceholder: "例如：陈伟",

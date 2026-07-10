@@ -251,7 +251,7 @@ export function PriceBrowser({ locale }: { locale: Locale }) {
             {error && (
               <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700">
                 {error}
-                {error.includes("$9.9") || error.includes("订阅") ? (
+                {error.includes("$29") || error.includes("订阅") ? (
                   <Link href="/join" className="block mt-2 font-semibold underline">
                     {c.subscribeCta}
                   </Link>

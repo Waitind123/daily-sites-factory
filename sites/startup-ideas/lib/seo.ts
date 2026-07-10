@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://startup-ideas-five.vercel.app",
     name: "Startup Ideas",
-    title: "Startup Ideas — Daily inspiration + deep market analysis $9.9/mo",
+    title: "Startup Ideas — Daily inspiration + deep market analysis $29/mo",
     description:
-      "5 free deep analyses. Curated micro-SaaS ideas with market size, competitor pricing, acquisition channels & MVP roadmap. $9.9/mo unlimited.",
+      "5 free deep analyses. Curated micro-SaaS ideas with market size, competitor pricing, acquisition channels & MVP roadmap. $29/mo unlimited.",
     keywords: [
       "startup ideas",
       "indie hacker",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://startup-ideas-five.vercel.app",
     name: "创业点子库",
-    title: "创业点子库 — 每日创业灵感 + 深度市场分析 $9.9/月",
+    title: "创业点子库 — 每日创业灵感 + 深度市场分析 $29/月",
     description:
-      "免费体验 5 次深度分析。每日精选可落地的创业点子，含市场规模、竞品定价、获客渠道与 MVP 路线图。$9.9/月无限阅读。",
+      "免费体验 5 次深度分析。每日精选可落地的创业点子，含市场规模、竞品定价、获客渠道与 MVP 路线图。$29/月无限阅读。",
     keywords: [
       "创业点子",
       "startup ideas",

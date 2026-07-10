@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://bulk-landing-gen.vercel.app",
     name: "Bulk Landing Gen",
-    title: "Bulk Landing Gen — Google Ads keyword pages in 60s $9.9/mo",
+    title: "Bulk Landing Gen — Google Ads keyword pages in 60s $29/mo",
     description:
       "5 free batch runs. Paste Google Ads keywords, get customized landing pages per keyword with SEO meta. Export HTML for each ad group. Cheaper than Carrd + manual copy.",
     keywords: [
@@ -26,7 +26,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://bulk-landing-gen.vercel.app",
     name: "批量落地页生成",
-    title: "批量落地页生成 — Google Ads 关键词落地页 60 秒批量生成 $9.9/月",
+    title: "批量落地页生成 — Google Ads 关键词落地页 60 秒批量生成 $29/月",
     description:
       "免费体验 5 次。粘贴 Google Ads 关键词列表，每个关键词自动生成定制落地页 + SEO meta，批量导出 HTML。比 Carrd 手动复制快 10 倍。",
     keywords: [

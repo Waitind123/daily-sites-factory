@@ -27,7 +27,7 @@ export function RevenueSprintPanel({
         <div className="rounded-lg bg-zinc-900/80 p-3">
           <div className="text-zinc-500 text-xs">{DASHBOARD_COPY.sprintNeed}</div>
           <div className="text-lg font-bold text-amber-300 mt-1">
-            {plan.purchasesNeeded} × $9.9 = ${(plan.purchasesNeeded * 9.9).toFixed(1)}
+            {plan.purchasesNeeded} × $29 = ${(plan.purchasesNeeded * 9.9).toFixed(1)}
           </div>
         </div>
         <div className="rounded-lg bg-zinc-900/80 p-3">

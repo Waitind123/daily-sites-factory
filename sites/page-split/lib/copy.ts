@@ -2,18 +2,18 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "VWO $198/mo? · $9.9/mo flat",
+    badge: "VWO $198/mo? · $29/mo flat",
     title: "Landing page A/B testing for indie hackers",
     subtitle:
-      "Split traffic 50/50, track conversions, pick the winner. No per-visitor fees. 5 free experiments, then $9.9/mo.",
+      "Split traffic 50/50, track conversions, pick the winner. No per-visitor fees. 5 free experiments, then $29/mo.",
     ctaPrimary: "Start a test free",
     ctaPrimaryHref: "/experiments",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free experiments · then $9.9/mo",
+    note: "5 free experiments · then $29/mo",
     socialProof: "89 indie founders testing headlines this month",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs VWO $198+" },
+      { stat: "$29", label: "flat/mo vs VWO $198+" },
       { stat: "50/50", label: "traffic split, auto winner" },
       { stat: "5 min", label: "to launch first test" },
     ],
@@ -56,7 +56,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited experiments and pageviews. No per-visitor fees like enterprise tools.",
       },
     ],
@@ -65,7 +65,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo SaaS founder",
-        text: "VWO wanted $198/mo for one pricing headline test. Page Split does exactly what I need for $9.9.",
+        text: "VWO wanted $198/mo for one pricing headline test. Page Split does exactly what I need for $29.",
       },
       {
         name: "Sarah L.",
@@ -80,7 +80,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing which headline wins",
-      subtitle: "5 free experiments · then $9.9/mo unlimited",
+      subtitle: "5 free experiments · then $29/mo unlimited",
       ctaPrimary: "Start your first test",
       ctaSecondary: "View pricing",
     },
@@ -92,18 +92,18 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "VWO $198/月？· $9.9/月一口价",
+    badge: "VWO $198/月？· $29/月一口价",
     title: "独立开发者的落地页 A/B 测试",
     subtitle:
-      "50/50 分流、追踪转化、自动判定赢家。不按访客收费。免费 5 个实验，之后 $9.9/月。",
+      "50/50 分流、追踪转化、自动判定赢家。不按访客收费。免费 5 个实验，之后 $29/月。",
     ctaPrimary: "免费开始测试",
     ctaPrimaryHref: "/experiments",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个实验 · 之后 $9.9/月",
+    note: "免费体验 5 个实验 · 之后 $29/月",
     socialProof: "本月已有 89 位独立开发者在测标题",
     stats: [
-      { stat: "$9.9", label: "一口价/月，VWO 要 $198+" },
+      { stat: "$29", label: "一口价/月，VWO 要 $198+" },
       { stat: "50/50", label: "流量分流，自动判定赢家" },
       { stat: "5 分钟", label: "上线第一个测试" },
     ],
@@ -146,7 +146,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "实验与页面浏览不限量，不像企业工具按访客收费。",
       },
     ],
@@ -155,7 +155,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "一人 SaaS 创始人",
-        text: "VWO 测一个定价标题就要 $198/月。Page Split $9.9 刚好够用。",
+        text: "VWO 测一个定价标题就要 $198/月。Page Split $29 刚好够用。",
       },
       {
         name: "Sarah L.",
@@ -170,7 +170,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜哪个标题会赢",
-      subtitle: "免费 5 个实验 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个实验 · 之后 $29/月 不限量",
       ctaPrimary: "开始第一个测试",
       ctaSecondary: "查看定价",
     },
@@ -194,7 +194,7 @@ export const joinCopy = {
     perYear: "/yr",
     saveAnnual: "Save 17% vs monthly",
     vsCanny: "vs VWO $198+/mo · cancel anytime",
-    monthlyPrice: "$9.9",
+    monthlyPrice: "$29",
     annualPrice: "$99",
     perks: [
       "Unlimited A/B experiments",
@@ -204,8 +204,8 @@ export const joinCopy = {
       "Auto winner detection",
       "Tracking snippet for any site",
     ],
-    subscribe: "Subscribe · $9.9/mo",
-    subscribeAnnual: "Subscribe · $99/yr",
+    subscribe: "Subscribe · $29/mo",
+    subscribeAnnual: "Subscribe · $29/mo",
     socialProof: "89 indie founders subscribed this month",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
@@ -218,7 +218,7 @@ export const joinCopy = {
     includedTitle: "Included",
     compareTitle: "Page Split vs VWO",
     compareRows: [
-      { label: "Monthly price", us: "$9.9 flat", them: "$198+ (enterprise)" },
+      { label: "Monthly price", us: "$29 flat", them: "$198+ (enterprise)" },
       { label: "Per-visitor fees", us: "None", them: "Yes, scales with traffic" },
       { label: "Setup time", us: "5 minutes", them: "Sales demo required" },
       { label: "Indie-friendly", us: "Built for solo founders", them: "Built for teams" },
@@ -240,7 +240,7 @@ export const joinCopy = {
       },
       {
         q: "How is this different from VWO?",
-        a: "Flat $9.9/mo with unlimited pageviews. VWO starts at $198/mo with sales calls.",
+        a: "Flat $29/mo with unlimited pageviews. VWO starts at $198/mo with sales calls.",
       },
     ],
   },
@@ -254,7 +254,7 @@ export const joinCopy = {
     perYear: "/年",
     saveAnnual: "比月付省 17%",
     vsCanny: "对比 VWO $198+/月 · 随时可取消",
-    monthlyPrice: "$9.9",
+    monthlyPrice: "$29",
     annualPrice: "¥699",
     perks: [
       "A/B 实验不限量",
@@ -264,8 +264,8 @@ export const joinCopy = {
       "自动判定赢家",
       "任意站点可用的追踪代码片段",
     ],
-    subscribe: "订阅 · $9.9/月",
-    subscribeAnnual: "订阅 · ¥699/年",
+    subscribe: "订阅 · $29/月",
+    subscribeAnnual: "订阅 · ¥199/月",
     socialProof: "本月已有 89 位独立开发者订阅",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
@@ -278,7 +278,7 @@ export const joinCopy = {
     includedTitle: "包含功能",
     compareTitle: "Page Split 对比 VWO",
     compareRows: [
-      { label: "月费", us: "$9.9 一口价", them: "$198+（企业版）" },
+      { label: "月费", us: "$29 一口价", them: "$198+（企业版）" },
       { label: "按访客收费", us: "无", them: "有，随流量增长" },
       { label: "上线时间", us: "5 分钟", them: "需销售演示" },
       { label: "适合独立开发者", us: "为一人团队打造", them: "面向大团队" },
@@ -300,7 +300,7 @@ export const joinCopy = {
       },
       {
         q: "和 VWO 有什么区别？",
-        a: "$9.9/月 一口价，页面浏览不限。VWO 起步 $198/月 还要销售演示。",
+        a: "$29/月 一口价，页面浏览不限。VWO 起步 $198/月 还要销售演示。",
       },
     ],
   },

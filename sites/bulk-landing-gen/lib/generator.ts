@@ -230,7 +230,7 @@ export const testimonials = [
   {
     name: "Amy",
     role: "SaaS 创始人",
-    text: "A/B 测试 3 个 landing page 版本，$9.9/月比雇设计师便宜 100 倍。",
+    text: "A/B 测试 3 个 landing page 版本，$29/月比雇设计师便宜 100 倍。",
   },
   {
     name: "David",

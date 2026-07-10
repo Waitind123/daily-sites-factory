@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "HN AppGaps trend · $9.9/mo flat",
+    badge: "HN AppGaps trend · $29/mo flat",
     title: "Turn App Store 1-star reviews into your next SaaS",
     subtitle:
-      "Cluster negative reviews into market gaps and startup ideas. Validate before you build. 5 free scans, then $9.9/mo.",
+      "Cluster negative reviews into market gaps and startup ideas. Validate before you build. 5 free scans, then $29/mo.",
     ctaPrimary: "Scan reviews free",
     ctaPrimaryHref: "/mine",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free scans · then $9.9/mo",
+    note: "5 free scans · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs agency reports $500+" },
+      { stat: "$29", label: "flat/mo vs agency reports $500+" },
       { stat: "12 sec", label: "to cluster pain themes" },
       { stat: "5 types", label: "missing · broken · overpriced · gap · opportunity" },
     ],
@@ -32,7 +32,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "Ship the gap",
-          desc: "Build a $9.9/mo micro-SaaS solving the top complaint cluster",
+          desc: "Build a $29/mo micro-SaaS solving the top complaint cluster",
         },
       ],
     },
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited category scans. No $89 one-off market study fees.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing what to build next",
-      subtitle: "5 free scans · then $9.9/mo for unlimited review mining",
+      subtitle: "5 free scans · then $29/mo for unlimited review mining",
       ctaPrimary: "Scan reviews free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "HN AppGaps 热议 · $9.9/月一口价",
+    badge: "HN AppGaps 热议 · $29/月一口价",
     title: "把应用商店 1 星差评变成你的下一个 SaaS",
     subtitle:
-      "将差评聚类为市场空白和创业点子，先验证再开发。免费体验 5 次扫描，之后 $9.9/月。",
+      "将差评聚类为市场空白和创业点子，先验证再开发。免费体验 5 次扫描，之后 $29/月。",
     ctaPrimary: "免费扫描差评",
     ctaPrimaryHref: "/mine",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，机构报告要 $500+" },
+      { stat: "$29", label: "一口价/月，机构报告要 $500+" },
       { stat: "12 秒", label: "聚类痛点主题" },
       { stat: "5 类", label: "缺失 · 故障 · 贵 · 空白 · 机会" },
     ],
@@ -121,7 +121,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "填补空白上线",
-          desc: "针对最高分投诉簇，快速上线 $9.9/月 微 SaaS",
+          desc: "针对最高分投诉簇，快速上线 $29/月 微 SaaS",
         },
       ],
     },
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "品类扫描不限量，不像市场调研报告收 $89 一次性费用。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜下一个该做什么产品",
-      subtitle: "免费 5 次扫描 · 之后 $9.9/月 不限量挖掘",
+      subtitle: "免费 5 次扫描 · 之后 $29/月 不限量挖掘",
       ctaPrimary: "免费扫描差评",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Export opportunity lists",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free scans, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "机会列表导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次扫描，之后订阅？",

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Buffer Alternative for Indie Hackers — Multi-Platform Repost Guide",
       description:
-        "Buffer starts at $15/mo for 3 channels. Compare social repost tools for indie SaaS launches. Find a $9.9/mo flat-rate tool that adapts one post to X, LinkedIn, Threads, Reddit, and Product Hunt.",
+        "Buffer starts at $15/mo for 3 channels. Compare social repost tools for indie SaaS launches. Find a $29/mo flat-rate tool that adapts one post to X, LinkedIn, Threads, Reddit, and Product Hunt.",
     },
     h1: "2026 Buffer Alternative for Indie Hackers: Multi-Platform Repost Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -51,9 +51,9 @@ export const guideCopy = {
             p: "45 minutes per launch. Inconsistent tone. Easy to forget a platform. Works but doesn't scale past 2 launches per year.",
           },
           {
-            h3: "Content Pulse — $9.9/mo flat",
+            h3: "Content Pulse — $29/mo flat",
             p: "Built for indie hackers who paste once and get X, LinkedIn, Threads, Reddit, and Product Hunt variants. Platform-native tone, character limits, one-click copy.",
-            link: { href: "/join", text: "5 free reposts to try", suffix: ", then $9.9/mo flat. No per-channel fees." },
+            link: { href: "/join", text: "5 free reposts to try", suffix: ", then $29/mo flat. No per-channel fees." },
           },
         ],
       },
@@ -89,7 +89,7 @@ export const guideCopy = {
         h2: "When Buffer still makes sense",
         paragraphs: [
           "Buffer is the right choice if you manage 10+ social accounts, need visual calendar planning for Instagram/TikTok, or have a marketing team scheduling weeks ahead.",
-          "For solo founders posting 2–5 times per launch week across text-first platforms, a repost adaptation tool at $9.9/mo flat beats per-channel pricing.",
+          "For solo founders posting 2–5 times per launch week across text-first platforms, a repost adaptation tool at $29/mo flat beats per-channel pricing.",
         ],
       },
     ],
@@ -103,7 +103,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Buffer 平替指南 — 多平台内容分发",
       description:
-        "Buffer 3 个频道要 $15/月。对比独立开发者社交分发工具，找到 $9.9/月一口价、一次粘贴适配 X、领英、Threads、Reddit、Product Hunt 的方案。",
+        "Buffer 3 个频道要 $15/月。对比独立开发者社交分发工具，找到 $29/月一口价、一次粘贴适配 X、领英、Threads、Reddit、Product Hunt 的方案。",
     },
     h1: "2026 独立开发者 Buffer 平替：多平台内容分发指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -149,9 +149,9 @@ export const guideCopy = {
             p: "每次发布 45 分钟。语气不一致。容易漏掉某个平台。能用但一年超过 2 次发布就撑不住。",
           },
           {
-            h3: "内容多平台分发 — $9.9/月一口价",
+            h3: "内容多平台分发 — $29/月一口价",
             p: "为独立开发者打造：粘贴一次，获得 X、领英、Threads、Reddit、Product Hunt 变体。平台原生语气、字数限制、一键复制。",
-            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $9.9/月一口价，无按频道收费。" },
+            link: { href: "/join", text: "免费体验 5 次", suffix: "，之后 $29/月一口价，无按频道收费。" },
           },
         ],
       },
@@ -187,7 +187,7 @@ export const guideCopy = {
         h2: "什么时候 Buffer 仍然合适",
         paragraphs: [
           "如果你管理 10+ 社交账号、需要 Instagram/TikTok 视觉日历规划、或有营销团队提前几周排期，Buffer 仍是正确选择。",
-          "对每月在文字优先平台发布 2–5 次的独立创始人，$9.9/月一口价的分发适配工具胜过按频道定价。",
+          "对每月在文字优先平台发布 2–5 次的独立创始人，$29/月一口价的分发适配工具胜过按频道定价。",
         ],
       },
     ],

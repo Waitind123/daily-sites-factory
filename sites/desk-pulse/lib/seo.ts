@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://desk-pulse.vercel.app",
     name: "Desk Pulse",
-    title: "Desk Pulse — Zendesk alternative for indie devs, $9.9/mo flat",
+    title: "Desk Pulse — Zendesk alternative for indie devs, $29/mo flat",
     description:
-      "5 free ticket actions. Zendesk $98/agent? $9.9/mo flat: shared inbox, AI reply suggestions, knowledge base, no per-seat fees.",
+      "5 free ticket actions. Zendesk $98/agent? $29/mo flat: shared inbox, AI reply suggestions, knowledge base, no per-seat fees.",
     keywords: [
       "help desk",
       "Zendesk alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://desk-pulse.vercel.app",
     name: "极简客服工单",
-    title: "极简客服工单 — Zendesk 平替，独立开发者 $9.9/月",
+    title: "极简客服工单 — Zendesk 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次。Zendesk $98/坐席？$9.9/月一口价：共享收件箱、AI 回复建议、知识库、不按坐席收费。",
+      "免费体验 5 次。Zendesk $98/坐席？$29/月一口价：共享收件箱、AI 回复建议、知识库、不按坐席收费。",
     keywords: [
       "客服工单",
       "Zendesk 替代品",

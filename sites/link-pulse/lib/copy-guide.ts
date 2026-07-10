@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Bitly Alternative for Indie Hackers — Short Link Analytics Guide",
       description:
-        "Bitly starts at $35/mo for click analytics. Compare URL shorteners for indie SaaS launches. Find a $9.9/mo flat-rate tool with UTM tracking and referrer stats.",
+        "Bitly starts at $35/mo for click analytics. Compare URL shorteners for indie SaaS launches. Find a $29/mo flat-rate tool with UTM tracking and referrer stats.",
     },
     h1: "2026 Bitly Alternative for Indie Hackers: Short Link Analytics Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Powerful but setup-heavy. UTM builder spreadsheets. Cross-domain tracking headaches. Works but slow for quick launch experiments.",
           },
           {
-            h3: "Link Pulse — $9.9/mo flat",
+            h3: "Link Pulse — $29/mo flat",
             p: "Built for indie hackers who want short links + click analytics without per-seat fees. Create links in 30 seconds, see referrers and UTM breakdown.",
-            link: { href: "/join", text: "5 free links to try", suffix: ", then $9.9/mo flat. No annual lock-in." },
+            link: { href: "/join", text: "5 free links to try", suffix: ", then $29/mo flat. No annual lock-in." },
           },
         ],
       },
@@ -96,7 +96,7 @@ export const guideCopy = {
         paragraphs: [
           "Bitly Growth: $35/mo × 12 = $420/year. For 10 links per launch × 3 launches = $14 per link per year.",
           "Rebrandly Essentials: $29/mo × 12 = $348/year, plus domain costs.",
-          "Link Pulse: $9.9/mo × 12 = $118.80/year. Unlimited links and clicks.",
+          "Link Pulse: $29/mo × 12 = $118.80/year. Unlimited links and clicks.",
           "For bootstrapped founders, the break-even is one saved hour of manual UTM spreadsheet work per month.",
         ],
         after: [
@@ -106,7 +106,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Create tracked short links free",
-      subtitle: "5 free links · click analytics · $9.9/mo unlimited",
+      subtitle: "5 free links · click analytics · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -114,7 +114,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Bitly 平替指南 — 短链点击分析选型",
       description:
-        "Bitly 点击分析起步 $35/月。对比独立开发者发布用短链工具，找到 $9.9/月一口价、含 UTM 追踪与来源统计的方案。",
+        "Bitly 点击分析起步 $35/月。对比独立开发者发布用短链工具，找到 $29/月一口价、含 UTM 追踪与来源统计的方案。",
     },
     h1: "2026 独立开发者 Bitly 平替：短链点击分析选型指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -159,9 +159,9 @@ export const guideCopy = {
             p: "功能强但配置重。UTM 构建表格。跨域追踪麻烦。能做但慢，不适合快速发布实验。",
           },
           {
-            h3: "短链点击统计 — $9.9/月 一口价",
+            h3: "短链点击统计 — $29/月 一口价",
             p: "为想要短链 + 点击分析、不想按席位付费的独立开发者打造。30 秒创建链接，查看来源与 UTM 明细。",
-            link: { href: "/join", text: "免费体验 5 条短链", suffix: "，之后 $9.9/月一口价。无年付绑定。" },
+            link: { href: "/join", text: "免费体验 5 条短链", suffix: "，之后 $29/月一口价。无年付绑定。" },
           },
         ],
       },
@@ -205,7 +205,7 @@ export const guideCopy = {
         paragraphs: [
           "Bitly 成长版：$35/月 × 12 = $420/年。每次发布 10 条链接 × 3 次发布 = 每条链接每年 $14。",
           "Rebrandly 基础版：$29/月 × 12 = $348/年，另加域名费用。",
-          "短链点击统计：$9.9/月 × 12 = $118.80/年。短链与点击不限量。",
+          "短链点击统计：$29/月 × 12 = $118.80/年。短链与点击不限量。",
           "对自举创始人，回本只需每月少花一小时手工维护 UTM 表格。",
         ],
         after: [
@@ -215,7 +215,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费创建带追踪的短链",
-      subtitle: "免费 5 条短链 · 点击分析 · $9.9/月 不限量",
+      subtitle: "免费 5 条短链 · 点击分析 · $29/月 不限量",
       button: "打开控制台 →",
     },
   },

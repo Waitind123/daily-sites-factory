@@ -38,7 +38,7 @@ export const features = [
   },
   {
     icon: "💰",
-    title: "Flat $9.9/mo",
+    title: "Flat $29/mo",
     desc: "Unlimited voters, unlimited ideas. No per-user fees like Canny.",
   },
 ];
@@ -47,7 +47,7 @@ export const testimonials = [
   {
     name: "Marcus T.",
     role: "Solo SaaS founder",
-    text: "Canny wanted $79/mo for 25 tracked users. Feature Vote does what I need for $9.9 with unlimited voters.",
+    text: "Canny wanted $79/mo for 25 tracked users. Feature Vote does what I need for $29 with unlimited voters.",
   },
   {
     name: "Elena R.",

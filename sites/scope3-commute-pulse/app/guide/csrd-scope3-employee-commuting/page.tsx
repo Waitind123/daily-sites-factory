@@ -136,7 +136,7 @@ export default function GuidePage() {
           <tr>
             <td>Scope3 Commute Pulse</td>
             <td>仅 Cat.7 通勤+远程</td>
-            <td>$9.9/月</td>
+            <td>$29/月</td>
           </tr>
         </tbody>
       </table>
@@ -186,7 +186,7 @@ export default function GuidePage() {
 
       <div className="not-prose mt-12 rounded-2xl bg-brand-600 text-white p-8 text-center">
         <h2 className="text-2xl font-bold mb-3">15 分钟出团队 Cat.7 基线</h2>
-        <p className="text-brand-100 mb-6">免费体验 5 次 · 会员 $9.9/月无限基线 + CSRD 导出</p>
+        <p className="text-brand-100 mb-6">免费体验 5 次 · 会员 $29/月无限基线 + CSRD 导出</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href="/survey"
@@ -198,7 +198,7 @@ export default function GuidePage() {
             href="/join"
             className="inline-block border border-white/40 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"
           >
-            订阅 $9.9/月
+            订阅 $29/月
           </Link>
         </div>
       </div>

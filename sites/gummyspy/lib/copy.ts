@@ -2,19 +2,19 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "GummySearch shut down · SpyCenter $79+ · $9.9/mo flat",
+    badge: "GummySearch shut down · SpyCenter $79+ · $29/mo flat",
     title: "GummySearch replacement with competitor ad spy",
     subtitle:
-      "Audience pain mining across Reddit, HN & Product Hunt — plus Meta/Google ad intelligence & review weaknesses. 5 free uses, then $9.9/mo.",
+      "Audience pain mining across Reddit, HN & Product Hunt — plus Meta/Google ad intelligence & review weaknesses. 5 free uses, then $29/mo.",
     ctaPrimary: "Scan audience pain free",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free uses · then $9.9/mo",
+    note: "5 free uses · then $29/mo",
     stats: [
       { stat: "2-in-1", label: "Audience Spy + Competitor Spy" },
       { stat: "3", label: "platforms: Reddit · HN · Product Hunt" },
-      { stat: "$9.9", label: "flat/mo vs SpyCenter $79–199" },
+      { stat: "$29", label: "flat/mo vs SpyCenter $79–199" },
     ],
     howItWorks: {
       title: "How it works",
@@ -32,7 +32,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "Ship what wins",
-          desc: "Combine pain signals + competitor gaps to ship a $9.9/mo micro-SaaS this week",
+          desc: "Combine pain signals + competitor gaps to ship a $29/mo micro-SaaS this week",
         },
       ],
     },
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Both modules unlimited. No $79–199/mo SpyCenter or $29/mo PainHunt pricing.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Solo founder",
-        text: "GummySearch died, SpyCenter wants $199/mo. GummySpy does audience + competitor intel for $9.9.",
+        text: "GummySearch died, SpyCenter wants $199/mo. GummySpy does audience + competitor intel for $29.",
       },
       {
         name: "Lisa W.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing — spy and ship",
-      subtitle: "5 free uses · then $9.9/mo for unlimited audience + competitor intelligence",
+      subtitle: "5 free uses · then $29/mo for unlimited audience + competitor intelligence",
       ctaPrimary: "Scan audience pain free",
       ctaSpy: "Spy competitors",
       ctaSecondary: "View pricing",
@@ -92,19 +92,19 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "GummySearch 已关停 · SpyCenter $79+ · $9.9/月一口价",
+    badge: "GummySearch 已关停 · SpyCenter $79+ · $29/月一口价",
     title: "GummySearch 替代品：受众痛点 + 竞品广告情报",
     subtitle:
-      "跨 Reddit、HN、Product Hunt 挖掘受众痛点，外加 Meta/Google 广告情报与评价弱点。免费体验 5 次，之后 $9.9/月。",
+      "跨 Reddit、HN、Product Hunt 挖掘受众痛点，外加 Meta/Google 广告情报与评价弱点。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费扫描受众痛点",
     ctaPrimaryHref: "/scan",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "二合一", label: "受众侦察 + 竞品侦察" },
       { stat: "3", label: "个平台：Reddit · HN · Product Hunt" },
-      { stat: "$9.9", label: "一口价/月，SpyCenter 要 $79–199" },
+      { stat: "$29", label: "一口价/月，SpyCenter 要 $79–199" },
     ],
     howItWorks: {
       title: "如何使用",
@@ -122,7 +122,7 @@ export const homeCopy = {
         {
           step: "3",
           title: "做能赢的产品",
-          desc: "结合痛点信号与竞品缺口，本周上线 $9.9/月 微 SaaS",
+          desc: "结合痛点信号与竞品缺口，本周上线 $29/月 微 SaaS",
         },
       ],
     },
@@ -145,7 +145,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "两大模块不限量。不像 SpyCenter $79–199/月 或 PainHunt $29/月。",
       },
     ],
@@ -154,7 +154,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "一人创始人",
-        text: "GummySearch 关了，SpyCenter 要 $199/月。GummySpy $9.9 就能做受众 + 竞品情报。",
+        text: "GummySearch 关了，SpyCenter 要 $199/月。GummySpy $29 就能做受众 + 竞品情报。",
       },
       {
         name: "Lisa W.",
@@ -169,7 +169,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜 — 侦察后上线",
-      subtitle: "免费 5 次 · 之后 $9.9/月 受众 + 竞品情报不限量",
+      subtitle: "免费 5 次 · 之后 $29/月 受众 + 竞品情报不限量",
       ctaPrimary: "免费扫描受众痛点",
       ctaSpy: "侦察竞品",
       ctaSecondary: "查看定价",
@@ -199,7 +199,7 @@ export const joinCopy = {
       "G2/Capterra weakness mining",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free uses, then subscribe?",
@@ -225,7 +225,7 @@ export const joinCopy = {
       "G2/Capterra 弱点挖掘",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

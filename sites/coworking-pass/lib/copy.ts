@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Croissant $49/mo? · $9.9/mo flat",
+    badge: "Croissant $49/mo? · $29/mo flat",
     title: "Coworking day passes for nomads",
     subtitle:
-      "Compare day-pass prices across 40+ cities, book instantly. No monthly membership. 5 free bookings, then $9.9/mo.",
+      "Compare day-pass prices across 40+ cities, book instantly. No monthly membership. 5 free bookings, then $29/mo.",
     ctaPrimary: "Find a day pass",
     ctaPrimaryHref: "/passes",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free bookings · then $9.9/mo",
+    note: "5 free bookings · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Croissant $49+" },
+      { stat: "$29", label: "flat/mo vs Croissant $49+" },
       { stat: "40+", label: "cities with day-pass data" },
       { stat: "2 min", label: "to book today's desk" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited bookings. No Croissant-style hourly credits or rollover math.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Sarah M.",
         role: "Remote PM · Bangkok ⇄ Lisbon",
-        text: "Croissant wanted $49/mo for 10 hours. I just need a desk when I land — Coworking Pass is exactly that for $9.9.",
+        text: "Croissant wanted $49/mo for 10 hours. I just need a desk when I land — Coworking Pass is exactly that for $29.",
       },
       {
         name: "陈磊",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop hunting Instagram for WiFi",
-      subtitle: "5 free bookings · then $9.9/mo for unlimited",
+      subtitle: "5 free bookings · then $29/mo for unlimited",
       ctaPrimary: "Find a day pass",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Croissant $49/月？· $9.9/月一口价",
+    badge: "Croissant $49/月？· $29/月一口价",
     title: "数字游民联合办公日票",
     subtitle:
-      "40+ 城市日票比价，即时预订。无需月费会员。免费体验 5 次预订，之后 $9.9/月。",
+      "40+ 城市日票比价，即时预订。无需月费会员。免费体验 5 次预订，之后 $29/月。",
     ctaPrimary: "查找日票",
     ctaPrimaryHref: "/passes",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Croissant 要 $49+" },
+      { stat: "$29", label: "一口价/月，Croissant 要 $49+" },
       { stat: "40+", label: "城市日票数据" },
       { stat: "2 分钟", label: "预订今日工位" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "预订不限次数。不像 Croissant 按小时扣积分、算 rollover。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Sarah M.",
         role: "远程 PM · 曼谷⇄里斯本",
-        text: "Croissant $49/月才 10 小时。我落地只要一张桌子 — 联合办公日票 $9.9 刚好。",
+        text: "Croissant $49/月才 10 小时。我落地只要一张桌子 — 联合办公日票 $29 刚好。",
       },
       {
         name: "陈磊",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再刷 Instagram 找 WiFi 了",
-      subtitle: "免费 5 次预订 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次预订 · 之后 $29/月 不限量",
       ctaPrimary: "查找日票",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Instant booking confirmation",
       "Price alerts for your cities",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free bookings, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "即时预订确认",
       "关注城市降价提醒",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

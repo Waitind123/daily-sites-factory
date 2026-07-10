@@ -55,7 +55,7 @@ export const monitorCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've used 5 scans. Subscribe for unlimited 24/7 keyword monitoring, intent scoring, and webhook alerts.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "Add keyword to watchlist",
     keyword: "Keyword or competitor",
     keywordPlaceholder: "e.g. subwatch, harvest, calendly, analytics",
@@ -77,7 +77,7 @@ export const monitorCopy = {
     freeScans: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已使用 5 次扫描。订阅后可无限全天候关键词监控、意向评分与 Webhook 提醒。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "添加关键词到监控列表",
     keyword: "关键词或竞品",
     keywordPlaceholder: "例如：subwatch、harvest、calendly、分析工具",

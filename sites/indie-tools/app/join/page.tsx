@@ -27,7 +27,7 @@ export default async function JoinPage() {
         <div className="text-center">
           <p className="text-sm font-medium text-brand-500 mb-2">{c.monthly}</p>
           <div className="flex items-baseline justify-center gap-1">
-            <span className="text-5xl font-bold text-foreground">$9.9</span>
+            <span className="text-5xl font-bold text-foreground">$29</span>
             <span className="text-muted">{c.perMonth}</span>
           </div>
           <p className="mt-2 text-sm text-muted">{c.vsCompetitor}</p>

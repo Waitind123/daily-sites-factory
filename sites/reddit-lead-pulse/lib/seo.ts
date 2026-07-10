@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://reddit-lead-pulse.vercel.app",
     name: "Reddit Lead Pulse",
-    title: "Reddit Lead Pulse — High-intent Reddit lead monitoring for indie hackers, $9.9/mo",
+    title: "Reddit Lead Pulse — High-intent Reddit lead monitoring for indie hackers, $29/mo",
     description:
-      "5 free scans. Monitor r/SaaS, r/Entrepreneur & r/indiehackers for switching, alternative & pricing signals. SubWatch alternative with intent scoring. $9.9/mo flat.",
+      "5 free scans. Monitor r/SaaS, r/Entrepreneur & r/indiehackers for switching, alternative & pricing signals. SubWatch alternative with intent scoring. $29/mo flat.",
     keywords: [
       "Reddit lead generation",
       "SubWatch alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://reddit-lead-pulse.vercel.app",
     name: "Reddit 获客线索",
-    title: "Reddit 获客线索 — 独立开发者高意向 Reddit 监控，$9.9/月",
+    title: "Reddit 获客线索 — 独立开发者高意向 Reddit 监控，$29/月",
     description:
-      "免费体验 5 次扫描。监控 r/SaaS、r/Entrepreneur 与 r/indiehackers 的切换、替代与价格信号。SubWatch 平替，意向评分，$9.9/月一口价。",
+      "免费体验 5 次扫描。监控 r/SaaS、r/Entrepreneur 与 r/indiehackers 的切换、替代与价格信号。SubWatch 平替，意向评分，$29/月一口价。",
     keywords: [
       "Reddit 获客线索",
       "SubWatch 替代品",

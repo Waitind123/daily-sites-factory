@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://alt-stack.vercel.app",
     name: "Alt Stack",
-    title: "Alt Stack — open-source SaaS alternatives & self-host guides $9.9/mo",
+    title: "Alt Stack — open-source SaaS alternatives & self-host guides $29/mo",
     description:
-      "5 free deep dives. Curated directory of 50+ open-source alternatives to Slack, Jira, Zapier, Auth0 with Docker configs & savings calculator. $9.9/mo unlimited.",
+      "5 free deep dives. Curated directory of 50+ open-source alternatives to Slack, Jira, Zapier, Auth0 with Docker configs & savings calculator. $29/mo unlimited.",
     keywords: [
       "open source SaaS alternatives",
       "self-hosted tools",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://alt-stack.vercel.app",
     name: "Alt Stack",
-    title: "Alt Stack — 开源 SaaS 替代品目录与自托管指南 $9.9/月",
+    title: "Alt Stack — 开源 SaaS 替代品目录与自托管指南 $29/月",
     description:
-      "免费体验 5 次深度查阅。50+ 精选开源替代品替代 Slack、Jira、Zapier、Auth0，含 Docker 配置与节省计算器。$9.9/月无限查阅。",
+      "免费体验 5 次深度查阅。50+ 精选开源替代品替代 Slack、Jira、Zapier、Auth0，含 Docker 配置与节省计算器。$29/月无限查阅。",
     keywords: [
       "开源 SaaS 替代品",
       "自托管工具",

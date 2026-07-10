@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://link-pulse-one.vercel.app",
     name: "Link Pulse",
-    title: "Link Pulse — Bitly alternative for indie devs, $9.9/mo flat",
+    title: "Link Pulse — Bitly alternative for indie devs, $29/mo flat",
     description:
-      "5 free short links. Bitly $35/mo? $9.9/mo flat: branded links, click analytics, UTM tracking. Ship campaigns in 30 seconds.",
+      "5 free short links. Bitly $35/mo? $29/mo flat: branded links, click analytics, UTM tracking. Ship campaigns in 30 seconds.",
     keywords: [
       "URL shortener",
       "link analytics",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://link-pulse-one.vercel.app",
     name: "短链点击统计",
-    title: "短链点击统计 — Bitly 平替，独立开发者 $9.9/月",
+    title: "短链点击统计 — Bitly 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 条短链。Bitly 要 $35/月？$9.9/月一口价：品牌短链、点击分析、UTM 追踪，30 秒上线营销活动。",
+      "免费体验 5 条短链。Bitly 要 $35/月？$29/月一口价：品牌短链、点击分析、UTM 追踪，30 秒上线营销活动。",
     keywords: [
       "短链生成",
       "链接点击统计",

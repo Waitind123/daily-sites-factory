@@ -135,7 +135,7 @@ export const toolsLocaleEn: Record<string, ToolLocaleFields> = {
       alternatives: [
         { name: "Calendly", pricing: "$12+/mo", when: "No self-host, maximum brand trust" },
         { name: "TidyCal", pricing: "$29 lifetime", when: "One-time pay, good enough features" },
-        { name: "BookPulse", pricing: "$9.9/mo", when: "Minimal indie booking page" },
+        { name: "BookPulse", pricing: "$29/mo", when: "Minimal indie booking page" },
       ],
       pros: ["Fully open-source", "Stripe paid bookings", "White-label/custom domain", "Team scheduling"],
       cons: ["Self-host maintenance", "Google Calendar sync occasional issues", "Mobile UI average"],

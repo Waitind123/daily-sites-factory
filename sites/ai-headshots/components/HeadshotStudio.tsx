@@ -121,8 +121,8 @@ export function HeadshotStudio({ locale, embedded = false }: { locale: Locale; e
       {trial && !trial.isMember && trial.remaining <= 1 && !showPaywall && (
         <div className="mb-4 rounded-xl bg-rose-50 border border-rose-200 px-4 py-3 text-sm text-rose-900 text-center">
           {locale === "zh"
-            ? "⚠️ 最后 1 次免费机会 — 用完需订阅 ¥69/月 或 $9.9/月"
-            : "⚠️ Last free try — subscribe at ¥69/mo or $9.9/mo after"}
+            ? "⚠️ 最后 1 次免费机会 — 用完需订阅 ¥199/月 或 $29/月"
+            : "⚠️ Last free try — subscribe at ¥69/mo or $29/mo after"}
         </div>
       )}
 

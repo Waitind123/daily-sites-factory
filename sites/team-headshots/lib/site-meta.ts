@@ -6,8 +6,8 @@ export const siteMeta = {
     zh: "团队 AI 头像",
   },
   joinLabel: {
-    en: "Subscribe · $9.9/mo",
-    zh: "订阅 · $9.9/月",
+    en: "Subscribe · $29/mo",
+    zh: "订阅 · $29/月",
   },
   nav: [
     {

@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://newsletter-stack.vercel.app",
     name: "Newsletter Stack",
-    title: "Newsletter Stack — Substack vs Beehiiv vs Kit comparison, $9.9/mo",
+    title: "Newsletter Stack — Substack vs Beehiiv vs Kit comparison, $29/mo",
     description:
       "5 free deep comparisons. Substack, Beehiiv, Kit, Mailchimp pricing, features & migration costs — pick the right newsletter tool without overpaying.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://newsletter-stack.vercel.app",
     name: "Newsletter 工具对比",
-    title: "Newsletter 工具对比 — Substack vs Beehiiv vs ConvertKit 深度评测 $9.9/月",
+    title: "Newsletter 工具对比 — Substack vs Beehiiv vs ConvertKit 深度评测 $29/月",
     description:
       "免费体验 5 次深度对比。Substack、Beehiiv、ConvertKit、Mailchimp 定价、功能、迁移成本一目了然。Indie Hacker 选邮件工具不再踩坑。",
     keywords: [

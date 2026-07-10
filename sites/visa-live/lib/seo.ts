@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://visa-live.vercel.app",
     name: "Visa Live",
-    title: "Visa Live — Real-time digital nomad visa policy tracking, $9.9/mo",
+    title: "Visa Live — Real-time digital nomad visa policy tracking, $29/mo",
     description:
-      "Real-time policy updates, expiry reminders, and change alerts for 35+ digital nomad visa programs. 5 free tracks, then $9.9/mo.",
+      "Real-time policy updates, expiry reminders, and change alerts for 35+ digital nomad visa programs. 5 free tracks, then $29/mo.",
     keywords: [
       "visa policy real-time tracking",
       "digital nomad visa expiry",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://visa-live.vercel.app",
     name: "签证政策实时追踪",
-    title: "签证政策实时追踪 — 数字游民签证到期提醒+政策变更，$9.9/月",
+    title: "签证政策实时追踪 — 数字游民签证到期提醒+政策变更，$29/月",
     description:
-      "35+ 数字游民签证实时政策更新、到期提醒与变更告警。免费体验 5 次，之后 $9.9/月。",
+      "35+ 数字游民签证实时政策更新、到期提醒与变更告警。免费体验 5 次，之后 $29/月。",
     keywords: [
       "签证政策实时追踪",
       "数字游民签证到期",

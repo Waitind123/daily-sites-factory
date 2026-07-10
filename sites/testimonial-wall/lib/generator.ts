@@ -69,8 +69,8 @@ export const features = [
   },
   {
     icon: "💰",
-    title: "$9.9 vs $40",
-    desc: "Testimonial.to 去品牌 $40/月，我们 $9.9/月全包",
+    title: "$29 vs $40",
+    desc: "Testimonial.to 去品牌 $40/月，我们 $29/月全包",
   },
   {
     icon: "🔒",
@@ -83,7 +83,7 @@ export const testimonials = [
   {
     name: "张明",
     role: "独立开发者",
-    text: "MRR $800 时付 $40/月要证言去品牌太肉疼，证言墙 $9.9 完全够用。",
+    text: "MRR $800 时付 $40/月要证言去品牌太肉疼，证言墙 $29 完全够用。",
   },
   {
     name: "Alex Kim",

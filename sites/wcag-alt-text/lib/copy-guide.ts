@@ -80,12 +80,12 @@ export const guideCopy = {
       },
       {
         type: "p" as const,
-        text: "A typical agency client site has 200–2,000 images across blog posts, product pages, and team photos. Manual alt-text writing at 2 minutes per image means 67 hours of work. That is why agencies charge $3,000–$15,000 for accessibility remediation — and why automated tools at $9.9/month change the economics entirely.",
+        text: "A typical agency client site has 200–2,000 images across blog posts, product pages, and team photos. Manual alt-text writing at 2 minutes per image means 67 hours of work. That is why agencies charge $3,000–$15,000 for accessibility remediation — and why automated tools at $29/month change the economics entirely.",
       },
       {
         type: "p" as const,
         text: "The efficient workflow: crawl the site for images missing alt attributes, export a CSV with image URLs and page context, batch-generate alt text, review scores above 85/100 automatically, manually review edge cases below 85, then import back to the CMS. Our tool supports this end-to-end at {link0}.",
-        links: [{ href: "/join", label: "$9.9/mo unlimited" }],
+        links: [{ href: "/join", label: "$29/mo unlimited" }],
       },
       {
         type: "h2" as const,
@@ -93,7 +93,7 @@ export const guideCopy = {
       },
       {
         type: "p" as const,
-        text: "AltText.ai starts at $49/month for agencies and charges per image on higher tiers. ShiftView targets dev teams at $79/month with white-label reports. Enterprise tools like Siteimprove start at $15,000/year. For indie agencies and freelancers shipping 5–20 client sites per year, a flat $9.9/month tool with batch CSV export covers the gap without enterprise sales calls.",
+        text: "AltText.ai starts at $49/month for agencies and charges per image on higher tiers. ShiftView targets dev teams at $79/month with white-label reports. Enterprise tools like Siteimprove start at $15,000/year. For indie agencies and freelancers shipping 5–20 client sites per year, a flat $29/month tool with batch CSV export covers the gap without enterprise sales calls.",
       },
       {
         type: "h2" as const,
@@ -127,7 +127,7 @@ export const guideCopy = {
         text: "You do not need a $15,000 Siteimprove contract to start fixing alt text. Paste an image description into our {link0}, get WCAG 2.2 AA alt text with a compliance score, and copy it to your client's CMS. Five free generations let you test on a real client project before subscribing at {link1}.",
         links: [
           { href: "/generate", label: "generator" },
-          { href: "/join", label: "$9.9/mo" },
+          { href: "/join", label: "$29/mo" },
         ],
       },
     ],
@@ -211,12 +211,12 @@ export const guideCopy = {
       },
       {
         type: "p" as const,
-        text: "典型代理商客户站点在博客、产品页、团队照片中有 200–2000 张图片。手动写 alt 文本每张 2 分钟意味着 67 小时工作量。这就是为什么代理商对无障碍修复收费 $3,000–$15,000 — 以及为什么 $9.9/月的自动化工具完全改变了成本结构。",
+        text: "典型代理商客户站点在博客、产品页、团队照片中有 200–2000 张图片。手动写 alt 文本每张 2 分钟意味着 67 小时工作量。这就是为什么代理商对无障碍修复收费 $3,000–$15,000 — 以及为什么 $29/月的自动化工具完全改变了成本结构。",
       },
       {
         type: "p" as const,
         text: "高效工作流：爬取站点找出缺失 alt 的图片，导出含图片 URL 和页面上下文的 CSV，批量生成 alt 文本，自动审核 85/100 以上评分，人工审核 85 以下边缘案例，然后导入回 CMS。我们的工具在 {link0} 支持端到端流程。",
-        links: [{ href: "/join", label: "$9.9/月无限" }],
+        links: [{ href: "/join", label: "$29/月无限" }],
       },
       {
         type: "h2" as const,
@@ -224,7 +224,7 @@ export const guideCopy = {
       },
       {
         type: "p" as const,
-        text: "AltText.ai 代理商版从 $49/月起，更高档位按张计费。ShiftView 面向开发团队 $79/月含白标报告。Siteimprove 等企业工具从 $15,000/年起。对每年交付 5–20 个客户站点的独立代理商和自由职业者，$9.9/月一口价含 CSV 批量导出的工具填补了空白，无需企业销售流程。",
+        text: "AltText.ai 代理商版从 $49/月起，更高档位按张计费。ShiftView 面向开发团队 $79/月含白标报告。Siteimprove 等企业工具从 $15,000/年起。对每年交付 5–20 个客户站点的独立代理商和自由职业者，$29/月一口价含 CSV 批量导出的工具填补了空白，无需企业销售流程。",
       },
       {
         type: "h2" as const,
@@ -258,7 +258,7 @@ export const guideCopy = {
         text: "你不需要 $15,000 的 Siteimprove 合同就能开始修复 alt 文本。把图片描述粘贴到我们的 {link0}，获取带合规评分的 WCAG 2.2 AA alt 文本，复制到客户 CMS。免费体验 5 次让你在真实客户项目上测试，再于 {link1} 订阅。",
         links: [
           { href: "/generate", label: "生成器" },
-          { href: "/join", label: "$9.9/月" },
+          { href: "/join", label: "$29/月" },
         ],
       },
     ],

@@ -51,7 +51,7 @@ export const testimonials = [
   {
     name: "Sarah L.",
     role: "Indie SaaS founder",
-    text: "Healthchecks.io works but I wanted flat $9.9 pricing. This does exactly what I need for 12 cron jobs.",
+    text: "Healthchecks.io works but I wanted flat $29 pricing. This does exactly what I need for 12 cron jobs.",
   },
   {
     name: "James Wu",

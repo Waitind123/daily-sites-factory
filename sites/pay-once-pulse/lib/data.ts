@@ -115,7 +115,7 @@ export const indieTools: IndieTool[] = [
       alternatives: [
         { name: "Typeform", pricing: "$25/月起", when: "需要精美 UI、不想自托管" },
         { name: "Tally", pricing: "免费无限", when: "简单表单、接受 tally.so 域名" },
-        { name: "form-pulse", pricing: "$9.9/月", when: "需要放弃率分析 + 嵌入小部件" },
+        { name: "form-pulse", pricing: "$29/月", when: "需要放弃率分析 + 嵌入小部件" },
       ],
       pros: ["开源可自托管", "应用内调研 widget", "无限表单回复", "GDPR 友好"],
       cons: ["自托管需维护", "UI 不如 Typeform 精致", "高级分析需付费云版"],
@@ -178,7 +178,7 @@ export const indieTools: IndieTool[] = [
         "自托管 $0 全功能。对比 Bonsai $25/月、HoneyBook $39/月，年省 $300–468。",
       alternatives: [
         { name: "Bonsai", pricing: "$25/月起", when: "需要合同模板 + 美国税务" },
-        { name: "invoice-desk", pricing: "$9.9/月", when: "极简 UI、中文本地化" },
+        { name: "invoice-desk", pricing: "$29/月", when: "极简 UI、中文本地化" },
         { name: "Wave", pricing: "免费", when: "北美小企业、接受广告" },
       ],
       pros: ["开源 10 年历史", "Stripe/PayPal 集成", "客户门户", "多币种"],
@@ -242,7 +242,7 @@ export const indieTools: IndieTool[] = [
         "自托管 $0。对比 Calendly Standard $12/月、Teams $20/月，年省 $144–240。",
       alternatives: [
         { name: "Calendly", pricing: "$12/月起", when: "不想自托管、要最简单体验" },
-        { name: "book-pulse", pricing: "$9.9/月", when: "极简预约 + 项目展示" },
+        { name: "book-pulse", pricing: "$29/月", when: "极简预约 + 项目展示" },
         { name: "TidyCal", pricing: "$29 终身", when: "要终身买断、接受 LTD" },
       ],
       pros: ["完全开源", "白标自定义", "Stripe 收款集成", "团队调度"],
@@ -273,7 +273,7 @@ export const indieTools: IndieTool[] = [
       pricingDetail:
         "自托管 $0。对比 Statuspage $29/月 + UptimeRobot Pro $7/月，年省 $432。",
       alternatives: [
-        { name: "uptime-alt", pricing: "$9.9/月", when: "不想自托管、要托管服务" },
+        { name: "uptime-alt", pricing: "$29/月", when: "不想自托管、要托管服务" },
         { name: "Better Stack", pricing: "$20/月起", when: "需要日志 + 监控一体" },
         { name: "Cachet", pricing: "免费自托管", when: "纯状态页、不需监控" },
       ],
@@ -370,7 +370,7 @@ export const indieTools: IndieTool[] = [
         "自托管 $0。对比 Notion Plus $8/用户/月、GitBook $65/月，5 人团队年省 $480–780。",
       alternatives: [
         { name: "Notion", pricing: "$8/用户/月", when: "需要数据库 + PM 一体" },
-        { name: "docs-pulse", pricing: "$9.9/月", when: "纯 API 文档 + llms.txt" },
+        { name: "docs-pulse", pricing: "$29/月", when: "纯 API 文档 + llms.txt" },
         { name: "Outline", pricing: "免费自托管", when: "成熟 Wiki、已有经验" },
       ],
       pros: ["实时协作", "Docker 部署", "权限管理", "完全开源"],

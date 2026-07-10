@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://wcag-alt-text.vercel.app",
     name: "AltText Pro",
-    title: "AltText Pro — WCAG Alt-Text Generator for Agencies, $9.9/mo",
+    title: "AltText Pro — WCAG Alt-Text Generator for Agencies, $29/mo",
     description:
-      "5 free generations. AltText.ai too expensive? $9.9/mo flat: batch WCAG 2.2 AA alt text, ADA compliance scoring, CSV export for web agencies.",
+      "5 free generations. AltText.ai too expensive? $29/mo flat: batch WCAG 2.2 AA alt text, ADA compliance scoring, CSV export for web agencies.",
     keywords: [
       "WCAG alt text generator",
       "ADA compliance",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://wcag-alt-text.vercel.app",
     name: "无障碍 Alt 文本",
-    title: "无障碍 Alt 文本 — 网页代理商 WCAG 生成器，$9.9/月",
+    title: "无障碍 Alt 文本 — 网页代理商 WCAG 生成器，$29/月",
     description:
-      "免费体验 5 次。AltText.ai 太贵？$9.9/月一口价：批量 WCAG 2.2 AA alt 文本、ADA 合规评分、CSV 导出，专为网页代理商设计。",
+      "免费体验 5 次。AltText.ai 太贵？$29/月一口价：批量 WCAG 2.2 AA alt 文本、ADA 合规评分、CSV 导出，专为网页代理商设计。",
     keywords: [
       "WCAG alt 文本生成器",
       "ADA 合规",

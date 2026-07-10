@@ -1,6 +1,6 @@
 # Reddit Leads
 
-Reddit high-intent lead monitoring for indie hackers. SubWatch alternative at $9.9/mo.
+Reddit high-intent lead monitoring for indie hackers. SubWatch alternative at $29/mo.
 
 - Monitor r/SaaS, r/Entrepreneur, r/indiehackers & r/startups
 - Intent score 1–10 per thread

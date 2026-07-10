@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://stripe-pulse-two.vercel.app",
     name: "Stripe Pulse",
-    title: "Stripe Pulse — ChartMogul alternative for indie devs, $9.9/mo flat",
+    title: "Stripe Pulse — ChartMogul alternative for indie devs, $29/mo flat",
     description:
-      "5 free syncs. ChartMogul $79/mo? $9.9/mo flat: MRR, ARR, churn, customer movements. Connect Stripe in 2 minutes.",
+      "5 free syncs. ChartMogul $79/mo? $29/mo flat: MRR, ARR, churn, customer movements. Connect Stripe in 2 minutes.",
     keywords: [
       "Stripe metrics",
       "MRR dashboard",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://stripe-pulse-two.vercel.app",
     name: "Stripe 收入仪表盘",
-    title: "Stripe 收入仪表盘 — ChartMogul 平替，独立开发者 $9.9/月",
+    title: "Stripe 收入仪表盘 — ChartMogul 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次同步。ChartMogul 要 $79/月？$9.9/月一口价：MRR、ARR、流失率、客户变动，2 分钟连接 Stripe。",
+      "免费体验 5 次同步。ChartMogul 要 $79/月？$29/月一口价：MRR、ARR、流失率、客户变动，2 分钟连接 Stripe。",
     keywords: [
       "Stripe 指标",
       "MRR 仪表盘",

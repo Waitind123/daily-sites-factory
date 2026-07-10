@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://ai-funnel-diagnosis.vercel.app",
     name: "AI Funnel Diagnosis",
-    title: "AI Funnel Diagnosis — Mixpanel alternative with AI fix suggestions, $9.9/mo",
+    title: "AI Funnel Diagnosis — Mixpanel alternative with AI fix suggestions, $29/mo",
     description:
-      "5 free AI funnel diagnoses. Paste funnel data, get drop-off analysis + prioritized fix plan. Mixpanel costs $500/mo? $9.9/mo flat for indie hackers.",
+      "5 free AI funnel diagnoses. Paste funnel data, get drop-off analysis + prioritized fix plan. Mixpanel costs $500/mo? $29/mo flat for indie hackers.",
     keywords: [
       "AI funnel diagnosis",
       "Mixpanel alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://ai-funnel-diagnosis.vercel.app",
     name: "AI 漏斗诊断",
-    title: "AI 漏斗诊断 — Mixpanel 平替 + AI 修复建议，$9.9/月",
+    title: "AI 漏斗诊断 — Mixpanel 平替 + AI 修复建议，$29/月",
     description:
-      "免费体验 5 次 AI 漏斗诊断。粘贴漏斗数据，获得流失分析 + 优先级修复方案。Mixpanel $500/月太贵？独立开发者 $9.9/月一口价。",
+      "免费体验 5 次 AI 漏斗诊断。粘贴漏斗数据，获得流失分析 + 优先级修复方案。Mixpanel $500/月太贵？独立开发者 $29/月一口价。",
     keywords: [
       "AI 漏斗诊断",
       "Mixpanel 替代品",

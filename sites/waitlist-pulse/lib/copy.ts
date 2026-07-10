@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Prefinery $99/mo? · $9.9/mo flat",
+    badge: "Prefinery $99/mo? · $29/mo flat",
     title: "Product waitlists for indie launches",
     subtitle:
-      "Collect emails before you ship. Referral boost, public signup count, embed widget. 5 free waitlists, then $9.9/mo.",
+      "Collect emails before you ship. Referral boost, public signup count, embed widget. 5 free waitlists, then $29/mo.",
     ctaPrimary: "Create a waitlist free",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free waitlists · then $9.9/mo",
+    note: "5 free waitlists · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Prefinery $99+" },
+      { stat: "$29", label: "flat/mo vs Prefinery $99+" },
       { stat: "2 min", label: "to launch a signup page" },
       { stat: "∞", label: "signups, no per-email fees" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited waitlists and signups. No per-email or per-campaign fees like Prefinery.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo founder",
-        text: "Prefinery wanted $99/mo before I even had 100 signups. Waitlist Pulse did the job for $9.9.",
+        text: "Prefinery wanted $99/mo before I even had 100 signups. Waitlist Pulse did the job for $29.",
       },
       {
         name: "Priya S.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Ship faster with a waitlist",
-      subtitle: "5 free waitlists · then $9.9/mo for unlimited",
+      subtitle: "5 free waitlists · then $29/mo for unlimited",
       ctaPrimary: "Create a waitlist free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Prefinery $99/月？· $9.9/月一口价",
+    badge: "Prefinery $99/月？· $29/月一口价",
     title: "独立开发者的产品等候名单",
     subtitle:
-      "正式上线前收集邮箱。推荐裂变、公开报名计数、可嵌入组件。免费体验 5 个等候名单，之后 $9.9/月。",
+      "正式上线前收集邮箱。推荐裂变、公开报名计数、可嵌入组件。免费体验 5 个等候名单，之后 $29/月。",
     ctaPrimary: "免费创建等候名单",
     ctaPrimaryHref: "/lists",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Prefinery 要 $99+" },
+      { stat: "$29", label: "一口价/月，Prefinery 要 $99+" },
       { stat: "2 分钟", label: "上线报名页" },
       { stat: "∞", label: "报名不限量，不按邮箱收费" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "等候名单与报名不限量，不像 Prefinery 按活动或邮箱收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "一人创始人",
-        text: "我还没 100 个报名，Prefinery 就要 $99/月。产品等候名单 $9.9 完全够用。",
+        text: "我还没 100 个报名，Prefinery 就要 $99/月。产品等候名单 $29 完全够用。",
       },
       {
         name: "Priya S.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "用等候名单更快上线",
-      subtitle: "免费 5 个等候名单 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个等候名单 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建等候名单",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "CSV email export",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free waitlists, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "邮箱 CSV 导出",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个名单，之后订阅？",

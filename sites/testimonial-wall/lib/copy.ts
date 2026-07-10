@@ -5,14 +5,14 @@ export const homeCopy = {
     badge: "Testimonial.to $40/mo · ship your wall in 10min",
     title: "Testimonial wall for indie hackers",
     subtitle:
-      "Collect user praise, embed Wall of Love in two lines of HTML. $9.9/mo vs Testimonial.to $40/mo for white-label.",
+      "Collect user praise, embed Wall of Love in two lines of HTML. $29/mo vs Testimonial.to $40/mo for white-label.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/wall",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Testimonial.to $40" },
+      { stat: "$29", label: "flat/mo vs Testimonial.to $40" },
       { stat: "10min", label: "zero to embedded wall" },
       { stat: "0 JS", label: "pure HTML embed, fast load" },
     ],
@@ -40,7 +40,7 @@ export const homeCopy = {
       { icon: "📧", title: "Collection email", desc: "Auto-generated ask-for-testimonial email — copy and send" },
       { icon: "🎨", title: "Three layouts", desc: "Grid, carousel, masonry for different landing styles" },
       { icon: "⚡", title: "Fast load", desc: "Pure HTML/CSS embed, no third-party JS, great Core Web Vitals" },
-      { icon: "💰", title: "$9.9 vs $40", desc: "Testimonial.to white-label $40/mo — we're $9.9/mo all-in" },
+      { icon: "💰", title: "$29 vs $40", desc: "Testimonial.to white-label $40/mo — we're $29/mo all-in" },
       { icon: "🔒", title: "Your data", desc: "Generated locally, no long-term storage of customer info" },
     ],
     testimonialsTitle: "What indie hackers say",
@@ -48,7 +48,7 @@ export const homeCopy = {
       {
         name: "Ming Z.",
         role: "Indie developer",
-        text: "At $800 MRR, paying $40/mo just to remove branding hurt. $9.9 here is perfect.",
+        text: "At $800 MRR, paying $40/mo just to remove branding hurt. $29 here is perfect.",
       },
       {
         name: "Alex Kim",
@@ -64,7 +64,7 @@ export const homeCopy = {
     closing: {
       title: "At $500 MRR you shouldn't pay $40/mo for testimonials",
       subtitle:
-        "Social proof drives landing conversions. $9.9/mo day-one pricing because good tools are worth paying for.",
+        "Social proof drives landing conversions. $29/mo day-one pricing because good tools are worth paying for.",
       ctaPrimary: "Create wall",
       ctaSecondary: "See pricing",
     },
@@ -79,14 +79,14 @@ export const homeCopy = {
     badge: "Testimonial.to $40/月 · 10 分钟嵌入证言墙",
     title: "独立开发者证言墙",
     subtitle:
-      "收集用户好评，两行 HTML 嵌入 Wall of Love。$9.9/月，Testimonial.to 去品牌 $40/月的 1/4 价格。",
+      "收集用户好评，两行 HTML 嵌入 Wall of Love。$29/月，Testimonial.to 去品牌 $40/月的 1/4 价格。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/wall",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Testimonial.to $40" },
+      { stat: "$29", label: "一口价/月，Testimonial.to $40" },
       { stat: "10 分钟", label: "从零到嵌入证言墙" },
       { stat: "0 JS", label: "纯 HTML 嵌入，极速加载" },
     ],
@@ -114,7 +114,7 @@ export const homeCopy = {
       { icon: "📧", title: "收集邮件模板", desc: "自动生成向客户索要好评的邮件文案，复制即用" },
       { icon: "🎨", title: "三种布局", desc: "网格、轮播、瀑布流，适配不同落地页风格" },
       { icon: "⚡", title: "极速加载", desc: "纯 HTML/CSS 嵌入，无第三方 JS，不影响 Core Web Vitals" },
-      { icon: "💰", title: "$9.9 vs $40", desc: "Testimonial.to 去品牌 $40/月，我们 $9.9/月全包" },
+      { icon: "💰", title: "$29 vs $40", desc: "Testimonial.to 去品牌 $40/月，我们 $29/月全包" },
       { icon: "🔒", title: "数据在你手里", desc: "本地生成，不长期存储客户敏感信息" },
     ],
     testimonialsTitle: "独立开发者怎么说",
@@ -122,7 +122,7 @@ export const homeCopy = {
       {
         name: "张明",
         role: "独立开发者",
-        text: "MRR $800 时付 $40/月 要证言去品牌太肉疼，证言墙 $9.9 完全够用。",
+        text: "MRR $800 时付 $40/月 要证言去品牌太肉疼，证言墙 $29 完全够用。",
       },
       {
         name: "Alex Kim",
@@ -138,7 +138,7 @@ export const homeCopy = {
     closing: {
       title: "MRR $500 时不该为证言付 $40/月",
       subtitle:
-        "社交证明是落地页转化率的关键。$9.9/月，第一天收费，因为好工具值得付费。",
+        "社交证明是落地页转化率的关键。$29/月，第一天收费，因为好工具值得付费。",
       ctaPrimary: "创建证言墙",
       ctaSecondary: "查看定价",
     },
@@ -167,14 +167,14 @@ export const joinCopy = {
       "Custom accent color",
       "No third-party JS — fast load",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
     whyItems: [
       "Embed code needs ongoing maintenance and layout optimization",
       "Paying users = indie hackers shipping real products",
-      "Solo-maintained — $9.9 keeps it sustainable",
+      "Solo-maintained — $29 keeps it sustainable",
     ],
     includedTitle: "Included",
   },
@@ -193,7 +193,7 @@ export const joinCopy = {
       "自定义主题色",
       "无第三方 JS，极速加载",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费体验 5 次，之后订阅？",

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Cross-Platform Pain Point Scanner for Indie Hackers — HN + Reddit + PH Guide",
       description:
-        "GummySearch shut down. Reddit API is unstable. Compare PainHunt, BuildWhatTheyWant, PainSpotter. Find a $9.9/mo scanner across Hacker News, Reddit & Product Hunt.",
+        "GummySearch shut down. Reddit API is unstable. Compare PainHunt, BuildWhatTheyWant, PainSpotter. Find a $29/mo scanner across Hacker News, Reddit & Product Hunt.",
     },
     h1: "2026 Cross-Platform Pain Point Scanner: HN + Reddit + Product Hunt Guide for Indie Hackers",
     updated: "Updated June 2026 · 14 min read",
@@ -13,7 +13,7 @@ export const guideCopy = {
       "You want to validate your next micro-SaaS idea. But reading Reddit threads, Hacker News comments, and Product Hunt discussions separately takes hours — and you still miss the cross-platform signal.",
       "GummySearch solved Reddit-only mining for 140,000+ founders. It shut down November 2025. Replacements emerged: PainHunt ($29+/mo, 26 platforms), BuildWhatTheyWant (Reddit-only), PainSpotter ($29/mo), PainOnSocial ($49/mo for 2 subreddits). All useful — but solo bootstrappers need one affordable tool that covers the three platforms indie hackers actually read daily.",
       "The best validation signal is not a survey. It is a stranger on Hacker News typing \"Ask HN: alternative to GummySearch?\" or a Product Hunt maker saying \"wish I had validated on Reddit pain threads first.\" These are pre-qualified buyers describing what they would pay for — across platforms.",
-      "This guide explains why cross-platform pain scanning beats single-source research, compares 2026 validation tools for bootstrapped founders, and shows you how to score opportunities across Reddit, Hacker News, and Product Hunt in under 10 minutes for $9.9/mo.",
+      "This guide explains why cross-platform pain scanning beats single-source research, compares 2026 validation tools for bootstrapped founders, and shows you how to score opportunities across Reddit, Hacker News, and Product Hunt in under 10 minutes for $29/mo.",
       "Pain Radar was built for the levelsio playbook: find a real complaint, ship fast, charge from day one. Five free scans, then unlimited cross-platform mining.",
     ],
     sections: [
@@ -48,7 +48,7 @@ export const guideCopy = {
             p: "65+ Reddit subreddits with AI frustration scoring. Excellent Reddit coverage but misses Hacker News and Product Hunt entirely.",
           },
           {
-            h3: "Pain Radar — $9.9/mo flat",
+            h3: "Pain Radar — $29/mo flat",
             p: "Built for indie hackers: scan Reddit, Hacker News & Product Hunt with one keyword. Opportunity scoring, signal classification, platform breakdown. 5 free scans, then unlimited.",
             link: { href: "/scan", text: "Scan pain points free", suffix: " — five scans, no credit card." },
           },
@@ -62,7 +62,7 @@ export const guideCopy = {
           "Enter the keyword in Pain Radar — we scan Reddit, Hacker News & Product Hunt",
           "Review top pain quotes ranked by opportunity score",
           "Check platform breakdown — HN for technical founders, Reddit for complaints, PH for launch pain",
-          "Ship a $9.9/mo micro-SaaS solving the #1 scored opportunity this week",
+          "Ship a $29/mo micro-SaaS solving the #1 scored opportunity this week",
         ],
         afterLink: {
           href: "/scan",
@@ -91,7 +91,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Pain Radar free",
-          prefix: "GummySearch is gone and multi-platform tools cost $29+/mo. If you need Reddit + HN + Product Hunt scanning, opportunity scoring, and $9.9/mo flat pricing, ",
+          prefix: "GummySearch is gone and multi-platform tools cost $29+/mo. If you need Reddit + HN + Product Hunt scanning, opportunity scoring, and $29/mo flat pricing, ",
           suffix: ". Five scans, no credit card. Stop guessing — start scanning.",
         },
       },
@@ -106,7 +106,7 @@ export const guideCopy = {
     meta: {
       title: "2026 跨平台痛点扫描指南 — 独立开发者 HN+Reddit+PH 验证工具",
       description:
-        "GummySearch 已关停，Reddit API 不稳定。对比 PainHunt、BuildWhatTheyWant、PainSpotter，找到 $9.9/月覆盖 Hacker News、Reddit 与 Product Hunt 的扫描工具。",
+        "GummySearch 已关停，Reddit API 不稳定。对比 PainHunt、BuildWhatTheyWant、PainSpotter，找到 $29/月覆盖 Hacker News、Reddit 与 Product Hunt 的扫描工具。",
     },
     h1: "2026 跨平台痛点扫描完整指南：独立开发者的 HN + Reddit + Product Hunt 验证工具",
     updated: "更新于 2026 年 6 月 · 阅读约 14 分钟",
@@ -114,7 +114,7 @@ export const guideCopy = {
       "你想验证下一个微 SaaS 想法，但分别刷 Reddit 帖子、Hacker News 评论和 Product Hunt 讨论要花几小时 — 还容易漏掉跨平台信号。",
       "GummySearch 曾为 14 万+ 创始人解决 Reddit 单平台挖掘，2025 年 11 月关停。替代品出现：PainHunt（$29+/月，26 个平台）、BuildWhatTheyWant（仅 Reddit）、PainSpotter（$29/月）、PainOnSocial（$49/月仅 2 个子版块）。都有用 — 但自举独立开发者需要一款负担得起的工具，覆盖他们每天真正会看的三个平台。",
       "最好的验证信号不是问卷，而是 Hacker News 上陌生人说「Ask HN：GummySearch 替代品？」或 Product Hunt 创作者说「希望先在 Reddit 痛点帖里验证再上线」。这是预筛选买家跨平台描述他们愿意付费的需求。",
-      "本指南解释为什么跨平台痛点扫描优于单源调研、对比 2026 年适合自举创始人的验证工具，以及如何用 $9.9/月在 10 分钟内对 Reddit、Hacker News 与 Product Hunt 进行机会分评分。",
+      "本指南解释为什么跨平台痛点扫描优于单源调研、对比 2026 年适合自举创始人的验证工具，以及如何用 $29/月在 10 分钟内对 Reddit、Hacker News 与 Product Hunt 进行机会分评分。",
       "跨平台痛点雷达为 levelsio 路径打造：找到真实抱怨，快速 ship，第一天就收费。免费 5 次扫描，之后跨平台挖掘不限量。",
     ],
     sections: [
@@ -149,7 +149,7 @@ export const guideCopy = {
             p: "65+ Reddit 子版块 + AI 挫败感评分。Reddit 覆盖优秀但完全缺少 Hacker News 与 Product Hunt。",
           },
           {
-            h3: "跨平台痛点雷达 — $9.9/月 一口价",
+            h3: "跨平台痛点雷达 — $29/月 一口价",
             p: "为独立开发者打造：一个关键词扫描 Reddit、Hacker News 与 Product Hunt，机会分评分、信号分类、平台分布。免费 5 次，之后不限量。",
             link: { href: "/scan", text: "免费扫描痛点", suffix: " — 五次扫描，无需信用卡。" },
           },
@@ -163,7 +163,7 @@ export const guideCopy = {
           "在跨平台痛点雷达输入关键词 — 扫描 Reddit、Hacker News 与 Product Hunt",
           "查看按机会分排序的痛点引用",
           "看平台分布 — HN 偏技术创始人，Reddit 偏抱怨，PH 偏上线痛点",
-          "本周就 ship 一个 $9.9/月 微 SaaS 解决机会分排名第一的痛点",
+          "本周就 ship 一个 $29/月 微 SaaS 解决机会分排名第一的痛点",
         ],
         afterLink: {
           href: "/scan",
@@ -192,7 +192,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用跨平台痛点雷达",
-          prefix: "GummySearch 已消失，多平台工具要 $29+/月。若你需要 Reddit + HN + Product Hunt 扫描、机会分评分、$9.9/月 一口价，可",
+          prefix: "GummySearch 已消失，多平台工具要 $29+/月。若你需要 Reddit + HN + Product Hunt 扫描、机会分评分、$29/月 一口价，可",
           suffix: "。五次扫描，无需信用卡。别再猜 — 开始扫描。",
         },
       },

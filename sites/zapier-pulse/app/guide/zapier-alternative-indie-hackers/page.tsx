@@ -8,7 +8,7 @@ const cfg = getSiteConfig("en");
 export const metadata: Metadata = buildSiteMetadata({ ...cfg, keywords: [...cfg.keywords] }, {
   title: "2026 Zapier Alternative for Indie Hackers — Webhook Automation Guide",
   description:
-    "Zapier task counting burns indie budgets fast. Compare webhook automation tools for solo founders: Zapier, Make.com, n8n, Activepieces. Find a $9.9/mo flat-rate alternative.",
+    "Zapier task counting burns indie budgets fast. Compare webhook automation tools for solo founders: Zapier, Make.com, n8n, Activepieces. Find a $29/mo flat-rate alternative.",
 });
 
 export default function GuidePage() {
@@ -93,7 +93,7 @@ export default function GuidePage() {
       <ul>
         <li>Webhook trigger → HTTP POST forwarding</li>
         <li>Cron-triggered flows for scheduled digests</li>
-        <li>Flat $9.9/month — no per-task counting</li>
+        <li>Flat $29/month — no per-task counting</li>
         <li>5 free flows to validate before subscribing</li>
       </ul>
       <p>
@@ -120,7 +120,7 @@ export default function GuidePage() {
         <li><strong>Zapier Professional:</strong> 15,000 tasks → $99+/month</li>
         <li><strong>Make.com Pro:</strong> 15,000 ops → ~$16/month</li>
         <li><strong>n8n self-hosted:</strong> unlimited → ~$5/month VPS</li>
-        <li><strong>Zapier Pulse:</strong> unlimited runs → $9.9/month flat</li>
+        <li><strong>Zapier Pulse:</strong> unlimited runs → $29/month flat</li>
       </ul>
       <p>
         For webhook-heavy indie stacks, flat pricing removes the anxiety of &ldquo;will this Zap blow my task budget?&rdquo;
@@ -137,7 +137,7 @@ export default function GuidePage() {
       </p>
       <p>
         <Link href="/join" className="inline-block rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white hover:bg-brand-700 not-prose">
-          Subscribe · $9.9/mo
+          Subscribe · $29/mo
         </Link>
         {" · "}
         <Link href="/flows" className="text-brand-500 hover:underline not-prose">

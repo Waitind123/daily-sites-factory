@@ -10,7 +10,7 @@ const siteConfigByLocale = {
     name: "Nomad Visa Guide",
     title: "Nomad Visa Guide — 28+ digital nomad visa comparison database",
     description:
-      "5 free detail views. Compare income thresholds, stay duration, tax rules across 28+ countries. $9.9/mo unlimited access.",
+      "5 free detail views. Compare income thresholds, stay duration, tax rules across 28+ countries. $29/mo unlimited access.",
     keywords: [
       "digital nomad visa",
       "nomad visa comparison",
@@ -28,7 +28,7 @@ const siteConfigByLocale = {
     name: "数字游民签证指南",
     title: "数字游民签证指南 — 28 国远程签证对比数据库",
     description:
-      "免费体验 5 次签证详情查询。收入门槛、停留时长、税务政策、申根通行一站式对比。告别 Reddit 碎片化信息，$9.9/月无限查阅。",
+      "免费体验 5 次签证详情查询。收入门槛、停留时长、税务政策、申根通行一站式对比。告别 Reddit 碎片化信息，$29/月无限查阅。",
     keywords: [
       "数字游民签证",
       "digital nomad visa",

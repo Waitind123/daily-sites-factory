@@ -269,7 +269,7 @@ export const testimonials = [
   {
     name: "小林",
     role: "上海 Indie 组织者",
-    text: "Meetup.com 一年 $170，这个 $9.9/月搞定 RSVP + 候补。省了每周 2 小时手动管表格。",
+    text: "Meetup.com 一年 $170，这个 $29/月搞定 RSVP + 候补。省了每周 2 小时手动管表格。",
   },
   {
     name: "大伟",

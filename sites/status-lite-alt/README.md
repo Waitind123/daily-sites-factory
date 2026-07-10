@@ -1,6 +1,6 @@
 # Status Pulse
 
-状态页发布 — Statuspage.io 平替，独立开发者 $9.9/月。
+状态页发布 — Statuspage.io 平替，独立开发者 $29/月。
 
 - 免费体验 5 个状态页
 - 事件管理 + 邮件订阅通知

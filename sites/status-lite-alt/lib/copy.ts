@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Statuspage $299/mo? StatusEmbed $15/mo? · $9.9/mo flat",
+    badge: "Statuspage $299/mo? StatusEmbed $15/mo? · $29/mo flat",
     title: "Minimal status pages for indie hackers",
     subtitle:
-      "Publish status.yourapp.com in 5 minutes. Post incidents, notify subscribers, embed a widget. 5 free pages, then $9.9/mo.",
+      "Publish status.yourapp.com in 5 minutes. Post incidents, notify subscribers, embed a widget. 5 free pages, then $29/mo.",
     ctaPrimary: "Create a status page free",
     ctaPrimaryHref: "/pages",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free status pages · then $9.9/mo",
+    note: "5 free status pages · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Statuspage $299+" },
+      { stat: "$29", label: "flat/mo vs Statuspage $299+" },
       { stat: "5 min", label: "to launch a public status page" },
       { stat: "∞", label: "subscribers, no per-user fees" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited pages and subscribers. No per-component or per-user fees like Statuspage.io.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Mia T.",
         role: "Indie hacker",
-        text: "Statuspage.io wanted $29/mo for a green dot. I had a public page live in 4 minutes for $9.9.",
+        text: "Statuspage.io wanted $29/mo for a green dot. I had a public page live in 4 minutes for $29.",
       },
       {
         name: "Sam R.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop being your own status page",
-      subtitle: "5 free status pages · then $9.9/mo for unlimited",
+      subtitle: "5 free status pages · then $29/mo for unlimited",
       ctaPrimary: "Create a status page free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Statuspage $299/月？StatusEmbed $15/月？· $9.9/月一口价",
+    badge: "Statuspage $299/月？StatusEmbed $15/月？· $29/月一口价",
     title: "独立开发者的极简状态页",
     subtitle:
-      "5 分钟上线 status.yourapp.com。发布事件、通知订阅者、嵌入组件。免费体验 5 个状态页，之后 $9.9/月。",
+      "5 分钟上线 status.yourapp.com。发布事件、通知订阅者、嵌入组件。免费体验 5 个状态页，之后 $29/月。",
     ctaPrimary: "免费创建状态页",
     ctaPrimaryHref: "/pages",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Statuspage 要 $299+" },
+      { stat: "$29", label: "一口价/月，Statuspage 要 $299+" },
       { stat: "5 分钟", label: "上线公开状态页" },
       { stat: "∞", label: "订阅者不限量，不按用户收费" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "状态页与订阅者不限量，不像 Statuspage.io 按组件或用户收费。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Mia T.",
         role: "独立开发者",
-        text: "Statuspage.io 一个绿点要 $29/月。我用 $9.9 四分钟就上线了公开状态页。",
+        text: "Statuspage.io 一个绿点要 $29/月。我用 $29 四分钟就上线了公开状态页。",
       },
       {
         name: "Sam R.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再亲自当状态页了",
-      subtitle: "免费 5 个状态页 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个状态页 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建状态页",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "90-day incident history",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free pages, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "90 天事件历史",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个页面，之后订阅？",

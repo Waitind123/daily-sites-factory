@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "ChartMogul shows churn % · not why · $9.9/mo",
+    badge: "ChartMogul shows churn % · not why · $29/mo",
     title: "Know why customers cancel — churn reason tracking for indie SaaS",
     subtitle:
-      "ChartMogul tells you 4.2% churned. It doesn't tell you why. Log cancellation reasons, categorize by price/feature/competitor, and spot patterns before they compound. 5 free logs, then $9.9/mo.",
+      "ChartMogul tells you 4.2% churned. It doesn't tell you why. Log cancellation reasons, categorize by price/feature/competitor, and spot patterns before they compound. 5 free logs, then $29/mo.",
     ctaPrimary: "Log cancellations free",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free cancellation logs · then $9.9/mo",
+    note: "5 free cancellation logs · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Baremetrics $50+" },
+      { stat: "$29", label: "flat/mo vs Baremetrics $50+" },
       { stat: "7", label: "churn reason categories built-in" },
       { stat: "2 min", label: "to log your first cancellation" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited cancellation logs. No per-customer fees like enterprise CS tools.",
       },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "Indie hacker",
-        text: "ChartMogul shows the number. This shows the story. Worth $9.9 just to stop guessing.",
+        text: "ChartMogul shows the number. This shows the story. Worth $29 just to stop guessing.",
       },
       {
         name: "David K.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop guessing why customers leave",
-      subtitle: "5 free cancellation logs · then $9.9/mo for unlimited churn reason tracking",
+      subtitle: "5 free cancellation logs · then $29/mo for unlimited churn reason tracking",
       ctaPrimary: "Log cancellations free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "ChartMogul 只显示流失率 · 不记原因 · $9.9/月",
+    badge: "ChartMogul 只显示流失率 · 不记原因 · $29/月",
     title: "知道客户为什么取消 — 独立开发者流失原因追踪",
     subtitle:
-      "ChartMogul 告诉你流失了 4.2%，但不告诉你为什么。记录取消原因、按价格/功能/竞品分类，在问题恶化前发现规律。免费体验 5 次记录，之后 $9.9/月。",
+      "ChartMogul 告诉你流失了 4.2%，但不告诉你为什么。记录取消原因、按价格/功能/竞品分类，在问题恶化前发现规律。免费体验 5 次记录，之后 $29/月。",
     ctaPrimary: "免费记录取消",
     ctaPrimaryHref: "/dashboard",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Baremetrics 要 $50+" },
+      { stat: "$29", label: "一口价/月，Baremetrics 要 $50+" },
       { stat: "7", label: "内置流失原因分类" },
       { stat: "2 分钟", label: "记录首条取消" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "取消记录不限量。不像企业客服工具按客户数收费。",
       },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "独立开发者",
-        text: "ChartMogul 给数字，这个给故事。光是不猜就值 $9.9。",
+        text: "ChartMogul 给数字，这个给故事。光是不猜就值 $29。",
       },
       {
         name: "David K.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再猜客户为什么离开",
-      subtitle: "免费体验 5 次记录 · 之后 $9.9/月不限量追踪",
+      subtitle: "免费体验 5 次记录 · 之后 $29/月不限量追踪",
       ctaPrimary: "免费记录取消",
       ctaSecondary: "查看定价",
     },

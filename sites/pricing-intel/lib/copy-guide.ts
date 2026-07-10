@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "Competitive pricing intelligence for indie founders — Kompyte alternative guide",
       description:
-        "How to get SaaS pricing intel without $10K/yr enterprise tools: monitoring, strategy playbooks, tool comparison. Pricing Intel at $9.9/mo.",
+        "How to get SaaS pricing intel without $10K/yr enterprise tools: monitoring, strategy playbooks, tool comparison. Pricing Intel at $29/mo.",
     },
     h1: "Competitive pricing intelligence for solo founders (without $10K/yr tools)",
     updated: "Updated June 2026 · 12 min read",
@@ -32,7 +32,7 @@ export const guideCopy = {
           "Manual ($0): good for 1-2 competitors, breaks at 5+",
           "Spreadsheet tracking: weekly calendar reminder, still easy to miss",
           "Google Alerts: useless for pricing page changes",
-          "Automated ($9.9/mo): daily checks, email alerts, 90-day history",
+          "Automated ($29/mo): daily checks, email alerts, 90-day history",
         ],
         after: [
           "At 3+ competitors, automation pays for itself in one saved deal.",
@@ -54,7 +54,7 @@ export const guideCopy = {
         list: [
           "Kompyte — $10K+/yr, enterprise CI teams only",
           "Klue — enterprise-only, requires sales call",
-          "Pricing Intel — $9.9/mo, pre-loaded indie stack + strategy playbooks",
+          "Pricing Intel — $29/mo, pre-loaded indie stack + strategy playbooks",
           "Manual screenshots — $0 but costs 2h/week of founder time",
         ],
         after: [
@@ -75,8 +75,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready for pricing intel without enterprise contracts?",
-      body: "5 free intel reports. Daily scans, 90-day history, strategy playbooks for $9.9/mo.",
-      primary: "Subscribe · $9.9/mo",
+      body: "5 free intel reports. Daily scans, 90-day history, strategy playbooks for $29/mo.",
+      primary: "Subscribe · $29/mo",
       secondary: "Try intel free",
     },
   },
@@ -84,7 +84,7 @@ export const guideCopy = {
     meta: {
       title: "solo founder 竞品定价情报指南 — Kompyte 平替方案",
       description:
-        "不用 $10K/年企业工具如何获取 SaaS 定价情报：监控、策略手册、工具对比。Pricing Intel $9.9/月。",
+        "不用 $10K/年企业工具如何获取 SaaS 定价情报：监控、策略手册、工具对比。Pricing Intel $29/月。",
     },
     h1: "solo founder 的竞品定价情报（不用 $10K/年企业工具）",
     updated: "更新于 2026 年 6 月 · 阅读约 12 分钟",
@@ -109,7 +109,7 @@ export const guideCopy = {
           "手动方案（$0）：适合 1-2 个竞品，5 个以上就崩了",
           "表格追踪：每周日历提醒，仍然容易遗漏",
           "Google Alerts：对定价页变动基本无用",
-          "自动化（$9.9/月）：每日检查、邮件提醒、90 天历史",
+          "自动化（$29/月）：每日检查、邮件提醒、90 天历史",
         ],
         after: ["追踪 3 个以上竞品时，自动化工具一单回本。"],
         link: { href: "/join", text: "免费体验竞品定价情报", suffix: " — 含 5 次情报报告。" },
@@ -129,7 +129,7 @@ export const guideCopy = {
         list: [
           "Kompyte — 年费 $10K+，仅企业 CI 团队",
           "Klue — 仅企业版，需销售电话",
-          "竞品定价情报 — $9.9/月，预装 indie 常用栈 + 策略手册",
+          "竞品定价情报 — $29/月，预装 indie 常用栈 + 策略手册",
           "手动截图 — $0 但每周花 2 小时创始人时间",
         ],
         after: ["对周末 ship 的 indie 创始人，预装数据比配置爬虫更实际。"],
@@ -148,8 +148,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好获取定价情报、告别企业合同了吗？",
-      body: "免费体验 5 次情报报告。每日扫描、90 天历史、策略手册，$9.9/月。",
-      primary: "立即订阅 $9.9/月",
+      body: "免费体验 5 次情报报告。每日扫描、90 天历史、策略手册，$29/月。",
+      primary: "立即订阅 $29/月",
       secondary: "免费体验",
     },
   },

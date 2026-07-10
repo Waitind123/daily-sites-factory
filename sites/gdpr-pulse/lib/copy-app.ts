@@ -36,7 +36,7 @@ export const generateCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `${remaining}/${limit} free scans left`,
     subscribeNow: "Subscribe now",
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited scans",
   },
   zh: {
@@ -74,7 +74,7 @@ export const generateCopy = {
     freeRemaining: (remaining: number, limit: number) =>
       `剩余 ${remaining}/${limit} 次免费体验`,
     subscribeNow: "立即订阅",
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限扫描",
   },
 } as const;

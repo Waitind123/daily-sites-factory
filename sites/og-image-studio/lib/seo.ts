@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://og-image-studio-cyan.vercel.app",
     name: "OG Image Studio",
-    title: "OG Image Generator — Bannerbear alternative, $9.9/mo",
+    title: "OG Image Generator — Bannerbear alternative, $29/mo",
     description:
       "5 free tries. Generate 1200×630 social share images, meta tags, and Next.js snippets. Built for indie hackers after Bannerbear's $49/mo hike.",
     keywords: [
@@ -28,9 +28,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://og-image-studio-cyan.vercel.app",
     name: "OG 图生成器",
-    title: "OG Image 生成器 — Bannerbear 平替，$9.9/月",
+    title: "OG Image 生成器 — Bannerbear 平替，$29/月",
     description:
-      "免费体验 5 次生成 OG 社交分享图。Bannerbear $49/月太贵？$9.9/月一键生成 1200×630 Open Graph 图片，导出 meta 标签和 Next.js 代码片段。",
+      "免费体验 5 次生成 OG 社交分享图。Bannerbear $49/月太贵？$29/月一键生成 1200×630 Open Graph 图片，导出 meta 标签和 Next.js 代码片段。",
     keywords: [
       "OG image generator",
       "Open Graph 图片",

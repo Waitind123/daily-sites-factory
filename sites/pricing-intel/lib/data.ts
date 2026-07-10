@@ -380,7 +380,7 @@ export const saasProducts: SaasProduct[] = [
       competitiveNotes: [
         "Crisp $25/月固定价 — indie 热门替代",
         "Help Scout $20/用户 — 定价更简单",
-        "desk-pulse $9.9/月 — 为 solo 创始人打造",
+        "desk-pulse $29/月 — 为 solo 创始人打造",
       ],
       alertRecommendations: [
         "若在用 Intercom，预算需按年涨 90% 或立即迁移",
@@ -430,7 +430,7 @@ export const saasProducts: SaasProduct[] = [
       competitiveNotes: [
         "Freshdesk $15/客服 — 预算替代",
         "Intercom Essential 现 $74/席位 — 都很贵",
-        "desk-pulse $9.9/月固定价适合 indie 团队",
+        "desk-pulse $29/月固定价适合 indie 团队",
       ],
       alertRecommendations: [
         "5 人客服团队现 $345/月，去年 $275",
@@ -638,7 +638,7 @@ export const saasProductsEn: SaasProduct[] = [
         { date: "2026-05-15", type: "price_increase", summary: "Essential $59/seat → $74/seat (+25%)", impact: "high", before: "$59/seat", after: "$74/seat" },
         { date: "2026-06-01", type: "removed_tier", summary: "Free tier removed for new signups", impact: "high", before: "Free plan", after: "Paid only" },
       ],
-      competitiveNotes: ["Crisp $25/mo flat — popular indie alternative", "Help Scout $20/user — simpler pricing", "desk-pulse $9.9/mo — built for solo founders"],
+      competitiveNotes: ["Crisp $25/mo flat — popular indie alternative", "Help Scout $20/user — simpler pricing", "desk-pulse $29/mo — built for solo founders"],
       alertRecommendations: ["If you use Intercom, budget +90% YoY or migrate now", "Competitors: pitch「we didn't 2x in 90 days」", "Watch Advanced tier — next hike likely Q3"],
       marketPosition: "Premium incumbent — indie exodus accelerating",
     },
@@ -666,7 +666,7 @@ export const saasProductsEn: SaasProduct[] = [
         { date: "2026-03-20", type: "price_increase", summary: "Suite Team $55/agent → $69/agent (+25%)", impact: "high", before: "$55/agent", after: "$69/agent" },
         { date: "2026-05-01", type: "feature_change", summary: "Annual discount capped at 10% (was 20%)", impact: "medium", before: "20% annual off", after: "10% annual off" },
       ],
-      competitiveNotes: ["Freshdesk $15/agent — budget alternative", "Intercom Essential now $74/seat — both expensive", "desk-pulse $9.9/mo flat for indie teams"],
+      competitiveNotes: ["Freshdesk $15/agent — budget alternative", "Intercom Essential now $74/seat — both expensive", "desk-pulse $29/mo flat for indie teams"],
       alertRecommendations: ["5-agent team now pays $345/mo vs $275 last year", "Evaluate per-seat vs flat-rate alternatives", "Renewal season: negotiate or switch before auto-renew"],
       marketPosition: "Enterprise default — SMBs increasingly priced out",
     },

@@ -91,11 +91,11 @@ export const guideCopy = {
       },
       {
         type: "h2" as const,
-        text: "Pricing: $9.9/mo vs enterprise compliance tools",
+        text: "Pricing: $29/mo vs enterprise compliance tools",
       },
       {
         type: "p" as const,
-        text: "Syncelle charges $290/year for document bundles. Vanta starts at $10K/year. OpenGDPR is free but code-only. GDPR Pulse at $9.9/month gives unlimited scans, policy drafts, and checklist exports — built for founders who ship fast and sell to EU customers without a compliance team.",
+        text: "Syncelle charges $290/year for document bundles. Vanta starts at $10K/year. OpenGDPR is free but code-only. GDPR Pulse at $29/month gives unlimited scans, policy drafts, and checklist exports — built for founders who ship fast and sell to EU customers without a compliance team.",
         links: [{ href: "/join", label: "View pricing" }],
       },
     ],
@@ -190,11 +190,11 @@ export const guideCopy = {
       },
       {
         type: "h2" as const,
-        text: "定价：$9.9/月 vs 企业合规工具",
+        text: "定价：$29/月 vs 企业合规工具",
       },
       {
         type: "p" as const,
-        text: "Syncelle 文档包 $290/年。Vanta 年费 $10K 起。OpenGDPR 免费但仅扫代码。GDPR Pulse $9.9/月提供无限扫描、政策草稿与清单导出 — 为快速 ship、向欧盟客户销售且无合规团队的创始人打造。",
+        text: "Syncelle 文档包 $290/年。Vanta 年费 $10K 起。OpenGDPR 免费但仅扫代码。GDPR Pulse $29/月提供无限扫描、政策草稿与清单导出 — 为快速 ship、向欧盟客户销售且无合规团队的创始人打造。",
         links: [{ href: "/join", label: "查看定价" }],
       },
     ],

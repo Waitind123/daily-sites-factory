@@ -89,7 +89,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready to browse curated remote roles?",
-      subtitle: "5 free views · then $9.9/mo for unlimited",
+      subtitle: "5 free views · then $29/mo for unlimited",
       button: "Browse jobs →",
     },
   },
@@ -181,7 +181,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好浏览精选远程职位了吗？",
-      subtitle: "免费 5 次查看 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 次查看 · 之后 $29/月 不限量",
       button: "浏览职位 →",
     },
   },

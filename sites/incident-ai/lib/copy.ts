@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Statuspage $29/mo? · $9.9/mo flat",
+    badge: "Statuspage $29/mo? · $29/mo flat",
     title: "Paste alert → status update, email, Slack — in 60 seconds",
     subtitle:
-      "Paste your monitoring alert or describe the outage. AI drafts customer-facing status updates, emails, Slack notes, and postmortems. 5 free drafts, then $9.9/mo.",
+      "Paste your monitoring alert or describe the outage. AI drafts customer-facing status updates, emails, Slack notes, and postmortems. 5 free drafts, then $29/mo.",
     ctaPrimary: "Draft free",
     ctaPrimaryHref: "/draft",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free drafts · then $9.9/mo",
+    note: "5 free drafts · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Statuspage $29+" },
+      { stat: "$29", label: "flat/mo vs Statuspage $29+" },
       { stat: "4", label: "channels from one alert" },
       { stat: "60s", label: "alert to published update" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited incident drafts. No Statuspage.io $29/mo or PageCalm upsells.",
       },
     ],
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop scrambling to write incident updates",
-      subtitle: "5 free drafts · then $9.9/mo for unlimited",
+      subtitle: "5 free drafts · then $29/mo for unlimited",
       ctaPrimary: "Draft free",
       ctaSecondary: "See pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Statuspage 要 $29/月？· $9.9/月一口价",
+    badge: "Statuspage 要 $29/月？· $29/月一口价",
     title: "粘贴告警 → 状态页、邮件、Slack — 60 秒搞定",
     subtitle:
-      "粘贴监控告警或描述故障。AI 自动生成面向客户的状态页更新、邮件、Slack 内部通知和复盘报告。免费体验 5 次，之后 $9.9/月。",
+      "粘贴监控告警或描述故障。AI 自动生成面向客户的状态页更新、邮件、Slack 内部通知和复盘报告。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "免费生成",
     ctaPrimaryHref: "/draft",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Statuspage 要 $29+" },
+      { stat: "$29", label: "一口价/月，Statuspage 要 $29+" },
       { stat: "4", label: "个渠道一次生成" },
       { stat: "60 秒", label: "从告警到可发布更新" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月一口价",
+        title: "$29/月一口价",
         desc: "无限次事件草稿。无需 Statuspage.io $29/月或 PageCalm 加价。",
       },
     ],
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再手忙脚乱写事件更新了",
-      subtitle: "免费体验 5 次 · 之后 $9.9/月不限量",
+      subtitle: "免费体验 5 次 · 之后 $29/月不限量",
       ctaPrimary: "免费生成",
       ctaSecondary: "查看定价",
     },

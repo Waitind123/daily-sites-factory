@@ -409,7 +409,7 @@ export const testimonials = [
   {
     name: "老王",
     role: "Indie Hacker",
-    text: "$9.9 比移民中介咨询费便宜一万倍。泰国 DTV 和格鲁吉亚的对比表太实用了。",
+    text: "$29 比移民中介咨询费便宜一万倍。泰国 DTV 和格鲁吉亚的对比表太实用了。",
   },
 ];
 

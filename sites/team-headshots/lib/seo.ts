@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://team-headshots-phi.vercel.app",
     name: "Team Headshots",
-    title: "Team Headshots — Consistent LinkedIn portraits for your whole team, $9.9/mo",
+    title: "Team Headshots — Consistent LinkedIn portraits for your whole team, $29/mo",
     description:
-      "5 free tries. Batch-generate unified corporate headshots for up to 10 team members. PhotoAI team alternative at $9.9/mo flat.",
+      "5 free tries. Batch-generate unified corporate headshots for up to 10 team members. PhotoAI team alternative at $29/mo flat.",
     keywords: [
       "team headshots",
       "LinkedIn team photos",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://team-headshots-phi.vercel.app",
     name: "团队 AI 头像",
-    title: "团队 AI 头像 — 全团队统一领英证件照，$9.9/月",
+    title: "团队 AI 头像 — 全团队统一领英证件照，$29/月",
     description:
-      "免费体验 5 次。为最多 10 名成员批量生成统一商务证件照。PhotoAI 团队版平替，$9.9/月一口价。",
+      "免费体验 5 次。为最多 10 名成员批量生成统一商务证件照。PhotoAI 团队版平替，$29/月一口价。",
     keywords: [
       "团队证件照",
       "领英团队头像",

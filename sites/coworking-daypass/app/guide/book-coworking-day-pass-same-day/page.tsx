@@ -134,7 +134,7 @@ export default function GuidePage() {
         Deskpass 和 Letswork 等欧美平台覆盖有限，亚洲和拉美城市选择很少。Coworker.com 是目录而非预订工具，没有实时库存。酒店会议室动辄 $50–100/天，且环境正式不适合日常办公。
       </p>
       <p>
-        日票通专注解决一个具体问题：<strong>出差当天订到 WiFi 稳定的联合办公日票</strong>。$9.9/月无限预订，免费体验 5 次。不追求大而全，只把日票预订这一件事做好。
+        日票通专注解决一个具体问题：<strong>出差当天订到 WiFi 稳定的联合办公日票</strong>。$29/月无限预订，免费体验 5 次。不追求大而全，只把日票预订这一件事做好。
       </p>
 
       <h2>六、立即开始</h2>
@@ -155,7 +155,7 @@ export default function GuidePage() {
             href="/join"
             className="inline-block border border-brand-600 text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-100 transition-colors"
           >
-            订阅 $9.9/月
+            订阅 $29/月
           </Link>
         </div>
       </div>

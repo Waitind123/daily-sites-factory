@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://status-pulse-chi.vercel.app",
     name: "Status Pulse",
-    title: "Status Pulse — Statuspage.io alternative for indie devs, $9.9/mo flat",
+    title: "Status Pulse — Statuspage.io alternative for indie devs, $29/mo flat",
     description:
-      "5 free status pages. Statuspage.io costs $29+/mo? $9.9/mo flat: incident management, email subscribers, embeddable widget.",
+      "5 free status pages. Statuspage.io costs $29+/mo? $29/mo flat: incident management, email subscribers, embeddable widget.",
     keywords: [
       "status page",
       "Statuspage.io alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://status-pulse-chi.vercel.app",
     name: "状态页发布",
-    title: "状态页发布 — Statuspage.io 平替，独立开发者 $9.9/月",
+    title: "状态页发布 — Statuspage.io 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个状态页。Statuspage.io $29+/月太贵？$9.9/月一口价：事件管理、邮件订阅、可嵌入组件。",
+      "免费体验 5 个状态页。Statuspage.io $29+/月太贵？$29/月一口价：事件管理、邮件订阅、可嵌入组件。",
     keywords: [
       "状态页",
       "Statuspage.io 替代品",

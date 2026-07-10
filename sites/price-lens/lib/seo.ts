@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://price-lens-theta.vercel.app",
     name: "PriceLens",
-    title: "PriceLens — Pricing page conversion audit for indie hackers, $9.9/mo",
+    title: "PriceLens — Pricing page conversion audit for indie hackers, $29/mo",
     description:
-      "5 free pricing page audits. Hotjar $39/mo? $9.9/mo flat: heatmap zones, drop-off analysis, A/B test suggestions for your /pricing page.",
+      "5 free pricing page audits. Hotjar $39/mo? $29/mo flat: heatmap zones, drop-off analysis, A/B test suggestions for your /pricing page.",
     keywords: [
       "pricing page optimization",
       "conversion rate optimization",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://price-lens-theta.vercel.app",
     name: "定价页转化诊断",
-    title: "PriceLens — 定价页转化诊断，独立开发者 $9.9/月",
+    title: "PriceLens — 定价页转化诊断，独立开发者 $29/月",
     description:
-      "免费体验 5 次定价页诊断。Hotjar $39/月太贵？$9.9/月一口价：热力图分区、流失分析、A/B 测试建议。",
+      "免费体验 5 次定价页诊断。Hotjar $39/月太贵？$29/月一口价：热力图分区、流失分析、A/B 测试建议。",
     keywords: [
       "定价页优化",
       "转化率优化",

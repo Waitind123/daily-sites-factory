@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://library-cowork.vercel.app",
     name: "Library Cowork",
-    title: "Virtual Library Cowork — Quiet focus for remote workers, $9.9/mo",
+    title: "Virtual Library Cowork — Quiet focus for remote workers, $29/mo",
     description:
-      "5 free library sessions. Study Hall $20/mo? $9.9/mo flat: silent library vibe, pomodoro, page-turn ambient — beat remote-work loneliness.",
+      "5 free library sessions. Study Hall $20/mo? $29/mo flat: silent library vibe, pomodoro, page-turn ambient — beat remote-work loneliness.",
     keywords: [
       "virtual library coworking",
       "Study Hall alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://library-cowork.vercel.app",
     name: "虚拟图书馆共工",
-    title: "虚拟图书馆共工 — 安静阅览室专注，告别远程孤独，$9.9/月",
+    title: "虚拟图书馆共工 — 安静阅览室专注，告别远程孤独，$29/月",
     description:
-      "免费体验 5 次阅览室会话。Study Hall $20/月太贵？$9.9/月一口价：图书馆氛围、翻书白噪音、番茄钟，远程工作者不再独自发呆。",
+      "免费体验 5 次阅览室会话。Study Hall $20/月太贵？$29/月一口价：图书馆氛围、翻书白噪音、番茄钟，远程工作者不再独自发呆。",
     keywords: [
       "虚拟图书馆共工",
       "Study Hall 替代品",

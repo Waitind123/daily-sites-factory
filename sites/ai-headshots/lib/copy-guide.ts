@@ -39,12 +39,12 @@ export const guideCopy = {
             p: "High-quality AI output, many styles. Popular with creators. Priced for power users who generate hundreds of images monthly.",
           },
           {
-            h3: "AI Headshots — $9.9/month flat",
+            h3: "AI Headshots — $29/month flat",
             p: "Built for indie hackers and job seekers who need a few great LinkedIn shots, not a photo factory.",
             link: {
               href: "/#studio",
               text: "5 free tries in the studio",
-              suffix: ", then $9.9/mo unlimited. Corporate, casual, creative, academic styles.",
+              suffix: ", then $29/mo unlimited. Corporate, casual, creative, academic styles.",
             },
           },
         ],
@@ -134,12 +134,12 @@ export const guideCopy = {
             p: "输出质量高、风格多，深受创作者喜爱。定价面向每月生成数百张图的重度用户。",
           },
           {
-            h3: "AI 证件照 — $9.9/月一口价",
+            h3: "AI 证件照 — $29/月一口价",
             p: "面向独立开发者和求职者——你需要几张出色的领英头像，而不是图片工厂。",
             link: {
               href: "/#studio",
               text: "工作室免费体验 5 次",
-              suffix: "，之后 $9.9/月不限量。商务、休闲、创意、学术四种风格。",
+              suffix: "，之后 $29/月不限量。商务、休闲、创意、学术四种风格。",
             },
           },
         ],

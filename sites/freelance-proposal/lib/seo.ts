@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://freelance-proposal-one.vercel.app",
     name: "Freelance Proposal",
-    title: "Freelance Proposal — HoneyBook alternative, $9.9/mo",
+    title: "Freelance Proposal — HoneyBook alternative, $29/mo",
     description:
       "5 free tries. Generate quote + contract + invoice in 30 seconds. Built for solo freelancers after HoneyBook's 89% price hike.",
     keywords: [
@@ -25,7 +25,7 @@ const siteConfigByLocale = {
   zh: {
     url: "https://freelance-proposal-one.vercel.app",
     name: "自由职业报价单",
-    title: "自由职业报价单 — HoneyBook 平替，$9.9/月",
+    title: "自由职业报价单 — HoneyBook 平替，$29/月",
     description:
       "免费体验 5 次。30 秒生成报价 + 合同 + 发票。HoneyBook 涨价后的极简替代，专为 solo freelancer 打造。",
     keywords: [

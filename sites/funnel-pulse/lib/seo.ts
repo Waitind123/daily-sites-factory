@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://funnel-pulse-lyart.vercel.app",
     name: "Funnel Pulse",
-    title: "Funnel Pulse — Mixpanel alternative for indie hackers, $9.9/mo flat",
+    title: "Funnel Pulse — Mixpanel alternative for indie hackers, $29/mo flat",
     description:
-      "5 free funnel analyses. Mixpanel costs $500/mo? $9.9/mo flat: drop-off tracking, step conversion rates, one-line SDK.",
+      "5 free funnel analyses. Mixpanel costs $500/mo? $29/mo flat: drop-off tracking, step conversion rates, one-line SDK.",
     keywords: [
       "funnel analytics",
       "Mixpanel alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://funnel-pulse-lyart.vercel.app",
     name: "漏斗分析",
-    title: "Funnel Pulse — Mixpanel 平替，独立开发者 $9.9/月",
+    title: "Funnel Pulse — Mixpanel 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个漏斗分析。Mixpanel $500/月太贵？$9.9/月一口价：流失定位、步骤转化率、一行 SDK 接入。",
+      "免费体验 5 个漏斗分析。Mixpanel $500/月太贵？$29/月一口价：流失定位、步骤转化率、一行 SDK 接入。",
     keywords: [
       "漏斗分析",
       "Mixpanel 替代品",

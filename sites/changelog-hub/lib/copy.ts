@@ -5,14 +5,14 @@ export const homeCopy = {
     badge: "Beamer $49/mo · ship changelog in 10min",
     title: "Changelog for indie hackers",
     subtitle:
-      "Generate public changelog pages, embed widgets, status snippets, and RSS. $9.9/mo vs Beamer $49/mo — no MAU billing.",
+      "Generate public changelog pages, embed widgets, status snippets, and RSS. $29/mo vs Beamer $49/mo — no MAU billing.",
     ctaPrimary: "Try free",
     ctaPrimaryHref: "/publish",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free tries · then $9.9/mo",
+    note: "5 free tries · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Beamer $49" },
+      { stat: "$29", label: "flat/mo vs Beamer $49" },
       { stat: "10min", label: "zero to published changelog" },
       { stat: "4-in-1", label: "page + widget + status + RSS" },
     ],
@@ -40,7 +40,7 @@ export const homeCopy = {
       { icon: "🔌", title: "Embed widget", desc: "Lightweight widget for in-app update notifications" },
       { icon: "🟢", title: "Status snippet", desc: "Uptime status page HTML — publish incidents in one click" },
       { icon: "📡", title: "RSS feed", desc: "Auto-generated RSS for email digests and subscribers" },
-      { icon: "💰", title: "$9.9 vs $49", desc: "Beamer $49/mo — we're $9.9/mo all-in, no MAU billing" },
+      { icon: "💰", title: "$29 vs $49", desc: "Beamer $49/mo — we're $29/mo all-in, no MAU billing" },
       { icon: "⚡", title: "10 min to launch", desc: "No database setup — copy HTML and deploy anywhere" },
     ],
     testimonialsTitle: "What indie hackers say",
@@ -48,7 +48,7 @@ export const homeCopy = {
       {
         name: "Tom Wright",
         role: "Indie Hacker",
-        text: "Finally a changelog tool that doesn't charge per MAU. $9.9 flat is perfect for bootstrapped products.",
+        text: "Finally a changelog tool that doesn't charge per MAU. $29 flat is perfect for bootstrapped products.",
       },
       {
         name: "Ming Z.",
@@ -64,7 +64,7 @@ export const homeCopy = {
     closing: {
       title: "At $1k MRR you shouldn't pay $49/mo for changelog",
       subtitle:
-        "Users need to see you ship. $9.9/mo day-one pricing because good tools are worth paying for.",
+        "Users need to see you ship. $29/mo day-one pricing because good tools are worth paying for.",
       ctaPrimary: "Publish changelog",
       ctaSecondary: "See pricing",
     },
@@ -79,14 +79,14 @@ export const homeCopy = {
     badge: "Beamer $49/月 · 10 分钟发布 Changelog",
     title: "独立开发者 Changelog 发布台",
     subtitle:
-      "一键生成公开更新页、嵌入 Widget、状态页片段和 RSS。$9.9/月，Beamer $49/月的 1/5 价格，无 MAU 计费。",
+      "一键生成公开更新页、嵌入 Widget、状态页片段和 RSS。$29/月，Beamer $49/月的 1/5 价格，无 MAU 计费。",
     ctaPrimary: "免费体验",
     ctaPrimaryHref: "/publish",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Beamer $49" },
+      { stat: "$29", label: "一口价/月，Beamer $49" },
       { stat: "10 分钟", label: "从零到可发布 Changelog" },
       { stat: "四合一", label: "公开页 + Widget + 状态页 + RSS" },
     ],
@@ -114,7 +114,7 @@ export const homeCopy = {
       { icon: "🔌", title: "嵌入 Widget", desc: "轻量 JS widget，放在产品内让用户随时看更新" },
       { icon: "🟢", title: "状态页片段", desc: "附带 uptime 状态页 HTML，incident 时一键发布" },
       { icon: "📡", title: "RSS Feed", desc: "自动生成 RSS，方便邮件通知和订阅同步" },
-      { icon: "💰", title: "$9.9 vs $49", desc: "Beamer $49/月，我们 $9.9/月全包 changelog + 状态页" },
+      { icon: "💰", title: "$29 vs $49", desc: "Beamer $49/月，我们 $29/月全包 changelog + 状态页" },
       { icon: "⚡", title: "10 分钟上线", desc: "无需配置数据库，复制 HTML 即可部署到任意托管" },
     ],
     testimonialsTitle: "独立开发者怎么说",
@@ -127,7 +127,7 @@ export const homeCopy = {
       {
         name: "Tom Wright",
         role: "Indie Hacker",
-        text: "终于有个 changelog 工具不按 MAU 收费，$9.9 一口价对 bootstrap 产品太合适了。",
+        text: "终于有个 changelog 工具不按 MAU 收费，$29 一口价对 bootstrap 产品太合适了。",
       },
       {
         name: "赵婷",
@@ -138,7 +138,7 @@ export const homeCopy = {
     closing: {
       title: "MRR $1000 时不该为 Changelog 付 $49/月",
       subtitle:
-        "用户需要知道你在 ship。$9.9/月，第一天收费，因为好工具值得付费。",
+        "用户需要知道你在 ship。$29/月，第一天收费，因为好工具值得付费。",
       ctaPrimary: "发布 Changelog",
       ctaSecondary: "查看定价",
     },
@@ -167,14 +167,14 @@ export const joinCopy = {
       "Custom accent color",
       "Version tags (feature/fix/improvement)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
     whyItems: [
       "Changelog templates need ongoing maintenance and SEO optimization",
       "Paying users = indie hackers shipping real products",
-      "Solo-maintained — $9.9 keeps it sustainable",
+      "Solo-maintained — $29 keeps it sustainable",
     ],
     includedTitle: "Included",
   },
@@ -193,7 +193,7 @@ export const joinCopy = {
       "自定义主题色",
       "版本标签（feature/fix/优化）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费体验 5 次，之后订阅？",

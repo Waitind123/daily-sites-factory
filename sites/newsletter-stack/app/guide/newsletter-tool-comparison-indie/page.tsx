@@ -192,7 +192,7 @@ export default function GuidePage() {
             href="/join"
             className="inline-block border border-brand-300 text-brand-500 px-6 py-3 rounded-xl font-semibold hover:bg-brand-600/10"
           >
-            订阅 $9.9/月 无限对比
+            订阅 $29/月 无限对比
           </Link>
         </div>
       </div>

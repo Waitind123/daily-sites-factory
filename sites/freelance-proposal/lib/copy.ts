@@ -8,11 +8,11 @@ export const homeCopy = {
       "Quote + contract clauses + invoice in one flow. Built for solo freelancers who only need proposals — not a $36/mo CRM.",
     ctaPrimary: "Create free",
     ctaPrimaryHref: "/proposal",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free proposals · then $9.9/mo",
+    note: "5 free proposals · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs HoneyBook $36+" },
+      { stat: "$29", label: "flat/mo vs HoneyBook $36+" },
       { stat: "30s", label: "full proposal ready" },
       { stat: "3-in-1", label: "quote + contract + invoice" },
     ],
@@ -48,7 +48,7 @@ export const homeCopy = {
       {
         name: "Ming Z.",
         role: "Indie developer · full-stack",
-        text: "HoneyBook hit $36/mo — I only need quotes. $9.9 here does exactly that. Five minutes per proposal.",
+        text: "HoneyBook hit $36/mo — I only need quotes. $29 here does exactly that. Five minutes per proposal.",
       },
       {
         name: "Sarah Lin",
@@ -64,7 +64,7 @@ export const homeCopy = {
     closing: {
       title: "Bonsai sold to Zoom. HoneyBook raised 89%.",
       subtitle:
-        "Solo freelancers need quotes, contracts, invoices — not enterprise CRM. $9.9/mo day-one pricing because good tools are worth paying for.",
+        "Solo freelancers need quotes, contracts, invoices — not enterprise CRM. $29/mo day-one pricing because good tools are worth paying for.",
       ctaPrimary: "Create proposal",
       ctaSecondary: "See pricing",
     },
@@ -82,11 +82,11 @@ export const homeCopy = {
       "报价 + 合同条款 + 发票一次生成。专为只用报价功能的自由职业者打造，不必为 $36/月 的 CRM 买单。",
     ctaPrimary: "免费创建",
     ctaPrimaryHref: "/proposal",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，HoneyBook $36 起" },
+      { stat: "$29", label: "一口价/月，HoneyBook $36 起" },
       { stat: "30 秒", label: "完整报价单就绪" },
       { stat: "三合一", label: "报价 + 合同 + 发票" },
     ],
@@ -122,7 +122,7 @@ export const homeCopy = {
       {
         name: "张明",
         role: "独立开发者 · 全栈",
-        text: "HoneyBook 涨到 $36/月，我只用报价功能。这里 $9.9 完全够用，5 分钟出一份报价。",
+        text: "HoneyBook 涨到 $36/月，我只用报价功能。这里 $29 完全够用，5 分钟出一份报价。",
       },
       {
         name: "Sarah Lin",
@@ -138,7 +138,7 @@ export const homeCopy = {
     closing: {
       title: "Bonsai 被 Zoom 收购，HoneyBook 涨价 89%",
       subtitle:
-        "自由职业者只需要报价、合同、发票 — 不需要企业 CRM。$9.9/月，第一天收费，因为好工具值得付费。",
+        "自由职业者只需要报价、合同、发票 — 不需要企业 CRM。$29/月，第一天收费，因为好工具值得付费。",
       ctaPrimary: "创建报价单",
       ctaSecondary: "查看定价",
     },
@@ -167,14 +167,14 @@ export const joinCopy = {
       "4 industry templates (dev/design/consulting/content)",
       "Markdown export — copy anytime",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free tries, then subscribe?",
     whyItems: [
       "Contract templates need legal review and maintenance",
       "Paying users = freelancers running real client work",
-      "Solo-maintained — $9.9 keeps it sustainable",
+      "Solo-maintained — $29 keeps it sustainable",
     ],
     includedTitle: "Included",
   },
@@ -193,7 +193,7 @@ export const joinCopy = {
       "4 种行业模板（开发/设计/咨询/内容）",
       "Markdown 导出，随时复制",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费体验 5 次，之后订阅？",

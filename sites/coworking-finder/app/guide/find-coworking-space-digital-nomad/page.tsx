@@ -112,7 +112,7 @@ export default function GuidePage() {
         </Link>{" "}
         解决这个问题：每个空间标注实测 WiFi 速度、日票/月票价格、视频会议友好度和内部贴士（最佳时段、隐藏福利）。非会员可免费体验 5 次查看完整详情，之后{" "}
         <Link href="/join" className="text-brand-500 hover:underline">
-          $9.9/月
+          $29/月
         </Link>{" "}
         无限查看。
       </p>
@@ -146,7 +146,7 @@ export default function GuidePage() {
 
       <div className="not-prose mt-10 rounded-xl bg-brand-600/10 border border-brand-200 p-6 text-center">
         <p className="font-semibold text-brand-900">免费体验 5 次空间详情</p>
-        <p className="text-sm text-brand-500 mt-2">之后 $9.9/月无限查看 · 随时取消</p>
+        <p className="text-sm text-brand-500 mt-2">之后 $29/月无限查看 · 随时取消</p>
         <Link
           href="/join"
           className="inline-block mt-4 bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"

@@ -122,7 +122,7 @@ export default function GuidePage() {
       <p>
         对于 50–500 人的团队，找 McKinsey 或 Big 4 做 Scope 3 基线，费用 5–50 万。
         但通勤和居家办公排放的计算逻辑并不复杂——关键是<strong>方法论正确 + 数据可审计</strong>。
-        一个 $9.9/月的 SaaS 工具，10 分钟出基线，对于预算有限的 HR 和 CSO 来说是合理选择。
+        一个 $29/月的 SaaS 工具，10 分钟出基线，对于预算有限的 HR 和 CSO 来说是合理选择。
       </p>
 
       <h2>六、实操步骤：今天就开始</h2>
@@ -163,13 +163,13 @@ export default function GuidePage() {
       <h3>和 Watershed、Persefoni 比有什么区别？</h3>
       <p>
         那些平台面向 $1B+ 企业，年费 $50 万起。我们聚焦<strong>通勤 + 居家办公</strong>这一个 Scope 3 子类，
-        $9.9/月，5 分钟出结果。不是替代 enterprise ESG 平台，而是让中小团队也能起步。
+        $29/月，5 分钟出结果。不是替代 enterprise ESG 平台，而是让中小团队也能起步。
       </p>
 
       <div className="not-prose mt-12 rounded-2xl bg-brand-600 text-white p-8 text-center">
         <h2 className="text-2xl font-bold mb-3">5 分钟出基线，不用等咨询报价</h2>
         <p className="text-brand-100 mb-6">
-          免费体验 5 次计算 · 会员 $9.9/月无限使用 + 报告导出
+          免费体验 5 次计算 · 会员 $29/月无限使用 + 报告导出
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
@@ -182,7 +182,7 @@ export default function GuidePage() {
             href="/join"
             className="inline-block border border-white/40 text-white px-6 py-3 rounded-xl font-semibold hover:bg-brand-700 transition-colors"
           >
-            订阅 $9.9/月
+            订阅 $29/月
           </Link>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 Pocket Alternative for Indie Hackers — Minimal Bookmark Manager Guide",
       description:
-        "Mozilla shut down Pocket in 2025. Compare Raindrop, Pinboard, Linkwarden, and booooookmarks. Find a $9.9/mo flat-rate bookmark manager without AI second-brain bloat.",
+        "Mozilla shut down Pocket in 2025. Compare Raindrop, Pinboard, Linkwarden, and booooookmarks. Find a $29/mo flat-rate bookmark manager without AI second-brain bloat.",
     },
     h1: "2026 Pocket Alternative for Indie Hackers: Minimal Bookmark Manager Guide",
     updated: "Updated July 2026 · 12 min read",
@@ -52,8 +52,8 @@ export const guideCopy = {
             p: "Post-Pocket minimalist saver with screenshots and ⌘K search. Strong competitor at $4/mo. Public folders, PWA, no AI.",
           },
           {
-            h3: "Bookmark Pulse — $9.9/mo flat",
-            p: "Built for indie hackers: save URLs with auto favicon, one-level folders, public share pages, instant search. 5 free saves, then $9.9/mo unlimited. No AI second brain, no per-seat fees.",
+            h3: "Bookmark Pulse — $29/mo flat",
+            p: "Built for indie hackers: save URLs with auto favicon, one-level folders, public share pages, instant search. 5 free saves, then $29/mo unlimited. No AI second brain, no per-seat fees.",
             link: { href: "/bookmarks", text: "Save a link free", suffix: " — five saves, no credit card." },
           },
         ],
@@ -102,7 +102,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try Bookmark Pulse free",
-          prefix: "Pocket is gone. Raindrop and Notion want to be your entire workflow. If you need save URL, search fast, share folders, and $9.9/mo flat pricing, ",
+          prefix: "Pocket is gone. Raindrop and Notion want to be your entire workflow. If you need save URL, search fast, share folders, and $29/mo flat pricing, ",
           suffix: ". Five saves, no credit card. Stop losing links in browser tabs.",
         },
       },
@@ -117,7 +117,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 Pocket 替代品指南 — 极简书签管理",
       description:
-        "Mozilla 2025 年关停 Pocket。对比 Raindrop、Pinboard、Linkwarden 与 booooookmarks，找到 $9.9/月 一口价、无 AI 第二大脑冗余的书签工具。",
+        "Mozilla 2025 年关停 Pocket。对比 Raindrop、Pinboard、Linkwarden 与 booooookmarks，找到 $29/月 一口价、无 AI 第二大脑冗余的书签工具。",
     },
     h1: "2026 独立开发者 Pocket 替代品：极简书签管理完整指南",
     updated: "更新于 2026 年 7 月 · 阅读约 12 分钟",
@@ -164,8 +164,8 @@ export const guideCopy = {
             p: "Pocket 关停后的极简保存器，带截图和 ⌘K 搜索。$4/月 的有力竞品。公开文件夹、PWA、无 AI。",
           },
           {
-            h3: "Bookmark Pulse — $9.9/月 一口价",
-            p: "为独立开发者打造：保存链接自动抓图标、单层文件夹、公开分享页、即时搜索。免费 5 次，之后 $9.9/月 不限量。无 AI 第二大脑、无按席位收费。",
+            h3: "Bookmark Pulse — $29/月 一口价",
+            p: "为独立开发者打造：保存链接自动抓图标、单层文件夹、公开分享页、即时搜索。免费 5 次，之后 $29/月 不限量。无 AI 第二大脑、无按席位收费。",
             link: { href: "/bookmarks", text: "免费保存链接", suffix: " — 五次保存，无需信用卡。" },
           },
         ],
@@ -214,7 +214,7 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 Bookmark Pulse",
-          prefix: "Pocket 没了。Raindrop 和 Notion 想包办你整个工作流。若你需要存链接、快速搜索、分享文件夹、$9.9/月 一口价，可",
+          prefix: "Pocket 没了。Raindrop 和 Notion 想包办你整个工作流。若你需要存链接、快速搜索、分享文件夹、$29/月 一口价，可",
           suffix: "。五次保存，无需信用卡。别再让链接消失在浏览器标签里。",
         },
       },

@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://visa-tracker-lilac.vercel.app",
     name: "Visa Tracker",
-    title: "Visa Tracker — Digital nomad visa policy & expiry alerts, $9.9/mo",
+    title: "Visa Tracker — Digital nomad visa policy & expiry alerts, $29/mo",
     description:
-      "Track 35+ digital nomad visa policies with real-time change alerts and expiry reminders. 5 free tracks, then $9.9/mo.",
+      "Track 35+ digital nomad visa policies with real-time change alerts and expiry reminders. 5 free tracks, then $29/mo.",
     keywords: [
       "digital nomad visa tracker",
       "visa expiry reminder",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://visa-tracker-lilac.vercel.app",
     name: "签证追踪器",
-    title: "签证追踪器 — 数字游民签证政策与到期提醒，$9.9/月",
+    title: "签证追踪器 — 数字游民签证政策与到期提醒，$29/月",
     description:
-      "追踪 35+ 数字游民签证政策，实时变更告警与到期提醒。免费体验 5 次，之后 $9.9/月。",
+      "追踪 35+ 数字游民签证政策，实时变更告警与到期提醒。免费体验 5 次，之后 $29/月。",
     keywords: [
       "数字游民签证",
       "签证到期提醒",

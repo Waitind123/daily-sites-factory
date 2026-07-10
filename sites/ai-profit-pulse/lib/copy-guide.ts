@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Manual: export Stripe revenue, paste OpenAI costs, match by customer email. Works until you have 30+ customers, then becomes a weekly nightmare.",
           },
           {
-            h3: "AI Profit Pulse — $9.9/mo flat",
+            h3: "AI Profit Pulse — $29/mo flat",
             p: "Built for indie hackers: connect Stripe, see per-customer revenue vs AI cost, margin %, and unprofitable customer alerts.",
-            link: { href: "/join", text: "5 free analyses to try", suffix: ", then $9.9/mo flat. No per-customer fees." },
+            link: { href: "/join", text: "5 free analyses to try", suffix: ", then $29/mo flat. No per-customer fees." },
           },
         ],
       },
@@ -99,10 +99,10 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "Pricing math: why $9.9/mo pays for itself",
+        h2: "Pricing math: why $29/mo pays for itself",
         paragraphs: [
           "One saved unprofitable customer paying $99/mo with $78 AI cost = $21/month recovered margin.",
-          "AI Profit Pulse at $9.9/mo pays for itself if it helps you fix ONE customer's pricing.",
+          "AI Profit Pulse at $29/mo pays for itself if it helps you fix ONE customer's pricing.",
           "Compare: AICost.ai at $49/mo requires saving 2+ customers to break even. Enterprise tools at $200+/mo need a finance team to justify.",
           "For bootstrapped AI SaaS founders, per-customer profit visibility isn't optional — it's how you survive the usage-cost trap.",
         ],
@@ -113,7 +113,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "See your per-customer profit margins free",
-      subtitle: "5 free analyses · revenue vs AI cost · $9.9/mo unlimited",
+      subtitle: "5 free analyses · revenue vs AI cost · $29/mo unlimited",
       button: "Open dashboard →",
     },
   },
@@ -166,9 +166,9 @@ export const guideCopy = {
             p: "手动：导出 Stripe 收入，粘贴 OpenAI 成本，按邮箱匹配客户。30 个客户以上就变成每周噩梦。",
           },
           {
-            h3: "AI 客户利润追踪 — $9.9/月一口价",
+            h3: "AI 客户利润追踪 — $29/月一口价",
             p: "为独立开发者打造：连接 Stripe，查看按客户收入对比 AI 成本、利润率 % 和亏损客户预警。",
-            link: { href: "/join", text: "免费体验 5 次分析", suffix: "，之后 $9.9/月一口价，无按客户收费。" },
+            link: { href: "/join", text: "免费体验 5 次分析", suffix: "，之后 $29/月一口价，无按客户收费。" },
           },
         ],
       },
@@ -215,10 +215,10 @@ export const guideCopy = {
         ],
       },
       {
-        h2: "定价数学：为什么 $9.9/月物超所值",
+        h2: "定价数学：为什么 $29/月物超所值",
         paragraphs: [
           "挽救一个亏损客户：月付 $99、AI 成本 $78 = 每月回收 $21 利润率。",
-          "AI 客户利润追踪 $9.9/月，只要帮你修正一个客户的定价就回本。",
+          "AI 客户利润追踪 $29/月，只要帮你修正一个客户的定价就回本。",
           "对比：AICost.ai $49/月需要挽救 2+ 客户才回本。$200+/月企业工具需要财务团队才能 justify。",
           "对自举 AI SaaS 创始人来说，按客户利润可见性不是可选项 — 是穿越用量成本陷阱的生存之道。",
         ],
@@ -229,7 +229,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费查看按客户利润率",
-      subtitle: "免费体验 5 次 · 收入对比 AI 成本 · $9.9/月无限",
+      subtitle: "免费体验 5 次 · 收入对比 AI 成本 · $29/月无限",
       button: "打开仪表盘 →",
     },
   },

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 DocSend Alternative Guide for Indie Founders",
       description:
-        "DocSend $45–300/mo? Dropbox killed free Send & Track. Compare Peony, Papermark, and DocSend Pulse. Secure doc sharing with page-level analytics at $9.9/mo.",
+        "DocSend $45–300/mo? Dropbox killed free Send & Track. Compare Peony, Papermark, and DocSend Pulse. Secure doc sharing with page-level analytics at $29/mo.",
     },
     h1: "2026 DocSend Alternative Guide for Indie Founders",
     updated: "Updated July 2026 · 12 min read",
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "Self-host for free or use SaaS from €29/month. True open-source VDR with page analytics. Best for teams needing data sovereignty.",
           },
           {
-            h3: "DocSend Pulse — $9.9/mo flat",
+            h3: "DocSend Pulse — $29/mo flat",
             p: "Built for indie founders: create secure tracking links, get page-by-page analytics, viewer sessions, and view notifications. 5 free shares, no per-seat fees.",
             link: { href: "/share", text: "Share your first deck", suffix: " — five free tracked shares, no credit card." },
           },
@@ -106,14 +106,14 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try DocSend Pulse free",
-          prefix: "DocSend is built for funded teams with per-seat pricing. If you need page-level analytics and $9.9/mo flat pricing, ",
+          prefix: "DocSend is built for funded teams with per-seat pricing. If you need page-level analytics and $29/mo flat pricing, ",
           suffix: ". Five free tracked shares, no credit card. Stop guessing — start tracking.",
         },
       },
     ],
     cta: {
       title: "Ready to track your pitch deck?",
-      subtitle: "5 free tracked shares · then $9.9/mo for unlimited page-level analytics",
+      subtitle: "5 free tracked shares · then $29/mo for unlimited page-level analytics",
       button: "Share document free",
     },
   },
@@ -121,7 +121,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者 DocSend 替代品完全指南",
       description:
-        "DocSend $45–300/月？Dropbox 关了免费 Send & Track。对比 Peony、Papermark 与文档追踪脉冲。$9.9/月安全文档分享 + 逐页分析。",
+        "DocSend $45–300/月？Dropbox 关了免费 Send & Track。对比 Peony、Papermark 与文档追踪脉冲。$29/月安全文档分享 + 逐页分析。",
     },
     h1: "2026 独立开发者 DocSend 替代品完全指南",
     updated: "2026 年 7 月更新 · 阅读约 12 分钟",
@@ -165,7 +165,7 @@ export const guideCopy = {
             p: "可免费自托管或 SaaS 从 €29/月起。真正开源 VDR 含逐页分析。最适合需要数据主权的团队。",
           },
           {
-            h3: "文档追踪脉冲 — $9.9/月 固定价",
+            h3: "文档追踪脉冲 — $29/月 固定价",
             p: "为独立开发者打造：创建安全追踪链接，获取逐页分析、访客会话与浏览通知。免费体验 5 次，不按席位收费。",
             link: { href: "/share", text: "分享你的第一份路演稿", suffix: " — 免费 5 次追踪分享，无需信用卡。" },
           },
@@ -222,14 +222,14 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用文档追踪脉冲",
-          prefix: "DocSend 面向有 VC 背景、按席位收费的团队。若你需要逐页分析与 $9.9/月 一口价，可",
+          prefix: "DocSend 面向有 VC 背景、按席位收费的团队。若你需要逐页分析与 $29/月 一口价，可",
           suffix: "。免费 5 次追踪分享，无需信用卡。别再猜 — 开始追踪。",
         },
       },
     ],
     cta: {
       title: "准备好追踪你的路演稿了吗？",
-      subtitle: "免费体验 5 次追踪分享 · 之后 $9.9/月 无限逐页分析",
+      subtitle: "免费体验 5 次追踪分享 · 之后 $29/月 无限逐页分析",
       button: "免费分享文档",
     },
   },

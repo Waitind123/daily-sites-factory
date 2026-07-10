@@ -5,11 +5,11 @@ const JOIN_URL = "https://ai-headshots-navy.vercel.app/join?utm_source=share";
 export function SharePromoKit({ locale }: { locale: string }) {
   const zh = locale === "zh";
   const title = zh
-    ? "AI 证件照 — $9.9/月，30 秒生成 LinkedIn 职业照"
-    : "AI headshots — $9.9/mo, LinkedIn-ready in 30 seconds";
+    ? "AI 证件照 — $29/月，30 秒生成 LinkedIn 职业照"
+    : "AI headshots — $29/mo, LinkedIn-ready in 30 seconds";
   const text = zh
     ? "5 次免费试用，上传自拍即可生成证件照，比 PhotoAI 便宜很多"
-    : "5 free tries. Upload a selfie → pro headshots. $9.9/mo flat vs PhotoAI $29+";
+    : "5 free tries. Upload a selfie → pro headshots. $29/mo flat vs PhotoAI $29+";
 
   const links = {
     twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(JOIN_URL)}`,

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "SaaS price hike alternatives for indie founders — payoncealternatives guide 2026",
       description:
-        "When competitors raise prices, how to find ranked alternatives fast: monitoring, migration playbooks, open-source swaps. Alt Intel at $9.9/mo.",
+        "When competitors raise prices, how to find ranked alternatives fast: monitoring, migration playbooks, open-source swaps. Alt Intel at $29/mo.",
     },
     h1: "What to do when your SaaS stack raises prices (indie founder guide)",
     updated: "Updated July 2026 · 14 min read",
@@ -44,7 +44,7 @@ export const guideCopy = {
         h2: "Three alternative categories to evaluate",
         ordered: [
           "Open-source self-host — n8n for Zapier, Plane for Jira, Plausible for GA4 (highest savings, needs ops)",
-          "Flat-rate indie tools — $9.9/mo products built for solo founders, no per-seat surprises",
+          "Flat-rate indie tools — $29/mo products built for solo founders, no per-seat surprises",
           "Pay-once / lifetime — smaller catalog but zero recurring if it fits your workflow",
         ],
         after: [
@@ -68,7 +68,7 @@ export const guideCopy = {
           "payoncealternatives.com — great directory, no hike alerts",
           "IndieList / AltStack — curated but manual discovery",
           "Kompyte — $10K+/yr enterprise CI, overkill for solo founders",
-          "Alt Intel — $9.9/mo hike alerts + ranked alternatives + migration playbooks",
+          "Alt Intel — $29/mo hike alerts + ranked alternatives + migration playbooks",
         ],
         after: [
           "For founders shipping on weekends, alerts + playbooks beat static directories.",
@@ -87,8 +87,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "Ready for hike alerts with ranked alternatives?",
-      body: "5 free intel reports. Daily scans, 24h alerts, migration playbooks for $9.9/mo.",
-      primary: "Subscribe · $9.9/mo",
+      body: "5 free intel reports. Daily scans, 24h alerts, migration playbooks for $29/mo.",
+      primary: "Subscribe · $29/mo",
       secondary: "Try alt intel free",
     },
   },
@@ -96,7 +96,7 @@ export const guideCopy = {
     meta: {
       title: "SaaS 涨价替代品指南 — indie 创始人 payoncealternatives 2026",
       description:
-        "竞品涨价怎么办？如何快速找到排名替代品：监控、迁移手册、开源平替。SaaS 替代品情报 $9.9/月。",
+        "竞品涨价怎么办？如何快速找到排名替代品：监控、迁移手册、开源平替。SaaS 替代品情报 $29/月。",
     },
     h1: "SaaS 工具涨价了怎么办？（indie 创始人指南）",
     updated: "更新于 2026 年 7 月 · 阅读约 14 分钟",
@@ -131,7 +131,7 @@ export const guideCopy = {
         h2: "三、三类替代品评估框架",
         ordered: [
           "开源自托管 — Zapier 换 n8n、Jira 换 Plane、GA4 换 Plausible（节省最高，需运维）",
-          "固定价 indie 工具 — $9.9/月 为 solo 设计，无按席位惊喜",
+          "固定价 indie 工具 — $29/月 为 solo 设计，无按席位惊喜",
           "一次性买断 — 目录较小但零 recurring，适合匹配工作流",
         ],
         after: ["多数 indie 工具栈混合一个自托管核心 + 固定价卫星工具，可省 40-70%。"],
@@ -153,7 +153,7 @@ export const guideCopy = {
           "payoncealternatives.com — 好目录，无涨价提醒",
           "IndieList / AltStack — 精选但需手动发现",
           "Kompyte — 年费 $10K+ 企业 CI，solo 用不起",
-          "SaaS 替代品情报 — $9.9/月 涨价提醒 + 排名替代品 + 迁移手册",
+          "SaaS 替代品情报 — $29/月 涨价提醒 + 排名替代品 + 迁移手册",
         ],
         after: ["对周末 ship 的创始人，提醒+手册胜过静态目录。"],
       },
@@ -170,8 +170,8 @@ export const guideCopy = {
     ],
     cta: {
       title: "准备好涨价提醒 + 排名替代品了吗？",
-      body: "免费体验 5 次情报报告。每日扫描、24h 提醒、迁移手册，$9.9/月。",
-      primary: "立即订阅 $9.9/月",
+      body: "免费体验 5 次情报报告。每日扫描、24h 提醒、迁移手册，$29/月。",
+      primary: "立即订阅 $29/月",
       secondary: "免费体验",
     },
   },

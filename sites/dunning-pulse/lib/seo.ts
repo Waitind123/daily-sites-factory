@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://dunning-pulse.vercel.app",
     name: "Dunning Pulse",
-    title: "Dunning Pulse — Stripe failed payment recovery for indie SaaS, $9.9/mo",
+    title: "Dunning Pulse — Stripe failed payment recovery for indie SaaS, $29/mo",
     description:
-      "5 free recovery campaigns. Churnkey $199/mo? $9.9/mo flat: reason-specific dunning emails, card-update links, MRR recovery tracking.",
+      "5 free recovery campaigns. Churnkey $199/mo? $29/mo flat: reason-specific dunning emails, card-update links, MRR recovery tracking.",
     keywords: [
       "dunning",
       "failed payment recovery",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://dunning-pulse.vercel.app",
     name: "失败支付恢复",
-    title: "失败支付恢复 — Stripe 催款工具，独立开发者 $9.9/月",
+    title: "失败支付恢复 — Stripe 催款工具，独立开发者 $29/月",
     description:
-      "免费体验 5 个恢复活动。Churnkey 要 $199/月？$9.9/月一口价：按原因定制催款邮件、更新卡片链接、MRR 恢复追踪。",
+      "免费体验 5 个恢复活动。Churnkey 要 $199/月？$29/月一口价：按原因定制催款邮件、更新卡片链接、MRR 恢复追踪。",
     keywords: [
       "催款",
       "失败支付恢复",

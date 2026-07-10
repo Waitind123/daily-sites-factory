@@ -11,12 +11,12 @@ export const ideasCopy = {
     trialLowBody:
       "Subscribe for unlimited market analyses — most founders upgrade after idea #3.",
     trialLowCta: "View pricing",
-    subscribeCta: "Subscribe · $9.9/mo →",
+    subscribeCta: "Subscribe · $29/mo →",
     memberBadge: "✓ Member active · unlimited deep analyses",
     allCategory: "All",
     deepAnalysis: "Deep analysis →",
     loading: "Loading deep analysis…",
-    subscribeNow: "Subscribe now · $9.9/mo",
+    subscribeNow: "Subscribe now · $29/mo",
     subscribePrompt: (count: number) =>
       `Like this analysis? Subscribe to unlock all ${count}+ ideas`,
     sections: {
@@ -44,12 +44,12 @@ export const ideasCopy = {
     trialLowTitle: "仅剩 {remaining} 次免费深度分析",
     trialLowBody: "订阅解锁无限市场分析 — 多数创始人在第 3 个点子后升级。",
     trialLowCta: "查看定价",
-    subscribeCta: "订阅 $9.9/月 →",
+    subscribeCta: "订阅 $29/月 →",
     memberBadge: "✓ 会员已激活 · 无限阅读深度分析",
     allCategory: "全部",
     deepAnalysis: "深度分析 →",
     loading: "加载深度分析中…",
-    subscribeNow: "立即订阅 $9.9/月",
+    subscribeNow: "立即订阅 $29/月",
     subscribePrompt: (count: number) => `喜欢这种分析？订阅解锁全部 ${count}+ 个点子`,
     sections: {
       problem: "🎯 痛点验证",
@@ -97,7 +97,7 @@ export const apiErrorCopy = {
   },
   zh: {
     GENERIC: "出错了，请稍后再试",
-    TRIAL_EXHAUSTED: "免费体验已用完，请订阅 $9.9/月",
+    TRIAL_EXHAUSTED: "免费体验已用完，请订阅 $29/月",
     MISSING_IDEA_ID: "缺少 ideaId",
     IDEA_NOT_FOUND: "点子不存在",
     CHECKOUT_FAILED: "支付创建失败，请稍后重试",

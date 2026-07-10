@@ -9,7 +9,7 @@ export const pagesCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 status pages. Subscribe for unlimited pages, incidents, and email subscribers.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New status page",
     pageName: "Product name",
     pageNamePlaceholder: "e.g. My SaaS",
@@ -40,7 +40,7 @@ export const pagesCopy = {
     freePages: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个状态页。订阅后可无限创建、发布事件并通知邮件订阅者。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建状态页",
     pageName: "产品名称",
     pageNamePlaceholder: "例如：我的 SaaS",

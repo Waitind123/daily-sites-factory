@@ -1,6 +1,6 @@
 # 团队 AI 头像 (Team Headshots)
 
-批量生成统一 LinkedIn 专业头像，$9.9/月最多 10 人。
+批量生成统一 LinkedIn 专业头像，$29/月最多 10 人。
 
 ## 功能
 

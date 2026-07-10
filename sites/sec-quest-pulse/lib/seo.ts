@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://sec-quest-pulse.vercel.app",
     name: "SecQuest Pulse",
-    title: "SecQuest Pulse — Security questionnaire auto-fill for indie SaaS, $9.9/mo",
+    title: "SecQuest Pulse — Security questionnaire auto-fill for indie SaaS, $29/mo",
     description:
-      "5 free questionnaire fills. Vanta $5k+/yr is overkill. Paste Excel security questionnaires, AI fills answers from your docs. $9.9/mo flat.",
+      "5 free questionnaire fills. Vanta $5k+/yr is overkill. Paste Excel security questionnaires, AI fills answers from your docs. $29/mo flat.",
     keywords: [
       "security questionnaire auto fill",
       "Vanta alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://sec-quest-pulse.vercel.app",
     name: "安全问卷自动填写",
-    title: "安全问卷自动填写 — 独立开发者企业安全问卷 AI 填写，$9.9/月",
+    title: "安全问卷自动填写 — 独立开发者企业安全问卷 AI 填写，$29/月",
     description:
-      "免费体验 5 次。Vanta $5k+/年太贵。粘贴 Excel 安全问卷，AI 从你的文档自动填写答案。$9.9/月一口价。",
+      "免费体验 5 次。Vanta $5k+/年太贵。粘贴 Excel 安全问卷，AI 从你的文档自动填写答案。$29/月一口价。",
     keywords: [
       "安全问卷自动填写",
       "Vanta 替代品",

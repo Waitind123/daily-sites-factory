@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://pricing-convert.vercel.app",
     name: "Pricing Convert",
-    title: "Pricing Convert — pricing page conversion diagnosis for indie SaaS, $9.9/mo",
+    title: "Pricing Convert — pricing page conversion diagnosis for indie SaaS, $29/mo",
     description:
-      "5 free diagnoses. Hotjar $39+/mo? $9.9/mo flat: heatmap zones, drop-off analysis, layout fixes, and A/B playbook for /pricing pages.",
+      "5 free diagnoses. Hotjar $39+/mo? $29/mo flat: heatmap zones, drop-off analysis, layout fixes, and A/B playbook for /pricing pages.",
     keywords: [
       "pricing page conversion",
       "pricing page diagnosis",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://pricing-convert.vercel.app",
     name: "定价页转化诊断",
-    title: "定价页转化诊断 — 独立开发者定价页流失分析，$9.9/月",
+    title: "定价页转化诊断 — 独立开发者定价页流失分析，$29/月",
     description:
-      "免费体验 5 次诊断。Hotjar $39+/月？$9.9/月一口价：热力图区域、流失分析、布局修复与 A/B 测试方案。",
+      "免费体验 5 次诊断。Hotjar $39+/月？$29/月一口价：热力图区域、流失分析、布局修复与 A/B 测试方案。",
     keywords: [
       "定价页转化",
       "定价页诊断",

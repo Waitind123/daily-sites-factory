@@ -290,7 +290,7 @@ export const testimonials = [
   {
     name: "Marcus Chen",
     role: "Indie Hacker · Digital Nomad",
-    text: "Deskpass is US-only. This shows real availability for Asia and Europe day passes. Worth $9.9.",
+    text: "Deskpass is US-only. This shows real availability for Asia and Europe day passes. Worth $29.",
   },
   {
     name: "佐藤美咲",

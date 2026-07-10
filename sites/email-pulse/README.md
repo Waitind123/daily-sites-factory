@@ -1,6 +1,6 @@
 # Email Pulse
 
-Mailchimp 平替 — 独立开发者 $9.9/月 HTML 邮件构建器
+Mailchimp 平替 — 独立开发者 $29/月 HTML 邮件构建器
 
 - 区块式邮件编辑器
 - 实时 HTML 预览

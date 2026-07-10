@@ -181,17 +181,17 @@ export const startupIdeas: StartupIdea[] = [
     buildTime: "1 周",
     difficulty: "中",
     preview:
-      "数字游民签证政策频繁变化，Nomad List 有数据但不推送。做订阅制政策追踪 + 对比计算器，$9.9/月。",
+      "数字游民签证政策频繁变化，Nomad List 有数据但不推送。做订阅制政策追踪 + 对比计算器，$29/月。",
     analysis: {
       problem:
         "Reddit r/digitalnomad 每周有人问「葡萄牙 D7 签证还开放吗」。信息分散在政府官网，无 centralized alert service。",
-      marketSize: "全球数字游民约 3500 万（2025 估计）。$9.9/月 × 300 = $3K MRR。",
+      marketSize: "全球数字游民约 3500 万（2025 估计）。$29/月 × 300 = $3K MRR。",
       competitors: [
         { name: "Nomad List", pricing: "$99/终身", gap: "无政策变更推送" },
         { name: "VisaGuide", pricing: "免费广告", gap: "信息过载、无订阅" },
         { name: "政府官网", pricing: "免费", gap: "难追踪、多语言" },
       ],
-      monetization: "$9.9/月（3 国追踪 + 邮件提醒）+ $29/月（无限国 + PDF 报告）。",
+      monetization: "$29/月（3 国追踪 + 邮件提醒）+ $29/月（无限国 + PDF 报告）。",
       channels: ["r/digitalnomad", "Nomad List 社区", "Twitter nomad", "Facebook 群组"],
       mvp: [
         "15 国签证数据库",
@@ -311,7 +311,7 @@ export const testimonials = [
   {
     name: "大刘",
     role: "副业探索者",
-    text: "$9.9 不贵，一个点子回本。已经 ship 了 API 用量追踪器的 MVP。",
+    text: "$29 不贵，一个点子回本。已经 ship 了 API 用量追踪器的 MVP。",
   },
 ];
 

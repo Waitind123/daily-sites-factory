@@ -22,6 +22,7 @@
     "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
     "notify-feishu": "node scripts/notify-feishu.mjs",
     "sync-stripe": "node scripts/sync-stripe-all-sites.mjs",
+    "sync-stripe-29": "node scripts/sync-stripe-29-all.mjs",
     "verify-stripe": "node scripts/verify-stripe-checkout.mjs"
   },
   "devDependencies": {

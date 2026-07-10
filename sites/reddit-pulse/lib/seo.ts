@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://reddit-pulse-six.vercel.app",
     name: "Reddit Pulse",
-    title: "Reddit Pulse — GummySearch alternative for indie hackers, $9.9/mo",
+    title: "Reddit Pulse — GummySearch alternative for indie hackers, $29/mo",
     description:
-      "5 free pain point searches. GummySearch shut down? $9.9/mo flat: mine Reddit for 'I wish' and 'looking for alternative' signals.",
+      "5 free pain point searches. GummySearch shut down? $29/mo flat: mine Reddit for 'I wish' and 'looking for alternative' signals.",
     keywords: [
       "reddit pain points",
       "GummySearch alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://reddit-pulse-six.vercel.app",
     name: "Reddit 痛点挖掘",
-    title: "Reddit Pulse — GummySearch 平替，独立开发者 $9.9/月",
+    title: "Reddit Pulse — GummySearch 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 次痛点搜索。GummySearch 已关停？$9.9/月一口价：挖掘 Reddit「我希望」和「寻找替代」信号。",
+      "免费体验 5 次痛点搜索。GummySearch 已关停？$29/月一口价：挖掘 Reddit「我希望」和「寻找替代」信号。",
     keywords: [
       "Reddit 痛点挖掘",
       "GummySearch 替代品",

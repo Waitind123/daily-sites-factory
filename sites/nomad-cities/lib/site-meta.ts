@@ -6,8 +6,8 @@ export const siteMeta = {
     "zh": "游民城市榜"
   },
   "joinLabel": {
-    "en": "Join · $99/yr",
-    "zh": "加入会员 · ¥699/年"
+    "en": "Join · $29/mo",
+    "zh": "加入会员 · ¥199/月"
   },
   "nav": [
     {

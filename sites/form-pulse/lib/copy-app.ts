@@ -9,7 +9,7 @@ export const formsCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 forms. Subscribe for unlimited forms, drop-off analytics, and embed widgets.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New form",
     formName: "Form name",
     formNamePlaceholder: "e.g. Customer Feedback Survey",
@@ -30,7 +30,7 @@ export const formsCopy = {
     freeForms: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个表单。订阅后可无限创建、查看放弃率分析并使用嵌入组件。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建表单",
     formName: "表单名称",
     formNamePlaceholder: "例如：客户反馈问卷",

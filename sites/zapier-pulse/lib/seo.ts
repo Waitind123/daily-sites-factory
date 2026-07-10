@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://zapier-pulse.vercel.app",
     name: "Zapier Pulse",
-    title: "Zapier Pulse — Zapier alternative for indie devs, $9.9/mo flat",
+    title: "Zapier Pulse — Zapier alternative for indie devs, $29/mo flat",
     description:
-      "5 free webhook automations. Zapier too expensive? $9.9/mo flat: webhook → HTTP forwarding, cron triggers, run history.",
+      "5 free webhook automations. Zapier too expensive? $29/mo flat: webhook → HTTP forwarding, cron triggers, run history.",
     keywords: [
       "Zapier alternative",
       "webhook automation",
@@ -27,9 +27,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://zapier-pulse.vercel.app",
     name: "Zapier 极简替代品",
-    title: "Zapier Pulse — Zapier 平替，独立开发者 $9.9/月",
+    title: "Zapier Pulse — Zapier 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 条 Webhook 自动化。Zapier 太贵？$9.9/月一口价：Webhook → HTTP 转发、Cron 定时、运行日志。",
+      "免费体验 5 条 Webhook 自动化。Zapier 太贵？$29/月一口价：Webhook → HTTP 转发、Cron 定时、运行日志。",
     keywords: [
       "Zapier 替代品",
       "Webhook 自动化",

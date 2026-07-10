@@ -1,6 +1,6 @@
 # OG Image Studio
 
-独立开发者 OG 社交分享图生成器 — Bannerbear 平替，$9.9/月。
+独立开发者 OG 社交分享图生成器 — Bannerbear 平替，$29/月。
 
 ## 功能
 
@@ -20,4 +20,4 @@ npm run dev
 
 通过 GitHub Actions 自动部署到 Vercel。
 
-**Ship date:** 2026-06-28 · Bannerbear $49/mo alternative · $9.9/mo
+**Ship date:** 2026-06-28 · Bannerbear $49/mo alternative · $29/mo

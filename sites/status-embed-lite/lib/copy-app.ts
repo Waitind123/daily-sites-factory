@@ -9,7 +9,7 @@ export const pagesCopy = {
     paywallTitle: "Free trial used up",
     paywallBody:
       "You've created 5 embed widgets. Subscribe for unlimited widgets, auto-detection, and email subscribers.",
-    paywallCta: "Subscribe · $9.9/mo",
+    paywallCta: "Subscribe · $29/mo",
     formTitle: "New embed widget",
     pageName: "Product name",
     pageNamePlaceholder: "e.g. My SaaS",
@@ -47,7 +47,7 @@ export const pagesCopy = {
     freePages: "免费额度：",
     paywallTitle: "免费体验已用完",
     paywallBody: "你已创建 5 个嵌入组件。订阅后可无限创建、自动检测并通知邮件订阅者。",
-    paywallCta: "订阅 · $9.9/月",
+    paywallCta: "订阅 · $29/月",
     formTitle: "新建嵌入组件",
     pageName: "产品名称",
     pageNamePlaceholder: "例如：我的 SaaS",

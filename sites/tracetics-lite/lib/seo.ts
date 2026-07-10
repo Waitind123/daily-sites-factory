@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://tracetics-lite.vercel.app",
     name: "Tracetics Lite",
-    title: "Tracetics Lite — Plausible + Mixpanel funnel analytics, $9.9/mo",
+    title: "Tracetics Lite — Plausible + Mixpanel funnel analytics, $29/mo",
     description:
-      "Plausible has no funnels. Mixpanel costs $500/mo? 5 free funnel analyses, then $9.9/mo flat: drop-off tracking, step conversion, one-line SDK.",
+      "Plausible has no funnels. Mixpanel costs $500/mo? 5 free funnel analyses, then $29/mo flat: drop-off tracking, step conversion, one-line SDK.",
     keywords: [
       "funnel analytics",
       "Mixpanel alternative",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://tracetics-lite.vercel.app",
     name: "Tracetics Lite",
-    title: "Tracetics Lite — Plausible 没有漏斗？独立开发者 $9.9/月",
+    title: "Tracetics Lite — Plausible 没有漏斗？独立开发者 $29/月",
     description:
-      "Plausible 做不了漏斗，Mixpanel $500/月太贵。免费体验 5 个漏斗分析，之后 $9.9/月：流失定位、步骤转化率、一行 SDK。",
+      "Plausible 做不了漏斗，Mixpanel $500/月太贵。免费体验 5 个漏斗分析，之后 $29/月：流失定位、步骤转化率、一行 SDK。",
     keywords: [
       "漏斗分析",
       "Mixpanel 替代品",

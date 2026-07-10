@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://saas-alt-intel.vercel.app",
     name: "Alt Intel",
-    title: "Alt Intel — SaaS price hike alerts & alternatives for indie founders $9.9/mo",
+    title: "Alt Intel — SaaS price hike alerts & alternatives for indie founders $29/mo",
     description:
-      "5 free intel reports. When competitors raise prices, get ranked alternatives + migration playbooks. HN payoncealternatives style — $9.9/mo for solo founders.",
+      "5 free intel reports. When competitors raise prices, get ranked alternatives + migration playbooks. HN payoncealternatives style — $29/mo for solo founders.",
     keywords: [
       "SaaS alternatives",
       "price hike alert",
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://saas-alt-intel.vercel.app",
     name: "SaaS 替代品情报",
-    title: "SaaS 替代品情报 — 涨价预警与替代品推荐 $9.9/月",
+    title: "SaaS 替代品情报 — 涨价预警与替代品推荐 $29/月",
     description:
-      "免费体验 5 次情报报告。竞品涨价无预警？我们监控定价变动并推荐可迁移替代品。为独立开发者打造，$9.9/月。",
+      "免费体验 5 次情报报告。竞品涨价无预警？我们监控定价变动并推荐可迁移替代品。为独立开发者打造，$29/月。",
     keywords: [
       "SaaS 替代品",
       "涨价预警",

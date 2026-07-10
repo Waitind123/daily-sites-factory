@@ -120,7 +120,7 @@ export default function GuidePage() {
         </Link>{" "}
         每个分析都含建议定价，可直接参考。非会员可免费体验 5 次深度分析，之后{" "}
         <Link href="/join" className="text-brand-500 hover:underline">
-          $9.9/月
+          $29/月
         </Link>{" "}
         无限阅读。
       </p>

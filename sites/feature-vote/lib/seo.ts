@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://feature-vote-ten.vercel.app",
     name: "Feature Vote",
-    title: "Feature Vote — Canny alternative for indie devs, $9.9/mo flat",
+    title: "Feature Vote — Canny alternative for indie devs, $29/mo flat",
     description:
-      "5 free feature voting boards. Canny costs $79/mo? $9.9/mo flat: public voting, roadmap, embed widget, unlimited voters.",
+      "5 free feature voting boards. Canny costs $79/mo? $29/mo flat: public voting, roadmap, embed widget, unlimited voters.",
     keywords: [
       "feature voting",
       "Canny alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://feature-vote-ten.vercel.app",
     name: "功能投票板",
-    title: "功能投票板 — Canny 平替，独立开发者 $9.9/月",
+    title: "功能投票板 — Canny 平替，独立开发者 $29/月",
     description:
-      "免费体验 5 个功能投票板。Canny $79/月太贵？$9.9/月一口价：公开投票、路线图、嵌入组件，无限投票用户。",
+      "免费体验 5 个功能投票板。Canny $79/月太贵？$29/月一口价：公开投票、路线图、嵌入组件，无限投票用户。",
     keywords: [
       "功能投票",
       "Canny 替代品",

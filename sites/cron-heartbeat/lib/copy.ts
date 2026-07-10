@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Healthchecks.io too complex? · $9.9/mo flat",
+    badge: "Healthchecks.io too complex? · $29/mo flat",
     title: "Cron heartbeat monitoring for indie hackers",
     subtitle:
-      "One curl at the end of your job. Missed-run alerts to Slack. No per-monitor fees. 5 free jobs, then $9.9/mo.",
+      "One curl at the end of your job. Missed-run alerts to Slack. No per-monitor fees. 5 free jobs, then $29/mo.",
     ctaPrimary: "Create a job free",
     ctaPrimaryHref: "/jobs",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free jobs · then $9.9/mo",
+    note: "5 free jobs · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Cronitor $29+" },
+      { stat: "$29", label: "flat/mo vs Cronitor $29+" },
       { stat: "1 curl", label: "integration per cron job" },
       { stat: "∞", label: "monitors, no per-job fees" },
     ],
@@ -69,7 +69,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "Indie SaaS founder",
-        text: "Healthchecks.io works but I wanted flat $9.9 pricing. This does exactly what I need for 12 cron jobs.",
+        text: "Healthchecks.io works but I wanted flat $29 pricing. This does exactly what I need for 12 cron jobs.",
       },
       {
         name: "James Wu",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Your cron jobs shouldn't fail silently",
-      subtitle: "5 free monitors · then $9.9/mo for unlimited jobs",
+      subtitle: "5 free monitors · then $29/mo for unlimited jobs",
       ctaPrimary: "Create a job free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Healthchecks.io 太复杂？· $9.9/月一口价",
+    badge: "Healthchecks.io 太复杂？· $29/月一口价",
     title: "独立开发者的 Cron 心跳监控",
     subtitle:
-      "任务结束时一行 curl 上报心跳。漏跑秒级告警到 Slack。不按任务数收费。免费体验 5 个任务，之后 $9.9/月。",
+      "任务结束时一行 curl 上报心跳。漏跑秒级告警到 Slack。不按任务数收费。免费体验 5 个任务，之后 $29/月。",
     ctaPrimary: "免费创建任务",
     ctaPrimaryHref: "/jobs",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Cronitor $29+" },
+      { stat: "$29", label: "一口价/月，Cronitor $29+" },
       { stat: "1 行 curl", label: "每个 cron 任务只需一行集成" },
       { stat: "∞", label: "任务数不限，无按任务收费" },
     ],
@@ -158,7 +158,7 @@ export const homeCopy = {
       {
         name: "Sarah L.",
         role: "独立 SaaS 创始人",
-        text: "Healthchecks.io 能用，但我想要 $9.9 一口价。12 个 cron 任务刚好满足需求。",
+        text: "Healthchecks.io 能用，但我想要 $29 一口价。12 个 cron 任务刚好满足需求。",
       },
       {
         name: "James Wu",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别让 cron 任务静默失败",
-      subtitle: "免费体验 5 个任务 · 之后 $9.9/月不限量监控",
+      subtitle: "免费体验 5 个任务 · 之后 $29/月不限量监控",
       ctaPrimary: "免费创建任务",
       ctaSecondary: "查看定价",
     },

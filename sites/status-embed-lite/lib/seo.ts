@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://status-embed-lite.vercel.app",
     name: "Status Embed Lite",
-    title: "Status Embed Lite — Statuspage embed widget alternative, $9.9/mo",
+    title: "Status Embed Lite — Statuspage embed widget alternative, $29/mo",
     description:
-      "5 free embed widgets. Statuspage costs $299+/mo? $9.9/mo flat: one-line embed, auto incident detection, email subscribers.",
+      "5 free embed widgets. Statuspage costs $299+/mo? $29/mo flat: one-line embed, auto incident detection, email subscribers.",
     keywords: [
       "status embed widget",
       "Statuspage alternative",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://status-embed-lite.vercel.app",
     name: "极简状态页",
-    title: "极简状态页 — Statuspage 嵌入组件平替，$9.9/月",
+    title: "极简状态页 — Statuspage 嵌入组件平替，$29/月",
     description:
-      "免费体验 5 个嵌入组件。Statuspage $299+/月太贵？$9.9/月一口价：一行嵌入、自动事件检测、邮件订阅。",
+      "免费体验 5 个嵌入组件。Statuspage $299+/月太贵？$29/月一口价：一行嵌入、自动事件检测、邮件订阅。",
     keywords: [
       "状态嵌入组件",
       "Statuspage 替代品",

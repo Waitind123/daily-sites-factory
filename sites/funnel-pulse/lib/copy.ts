@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Mixpanel $500/mo? · $9.9/mo flat",
+    badge: "Mixpanel $500/mo? · $29/mo flat",
     title: "Funnel Pulse — funnel analytics for indie hackers",
     subtitle:
-      "See where users drop off, fix the leakiest step, grow MRR. No enterprise onboarding. 5 free funnels, then $9.9/mo.",
+      "See where users drop off, fix the leakiest step, grow MRR. No enterprise onboarding. 5 free funnels, then $29/mo.",
     ctaPrimary: "Create a funnel free",
     ctaPrimaryHref: "/funnels",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free funnels · then $9.9/mo",
+    note: "5 free funnels · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Mixpanel $500+" },
+      { stat: "$29", label: "flat/mo vs Mixpanel $500+" },
       { stat: "1 line", label: "SDK — POST events, done" },
       { stat: "5 min", label: "to find your biggest drop-off" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited funnels and events. No per-MAU pricing like enterprise analytics.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "Solo SaaS founder",
-        text: "Mixpanel wanted $500/mo for funnel analytics. I have 200 users. Funnel Pulse shows me the same drop-off chart for $9.9.",
+        text: "Mixpanel wanted $500/mo for funnel analytics. I have 200 users. Funnel Pulse shows me the same drop-off chart for $29.",
       },
       {
         name: "Mia T.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop losing users in the dark",
-      subtitle: "5 free funnels · then $9.9/mo for unlimited",
+      subtitle: "5 free funnels · then $29/mo for unlimited",
       ctaPrimary: "Create a funnel free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Mixpanel $500/月？ · $9.9/月一口价",
+    badge: "Mixpanel $500/月？ · $29/月一口价",
     title: "Funnel Pulse — 独立开发者漏斗分析",
     subtitle:
-      "看清用户在哪一步流失，修复最大漏洞，提升 MRR。无需企业级接入。免费体验 5 个漏斗，之后 $9.9/月。",
+      "看清用户在哪一步流失，修复最大漏洞，提升 MRR。无需企业级接入。免费体验 5 个漏斗，之后 $29/月。",
     ctaPrimary: "免费创建漏斗",
     ctaPrimaryHref: "/funnels",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Mixpanel 要 $500+" },
+      { stat: "$29", label: "一口价/月，Mixpanel 要 $500+" },
       { stat: "1 行", label: "SDK — POST 事件即可" },
       { stat: "5 分钟", label: "找到最大流失点" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "漏斗与事件不限量，不像企业分析工具按 MAU 收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex K.",
         role: "一人 SaaS 创始人",
-        text: "Mixpanel 漏斗分析要 $500/月，我只有 200 用户。Funnel Pulse $9.9 就能看到同样的流失图。",
+        text: "Mixpanel 漏斗分析要 $500/月，我只有 200 用户。Funnel Pulse $29 就能看到同样的流失图。",
       },
       {
         name: "Mia T.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再盲目丢失用户",
-      subtitle: "免费 5 个漏斗 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个漏斗 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建漏斗",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "One-line event SDK",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free funnels, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "一行事件 SDK",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个漏斗，之后订阅？",

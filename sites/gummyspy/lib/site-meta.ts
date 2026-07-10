@@ -30,8 +30,8 @@ export const siteMeta = {
   ],
   guideHref: "/guide/gummysearch-alternative-indie-hackers",
   joinLabel: {
-    en: "Join · $9.9/mo",
-    zh: "订阅 · $9.9/月",
+    en: "Join · $29/mo",
+    zh: "订阅 · $29/月",
   },
 } as const;
 export type SiteMeta = typeof siteMeta;

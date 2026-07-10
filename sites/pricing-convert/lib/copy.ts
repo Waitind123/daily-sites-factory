@@ -2,15 +2,15 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Hotjar $39+/mo · VWO $198+/mo · we diagnose for $9.9/mo",
+    badge: "Hotjar $39+/mo · VWO $198+/mo · we diagnose for $29/mo",
     title: "Pricing page conversion diagnosis for indie hackers",
     subtitle:
-      "85% of visitors leave /pricing without buying. Paste your URL — get heatmap zones, drop-off analysis, layout fixes, and A/B playbook in 2 minutes. 5 free diagnoses, then $9.9/mo.",
+      "85% of visitors leave /pricing without buying. Paste your URL — get heatmap zones, drop-off analysis, layout fixes, and A/B playbook in 2 minutes. 5 free diagnoses, then $29/mo.",
     ctaPrimary: "Diagnose my pricing page",
     ctaPrimaryHref: "/diagnose",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free diagnoses · then $9.9/mo",
+    note: "5 free diagnoses · then $29/mo",
     stats: [
       { stat: "85%", label: "avg pricing page bounce rate" },
       { stat: "2 min", label: "full conversion audit" },
@@ -74,12 +74,12 @@ export const homeCopy = {
       {
         name: "Jordan P.",
         role: "Bootstrapped dev",
-        text: "No SDK install. Paste URL, get heatmap zones and fixes. $9.9/mo vs enterprise tools that need a sales call.",
+        text: "No SDK install. Paste URL, get heatmap zones and fixes. $29/mo vs enterprise tools that need a sales call.",
       },
     ],
     closing: {
       title: "Stop losing 85% of pricing page visitors",
-      subtitle: "5 free conversion diagnoses · then $9.9/mo unlimited",
+      subtitle: "5 free conversion diagnoses · then $29/mo unlimited",
       ctaPrimary: "Diagnose my pricing page",
       ctaSecondary: "See pricing",
     },
@@ -91,15 +91,15 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Hotjar $39+/月 · VWO $198+/月 · 我们 $9.9/月诊断",
+    badge: "Hotjar $39+/月 · VWO $198+/月 · 我们 $29/月诊断",
     title: "独立开发者的定价页转化诊断",
     subtitle:
-      "85% 访客在 /pricing 未购买就离开。粘贴链接 — 2 分钟获得热力图区域、流失分析、布局修复与 A/B 方案。免费体验 5 次，之后 $9.9/月。",
+      "85% 访客在 /pricing 未购买就离开。粘贴链接 — 2 分钟获得热力图区域、流失分析、布局修复与 A/B 方案。免费体验 5 次，之后 $29/月。",
     ctaPrimary: "诊断我的定价页",
     ctaPrimaryHref: "/diagnose",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 次 · 之后 $9.9/月",
+    note: "免费体验 5 次 · 之后 $29/月",
     stats: [
       { stat: "85%", label: "定价页平均跳出率" },
       { stat: "2 分钟", label: "完整转化审计" },
@@ -163,12 +163,12 @@ export const homeCopy = {
       {
         name: "Jordan P.",
         role: "自举创业者",
-        text: "不用装 SDK。贴链接、拿热力图和修复方案。$9.9/月，不用企业销售演示。",
+        text: "不用装 SDK。贴链接、拿热力图和修复方案。$29/月，不用企业销售演示。",
       },
     ],
     closing: {
       title: "别再流失 85% 的定价页访客",
-      subtitle: "免费 5 次转化诊断 · 之后 $9.9/月 不限次数",
+      subtitle: "免费 5 次转化诊断 · 之后 $29/月 不限次数",
       ctaPrimary: "诊断我的定价页",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "A/B test playbook with lift estimates",
       "Export reports (PDF)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free diagnoses, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "A/B 测试方案（含提升预估）",
       "报告导出（PDF）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 次，之后订阅？",

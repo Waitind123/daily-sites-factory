@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 PandaDoc Alternative for Small Teams — E-Sign & Proposal Guide",
       description:
-        "PandaDoc costs $19–49/user/month. Compare document signing tools for small teams. Find a $9.9/mo flat-rate alternative for proposals, e-signatures, and contracts.",
+        "PandaDoc costs $19–49/user/month. Compare document signing tools for small teams. Find a $29/mo flat-rate alternative for proposals, e-signatures, and contracts.",
     },
     h1: "2026 PandaDoc Alternative for Small Teams: E-Sign & Proposal Guide",
     updated: "Updated June 2026 · 10 min read",
@@ -50,9 +50,9 @@ export const guideCopy = {
             p: "Self-hosted PDF signing. Free if you run your own server. Requires DevOps. Great for privacy-focused teams with engineering capacity.",
           },
           {
-            h3: "Sign Pulse — $9.9/mo flat",
+            h3: "Sign Pulse — $29/mo flat",
             p: "Built for teams who rage-quit PandaDoc per-seat pricing. Unlimited proposals, auto-generated contracts, e-signature collection. No per-user fees.",
-            link: { href: "/join", text: "5 free document actions", suffix: ", then $9.9/mo flat. Cancel anytime." },
+            link: { href: "/join", text: "5 free document actions", suffix: ", then $29/mo flat. Cancel anytime." },
           },
         ],
       },
@@ -88,7 +88,7 @@ export const guideCopy = {
         h2: "The real cost of PandaDoc per-seat pricing",
         paragraphs: [
           "PandaDoc Business at $19/user × 10 seats × 12 = $2,280/year. If you sign 24 contracts/year, that's $95 per signed document just for software.",
-          "Sign Pulse: $9.9/mo × 12 = $118.80/year, unlimited proposals, contracts, and e-signatures. The math favors tools that match your actual usage.",
+          "Sign Pulse: $29/mo × 12 = $118.80/year, unlimited proposals, contracts, and e-signatures. The math favors tools that match your actual usage.",
           "On Hacker News, a founder wrote: \"We switched from PandaDoc to a flat-rate tool and saved $2,000/year. We only needed sign, not the editor.\" That's the pattern — pay for what you use, not what the vendor bundles.",
         ],
         after: [
@@ -98,7 +98,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "Create your first document free",
-      subtitle: "5 free document actions · e-signatures & contracts · $9.9/mo unlimited",
+      subtitle: "5 free document actions · e-signatures & contracts · $29/mo unlimited",
       button: "Start free →",
     },
   },
@@ -106,7 +106,7 @@ export const guideCopy = {
     meta: {
       title: "2026 小团队 PandaDoc 替代品 — 电子签名与提案指南",
       description:
-        "PandaDoc $19–49/席位/月。对比小团队文档签署工具。找到 $9.9/月一口价的提案、电子签名与合同替代品。",
+        "PandaDoc $19–49/席位/月。对比小团队文档签署工具。找到 $29/月一口价的提案、电子签名与合同替代品。",
     },
     h1: "2026 小团队 PandaDoc 替代品：电子签名与提案指南",
     updated: "更新于 2026 年 6 月 · 阅读约 10 分钟",
@@ -151,9 +151,9 @@ export const guideCopy = {
             p: "自托管 PDF 签署。自己跑服务器则免费。需要运维。有工程能力且注重隐私的团队适用。",
           },
           {
-            h3: "极简签署台 — $9.9/月 一口价",
+            h3: "极简签署台 — $29/月 一口价",
             p: "为怒退 PandaDoc 按席位定价的团队打造。提案不限量、自动生成合同、收集电子签名。不按用户收费。",
-            link: { href: "/join", text: "免费体验 5 次文档操作", suffix: "，之后 $9.9/月一口价。随时可取消。" },
+            link: { href: "/join", text: "免费体验 5 次文档操作", suffix: "，之后 $29/月一口价。随时可取消。" },
           },
         ],
       },
@@ -189,7 +189,7 @@ export const guideCopy = {
         h2: "PandaDoc 按席位收费的真实成本",
         paragraphs: [
           "PandaDoc 商业版 $19/席位 × 10 席位 × 12 = $2,280/年。一年签 24 份合同，每份仅软件就 $95。",
-          "极简签署台：$9.9/月 × 12 = $118.80/年，提案、合同与电子签名不限量。数学上更偏向匹配你实际用量的工具。",
+          "极简签署台：$29/月 × 12 = $118.80/年，提案、合同与电子签名不限量。数学上更偏向匹配你实际用量的工具。",
           "Hacker News 上一位创始人写：「我们从 PandaDoc 换到一口价工具，每年省 $2,000。我们只需要签署，不需要编辑器。」这是常见模式 — 为你用的付钱，不为厂商捆绑的功能付钱。",
         ],
         after: [
@@ -199,7 +199,7 @@ export const guideCopy = {
     ],
     cta: {
       title: "免费创建你的第一份文档",
-      subtitle: "免费 5 次 · 电子签名与合同 · $9.9/月不限量",
+      subtitle: "免费 5 次 · 电子签名与合同 · $29/月不限量",
       button: "免费开始 →",
     },
   },

@@ -8,7 +8,7 @@ const siteConfigByLocale = {
   en: {
     url: "https://changelog-hub-henna.vercel.app",
     name: "Indie Changelog",
-    title: "Indie Changelog — Beamer alternative, $9.9/mo",
+    title: "Indie Changelog — Beamer alternative, $29/mo",
     description:
       "5 free tries. Generate changelog pages, embed widgets, status snippets, and RSS. Built for indie hackers after Beamer's $49/mo hike.",
     keywords: [
@@ -26,9 +26,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://changelog-hub-henna.vercel.app",
     name: "Indie Changelog 发布台",
-    title: "Indie Changelog 发布台 — Beamer 平替，$9.9/月",
+    title: "Indie Changelog 发布台 — Beamer 平替，$29/月",
     description:
-      "免费体验 5 次生成 Changelog。Beamer $49/月太贵？$9.9/月发布产品更新日志、嵌入 Widget、状态页和 RSS，专为 indie hacker 设计。",
+      "免费体验 5 次生成 Changelog。Beamer $49/月太贵？$29/月发布产品更新日志、嵌入 Widget、状态页和 RSS，专为 indie hacker 设计。",
     keywords: [
       "changelog",
       "产品更新日志",

@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Zapier too expensive? · $9.9/mo flat",
+    badge: "Zapier too expensive? · $29/mo flat",
     title: "Webhook automation for indie hackers",
     subtitle:
-      "Webhook trigger → HTTP action. Cron schedules included. No per-task fees. 5 free flows, then $9.9/mo.",
+      "Webhook trigger → HTTP action. Cron schedules included. No per-task fees. 5 free flows, then $29/mo.",
     ctaPrimary: "Create a flow free",
     ctaPrimaryHref: "/flows",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free flows · then $9.9/mo",
+    note: "5 free flows · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Zapier $49+" },
+      { stat: "$29", label: "flat/mo vs Zapier $49+" },
       { stat: "∞", label: "runs, no per-task counting" },
       { stat: "2 min", label: "setup: webhook → HTTP POST" },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "Solo SaaS founder",
-        text: "Zapier charged me $49/mo for 3 Zaps. Zapier Pulse does Stripe→Slack + daily cron for $9.9 flat.",
+        text: "Zapier charged me $49/mo for 3 Zaps. Zapier Pulse does Stripe→Slack + daily cron for $29 flat.",
       },
       {
         name: "Elena R.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying per-task automation fees",
-      subtitle: "5 free flows · then $9.9/mo for unlimited webhook + cron automations",
+      subtitle: "5 free flows · then $29/mo for unlimited webhook + cron automations",
       ctaPrimary: "Create a flow free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Zapier 太贵？· $9.9/月一口价",
+    badge: "Zapier 太贵？· $29/月一口价",
     title: "独立开发者的 Webhook 自动化",
     subtitle:
-      "Webhook 触发 → HTTP 转发。含 Cron 定时。不按任务数收费。免费体验 5 条流程，之后 $9.9/月。",
+      "Webhook 触发 → HTTP 转发。含 Cron 定时。不按任务数收费。免费体验 5 条流程，之后 $29/月。",
     ctaPrimary: "免费创建流程",
     ctaPrimaryHref: "/flows",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 条 · 之后 $9.9/月",
+    note: "免费体验 5 条 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Zapier $49+" },
+      { stat: "$29", label: "一口价/月，Zapier $49+" },
       { stat: "∞", label: "运行次数不限，无按任务计费" },
       { stat: "2 分钟", label: "搭建：Webhook → HTTP POST" },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Marcus T.",
         role: "独立 SaaS 创始人",
-        text: "Zapier 3 个 Zap 收我 $49/月。Zapier Pulse Stripe→Slack + 每日 Cron 只要 $9.9 一口价。",
+        text: "Zapier 3 个 Zap 收我 $49/月。Zapier Pulse Stripe→Slack + 每日 Cron 只要 $29 一口价。",
       },
       {
         name: "Elena R.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再为按任务计费的自动化买单",
-      subtitle: "免费体验 5 条流程 · 之后 $9.9/月无限 Webhook + Cron 自动化",
+      subtitle: "免费体验 5 条流程 · 之后 $29/月无限 Webhook + Cron 自动化",
       ctaPrimary: "免费创建流程",
       ctaSecondary: "查看定价",
     },

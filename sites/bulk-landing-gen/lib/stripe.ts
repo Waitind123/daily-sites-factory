@@ -18,16 +18,9 @@ export function getStripe() {
   });
 }
 
-export const PRICE_USD = 990;
+export const PRICE_USD = 2900;
 
 export async function createCheckoutSession(origin: string, payCurrency: "cny" | "usd" = "usd") {
-  if (payCurrency !== "cny") {
-  const polarUrl = await resolvePolarCheckoutUrl(origin, { currency: payCurrency });
-  if (polarUrl) {
-    return { demo: false as const, url: polarUrl };
-  }
-}
-
   const stripe = getStripe();
 
   if (!stripe) {

@@ -5,7 +5,7 @@ export const guideCopy = {
     meta: {
       title: "2026 AI Pricing Page Optimization Guide for Indie Hackers",
       description:
-        "85% of visitors leave your pricing page without buying. Compare Wynter, Evelance, and PriceOptimize. Learn AI copy rewrites, layout diagnosis, and A/B playbook at $9.9/mo.",
+        "85% of visitors leave your pricing page without buying. Compare Wynter, Evelance, and PriceOptimize. Learn AI copy rewrites, layout diagnosis, and A/B playbook at $29/mo.",
     },
     h1: "2026 AI Pricing Page Optimization Guide for Indie Hackers",
     updated: "Updated June 2026 · 14 min read",
@@ -49,7 +49,7 @@ export const guideCopy = {
             p: "Full experimentation platform with A/B testing, multivariate, and personalization. Powerful for funded startups. A non-starter for bootstrapped devs testing one pricing headline.",
           },
           {
-            h3: "PricePulse AI — $9.9/mo flat",
+            h3: "PricePulse AI — $29/mo flat",
             p: "Built for indie hackers: paste your /pricing URL, get AI copy rewrites with rationale, layout diagnosis with severity scores, and A/B playbook with expected lift. 5 free optimizations, no SDK install.",
             link: { href: "/analyze", text: "Optimize my pricing page", suffix: " — five free scans, no credit card." },
           },
@@ -110,14 +110,14 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "try PricePulse AI free",
-          prefix: "Hotjar is built for teams with dedicated UX researchers. If you need heatmap zones, drop-off analysis, and $9.9/mo flat pricing, ",
+          prefix: "Hotjar is built for teams with dedicated UX researchers. If you need heatmap zones, drop-off analysis, and $29/mo flat pricing, ",
           suffix: ". Five free audits, no credit card. Stop guessing — start diagnosing.",
         },
       },
     ],
     cta: {
       title: "Ready to find where your pricing page leaks?",
-      subtitle: "5 free audits · then $9.9/mo for unlimited scans",
+      subtitle: "5 free audits · then $29/mo for unlimited scans",
       button: "Audit my pricing page",
     },
   },
@@ -125,7 +125,7 @@ export const guideCopy = {
     meta: {
       title: "2026 独立开发者定价页转化诊断指南",
       description:
-        "85% 访客离开定价页未购买。对比 Hotjar、Crazy Egg、VWO 定价页优化工具。学习热力图分析、流失修复与 A/B 测试建议，$9.9/月一口价。",
+        "85% 访客离开定价页未购买。对比 Hotjar、Crazy Egg、VWO 定价页优化工具。学习热力图分析、流失修复与 A/B 测试建议，$29/月一口价。",
     },
     h1: "2026 独立开发者定价页转化诊断指南",
     updated: "更新于 2026 年 6 月 · 阅读约 14 分钟",
@@ -169,7 +169,7 @@ export const guideCopy = {
             p: "完整实验平台：A/B、多变量、个性化。资金充裕的创业公司利器。对自举开发者测一个定价标题来说门槛太高。",
           },
           {
-            h3: "PricePulse AI — $9.9/月一口价",
+            h3: "PricePulse AI — $29/月一口价",
             p: "为独立开发者打造：粘贴 /pricing 链接，获取注意力热力图分区、流失漏斗分析与文案级 A/B 建议（含预期提升）。免费 5 次，无需 SDK，无会话回放臃肿功能。",
             link: { href: "/analyze", text: "诊断我的定价页", suffix: " — 免费 5 次，无需信用卡。" },
           },
@@ -228,14 +228,14 @@ export const guideCopy = {
         closingLink: {
           href: "/join",
           label: "免费试用 PricePulse AI",
-          prefix: "Hotjar 面向有专职 UX 研究员的团队。若你需要热力图分区、流失分析与 $9.9/月 一口价，可",
+          prefix: "Hotjar 面向有专职 UX 研究员的团队。若你需要热力图分区、流失分析与 $29/月 一口价，可",
           suffix: "。免费 5 次诊断，无需信用卡。别再猜 — 开始诊断。",
         },
       },
     ],
     cta: {
       title: "准备好找出定价页漏水点了吗？",
-      subtitle: "免费 5 次诊断 · 之后 $9.9/月 不限次数",
+      subtitle: "免费 5 次诊断 · 之后 $29/月 不限次数",
       button: "诊断我的定价页",
     },
   },

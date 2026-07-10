@@ -2,17 +2,17 @@ import type { Locale } from "./i18n-shared";
 
 export const homeCopy = {
   en: {
-    badge: "Typeform 10 responses/mo? · $9.9/mo flat",
+    badge: "Typeform 10 responses/mo? · $29/mo flat",
     title: "Forms that convert — without the Typeform tax",
     subtitle:
-      "One question at a time, drop-off analytics, embed anywhere. 5 free forms, then $9.9/mo unlimited responses.",
+      "One question at a time, drop-off analytics, embed anywhere. 5 free forms, then $29/mo unlimited responses.",
     ctaPrimary: "Create a form free",
     ctaPrimaryHref: "/forms",
-    ctaSecondary: "Subscribe · $9.9/mo",
+    ctaSecondary: "Subscribe · $29/mo",
     ctaSecondaryHref: "/join",
-    note: "5 free forms · then $9.9/mo",
+    note: "5 free forms · then $29/mo",
     stats: [
-      { stat: "$9.9", label: "flat/mo vs Typeform $39+" },
+      { stat: "$29", label: "flat/mo vs Typeform $39+" },
       { stat: "∞", label: "responses, no per-submission cap" },
       { stat: "3 min", label: "to launch your first form" },
     ],
@@ -55,7 +55,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "Flat $9.9/mo",
+        title: "Flat $29/mo",
         desc: "Unlimited forms and responses. No per-response fees like Typeform Basic $39/mo.",
       },
     ],
@@ -64,7 +64,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "Solo founder",
-        text: "Typeform capped me at 10 responses on day one. Form Pulse gave me unlimited for $9.9/mo.",
+        text: "Typeform capped me at 10 responses on day one. Form Pulse gave me unlimited for $29/mo.",
       },
       {
         name: "Priya S.",
@@ -79,7 +79,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "Stop paying per response",
-      subtitle: "5 free forms · then $9.9/mo for unlimited",
+      subtitle: "5 free forms · then $29/mo for unlimited",
       ctaPrimary: "Create a form free",
       ctaSecondary: "View pricing",
     },
@@ -91,17 +91,17 @@ export const homeCopy = {
     },
   },
   zh: {
-    badge: "Typeform 仅 10 条/月？· $9.9/月一口价",
+    badge: "Typeform 仅 10 条/月？· $29/月一口价",
     title: "高转化表单 — 不用交 Typeform 税",
     subtitle:
-      "逐题展示、放弃率分析、随处嵌入。免费体验 5 个表单，之后 $9.9/月无限回复。",
+      "逐题展示、放弃率分析、随处嵌入。免费体验 5 个表单，之后 $29/月无限回复。",
     ctaPrimary: "免费创建表单",
     ctaPrimaryHref: "/forms",
-    ctaSecondary: "订阅 · $9.9/月",
+    ctaSecondary: "订阅 · $29/月",
     ctaSecondaryHref: "/join",
-    note: "免费体验 5 个 · 之后 $9.9/月",
+    note: "免费体验 5 个 · 之后 $29/月",
     stats: [
-      { stat: "$9.9", label: "一口价/月，Typeform 要 $39+" },
+      { stat: "$29", label: "一口价/月，Typeform 要 $39+" },
       { stat: "∞", label: "回复不限量，无按条收费" },
       { stat: "3 分钟", label: "上线第一个表单" },
     ],
@@ -144,7 +144,7 @@ export const homeCopy = {
       },
       {
         icon: "💰",
-        title: "$9.9/月 一口价",
+        title: "$29/月 一口价",
         desc: "表单与回复不限量，不像 Typeform 基础版 $39/月按条收费。",
       },
     ],
@@ -153,7 +153,7 @@ export const homeCopy = {
       {
         name: "Alex M.",
         role: "一人创始人",
-        text: "第一天 Typeform 就卡在 10 条回复上限。极简表单 $9.9/月无限用。",
+        text: "第一天 Typeform 就卡在 10 条回复上限。极简表单 $29/月无限用。",
       },
       {
         name: "Priya S.",
@@ -168,7 +168,7 @@ export const homeCopy = {
     ],
     closing: {
       title: "别再按回复数付费",
-      subtitle: "免费 5 个表单 · 之后 $9.9/月 不限量",
+      subtitle: "免费 5 个表单 · 之后 $29/月 不限量",
       ctaPrimary: "免费创建表单",
       ctaSecondary: "查看定价",
     },
@@ -197,7 +197,7 @@ export const joinCopy = {
       "Share link + iframe embed",
       "Custom branding (no badge)",
     ],
-    subscribe: "Subscribe · $9.9/mo",
+    subscribe: "Subscribe · $29/mo",
     demoNote: "Demo mode: no payment keys configured — checkout simulates success",
     checkoutNote: "Stripe / Polar secure checkout · credit cards accepted",
     whyTitle: "Why 5 free forms, then subscribe?",
@@ -223,7 +223,7 @@ export const joinCopy = {
       "分享链接 + iframe 嵌入",
       "自定义品牌（无角标）",
     ],
-    subscribe: "订阅 · $9.9/月",
+    subscribe: "订阅 · $29/月",
     demoNote: "演示模式：未配置支付密钥，结账将模拟成功",
     checkoutNote: "Stripe / Polar 安全结账 · 支持信用卡",
     whyTitle: "为什么免费 5 个表单，之后订阅？",

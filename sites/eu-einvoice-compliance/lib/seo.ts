@@ -8,9 +8,9 @@ const siteConfigByLocale = {
   en: {
     url: "https://eu-einvoice-compliance.vercel.app",
     name: "EU E-Invoice Compliance",
-    title: "EU E-Invoice Compliance — UBL 2.1 KSeF-ready invoices, $9.9/mo",
+    title: "EU E-Invoice Compliance — UBL 2.1 KSeF-ready invoices, $29/mo",
     description:
-      "Poland e-invoice mandatory April 2026. Generate EN16931 UBL XML, validate VAT fields, multi-currency export. 5 free invoices, then $9.9/mo flat.",
+      "Poland e-invoice mandatory April 2026. Generate EN16931 UBL XML, validate VAT fields, multi-currency export. 5 free invoices, then $29/mo flat.",
     keywords: [
       "EU e-invoice",
       "UBL 2.1 invoice generator",
@@ -25,9 +25,9 @@ const siteConfigByLocale = {
   zh: {
     url: "https://eu-einvoice-compliance.vercel.app",
     name: "欧盟电子发票合规",
-    title: "欧盟电子发票合规 — UBL 2.1 KSeF 就绪发票，$9.9/月",
+    title: "欧盟电子发票合规 — UBL 2.1 KSeF 就绪发票，$29/月",
     description:
-      "波兰 2026 年 4 月起强制电子发票。生成 EN16931 UBL XML、校验增值税字段、多币种导出。免费体验 5 张，之后 $9.9/月一口价。",
+      "波兰 2026 年 4 月起强制电子发票。生成 EN16931 UBL XML、校验增值税字段、多币种导出。免费体验 5 张，之后 $29/月一口价。",
     keywords: [
       "欧盟电子发票",
       "UBL 2.1 发票生成",

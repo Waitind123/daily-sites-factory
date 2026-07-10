@@ -1,6 +1,6 @@
 # Status Embed Lite
 
-极简状态页 — Statuspage 嵌入组件平替，独立开发者 $9.9/月。
+极简状态页 — Statuspage 嵌入组件平替，独立开发者 $29/月。
 
 - 一行 iframe 嵌入页脚/文档
 - uptime 心跳自动事件检测
