@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:34:38.181Z",
+  "updatedAt": "2026-07-10T07:35:04.423Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8769,11 +8769,49 @@
           "visitorHits": {
             "e97a234c-4b8c-49be-8f88-b717e998880d": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "69b778a8-85cd-478e-a420-0f3a913cfdce"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "69b778a8-85cd-478e-a420-0f3a913cfdce": 1
+          }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 15,
+        "pv": 18,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8792,7 +8830,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "e97a234c-4b8c-49be-8f88-b717e998880d"
+        "e97a234c-4b8c-49be-8f88-b717e998880d",
+        "69b778a8-85cd-478e-a420-0f3a913cfdce"
       ]
     },
     "testimonial-wall": {
@@ -14374,6 +14413,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "69b778a8-85cd-478e-a420-0f3a913cfdce",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-07-10T07:35:02.915Z",
+      "lastSeen": "2026-07-10T07:35:02.915Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "04a9ac7f-068b-4626-b521-68128f019e1e",
       "siteId": "reddit-pulse",
