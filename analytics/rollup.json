@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:52:00.798Z",
+  "updatedAt": "2026-07-10T07:52:07.111Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12718,11 +12718,49 @@
             "b4a2a116-f3ae-41ac-a7da-52f9ed4c888a": 1,
             "e35a39ab-9bb0-46b5-8043-b434e3bf3ba5": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "44f53c78-8cba-4fa8-8e9d-be96e97d4670"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "44f53c78-8cba-4fa8-8e9d-be96e97d4670": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 5,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12739,7 +12777,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:47.604Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "44f53c78-8cba-4fa8-8e9d-be96e97d4670"
+      ]
     },
     "churn-reason-pulse": {
       "url": "https://churn-reason-pulse.vercel.app",
@@ -15160,6 +15201,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "44f53c78-8cba-4fa8-8e9d-be96e97d4670",
+      "siteId": "freelance-local-kit",
+      "firstSeen": "2026-07-10T07:52:06.915Z",
+      "lastSeen": "2026-07-10T07:52:06.915Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5552746e-737d-4a20-acbe-4ee3cf25909c",
       "siteId": "wcag-alt-text",
