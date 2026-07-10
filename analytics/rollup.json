@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:16:58.643Z",
+  "updatedAt": "2026-07-10T07:19:42.421Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1875,11 +1875,49 @@
           "visitorHits": {
             "f241954d-81b4-437f-a02a-acbe54c924cc": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "2f445e8d-c90e-409c-b2f7-1686da512f4c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "2f445e8d-c90e-409c-b2f7-1686da512f4c": 1
+          }
         }
       },
       "totals": {
-        "pv": 31,
-        "uv": 21,
+        "pv": 32,
+        "uv": 22,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1898,7 +1936,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "f241954d-81b4-437f-a02a-acbe54c924cc"
+        "f241954d-81b4-437f-a02a-acbe54c924cc",
+        "2f445e8d-c90e-409c-b2f7-1686da512f4c"
       ]
     },
     "coworking-pass": {
@@ -13546,6 +13585,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2f445e8d-c90e-409c-b2f7-1686da512f4c",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-07-10T07:19:42.214Z",
+      "lastSeen": "2026-07-10T07:19:42.214Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "30d2a85b-773f-48f3-9156-850b70b77b4f",
       "siteId": "docsend-pulse",
