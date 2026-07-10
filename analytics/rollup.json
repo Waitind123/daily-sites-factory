@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T10:28:24.094Z",
+  "updatedAt": "2026-07-10T10:28:44.232Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7870,51 +7870,54 @@
           }
         },
         "2026-07-10": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "2f417dbe-6eb4-45e7-ac4b-138ea2ea8a08",
-            "063e4270-97ad-46df-a944-3502a45a75dd"
+            "063e4270-97ad-46df-a944-3502a45a75dd",
+            "39f84f22-a0ad-4cf4-8e3c-49d54bcc5cd0"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 2,
+              "/": 3,
               "/join": 1
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
-              "zh": 3
+              "zh": 4
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 4
             },
             "utmSources": {},
             "hours": {
               "14": 2,
-              "15": 1
+              "15": 1,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "2f417dbe-6eb4-45e7-ac4b-138ea2ea8a08": 2,
-            "063e4270-97ad-46df-a944-3502a45a75dd": 1
+            "063e4270-97ad-46df-a944-3502a45a75dd": 1,
+            "39f84f22-a0ad-4cf4-8e3c-49d54bcc5cd0": 1
           }
         }
       },
       "totals": {
-        "pv": 33,
-        "uv": 25,
+        "pv": 34,
+        "uv": 26,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7935,7 +7938,8 @@
       "knownVisitors": [
         "0ac2c30b-52d3-4278-9fb5-3c11c7003682",
         "2f417dbe-6eb4-45e7-ac4b-138ea2ea8a08",
-        "063e4270-97ad-46df-a944-3502a45a75dd"
+        "063e4270-97ad-46df-a944-3502a45a75dd",
+        "39f84f22-a0ad-4cf4-8e3c-49d54bcc5cd0"
       ]
     },
     "seo-rank-tracker": {
@@ -15287,6 +15291,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "39f84f22-a0ad-4cf4-8e3c-49d54bcc5cd0",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-07-10T10:28:43.940Z",
+      "lastSeen": "2026-07-10T10:28:43.940Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d62408cb-c021-4d5d-b372-fe5cc10ddbf8",
       "siteId": "coworking-finder",
