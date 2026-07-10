@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:32:24.114Z",
+  "updatedAt": "2026-07-10T07:33:36.775Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13653,11 +13653,49 @@
           "visitorHits": {
             "5982f0ac-5d1e-41f7-8aec-f1d8ce6e4210": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "64bd76be-ecd1-4439-b70a-c7239278c220"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "64bd76be-ecd1-4439-b70a-c7239278c220": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13674,7 +13712,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:05.719Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "64bd76be-ecd1-4439-b70a-c7239278c220"
+      ]
     },
     "gdpr-pulse": {
       "url": "https://gdpr-pulse.vercel.app",
@@ -14212,6 +14253,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "64bd76be-ecd1-4439-b70a-c7239278c220",
+      "siteId": "reddit-radar",
+      "firstSeen": "2026-07-10T07:33:36.524Z",
+      "lastSeen": "2026-07-10T07:33:36.524Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9",
       "siteId": "habit-tracker",
