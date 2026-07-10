@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:19:50.364Z",
+  "updatedAt": "2026-07-10T07:20:02.606Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1162,11 +1162,49 @@
             "43d70ed2-3b34-4db2-8110-eb458baf9e48": 1,
             "1f1ebc3c-6154-4ac3-81fb-cf120f93e729": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9cbcdec9-8c3a-4258-a3f3-f4d3b9531db6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9cbcdec9-8c3a-4258-a3f3-f4d3b9531db6": 1
+          }
         }
       },
       "totals": {
-        "pv": 14,
-        "uv": 13,
+        "pv": 15,
+        "uv": 14,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1183,7 +1221,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:38.556Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9cbcdec9-8c3a-4258-a3f3-f4d3b9531db6"
+      ]
     },
     "churn-pulse": {
       "url": "https://churn-pulse-pi.vercel.app",
@@ -13626,6 +13667,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9cbcdec9-8c3a-4258-a3f3-f4d3b9531db6",
+      "siteId": "changelog-hub",
+      "firstSeen": "2026-07-10T07:20:02.048Z",
+      "lastSeen": "2026-07-10T07:20:02.048Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8fe70896-0476-4e48-a8a0-85265281990e",
       "siteId": "pricing-intel",
