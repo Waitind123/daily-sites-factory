@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:34:36.826Z",
+  "updatedAt": "2026-07-10T07:34:38.181Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7242,11 +7242,49 @@
           "visitorHits": {
             "59adc274-4e42-4e7f-b511-fa6d2d84a06c": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "04a9ac7f-068b-4626-b521-68128f019e1e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/mine": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "04a9ac7f-068b-4626-b521-68128f019e1e": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 5,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7263,7 +7301,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:05.163Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "04a9ac7f-068b-4626-b521-68128f019e1e"
+      ]
     },
     "reddit-watch": {
       "url": "https://reddit-watch-rho.vercel.app",
@@ -14333,6 +14374,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "04a9ac7f-068b-4626-b521-68128f019e1e",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-07-10T07:34:37.887Z",
+      "lastSeen": "2026-07-10T07:34:37.887Z",
+      "pageviews": 1,
+      "path": "/mine",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "fc6dcfd9-fda0-4145-847a-464a1cbd7f28",
       "siteId": "intercom-pulse",
