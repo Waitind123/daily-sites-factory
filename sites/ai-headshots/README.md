@@ -1,10 +1,11 @@
 # AI 证件照 — 环境变量
 
 ```bash
-# Polar 收款（已配置，$9.9/月）
+# Stripe 全站收款（GitHub Secret STRIPE_SECRET_KEY 自动同步，优先于 Polar）
+# Polar 收款（$9.9/月，无 Stripe 时兜底）
 POLAR_CHECKOUT_URL=https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj
 
-# AI 生成（可选，replicate.com）
+# AI 生成（replicate.com）
 REPLICATE_API_TOKEN=r8_xxx
 ```
 

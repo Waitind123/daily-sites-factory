@@ -2,6 +2,16 @@ name: Stripe 全站接通
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/stripe-bootstrap.yml"
+      - "scripts/sync-vercel-env.mjs"
+      - "scripts/sync-stripe-all-sites.mjs"
+      - "scripts/verify-stripe-checkout.mjs"
+      - "scripts/sites-payment-enabled.json"
+      - "sites/**/lib/stripe.ts"
+      - "sites/**/lib/payments.ts"
 
 permissions:
   contents: read
