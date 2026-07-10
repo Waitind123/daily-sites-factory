@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:14:59.478Z",
+  "updatedAt": "2026-07-10T07:15:04.772Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11837,11 +11837,49 @@
             "3aed15d7-d413-439e-8739-0b84c65388c3": 1,
             "859043f6-a8d0-40af-b9a8-d83f3fe9770f": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c02f955b-558f-4268-acff-259d3f9939d7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c02f955b-558f-4268-acff-259d3f9939d7": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11858,7 +11896,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:31.061Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "c02f955b-558f-4268-acff-259d3f9939d7"
+      ]
     },
     "waitlist-email-verify": {
       "url": "https://waitlist-email-verify.vercel.app",
@@ -13181,6 +13222,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c02f955b-558f-4268-acff-259d3f9939d7",
+      "siteId": "ai-contract-review",
+      "firstSeen": "2026-07-10T07:15:04.259Z",
+      "lastSeen": "2026-07-10T07:15:04.259Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "02b7de32-4fc2-4ecd-afd6-29bfe9694e97",
       "siteId": "book-pulse",
