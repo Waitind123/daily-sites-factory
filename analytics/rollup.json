@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:46:55.184Z",
+  "updatedAt": "2026-07-10T07:48:06.586Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9886,11 +9886,49 @@
             "0a6c04a5-7de0-4500-8ef4-d69fd5214dfb": 1,
             "43886435-942e-43b1-bd99-e4a03fa7f8c5": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "857c7e9c-ac13-465d-9dfa-31dc5d289e54"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "857c7e9c-ac13-465d-9dfa-31dc5d289e54": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 18,
+        "pv": 24,
+        "uv": 19,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9907,7 +9945,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:20.387Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "857c7e9c-ac13-465d-9dfa-31dc5d289e54"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -14913,6 +14954,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "857c7e9c-ac13-465d-9dfa-31dc5d289e54",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-10T07:48:03.885Z",
+      "lastSeen": "2026-07-10T07:48:03.885Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3a178cd6-981a-4eef-abaf-cdd766f74cbc",
       "siteId": "visa-alert",
