@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:33:54.560Z",
+  "updatedAt": "2026-07-10T07:34:35.800Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4960,11 +4960,49 @@
             "3c12dabd-4014-4b5f-98d6-69b2fd8afd68": 2,
             "bfb44802-9a7e-471b-88f0-c375eb765fe7": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fc6dcfd9-fda0-4145-847a-464a1cbd7f28"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fc6dcfd9-fda0-4145-847a-464a1cbd7f28": 1
+          }
         }
       },
       "totals": {
-        "pv": 68,
-        "uv": 47,
+        "pv": 69,
+        "uv": 48,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4984,7 +5022,8 @@
       },
       "knownVisitors": [
         "3c12dabd-4014-4b5f-98d6-69b2fd8afd68",
-        "bfb44802-9a7e-471b-88f0-c375eb765fe7"
+        "bfb44802-9a7e-471b-88f0-c375eb765fe7",
+        "fc6dcfd9-fda0-4145-847a-464a1cbd7f28"
       ]
     },
     "invoice-desk": {
@@ -14294,6 +14333,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fc6dcfd9-fda0-4145-847a-464a1cbd7f28",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-10T07:34:35.626Z",
+      "lastSeen": "2026-07-10T07:34:35.626Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a",
       "siteId": "library-cowork",
