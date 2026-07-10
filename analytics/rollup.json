@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:50:50.430Z",
+  "updatedAt": "2026-07-10T07:51:48.017Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -14307,11 +14307,49 @@
           "visitorHits": {
             "f6fc6580-5e89-431f-99d3-fcfe45dc472f": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7b2be202-754f-4774-8db5-f2d8a305b745"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7b2be202-754f-4774-8db5-f2d8a305b745": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -14328,7 +14366,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:12.977Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7b2be202-754f-4774-8db5-f2d8a305b745"
+      ]
     },
     "reddit-社交监听平替": {
       "url": "",
@@ -15078,6 +15119,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7b2be202-754f-4774-8db5-f2d8a305b745",
+      "siteId": "status-embed-lite",
+      "firstSeen": "2026-07-10T07:51:47.847Z",
+      "lastSeen": "2026-07-10T07:51:47.847Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8ad851b4-3236-4b05-8803-b2aecd7637b3",
       "siteId": "virtual-cowork-room",
