@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:14:44.812Z",
+  "updatedAt": "2026-07-10T07:14:54.387Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5870,11 +5870,49 @@
             "59e46d86-82df-45d9-8625-47e3ccb9fbb3": 1,
             "f619ccc4-861f-4daa-9dd6-57906c10226b": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e06da9d0-0a91-4419-807f-3bf73dd10980"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e06da9d0-0a91-4419-807f-3bf73dd10980": 1
+          }
         }
       },
       "totals": {
-        "pv": 12,
-        "uv": 10,
+        "pv": 13,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5891,7 +5929,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:58.124Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e06da9d0-0a91-4419-807f-3bf73dd10980"
+      ]
     },
     "pain-radar": {
       "url": "https://pain-radar-lyart.vercel.app",
@@ -13099,6 +13140,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e06da9d0-0a91-4419-807f-3bf73dd10980",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-10T07:14:54.151Z",
+      "lastSeen": "2026-07-10T07:14:54.151Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bb463f4d-9e7b-4517-9b5c-56d8ba54738c",
       "siteId": "invoice-desk",
