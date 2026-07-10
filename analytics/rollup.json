@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T18:44:27.451Z",
+  "updatedAt": "2026-07-10T18:57:46.798Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -15259,47 +15259,52 @@
           }
         },
         "2026-07-10": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "30d2a85b-773f-48f3-9156-850b70b77b4f"
+            "30d2a85b-773f-48f3-9156-850b70b77b4f",
+            "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 1,
+              "en": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
+              "2": 1,
               "15": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "30d2a85b-773f-48f3-9156-850b70b77b4f": 1
+            "30d2a85b-773f-48f3-9156-850b70b77b4f": 1,
+            "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15318,11 +15323,23 @@
         "score": 100
       },
       "knownVisitors": [
-        "30d2a85b-773f-48f3-9156-850b70b77b4f"
+        "30d2a85b-773f-48f3-9156-850b70b77b4f",
+        "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f",
+      "siteId": "docsend-pulse",
+      "firstSeen": "2026-07-10T18:57:46.440Z",
+      "lastSeen": "2026-07-10T18:57:46.440Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1783709067185",
       "siteId": "feature-vote",
