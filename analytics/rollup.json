@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:48:11.910Z",
+  "updatedAt": "2026-07-10T07:48:11.607Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8139,7 +8139,7 @@
           }
         },
         "2026-07-10": {
-          "pv": 2,
+          "pv": 1,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -8149,37 +8149,36 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 1
             },
             "paths": {
-              "/join": 1,
-              "/": 1
+              "/join": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "15": 2
+              "15": 1
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 1
+              "returning": 0
             }
           },
           "visitorHits": {
-            "74bde8a5-04b8-4837-b120-5033d2c0faf1": 2
+            "74bde8a5-04b8-4837-b120-5033d2c0faf1": 1
           }
         }
       },
       "totals": {
-        "pv": 7,
+        "pv": 6,
         "uv": 3,
         "trial": 0,
         "checkout": 0,
@@ -13216,11 +13215,49 @@
           "visitorHits": {
             "280e0892-5c00-4783-8f49-bb8dcd24abfd": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "69c58dac-fc87-433d-b04a-a44b8715c0b7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/survey": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "69c58dac-fc87-433d-b04a-a44b8715c0b7": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13237,7 +13274,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:09.201Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "69c58dac-fc87-433d-b04a-a44b8715c0b7"
+      ]
     },
     "ai-contract-review": {
       "url": "https://ai-contract-review-three.vercel.app",
@@ -14997,12 +15037,23 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "69c58dac-fc87-433d-b04a-a44b8715c0b7",
+      "siteId": "scope3-commute-pulse",
+      "firstSeen": "2026-07-10T07:48:11.361Z",
+      "lastSeen": "2026-07-10T07:48:11.361Z",
+      "pageviews": 1,
+      "path": "/survey",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
       "visitorId": "74bde8a5-04b8-4837-b120-5033d2c0faf1",
       "siteId": "sign-pulse",
       "firstSeen": "2026-07-10T07:48:08.452Z",
-      "lastSeen": "2026-07-10T07:48:07.895Z",
-      "pageviews": 2,
-      "path": "/",
+      "lastSeen": "2026-07-10T07:48:08.452Z",
+      "pageviews": 1,
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
