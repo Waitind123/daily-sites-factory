@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:48:12.502Z",
+  "updatedAt": "2026-07-10T07:49:08.855Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13973,11 +13973,49 @@
             "dec3489b-f531-4fce-9ed1-9f12dc81b510": 1,
             "877a833d-142f-4d37-a6f7-d75519a4d0d7": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b8a583bb-6948-41e0-ae3f-22c5bde022c8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b8a583bb-6948-41e0-ae3f-22c5bde022c8": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13994,7 +14032,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:08.584Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b8a583bb-6948-41e0-ae3f-22c5bde022c8"
+      ]
     },
     "social-listen-alt": {
       "url": "https://social-listen-alt.vercel.app",
@@ -14995,6 +15036,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b8a583bb-6948-41e0-ae3f-22c5bde022c8",
+      "siteId": "saas-alt-intel",
+      "firstSeen": "2026-07-10T07:49:08.431Z",
+      "lastSeen": "2026-07-10T07:49:08.431Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "74bde8a5-04b8-4837-b120-5033d2c0faf1",
       "siteId": "sign-pulse",
