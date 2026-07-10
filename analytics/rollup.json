@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:37:15.601Z",
+  "updatedAt": "2026-07-10T07:37:17.118Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8932,11 +8932,49 @@
           "visitorHits": {
             "cf2e761a-6733-4008-8668-c7e087b524de": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0f47deae-5a0c-4b38-a117-5d166668ce01"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0f47deae-5a0c-4b38-a117-5d166668ce01": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8953,7 +8991,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:16.354Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0f47deae-5a0c-4b38-a117-5d166668ce01"
+      ]
     },
     "timezone-planner": {
       "url": "https://timezone-planner-delta.vercel.app",
@@ -9850,49 +9891,11 @@
             "3a1b2a7b-7132-4490-b13a-fc61472b5562": 1,
             "ce7b5531-ce7a-4dbc-9fa5-0b8c1107df65": 1
           }
-        },
-        "2026-07-10": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "2a9e248f-6962-42eb-af12-02627d596139"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "15": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "2a9e248f-6962-42eb-af12-02627d596139": 1
-          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 6,
+        "pv": 7,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9909,10 +9912,7 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:22.665Z",
         "score": 90
-      },
-      "knownVisitors": [
-        "2a9e248f-6962-42eb-af12-02627d596139"
-      ]
+      }
     },
     "wcag-alt-text": {
       "url": "https://wcag-alt-text.vercel.app",
@@ -14496,10 +14496,10 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "2a9e248f-6962-42eb-af12-02627d596139",
-      "siteId": "waitlist-pulse",
-      "firstSeen": "2026-07-10T07:37:15.350Z",
-      "lastSeen": "2026-07-10T07:37:15.350Z",
+      "visitorId": "0f47deae-5a0c-4b38-a117-5d166668ce01",
+      "siteId": "testimonial-wall",
+      "firstSeen": "2026-07-10T07:37:16.897Z",
+      "lastSeen": "2026-07-10T07:37:16.897Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
