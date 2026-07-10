@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:45:00.565Z",
+  "updatedAt": "2026-07-10T07:45:53.008Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13262,11 +13262,49 @@
           "visitorHits": {
             "dcd72f1a-5aa7-46a5-a54d-4d3e481bf5c6": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ea58b24c-a67a-4671-bfa2-e376bc18c23c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ea58b24c-a67a-4671-bfa2-e376bc18c23c": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13283,7 +13321,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:22.176Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "ea58b24c-a67a-4671-bfa2-e376bc18c23c"
+      ]
     },
     "应用商店差评挖痛点": {
       "url": "",
@@ -14831,6 +14872,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ea58b24c-a67a-4671-bfa2-e376bc18c23c",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-10T07:45:52.893Z",
+      "lastSeen": "2026-07-10T07:45:52.893Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f7217902-10d4-4e92-b961-b54e2d3eb5b9",
       "siteId": "startup-ideas",
