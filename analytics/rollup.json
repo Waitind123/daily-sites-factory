@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:06.408Z",
+  "updatedAt": "2026-07-10T07:15:08.055Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2149,11 +2149,49 @@
             "6e0317b3-26d4-4c46-bd6e-0d48076f4b9c": 1,
             "967d8c3a-7ac1-4379-9138-d22183aaad17": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "86a110aa-df9c-4071-88e5-59f8305de1b4"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "86a110aa-df9c-4071-88e5-59f8305de1b4": 1
+          }
         }
       },
       "totals": {
-        "pv": 16,
-        "uv": 15,
+        "pv": 17,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2170,7 +2208,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:42.453Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "86a110aa-df9c-4071-88e5-59f8305de1b4"
+      ]
     },
     "desk-pulse": {
       "url": "https://desk-pulse.vercel.app",
@@ -13263,6 +13304,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "86a110aa-df9c-4071-88e5-59f8305de1b4",
+      "siteId": "cron-heartbeat",
+      "firstSeen": "2026-07-10T07:15:07.895Z",
+      "lastSeen": "2026-07-10T07:15:07.895Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d2c98993-866d-425c-b30b-390a0f9c19c6",
       "siteId": "meetup-host",
