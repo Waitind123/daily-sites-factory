@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:21:11.925Z",
+  "updatedAt": "2026-07-10T07:23:11.217Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3616,11 +3616,49 @@
             "68ffe129-185e-43ea-9c88-b64a4261797b": 2,
             "0e6d51ec-409e-4ad9-93e1-e491caec6b36": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "37dab8cd-c49b-45cd-a887-503f5b64d3d8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "37dab8cd-c49b-45cd-a887-503f5b64d3d8": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 17,
+        "pv": 24,
+        "uv": 18,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3637,7 +3675,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:48.208Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "37dab8cd-c49b-45cd-a887-503f5b64d3d8"
+      ]
     },
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
@@ -13708,6 +13749,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "37dab8cd-c49b-45cd-a887-503f5b64d3d8",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-07-10T07:23:10.965Z",
+      "lastSeen": "2026-07-10T07:23:10.965Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a6632515-408a-463a-9b4a-e75d3a10189e",
       "siteId": "appgap-pulse",
