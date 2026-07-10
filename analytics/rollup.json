@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:42:51.324Z",
+  "updatedAt": "2026-07-10T07:43:43.633Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9144,11 +9144,49 @@
           "visitorHits": {
             "96863ca9-2df1-4012-8424-e99ee7226501": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "eaf5c325-cccd-4b0b-a99f-ba70e1ef2f6d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "eaf5c325-cccd-4b0b-a99f-ba70e1ef2f6d": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9165,7 +9203,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:16.925Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "eaf5c325-cccd-4b0b-a99f-ba70e1ef2f6d"
+      ]
     },
     "tracetics-lite": {
       "url": "https://tracetics-lite.vercel.app",
@@ -14707,6 +14748,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "eaf5c325-cccd-4b0b-a99f-ba70e1ef2f6d",
+      "siteId": "timezone-planner",
+      "firstSeen": "2026-07-10T07:43:43.467Z",
+      "lastSeen": "2026-07-10T07:43:43.467Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9633c858-0c82-45a7-a920-4d869588403a",
       "siteId": "visa-live",
