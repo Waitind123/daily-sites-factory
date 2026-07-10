@@ -16,11 +16,13 @@ async function checkoutRedirect(request: NextRequest, currency: "cny" | "usd") {
 export async function POST(request: NextRequest) {
   try {
     const form = await request.formData().catch(() => null);
-    const body = form
-      ? { currency: form.get("currency") as string }
-      : await request.json().catch(() => ({}));
-
-    const currency = body.currency === "usd" ? "usd" : "cny";
+    let currency: "cny" | "usd" = "cny";
+    if (form?.get("currency") === "usd") {
+      currency = "usd";
+    } else if (!form) {
+      const body = await request.json().catch(() => ({}));
+      currency = body.currency === "usd" ? "usd" : "cny";
+    }
     return await checkoutRedirect(request, currency);
   } catch (error) {
     console.error("Checkout error:", error);
@@ -40,9 +42,10 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  const { getPricing } = await import("@/lib/payments");
-  getPricing();
+  const pricing = getPricing();
   return NextResponse.json({
     status: "ok",
+    message: "AI 证件照支付接口",
+    ...pricing,
   });
 }
