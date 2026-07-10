@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:27:49.212Z",
+  "updatedAt": "2026-07-10T07:29:40.962Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6058,11 +6058,49 @@
           "visitorHits": {
             "22b8aa6d-9a3b-4c83-93a7-488a39dde7e2": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "60af26e8-34d3-47f5-8d66-bcdd5670e8e3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "60af26e8-34d3-47f5-8d66-bcdd5670e8e3": 1
+          }
         }
       },
       "totals": {
-        "pv": 21,
-        "uv": 19,
+        "pv": 22,
+        "uv": 20,
         "trial": 0,
         "checkout": 1,
         "purchase": 0
@@ -6079,7 +6117,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:57.016Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "60af26e8-34d3-47f5-8d66-bcdd5670e8e3"
+      ]
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
@@ -14004,6 +14045,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "60af26e8-34d3-47f5-8d66-bcdd5670e8e3",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-07-10T07:29:36.195Z",
+      "lastSeen": "2026-07-10T07:29:36.195Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c6319bed-1e6b-4423-b4f6-b95c5b16d372",
       "siteId": "reddit-lead-pulse",
