@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:43:44.080Z",
+  "updatedAt": "2026-07-10T07:44:28.635Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8399,11 +8399,49 @@
             "135e5069-3a44-4881-89af-b53fd9854f5c": 1,
             "12a5503c-9b8d-4cc8-a7b2-b7bf11146bd5": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "13b75c8e-9109-4037-98cd-33f168b42859"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "13b75c8e-9109-4037-98cd-33f168b42859": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8420,7 +8458,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:14.077Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "13b75c8e-9109-4037-98cd-33f168b42859"
+      ]
     },
     "stripe-pulse": {
       "url": "https://stripe-pulse-two.vercel.app",
@@ -14748,6 +14789,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "13b75c8e-9109-4037-98cd-33f168b42859",
+      "siteId": "status-pulse",
+      "firstSeen": "2026-07-10T07:44:28.464Z",
+      "lastSeen": "2026-07-10T07:44:28.464Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "eaf5c325-cccd-4b0b-a99f-ba70e1ef2f6d",
       "siteId": "timezone-planner",
