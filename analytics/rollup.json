@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:16:23.472Z",
+  "updatedAt": "2026-07-10T07:16:45.487Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3667,11 +3667,49 @@
             "1d54c7e5-9882-4235-aa37-df682db8af6e": 1,
             "5c6b4955-02de-48ac-9d9a-6aca4f59a13c": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "2ac38349-008c-45c4-a8ea-fef22b2b0f67"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "2ac38349-008c-45c4-a8ea-fef22b2b0f67": 1
+          }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 7,
+        "pv": 11,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3688,7 +3726,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:48.751Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "2ac38349-008c-45c4-a8ea-fef22b2b0f67"
+      ]
     },
     "guilt-free-habits": {
       "url": "https://guilt-free-habits.vercel.app",
@@ -13464,6 +13505,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2ac38349-008c-45c4-a8ea-fef22b2b0f67",
+      "siteId": "funnel-pulse",
+      "firstSeen": "2026-07-10T07:16:45.042Z",
+      "lastSeen": "2026-07-10T07:16:45.042Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "929f5c9e-0779-4663-8b4e-f216cfa4ce7f",
       "siteId": "newsletter-stack",
