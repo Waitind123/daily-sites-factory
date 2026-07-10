@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:29:40.962Z",
+  "updatedAt": "2026-07-10T07:29:44.659Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13874,11 +13874,49 @@
             "ca9a0871-f0d3-4e62-8f65-ab86eeabb6af": 2,
             "25ae837d-d348-4cf4-9c75-ee22d9d042db": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6dce0e7c-a22b-4e5a-81f4-68c7087a9d36"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6dce0e7c-a22b-4e5a-81f4-68c7087a9d36": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 3,
+        "pv": 6,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13895,7 +13933,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:01.656Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "6dce0e7c-a22b-4e5a-81f4-68c7087a9d36"
+      ]
     },
     "docsend-pulse": {
       "url": "https://docsend-pulse.vercel.app",
@@ -14045,6 +14086,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6dce0e7c-a22b-4e5a-81f4-68c7087a9d36",
+      "siteId": "pricing-heatmap",
+      "firstSeen": "2026-07-10T07:29:44.486Z",
+      "lastSeen": "2026-07-10T07:29:44.486Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "60af26e8-34d3-47f5-8d66-bcdd5670e8e3",
       "siteId": "nomad-cities",
