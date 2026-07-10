@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:14:54.387Z",
+  "updatedAt": "2026-07-10T07:14:57.153Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5870,49 +5870,11 @@
             "59e46d86-82df-45d9-8625-47e3ccb9fbb3": 1,
             "f619ccc4-861f-4daa-9dd6-57906c10226b": 1
           }
-        },
-        "2026-07-10": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "e06da9d0-0a91-4419-807f-3bf73dd10980"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/join": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "15": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "e06da9d0-0a91-4419-807f-3bf73dd10980": 1
-          }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 11,
+        "pv": 12,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5929,10 +5891,7 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:58.124Z",
         "score": 100
-      },
-      "knownVisitors": [
-        "e06da9d0-0a91-4419-807f-3bf73dd10980"
-      ]
+      }
     },
     "pain-radar": {
       "url": "https://pain-radar-lyart.vercel.app",
@@ -5994,11 +5953,49 @@
             "a0dbdfdd-bbaa-4530-8cca-e23db1bb3261": 1,
             "3060ac92-06da-4293-ab16-a64a9f67dcac": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a3450233-06c3-4743-b57d-804fc12f85b8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a3450233-06c3-4743-b57d-804fc12f85b8": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6015,7 +6012,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:58.650Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a3450233-06c3-4743-b57d-804fc12f85b8"
+      ]
     },
     "price-tracker": {
       "url": "https://price-tracker-seven-tan.vercel.app",
@@ -13141,12 +13141,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "e06da9d0-0a91-4419-807f-3bf73dd10980",
-      "siteId": "page-split",
-      "firstSeen": "2026-07-10T07:14:54.151Z",
-      "lastSeen": "2026-07-10T07:14:54.151Z",
+      "visitorId": "a3450233-06c3-4743-b57d-804fc12f85b8",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-07-10T07:14:56.986Z",
+      "lastSeen": "2026-07-10T07:14:56.986Z",
       "pageviews": 1,
-      "path": "/join",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
