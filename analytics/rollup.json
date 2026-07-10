@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:16:17.522Z",
+  "updatedAt": "2026-07-10T07:16:23.472Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5457,11 +5457,49 @@
             "cce37053-0c4f-4829-80db-d7878c04c47a": 1,
             "0ecf57ab-eec4-4888-adec-3d6489aa27df": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "929f5c9e-0779-4663-8b4e-f216cfa4ce7f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "929f5c9e-0779-4663-8b4e-f216cfa4ce7f": 1
+          }
         }
       },
       "totals": {
-        "pv": 18,
-        "uv": 14,
+        "pv": 19,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5478,7 +5516,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:56.390Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "929f5c9e-0779-4663-8b4e-f216cfa4ce7f"
+      ]
     },
     "nomad-cities": {
       "url": "https://nomad-cities.vercel.app",
@@ -13423,6 +13464,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "929f5c9e-0779-4663-8b4e-f216cfa4ce7f",
+      "siteId": "newsletter-stack",
+      "firstSeen": "2026-07-10T07:16:23.270Z",
+      "lastSeen": "2026-07-10T07:16:23.270Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9babef48-372e-43c2-a394-b26daf9e4156",
       "siteId": "link-pulse",
