@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:39:29.576Z",
+  "updatedAt": "2026-07-10T07:40:42.887Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13704,11 +13704,49 @@
           "visitorHits": {
             "67c65c97-b0da-4f9d-9ce4-8f8907c95b53": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f5e3c6d5-ce85-4f98-8144-244a501e6c28"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f5e3c6d5-ce85-4f98-8144-244a501e6c28": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13725,7 +13763,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:11.793Z",
         "score": 80
-      }
+      },
+      "knownVisitors": [
+        "f5e3c6d5-ce85-4f98-8144-244a501e6c28"
+      ]
     },
     "status-embed-lite": {
       "url": "https://status-embed-lite.vercel.app",
@@ -14579,6 +14620,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f5e3c6d5-ce85-4f98-8144-244a501e6c28",
+      "siteId": "social-listen-alt",
+      "firstSeen": "2026-07-10T07:40:42.571Z",
+      "lastSeen": "2026-07-10T07:40:42.571Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "7b99a459-bce8-49ce-90e3-1161ab28656c",
       "siteId": "sec-quest-pulse",
