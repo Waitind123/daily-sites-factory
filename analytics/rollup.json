@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:48:06.676Z",
+  "updatedAt": "2026-07-10T07:48:11.910Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8137,11 +8137,50 @@
             "6e035765-20a0-4b72-ad2a-25994a4039d2": 2,
             "df863ee9-56a1-4002-a393-94c8419eba72": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 2,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "74bde8a5-04b8-4837-b120-5033d2c0faf1"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 2
+            },
+            "paths": {
+              "/join": 1,
+              "/": 1
+            },
+            "devices": {
+              "desktop": 2
+            },
+            "locales": {
+              "zh": 2
+            },
+            "timezones": {
+              "UTC": 2
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 2
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 1
+            }
+          },
+          "visitorHits": {
+            "74bde8a5-04b8-4837-b120-5033d2c0faf1": 2
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 2,
+        "pv": 7,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8158,7 +8197,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:11.185Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "74bde8a5-04b8-4837-b120-5033d2c0faf1"
+      ]
     },
     "startup-ideas": {
       "url": "https://startup-ideas-five.vercel.app",
@@ -9886,11 +9928,49 @@
             "0a6c04a5-7de0-4500-8ef4-d69fd5214dfb": 1,
             "43886435-942e-43b1-bd99-e4a03fa7f8c5": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "857c7e9c-ac13-465d-9dfa-31dc5d289e54"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "857c7e9c-ac13-465d-9dfa-31dc5d289e54": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 18,
+        "pv": 24,
+        "uv": 19,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9907,7 +9987,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:20.387Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "857c7e9c-ac13-465d-9dfa-31dc5d289e54"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -13029,49 +13112,11 @@
           "visitorHits": {
             "5388364a-bdb5-4704-b5db-5587b825563e": 1
           }
-        },
-        "2026-07-10": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "80402143-c574-4490-84cd-9736c50c943a"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "15": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "80402143-c574-4490-84cd-9736c50c943a": 1
-          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13088,10 +13133,7 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:24.393Z",
         "score": 100
-      },
-      "knownVisitors": [
-        "80402143-c574-4490-84cd-9736c50c943a"
-      ]
+      }
     },
     "scope3-commute-pulse": {
       "url": "https://scope3-commute-pulse.vercel.app",
@@ -14955,10 +14997,21 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "80402143-c574-4490-84cd-9736c50c943a",
-      "siteId": "zapier-pulse",
-      "firstSeen": "2026-07-10T07:48:06.520Z",
-      "lastSeen": "2026-07-10T07:48:06.520Z",
+      "visitorId": "74bde8a5-04b8-4837-b120-5033d2c0faf1",
+      "siteId": "sign-pulse",
+      "firstSeen": "2026-07-10T07:48:08.452Z",
+      "lastSeen": "2026-07-10T07:48:07.895Z",
+      "pageviews": 2,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "857c7e9c-ac13-465d-9dfa-31dc5d289e54",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-10T07:48:03.885Z",
+      "lastSeen": "2026-07-10T07:48:03.885Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
