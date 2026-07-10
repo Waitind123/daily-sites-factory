@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:40:58.573Z",
+  "updatedAt": "2026-07-10T07:41:37.760Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8484,11 +8484,49 @@
             "eac1b18e-ada6-48a0-b55e-3ec870f9b985": 1,
             "a61e780a-fad4-4612-9bf9-a84df8de5758": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1e625c20-0a64-4570-9b58-c6615bb16238"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "1e625c20-0a64-4570-9b58-c6615bb16238": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8505,7 +8543,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:14.600Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "1e625c20-0a64-4570-9b58-c6615bb16238"
+      ]
     },
     "team-headshots": {
       "url": "https://team-headshots-phi.vercel.app",
@@ -14625,6 +14666,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1e625c20-0a64-4570-9b58-c6615bb16238",
+      "siteId": "stripe-pulse",
+      "firstSeen": "2026-07-10T07:41:37.542Z",
+      "lastSeen": "2026-07-10T07:41:37.542Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "063e4270-97ad-46df-a944-3502a45a75dd",
       "siteId": "remote-jobs",
