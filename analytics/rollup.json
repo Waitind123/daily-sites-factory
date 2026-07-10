@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:16:46.206Z",
+  "updatedAt": "2026-07-10T07:16:58.266Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13480,11 +13480,49 @@
           "visitorHits": {
             "1f122ec9-a6ee-4ddb-a1b3-4db9c8fe609e": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "30d2a85b-773f-48f3-9156-850b70b77b4f"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "30d2a85b-773f-48f3-9156-850b70b77b4f": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13501,10 +13539,24 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:44.073Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "30d2a85b-773f-48f3-9156-850b70b77b4f"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "30d2a85b-773f-48f3-9156-850b70b77b4f",
+      "siteId": "docsend-pulse",
+      "firstSeen": "2026-07-10T07:16:57.983Z",
+      "lastSeen": "2026-07-10T07:16:57.983Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "2ac38349-008c-45c4-a8ea-fef22b2b0f67",
       "siteId": "funnel-pulse",
