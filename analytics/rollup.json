@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:44:28.635Z",
+  "updatedAt": "2026-07-10T07:44:54.275Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8317,11 +8317,49 @@
             "e98dc1d9-7a01-4f09-9a01-1c5a4e56c178": 1,
             "22fda56b-76f4-41d1-9acf-760e715032ac": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f7217902-10d4-4e92-b961-b54e2d3eb5b9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f7217902-10d4-4e92-b961-b54e2d3eb5b9": 1
+          }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 12,
+        "pv": 20,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8338,7 +8376,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:12.364Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "f7217902-10d4-4e92-b961-b54e2d3eb5b9"
+      ]
     },
     "status-pulse": {
       "url": "https://status-pulse-chi.vercel.app",
@@ -14789,6 +14830,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f7217902-10d4-4e92-b961-b54e2d3eb5b9",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-10T07:44:54.021Z",
+      "lastSeen": "2026-07-10T07:44:54.021Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "13b75c8e-9109-4037-98cd-33f168b42859",
       "siteId": "status-pulse",
