@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:39.310Z",
+  "updatedAt": "2026-07-10T07:15:41.179Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2356,11 +2356,49 @@
           "visitorHits": {
             "fdc6e9d6-48c5-4989-9931-e701a77ee35a": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d838e891-c8da-4d20-8824-d3eec9645841"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d838e891-c8da-4d20-8824-d3eec9645841": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2379,7 +2417,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "fdc6e9d6-48c5-4989-9931-e701a77ee35a"
+        "fdc6e9d6-48c5-4989-9931-e701a77ee35a",
+        "d838e891-c8da-4d20-8824-d3eec9645841"
       ]
     },
     "email-pulse": {
@@ -13345,6 +13384,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d838e891-c8da-4d20-8824-d3eec9645841",
+      "siteId": "docs-pulse",
+      "firstSeen": "2026-07-10T07:15:41.060Z",
+      "lastSeen": "2026-07-10T07:15:41.060Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c39f2c51-9cbd-42da-a220-174ed9a5308c",
       "siteId": "gdpr-pulse",
