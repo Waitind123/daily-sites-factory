@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:30:24.751Z",
+  "updatedAt": "2026-07-10T07:31:23.202Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6871,11 +6871,49 @@
           "visitorHits": {
             "9cd16334-03ed-466d-bea0-a1cb95ca8108": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "eb9a0b74-28b2-4c37-9a2e-7994fe0e6803"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "eb9a0b74-28b2-4c37-9a2e-7994fe0e6803": 1
+          }
         }
       },
       "totals": {
-        "pv": 20,
-        "uv": 13,
+        "pv": 21,
+        "uv": 14,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6892,7 +6930,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:00.401Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "eb9a0b74-28b2-4c37-9a2e-7994fe0e6803"
+      ]
     },
     "pulse-suite": {
       "url": "https://pulse-suite-ochre.vercel.app",
@@ -14130,6 +14171,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "eb9a0b74-28b2-4c37-9a2e-7994fe0e6803",
+      "siteId": "price-tracker",
+      "firstSeen": "2026-07-10T07:31:23.037Z",
+      "lastSeen": "2026-07-10T07:31:23.037Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "cf533905-cb5a-4a0b-a7fa-4c05a0be00d1",
       "siteId": "indie-tools",
