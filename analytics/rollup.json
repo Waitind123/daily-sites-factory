@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:20:02.606Z",
+  "updatedAt": "2026-07-10T07:21:11.023Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12475,11 +12475,49 @@
           "visitorHits": {
             "48047e90-4685-4e1c-b745-04ee1526b8e6": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a6632515-408a-463a-9b4a-e75d3a10189e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a6632515-408a-463a-9b4a-e75d3a10189e": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12496,7 +12534,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:35.314Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a6632515-408a-463a-9b4a-e75d3a10189e"
+      ]
     },
     "reddit-获客线索": {
       "url": "",
@@ -13667,6 +13708,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a6632515-408a-463a-9b4a-e75d3a10189e",
+      "siteId": "appgap-pulse",
+      "firstSeen": "2026-07-10T07:21:10.761Z",
+      "lastSeen": "2026-07-10T07:21:10.761Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9cbcdec9-8c3a-4258-a3f3-f4d3b9531db6",
       "siteId": "changelog-hub",
