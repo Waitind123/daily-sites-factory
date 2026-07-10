@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:26:55.283Z",
+  "updatedAt": "2026-07-10T07:27:49.388Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12901,11 +12901,49 @@
           "visitorHits": {
             "fd4d14ad-f656-47c6-854d-a23738aff00c": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c6319bed-1e6b-4423-b4f6-b95c5b16d372"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c6319bed-1e6b-4423-b4f6-b95c5b16d372": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12922,7 +12960,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:04.074Z",
         "score": 80
-      }
+      },
+      "knownVisitors": [
+        "c6319bed-1e6b-4423-b4f6-b95c5b16d372"
+      ]
     },
     "eu-einvoice-compliance": {
       "url": "https://eu-einvoice-compliance.vercel.app",
@@ -13963,6 +14004,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c6319bed-1e6b-4423-b4f6-b95c5b16d372",
+      "siteId": "reddit-lead-pulse",
+      "firstSeen": "2026-07-10T07:27:49.248Z",
+      "lastSeen": "2026-07-10T07:27:49.248Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a99c8f54-f4e5-4549-bb16-9deb092a95dd",
       "siteId": "ai-waitlist",
