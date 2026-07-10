@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:41.834Z",
+  "updatedAt": "2026-07-10T07:16:15.202Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5054,11 +5054,49 @@
           "visitorHits": {
             "681f8d85-f3c1-4afb-91c6-b5b472e7daa1": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9babef48-372e-43c2-a394-b26daf9e4156"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9babef48-372e-43c2-a394-b26daf9e4156": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5077,7 +5115,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "681f8d85-f3c1-4afb-91c6-b5b472e7daa1"
+        "681f8d85-f3c1-4afb-91c6-b5b472e7daa1",
+        "9babef48-372e-43c2-a394-b26daf9e4156"
       ]
     },
     "meetup-host": {
@@ -13384,6 +13423,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9babef48-372e-43c2-a394-b26daf9e4156",
+      "siteId": "link-pulse",
+      "firstSeen": "2026-07-10T07:16:14.996Z",
+      "lastSeen": "2026-07-10T07:16:14.996Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "d838e891-c8da-4d20-8824-d3eec9645841",
       "siteId": "docs-pulse",
