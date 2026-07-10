@@ -93,6 +93,7 @@ jobs:
         if: matrix.site_id == 'factory-dashboard'
         run: echo "factory-dashboard is internal — skip product quality gate"
 
+
       - name: Install and build
         working-directory: sites/${{ matrix.site_id }}
         run: |
@@ -228,6 +229,22 @@ jobs:
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
 
+      - name: Verify Stripe checkout (payment sites)
+        if: matrix.site_id != 'factory-dashboard'
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_SECRET_KEY" ]; then
+            echo "跳过 Stripe 验证（未配置密钥）"
+            exit 0
+          fi
+          SITE="${{ matrix.site_id }}"
+          if [ ! -f "sites/$SITE/lib/stripe.ts" ] && [ ! -f "sites/$SITE/lib/payments.ts" ]; then
+            exit 0
+          fi
+          sleep 8
+          node scripts/verify-stripe-checkout.mjs "$SITE"
+
       - name: Verify AI generation live (production)
         if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
         env:
@@ -250,3 +267,4 @@ jobs:
           FEISHU_RECEIVE_ID_TYPE: ${{ secrets.FEISHU_RECEIVE_ID_TYPE }}
         run: |
           node scripts/notify-feishu.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
+

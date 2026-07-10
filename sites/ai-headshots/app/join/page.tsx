@@ -41,9 +41,17 @@ export default async function JoinPage() {
             <span className="text-muted">{c.perMonth}</span>
           </div>
           {locale === "zh" ? (
-            <p className="mt-1 text-xs text-muted">或美元 $9.9/月 · Polar 收款</p>
+            <p className="mt-1 text-xs text-muted">
+              {mode === "stripe"
+                ? "Stripe · 信用卡 / 支付宝 / 微信"
+                : "或美元 $9.9/月 · Polar 收款"}
+            </p>
           ) : (
-            <p className="mt-1 text-xs text-muted">Or ¥69/mo in CNY via Alipay / WeChat</p>
+            <p className="mt-1 text-xs text-muted">
+              {mode === "stripe"
+                ? "Stripe · card / Alipay / WeChat"
+                : "Or ¥69/mo in CNY via Alipay / WeChat"}
+            </p>
           )}
           <p className="mt-2 text-sm text-muted">{c.vsPhotoAI}</p>
         </div>
@@ -66,6 +74,12 @@ export default async function JoinPage() {
           />
         </div>
 
+        {mode === "stripe" && (
+          <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
+            ✅ 已连接 Stripe 收款
+          </p>
+        )}
+
         {mode === "polar" && (
           <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
             {c.polarConnected}
@@ -78,7 +92,13 @@ export default async function JoinPage() {
           </p>
         )}
 
-        <p className="mt-4 text-center text-xs text-muted">{c.checkoutNote}</p>
+        <p className="mt-4 text-center text-xs text-muted">
+          {mode === "stripe"
+            ? locale === "zh"
+              ? "支付由 Stripe 处理 · 支持信用卡 / 支付宝 / 微信"
+              : "Powered by Stripe · card / Alipay / WeChat"
+            : c.checkoutNote}
+        </p>
       </div>
 
       <div className="mt-8">

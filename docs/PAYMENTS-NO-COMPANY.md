@@ -35,6 +35,10 @@
 
 **levelsio 建议：** 先只收 **$99/年 USD**，验证有人付费后再考虑人民币。
 
+## Stripe 全站接通（推荐，已注册 Stripe 后）
+
+见 **[docs/STRIPE-SETUP.md](./STRIPE-SETUP.md)** — 只需在 GitHub Secrets 配置 `STRIPE_SECRET_KEY`，运行 **Actions → Stripe 全站接通** 即可自动同步到全部 Vercel 项目。
+
 ## 本站集成方式
 
 `ai-headshots` 的 `/join` 页支持三种 checkout（按优先级）：

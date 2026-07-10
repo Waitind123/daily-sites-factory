@@ -20,7 +20,9 @@
     "health-watch-autofix": "node scripts/health-watch-autofix.mjs",
     "sync-referral-invite": "node scripts/sync-referral-invite.mjs",
     "feishu-inbox": "node scripts/feishu-process-inbox.mjs",
-    "notify-feishu": "node scripts/notify-feishu.mjs"
+    "notify-feishu": "node scripts/notify-feishu.mjs",
+    "sync-stripe": "node scripts/sync-stripe-all-sites.mjs",
+    "verify-stripe": "node scripts/verify-stripe-checkout.mjs"
   },
   "devDependencies": {
     "playwright": "^1.61.1"

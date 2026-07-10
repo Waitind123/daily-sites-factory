@@ -35,11 +35,17 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 成功后终端会输出 **GitHub 仓库地址**，形如：
 `https://github.com/你的用户名/daily-sites-factory`
 
-### 2. Vercel Token — 已配置
+### 2. Vercel Token
 
-已写入本地 `.env.local`（不会提交 Git）。
+在 GitHub 仓库 **Settings → Secrets and variables → Actions** 添加：
 
-在 Cursor Automation 中手动添加同名环境变量：**VERCEL_TOKEN**
+- `VERCEL_TOKEN` — [Vercel Account Tokens](https://vercel.com/account/tokens)
+
+或运行：`bash scripts/setup-github-vercel-secret.sh`
+
+> **不要**把 `VERCEL_TOKEN` 配在 Cursor Automation 环境变量里。部署由 push `main` 触发 GitHub Actions 完成。
+
+本地 `.env.local` 仅供手动调试，不会提交 Git。
 
 ### 4. 飞书通知（部署 URL 推送）
 
@@ -119,20 +125,15 @@ FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
 3. 环境：**Cloud Agent**
 4. 仓库：填入上一步的 GitHub 地址
 5. 分支：`main`
-6. **环境变量**：添加 `VERCEL_TOKEN` = 你的 Token
+6. **Tools**：关闭 **Pull Request** 工具（避免与直推 main 冲突）
 7. **指令**（粘贴）：
 
 ```
 读取并完整执行仓库根目录 AGENT_PROMPT.md 的所有步骤。
-使用 VERCEL_TOKEN 部署到 Vercel 公网。
+build 通过后直接 push 到 main，等待 GitHub Actions 部署，禁止创建 PR。
 ```
 
 参考模板文件：`cursor-automation-prefill.json`
-
-### 4. GitHub Actions Secrets（可选）
-
-在 GitHub 仓库 **Settings → Secrets → Actions** 添加：
-- `VERCEL_TOKEN`
 
 ---
 

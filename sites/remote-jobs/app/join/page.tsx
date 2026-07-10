@@ -45,9 +45,13 @@ export default async function JoinPage() {
           <CheckoutButton label={c.subscribe} />
         </div>
 
-        {demo && (
+        {demo ? (
           <p className="mt-4 text-center text-xs text-amber-600 bg-amber-50 rounded-lg py-2 px-3">
             {c.demoNote}
+          </p>
+        ) : (
+          <p className="mt-4 text-center text-xs text-green-700 bg-green-50 rounded-lg py-2 px-3">
+            ✅ 已连接 Stripe 收款
           </p>
         )}
 

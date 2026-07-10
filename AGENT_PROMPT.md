@@ -115,26 +115,50 @@ npm run verify-visitor-e2e -- http://127.0.0.1:3099 <vertical-id>
 
 全站 PV/UV/SEO/转化看板：`sites/factory-dashboard`（见 `docs/FACTORY-DASHBOARD.md`）。新站部署后运行 `node scripts/sync-analytics-beacon.mjs <id>` 接入埋点。
 
-## 4. 部署公网
+## 4. 提交与部署（唯一路径）
 
-优先顺序：
+**部署只走 GitHub Actions，禁止其他方式。**
 
-1. **本地 Token 部署**（仓库根目录 `.env.local` 含 `VERCEL_TOKEN` 时）
+### 4a. Git 规则（必须遵守）
+
+- **直接 push 到 `main`**，一次性提交站点代码 + `state.json` 更新
+- **禁止**创建 Pull Request、Draft PR、`cursor/` 功能分支
+- **禁止**执行 `npx vercel deploy`、`bash scripts/deploy-vercel.sh`（避免与 Actions 重复部署）
+- **禁止**在上一次 Automation 仍在运行时启动新的 Test run（避免并发 push 冲突）
+- 大改共享模板（`templates/`、`AGENT_PROMPT.md`）应人工审查，**不要**在日常建站 Automation 中执行
+
+### 4b. 提交流程
+
+**第一次 push**（站点代码）：
+
+```bash
+git add sites/<vertical-id>/ discovered-verticals.json verticals.json
+git commit -m "feat: add <vertical-id> site — <中文名> MVP"
+git push origin main
+```
+
+等待 GitHub Actions 部署完成并拿到 URL 后，**第二次 push**（状态更新）：
+
+```bash
+# 更新 state.json（见第 5 节）
+git add state.json
+git commit -m "chore: update state.json for <vertical-id> deployment"
+git push origin main
+```
+
+### 4c. 等待 GitHub Actions 部署
+
+push 到 `main` 后，工作流 `.github/workflows/deploy-site.yml` 自动 build + 部署到 Vercel。
+
+1. 确认 GitHub Secrets 已配置 `VERCEL_TOKEN`（运行 `bash scripts/setup-github-vercel-secret.sh`）
+2. 等待工作流完成：
    ```bash
-   bash scripts/deploy-vercel.sh <vertical-id>
+   gh run list --workflow=deploy-site.yml --limit 1
+   gh run watch --exit-status   # 等待最近一次运行结束
    ```
-   或手动：
-   ```bash
-   cd sites/<vertical-id>
-   npx vercel deploy --prod --yes \
-     --scope=baoyu18178053101-6131s-projects \
-     --token=$VERCEL_TOKEN
-   ```
-2. **GitHub Actions 自动部署**（push 到 main 后触发）
-   - 需在 GitHub Secrets 配置 `VERCEL_TOKEN`（运行 `bash scripts/setup-github-vercel-secret.sh`）
-   - 工作流：`.github/workflows/deploy-site.yml`
+3. 从工作流日志获取部署 URL（`Deployed to: https://...vercel.app`）
 
-部署成功后必须得到 **可公开访问的 HTTPS URL**（优先 `*.vercel.app`）。
+部署成功后必须得到 **可公开访问的 HTTPS URL**（优先 `*.vercel.app`）。若工作流失败，修复后重新 push，不要改用本地 Vercel 部署。
 
 **飞书通知（必须）**：
 
@@ -218,7 +242,7 @@ node scripts/process-feedback.mjs
 | `FEISHU_WEBHOOK_URL` | **GitHub Secrets** | 可选，群机器人 Webhook |
 | `GITHUB_TOKEN` | **GitHub Secrets** | 用户留言 API 读写 `feedback/*.json` |
 | `VERCEL_TOKEN` | **GitHub Secrets** | GitHub Actions 部署 Vercel |
-| `STRIPE_SECRET_KEY` | Automation 或站点 `.env` | 可选，真实支付 |
+| `STRIPE_SECRET_KEY` | **GitHub Secrets** | Stripe 全站收款，见 `docs/STRIPE-SETUP.md` |
 | `POLAR_CHECKOUT_URL` | Automation 或站点 `.env` | 无公司收美元 |
 | `REPLICATE_API_TOKEN` | Automation 或站点 `.env` | AI 证件照 API |
 
