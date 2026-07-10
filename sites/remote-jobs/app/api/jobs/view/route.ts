@@ -1,4 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
+import { apiError } from "@/lib/api-errors";
 import { getJobById } from "@/lib/data";
 import { isMember } from "@/lib/member";
 import { useTrial, recordTrialUse } from "@/lib/trial";
@@ -8,34 +9,27 @@ export async function POST(request: NextRequest) {
   try {
     const { jobId } = await request.json();
     if (!jobId || typeof jobId !== "string") {
-      return NextResponse.json({ error: "缺少 jobId" }, { status: 400 });
+      return apiError("MISSING_JOB_ID", 400);
     }
 
     const job = getJobById(jobId);
     if (!job) {
-      return NextResponse.json({ error: "职位不存在" }, { status: 404 });
+      return apiError("JOB_NOT_FOUND", 404);
     }
 
     const member = await isMember();
     const access = await useTrial(member);
 
     if (!access.consumed && !access.isMember) {
-      return NextResponse.json(
-        {
-          error: "免费体验已用完，请订阅",
-          code: "TRIAL_EXHAUSTED",
-          remaining: 0,
-        },
-        { status: 403 }
-      );
+      return apiError("TRIAL_EXHAUSTED", 403, { remaining: 0 });
     }
 
     if (member) {
-      return NextResponse.json({ job: { ...job, unlocked: true }, trial: null });
+      return Response.json({ job: { ...job, unlocked: true }, trial: null });
     }
 
     const inc = await recordTrialUse();
-    return NextResponse.json(
+    return Response.json(
       {
         job: { ...job, unlocked: true },
         trial: {
@@ -50,6 +44,6 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error("Job view error:", error);
-    return NextResponse.json({ error: "加载失败" }, { status: 500 });
+    return apiError("LOAD_FAILED", 500);
   }
 }

@@ -1,18 +1,25 @@
 import Stripe from "stripe";
+import { resolvePolarCheckoutUrl } from "./polar-checkout";
+const DEFAULT_POLAR_CHECKOUT_URL =
+  "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
 
-const DEMO_MODE = !process.env.STRIPE_SECRET_KEY;
+
+const POLAR_CHECKOUT_URL =
+  process.env.POLAR_CHECKOUT_URL ?? DEFAULT_POLAR_CHECKOUT_URL;
+const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !POLAR_CHECKOUT_URL;
 
 export function isDemoMode() {
   return DEMO_MODE;
 }
 
 export function getStripe() {
-  if (DEMO_MODE) return null;
+  if (!process.env.STRIPE_SECRET_KEY) return null;
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2025-08-27.basil",
   });
 }
 
+export const PRICE_CNY_MONTHLY = 6900;
 export const PRICE_CNY = 69900;
 export const PRICE_USD = 9900;
 
@@ -20,6 +27,13 @@ export async function createCheckoutSession(
   origin: string,
   currency: "cny" | "usd" = "cny"
 ) {
+  if (currency !== "cny") {
+    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
+    if (polarUrl) {
+      return { demo: false as const, url: polarUrl };
+    }
+  }
+
   const stripe = getStripe();
 
   if (!stripe) {
@@ -43,10 +57,12 @@ export async function createCheckoutSession(
         price_data: {
           currency: isCny ? "cny" : "usd",
           product_data: {
-            name: "AI 证件照 · 年费会员",
-            description: "无限生成 + 全部风格 + 高清下载，365 天",
+            name: isCny ? "AI 证件照 · 月费会员" : "AI Headshots · Monthly",
+            description: isCny
+              ? "无限生成 + 全部风格 + 高清下载，支持支付宝/微信"
+              : "Unlimited generations + all styles + HD download",
           },
-          unit_amount: isCny ? PRICE_CNY : PRICE_USD,
+          unit_amount: isCny ? PRICE_CNY_MONTHLY : PRICE_USD,
         },
         quantity: 1,
       },

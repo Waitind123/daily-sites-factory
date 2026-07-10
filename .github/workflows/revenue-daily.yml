@@ -1,0 +1,32 @@
+name: 赚钱日报（流量+收款）
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Extract URLs
+        run: node scripts/extract-site-urls.mjs
+
+      - name: Stripe live check
+        id: stripe
+        continue-on-error: true
+        run: node scripts/verify-stripe-live.mjs
+
+      - name: Feishu revenue report
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          HAS_STRIPE: ${{ secrets.STRIPE_SECRET_KEY != '' && 'yes' || 'no' }}
+        run: node scripts/notify-feishu-revenue-daily.mjs

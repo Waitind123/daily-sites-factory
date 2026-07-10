@@ -9,69 +9,205 @@ on:
   workflow_dispatch:
     inputs:
       site_id:
-        description: "Site folder name under sites/"
-        required: true
+        description: "Site folder name under sites/ (empty = all sites)"
+        required: false
         type: string
 
 jobs:
-  deploy:
+  resolve:
     runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.list.outputs.sites }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Resolve site id
-        id: site
+      - name: List sites to deploy
+        id: list
         run: |
           if [ -n "${{ github.event.inputs.site_id }}" ]; then
-            SITE_ID="${{ github.event.inputs.site_id }}"
+            SITES='["${{ github.event.inputs.site_id }}"]'
           else
-            SITE_ID=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u | tail -1)
+            MSG=$(git log -1 --pretty=%B)
+            if echo "$MSG" | grep -qi '\[skip deploy\]'; then
+              echo "Commit marked [skip deploy], skipping" >&2
+              echo "sites=[]" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+            GIT_DIFF='git -c core.quotePath=false diff --name-only'
+            GIT_SHOW='git -c core.quotePath=false show --name-only --pretty=format:'
+            CHANGED_SITES=$($GIT_DIFF HEAD~1 HEAD 2>/dev/null | grep '^sites/' | cut -d/ -f2 | sort -u)
+            if [ -z "$CHANGED_SITES" ]; then
+              CHANGED_SITES=$($GIT_SHOW HEAD | grep '^sites/' | cut -d/ -f2 | sort -u)
+            fi
+            DEPLOY=""
+            for site in $CHANGED_SITES; do
+              FILES=$($GIT_DIFF HEAD~1 HEAD 2>/dev/null | grep "^sites/$site/" || true)
+              if [ -z "$FILES" ]; then
+                FILES=$($GIT_SHOW HEAD | grep "^sites/$site/" || true)
+              fi
+              SIG=$(echo "$FILES" | grep -vE 'lib/(analytics-client|dashboard-url|analytics-api-url)\.ts$' | grep -v '^$' || true)
+              if [ "$site" = "factory-dashboard" ]; then
+                SIG=$(echo "$FILES" | grep -vE 'lib/(analytics-client|dashboard-url|analytics-api-url)\.ts$' | grep -v '^data/' | grep -v '^$' || true)
+              fi
+              if [ -n "$SIG" ]; then
+                DEPLOY="$DEPLOY $site"
+              fi
+            done
+            DEPLOY=$(echo "$DEPLOY" | xargs)
+            if [ -z "$DEPLOY" ]; then
+              echo "Only analytics/dashboard config changed — skip Vercel deploy" >&2
+              echo "sites=[]" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+            SITES=$(echo "$DEPLOY" | tr ' ' '\n' | jq -R -s -c 'split("\n") | map(select(length > 0))')
           fi
-          if [ -z "$SITE_ID" ]; then
-            echo "Could not resolve site id" >&2
-            exit 1
-          fi
-          echo "id=$SITE_ID" >> $GITHUB_OUTPUT
-          echo "Resolved site: $SITE_ID"
+          echo "sites=$SITES" >> $GITHUB_OUTPUT
+          echo "Deploying: $SITES"
+
+  deploy:
+    needs: resolve
+    if: needs.resolve.outputs.sites != '[]' && needs.resolve.outputs.sites != ''
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site_id: ${{ fromJson(needs.resolve.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      - name: Detect payment-enabled site
-        id: payment
-        run: |
-          SITE="${{ steps.site.outputs.id }}"
-          if [ -f "sites/$SITE/lib/stripe.ts" ] || [ -f "sites/$SITE/lib/payments.ts" ]; then
-            echo "enabled=true" >> $GITHUB_OUTPUT
-          else
-            echo "enabled=false" >> $GITHUB_OUTPUT
-          fi
+      - name: Sync dashboard data
+        if: matrix.site_id == 'intercom-pulse' || matrix.site_id == 'factory-dashboard'
+        run: node scripts/sync-dashboard-data.mjs
 
-      - name: Sync Stripe env (payment sites)
-        if: steps.payment.outputs.enabled == 'true'
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_SCOPE: baoyu18178053101-6131s-projects
-          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
-        run: |
-          if [ -z "$STRIPE_SECRET_KEY" ]; then
-            echo "::warning::STRIPE_SECRET_KEY 未配置 — 站点将保持演示/Polar 模式"
-            exit 0
-          fi
-          node scripts/sync-vercel-env.mjs "${{ steps.site.outputs.id }}" STRIPE_SECRET_KEY
+      - name: Verify site quality
+        if: matrix.site_id != 'factory-dashboard'
+        run: node scripts/verify-site-quality.mjs ${{ matrix.site_id }}
+
+      - name: Verify site quality (dashboard)
+        if: matrix.site_id == 'factory-dashboard'
+        run: echo "factory-dashboard is internal — skip product quality gate"
+
 
       - name: Install and build
-        working-directory: sites/${{ steps.site.outputs.id }}
+        working-directory: sites/${{ matrix.site_id }}
         run: |
           npm ci || npm install
           npm run build
 
+      - name: Visitor smoke test (guest, local)
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        run: |
+          npx next start -p 3099 &
+          echo $! > /tmp/next-${{ matrix.site_id }}.pid
+          sleep 10
+          node ../../scripts/verify-site-visitor.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
+          kill $(cat /tmp/next-${{ matrix.site_id }}.pid) 2>/dev/null || true
+
+      - name: Playwright visitor E2E (real browser)
+        if: matrix.site_id != 'factory-dashboard'
+        run: |
+          npm install --no-save playwright@1.52.0
+          npx playwright install chromium --with-deps
+          cd sites/${{ matrix.site_id }}
+          npx next start -p 3099 &
+          echo $! > /tmp/next-e2e-${{ matrix.site_id }}.pid
+          sleep 10
+          node ../../scripts/verify-site-visitor-e2e.mjs http://127.0.0.1:3099 ${{ matrix.site_id }}
+          kill $(cat /tmp/next-e2e-${{ matrix.site_id }}.pid) 2>/dev/null || true
+
+      - name: Vercel deploy guard (daily limit)
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: node scripts/vercel-deploy-guard.mjs
+
+      - name: Sync GITHUB_TOKEN on Vercel (feedback + analytics)
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          ANALYTICS_PAT: ${{ secrets.ANALYTICS_GITHUB_PAT }}
+        run: |
+          if [ -z "$ANALYTICS_PAT" ] || [ -z "$VERCEL_TOKEN" ]; then
+            echo "::warning::请在仓库 Secrets 添加 ANALYTICS_GITHUB_PAT（留言与数据看板需要）"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$ANALYTICS_PAT" | npx vercel env add ANALYTICS_GITHUB_PAT production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$ANALYTICS_PAT" | npx vercel env add GITHUB_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "Waitind123/daily-sites-factory" | npx vercel env add GITHUB_REPO production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
+      - name: Sync Stripe key on Vercel (real payments)
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          STRIPE_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$STRIPE_KEY" ] || [ -z "$VERCEL_TOKEN" ]; then
+            echo "无 STRIPE_SECRET_KEY — 站点保持 demo 演示付费模式"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$STRIPE_KEY" | npx vercel env add STRIPE_SECRET_KEY production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          if [ -n "${{ secrets.STRIPE_WEBHOOK_SECRET }}" ]; then
+            printf '%s' "${{ secrets.STRIPE_WEBHOOK_SECRET }}" | npx vercel env add STRIPE_WEBHOOK_SECRET production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
+
+      - name: Sync Polar checkout URL on Vercel
+        if: matrix.site_id != 'factory-dashboard'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          POLAR_URL: ${{ secrets.POLAR_CHECKOUT_URL }}
+          POLAR_TOKEN: ${{ secrets.POLAR_ACCESS_TOKEN }}
+          POLAR_PRODUCT: ${{ secrets.POLAR_PRODUCT_ID }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            exit 0
+          fi
+          DEFAULT="https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj"
+          URL="${POLAR_URL:-$DEFAULT}"
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$URL" | npx vercel env add POLAR_CHECKOUT_URL production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          if [ -n "$POLAR_TOKEN" ]; then
+            printf '%s' "$POLAR_TOKEN" | npx vercel env add POLAR_ACCESS_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
+          if [ -n "$POLAR_PRODUCT" ]; then
+            printf '%s' "$POLAR_PRODUCT" | npx vercel env add POLAR_PRODUCT_ID production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          fi
+
+      - name: Sync Replicate token on Vercel (AI generation)
+        if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+          REPLICATE_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            exit 0
+          fi
+          if [ -z "$REPLICATE_TOKEN" ]; then
+            echo "::warning::REPLICATE_API_TOKEN 未配置 — ai-headshots 生成将保持 demo 模式"
+            exit 0
+          fi
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          printf '%s' "$REPLICATE_TOKEN" | npx vercel env add REPLICATE_API_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+
       - name: Deploy to Vercel
         id: vercel
-        working-directory: sites/${{ steps.site.outputs.id }}
+        working-directory: sites/${{ matrix.site_id }}
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_SCOPE: baoyu18178053101-6131s-projects
@@ -81,12 +217,20 @@ jobs:
             exit 1
           fi
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
-          DEPLOY_URL=$(npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee /dev/stderr | grep -oE 'https://[^ ]+\.vercel\.app' | tail -1)
+          LOG=/tmp/vercel-${{ matrix.site_id }}.log
+          if ! npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee "$LOG"; then
+            if grep -q 'api-deployments-free-per-day' "$LOG"; then
+              echo "Vercel daily limit reached — skip, retry tomorrow" >&2
+              exit 0
+            fi
+            exit 1
+          fi
+          DEPLOY_URL=$(grep -oE 'https://[^ ]+\.vercel\.app' "$LOG" | tail -1)
           echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
           echo "Deployed to: $DEPLOY_URL"
 
       - name: Verify Stripe checkout (payment sites)
-        if: steps.payment.outputs.enabled == 'true'
+        if: matrix.site_id != 'factory-dashboard'
         env:
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
         run: |
@@ -94,5 +238,33 @@ jobs:
             echo "跳过 Stripe 验证（未配置密钥）"
             exit 0
           fi
+          SITE="${{ matrix.site_id }}"
+          if [ ! -f "sites/$SITE/lib/stripe.ts" ] && [ ! -f "sites/$SITE/lib/payments.ts" ]; then
+            exit 0
+          fi
           sleep 8
-          node scripts/verify-stripe-checkout.mjs "${{ steps.site.outputs.id }}"
+          node scripts/verify-stripe-checkout.mjs "$SITE"
+
+      - name: Verify AI generation live (production)
+        if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        env:
+          REPLICATE_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: |
+          if [ -z "$REPLICATE_TOKEN" ]; then
+            echo "::warning::REPLICATE_API_TOKEN 未配置 — 跳过 live 探测，生成仍为 demo"
+            exit 0
+          fi
+          node scripts/verify-ai-generate-live.mjs ${{ matrix.site_id }}
+
+      - name: Notify Feishu
+        if: success() && steps.vercel.outputs.url != ''
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_RECEIVE_ID: ${{ secrets.FEISHU_RECEIVE_ID }}
+          FEISHU_RECEIVE_EMAIL: ${{ secrets.FEISHU_RECEIVE_EMAIL }}
+          FEISHU_RECEIVE_ID_TYPE: ${{ secrets.FEISHU_RECEIVE_ID_TYPE }}
+        run: |
+          node scripts/notify-feishu.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
+

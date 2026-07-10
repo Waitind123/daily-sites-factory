@@ -82,5 +82,539 @@
     "name": "跨时区会议规划",
     "template": "free-tool-ads",
     "description": "团队时区重叠可视化，Pro 功能收费"
+  },
+  {
+    "id": "联合办公日票预订",
+    "name": "联合办公日票预订",
+    "template": "micro-saas",
+    "description": "出差数字游民找不到当日可用、WiFi 稳定的联合办公日票"
+  },
+  {
+    "id": "virtual-cowork-room",
+    "name": "远程共工室",
+    "template": "micro-saas",
+    "description": "远程工作者独自办公感到孤独，需要安静的虚拟共工环境"
+  },
+  {
+    "id": "freelance-proposal",
+    "name": "自由职业极简报价单",
+    "template": "micro-saas",
+    "description": "HoneyBook/Bonsai 涨价后，自由职业者需要极简报价+合同+发票工具，$9.9/月"
+  },
+  {
+    "id": "testimonial-wall",
+    "name": "独立开发者证言墙",
+    "template": "micro-saas",
+    "description": "Testimonial.to 去品牌 $40/月太贵，$9.9/月收集+嵌入用户好评墙"
+  },
+  {
+    "id": "changelog-hub",
+    "name": "Indie Changelog 发布台",
+    "template": "micro-saas",
+    "description": "Beamer/AnnounceKit 涨价 9+/月，独立开发者需要 .9/月的 changelog + 状态页 + 用户反馈一体工具"
+  },
+  {
+    "id": "og-image-studio",
+    "name": "OG 图生成器",
+    "template": "micro-saas",
+    "description": "Bannerbear 9/月太贵，独立开发者需要 .9/月的 OG Image 生成器，一键生成社交分享图"
+  },
+  {
+    "id": "uptime-pulse",
+    "name": "站点 Uptime 监控",
+    "template": "micro-saas",
+    "description": "UptimeRobot 涨价4倍后，独立开发者需要 .9/月的极简 uptime 监控 + 状态页"
+  },
+  {
+    "id": "cron-heartbeat",
+    "name": "Cron 任务心跳监控",
+    "template": "micro-saas",
+    "description": "Healthchecks.io 太贵或太复杂，独立开发者需要 .9/月的极简 cron 心跳监控 + 漏跑告警"
+  },
+  {
+    "id": "feature-vote",
+    "name": "功能投票板",
+    "template": "micro-saas",
+    "description": "Canny $79/月太贵，独立开发者需要 $9.9/月的功能请求投票+公开路线图"
+  },
+  {
+    "id": "page-split",
+    "name": "落地页 A/B 测试",
+    "template": "micro-saas",
+    "description": "VWO $198/月太贵，独立开发者需要 $9.9/月的落地页 A/B 测试 + 转化率对比"
+  },
+  {
+    "id": "funnel-pulse",
+    "name": "漏斗分析",
+    "template": "micro-saas",
+    "description": "Mixpanel $500/月太贵，独立开发者需要 $9.9/月的极简漏斗分析 + 流失定位"
+  },
+  {
+    "id": "reddit-pulse",
+    "name": "Reddit 痛点挖掘",
+    "template": "micro-saas",
+    "description": "GummySearch 关停后，独立开发者需要 $9.9/月的 Reddit 痛点挖掘工具，自动提取 I wish / looking for alternative 语句"
+  },
+  {
+    "id": "waitlist-pulse",
+    "name": "产品等候名单",
+    "template": "micro-saas",
+    "description": "Prefinery $99/月太贵，独立开发者需要 $9.9/月的极简产品等候名单 + 推荐裂变 + 公开计数"
+  },
+  {
+    "id": "form-pulse",
+    "name": "极简表单构建器",
+    "template": "micro-saas",
+    "description": "Typeform 免费版仅 10 条回复/月，独立开发者需要 $9.9/月的无限表单 + 放弃率分析 + 嵌入小部件"
+  },
+  {
+    "id": "docs-pulse",
+    "name": "API 文档托管",
+    "template": "micro-saas",
+    "description": "GitBook 5/月+按人头收费太贵，独立开发者需要 .9/月的极简 API 文档 + 自定义域名 + llms.txt"
+  },
+  {
+    "id": "stripe-pulse",
+    "name": "Stripe 收入仪表盘",
+    "template": "micro-saas",
+    "description": "ChartMogul/Baremetrics 0-100/月太贵，独立开发者需要 .9/月的极简 MRR/ARR/流失仪表盘，只连 Stripe"
+  },
+  {
+    "id": "link-pulse",
+    "name": "短链点击统计",
+    "template": "micro-saas",
+    "description": "Bitly $35/月太贵，独立开发者需要 $9.9/月的品牌短链 + 点击分析 + UTM 追踪"
+  },
+  {
+    "id": "发票收据管理",
+    "name": "发票收据管理",
+    "template": "micro-saas",
+    "description": "HoneyBook/Bonsai 涨价后，自由职业者需要 .9/月的极简发票+收据+合同工具"
+  },
+  {
+    "id": "status-pulse",
+    "name": "状态页发布",
+    "template": "micro-saas",
+    "description": "Statuspage.io $29+/月太贵，独立开发者需要 $9.9/月的极简状态页 + 事件管理 + 邮件订阅"
+  },
+  {
+    "id": "team-headshots",
+    "name": "团队 AI 头像",
+    "template": "micro-saas",
+    "description": "PhotoAI 9/月太贵，小团队需要 .9/月的批量 LinkedIn 专业头像生成"
+  },
+  {
+    "id": "churn-pulse",
+    "name": "客户成功健康分",
+    "template": "micro-saas",
+    "description": "Baremetrics $50+/月太贵，独立开发者需要 $9.9/月的客户健康分+流失预警，只连 Stripe 订阅数据"
+  },
+  {
+    "id": "book-pulse",
+    "name": "独立开发者预约",
+    "template": "micro-saas",
+    "description": "Calendly $12/月太贵且无法本地化，独立开发者需要 $9.9/月的极简预约页 + 时区同步 + 项目展示"
+  },
+  {
+    "id": "coworking-pass",
+    "name": "联合办公日票预订",
+    "template": "micro-saas",
+    "description": "Croissant/Deskpass 订阅太贵，出差数字游民需要 .9/月的当日联合办公日票比价+即时预订"
+  },
+  {
+    "id": "wcag-alt-text",
+    "name": "WCAG Alt-Text 生成器",
+    "template": "micro-saas",
+    "description": "Web 代理商需要批量生成 WCAG 合规 alt-text，ADA 诉讼增加，.9/月替代手动写 alt"
+  },
+  {
+    "id": "seo-rank-tracker",
+    "name": "SEO 排名追踪",
+    "template": "micro-saas",
+    "description": "SEMrush $130/月对 indie 太贵，独立开发者需要 $9.9/月的极简关键词排名追踪"
+  },
+  {
+    "id": "跨平台痛点雷达",
+    "name": "跨平台痛点雷达",
+    "template": "micro-saas",
+    "description": "GummySearch 关停后 Reddit API 不稳定，独立开发者需要 .9/月的 HN+Reddit+PH 多平台痛点扫描与机会评分"
+  },
+  {
+    "id": "ai-等候名单验证",
+    "name": "AI 等候名单验证",
+    "template": "micro-saas",
+    "description": "Prefinery 9/月太贵，独立开发者需要 .9/月的 AI 驱动等候名单 + 推荐裂变 + 转化分析"
+  },
+  {
+    "id": "数字游民签证追踪",
+    "name": "数字游民签证追踪",
+    "template": "micro-saas",
+    "description": "Nomad List 签证数据过时18个月，数字游民需要 .9/月的实时签证政策追踪+到期提醒"
+  },
+  {
+    "id": "reddit-线索挖掘",
+    "name": "Reddit 线索挖掘",
+    "template": "micro-saas",
+    "description": "SubWatch 9/月太贵，独立开发者需要 .9/月的 Reddit 高意向关键词监控，自动提取 alternative to / switching from 语句"
+  },
+  {
+    "id": "email-pulse",
+    "name": "HTML 邮件构建器",
+    "template": "micro-saas",
+    "description": "独立开发者发产品邮件需手写 HTML 或买昂贵 SaaS，需要 .9/月的极简邮件模板构建器 + 实时预览 + 导出"
+  },
+  {
+    "id": "guilt-free-habits",
+    "name": "无罪恶感习惯打卡",
+    "template": "micro-saas",
+    "description": "Streaks/Habitica 断链归零导致用户流失，独立开发者需要 .9/月的周目标制习惯追踪（4/7 天达标），无 streak 焦虑"
+  },
+  {
+    "id": "content-pulse",
+    "name": "内容多平台分发",
+    "template": "micro-saas",
+    "description": "独立开发者发产品更新需手写 9 个平台内容，需要 .9/月的 AI 多平台内容改写+一键分发工具"
+  },
+  {
+    "id": "release-pulse",
+    "name": "发布日志转社交帖",
+    "template": "micro-saas",
+    "description": "独立开发者发 changelog 需手写 5 个平台格式，需要 .9/月的 release notes → X/LinkedIn/Threads 自动改写工具"
+  },
+  {
+    "id": "pulse-suite",
+    "name": "监控+状态页一体",
+    "template": "micro-saas",
+    "description": "Statuspage 9/月不含监控，UptimeRobot 无状态页，独立开发者需要 .9/月的监控+状态页一体工具"
+  },
+  {
+    "id": "incident-ai",
+    "name": "AI 事件摘要",
+    "template": "micro-saas",
+    "description": "Statuspage 无 AI 写事件更新，独立开发者需要 .9/月的 AI 自动生成宕机通知与客户邮件"
+  },
+  {
+    "id": "创业点子库",
+    "name": "创业点子库",
+    "template": "micro-saas",
+    "description": "BigIdeasDB 9/月太贵，独立开发者需要 .9/月的 Reddit/HN 痛点扫描 + 创业点子评分"
+  },
+  {
+    "id": "gummysearch-替代品",
+    "name": "GummySearch 替代品",
+    "template": "micro-saas",
+    "description": "GummySearch 关停后，独立开发者需要 .9/月的 Reddit/HN 多平台痛点扫描 + 竞品广告情报"
+  },
+  {
+    "id": "reddit-线索监控",
+    "name": "Reddit 线索监控",
+    "template": "micro-saas",
+    "description": "SubWatch 9/月太贵，独立开发者需要 .9/月的 Reddit 高意向关键词监控，自动提取 alternative to / switching from 语句"
+  },
+  {
+    "id": "tracetics-lite",
+    "name": "Indie 漏斗分析",
+    "template": "micro-saas",
+    "description": "Mixpanel 00/月太贵、Plausible 无漏斗，独立开发者需要 .9/月的极简漏斗分析 + 流失定位"
+  },
+  {
+    "id": "独立开发者证言墙",
+    "name": "独立开发者证言墙",
+    "template": "micro-saas",
+    "description": "Testimonial.to 0/月太贵，独立开发者需要 .9/月的用户好评收集+嵌入墙"
+  },
+  {
+    "id": "极简客服工单",
+    "name": "极简客服工单",
+    "template": "micro-saas",
+    "description": "Zendesk 98/月太贵，独立开发者需要 .9/月的极简工单+AI回复建议+知识库"
+  },
+  {
+    "id": "自由职业极简报价单",
+    "name": "自由职业极简报价单",
+    "template": "micro-saas",
+    "description": "HoneyBook 涨价 89% 后，自由职业者需要 .9/月的极简报价+合同+发票工具"
+  },
+  {
+    "id": "sign-pulse",
+    "name": "PandaDocs 替代品",
+    "template": "micro-saas",
+    "description": "PandaDocs 9/席位/月太贵，小团队需要 .9/月的极简报价+电子签名+合同管理"
+  },
+  {
+    "id": "intercom-pulse",
+    "name": "Intercom 替代品",
+    "template": "micro-saas",
+    "description": "Intercom 定价复杂且频繁改 UI，独立开发者需要 $9.9/月的极简客服聊天+工单+知识库"
+  },
+  {
+    "id": "saas替代品目录",
+    "name": "SaaS替代品目录",
+    "template": "micro-saas",
+    "description": "发现开源/独立SaaS替代品高度碎片化，独立开发者需要 .9/月的动态替代品目录+自托管Docker配置"
+  },
+  {
+    "id": "saas价格追踪",
+    "name": "SaaS价格追踪",
+    "template": "micro-saas",
+    "description": "竞品涨价无预警，独立开发者需要 .9/月的 SaaS 定价变化监控+邮件提醒"
+  },
+  {
+    "id": "极简发票工具",
+    "name": "极简发票工具",
+    "template": "micro-saas",
+    "description": "HN Show HN: 独立开发者需要 0/年极简发票工具，HoneyBook/Bonsai 涨价后自由职业者需要 .9/月的报价+发票+合同"
+  },
+  {
+    "id": "google-评价自动索取",
+    "name": "Google 评价自动索取",
+    "template": "micro-saas",
+    "description": "Podium/BirdEye $399/月太贵，本地小商家需要 $19/月的短信自动索取 Google 评价工具"
+  },
+  {
+    "id": "定价页转化诊断",
+    "name": "定价页转化诊断",
+    "template": "micro-saas",
+    "description": "85% 访客离开定价页未购买，独立开发者需要 .9/月的定价页热力图+流失分析+AB测试建议"
+  },
+  {
+    "id": "签证政策变更提醒",
+    "name": "签证政策变更提醒",
+    "template": "micro-saas",
+    "description": "Nomad List 签证数据过时18个月，独立开发者需要 .9/月的实时签证政策变更提醒+到期追踪"
+  },
+  {
+    "id": "saas-早期用户市场",
+    "name": "SaaS 早期用户市场",
+    "template": "micro-saas",
+    "description": "独立开发者最难找前10-20个真实早期用户，需要 .9/月的早期用户匹配市场连接 founder 与 beta tester"
+  },
+  {
+    "id": "ai-overview-排名追踪",
+    "name": "AI Overview 排名追踪",
+    "template": "micro-saas",
+    "description": "Google AI Overviews 改变搜索格局，传统 SEMrush/Ahrefs 忽略 AI 摘要排名，独立开发者需要 .9/月的经典+AI Overview 双轨排名追踪"
+  },
+  {
+    "id": "无罪恶感习惯打卡",
+    "name": "无罪恶感习惯打卡",
+    "template": "micro-saas",
+    "description": "Streaks/Habitica 断链归零导致用户流失，独立开发者需要 .9/月的周目标制习惯追踪（4/7 天达标），无 streak 焦虑"
+  },
+  {
+    "id": "ai-客户利润追踪",
+    "name": "AI 客户利润追踪",
+    "template": "micro-saas",
+    "description": "Stripe 显示收入增长但 OpenAI 账单涨更快，独立开发者需要 .9/月的按客户 AI 成本+收入利润分析"
+  },
+  {
+    "id": "ai-落地页批量生成",
+    "name": "AI 落地页批量生成",
+    "template": "micro-saas",
+    "description": "独立开发者跑 Google Ads 需为每个关键词定制落地页，Carrd/Webflow 太慢，需要 .9/月的 AI 批量落地页生成+HTML 导出"
+  },
+  {
+    "id": "跨时区会议规划",
+    "name": "跨时区会议规划",
+    "template": "micro-saas",
+    "description": "远程团队找会议时间窗口需手动算时差，Calendly 无团队时区重叠视图，独立开发者需要 .9/月的跨时区会议时间规划工具"
+  },
+  {
+    "id": "meetup-替代品",
+    "name": "Meetup 替代品",
+    "template": "micro-saas",
+    "description": "Meetup.com 涨价且数据不归社区，独立开发者/社群组织者需要 .9/月的极简活动发布+RSVP+邮件提醒"
+  },
+  {
+    "id": "uptime-涨价替代品",
+    "name": "Uptime 涨价替代品",
+    "template": "micro-saas",
+    "description": "UptimeRobot 涨价4倍后，独立开发者需要 .9/月的极简 uptime 监控 + 状态页一体工具"
+  },
+  {
+    "id": "一次性买断工具目录",
+    "name": "一次性买断工具目录",
+    "template": "micro-saas",
+    "description": "HN 热议：用户厌倦订阅制，需要 payoncealternatives 风格的 SaaS 买断替代品目录，.9/月"
+  },
+  {
+    "id": "团队知识库替代品",
+    "name": "团队知识库替代品",
+    "template": "micro-saas",
+    "description": "Obsidian 无团队协作、Notion 有 vendor lock-in，独立团队需要 .9/月的 AI-first 团队知识库 + MCP 集成"
+  },
+  {
+    "id": "ai-定价页优化",
+    "name": "AI 定价页优化",
+    "template": "micro-saas",
+    "description": "独立开发者定价页转化率低，需要 .9/月的 AI 定价页文案+布局诊断+AB测试建议"
+  },
+  {
+    "id": "状态页极简替代品",
+    "name": "状态页极简替代品",
+    "template": "micro-saas",
+    "description": "Statuspage 99/月太贵，独立开发者需要 .9/月的极简状态页 + 事件管理 + 邮件订阅"
+  },
+  {
+    "id": "书签收藏平替",
+    "name": "书签收藏平替",
+    "template": "micro-saas",
+    "description": "Mozilla 关停 Pocket 后，独立开发者需要 /月的极简书签收藏+公开分享文件夹，不要 AI 第二大脑"
+  },
+  {
+    "id": "ai-漏斗诊断",
+    "name": "AI 漏斗诊断",
+    "template": "micro-saas",
+    "description": "Mixpanel 太贵，独立开发者需要 .9/月的 AI 自动分析漏斗流失原因 + 修复建议"
+  },
+  {
+    "id": "affiliate-追踪平替",
+    "name": "Affiliate 追踪平替",
+    "template": "micro-saas",
+    "description": "Rewardful 9/月太贵，独立开发者需要 .9/月的极简 affiliate 链接追踪 + 佣金计算 + Stripe 自动 payout"
+  },
+  {
+    "id": "pricing-intel",
+    "name": "竞品定价情报",
+    "template": "micro-saas",
+    "description": "Kompyte/Klue $10K+/年太贵，solo founder 需要 $9.9/月的 SaaS 定价页变动监控+策略建议"
+  },
+  {
+    "id": "dunning-失败支付恢复",
+    "name": "Dunning 失败支付恢复",
+    "template": "micro-saas",
+    "description": "Stripe 订阅失败支付无自动重试提醒，独立开发者需要 .9/月的 dunning 邮件+重试链接工具"
+  },
+  {
+    "id": "签证政策实时追踪",
+    "name": "签证政策实时追踪",
+    "template": "micro-saas",
+    "description": "Nomad List 签证数据过时 18 个月，数字游民需要 .9/月的政策变更告警+到期追踪，RelocateMe 2026 报告多数门槛已变动"
+  },
+  {
+    "id": "自由职业本地套件",
+    "name": "自由职业本地套件",
+    "template": "micro-saas",
+    "description": "独立开发者厌倦多个 SaaS 订阅，需要 .9/月的本地优先发票+报价+合同+费用追踪套件"
+  },
+  {
+    "id": "saas-流失原因追踪",
+    "name": "SaaS 流失原因追踪",
+    "template": "micro-saas",
+    "description": "ChartMogul 只显示流失率不记原因，独立开发者需要 .9/月的极简流失原因采集+分类仪表盘"
+  },
+  {
+    "id": "sec-quest-pulse",
+    "name": "安全问卷自动填写",
+    "template": "micro-saas",
+    "description": "B2B SaaS 收到 250 行 Excel 安全问卷，Vanta/Conveyor $5k+/年太贵，需要 $9.9/月的 AI 自动填写安全问卷工具"
+  },
+  {
+    "id": "zapier-pulse",
+    "name": "Zapier 极简替代品",
+    "template": "micro-saas",
+    "description": "Zapier $149/月对 indie 太贵，独立开发者需要 $9.9/月的极简 webhook 自动化 + cron 触发"
+  },
+  {
+    "id": "scope-3-员工通勤追踪",
+    "name": "Scope 3 员工通勤追踪",
+    "template": "micro-saas",
+    "description": "CSRD 2026 强制披露 Scope 3，中小企业需要 .9/月的员工通勤+远程办公碳排放基线工具，替代 Watershed 0k+"
+  },
+  {
+    "id": "ai-contract-review",
+    "name": "AI 合同审查",
+    "template": "micro-saas",
+    "description": "HoneyBook/Bonsai 涨价后，自由职业者和小团队需要 .9/月的 AI 合同风险扫描+条款对比，替代 DocuSign CLM 0+/席位"
+  },
+  {
+    "id": "极简表单构建器",
+    "name": "极简表单构建器",
+    "template": "micro-saas",
+    "description": "Typeform 免费版仅 10 条回复/月，独立开发者需要 .9/月的无限表单 + 放弃率分析 + 嵌入小部件"
+  },
+  {
+    "id": "等候名单邮件验证",
+    "name": "等候名单邮件验证",
+    "template": "micro-saas",
+    "description": "Waitle/Lineup 验证邮箱但缺 AI 转化分析，独立开发者需要 .9/月的等候名单+AI 验证评分+推荐裂变"
+  },
+  {
+    "id": "appgap-pulse",
+    "name": "应用商店差评挖痛点",
+    "template": "micro-saas",
+    "description": "HN 热议：从 App Store 1 星评论聚类发现市场空白，独立开发者需要 .9/月的差评→创业点子报告工具"
+  },
+  {
+    "id": "reddit-lead-pulse",
+    "name": "Reddit 获客线索",
+    "template": "micro-saas",
+    "description": "独立开发者需要 .9/月的 Reddit 高意向关键词监控，自动提取 alternative to / switching from 语句"
+  },
+  {
+    "id": "本地优先自由职业套件",
+    "name": "本地优先自由职业套件",
+    "template": "micro-saas",
+    "description": "HN 热议：自由职业者为发票/报价/合同付多个 SaaS 订阅，需要本地优先、浏览器运行的极简套件，.9/月"
+  },
+  {
+    "id": "欧盟电子发票合规",
+    "name": "欧盟电子发票合规",
+    "template": "micro-saas",
+    "description": "波兰2026年4月起强制e-invoice，欧洲自由职业者需要.9/月的浏览器端UBL合规发票生成+多币种工具"
+  },
+  {
+    "id": "saas-alt-intel",
+    "name": "SaaS替代品情报",
+    "template": "micro-saas",
+    "description": "竞品涨价无预警，独立开发者需要 .9/月的 SaaS 定价变化监控+替代品推荐"
+  },
+  {
+    "id": "社交监听替代品",
+    "name": "社交监听替代品",
+    "template": "micro-saas",
+    "description": "独立开发者厌倦 Mention/Brand24 噪音，需要 .9/月的 Reddit/X 高意向推荐帖监控，只抓 alternative to / switching from"
+  },
+  {
+    "id": "status-embed-lite",
+    "name": "极简状态页",
+    "template": "micro-saas",
+    "description": "Statuspage $299/月太贵，独立开发者需要 $15/月的极简状态页 + 自动事件检测 + 嵌入组件"
+  },
+  {
+    "id": "reddit-社交监听平替",
+    "name": "Reddit 社交监听平替",
+    "template": "micro-saas",
+    "description": "独立开发者厌倦 Mention/Brand24 噪音，需要 .9/月的 Reddit/X 高意向推荐帖监控，只抓 alternative to / switching from"
+  },
+  {
+    "id": "gdpr-合规自检",
+    "name": "GDPR 合规自检",
+    "template": "micro-saas",
+    "description": "独立开发者面向欧洲客户需要 GDPR 合规扫描+政策生成，替代昂贵律师，.9/月"
+  },
+  {
+    "id": "虚拟图书馆共工",
+    "name": "虚拟图书馆共工",
+    "template": "micro-saas",
+    "description": "远程工作者独自办公孤独，需要安静虚拟图书馆式共工环境，.9/月"
+  },
+  {
+    "id": "indie-定价页热力图",
+    "name": "Indie 定价页热力图",
+    "template": "micro-saas",
+    "description": "85% 访客离开定价页未购买，独立开发者需要 .9/月的定价页热力图+流失分析+AB测试建议，替代 Hotjar 9/月"
+  },
+  {
+    "id": "docsend-替代品",
+    "name": "DocSend 替代品",
+    "template": "micro-saas",
+    "description": "DocSend 5-300/月太贵，独立开发者需要 .9/月的安全文档分享+实时分析，Peony 式平替"
+  },
+  {
+    "id": "schengen-天数追踪",
+    "name": "Schengen 天数追踪",
+    "template": "micro-saas",
+    "description": "Nomad List 无合规追踪，数字游民需要 .9/月的 Schengen 90/180 天计数 + 税务居留提醒，替代手动表格"
   }
 ]

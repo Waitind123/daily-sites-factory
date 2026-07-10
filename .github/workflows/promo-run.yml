@@ -1,0 +1,42 @@
+name: Run promotion (IndexNow + links)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: IndexNow + promo links
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: node scripts/promo-multi-platform.mjs
+
+      - name: Reddit auto post (if configured)
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+        run: |
+          if [ "$SOCIAL_PROMO_ENABLED" = "true" ] && [ -n "$REDDIT_REFRESH_TOKEN" ]; then
+            node scripts/post-reddit-promo.mjs --force
+          else
+            echo "Reddit 未配置 — 仅 IndexNow + 链接生成"
+            node scripts/post-reddit-promo.mjs --dry-run || true
+          fi
+
+      - name: Commit promo artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/promo/ analytics/social-promo-state.json 2>/dev/null || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "chore: promotion run [skip deploy]"
+          git push

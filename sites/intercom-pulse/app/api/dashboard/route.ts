@@ -1,0 +1,59 @@
+import { NextRequest, NextResponse } from "next/server";
+import { loadRollup } from "@/lib/analytics-store";
+import { loadSitesFromState } from "@/lib/sites-registry";
+import { loadRevenueGoal, loadStripeHealth, loadHealthWatch } from "@/lib/dashboard-config";
+import { buildDashboardSummary, buildRevenueGoal } from "@/lib/dashboard-metrics";
+import { buildVisitorInsights } from "@/lib/visitor-insights";
+import { buildVisitorTable } from "@/lib/visitor-registry";
+import { buildPromoPerformance } from "@/lib/promo-performance";
+import { buildRevenueSprint } from "@/lib/revenue-sprint";
+import { buildMetricsCharts } from "@/lib/metrics-charts";
+import { earliestDayInRollup, parseDateRange, rangeForPreset, type DatePreset } from "@/lib/date-range";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+export async function GET(req: NextRequest) {
+  const [sites, rollup] = await Promise.all([Promise.resolve(loadSitesFromState()), loadRollup()]);
+  const params = req.nextUrl.searchParams;
+  const preset = (params.get("preset") || "today") as DatePreset;
+  const siteId = params.get("site") || "all";
+
+  const earliest = earliestDayInRollup(rollup.sites);
+  const range =
+    preset === "custom"
+      ? parseDateRange(params.get("from"), params.get("to"))
+      : rangeForPreset(preset, earliest);
+
+  const stripe = loadStripeHealth();
+  const summary = buildDashboardSummary(sites, rollup, stripe, range, siteId);
+  const goalConfig = loadRevenueGoal();
+  const revenueGoal = goalConfig
+    ? buildRevenueGoal(goalConfig, summary.estimatedRevenueUsd)
+    : null;
+  const visitorInsights = buildVisitorInsights(sites, rollup, range, siteId);
+  const visitorTable = buildVisitorTable(sites, rollup, range, siteId);
+  const promoPerformance = buildPromoPerformance(rollup, range);
+  const revenueSprint = revenueGoal
+    ? buildRevenueSprint(revenueGoal, sites, rollup, stripe, range)
+    : null;
+  const healthWatch = loadHealthWatch();
+  const metricsCharts = buildMetricsCharts(rollup, range, siteId);
+
+  return NextResponse.json(
+    {
+      sites,
+      rollup,
+      summary,
+      revenueGoal,
+      revenueSprint,
+      visitorInsights,
+      visitorTable,
+      promoPerformance,
+      healthWatch,
+      metricsCharts,
+      filters: { preset, siteId, range, realUsersOnly: true },
+    },
+    { headers: { "Cache-Control": "no-store, max-age=0" } }
+  );
+}

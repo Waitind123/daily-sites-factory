@@ -2,28 +2,46 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import type { Locale } from "@/lib/i18n-shared";
+import { getSuccessCopy } from "@/lib/copy-app";
+import { trackFactoryEvent } from "@/lib/analytics-client";
+import { siteMeta } from "@/lib/site-meta";
 
 export function SuccessClient({
+  locale,
   isDemo,
   sessionId,
 }: {
+  locale: Locale;
   isDemo: boolean;
   sessionId?: string;
 }) {
+  const c = getSuccessCopy(locale);
+
   useEffect(() => {
     fetch("/api/member/activate", { method: "POST" });
-  }, []);
+    const params = new URLSearchParams(window.location.search);
+    const demo = isDemo || params.get("demo") === "true";
+    const paid =
+      !!sessionId ||
+      params.get("polar") === "true" ||
+      params.has("checkout_id");
+    if (!demo && paid) {
+      trackFactoryEvent(siteMeta.id, "purchase");
+    }
+  }, [isDemo, sessionId]);
 
   return (
     <div className="mx-auto max-w-lg px-4 py-16 text-center">
       <div className="text-6xl mb-6">🎉</div>
-      <h1 className="text-3xl font-bold">欢迎加入远程工作板！</h1>
-      <p className="text-stone-600 mt-4">
-        {isDemo ? "演示支付成功。" : "支付成功，"}你已是年度会员，可无限查看职位详情并发布招聘。
+      <h1 className="text-3xl font-bold">{c.title}</h1>
+      <p className="text-muted mt-4">
+        {isDemo ? c.demoPaid : c.paidPrefix}
+        {c.paidBody}
       </p>
       {sessionId && (
-        <p className="text-xs text-stone-400 mt-2 font-mono break-all">
-          订单: {sessionId}
+        <p className="text-xs text-muted mt-2 font-mono break-all">
+          {c.order} {sessionId}
         </p>
       )}
       <div className="mt-8 space-y-3">
@@ -31,16 +49,16 @@ export function SuccessClient({
           href="/jobs"
           className="block w-full bg-brand-600 text-white py-4 rounded-xl font-semibold hover:bg-brand-700 transition-colors"
         >
-          浏览远程职位
+          {c.browseJobs}
         </Link>
         <Link
           href="/post"
-          className="block w-full border border-stone-300 text-stone-700 py-4 rounded-xl font-semibold hover:bg-stone-50 transition-colors"
+          className="block w-full border border-border text-foreground py-4 rounded-xl font-semibold hover:bg-background transition-colors"
         >
-          发布招聘职位
+          {c.postJob}
         </Link>
-        <Link href="/" className="block text-sm text-stone-500 hover:underline">
-          返回首页
+        <Link href="/" className="block text-sm text-muted hover:underline">
+          {c.backHome}
         </Link>
       </div>
     </div>

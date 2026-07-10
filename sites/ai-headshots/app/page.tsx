@@ -1,84 +1,80 @@
 import Link from "next/link";
-import { FeatureGrid, StyleGrid, UploadDemo } from "@/components/ui";
-import { testimonials } from "@/lib/data";
+import { FeatureGrid, StyleGrid } from "@/components/ui";
+import { HomeHero } from "@/components/HomeHero";
+import { HeadshotStudio } from "@/components/HeadshotStudio";
+import { getLocale } from "@/lib/locale";
+import { getHomeCopy } from "@/lib/copy";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const locale = await getLocale();
+  const c = getHomeCopy(locale);
+
   return (
     <div>
-      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="mb-4 text-sm font-medium text-brand-600">
-              已有 3,521 位职场人换过头像
-            </p>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance">
-              自拍变
-              <span className="text-brand-600"> 专业证件照</span>
-              <br />
-              只要 30 秒
-            </h1>
-            <p className="mt-6 text-lg text-stone-500 text-balance">
-              不用去照相馆排队、不用花 ¥299 拍一组。上传一张自拍，AI 生成 20+ 张商务、休闲、创意风格头像，LinkedIn、简历、证件照直接用。
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/join"
-                className="rounded-xl bg-brand-600 px-8 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-brand-700 transition-colors text-center"
-              >
-                加入会员 · $9.9/月
-              </Link>
-              <a
-                href="#how"
-                className="rounded-xl border border-stone-300 px-8 py-3.5 text-base font-semibold text-stone-700 hover:bg-stone-100 transition-colors text-center"
-              >
-                看看怎么用
-              </a>
-            </div>
-            <p className="mt-4 text-sm text-stone-400">免费体验 5 次 · 之后 $9.9/月</p>
-          </div>
-          <UploadDemo />
+      <HomeHero />
+
+      <section id="studio" className="border-b border-border bg-surface/40">
+        <HeadshotStudio locale={locale} embedded />
+      </section>
+
+      <section id="styles" className="bg-surface border-y border-border py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2">{c.stylesTitle}</h2>
+          <p className="text-muted text-center mb-10">{c.stylesSubtitle}</p>
+          <StyleGrid styles={c.styles} />
         </div>
       </section>
 
-      <section id="styles" className="bg-white border-y border-stone-200 py-16">
+      <section className="bg-surface border-y border-border py-12">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-2">四种专业风格</h2>
-          <p className="text-stone-500 text-center mb-10">会员解锁全部风格 + 自定义背景</p>
-          <StyleGrid />
-        </div>
-      </section>
-
-      <section id="how" className="py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">三步搞定</h2>
-          <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { step: "1", title: "上传自拍", desc: "正面照，光线好，露全脸" },
-              { step: "2", title: "选风格", desc: "商务 / 休闲 / 创意 / 学术" },
-              { step: "3", title: "下载使用", desc: "高清 PNG，多种尺寸" },
-            ].map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="mx-auto w-12 h-12 rounded-full bg-brand-100 text-brand-700 font-bold text-lg flex items-center justify-center mb-4">
-                  {s.step}
-                </div>
-                <h3 className="font-semibold text-lg">{s.title}</h3>
-                <p className="text-stone-500 mt-1 text-sm">{s.desc}</p>
+          <div className="grid sm:grid-cols-3 gap-6 text-center">
+            {c.stats.map((item) => (
+              <div key={item.label} className="rounded-xl border border-border p-6">
+                <p className="text-3xl font-bold text-brand-500">{item.stat}</p>
+                <p className="text-sm text-muted mt-1">{item.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-white border-y border-stone-200 py-16">
+      <section id="how" className="py-16 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-10">用户怎么说</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">{c.howItWorks.title}</h2>
+          <div className="grid sm:grid-cols-3 gap-8">
+            {c.howItWorks.steps.map((s) => (
+              <div key={s.step} className="text-center">
+                <div className="mx-auto w-12 h-12 rounded-full bg-brand-100 text-brand-500 font-bold text-lg flex items-center justify-center mb-4">
+                  {s.step}
+                </div>
+                <h3 className="font-semibold text-lg">{s.title}</h3>
+                <p className="text-muted mt-1 text-sm">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface-muted/50 border-t border-border py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-8">{c.featuresTitle}</h2>
+          <FeatureGrid features={c.features} />
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-8">{c.testimonialsTitle}</h2>
           <div className="grid sm:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <blockquote key={t.name} className="rounded-xl border border-stone-200 p-5 bg-stone-50">
-                <p className="text-stone-700 text-sm">&ldquo;{t.text}&rdquo;</p>
-                <footer className="mt-3 text-sm">
-                  <span className="font-medium">{t.name}</span>
-                  <span className="text-stone-400"> · {t.role}</span>
+            {c.testimonials.map((t) => (
+              <blockquote
+                key={t.name}
+                className="rounded-xl border border-border bg-surface p-6"
+              >
+                <p className="text-muted text-sm leading-relaxed">&ldquo;{t.text}&rdquo;</p>
+                <footer className="mt-4 text-sm">
+                  <strong className="text-foreground">{t.name}</strong>
+                  <span className="text-muted"> · {t.role}</span>
                 </footer>
               </blockquote>
             ))}
@@ -86,25 +82,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-10">会员权益</h2>
-          <FeatureGrid />
-        </div>
-      </section>
-
       <section className="bg-brand-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">照相馆一次 ¥299，我们只要 $9.9/月</h2>
-          <p className="mt-4 text-brand-100 text-lg">
-            无限生成、全部风格、高清下载。第一天收费，因为 GPU 算力不免费。
-          </p>
-          <Link
-            href="/join"
-            className="inline-block mt-8 bg-white text-brand-700 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-50 transition-colors"
-          >
-            立即加入 $9.9/月
-          </Link>
+          <h2 className="text-3xl sm:text-4xl font-bold">{c.closing.title}</h2>
+          <p className="mt-4 text-brand-100 text-lg">{c.closing.subtitle}</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="#studio"
+              className="inline-block bg-surface text-brand-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-brand-600/10 transition-colors"
+            >
+              {c.closing.ctaPrimary}
+            </Link>
+            <Link
+              href="/join"
+              className="inline-block border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-surface/10 transition-colors"
+            >
+              {c.closing.ctaSecondary}
+            </Link>
+          </div>
         </div>
       </section>
     </div>

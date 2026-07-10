@@ -1,5 +1,14 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "schengen-天数追踪",
+      "name": "Schengen 天数追踪",
+      "description": "Nomad List 无合规追踪，数字游民需要 .9/月的 Schengen 90/180 天计数 + 税务居留提醒，替代手动表格",
+      "template": "micro-saas",
+      "source": "Nomad Blog 2026 nomad-list-alternatives + Nomad app compliance gap",
+      "discoveredAt": "2026-07-05T15:02:03.993Z"
+    }
+  ],
   "sources": [
     "https://news.ycombinator.com",
     "https://www.reddit.com/r/SaaS/hot.json",
@@ -7,5 +16,199 @@
     "https://www.indiehackers.com",
     "https://twitter.com/search?q=indie%20hacker%20pain"
   ],
-  "lastDiscoveredAt": null
+  "lastDiscoveredAt": "2026-07-05T15:02:03.993Z",
+  "consumed": [
+    {
+      "id": "stripe-pulse-lite",
+      "name": "Indie 订阅分析",
+      "description": "ChartMogul/Baremetrics 免费档过期后跳 99 美元/月，独立开发者需要 19.9 美元/月的 MRR/流失/队列分析，只连 Stripe",
+      "template": "micro-saas",
+      "source": "MicroGaps indie-saas-subscription-analytics 2026",
+      "discoveredAt": "2026-07-01T21:02:39.196Z"
+    },
+    {
+      "id": "一次性买断工具目录",
+      "name": "一次性买断工具目录",
+      "description": "HN 热议：用户厌倦订阅制，需要 payoncealternatives 风格的 SaaS 买断替代品目录，$9.9/月",
+      "template": "micro-saas",
+      "source": "HN#41614926 payoncealternatives.com",
+      "discoveredAt": "2026-07-01T00:03:59.248Z"
+    },
+    {
+      "id": "incident-ai",
+      "name": "AI 事件摘要",
+      "description": "Statuspage 无 AI 写事件更新，独立开发者需要 $9.9/月的 AI 自动生成宕机通知与客户邮件",
+      "template": "micro-saas",
+      "source": "Chirp 2026 AI incident copilot gap vs Statuspage",
+      "discoveredAt": "2026-06-27T22:11:50.758Z"
+    },
+    {
+      "id": "reddit-pulse",
+      "name": "Reddit 痛点挖掘",
+      "description": "GummySearch 关停后，独立开发者需要 $9.9/月的 Reddit 痛点挖掘工具，自动提取 I wish / looking for alternative 语句",
+      "template": "micro-saas",
+      "source": "Indie Hackers GummySearch replacement post 2026-03",
+      "discoveredAt": "2026-06-25T09:04:00.427Z"
+    },
+    {
+      "id": "waitlist-pulse",
+      "name": "产品等候名单",
+      "description": "Prefinery $99/月太贵，独立开发者需要 $9.9/月的极简产品等候名单 + 推荐裂变 + 公开计数",
+      "template": "micro-saas",
+      "source": "HN Ask HN startups MVP waitlist + Reddit r/SaaS pre-launch",
+      "discoveredAt": "2026-06-25T10:04:25.993Z"
+    },
+    {
+      "id": "form-pulse",
+      "name": "极简表单构建器",
+      "description": "Typeform 免费版仅 10 条回复/月，独立开发者需要 $9.9/月的无限表单 + 放弃率分析 + 嵌入小部件",
+      "template": "micro-saas",
+      "source": "HN Typeform cap + Reddit r/SaaS form builder alternative",
+      "discoveredAt": "2026-06-25T12:06:18.396Z"
+    },
+    {
+      "id": "docs-pulse",
+      "name": "API 文档托管",
+      "description": "GitBook $65/月+按人头收费太贵，独立开发者需要 $9.9/月的极简 API 文档 + 自定义域名 + llms.txt",
+      "template": "micro-saas",
+      "source": "HN GitBook pricing + Reddit r/SaaS docs alternative",
+      "discoveredAt": "2026-06-25T13:05:05.680Z"
+    },
+    {
+      "id": "stripe-pulse",
+      "name": "Stripe 收入仪表盘",
+      "description": "ChartMogul/Baremetrics $50-100/月太贵，独立开发者需要 $9.9/月的极简 MRR/ARR/流失仪表盘，只连 Stripe",
+      "template": "micro-saas",
+      "source": "Indie Hackers Stripe metrics alternative post 2026-02",
+      "discoveredAt": "2026-06-25T14:02:29.981Z"
+    },
+    {
+      "id": "link-pulse",
+      "name": "短链点击统计",
+      "description": "Bitly $35/月对独立开发者太贵，需要 $9.9/月的品牌短链 + 点击分析 + UTM 追踪",
+      "template": "micro-saas",
+      "source": "HN Bitly pricing + Reddit r/SaaS link shortener alternative",
+      "discoveredAt": "2026-06-25T15:03:57.664Z"
+    },
+    {
+      "id": "status-pulse",
+      "name": "状态页发布",
+      "description": "Statuspage.io $29+/月太贵，独立开发者需要 $9.9/月的极简状态页 + 事件管理 + 订阅通知",
+      "template": "micro-saas",
+      "source": "Indie Hackers status page $15/mo post 2026-03",
+      "discoveredAt": "2026-06-25T18:05:15.015Z"
+    },
+    {
+      "id": "team-headshots",
+      "name": "团队 AI 头像",
+      "description": "PhotoAI 9/月太贵，小团队需要 .9/月的批量 LinkedIn 专业头像生成",
+      "template": "micro-saas",
+      "source": "HN PhotoAI pricing + Reddit r/SaaS team headshots 2026",
+      "discoveredAt": "2026-06-25T19:02:19.354Z"
+    },
+    {
+      "id": "churn-pulse",
+      "name": "客户成功健康分",
+      "description": "Baremetrics $50+/月太贵，独立开发者需要 $9.9/月的客户健康分+流失预警，只连 Stripe 订阅数据",
+      "template": "micro-saas",
+      "source": "Indie Hackers churn prediction alternative 2026",
+      "discoveredAt": "2026-06-25T21:04:07.024Z"
+    },
+    {
+      "id": "book-pulse",
+      "name": "独立开发者预约",
+      "description": "Calendly $12/月太贵且无法本地化，独立开发者需要 $9.9/月的极简预约页 + 时区同步 + 项目展示",
+      "template": "micro-saas",
+      "source": "HN#44029136 Calendly alternative indie hackers",
+      "discoveredAt": "2026-06-25T23:01:55.712Z"
+    },
+    {
+      "id": "coworking-pass",
+      "name": "联合办公日票预订",
+      "description": "Croissant/Deskpass 订阅太贵，出差数字游民需要 $9.9/月的当日联合办公日票比价+即时预订",
+      "template": "micro-saas",
+      "source": "Nomada.tools coworking directory + Reddit r/digitalnomad day pass 2026",
+      "discoveredAt": "2026-06-26T00:02:16.831Z"
+    },
+    {
+      "id": "seo-rank-tracker",
+      "name": "SEO 排名追踪",
+      "description": "SEMrush $130/月对 indie 太贵，独立开发者需要 $9.9/月的极简关键词排名追踪",
+      "template": "micro-saas",
+      "source": "MicroGaps overpriced SaaS tools 2026-02",
+      "discoveredAt": "2026-06-26T06:04:24.592Z"
+    },
+    {
+      "id": "visa-tracker",
+      "name": "数字游民签证追踪",
+      "description": "Nomad List 签证数据过时18个月，数字游民需要 $9.9/月的实时签证政策追踪+到期提醒",
+      "template": "micro-saas",
+      "source": "Medium Basehop free Nomad List alternative Mar 2026",
+      "discoveredAt": "2026-06-27T04:02:46.298Z"
+    },
+    {
+      "id": "email-pulse",
+      "name": "HTML 邮件构建器",
+      "description": "独立开发者发产品邮件需手写 HTML 或买昂贵 SaaS，需要 $9.9/月的极简邮件模板构建器 + 实时预览 + 导出",
+      "template": "micro-saas",
+      "source": "Pannly SaaS Ideas 2026 #02 Reddit solo founder HTML email builder",
+      "discoveredAt": "2026-06-27T10:07:41.067Z"
+    },
+    {
+      "id": "reddit-watch",
+      "name": "Reddit 线索监控",
+      "description": "SubWatch $29/月太贵，独立开发者需要 $9.9/月的 Reddit 高意向关键词监控，自动提取 alternative to / switching from 语句",
+      "template": "micro-saas",
+      "source": "DEV.to Reddit SaaS ideas scan 2026 + Indie Hackers RedditGrow post",
+      "discoveredAt": "2026-06-28T05:04:26.230Z"
+    },
+    {
+      "id": "tracetics-lite",
+      "name": "Indie 漏斗分析",
+      "description": "Mixpanel $500/月太贵、Plausible 无漏斗，独立开发者需要 $9.9/月的极简漏斗分析 + 流失定位",
+      "template": "micro-saas",
+      "source": "Indie Hackers Tracetics post 2026-03",
+      "discoveredAt": "2026-06-28T07:04:10.813Z"
+    },
+    {
+      "id": "定价页转化诊断",
+      "name": "定价页转化诊断",
+      "description": "85% 访客离开定价页未购买，独立开发者需要 $9.9/月的定价页热力图+流失分析+AB测试建议",
+      "template": "micro-saas",
+      "source": "Indie Hackers pricing funnel post 2026-06",
+      "discoveredAt": "2026-06-29T10:05:07.556Z"
+    },
+    {
+      "id": "meetup-替代品",
+      "name": "Meetup 替代品",
+      "description": "Meetup.com 涨价且数据不归社区，独立开发者/社群组织者需要 $9.9/月的极简活动发布+RSVP+邮件提醒",
+      "template": "micro-saas",
+      "source": "HN OpenMeet + Reddit r/SaaS meetup alternative 2026",
+      "discoveredAt": "2026-06-30T20:02:30.923Z"
+    },
+    {
+      "id": "uptime-alt",
+      "name": "Uptime 涨价替代品",
+      "description": "UptimeRobot 涨价4倍后，独立开发者需要 $9.9/月的极简 uptime 监控 + 状态页一体工具",
+      "template": "micro-saas",
+      "source": "HN UptimeRobot pricing 2026 + Reddit r/SaaS monitoring alternative",
+      "discoveredAt": "2026-06-30T21:04:56.799Z"
+    },
+    {
+      "id": "ai-定价页优化",
+      "name": "AI 定价页优化",
+      "description": "独立开发者定价页转化率低，需要 $9.9/月的 AI 定价页文案+布局诊断+A/B测试建议",
+      "template": "micro-saas",
+      "source": "Indie Hackers pricing page conversion 2026",
+      "discoveredAt": "2026-07-01T06:04:38.460Z"
+    },
+    {
+      "id": "极简表单构建器",
+      "name": "极简表单构建器",
+      "description": "Typeform 免费版仅 10 条回复/月，独立开发者需要 .9/月的无限表单 + 放弃率分析 + 嵌入小部件",
+      "template": "micro-saas",
+      "source": "HN Typeform cap + Indie Hackers form builder 2026",
+      "discoveredAt": "2026-07-03T13:04:35.397Z"
+    }
+  ]
 }

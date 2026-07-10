@@ -1,0 +1,37 @@
+{
+  "at": "2026-07-02T03:47:27.210Z",
+  "dryRun": true,
+  "liveCount": 2,
+  "polarPerSite": false,
+  "demoTop": [
+    {
+      "id": "feature-vote",
+      "pv": 21
+    },
+    {
+      "id": "coworking-finder",
+      "pv": 17
+    },
+    {
+      "id": "visa-guide",
+      "pv": 17
+    },
+    {
+      "id": "startup-ideas",
+      "pv": 16
+    },
+    {
+      "id": "remote-jobs",
+      "pv": 14
+    }
+  ],
+  "actions": [
+    "skip-sync-polar:no-secrets"
+  ],
+  "redeploys": [
+    "ai-headshots",
+    "intercom-pulse",
+    "feature-vote",
+    "team-headshots"
+  ]
+}

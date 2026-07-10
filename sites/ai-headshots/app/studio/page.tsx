@@ -1,5 +1,5 @@
-import { HeadshotStudio } from "@/components/HeadshotStudio";
+import { redirect } from "next/navigation";
 
 export default function StudioPage() {
-  return <HeadshotStudio />;
+  redirect("/#studio");
 }

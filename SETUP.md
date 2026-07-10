@@ -47,7 +47,78 @@ powershell -ExecutionPolicy Bypass -File scripts\setup-and-push.ps1
 
 本地 `.env.local` 仅供手动调试，不会提交 Git。
 
-### 3. 配置 Cursor Automation
+### 4. 飞书通知（部署 URL 推送）
+
+**不必建群机器人**——推荐用自建应用**私信发给你本人**；群 Webhook 为可选。
+
+#### 方式 A：私信（推荐）
+
+1. 打开 [飞书开放平台](https://open.feishu.cn/app) → 进入 **我的小龙虾**（或你的自建应用）
+2. 开启 **机器人** 能力
+3. **权限管理** 中申请并开通：
+   - `im:message:send_as_bot`（以应用身份发消息）
+   - `contact:user.id:readonly`（按手机/邮箱查 open_id）
+4. **版本管理与发布** → 创建版本并发布
+5. **凭证与基础信息** 复制 `App ID`、`App Secret`
+
+**获取你的 open_id**（三选一）：
+
+**A1. 无邮箱账号 → 用手机号查（推荐）**
+
+飞书若提示「暂无邮箱地址」，不要用邮箱，改用绑定的手机号：
+
+```bash
+# 在 feishu.config.local 已写好凭证时：
+source feishu.config.local
+node scripts/feishu-resolve-open-id.mjs mobile +86138xxxxxxxx
+# 或省略 +86：node scripts/feishu-resolve-open-id.mjs mobile 138xxxxxxxx
+```
+
+**A2. 给机器人发消息 → 日志里抄 open_id**
+
+1. 飞书客户端搜索 **我的小龙虾**，进入对话，随便发一句「hi」
+2. 开放平台 → 该应用 → **运营监控 → 日志检索**
+3. 搜 `im.message.receive_v1`，在请求体里找到 `sender.sender_id.open_id`（形如 `ou_xxx`）
+
+**A3. 有企业邮箱时**
+
+```bash
+node scripts/feishu-resolve-open-id.mjs email your@company.com
+```
+
+6. 在 GitHub Secrets 添加（或运行 `bash scripts/setup-github-feishu-secrets.sh`）：
+   - `FEISHU_APP_ID`、`FEISHU_APP_SECRET`
+   - `FEISHU_RECEIVE_ID` = 上一步的 `ou_xxx`（**无邮箱时用这个**）
+   - 仅有企业邮箱时才用 `FEISHU_RECEIVE_EMAIL`
+
+本仓库 OpenClaw 应用：
+- **部署通知** →「我的小龙虾」`cli_a95b97c71eb8dbcd`
+- **OpenClaw 主应用** `cli_a95b90c62b78dcb2`（备用）
+
+手动测试：
+
+```bash
+FEISHU_APP_ID=cli_xxx FEISHU_APP_SECRET=xxx FEISHU_RECEIVE_ID=ou_xxx \
+  node scripts/notify-feishu.mjs nomad-cities https://nomad-cities.vercel.app "游民城市榜"
+```
+
+#### 方式 B：群机器人 Webhook（最简单，无需邮箱 / open_id）
+
+1. 飞书群：**设置 → 群机器人 → 自定义机器人** → 复制 Webhook  
+   形如 `https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx`
+2. 写入 `feishu.config.local`：
+   ```
+   FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx
+   ```
+3. 本机运行（需 `gh` 已登录且有仓库 admin 权限）：
+   ```bash
+   bash scripts/setup-github-feishu-webhook.sh
+   ```
+   或手动在 GitHub **Settings → Secrets → Actions** 添加 `FEISHU_WEBHOOK_URL`。
+
+未配置 App 私信凭证时，脚本自动使用 Webhook。每次部署成功会推送到该群。
+
+### 5. 配置 Cursor Automation
 
 1. Cursor → **Settings → Automations → New**
 2. 触发：**每天 12:00**（cron `0 12 * * *`）

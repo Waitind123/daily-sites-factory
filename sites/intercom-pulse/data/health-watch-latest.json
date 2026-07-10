@@ -1,0 +1,348 @@
+{
+  "at": "2026-07-02T00:55:08.765Z",
+  "tier1Only": true,
+  "summary": {
+    "pass": 42,
+    "warn": 0,
+    "fail": 0
+  },
+  "checks": [
+    {
+      "siteId": "ai-headshots",
+      "check": "page:/",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.116Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.323Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.522Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "page:/studio",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.704Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "api:trial",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.849Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "payment:checkout-probe",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:09.963Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "payment:checkout-redirect",
+      "status": "pass",
+      "detail": "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.226Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "ux:contact-email",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.226Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "ux:join-cta",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.226Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "feature:generate",
+      "status": "pass",
+      "detail": "demo 模式",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.347Z"
+    },
+    {
+      "siteId": "ai-headshots",
+      "check": "page:/studio",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.548Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "page:/",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:10.855Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.071Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.256Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "page:/inbox",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.439Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "api:trial",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.544Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "payment:checkout-probe",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.651Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "payment:checkout-redirect",
+      "status": "pass",
+      "detail": "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.901Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "ux:contact-email",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.901Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "ux:join-cta",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:11.901Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "feature:dashboard",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:12.190Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "feature:tickets",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:12.298Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "feature:collect",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:13.343Z"
+    },
+    {
+      "siteId": "intercom-pulse",
+      "check": "page:/factory-dashboard",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:13.475Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "page:/",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:14.048Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:14.452Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:14.649Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "page:/boards",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:14.833Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "api:trial",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:14.953Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "payment:checkout-probe",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.070Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "payment:checkout-redirect",
+      "status": "pass",
+      "detail": "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.278Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "ux:contact-email",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.278Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "ux:join-cta",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.278Z"
+    },
+    {
+      "siteId": "feature-vote",
+      "check": "feature:boards",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.393Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "page:/",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:15.873Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:16.052Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "page:/join",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:16.236Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "api:trial",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:16.388Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "payment:checkout-probe",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:16.504Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "payment:checkout-redirect",
+      "status": "pass",
+      "detail": "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:17.435Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "ux:contact-email",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:17.435Z"
+    },
+    {
+      "siteId": "team-headshots",
+      "check": "ux:join-cta",
+      "status": "pass",
+      "detail": "",
+      "severity": "pass",
+      "at": "2026-07-02T00:55:17.435Z"
+    }
+  ],
+  "failures": []
+}

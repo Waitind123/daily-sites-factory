@@ -1,0 +1,11 @@
+# 复制为 feishu.config.local（不会提交 Git）
+
+# 方式 B — 群 Webhook（最简单，推荐无邮箱账号时用）
+FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxx
+# 然后: bash scripts/setup-github-feishu-webhook.sh
+
+# 方式 A — 私信（需 open_id 或企业邮箱）
+# FEISHU_APP_ID=cli_xxxxxxxx
+# FEISHU_APP_SECRET=xxxxxxxx
+# FEISHU_RECEIVE_ID=ou_xxxxxxxx
+# FEISHU_RECEIVE_EMAIL=your@company.com

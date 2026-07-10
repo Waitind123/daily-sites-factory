@@ -1,0 +1,71 @@
+name: Redeploy all sites
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list-sites:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.list.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          SITES=$(ls -d sites/*/ | xargs -n1 basename | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "sites=$SITES" >> $GITHUB_OUTPUT
+
+  deploy:
+    needs: list-sites
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site_id: ${{ fromJson(needs.list-sites.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install and build
+        working-directory: sites/${{ matrix.site_id }}
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Vercel deploy guard (daily limit)
+        run: node scripts/vercel-deploy-guard.mjs
+
+      - name: Deploy to Vercel
+        id: vercel
+        working-directory: sites/${{ matrix.site_id }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SCOPE: baoyu18178053101-6131s-projects
+        run: |
+          npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
+          LOG=/tmp/vercel-${{ matrix.site_id }}.log
+          if ! npx vercel deploy --prod --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" 2>&1 | tee "$LOG"; then
+            if grep -q 'api-deployments-free-per-day' "$LOG"; then
+              echo "Vercel daily limit — skip" >&2
+              exit 0
+            fi
+            exit 1
+          fi
+          DEPLOY_URL=$(grep -oE 'https://[^ ]+\.vercel\.app' "$LOG" | tail -1)
+          echo "url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Deployed ${{ matrix.site_id }} to: $DEPLOY_URL"
+
+      - name: Notify Feishu
+        if: success() && steps.vercel.outputs.url != ''
+        env:
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_RECEIVE_ID: ${{ secrets.FEISHU_RECEIVE_ID }}
+          FEISHU_RECEIVE_EMAIL: ${{ secrets.FEISHU_RECEIVE_EMAIL }}
+          FEISHU_RECEIVE_ID_TYPE: ${{ secrets.FEISHU_RECEIVE_ID_TYPE }}
+        run: |
+          node scripts/notify-feishu.mjs "${{ matrix.site_id }}" "${{ steps.vercel.outputs.url }}"
