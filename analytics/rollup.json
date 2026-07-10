@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:26:49.877Z",
+  "updatedAt": "2026-07-10T07:26:53.567Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6156,7 +6156,7 @@
           }
         },
         "2026-07-10": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -6166,36 +6166,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "e754671a-5d25-483a-87c9-c2746d068fe9": 1
+            "e754671a-5d25-483a-87c9-c2746d068fe9": 2
           }
         }
       },
       "totals": {
-        "pv": 12,
+        "pv": 13,
         "uv": 10,
         "trial": 0,
         "checkout": 0,
@@ -13925,9 +13926,9 @@
       "visitorId": "e754671a-5d25-483a-87c9-c2746d068fe9",
       "siteId": "og-image-studio",
       "firstSeen": "2026-07-10T07:26:49.709Z",
-      "lastSeen": "2026-07-10T07:26:49.709Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-10T07:26:50.017Z",
+      "pageviews": 2,
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
