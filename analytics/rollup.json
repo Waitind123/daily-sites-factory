@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T18:57:46.798Z",
+  "updatedAt": "2026-07-10T18:59:06.396Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11089,11 +11089,49 @@
             "32a9b533-c794-4a2f-ab61-8b142e1f92f4",
             "6d57937e-2e4e-45f5-b2af-bdd92650989e"
           ]
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "72a48946-39af-4d25-b140-4695f269f3ed"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "72a48946-39af-4d25-b140-4695f269f3ed": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11110,7 +11148,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:33.893Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "72a48946-39af-4d25-b140-4695f269f3ed"
+      ]
     },
     "bulk-landing-gen": {
       "url": "https://bulk-landing-gen.vercel.app",
@@ -15329,6 +15370,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "72a48946-39af-4d25-b140-4695f269f3ed",
+      "siteId": "ai-profit-pulse",
+      "firstSeen": "2026-07-10T18:59:06.160Z",
+      "lastSeen": "2026-07-10T18:59:06.160Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f",
       "siteId": "docsend-pulse",
