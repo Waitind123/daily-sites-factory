@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:24:23.503Z",
+  "updatedAt": "2026-07-10T07:24:34.264Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11591,11 +11591,49 @@
           "visitorHits": {
             "4f99d910-910c-4047-a9c0-86b83bd59955": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a59d7bfe-c097-4e59-92f4-85db6ff5cce8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a59d7bfe-c097-4e59-92f4-85db6ff5cce8": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11612,7 +11650,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:00.945Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a59d7bfe-c097-4e59-92f4-85db6ff5cce8"
+      ]
     },
     "visa-live": {
       "url": "https://visa-live.vercel.app",
@@ -13798,6 +13839,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a59d7bfe-c097-4e59-92f4-85db6ff5cce8",
+      "siteId": "pricing-convert",
+      "firstSeen": "2026-07-10T07:24:34.093Z",
+      "lastSeen": "2026-07-10T07:24:34.093Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1c406c5b-d6b2-44d2-89f2-245927abb3e1",
       "siteId": "landing-generator",
