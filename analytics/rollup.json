@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:49:15.869Z",
+  "updatedAt": "2026-07-10T07:50:49.187Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9732,11 +9732,49 @@
             "f0f7cfdd-5850-40b7-b6ea-0d929868cd75": 1,
             "c3b33e7a-a34c-4fd3-b3d3-0a8ab23c412e": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8ad851b4-3236-4b05-8803-b2aecd7637b3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8ad851b4-3236-4b05-8803-b2aecd7637b3": 1
+          }
         }
       },
       "totals": {
-        "pv": 12,
-        "uv": 8,
+        "pv": 13,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9753,7 +9791,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:19.195Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "8ad851b4-3236-4b05-8803-b2aecd7637b3"
+      ]
     },
     "visa-guide": {
       "url": "https://visa-guide-tau.vercel.app",
@@ -15037,6 +15078,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8ad851b4-3236-4b05-8803-b2aecd7637b3",
+      "siteId": "virtual-cowork-room",
+      "firstSeen": "2026-07-10T07:50:49.024Z",
+      "lastSeen": "2026-07-10T07:50:49.024Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b8a583bb-6948-41e0-ae3f-22c5bde022c8",
       "siteId": "saas-alt-intel",
