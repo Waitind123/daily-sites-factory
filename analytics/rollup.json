@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:15:36.227Z",
+  "updatedAt": "2026-07-10T07:15:39.310Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12972,11 +12972,49 @@
           "visitorHits": {
             "e0a3eee8-c084-4bb0-9cb4-0cf56be17bb9": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c39f2c51-9cbd-42da-a220-174ed9a5308c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/scan": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c39f2c51-9cbd-42da-a220-174ed9a5308c": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12993,7 +13031,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:49.426Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "c39f2c51-9cbd-42da-a220-174ed9a5308c"
+      ]
     },
     "虚拟图书馆共工": {
       "url": "",
@@ -13304,6 +13345,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c39f2c51-9cbd-42da-a220-174ed9a5308c",
+      "siteId": "gdpr-pulse",
+      "firstSeen": "2026-07-10T07:15:38.684Z",
+      "lastSeen": "2026-07-10T07:15:38.684Z",
+      "pageviews": 1,
+      "path": "/scan",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5cf7fa40-007a-4476-8328-908bd4eb4899",
       "siteId": "coworking-daypass",
