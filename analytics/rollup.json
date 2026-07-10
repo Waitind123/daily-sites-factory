@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:14:39.503Z",
+  "updatedAt": "2026-07-10T07:14:44.812Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4548,11 +4548,49 @@
             "7086ab93-8b77-418b-8fef-0c3de6178102": 1,
             "14653a5a-2f43-4201-ad67-597b0bf9ba1a": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bb463f4d-9e7b-4517-9b5c-56d8ba54738c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "bb463f4d-9e7b-4517-9b5c-56d8ba54738c": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4569,7 +4607,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:53.173Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "bb463f4d-9e7b-4517-9b5c-56d8ba54738c"
+      ]
     },
     "landing-generator": {
       "url": "https://landing-generator-opal.vercel.app",
@@ -13058,6 +13099,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bb463f4d-9e7b-4517-9b5c-56d8ba54738c",
+      "siteId": "invoice-desk",
+      "firstSeen": "2026-07-10T07:14:44.639Z",
+      "lastSeen": "2026-07-10T07:14:44.639Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9a0e8e24-97d8-42fb-9799-243ef60b3baa",
       "siteId": "churn-reason-pulse",
