@@ -42,6 +42,15 @@ if (!res.ok) {
 }
 
 if (!stripeLive) {
+  const probe = await fetch(`${base.replace(/\/$/, "")}/api/checkout?go=1&currency=usd`, {
+    redirect: "manual",
+    signal: AbortSignal.timeout(20000),
+  });
+  const loc = probe.headers.get("location") || "";
+  if (probe.status === 302 && loc.includes("checkout.stripe.com")) {
+    console.log(`✓ ${siteId} Stripe live (redirect probe)`);
+    process.exit(0);
+  }
   console.error(`❌ ${siteId} 仍为演示模式 — STRIPE_SECRET_KEY 未生效`);
   console.error(JSON.stringify(data));
   process.exit(1);

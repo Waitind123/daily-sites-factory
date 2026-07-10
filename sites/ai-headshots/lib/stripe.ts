@@ -1,15 +1,14 @@
 import Stripe from "stripe";
 import { resolvePolarCheckoutUrl } from "./polar-checkout";
+
 const DEFAULT_POLAR_CHECKOUT_URL =
   "https://buy.polar.sh/polar_cl_YZS7f2bSGvVGtVq9soq8PFjvHvvxkRO09E8Xx0cESgj";
 
-
 const POLAR_CHECKOUT_URL =
   process.env.POLAR_CHECKOUT_URL ?? DEFAULT_POLAR_CHECKOUT_URL;
-const DEMO_MODE = !process.env.STRIPE_SECRET_KEY && !POLAR_CHECKOUT_URL;
 
 export function isDemoMode() {
-  return DEMO_MODE;
+  return !process.env.STRIPE_SECRET_KEY && !POLAR_CHECKOUT_URL;
 }
 
 export function getStripe() {
@@ -23,35 +22,14 @@ export const PRICE_CNY_MONTHLY = 6900;
 export const PRICE_CNY = 69900;
 export const PRICE_USD = 9900;
 
-export async function createCheckoutSession(
+async function createStripeSession(
+  stripe: Stripe,
   origin: string,
-  currency: "cny" | "usd" = "cny"
+  currency: "cny" | "usd"
 ) {
-  if (currency !== "cny") {
-    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
-    if (polarUrl) {
-      return { demo: false as const, url: polarUrl };
-    }
-  }
-
-  const stripe = getStripe();
-
-  if (!stripe) {
-    return {
-      demo: true as const,
-      url: `${origin}/success?demo=true&currency=${currency}`,
-    };
-  }
-
   const isCny = currency === "cny";
-  const session = await stripe.checkout.sessions.create({
-    mode: "payment",
-    payment_method_types: isCny
-      ? ["card", "alipay", "wechat_pay"]
-      : ["card"],
-    ...(isCny
-      ? { payment_method_options: { wechat_pay: { client: "web" } } }
-      : {}),
+  const base = {
+    mode: "subscription" as const,
     line_items: [
       {
         price_data: {
@@ -59,22 +37,63 @@ export async function createCheckoutSession(
           product_data: {
             name: isCny ? "AI 证件照 · 月费会员" : "AI Headshots · Monthly",
             description: isCny
-              ? "无限生成 + 全部风格 + 高清下载，支持支付宝/微信"
+              ? "无限生成 + 全部风格 + 高清下载"
               : "Unlimited generations + all styles + HD download",
           },
           unit_amount: isCny ? PRICE_CNY_MONTHLY : PRICE_USD,
+          recurring: { interval: "month" as const },
         },
         quantity: 1,
       },
     ],
     success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}&currency=${currency}`,
     cancel_url: `${origin}/join`,
-    metadata: { product: "ai-headshots-annual", currency },
+    metadata: { product: "ai-headshots-monthly", currency },
+  };
+
+  if (isCny) {
+    try {
+      const session = await stripe.checkout.sessions.create({
+        ...base,
+        payment_method_types: ["card", "alipay", "wechat_pay"],
+        payment_method_options: { wechat_pay: { client: "web" } },
+      });
+      return session;
+    } catch (err) {
+      console.warn("[stripe] CNY alipay/wechat unavailable, fallback to card:", err);
+    }
+  }
+
+  return stripe.checkout.sessions.create({
+    ...base,
+    payment_method_types: ["card"],
   });
+}
+
+export async function createCheckoutSession(
+  origin: string,
+  currency: "cny" | "usd" = "cny"
+) {
+  const stripe = getStripe();
+
+  if (stripe) {
+    const session = await createStripeSession(stripe, origin, currency);
+    return {
+      demo: false as const,
+      url: session.url!,
+      sessionId: session.id,
+    };
+  }
+
+  if (currency !== "cny") {
+    const polarUrl = await resolvePolarCheckoutUrl(origin, { currency });
+    if (polarUrl) {
+      return { demo: false as const, url: polarUrl };
+    }
+  }
 
   return {
-    demo: false as const,
-    url: session.url!,
-    sessionId: session.id,
+    demo: true as const,
+    url: `${origin}/success?demo=true&currency=${currency}`,
   };
 }
