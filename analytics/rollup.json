@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:37:17.118Z",
+  "updatedAt": "2026-07-10T07:37:26.336Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8934,7 +8934,7 @@
           }
         },
         "2026-07-10": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -8944,36 +8944,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/wall": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "0f47deae-5a0c-4b38-a117-5d166668ce01": 1
+            "0f47deae-5a0c-4b38-a117-5d166668ce01": 2
           }
         }
       },
       "totals": {
-        "pv": 5,
+        "pv": 6,
         "uv": 4,
         "trial": 0,
         "checkout": 0,
@@ -14499,9 +14500,9 @@
       "visitorId": "0f47deae-5a0c-4b38-a117-5d166668ce01",
       "siteId": "testimonial-wall",
       "firstSeen": "2026-07-10T07:37:16.897Z",
-      "lastSeen": "2026-07-10T07:37:16.897Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-07-10T07:37:17.822Z",
+      "pageviews": 2,
+      "path": "/wall",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
