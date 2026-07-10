@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:14:57.153Z",
+  "updatedAt": "2026-07-10T07:14:59.478Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -756,11 +756,49 @@
           "visitorHits": {
             "8528bbbd-2c92-4208-ba96-75c70e3593c0": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "02b7de32-4fc2-4ecd-afd6-29bfe9694e97"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "02b7de32-4fc2-4ecd-afd6-29bfe9694e97": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 5,
+        "pv": 8,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -777,7 +815,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:36.367Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "02b7de32-4fc2-4ecd-afd6-29bfe9694e97"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -13140,6 +13181,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "02b7de32-4fc2-4ecd-afd6-29bfe9694e97",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-10T07:14:59.274Z",
+      "lastSeen": "2026-07-10T07:14:59.274Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a3450233-06c3-4743-b57d-804fc12f85b8",
       "siteId": "pain-radar",
