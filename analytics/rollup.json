@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:24:35.261Z",
+  "updatedAt": "2026-07-10T07:26:00.289Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -981,11 +981,49 @@
             "edef26aa-41c5-416b-b318-89c197b8b167": 1,
             "ea155108-f495-4adc-86f5-01b7eff13fb6": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "530d34ac-54b5-4663-b9f7-797bbac20819"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "530d34ac-54b5-4663-b9f7-797bbac20819": 1
+          }
         }
       },
       "totals": {
-        "pv": 16,
-        "uv": 13,
+        "pv": 17,
+        "uv": 14,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1002,7 +1040,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:37.880Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "530d34ac-54b5-4663-b9f7-797bbac20819"
+      ]
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
@@ -13839,6 +13880,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "530d34ac-54b5-4663-b9f7-797bbac20819",
+      "siteId": "carbon-calculator",
+      "firstSeen": "2026-07-10T07:26:00.148Z",
+      "lastSeen": "2026-07-10T07:26:00.148Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "a59d7bfe-c097-4e59-92f4-85db6ff5cce8",
       "siteId": "pricing-convert",
