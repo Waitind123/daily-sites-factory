@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:31:23.832Z",
+  "updatedAt": "2026-07-10T07:32:24.114Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4181,11 +4181,49 @@
             "df0e08a1-f585-4c77-8233-cc0655bb542f": 1,
             "7d38a172-6512-46c6-ba1c-6f1757cf0c19": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9": 1
+          }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 9,
+        "pv": 14,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4202,7 +4240,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:50.808Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9"
+      ]
     },
     "incident-ai": {
       "url": "https://incident-ai-seven.vercel.app",
@@ -14171,6 +14212,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9",
+      "siteId": "habit-tracker",
+      "firstSeen": "2026-07-10T07:32:23.960Z",
+      "lastSeen": "2026-07-10T07:32:23.960Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "eb9a0b74-28b2-4c37-9a2e-7994fe0e6803",
       "siteId": "price-tracker",
