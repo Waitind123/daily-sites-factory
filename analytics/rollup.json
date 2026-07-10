@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:26:53.567Z",
+  "updatedAt": "2026-07-10T07:26:55.283Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -632,11 +632,49 @@
             "a1016716-af61-4fe3-badc-a8c277f8addc": 1,
             "7d3e2666-d6fe-49f6-bf82-d9dde167bbd8": 1
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a99c8f54-f4e5-4549-bb16-9deb092a95dd"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a99c8f54-f4e5-4549-bb16-9deb092a95dd": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -653,7 +691,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:13:34.457Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a99c8f54-f4e5-4549-bb16-9deb092a95dd"
+      ]
     },
     "book-pulse": {
       "url": "https://book-pulse-lovat.vercel.app",
@@ -13922,6 +13963,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a99c8f54-f4e5-4549-bb16-9deb092a95dd",
+      "siteId": "ai-waitlist",
+      "firstSeen": "2026-07-10T07:26:55.112Z",
+      "lastSeen": "2026-07-10T07:26:55.112Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e754671a-5d25-483a-87c9-c2746d068fe9",
       "siteId": "og-image-studio",
