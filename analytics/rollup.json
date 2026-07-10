@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:23:58.997Z",
+  "updatedAt": "2026-07-10T07:24:02.350Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1291,7 +1291,7 @@
           }
         },
         "2026-07-10": {
-          "pv": 3,
+          "pv": 4,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -1302,40 +1302,41 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
               "/": 2,
-              "/dashboard": 1
+              "/dashboard": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
               "en": 1,
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 4
             },
             "utmSources": {},
             "hours": {
               "11": 1,
-              "15": 2
+              "15": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 1
+              "returning": 2
             }
           },
           "visitorHits": {
             "7f9b585f-7ca6-4b6c-96db-a45830d81514": 1,
-            "09c4902a-286a-40ea-9f61-edff1cff8873": 2
+            "09c4902a-286a-40ea-9f61-edff1cff8873": 3
           }
         }
       },
       "totals": {
-        "pv": 9,
+        "pv": 10,
         "uv": 6,
         "trial": 0,
         "checkout": 0,
@@ -13759,9 +13760,9 @@
       "visitorId": "09c4902a-286a-40ea-9f61-edff1cff8873",
       "siteId": "churn-pulse",
       "firstSeen": "2026-07-10T07:23:57.572Z",
-      "lastSeen": "2026-07-10T07:23:56.552Z",
-      "pageviews": 2,
-      "path": "/",
+      "lastSeen": "2026-07-10T07:23:56.955Z",
+      "pageviews": 3,
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
