@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:54:12.760Z",
+  "updatedAt": "2026-07-10T09:42:27.217Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13514,47 +13514,51 @@
           }
         },
         "2026-07-10": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ea58b24c-a67a-4671-bfa2-e376bc18c23c"
+            "ea58b24c-a67a-4671-bfa2-e376bc18c23c",
+            "5e604f3f-305a-4999-bd48-a247148b329d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 1,
+              "en": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 1,
+              "17": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ea58b24c-a67a-4671-bfa2-e376bc18c23c": 1
+            "ea58b24c-a67a-4671-bfa2-e376bc18c23c": 1,
+            "5e604f3f-305a-4999-bd48-a247148b329d": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13573,7 +13577,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "ea58b24c-a67a-4671-bfa2-e376bc18c23c"
+        "ea58b24c-a67a-4671-bfa2-e376bc18c23c",
+        "5e604f3f-305a-4999-bd48-a247148b329d"
       ]
     },
     "应用商店差评挖痛点": {
@@ -15205,6 +15210,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5e604f3f-305a-4999-bd48-a247148b329d",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-10T09:42:26.857Z",
+      "lastSeen": "2026-07-10T09:42:26.857Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1783670052610",
       "siteId": "feature-vote",
