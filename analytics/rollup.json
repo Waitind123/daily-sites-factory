@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-10T07:45:52.703Z",
+  "updatedAt": "2026-07-10T07:46:55.184Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10583,11 +10583,49 @@
             "42e8665b-a209-4287-bf46-af749a122de7": 1,
             "065083f5-6730-4ab1-976b-bf56c37c28c6": 2
           }
+        },
+        "2026-07-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "3a178cd6-981a-4eef-abaf-cdd766f74cbc"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "3a178cd6-981a-4eef-abaf-cdd766f74cbc": 1
+          }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 11,
+        "pv": 16,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10604,7 +10642,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:19.811Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "3a178cd6-981a-4eef-abaf-cdd766f74cbc"
+      ]
     },
     "saas-早期用户市场": {
       "url": "",
@@ -14872,6 +14913,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3a178cd6-981a-4eef-abaf-cdd766f74cbc",
+      "siteId": "visa-alert",
+      "firstSeen": "2026-07-10T07:46:54.528Z",
+      "lastSeen": "2026-07-10T07:46:54.528Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ea58b24c-a67a-4671-bfa2-e376bc18c23c",
       "siteId": "waitlist-email-verify",
