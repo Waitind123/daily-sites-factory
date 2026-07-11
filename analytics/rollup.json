@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T07:48:17.959Z",
+  "updatedAt": "2026-07-11T08:05:27.355Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6636,11 +6636,49 @@
           "visitorHits": {
             "60af26e8-34d3-47f5-8d66-bcdd5670e8e3": 1
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a50dcb2e-eadc-4a20-a448-0011dff8ef16"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a50dcb2e-eadc-4a20-a448-0011dff8ef16": 1
+          }
         }
       },
       "totals": {
-        "pv": 22,
-        "uv": 20,
+        "pv": 23,
+        "uv": 21,
         "trial": 0,
         "checkout": 1,
         "purchase": 0
@@ -6659,7 +6697,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "60af26e8-34d3-47f5-8d66-bcdd5670e8e3"
+        "60af26e8-34d3-47f5-8d66-bcdd5670e8e3",
+        "a50dcb2e-eadc-4a20-a448-0011dff8ef16"
       ]
     },
     "og-image-studio": {
@@ -15909,6 +15948,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a50dcb2e-eadc-4a20-a448-0011dff8ef16",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-07-11T08:05:26.989Z",
+      "lastSeen": "2026-07-11T08:05:26.989Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "17f94f95-a31a-4c79-8e5f-d475638785b4",
       "siteId": "visa-guide",
