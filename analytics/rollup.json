@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T19:31:14.823Z",
+  "updatedAt": "2026-07-11T19:43:58.709Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13209,47 +13209,51 @@
           }
         },
         "2026-07-11": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607"
+            "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607",
+            "a247eb73-c823-412b-a663-3dabbce870be"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 1,
+              "Europe/Moscow": 1
             },
             "utmSources": {},
             "hours": {
+              "3": 1,
               "16": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607": 1
+            "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607": 1,
+            "a247eb73-c823-412b-a663-3dabbce870be": 1
           }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 6,
+        "pv": 8,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13268,7 +13272,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607"
+        "5b612d6a-ef9b-4f77-a1a8-e9c0a0147607",
+        "a247eb73-c823-412b-a663-3dabbce870be"
       ]
     },
     "pricing-intel": {
@@ -16336,6 +16341,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a247eb73-c823-412b-a663-3dabbce870be",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-07-11T19:43:58.399Z",
+      "lastSeen": "2026-07-11T19:43:58.399Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1783798274616",
       "siteId": "feature-vote",
