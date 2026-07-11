@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T04:09:44.613Z",
+  "updatedAt": "2026-07-11T04:20:42.689Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8463,11 +8463,49 @@
           "visitorHits": {
             "74bde8a5-04b8-4837-b120-5033d2c0faf1": 1
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "22d8e779-7bfc-4f50-9988-5f91335e7c17"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "22d8e779-7bfc-4f50-9988-5f91335e7c17": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 3,
+        "pv": 7,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8486,7 +8524,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "74bde8a5-04b8-4837-b120-5033d2c0faf1"
+        "74bde8a5-04b8-4837-b120-5033d2c0faf1",
+        "22d8e779-7bfc-4f50-9988-5f91335e7c17"
       ]
     },
     "startup-ideas": {
@@ -15634,6 +15673,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "22d8e779-7bfc-4f50-9988-5f91335e7c17",
+      "siteId": "sign-pulse",
+      "firstSeen": "2026-07-11T04:20:42.377Z",
+      "lastSeen": "2026-07-11T04:20:42.377Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "233eb6f9-512b-4a5d-a28b-fbdbdac1a512",
       "siteId": "churn-pulse",
