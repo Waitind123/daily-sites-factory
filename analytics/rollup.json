@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T04:20:42.689Z",
+  "updatedAt": "2026-07-11T04:26:22.464Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5235,11 +5235,49 @@
             "59b8f81a-e1aa-4543-b408-e4bc17e9c91b": 1,
             "7b4c90f5-75a2-4ddd-931d-9aa652b6761c": 2
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e4eb668f-5584-4ddf-9999-3dc3e22231a1"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e4eb668f-5584-4ddf-9999-3dc3e22231a1": 1
+          }
         }
       },
       "totals": {
-        "pv": 72,
-        "uv": 50,
+        "pv": 73,
+        "uv": 51,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5262,7 +5300,8 @@
         "bfb44802-9a7e-471b-88f0-c375eb765fe7",
         "fc6dcfd9-fda0-4145-847a-464a1cbd7f28",
         "59b8f81a-e1aa-4543-b408-e4bc17e9c91b",
-        "7b4c90f5-75a2-4ddd-931d-9aa652b6761c"
+        "7b4c90f5-75a2-4ddd-931d-9aa652b6761c",
+        "e4eb668f-5584-4ddf-9999-3dc3e22231a1"
       ]
     },
     "invoice-desk": {
@@ -15673,6 +15712,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e4eb668f-5584-4ddf-9999-3dc3e22231a1",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-11T04:26:19.295Z",
+      "lastSeen": "2026-07-11T04:26:19.295Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "22d8e779-7bfc-4f50-9988-5f91335e7c17",
       "siteId": "sign-pulse",
