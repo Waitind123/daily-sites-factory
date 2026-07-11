@@ -68,6 +68,9 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     console.error("Generate error:", msg);
+    if (msg === "REPLICATE_NO_CREDIT") {
+      return apiError("REPLICATE_NO_CREDIT", 503);
+    }
     return apiError("GENERATE_FAILED", 500);
   }
 }
