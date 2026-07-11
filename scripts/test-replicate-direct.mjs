@@ -111,6 +111,11 @@ try {
   await testUrlPrediction(fileUrl);
   console.log("\n✓ Replicate 全链路 OK\n");
 } catch (e) {
-  console.error("\n❌", e.message || e);
+  const msg = e.message || String(e);
+  if (msg.includes("402") || msg.includes("Insufficient credit")) {
+    console.error("\n❌ Replicate 账户余额不足 — 请充值: https://replicate.com/account/billing\n");
+  } else {
+    console.error("\n❌", msg);
+  }
   process.exit(1);
 }

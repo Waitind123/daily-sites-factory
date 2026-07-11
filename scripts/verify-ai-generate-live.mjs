@@ -45,6 +45,10 @@ const genRes = await fetch(`${base}/api/generate`, {
 const gen = await genRes.json().catch(() => ({}));
 
 if (!genRes.ok || !gen.ok || !gen.url) {
+  if (gen.code === "REPLICATE_NO_CREDIT") {
+    console.error(`❌ ${siteId} Replicate 账户余额不足 — 请充值 https://replicate.com/account/billing`);
+    process.exit(1);
+  }
   console.error(`❌ ${siteId} /api/generate 失败 (${genRes.status}):`, gen);
   process.exit(1);
 }

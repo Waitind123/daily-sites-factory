@@ -122,6 +122,9 @@ export async function generateHeadshot(
 
   if (!res.ok) {
     const err = await res.text();
+    if (res.status === 402) {
+      throw new Error("REPLICATE_NO_CREDIT");
+    }
     throw new Error(`Replicate API ${res.status}: ${err.slice(0, 300)}`);
   }
 
