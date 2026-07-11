@@ -1,4 +1,5 @@
 const MODEL = "flux-kontext-apps/professional-headshot";
+const MAX_DATA_URI_CHARS = 256_000; // Replicate: <=256KB 可用 data URI
 
 const STYLE_BACKGROUNDS: Record<string, string> = {
   corporate: "neutral",
@@ -22,7 +23,7 @@ export function getStyleBackground(style: string) {
   return STYLE_BACKGROUNDS[style] ?? "neutral";
 }
 
-/** data URI → Replicate Files HTTPS URL（模型更稳定地接受 URL 输入） */
+/** multipart/form-data 上传到 Replicate Files */
 async function uploadDataUriToReplicate(
   imageDataUri: string,
   token: string
@@ -33,15 +34,17 @@ async function uploadDataUriToReplicate(
   const mime = match[1];
   const ext = EXT_BY_MIME[mime] ?? "jpg";
   const buffer = Buffer.from(match[2], "base64");
+  const blob = new Blob([buffer], { type: mime });
+
+  const form = new FormData();
+  form.append("content", blob, `headshot-input.${ext}`);
 
   const res = await fetch("https://api.replicate.com/v1/files", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
-      "Content-Type": "application/octet-stream",
-      "Content-Disposition": `attachment; filename="headshot-input.${ext}"`,
     },
-    body: buffer,
+    body: form,
     signal: AbortSignal.timeout(60000),
   });
 
@@ -53,6 +56,13 @@ async function uploadDataUriToReplicate(
   const url = file.urls?.get;
   if (!url) throw new Error("Replicate upload returned no URL");
   return url;
+}
+
+async function resolveInputImage(imageDataUri: string, token: string) {
+  if (imageDataUri.length <= MAX_DATA_URI_CHARS) {
+    return imageDataUri;
+  }
+  return uploadDataUriToReplicate(imageDataUri, token);
 }
 
 async function pollPrediction(url: string, token: string, tries = 90) {
@@ -85,7 +95,7 @@ export async function generateHeadshot(
     throw new Error("REPLICATE_API_TOKEN not configured");
   }
 
-  const inputImage = await uploadDataUriToReplicate(imageDataUri, token);
+  const inputImage = await resolveInputImage(imageDataUri, token);
 
   const res = await fetch(
     `https://api.replicate.com/v1/models/${MODEL}/predictions`,
@@ -94,7 +104,7 @@ export async function generateHeadshot(
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
-        Prefer: "wait=60",
+        Prefer: "wait=120",
       },
       body: JSON.stringify({
         input: {
@@ -106,7 +116,7 @@ export async function generateHeadshot(
           safety_tolerance: 2,
         },
       }),
-      signal: AbortSignal.timeout(65000),
+      signal: AbortSignal.timeout(180000),
     }
   );
 
