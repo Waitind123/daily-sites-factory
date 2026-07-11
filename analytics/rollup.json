@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T09:13:45.141Z",
+  "updatedAt": "2026-07-11T09:14:35.326Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4593,47 +4593,50 @@
           }
         },
         "2026-07-11": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e1163f22-e83e-46fe-b547-ca9fb1fcd4af"
+            "e1163f22-e83e-46fe-b547-ca9fb1fcd4af",
+            "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "e1163f22-e83e-46fe-b547-ca9fb1fcd4af": 1
+            "e1163f22-e83e-46fe-b547-ca9fb1fcd4af": 1,
+            "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 11,
+        "pv": 16,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4653,7 +4656,8 @@
       },
       "knownVisitors": [
         "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9",
-        "e1163f22-e83e-46fe-b547-ca9fb1fcd4af"
+        "e1163f22-e83e-46fe-b547-ca9fb1fcd4af",
+        "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3"
       ]
     },
     "incident-ai": {
@@ -16172,6 +16176,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3",
+      "siteId": "habit-tracker",
+      "firstSeen": "2026-07-11T09:14:35.108Z",
+      "lastSeen": "2026-07-11T09:14:35.108Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "e1163f22-e83e-46fe-b547-ca9fb1fcd4af",
       "siteId": "habit-tracker",
