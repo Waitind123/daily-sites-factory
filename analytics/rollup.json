@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T04:28:10.992Z",
+  "updatedAt": "2026-07-11T04:50:31.285Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10341,11 +10341,49 @@
             "0a6c04a5-7de0-4500-8ef4-d69fd5214dfb": 1,
             "43886435-942e-43b1-bd99-e4a03fa7f8c5": 2
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0d3e34b1-fb5b-458e-b234-2d1edcc8ec62"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "tr": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0d3e34b1-fb5b-458e-b234-2d1edcc8ec62": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 18,
+        "pv": 24,
+        "uv": 19,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10362,7 +10400,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-09T06:14:20.387Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0d3e34b1-fb5b-458e-b234-2d1edcc8ec62"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -15715,6 +15756,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0d3e34b1-fb5b-458e-b234-2d1edcc8ec62",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-07-11T04:50:29.859Z",
+      "lastSeen": "2026-07-11T04:50:29.859Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "tr",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "475ae722-64de-4e5d-86e1-a0889a34cf0b",
       "siteId": "intercom-pulse",
