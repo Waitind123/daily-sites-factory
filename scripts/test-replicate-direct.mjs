@@ -50,15 +50,19 @@ async function testDataUriDirect() {
 }
 
 async function testFilesUpload() {
-  console.log("\n2) Files API 上传...");
+  console.log("\n2) Files API 上传 (multipart)...");
+  const form = new FormData();
+  form.append(
+    "content",
+    new Blob([portrait], { type: "image/jpeg" }),
+    "test-portrait.jpg"
+  );
   const res = await fetch("https://api.replicate.com/v1/files", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
-      "Content-Type": "application/octet-stream",
-      "Content-Disposition": 'attachment; filename="test-portrait.jpg"',
     },
-    body: portrait,
+    body: form,
     signal: AbortSignal.timeout(60000),
   });
   const text = await res.text();

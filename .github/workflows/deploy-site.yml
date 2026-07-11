@@ -205,6 +205,17 @@ jobs:
           npx vercel link --yes --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
           printf '%s' "$REPLICATE_TOKEN" | npx vercel env add REPLICATE_API_TOKEN production --force --scope="$VERCEL_SCOPE" --token="$VERCEL_TOKEN" || true
 
+      - name: Replicate API diagnostic (pre-deploy)
+        if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        env:
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: |
+          if [ -z "$REPLICATE_API_TOKEN" ]; then
+            echo "::warning::REPLICATE_API_TOKEN 未配置"
+            exit 0
+          fi
+          node scripts/test-replicate-direct.mjs
+
       - name: Deploy to Vercel
         id: vercel
         working-directory: sites/${{ matrix.site_id }}
