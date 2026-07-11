@@ -7,7 +7,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { generateRedditPost, shouldPostToday } from "./lib/social-copy.mjs";
+import { generateRedditPost, shouldPostNow } from "./lib/social-copy.mjs";
 import { getRedditAccessToken, submitRedditPost, getRedditMe } from "./lib/reddit-api.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -30,7 +30,7 @@ function saveState(state) {
 
 async function main() {
   const state = loadState();
-  const gate = shouldPostToday(state);
+  const gate = shouldPostNow(state);
   if (!force && !gate.ok) {
     console.log(`⏭ 跳过发帖: ${gate.reason}`);
     return;

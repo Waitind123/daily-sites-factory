@@ -18,18 +18,20 @@ jobs:
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: node scripts/promo-multi-platform.mjs
 
-      - name: Reddit auto post (if configured)
+      - name: Social auto post (if configured)
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
         run: |
-          if [ "$SOCIAL_PROMO_ENABLED" = "true" ] && [ -n "$REDDIT_REFRESH_TOKEN" ]; then
-            node scripts/post-reddit-promo.mjs --force
+          if [ "$SOCIAL_PROMO_ENABLED" = "true" ]; then
+            node scripts/post-social-auto.mjs --force
           else
-            echo "Reddit 未配置 — 仅 IndexNow + 链接生成"
-            node scripts/post-reddit-promo.mjs --dry-run || true
+            echo "SOCIAL_PROMO_ENABLED != true — 预览"
+            node scripts/post-social-auto.mjs --dry-run || true
           fi
 
       - name: Commit promo artifacts
