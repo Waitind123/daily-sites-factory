@@ -1,26 +1,31 @@
-name: Social promo (Reddit auto)
+name: Social auto post (daily random)
 
 on:
   schedule:
-    # 每 4 小时检查一次；脚本内随机决定是否发帖
-    - cron: "17 1,5,9,13,17,21 * * *"
+    # 每小时检查；脚本内决定「今天随机几点发」（每天 1 次）
+    - cron: "7 * * * *"
   workflow_dispatch:
     inputs:
       force:
-        description: "Force post (ignore random gate)"
+        description: "Force post now (ignore schedule)"
         type: boolean
         default: false
       dry_run:
-        description: "Dry run only"
+        description: "Preview copy only"
         type: boolean
         default: false
+
+concurrency:
+  group: social-auto-post
+  cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  reddit:
+  post:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -28,27 +33,27 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Post to Reddit
+      - name: Auto post (Reddit + Bluesky, daily random time)
         id: post
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
           REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="--dry-run"
           elif [ "${{ github.event.inputs.force }}" = "true" ]; then
             ARGS="--force"
-          elif [ -z "$REDDIT_REFRESH_TOKEN" ]; then
-            echo "REDDIT_REFRESH_TOKEN 未配置 — dry-run"
-            ARGS="--dry-run"
           elif [ "$SOCIAL_PROMO_ENABLED" != "true" ]; then
-            echo "SOCIAL_PROMO_ENABLED != true — dry-run（配置 Secret 后改为 true）"
+            echo "SOCIAL_PROMO_ENABLED != true — 预览模式（设 Secret 为 true 后自动真发）"
             ARGS="--dry-run"
           fi
-          node scripts/post-reddit-promo.mjs $ARGS
+          node scripts/post-social-auto.mjs $ARGS
 
       - name: Commit promo state
         if: github.event.inputs.dry_run != 'true'
@@ -57,5 +62,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add analytics/social-promo-state.json
-          git commit -m "chore: update social promo state [skip deploy]"
+          git commit -m "chore: social auto post state [skip deploy]"
           git push
