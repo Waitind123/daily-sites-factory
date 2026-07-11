@@ -8,6 +8,8 @@ import {
   isReplicateConfigured,
 } from "@/lib/replicate";
 
+export const maxDuration = 300;
+
 export async function POST(request: NextRequest) {
   try {
     const member = await isMember();

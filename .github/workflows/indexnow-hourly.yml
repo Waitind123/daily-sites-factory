@@ -1,0 +1,33 @@
+name: IndexNow 每小时全站推送
+
+on:
+  schedule:
+    # 每小时第 5 分钟（与 health watch :17 错开）
+    - cron: "5 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow-hourly
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Refresh deploy URLs
+        run: node scripts/extract-site-urls.mjs
+
+      - name: Submit all site URLs to IndexNow (Bing/Yandex)
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/submit-indexnow.mjs
