@@ -12,9 +12,17 @@ export const TIER1_SITES = [
 
 export const CONTACT_EMAIL = "17722513101@163.com";
 
-/** 1x1 PNG */
-export const TINY_TEST_IMAGE =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==";
+/** 128×128 人像 JPEG — 用于 generate 健康探测（1×1 像素会被模型拒绝） */
+import { readFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
+
+const fixtureDir = join(dirname(fileURLToPath(import.meta.url)), "..", "fixtures");
+const portraitBytes = readFileSync(join(fixtureDir, "test-portrait.jpg"));
+export const TEST_PORTRAIT_IMAGE = `data:image/jpeg;base64,${portraitBytes.toString("base64")}`;
+
+/** @deprecated 使用 TEST_PORTRAIT_IMAGE */
+export const TINY_TEST_IMAGE = TEST_PORTRAIT_IMAGE;
 
 export const CHECKOUT_REDIRECT_HOSTS = [
   "buy.polar.sh",

@@ -1,11 +1,17 @@
 const MODEL = "flux-kontext-apps/professional-headshot";
-const MAX_DATA_URI_CHARS = 400_000; // Replicate 建议 >256KB 用 URL
 
 const STYLE_BACKGROUNDS: Record<string, string> = {
   corporate: "neutral",
   casual: "office",
   creative: "gradient",
   academic: "library",
+};
+
+const EXT_BY_MIME: Record<string, string> = {
+  "image/jpeg": "jpg",
+  "image/png": "png",
+  "image/webp": "webp",
+  "image/gif": "gif",
 };
 
 export function isReplicateConfigured() {
@@ -16,7 +22,7 @@ export function getStyleBackground(style: string) {
   return STYLE_BACKGROUNDS[style] ?? "neutral";
 }
 
-/** 大图上传到 Replicate Files，返回 HTTPS URL */
+/** data URI → Replicate Files HTTPS URL（模型更稳定地接受 URL 输入） */
 async function uploadDataUriToReplicate(
   imageDataUri: string,
   token: string
@@ -24,12 +30,16 @@ async function uploadDataUriToReplicate(
   const match = imageDataUri.match(/^data:([^;]+);base64,(.+)$/);
   if (!match) throw new Error("Invalid image data URI");
 
+  const mime = match[1];
+  const ext = EXT_BY_MIME[mime] ?? "jpg";
   const buffer = Buffer.from(match[2], "base64");
+
   const res = await fetch("https://api.replicate.com/v1/files", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/octet-stream",
+      "Content-Disposition": `attachment; filename="headshot-input.${ext}"`,
     },
     body: buffer,
     signal: AbortSignal.timeout(60000),
@@ -43,13 +53,6 @@ async function uploadDataUriToReplicate(
   const url = file.urls?.get;
   if (!url) throw new Error("Replicate upload returned no URL");
   return url;
-}
-
-async function resolveInputImage(imageDataUri: string, token: string) {
-  if (imageDataUri.length <= MAX_DATA_URI_CHARS) {
-    return imageDataUri;
-  }
-  return uploadDataUriToReplicate(imageDataUri, token);
 }
 
 async function pollPrediction(url: string, token: string, tries = 90) {
@@ -82,7 +85,7 @@ export async function generateHeadshot(
     throw new Error("REPLICATE_API_TOKEN not configured");
   }
 
-  const inputImage = await resolveInputImage(imageDataUri, token);
+  const inputImage = await uploadDataUriToReplicate(imageDataUri, token);
 
   const res = await fetch(
     `https://api.replicate.com/v1/models/${MODEL}/predictions`,
@@ -148,18 +151,4 @@ export function demoHeadshotSvg(style: string): string {
     <text x="256" y="490" text-anchor="middle" fill="white" font-size="18" font-family="sans-serif">Demo · ${style}</text>
   </svg>`;
   return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
-}
-
-/** 健康探测用：最小图生成 */
-export async function probeReplicateLive(): Promise<boolean> {
-  if (!isReplicateConfigured()) return false;
-  const tiny =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==";
-  try {
-    await generateHeadshot(tiny, "corporate");
-    return true;
-  } catch (e) {
-    console.error("[replicate probe]", e);
-    return false;
-  }
 }
