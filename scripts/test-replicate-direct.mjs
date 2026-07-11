@@ -25,7 +25,7 @@ async function testDataUriDirect() {
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
-      Prefer: "wait=120",
+      Prefer: "wait=60",
     },
     body: JSON.stringify({
       input: {
@@ -82,7 +82,7 @@ async function testUrlPrediction(fileUrl) {
     headers: {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
-      Prefer: "wait=120",
+      Prefer: "wait=60",
     },
     body: JSON.stringify({
       input: {

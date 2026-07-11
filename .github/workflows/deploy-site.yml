@@ -207,6 +207,7 @@ jobs:
 
       - name: Replicate API diagnostic (pre-deploy)
         if: matrix.site_id == 'ai-headshots' || matrix.site_id == 'team-headshots'
+        continue-on-error: true
         env:
           REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
         run: |

@@ -104,7 +104,7 @@ export async function generateHeadshot(
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
-        Prefer: "wait=120",
+        Prefer: "wait=60",
       },
       body: JSON.stringify({
         input: {
@@ -116,7 +116,7 @@ export async function generateHeadshot(
           safety_tolerance: 2,
         },
       }),
-      signal: AbortSignal.timeout(180000),
+      signal: AbortSignal.timeout(65000),
     }
   );
 
