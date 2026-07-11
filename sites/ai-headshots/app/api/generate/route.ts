@@ -66,7 +66,8 @@ export async function POST(request: NextRequest) {
       { headers }
     );
   } catch (error) {
-    console.error("Generate error:", error);
+    const msg = error instanceof Error ? error.message : String(error);
+    console.error("Generate error:", msg);
     return apiError("GENERATE_FAILED", 500);
   }
 }
