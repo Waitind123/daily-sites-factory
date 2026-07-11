@@ -1,0 +1,70 @@
+name: Social promo test (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only, do not post"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Verify credentials
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+        run: node scripts/verify-social-credentials.mjs
+
+      - name: Force post test
+        if: inputs.dry_run != true
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          if [ "$SOCIAL_PROMO_ENABLED" != "true" ]; then
+            echo "::error::SOCIAL_PROMO_ENABLED 必须为 true"
+            exit 1
+          fi
+          node scripts/post-social-auto.mjs --force
+
+      - name: Dry run preview
+        if: inputs.dry_run == true
+        env:
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+        run: node scripts/post-social-auto.mjs --dry-run --force
+
+      - name: Commit promo state
+        if: inputs.dry_run != true
+        run: |
+          if git diff --quiet analytics/social-promo-state.json 2>/dev/null; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/social-promo-state.json
+          git commit -m "chore: social promo test post [skip deploy]"
+          git push
