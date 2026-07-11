@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T00:01:41.056Z",
+  "updatedAt": "2026-07-11T00:10:11.628Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3428,11 +3428,49 @@
             "health-watch-1783721722628": 1,
             "health-watch-1783725246151": 1
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1783728611240"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1783728611240": 1
+          }
         }
       },
       "totals": {
-        "pv": 137,
-        "uv": 127,
+        "pv": 138,
+        "uv": 128,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3471,7 +3509,8 @@
         "health-watch-1783709067185",
         "health-watch-1783716156791",
         "health-watch-1783721722628",
-        "health-watch-1783725246151"
+        "health-watch-1783725246151",
+        "health-watch-1783728611240"
       ]
     },
     "form-pulse": {
@@ -15421,6 +15460,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1783728611240",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-11T00:10:11.290Z",
+      "lastSeen": "2026-07-11T00:10:11.290Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "110cc689-9d96-4243-9085-41a79f57a1a6",
       "siteId": "zapier-pulse",
