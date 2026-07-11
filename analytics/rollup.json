@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T22:05:30.737Z",
+  "updatedAt": "2026-07-11T22:07:17.444Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6089,11 +6089,49 @@
           "visitorHits": {
             "9babef48-372e-43c2-a394-b26daf9e4156": 1
           }
+        },
+        "2026-07-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f71c5400-f8c9-488b-b008-7b26daa6cb72"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "6": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f71c5400-f8c9-488b-b008-7b26daa6cb72": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 6,
+        "pv": 8,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6113,7 +6151,8 @@
       },
       "knownVisitors": [
         "681f8d85-f3c1-4afb-91c6-b5b472e7daa1",
-        "9babef48-372e-43c2-a394-b26daf9e4156"
+        "9babef48-372e-43c2-a394-b26daf9e4156",
+        "f71c5400-f8c9-488b-b008-7b26daa6cb72"
       ]
     },
     "meetup-host": {
@@ -16393,6 +16432,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f71c5400-f8c9-488b-b008-7b26daa6cb72",
+      "siteId": "link-pulse",
+      "firstSeen": "2026-07-11T22:07:16.425Z",
+      "lastSeen": "2026-07-11T22:07:16.425Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "33d109d5-d80b-47f1-9d5c-fad5346c521c",
       "siteId": "saas-alt-intel",
