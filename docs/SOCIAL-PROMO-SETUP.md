@@ -1,29 +1,35 @@
-# 社交自动推广 — 每天随机时间自动发帖
+# 社交自动推广 — 多平台配置指南
 
-## 工作原理
+## 快速理解
 
-工作流 **Social auto post (daily random)** 每小时检查一次：
+**配哪个平台，就自动发哪个。** 不需要全部配齐。
 
-1. 每天 **UTC 日期** 生成一个固定的随机发帖时刻（8:00–20:59 UTC 之间）
-2. 时刻写入 `analytics/social-promo-state.json` 的 `todaySchedule`
-3. 到点后 **自动发 1 轮**（Reddit + Bluesky，各 1 条），并额外随机延迟 0–12 分钟
-4. 同一天不会重复发
+| 平台 | 能否全自动 | 你需要做的 |
+|------|-----------|-----------|
+| Reddit | ✅ | 填 3 个 GitHub Secrets |
+| Bluesky | ✅ | 填 2 个 GitHub Secrets |
+| Mastodon | ✅ | 填 2 个 GitHub Secrets |
+| X / LinkedIn / HN | ❌ | 每天自动生成一键链接（`promo-multi-daily`） |
 
-这样发帖时间每天不同，看起来像人工操作。
+总开关：`SOCIAL_PROMO_ENABLED` = `true`
 
 ---
 
-## 一次性配置（约 5 分钟）
+## 0. 总开关（必做）
 
-### 必做：开启总开关
+GitHub → 仓库 **Settings → Secrets and variables → Actions** → New secret
 
 | Secret | 值 |
 |--------|-----|
 | `SOCIAL_PROMO_ENABLED` | `true` |
 
-不设此项则只预览文案，不会真发。
+不设 = 只预览文案，不会真发。
 
-### 渠道 A：Reddit（推荐）
+---
+
+## 1. Reddit（已支持）
+
+### Secrets
 
 | Secret | 说明 |
 |--------|------|
@@ -31,7 +37,11 @@
 | `REDDIT_CLIENT_SECRET` | Reddit 应用 secret |
 | `REDDIT_REFRESH_TOKEN` | OAuth refresh token |
 
-获取 token：
+### 获取 token（本地一次）
+
+1. https://www.reddit.com/prefs/apps → **Create App**
+2. 类型选 **web app**，Redirect URI：`http://localhost:8765/callback`
+3. 本地运行：
 
 ```bash
 export REDDIT_CLIENT_ID=你的client_id
@@ -39,69 +49,102 @@ export REDDIT_CLIENT_SECRET=你的secret
 node scripts/setup-reddit-oauth.mjs
 ```
 
-Reddit 应用：https://www.reddit.com/prefs/apps → Create App → Redirect URI: `http://localhost:8765/callback`
-
-### 渠道 B：Bluesky（免费、无需审核）
-
-| Secret | 说明 |
-|--------|------|
-| `BLUESKY_IDENTIFIER` | 你的 handle 或注册邮箱 |
-| `BLUESKY_APP_PASSWORD` | App Password（非登录密码） |
-
-获取 App Password：Bluesky → Settings → Privacy and security → App passwords → Add new
-
-### 可选：飞书通知
-
-| Secret | 说明 |
-|--------|------|
-| `FEISHU_WEBHOOK_URL` | 发帖成功后推送链接 |
+4. 浏览器授权后，把 `refresh_token` 复制到 GitHub Secret
 
 ---
 
-## 手动测试
+## 2. Bluesky（已支持，免费）
+
+### Secrets
+
+| Secret | 说明 |
+|--------|------|
+| `BLUESKY_IDENTIFIER` | 你的 handle（如 `name.bsky.social`）或注册邮箱 |
+| `BLUESKY_APP_PASSWORD` | App Password（**不是**登录密码） |
+
+### 获取 App Password
+
+1. 登录 https://bsky.app
+2. **Settings → Privacy and security → App passwords**
+3. **Add new** → 复制生成的密码
+4. 填入 GitHub Secrets
+
+---
+
+## 3. Mastodon（已支持，免费）
+
+### Secrets
+
+| Secret | 示例 |
+|--------|------|
+| `MASTODON_INSTANCE_URL` | `https://mastodon.social` |
+| `MASTODON_ACCESS_TOKEN` | 应用 Access Token |
+
+### 获取 Access Token
+
+1. 登录你的 Mastodon 实例（如 mastodon.social、mastodon.online）
+2. **Preferences → Development → New Application**
+3. 应用名随意，权限勾选 **write:statuses**
+4. 提交后复制 **Your access token**
+5. 实例 URL 填你的域名（不要末尾 `/`）
+
+---
+
+## 4. X / LinkedIn / Hacker News（不能全自动）
+
+| 平台 | 原因 | 替代方案 |
+|------|------|----------|
+| **X (Twitter)** | 发帖 API 要付费（~$100/月） | `promo-multi-daily` 每天生成预填推文链接 |
+| **LinkedIn** | 需企业 OAuth + 审核 | 同上，生成 share 链接 |
+| **Hacker News** | 没有公开发帖 API | 同上，生成 submitlink |
+| **微信朋友圈** | 无开放 API | 同上，生成中文文案复制 |
+
+工作流 **Promo multi-platform (no Reddit)** 每天 08:30 UTC 自动生成这些链接，可选配 `FEISHU_WEBHOOK_URL` 推送到飞书。
+
+---
+
+## 查看当前配置了哪些平台
+
+GitHub Actions 日志里每次运行会先打印状态，或本地：
+
+```bash
+node scripts/post-social-auto.mjs --status
+```
+
+输出示例：
+
+```
+✅ Reddit — 已配置，到点会自动发
+⬜ Bluesky
+   缺少 Secrets: BLUESKY_IDENTIFIER, BLUESKY_APP_PASSWORD
+⬜ Mastodon
+   缺少 Secrets: MASTODON_INSTANCE_URL, MASTODON_ACCESS_TOKEN
+```
+
+---
+
+## 测试发帖
 
 GitHub → Actions → **Social auto post (daily random)** → Run workflow
 
 | 选项 | 作用 |
 |------|------|
-| `force=true` | 立即发，忽略今日随机时刻 |
-| `dry_run=true` | 只看文案，不发 |
-
-本地：
-
-```bash
-# 预览今日计划时刻 + 文案
-node scripts/post-social-auto.mjs --dry-run
-
-# 强制发（需 export Secrets）
-SOCIAL_PROMO_ENABLED=true node scripts/post-social-auto.mjs --force
-```
+| `force=true` | 立刻发，不等今日随机时刻 |
+| `dry_run=true` | 只看文案和平台状态 |
 
 ---
 
-## 防封号规则
+## 自动化规则
 
-- 每天最多 **1 轮**（Reddit 1 帖 + Bluesky 1 帖）
-- 两帖之间至少 **20 小时**
-- 发帖时刻每天随机（8–21 UTC）
+- 每天 **1 轮**，每个已配置平台各发 **1 条**
+- 发帖时刻每天 **UTC 随机**（8:00–20:59）
 - 到点后额外 **0–12 分钟** 随机延迟
-- 文案随机组合，60+ 条历史去重
-- Reddit 子版块轮换：SideProject、SaaS 等
+- 文案随机组合，历史去重
 
 ---
 
-## 其他平台
+## 状态与看板
 
-| 平台 | 自动发帖 | 说明 |
-|------|----------|------|
-| Reddit | ✅ | 本 workflow |
-| Bluesky | ✅ | 本 workflow |
-| X / LinkedIn / HN | ❌ | 无免费 API，见 `promo-multi-daily` 生成一键链接 |
+发帖记录：`analytics/social-promo-state.json`
 
----
-
-## 状态文件
-
-`analytics/social-promo-state.json` — 含 `todaySchedule`、`lastPostedDay`、发帖历史
-
-看板「推广效果」可溯源 UTM 转化。
+看板「推广效果」可追踪 UTM 来源（reddit / bluesky / mastodon 等）。

@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Auto post (Reddit + Bluesky, daily random time)
+      - name: Auto post (Reddit + Bluesky + Mastodon, daily random time)
         id: post
         env:
           REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -41,9 +41,12 @@ jobs:
           REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
           BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          MASTODON_INSTANCE_URL: ${{ secrets.MASTODON_INSTANCE_URL }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
           FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         run: |
+          node scripts/post-social-auto.mjs --status
           ARGS=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             ARGS="--dry-run"
