@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-11T10:11:18.806Z",
+  "updatedAt": "2026-07-11T10:14:25.996Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4593,53 +4593,58 @@
           }
         },
         "2026-07-11": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "e1163f22-e83e-46fe-b547-ca9fb1fcd4af",
             "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3",
-            "7896c561-7b26-4a33-9bc1-a05ef3fbed14"
+            "7896c561-7b26-4a33-9bc1-a05ef3fbed14",
+            "f8b6c530-af3f-490f-b088-9854d425885f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "desktop": 3
+              "desktop": 3,
+              "mobile": 1
             },
             "locales": {
               "ru": 1,
-              "en": 2
+              "en": 3
             },
             "timezones": {
               "Europe/Moscow": 2,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "17": 3
+              "17": 3,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "e1163f22-e83e-46fe-b547-ca9fb1fcd4af": 1,
             "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3": 1,
-            "7896c561-7b26-4a33-9bc1-a05ef3fbed14": 1
+            "7896c561-7b26-4a33-9bc1-a05ef3fbed14": 1,
+            "f8b6c530-af3f-490f-b088-9854d425885f": 1
           }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 13,
+        "pv": 18,
+        "uv": 14,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4661,7 +4666,8 @@
         "1f37a3c4-5399-4f5e-9e3c-f496d1dcfce9",
         "e1163f22-e83e-46fe-b547-ca9fb1fcd4af",
         "792a8e87-90ec-4bb5-b8f7-a5d9fb99c3a3",
-        "7896c561-7b26-4a33-9bc1-a05ef3fbed14"
+        "7896c561-7b26-4a33-9bc1-a05ef3fbed14",
+        "f8b6c530-af3f-490f-b088-9854d425885f"
       ]
     },
     "incident-ai": {
@@ -16195,6 +16201,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f8b6c530-af3f-490f-b088-9854d425885f",
+      "siteId": "habit-tracker",
+      "firstSeen": "2026-07-11T10:14:25.657Z",
+      "lastSeen": "2026-07-11T10:14:25.657Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "b99d53df-42d8-406b-9e1e-c877c156e348",
       "siteId": "remote-jobs",
