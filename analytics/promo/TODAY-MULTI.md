@@ -10,21 +10,21 @@
 ### Hacker News
 *一键打开发帖页（需登录后点提交）*
 
-[→ 打开发帖/分享页](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dpromo%26utm_medium%3Dhn&t=Show%20HN%3A%20AI%20headshots%20in%2030s%20%E2%80%93%20%249.9%2Fmo%20flat)
+[→ 打开发帖/分享页](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dpromo%26utm_medium%3Dhn&t=Show%20HN%3A%20AI%20headshots%20in%2030s%20%E2%80%93%20%2429%2Fmo%20flat)
 
 **复制文案：**
 ```
-AI LinkedIn headshots in 30s — $9.9/mo flat, 5 free tries
+AI LinkedIn headshots in 30s — $29/mo flat, 5 free tries
 ```
 
 ### X / Twitter
 *一键打开发推页*
 
-[→ 打开发帖/分享页](https://twitter.com/intent/tweet?text=AI%20LinkedIn%20headshots%20in%2030s%20%E2%80%94%20%249.9%2Fmo%20flat.%205%20free%20tries%20%F0%9F%91%87&url=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dpromo%26utm_medium%3Dtwitter)
+[→ 打开发帖/分享页](https://twitter.com/intent/tweet?text=AI%20LinkedIn%20headshots%20in%2030s%20%E2%80%94%20%2429%2Fmo%20flat.%205%20free%20tries%20%F0%9F%91%87&url=https%3A%2F%2Fai-headshots-navy.vercel.app%2Fjoin%3Futm_source%3Dpromo%26utm_medium%3Dtwitter)
 
 **复制文案：**
 ```
-AI LinkedIn headshots in 30s — $9.9/mo flat. 5 free tries 👇
+AI LinkedIn headshots in 30s — $29/mo flat. 5 free tries 👇
 https://ai-headshots-navy.vercel.app/join?utm_source=promo&utm_medium=twitter
 ```
 
@@ -35,7 +35,7 @@ https://ai-headshots-navy.vercel.app/join?utm_source=promo&utm_medium=twitter
 
 **复制文案：**
 ```
-AI LinkedIn headshots in 30s — $9.9/mo flat, 5 free tries
+AI LinkedIn headshots in 30s — $29/mo flat, 5 free tries
 
 https://ai-headshots-navy.vercel.app/join?utm_source=promo&utm_medium=linkedin
 ```
@@ -47,7 +47,7 @@ https://ai-headshots-navy.vercel.app/join?utm_source=promo&utm_medium=linkedin
 
 **复制文案：**
 ```
-Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $9.9/mo unlimited (vs PhotoAI $29+).
+Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $29/mo unlimited (vs PhotoAI $49+).
 
 https://ai-headshots-navy.vercel.app/join?utm_source=promo
 ```
@@ -59,7 +59,7 @@ https://ai-headshots-navy.vercel.app/join?utm_source=promo
 
 **复制文案：**
 ```
-Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $9.9/mo unlimited (vs PhotoAI $29+).
+Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $29/mo unlimited (vs PhotoAI $49+).
 
 https://ai-headshots-navy.vercel.app/join?utm_source=promo
 ```
@@ -71,10 +71,10 @@ https://ai-headshots-navy.vercel.app/join?utm_source=promo
 
 **复制文案：**
 ```
-AI 证件照 — 上传自拍 30 秒出 LinkedIn 职业照，¥69/月
+AI 证件照 — 上传自拍 30 秒出 LinkedIn 职业照，¥199/月
 
 做了 AI 证件照工具，5 次免费试用，满意再订阅。
-比 PhotoAI 便宜很多，支持支付宝/微信。
+$29/月不限量，支持 Stripe 信用卡/支付宝。
 
 https://ai-headshots-navy.vercel.app/join?utm_source=promo?utm_medium=wechat
 ```
@@ -85,7 +85,7 @@ https://ai-headshots-navy.vercel.app/join?utm_source=promo?utm_medium=wechat
 **复制文案：**
 ```
 做了 AI 证件照工具，5 次免费试用，满意再订阅。
-比 PhotoAI 便宜很多，支持支付宝/微信。
+$29/月不限量，支持 Stripe 信用卡/支付宝。
 
 https://ai-headshots-navy.vercel.app/join?utm_source=promo?utm_medium=wechat
 ```
