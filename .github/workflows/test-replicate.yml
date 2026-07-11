@@ -1,0 +1,20 @@
+name: Test Replicate direct
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Replicate API diagnostic
+        env:
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+        run: node scripts/test-replicate-direct.mjs
