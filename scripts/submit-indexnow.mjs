@@ -9,7 +9,10 @@ import { fileURLToPath } from "url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KEY = process.env.INDEXNOW_KEY || "dailysitesfactory2026key8f3a2b1c";
-const KEY_LOCATION = process.env.INDEXNOW_KEY_LOCATION || "https://feature-vote-ten.vercel.app/indexnow-key.txt";
+
+function keyLocationForHost(host) {
+  return `https://${host}/indexnow-key.txt`;
+}
 
 const deployUrls = JSON.parse(
   readFileSync(join(root, "scripts", "sites-deploy-urls.json"), "utf8")
@@ -45,7 +48,7 @@ async function submitBatch(urlList) {
   const body = {
     host,
     key: KEY,
-    keyLocation: KEY_LOCATION,
+    keyLocation: keyLocationForHost(host),
     urlList: urlList.slice(0, 10000),
   };
   const endpoints = [

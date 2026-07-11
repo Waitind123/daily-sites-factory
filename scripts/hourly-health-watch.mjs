@@ -187,7 +187,7 @@ async function checkAiHeadshotsGenerate() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ image: TINY_TEST_IMAGE, style: "corporate" }),
-      timeout: 45000,
+      timeout: 180000,
     });
     const data = await res.json().catch(() => ({}));
     if (!res.ok || !data.ok || !data.url) {

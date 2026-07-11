@@ -75,7 +75,7 @@ export function softwareApplicationJsonLd(locale: Locale = "en") {
     operatingSystem: "Web",
     offers: {
       "@type": "Offer",
-      price: "9.9",
+      price: "29",
       priceCurrency: "USD",
       priceValidUntil: "2027-12-31",
     },

@@ -18,14 +18,14 @@ const JOIN = `${HOME}/join?utm_source=promo`;
 const outDir = join(root, "analytics", "promo");
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
-const titleEn = "AI LinkedIn headshots in 30s — $9.9/mo flat, 5 free tries";
-const bodyEn = `Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $9.9/mo unlimited (vs PhotoAI $29+).
+const titleEn = "AI LinkedIn headshots in 30s — $29/mo flat, 5 free tries";
+const bodyEn = `Upload a selfie → professional headshots in ~30 seconds. 5 free tries, then $29/mo unlimited (vs PhotoAI $49+).
 
 ${JOIN}`;
 
-const titleZh = "AI 证件照 — 上传自拍 30 秒出 LinkedIn 职业照，¥69/月";
+const titleZh = "AI 证件照 — 上传自拍 30 秒出 LinkedIn 职业照，¥199/月";
 const bodyZh = `做了 AI 证件照工具，5 次免费试用，满意再订阅。
-比 PhotoAI 便宜很多，支持支付宝/微信。
+$29/月不限量，支持 Stripe 信用卡/支付宝。
 
 ${JOIN}?utm_medium=wechat`;
 
@@ -33,14 +33,14 @@ const platforms = {
   hackernews: {
     name: "Hacker News",
     auto: "一键打开发帖页（需登录后点提交）",
-    submit: `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(JOIN + "&utm_medium=hn")}&t=${encodeURIComponent("Show HN: AI headshots in 30s – $9.9/mo flat")}`,
+    submit: `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(JOIN + "&utm_medium=hn")}&t=${encodeURIComponent("Show HN: AI headshots in 30s – $29/mo flat")}`,
     copy: titleEn,
   },
   twitter: {
     name: "X / Twitter",
     auto: "一键打开发推页",
-    submit: `https://twitter.com/intent/tweet?text=${encodeURIComponent("AI LinkedIn headshots in 30s — $9.9/mo flat. 5 free tries 👇")}&url=${encodeURIComponent(JOIN + "&utm_medium=twitter")}`,
-    copy: `AI LinkedIn headshots in 30s — $9.9/mo flat. 5 free tries 👇\n${JOIN}&utm_medium=twitter`,
+    submit: `https://twitter.com/intent/tweet?text=${encodeURIComponent("AI LinkedIn headshots in 30s — $29/mo flat. 5 free tries 👇")}&url=${encodeURIComponent(JOIN + "&utm_medium=twitter")}`,
+    copy: `AI LinkedIn headshots in 30s — $29/mo flat. 5 free tries 👇\n${JOIN}&utm_medium=twitter`,
   },
   linkedin: {
     name: "LinkedIn",
@@ -93,7 +93,7 @@ for (const endpoint of ["https://api.indexnow.org/indexnow", "https://www.bing.c
       body: JSON.stringify({
         host: "ai-headshots-navy.vercel.app",
         key: KEY,
-        keyLocation: "https://feature-vote-ten.vercel.app/indexnow-key.txt",
+        keyLocation: `${HOME}/indexnow-key.txt`,
         urlList: priority,
       }),
     });

@@ -1,4 +1,5 @@
 const MODEL = "flux-kontext-apps/professional-headshot";
+const MAX_DATA_URI_CHARS = 400_000; // Replicate 建议 >256KB 用 URL
 
 const STYLE_BACKGROUNDS: Record<string, string> = {
   corporate: "neutral",
@@ -8,21 +9,80 @@ const STYLE_BACKGROUNDS: Record<string, string> = {
 };
 
 export function isReplicateConfigured() {
-  return Boolean(process.env.REPLICATE_API_TOKEN);
+  return Boolean(process.env.REPLICATE_API_TOKEN?.trim());
 }
 
 export function getStyleBackground(style: string) {
   return STYLE_BACKGROUNDS[style] ?? "neutral";
 }
 
+/** 大图上传到 Replicate Files，返回 HTTPS URL */
+async function uploadDataUriToReplicate(
+  imageDataUri: string,
+  token: string
+): Promise<string> {
+  const match = imageDataUri.match(/^data:([^;]+);base64,(.+)$/);
+  if (!match) throw new Error("Invalid image data URI");
+
+  const buffer = Buffer.from(match[2], "base64");
+  const res = await fetch("https://api.replicate.com/v1/files", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/octet-stream",
+    },
+    body: buffer,
+    signal: AbortSignal.timeout(60000),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Replicate upload failed: ${(await res.text()).slice(0, 200)}`);
+  }
+
+  const file = await res.json();
+  const url = file.urls?.get;
+  if (!url) throw new Error("Replicate upload returned no URL");
+  return url;
+}
+
+async function resolveInputImage(imageDataUri: string, token: string) {
+  if (imageDataUri.length <= MAX_DATA_URI_CHARS) {
+    return imageDataUri;
+  }
+  return uploadDataUriToReplicate(imageDataUri, token);
+}
+
+async function pollPrediction(url: string, token: string, tries = 90) {
+  for (let i = 0; i < tries; i++) {
+    await new Promise((r) => setTimeout(r, 2000));
+    const res = await fetch(url, {
+      headers: { Authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(15000),
+    });
+    const data = await res.json();
+    if (data.status === "succeeded") {
+      const out = data.output;
+      if (typeof out === "string") return out;
+      if (Array.isArray(out) && out[0]) return out[0];
+      throw new Error("Empty Replicate output");
+    }
+    if (data.status === "failed") {
+      throw new Error(data.error || "Replicate generation failed");
+    }
+  }
+  throw new Error("Generation timed out — try a smaller photo");
+}
+
 export async function generateHeadshot(
   imageDataUri: string,
   style: string
 ): Promise<string> {
-  const token = process.env.REPLICATE_API_TOKEN;
+  const token = process.env.REPLICATE_API_TOKEN?.trim();
   if (!token) {
-    throw new Error("REPLICATE_API_TOKEN 未配置");
+    throw new Error("REPLICATE_API_TOKEN not configured");
   }
+
+  const inputImage = await resolveInputImage(imageDataUri, token);
 
   const res = await fetch(
     `https://api.replicate.com/v1/models/${MODEL}/predictions`,
@@ -35,59 +95,43 @@ export async function generateHeadshot(
       },
       body: JSON.stringify({
         input: {
-          input_image: imageDataUri,
+          input_image: inputImage,
           gender: "none",
           background: getStyleBackground(style),
-          aspect_ratio: "1:1",
+          aspect_ratio: "match_input_image",
           output_format: "png",
+          safety_tolerance: 2,
         },
       }),
+      signal: AbortSignal.timeout(65000),
     }
   );
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Replicate API 错误: ${err}`);
+    throw new Error(`Replicate API ${res.status}: ${err.slice(0, 300)}`);
   }
 
   const prediction = await res.json();
 
-  if (prediction.status === "failed") {
-    throw new Error(prediction.error || "生成失败");
+  if (prediction.status === "succeeded") {
+    const output = prediction.output;
+    if (typeof output === "string") return output;
+    if (Array.isArray(output) && output[0]) return output[0];
   }
 
-  const output = prediction.output;
-  if (typeof output === "string") return output;
-  if (Array.isArray(output) && output[0]) return output[0];
+  if (prediction.status === "failed") {
+    throw new Error(prediction.error || "Generation failed");
+  }
 
-  // async fallback: poll
   if (prediction.urls?.get) {
     return pollPrediction(prediction.urls.get, token);
   }
 
-  throw new Error("未收到生成结果");
+  throw new Error("No result from Replicate");
 }
 
-async function pollPrediction(url: string, token: string, tries = 30) {
-  for (let i = 0; i < tries; i++) {
-    await new Promise((r) => setTimeout(r, 2000));
-    const res = await fetch(url, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    const data = await res.json();
-    if (data.status === "succeeded") {
-      const out = data.output;
-      if (typeof out === "string") return out;
-      if (Array.isArray(out) && out[0]) return out[0];
-    }
-    if (data.status === "failed") {
-      throw new Error(data.error || "生成失败");
-    }
-  }
-  throw new Error("生成超时，请稍后重试");
-}
-
-/** 演示模式：返回 SVG 占位图（不消耗 API） */
+/** 演示模式：返回 SVG 占位图 */
 export function demoHeadshotSvg(style: string): string {
   const colors: Record<string, [string, string]> = {
     corporate: ["#1e3a5f", "#2563eb"],
@@ -101,7 +145,21 @@ export function demoHeadshotSvg(style: string): string {
     <rect width="512" height="512" fill="url(#g)"/>
     <circle cx="256" cy="200" r="80" fill="#fde8d0"/>
     <ellipse cx="256" cy="420" rx="130" ry="100" fill="#1e293b"/>
-    <text x="256" y="490" text-anchor="middle" fill="white" font-size="18" font-family="sans-serif">演示模式 · ${style}</text>
+    <text x="256" y="490" text-anchor="middle" fill="white" font-size="18" font-family="sans-serif">Demo · ${style}</text>
   </svg>`;
   return `data:image/svg+xml;base64,${Buffer.from(svg).toString("base64")}`;
+}
+
+/** 健康探测用：最小图生成 */
+export async function probeReplicateLive(): Promise<boolean> {
+  if (!isReplicateConfigured()) return false;
+  const tiny =
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==";
+  try {
+    await generateHeadshot(tiny, "corporate");
+    return true;
+  } catch (e) {
+    console.error("[replicate probe]", e);
+    return false;
+  }
 }
