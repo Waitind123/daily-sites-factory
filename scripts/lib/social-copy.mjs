@@ -63,6 +63,9 @@ const BLUESKY_HOOKS = [
   "Built this for my own LinkedIn refresh. Side project, honest pricing.",
 ];
 
+/** Bluesky / Mastodon 等短帖共用 */
+const MICROBLOG_HOOKS = BLUESKY_HOOKS;
+
 function pick(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -177,12 +180,20 @@ export function generateRedditPost(state = { history: [] }) {
 }
 
 export function generateBlueskyPost(state = { history: [] }) {
+  return generateMicroblogPost(state, "bluesky", "feed");
+}
+
+export function generateMastodonPost(state = { history: [] }) {
+  return generateMicroblogPost(state, "mastodon", "public");
+}
+
+function generateMicroblogPost(state, source, medium) {
   const usedHashes = new Set((state.history || []).map((h) => h.hash));
   const variant = Date.now().toString(36).slice(-5);
-  const link = utmLink("bluesky", "feed", variant);
+  const link = utmLink(source, medium, variant);
 
   for (let attempt = 0; attempt < 8; attempt++) {
-    const text = `${pick(BLUESKY_HOOKS)} ${link}`.slice(0, 280);
+    const text = `${pick(MICROBLOG_HOOKS)} ${link}`.slice(0, 480);
     const hash = hashText(text);
     if (!usedHashes.has(hash)) {
       return { text, hash, url: link, joinUrl: link, campaign: `auto_${variant}` };
@@ -190,7 +201,7 @@ export function generateBlueskyPost(state = { history: [] }) {
   }
 
   return {
-    text: `${BLUESKY_HOOKS[0]} ${link}`.slice(0, 280),
+    text: `${MICROBLOG_HOOKS[0]} ${link}`.slice(0, 480),
     hash: hashText(link),
     url: link,
     joinUrl: link,
