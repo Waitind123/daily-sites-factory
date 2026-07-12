@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-12T23:08:47.469Z",
+  "updatedAt": "2026-07-12T23:24:12.312Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16050,11 +16050,49 @@
           "visitorHits": {
             "64bd76be-ecd1-4439-b70a-c7239278c220": 1
           }
+        },
+        "2026-07-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8f1a1037-5898-40e2-bcb0-8e9a12d2f9d6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "7": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8f1a1037-5898-40e2-bcb0-8e9a12d2f9d6": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16071,7 +16109,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-12T05:42:59.579Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "8f1a1037-5898-40e2-bcb0-8e9a12d2f9d6"
+      ]
     },
     "gdpr-pulse": {
       "url": "https://gdpr-pulse.vercel.app",
@@ -16643,6 +16684,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8f1a1037-5898-40e2-bcb0-8e9a12d2f9d6",
+      "siteId": "reddit-radar",
+      "firstSeen": "2026-07-12T23:24:11.937Z",
+      "lastSeen": "2026-07-12T23:24:11.937Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1783897727197",
       "siteId": "feature-vote",
