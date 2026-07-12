@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-12T12:17:18.308Z",
+  "updatedAt": "2026-07-12T12:25:55.471Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -965,51 +965,55 @@
           }
         },
         "2026-07-12": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "35e0df61-6c13-4fa8-8108-9456658c97d7",
-            "165f5646-e9d9-483f-8a9c-6da893bc745a"
+            "165f5646-e9d9-483f-8a9c-6da893bc745a",
+            "ebd6e956-2c90-436c-9b69-d9a24aea8f35"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
-              "en": 2
+              "en": 3
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
               "19": 1,
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "35e0df61-6c13-4fa8-8108-9456658c97d7": 1,
-            "165f5646-e9d9-483f-8a9c-6da893bc745a": 1
+            "165f5646-e9d9-483f-8a9c-6da893bc745a": 1,
+            "ebd6e956-2c90-436c-9b69-d9a24aea8f35": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 9,
+        "pv": 12,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1029,7 +1033,8 @@
       },
       "knownVisitors": [
         "35e0df61-6c13-4fa8-8108-9456658c97d7",
-        "165f5646-e9d9-483f-8a9c-6da893bc745a"
+        "165f5646-e9d9-483f-8a9c-6da893bc745a",
+        "ebd6e956-2c90-436c-9b69-d9a24aea8f35"
       ]
     },
     "carbon-calculator": {
@@ -16560,6 +16565,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ebd6e956-2c90-436c-9b69-d9a24aea8f35",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-12T12:25:55.130Z",
+      "lastSeen": "2026-07-12T12:25:55.130Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "9250e769-649a-48c5-8890-22db04154b98",
       "siteId": "intercom-pulse",
