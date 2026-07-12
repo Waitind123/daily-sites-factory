@@ -183,6 +183,10 @@ export function generateBlueskyPost(state = { history: [] }) {
   return generateMicroblogPost(state, "bluesky", "feed");
 }
 
+export function generateXPost(state = { history: [] }) {
+  return generateMicroblogPost(state, "twitter", "tweet");
+}
+
 export function generateMastodonPost(state = { history: [] }) {
   return generateMicroblogPost(state, "mastodon", "public");
 }

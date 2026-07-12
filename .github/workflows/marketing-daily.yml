@@ -1,0 +1,69 @@
+name: Marketing daily (all channels)
+
+on:
+  schedule:
+    # 每小时检查，到随机时刻发一轮
+    - cron: "12 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force run now"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Preview only"
+        type: boolean
+        default: false
+
+concurrency:
+  group: marketing-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  marketing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Daily marketing (Reddit + X + SEO + CN)
+        env:
+          SOCIAL_PROMO_ENABLED: ${{ secrets.SOCIAL_PROMO_ENABLED }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_REFRESH_TOKEN: ${{ secrets.REDDIT_REFRESH_TOKEN }}
+          X_OAUTH2_ACCESS_TOKEN: ${{ secrets.X_OAUTH2_ACCESS_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          CN_POST_WEBHOOK_URL: ${{ secrets.CN_POST_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          node scripts/marketing-daily.mjs --status
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          elif [ "${{ github.event.inputs.force }}" = "true" ]; then
+            ARGS="--force"
+          elif [ "$SOCIAL_PROMO_ENABLED" != "true" ]; then
+            echo "SOCIAL_PROMO_ENABLED != true — 预览模式"
+            ARGS="--dry-run"
+          fi
+          node scripts/marketing-daily.mjs $ARGS
+
+      - name: Commit marketing artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analytics/marketing-daily-state.json analytics/promo/cn-daily/ 2>/dev/null || true
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "chore: daily marketing [skip deploy]"
+          git push
