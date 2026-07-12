@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-12T10:43:47.150Z",
+  "updatedAt": "2026-07-12T11:43:01.696Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -963,11 +963,49 @@
           "visitorHits": {
             "9184c1a5-edc7-49a5-979d-a0b2beeb87c6": 1
           }
+        },
+        "2026-07-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "35e0df61-6c13-4fa8-8108-9456658c97d7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "35e0df61-6c13-4fa8-8108-9456658c97d7": 1
+          }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 7,
+        "pv": 10,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -984,7 +1022,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-12T05:42:06.457Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "35e0df61-6c13-4fa8-8108-9456658c97d7"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -16502,6 +16543,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "35e0df61-6c13-4fa8-8108-9456658c97d7",
+      "siteId": "book-pulse",
+      "firstSeen": "2026-07-12T11:43:01.392Z",
+      "lastSeen": "2026-07-12T11:43:01.392Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1783853026929",
       "siteId": "feature-vote",
