@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T10:28:56.605Z",
+  "updatedAt": "2026-07-13T10:29:04.066Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10240,11 +10240,49 @@
             "06675ba1-c72c-495a-9525-c6cfea12a6bd": 1,
             "516dd02f-abd5-4bce-8cd6-66b88c76a94b": 2
           }
+        },
+        "2026-07-13": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9158eab0-fe69-407d-bfdf-c8db1701c92e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9158eab0-fe69-407d-bfdf-c8db1701c92e": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 20,
+        "pv": 24,
+        "uv": 21,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10261,7 +10299,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-13T05:51:41.283Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "9158eab0-fe69-407d-bfdf-c8db1701c92e"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -16840,6 +16881,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9158eab0-fe69-407d-bfdf-c8db1701c92e",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-07-13T10:28:56.383Z",
+      "lastSeen": "2026-07-13T10:28:56.383Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "fd97c3c1-3a24-4c4e-9fc9-5dfdcf6feff0",
       "siteId": "feature-vote",
