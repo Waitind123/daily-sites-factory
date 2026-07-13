@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T00:41:22.337Z",
+  "updatedAt": "2026-07-13T01:10:13.675Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5787,11 +5787,49 @@
             "5e2dc70e-6063-4fe4-85a7-e33c19c65926": 1,
             "9250e769-649a-48c5-8890-22db04154b98": 1
           }
+        },
+        "2026-07-13": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7158bbdd-9531-49ad-a0f2-2784385187ee"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7158bbdd-9531-49ad-a0f2-2784385187ee": 1
+          }
         }
       },
       "totals": {
-        "pv": 83,
-        "uv": 61,
+        "pv": 84,
+        "uv": 62,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5812,7 +5850,8 @@
       "knownVisitors": [
         "876f1a14-89a0-44ab-86a3-26c8cddf9d02",
         "5e2dc70e-6063-4fe4-85a7-e33c19c65926",
-        "9250e769-649a-48c5-8890-22db04154b98"
+        "9250e769-649a-48c5-8890-22db04154b98",
+        "7158bbdd-9531-49ad-a0f2-2784385187ee"
       ]
     },
     "invoice-desk": {
@@ -16773,6 +16812,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7158bbdd-9531-49ad-a0f2-2784385187ee",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-13T01:10:13.299Z",
+      "lastSeen": "2026-07-13T01:10:13.299Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "58e6fcc0-bd1e-4ca9-b9e9-fb813f545332",
       "siteId": "pricing-intel",
