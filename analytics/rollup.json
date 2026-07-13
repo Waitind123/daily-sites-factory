@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T10:29:04.066Z",
+  "updatedAt": "2026-07-13T10:32:23.430Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5818,54 +5818,56 @@
           }
         },
         "2026-07-13": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "7158bbdd-9531-49ad-a0f2-2784385187ee",
-            "65a64a57-ee21-489a-b363-737d43b45c65"
+            "65a64a57-ee21-489a-b363-737d43b45c65",
+            "d96e1fb4-f6b7-4399-a3fa-229d310f0dd5"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 2,
+              "/": 3,
               "/inbox": 1
             },
             "devices": {
               "mobile": 1,
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "en": 1,
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
               "America/Los_Angeles": 1,
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
               "9": 1,
-              "18": 2
+              "18": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "7158bbdd-9531-49ad-a0f2-2784385187ee": 1,
-            "65a64a57-ee21-489a-b363-737d43b45c65": 2
+            "65a64a57-ee21-489a-b363-737d43b45c65": 2,
+            "d96e1fb4-f6b7-4399-a3fa-229d310f0dd5": 1
           }
         }
       },
       "totals": {
-        "pv": 86,
-        "uv": 63,
+        "pv": 87,
+        "uv": 64,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5884,7 +5886,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "65a64a57-ee21-489a-b363-737d43b45c65"
+        "65a64a57-ee21-489a-b363-737d43b45c65",
+        "d96e1fb4-f6b7-4399-a3fa-229d310f0dd5"
       ]
     },
     "invoice-desk": {
@@ -16881,6 +16884,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d96e1fb4-f6b7-4399-a3fa-229d310f0dd5",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-13T10:32:23.094Z",
+      "lastSeen": "2026-07-13T10:32:23.094Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "9158eab0-fe69-407d-bfdf-c8db1701c92e",
       "siteId": "team-headshots",
