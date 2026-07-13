@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T15:19:47.075Z",
+  "updatedAt": "2026-07-13T15:40:55.013Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11459,47 +11459,51 @@
           }
         },
         "2026-07-13": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ea6e6f0a-66bf-453a-8dce-cba575113a7e"
+            "ea6e6f0a-66bf-453a-8dce-cba575113a7e",
+            "649567ac-a936-4785-aada-4b21cce871fc"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "kk": 1
+              "kk": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "23": 1
+              "23": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ea6e6f0a-66bf-453a-8dce-cba575113a7e": 1
+            "ea6e6f0a-66bf-453a-8dce-cba575113a7e": 1,
+            "649567ac-a936-4785-aada-4b21cce871fc": 1
           }
         }
       },
       "totals": {
-        "pv": 12,
-        "uv": 7,
+        "pv": 13,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11518,7 +11522,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "ea6e6f0a-66bf-453a-8dce-cba575113a7e"
+        "ea6e6f0a-66bf-453a-8dce-cba575113a7e",
+        "649567ac-a936-4785-aada-4b21cce871fc"
       ]
     },
     "waitlist-pulse": {
@@ -17067,6 +17072,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "649567ac-a936-4785-aada-4b21cce871fc",
+      "siteId": "visa-tracker",
+      "firstSeen": "2026-07-13T15:40:54.622Z",
+      "lastSeen": "2026-07-13T15:40:54.622Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ea6e6f0a-66bf-453a-8dce-cba575113a7e",
       "siteId": "visa-tracker",
