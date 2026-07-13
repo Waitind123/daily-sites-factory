@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T15:40:55.013Z",
+  "updatedAt": "2026-07-13T16:16:10.504Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11459,51 +11459,56 @@
           }
         },
         "2026-07-13": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ea6e6f0a-66bf-453a-8dce-cba575113a7e",
-            "649567ac-a936-4785-aada-4b21cce871fc"
+            "649567ac-a936-4785-aada-4b21cce871fc",
+            "e69f4e35-7c1e-4bdd-bb66-9fe4d7ff9d04"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
               "kk": 1,
-              "en": 1
+              "en": 2
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
+              "0": 1,
               "23": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "ea6e6f0a-66bf-453a-8dce-cba575113a7e": 1,
-            "649567ac-a936-4785-aada-4b21cce871fc": 1
+            "649567ac-a936-4785-aada-4b21cce871fc": 1,
+            "e69f4e35-7c1e-4bdd-bb66-9fe4d7ff9d04": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 8,
+        "pv": 14,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11523,7 +11528,8 @@
       },
       "knownVisitors": [
         "ea6e6f0a-66bf-453a-8dce-cba575113a7e",
-        "649567ac-a936-4785-aada-4b21cce871fc"
+        "649567ac-a936-4785-aada-4b21cce871fc",
+        "e69f4e35-7c1e-4bdd-bb66-9fe4d7ff9d04"
       ]
     },
     "waitlist-pulse": {
@@ -17072,6 +17078,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e69f4e35-7c1e-4bdd-bb66-9fe4d7ff9d04",
+      "siteId": "visa-tracker",
+      "firstSeen": "2026-07-13T16:16:09.926Z",
+      "lastSeen": "2026-07-13T16:16:09.926Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "649567ac-a936-4785-aada-4b21cce871fc",
       "siteId": "visa-tracker",
