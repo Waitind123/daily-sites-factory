@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T10:32:37.508Z",
+  "updatedAt": "2026-07-13T10:57:57.717Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16946,11 +16946,49 @@
             "30d2a85b-773f-48f3-9156-850b70b77b4f": 1,
             "f7dc0fd9-509e-4d8f-937f-ba06d9058a3f": 1
           }
+        },
+        "2026-07-13": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f8de2060-55b2-4d7b-b4b9-06d39d7db886"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f8de2060-55b2-4d7b-b4b9-06d39d7db886": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16967,10 +17005,24 @@
         "guideCount": 1,
         "lastChecked": "2026-07-13T05:50:59.947Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "f8de2060-55b2-4d7b-b4b9-06d39d7db886"
+      ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f8de2060-55b2-4d7b-b4b9-06d39d7db886",
+      "siteId": "docsend-pulse",
+      "firstSeen": "2026-07-13T10:57:57.549Z",
+      "lastSeen": "2026-07-13T10:57:57.549Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "b5c6013d-986a-41db-8070-d8f43e1322b1",
       "siteId": "remote-jobs",
