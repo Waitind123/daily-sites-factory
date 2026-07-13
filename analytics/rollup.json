@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-13T00:28:41.130Z",
+  "updatedAt": "2026-07-13T00:41:22.337Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13676,47 +13676,51 @@
           }
         },
         "2026-07-13": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4416bb17-f87f-4f7c-a96c-695b3b2ae8af"
+            "4416bb17-f87f-4f7c-a96c-695b3b2ae8af",
+            "58e6fcc0-bd1e-4ca9-b9e9-fb813f545332"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "tr": 1
+              "tr": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "4416bb17-f87f-4f7c-a96c-695b3b2ae8af": 1
+            "4416bb17-f87f-4f7c-a96c-695b3b2ae8af": 1,
+            "58e6fcc0-bd1e-4ca9-b9e9-fb813f545332": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13735,7 +13739,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "4416bb17-f87f-4f7c-a96c-695b3b2ae8af"
+        "4416bb17-f87f-4f7c-a96c-695b3b2ae8af",
+        "58e6fcc0-bd1e-4ca9-b9e9-fb813f545332"
       ]
     },
     "pricing-convert": {
@@ -16768,6 +16773,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "58e6fcc0-bd1e-4ca9-b9e9-fb813f545332",
+      "siteId": "pricing-intel",
+      "firstSeen": "2026-07-13T00:41:21.451Z",
+      "lastSeen": "2026-07-13T00:41:21.451Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "4416bb17-f87f-4f7c-a96c-695b3b2ae8af",
       "siteId": "pricing-intel",
