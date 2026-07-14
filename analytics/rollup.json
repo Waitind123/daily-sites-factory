@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-14T22:13:31.162Z",
+  "updatedAt": "2026-07-14T22:18:46.568Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7894,47 +7894,52 @@
           }
         },
         "2026-07-14": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c443d4e8-ccc6-4d69-92a0-6e4867196887"
+            "c443d4e8-ccc6-4d69-92a0-6e4867196887",
+            "c19d0ef8-bfc8-4227-956f-49774f4f00ba"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "5": 1
+              "5": 1,
+              "6": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c443d4e8-ccc6-4d69-92a0-6e4867196887": 1
+            "c443d4e8-ccc6-4d69-92a0-6e4867196887": 1,
+            "c19d0ef8-bfc8-4227-956f-49774f4f00ba": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 11,
+        "pv": 14,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7953,7 +7958,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "c443d4e8-ccc6-4d69-92a0-6e4867196887"
+        "c443d4e8-ccc6-4d69-92a0-6e4867196887",
+        "c19d0ef8-bfc8-4227-956f-49774f4f00ba"
       ]
     },
     "pain-radar": {
@@ -17416,6 +17422,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c19d0ef8-bfc8-4227-956f-49774f4f00ba",
+      "siteId": "page-split",
+      "firstSeen": "2026-07-14T22:18:46.260Z",
+      "lastSeen": "2026-07-14T22:18:46.260Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "d4b8a752-d170-411f-a922-80e884e3cb26",
       "siteId": "intercom-pulse",
