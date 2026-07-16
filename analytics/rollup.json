@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T05:14:02.019Z",
+  "updatedAt": "2026-07-16T06:12:37.252Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13477,11 +13477,49 @@
           "visitorHits": {
             "78fbdff6-3ccb-4122-9bef-311e30bfde56": 1
           }
+        },
+        "2026-07-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5": 1
+          }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 12,
+        "pv": 16,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13498,7 +13536,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-15T04:58:36.185Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5"
+      ]
     },
     "uptime-alt": {
       "url": "https://uptime-alt.vercel.app",
@@ -17787,6 +17828,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5",
+      "siteId": "meetup-alt",
+      "firstSeen": "2026-07-16T06:12:36.909Z",
+      "lastSeen": "2026-07-16T06:12:36.909Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "a4b22a25-ca3f-437d-883c-2132d47459c4",
       "siteId": "stripe-pulse-lite",
