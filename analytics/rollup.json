@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T07:17:33.428Z",
+  "updatedAt": "2026-07-16T08:08:33.042Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -15515,11 +15515,49 @@
           "visitorHits": {
             "7b99a459-bce8-49ce-90e3-1161ab28656c": 1
           }
+        },
+        "2026-07-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "kk": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15536,7 +15574,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-15T04:58:45.401Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8"
+      ]
     },
     "zapier-pulse": {
       "url": "https://zapier-pulse.vercel.app",
@@ -17879,6 +17920,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8",
+      "siteId": "sec-quest-pulse",
+      "firstSeen": "2026-07-16T08:08:32.660Z",
+      "lastSeen": "2026-07-16T08:08:32.660Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "kk",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "e2c89cf7-0730-4a77-9bbd-fcc84cc9be4a",
       "siteId": "meetup-alt",
