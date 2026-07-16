@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T09:19:51.249Z",
+  "updatedAt": "2026-07-16T09:22:04.982Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6450,50 +6450,55 @@
           }
         },
         "2026-07-16": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "6919d1b6-1aeb-479e-b80e-89dbc3f5533e",
-            "03228814-6a3c-459a-b0f6-f03082ca2e98"
+            "03228814-6a3c-459a-b0f6-f03082ca2e98",
+            "05752660-68e6-4cdb-aa8a-133fead8be28"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/join": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
-              "zh": 2
+              "zh": 2,
+              "en": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 2,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "17": 2
+              "17": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "6919d1b6-1aeb-479e-b80e-89dbc3f5533e": 1,
-            "03228814-6a3c-459a-b0f6-f03082ca2e98": 1
+            "03228814-6a3c-459a-b0f6-f03082ca2e98": 1,
+            "05752660-68e6-4cdb-aa8a-133fead8be28": 1
           }
         }
       },
       "totals": {
-        "pv": 97,
-        "uv": 73,
+        "pv": 98,
+        "uv": 74,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6515,7 +6520,8 @@
         "4693418b-3164-44c3-a05e-b951efa57bde",
         "d992a064-55d1-448b-a5a6-e04e280f3bce",
         "6919d1b6-1aeb-479e-b80e-89dbc3f5533e",
-        "03228814-6a3c-459a-b0f6-f03082ca2e98"
+        "03228814-6a3c-459a-b0f6-f03082ca2e98",
+        "05752660-68e6-4cdb-aa8a-133fead8be28"
       ]
     },
     "invoice-desk": {
@@ -18109,6 +18115,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "05752660-68e6-4cdb-aa8a-133fead8be28",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-16T09:22:04.631Z",
+      "lastSeen": "2026-07-16T09:22:04.631Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "06fd13a8-3b8a-4dc4-9eeb-88653e52214f",
       "siteId": "remote-jobs",
