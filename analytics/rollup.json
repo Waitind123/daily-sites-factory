@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T06:30:50.844Z",
+  "updatedAt": "2026-07-16T06:36:30.687Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -14997,11 +14997,49 @@
           "visitorHits": {
             "9633c858-0c82-45a7-a920-4d869588403a": 1
           }
+        },
+        "2026-07-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e75d7cf9-8923-40a8-ae5c-771284c3b80d"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e75d7cf9-8923-40a8-ae5c-771284c3b80d": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15018,7 +15056,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-15T04:58:52.973Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e75d7cf9-8923-40a8-ae5c-771284c3b80d"
+      ]
     },
     "freelance-local-kit": {
       "url": "https://freelance-local-kit.vercel.app",
@@ -17832,6 +17873,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e75d7cf9-8923-40a8-ae5c-771284c3b80d",
+      "siteId": "visa-live",
+      "firstSeen": "2026-07-16T06:36:30.494Z",
+      "lastSeen": "2026-07-16T06:36:30.494Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://www.bing.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1784183450650",
       "siteId": "feature-vote",
