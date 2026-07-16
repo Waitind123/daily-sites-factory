@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T18:45:13.240Z",
+  "updatedAt": "2026-07-16T18:55:42.195Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16052,11 +16052,49 @@
           "visitorHits": {
             "110cc689-9d96-4243-9085-41a79f57a1a6": 1
           }
+        },
+        "2026-07-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "2d6f3533-8374-44fa-aa34-12d162cf7c35"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "2d6f3533-8374-44fa-aa34-12d162cf7c35": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16073,7 +16111,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-15T04:58:55.519Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "2d6f3533-8374-44fa-aa34-12d162cf7c35"
+      ]
     },
     "scope3-commute-pulse": {
       "url": "https://scope3-commute-pulse.vercel.app",
@@ -18235,6 +18276,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2d6f3533-8374-44fa-aa34-12d162cf7c35",
+      "siteId": "zapier-pulse",
+      "firstSeen": "2026-07-16T18:55:41.846Z",
+      "lastSeen": "2026-07-16T18:55:41.846Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f83da049-514a-4eb2-8bd0-92532f2dd8a3",
       "siteId": "pain-radar",
