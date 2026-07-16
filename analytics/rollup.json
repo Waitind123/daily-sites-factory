@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T09:19:13.058Z",
+  "updatedAt": "2026-07-16T09:19:49.730Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -15649,8 +15649,8 @@
           }
         },
         "2026-07-16": {
-          "pv": 4,
-          "uv": 4,
+          "pv": 5,
+          "uv": 5,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -15658,33 +15658,37 @@
             "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8",
             "49ec8056-07bb-41dd-a62d-66123b8bcffd",
             "b5e5f1fc-fb21-424e-8c00-864d252e6b01",
-            "3a2fd7b1-6d52-467d-938a-0d532c2df4e3"
+            "3a2fd7b1-6d52-467d-938a-0d532c2df4e3",
+            "d5f618d1-1f35-472e-962b-73c04348c3ab"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
-              "/": 4
+              "/": 5
             },
             "devices": {
-              "desktop": 4
+              "desktop": 4,
+              "mobile": 1
             },
             "locales": {
               "kk": 1,
-              "en": 2,
+              "en": 3,
               "ru": 1
             },
             "timezones": {
               "Europe/Moscow": 3,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "16": 4
+              "16": 4,
+              "17": 1
             },
             "visitorTypes": {
-              "new": 4,
+              "new": 5,
               "returning": 0
             }
           },
@@ -15692,13 +15696,14 @@
             "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8": 1,
             "49ec8056-07bb-41dd-a62d-66123b8bcffd": 1,
             "b5e5f1fc-fb21-424e-8c00-864d252e6b01": 1,
-            "3a2fd7b1-6d52-467d-938a-0d532c2df4e3": 1
+            "3a2fd7b1-6d52-467d-938a-0d532c2df4e3": 1,
+            "d5f618d1-1f35-472e-962b-73c04348c3ab": 1
           }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 9,
+        "pv": 10,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15720,7 +15725,8 @@
         "e0c3d0e4-63b6-45dc-b2d4-045d7c9572c8",
         "49ec8056-07bb-41dd-a62d-66123b8bcffd",
         "b5e5f1fc-fb21-424e-8c00-864d252e6b01",
-        "3a2fd7b1-6d52-467d-938a-0d532c2df4e3"
+        "3a2fd7b1-6d52-467d-938a-0d532c2df4e3",
+        "d5f618d1-1f35-472e-962b-73c04348c3ab"
       ]
     },
     "zapier-pulse": {
@@ -18064,6 +18070,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d5f618d1-1f35-472e-962b-73c04348c3ab",
+      "siteId": "sec-quest-pulse",
+      "firstSeen": "2026-07-16T09:19:49.546Z",
+      "lastSeen": "2026-07-16T09:19:49.546Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "cd1d5082-0027-4cc2-b2c3-1fe99253d1cf",
       "siteId": "coworking-finder",
