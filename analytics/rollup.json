@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-16T06:36:30.687Z",
+  "updatedAt": "2026-07-16T07:17:33.428Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13483,47 +13483,52 @@
           }
         },
         "2026-07-16": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5"
+            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5",
+            "e2c89cf7-0730-4a77-9bbd-fcc84cc9be4a"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "14": 1
+              "14": 1,
+              "15": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5": 1
+            "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5": 1,
+            "e2c89cf7-0730-4a77-9bbd-fcc84cc9be4a": 1
           }
         }
       },
       "totals": {
-        "pv": 16,
-        "uv": 13,
+        "pv": 17,
+        "uv": 14,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13542,7 +13547,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5"
+        "68835cfc-8d33-44d4-9ca6-f8cdad3aa6c5",
+        "e2c89cf7-0730-4a77-9bbd-fcc84cc9be4a"
       ]
     },
     "uptime-alt": {
@@ -17873,6 +17879,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e2c89cf7-0730-4a77-9bbd-fcc84cc9be4a",
+      "siteId": "meetup-alt",
+      "firstSeen": "2026-07-16T07:17:33.120Z",
+      "lastSeen": "2026-07-16T07:17:33.120Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "e75d7cf9-8923-40a8-ae5c-771284c3b80d",
       "siteId": "visa-live",
