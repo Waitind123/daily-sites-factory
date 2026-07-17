@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-17T10:45:25.855Z",
+  "updatedAt": "2026-07-17T10:45:57.136Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12020,47 +12020,50 @@
           }
         },
         "2026-07-17": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "51d8bb72-244c-4564-957f-600c3e40cc54"
+            "51d8bb72-244c-4564-957f-600c3e40cc54",
+            "caa69e59-1a03-40f7-acc5-9aa4b39287aa"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "kk": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "51d8bb72-244c-4564-957f-600c3e40cc54": 1
+            "51d8bb72-244c-4564-957f-600c3e40cc54": 1,
+            "caa69e59-1a03-40f7-acc5-9aa4b39287aa": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 10,
+        "pv": 12,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12079,7 +12082,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "51d8bb72-244c-4564-957f-600c3e40cc54"
+        "51d8bb72-244c-4564-957f-600c3e40cc54",
+        "caa69e59-1a03-40f7-acc5-9aa4b39287aa"
       ]
     },
     "virtual-cowork-room": {
@@ -18550,6 +18554,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "caa69e59-1a03-40f7-acc5-9aa4b39287aa",
+      "siteId": "uptime-pulse",
+      "firstSeen": "2026-07-17T10:45:56.935Z",
+      "lastSeen": "2026-07-17T10:45:56.935Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "kk",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "51d8bb72-244c-4564-957f-600c3e40cc54",
       "siteId": "uptime-pulse",
