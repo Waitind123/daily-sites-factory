@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-17T05:47:52.027Z",
+  "updatedAt": "2026-07-17T06:14:24.475Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -17777,47 +17777,53 @@
           }
         },
         "2026-07-17": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "8698d0b5-25bc-4bf3-8c57-f3c443204247"
+            "8698d0b5-25bc-4bf3-8c57-f3c443204247",
+            "9b77286c-bd40-48d4-b6dd-45e9e99d3763"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 1,
+              "14": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "8698d0b5-25bc-4bf3-8c57-f3c443204247": 1
+            "8698d0b5-25bc-4bf3-8c57-f3c443204247": 1,
+            "9b77286c-bd40-48d4-b6dd-45e9e99d3763": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17836,7 +17842,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "8698d0b5-25bc-4bf3-8c57-f3c443204247"
+        "8698d0b5-25bc-4bf3-8c57-f3c443204247",
+        "9b77286c-bd40-48d4-b6dd-45e9e99d3763"
       ]
     },
     "虚拟图书馆共工": {
@@ -18310,6 +18317,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9b77286c-bd40-48d4-b6dd-45e9e99d3763",
+      "siteId": "gdpr-pulse",
+      "firstSeen": "2026-07-17T06:14:24.138Z",
+      "lastSeen": "2026-07-17T06:14:24.138Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "8698d0b5-25bc-4bf3-8c57-f3c443204247",
       "siteId": "gdpr-pulse",
