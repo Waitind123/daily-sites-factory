@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T10:44:10.638Z",
+  "updatedAt": "2026-07-18T11:20:21.455Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6903,50 +6903,56 @@
           }
         },
         "2026-07-18": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "3024f428-1e8a-409f-8dab-d674d64c6376",
-            "47d45ee9-cc05-4144-8489-313d73702878"
+            "47d45ee9-cc05-4144-8489-313d73702878",
+            "5251a81a-26da-4d7d-bb2b-b8786a4b3c68"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/inbox": 2
             },
             "devices": {
-              "desktop": 3
+              "desktop": 3,
+              "mobile": 1
             },
             "locales": {
-              "zh": 3
+              "zh": 3,
+              "en": 1
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 3,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "16": 3
+              "16": 3,
+              "19": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "3024f428-1e8a-409f-8dab-d674d64c6376": 2,
-            "47d45ee9-cc05-4144-8489-313d73702878": 1
+            "47d45ee9-cc05-4144-8489-313d73702878": 1,
+            "5251a81a-26da-4d7d-bb2b-b8786a4b3c68": 1
           }
         }
       },
       "totals": {
-        "pv": 103,
-        "uv": 78,
+        "pv": 104,
+        "uv": 79,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6966,7 +6972,8 @@
       },
       "knownVisitors": [
         "3024f428-1e8a-409f-8dab-d674d64c6376",
-        "47d45ee9-cc05-4144-8489-313d73702878"
+        "47d45ee9-cc05-4144-8489-313d73702878",
+        "5251a81a-26da-4d7d-bb2b-b8786a4b3c68"
       ]
     },
     "invoice-desk": {
@@ -18967,6 +18974,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5251a81a-26da-4d7d-bb2b-b8786a4b3c68",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-18T11:20:21.124Z",
+      "lastSeen": "2026-07-18T11:20:21.124Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "cabd225e-1cc0-41fd-b4e9-7af8d0d52765",
       "siteId": "og-image-studio",
