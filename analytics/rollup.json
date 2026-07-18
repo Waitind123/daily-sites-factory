@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T07:12:28.798Z",
+  "updatedAt": "2026-07-18T08:50:45.358Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -833,11 +833,49 @@
             "0a640e99-2078-4694-9a26-b3069f8ee170": 1,
             "a61ab34f-b1c0-4e6e-a445-dd1a30ac89f3": 1
           }
+        },
+        "2026-07-18": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "878f817f-253b-48ad-bc62-7412b9ecdc3a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "878f817f-253b-48ad-bc62-7412b9ecdc3a": 1
+          }
         }
       },
       "totals": {
-        "pv": 109,
-        "uv": 76,
+        "pv": 110,
+        "uv": 77,
         "trial": 0,
         "checkout": 7,
         "purchase": 2
@@ -854,7 +892,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-18T04:55:50.792Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "878f817f-253b-48ad-bc62-7412b9ecdc3a"
+      ]
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -18690,6 +18731,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "878f817f-253b-48ad-bc62-7412b9ecdc3a",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-18T08:50:45.161Z",
+      "lastSeen": "2026-07-18T08:50:45.161Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ac6163d0-5417-4592-9e75-6469c7f398be",
       "siteId": "ai-profit-pulse",
