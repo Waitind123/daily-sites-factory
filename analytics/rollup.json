@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-18T10:23:25.620Z",
+  "updatedAt": "2026-07-18T10:23:27.103Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8514,47 +8514,50 @@
           }
         },
         "2026-07-18": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "78df80c2-eae4-4421-af04-170d68043126"
+            "78df80c2-eae4-4421-af04-170d68043126",
+            "bd45e218-3ac9-4a82-a91e-5087916639ae"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "tr": 1
+              "tr": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "78df80c2-eae4-4421-af04-170d68043126": 1
+            "78df80c2-eae4-4421-af04-170d68043126": 1,
+            "bd45e218-3ac9-4a82-a91e-5087916639ae": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 12,
+        "pv": 16,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8573,7 +8576,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "78df80c2-eae4-4421-af04-170d68043126"
+        "78df80c2-eae4-4421-af04-170d68043126",
+        "bd45e218-3ac9-4a82-a91e-5087916639ae"
       ]
     },
     "page-split": {
@@ -18955,6 +18959,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bd45e218-3ac9-4a82-a91e-5087916639ae",
+      "siteId": "og-image-studio",
+      "firstSeen": "2026-07-18T10:23:26.922Z",
+      "lastSeen": "2026-07-18T10:23:26.922Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "78df80c2-eae4-4421-af04-170d68043126",
       "siteId": "og-image-studio",
