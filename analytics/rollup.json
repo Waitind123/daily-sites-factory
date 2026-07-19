@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-19T09:37:12.844Z",
+  "updatedAt": "2026-07-19T09:37:28.828Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12424,47 +12424,50 @@
           }
         },
         "2026-07-19": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ac511275-896d-4749-801d-13d58b8fabc2"
+            "ac511275-896d-4749-801d-13d58b8fabc2",
+            "da7e48d7-d672-4f35-b829-768648d81a71"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "kk": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ac511275-896d-4749-801d-13d58b8fabc2": 1
+            "ac511275-896d-4749-801d-13d58b8fabc2": 1,
+            "da7e48d7-d672-4f35-b829-768648d81a71": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12483,7 +12486,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "ac511275-896d-4749-801d-13d58b8fabc2"
+        "ac511275-896d-4749-801d-13d58b8fabc2",
+        "da7e48d7-d672-4f35-b829-768648d81a71"
       ]
     },
     "tracetics-lite": {
@@ -19292,6 +19296,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "da7e48d7-d672-4f35-b829-768648d81a71",
+      "siteId": "timezone-planner",
+      "firstSeen": "2026-07-19T09:37:28.614Z",
+      "lastSeen": "2026-07-19T09:37:28.614Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "kk",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "ac511275-896d-4749-801d-13d58b8fabc2",
       "siteId": "timezone-planner",
