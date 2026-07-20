@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20T19:17:20.332Z",
+  "updatedAt": "2026-07-20T19:17:38.618Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7345,50 +7345,56 @@
           }
         },
         "2026-07-20": {
-          "pv": 3,
-          "uv": 2,
+          "pv": 4,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "2baa9308-141c-488b-ab3f-e538c89f536e",
-            "ceebacde-68d4-4e89-88cd-bebe4ff8ab99"
+            "ceebacde-68d4-4e89-88cd-bebe4ff8ab99",
+            "b466daba-6146-468c-a9e5-393f78827955"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
               "/inbox": 2,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 3
+              "desktop": 3,
+              "mobile": 1
             },
             "locales": {
-              "zh": 3
+              "zh": 3,
+              "en": 1
             },
             "timezones": {
-              "UTC": 3
+              "UTC": 3,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
+              "3": 1,
               "18": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 1
             }
           },
           "visitorHits": {
             "2baa9308-141c-488b-ab3f-e538c89f536e": 1,
-            "ceebacde-68d4-4e89-88cd-bebe4ff8ab99": 2
+            "ceebacde-68d4-4e89-88cd-bebe4ff8ab99": 2,
+            "b466daba-6146-468c-a9e5-393f78827955": 1
           }
         }
       },
       "totals": {
-        "pv": 112,
-        "uv": 85,
+        "pv": 113,
+        "uv": 86,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7408,7 +7414,8 @@
       },
       "knownVisitors": [
         "2baa9308-141c-488b-ab3f-e538c89f536e",
-        "ceebacde-68d4-4e89-88cd-bebe4ff8ab99"
+        "ceebacde-68d4-4e89-88cd-bebe4ff8ab99",
+        "b466daba-6146-468c-a9e5-393f78827955"
       ]
     },
     "invoice-desk": {
@@ -19790,6 +19797,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b466daba-6146-468c-a9e5-393f78827955",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-20T19:17:38.414Z",
+      "lastSeen": "2026-07-20T19:17:38.414Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "20e32a31-f167-4fd8-b557-49c7ec47068a",
       "siteId": "bookmark-pulse",
