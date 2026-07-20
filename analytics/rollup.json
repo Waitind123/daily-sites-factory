@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20T10:17:21.597Z",
+  "updatedAt": "2026-07-20T10:37:20.922Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7492,11 +7492,49 @@
           "visitorHits": {
             "bb463f4d-9e7b-4517-9b5c-56d8ba54738c": 1
           }
+        },
+        "2026-07-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7513,7 +7551,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-20T05:47:19.071Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5d6d8e85-f3bf-46c9-9c63-ed94c7733282"
+      ]
     },
     "landing-generator": {
       "url": "https://landing-generator-opal.vercel.app",
@@ -19669,6 +19710,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5d6d8e85-f3bf-46c9-9c63-ed94c7733282",
+      "siteId": "invoice-desk",
+      "firstSeen": "2026-07-20T10:37:20.588Z",
+      "lastSeen": "2026-07-20T10:37:20.588Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "7195a281-c81c-4b6f-8428-00348010a346",
       "siteId": "remote-jobs",
