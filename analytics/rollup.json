@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20T10:37:20.922Z",
+  "updatedAt": "2026-07-20T11:08:32.649Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7494,47 +7494,51 @@
           }
         },
         "2026-07-20": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282"
+            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282",
+            "c5905ddd-dd8f-49dc-82ca-c4d62ec0b4af"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 1,
+              "19": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282": 1
+            "5d6d8e85-f3bf-46c9-9c63-ed94c7733282": 1,
+            "c5905ddd-dd8f-49dc-82ca-c4d62ec0b4af": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7553,7 +7557,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "5d6d8e85-f3bf-46c9-9c63-ed94c7733282"
+        "5d6d8e85-f3bf-46c9-9c63-ed94c7733282",
+        "c5905ddd-dd8f-49dc-82ca-c4d62ec0b4af"
       ]
     },
     "landing-generator": {
@@ -19710,6 +19715,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c5905ddd-dd8f-49dc-82ca-c4d62ec0b4af",
+      "siteId": "invoice-desk",
+      "firstSeen": "2026-07-20T11:08:32.281Z",
+      "lastSeen": "2026-07-20T11:08:32.281Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5d6d8e85-f3bf-46c9-9c63-ed94c7733282",
       "siteId": "invoice-desk",
