@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20T05:47:46.928Z",
+  "updatedAt": "2026-07-20T07:17:45.229Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16096,11 +16096,49 @@
             "60fbdcc0-7155-4848-87a9-89695150f4ea": 1,
             "cbf8a76c-3640-4407-a232-bba9835e2746": 1
           }
+        },
+        "2026-07-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "85d39836-c92b-4a15-ab70-715417c68473"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "85d39836-c92b-4a15-ab70-715417c68473": 1
+          }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 9,
+        "pv": 10,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16117,7 +16155,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-20T05:47:27.315Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "85d39836-c92b-4a15-ab70-715417c68473"
+      ]
     },
     "pricing-convert": {
       "url": "https://pricing-convert.vercel.app",
@@ -19356,6 +19397,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "85d39836-c92b-4a15-ab70-715417c68473",
+      "siteId": "pricing-intel",
+      "firstSeen": "2026-07-20T07:17:44.878Z",
+      "lastSeen": "2026-07-20T07:17:44.878Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://yandex.ru/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1784520194128",
       "siteId": "feature-vote",
