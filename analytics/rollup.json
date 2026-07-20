@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-20T07:58:46.651Z",
+  "updatedAt": "2026-07-20T07:59:28.000Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18911,7 +18911,7 @@
           }
         },
         "2026-07-20": {
-          "pv": 2,
+          "pv": 3,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -18921,36 +18921,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/scan": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "en": 2
+              "en": 3
             },
             "timezones": {
-              "Europe/Amsterdam": 2
+              "Europe/Amsterdam": 3
             },
             "utmSources": {},
             "hours": {
-              "15": 2
+              "15": 3
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 1
+              "returning": 2
             }
           },
           "visitorHits": {
-            "39802daf-9697-4722-a661-187474893d17": 2
+            "39802daf-9697-4722-a661-187474893d17": 3
           }
         }
       },
       "totals": {
-        "pv": 8,
+        "pv": 9,
         "uv": 7,
         "trial": 0,
         "checkout": 0,
@@ -19448,9 +19449,9 @@
       "visitorId": "39802daf-9697-4722-a661-187474893d17",
       "siteId": "gdpr-pulse",
       "firstSeen": "2026-07-20T07:58:42.110Z",
-      "lastSeen": "2026-07-20T07:58:46.458Z",
-      "pageviews": 2,
-      "path": "/",
+      "lastSeen": "2026-07-20T07:59:27.799Z",
+      "pageviews": 3,
+      "path": "/scan",
       "locale": "en",
       "device": "desktop",
       "timezone": "Europe/Amsterdam"
