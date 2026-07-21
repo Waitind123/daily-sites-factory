@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T10:15:30.480Z",
+  "updatedAt": "2026-07-21T10:32:09.415Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10204,8 +10204,8 @@
           }
         },
         "2026-07-21": {
-          "pv": 5,
-          "uv": 5,
+          "pv": 6,
+          "uv": 6,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -10214,35 +10214,37 @@
             "c4ab3719-0180-4163-9c85-011f0ad3f8ac",
             "fa6bac1a-aa15-48cd-ba17-e49e6056597d",
             "8ff8f72d-70ea-479a-ab71-44efc3f3706e",
-            "9e75d42b-d455-4edd-9589-2c173638a4c2"
+            "9e75d42b-d455-4edd-9589-2c173638a4c2",
+            "474850a2-5250-4d48-8a69-67eab56ef0fd"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 5
+              "直接访问": 6
             },
             "paths": {
-              "/": 5
+              "/": 6
             },
             "devices": {
-              "desktop": 3,
+              "desktop": 4,
               "mobile": 2
             },
             "locales": {
-              "en": 5
+              "en": 6
             },
             "timezones": {
               "America/New_York": 1,
               "UTC": 1,
-              "America/Los_Angeles": 3
+              "America/Los_Angeles": 4
             },
             "utmSources": {},
             "hours": {
               "9": 2,
               "10": 1,
-              "12": 2
+              "12": 2,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 5,
+              "new": 6,
               "returning": 0
             }
           },
@@ -10251,13 +10253,14 @@
             "c4ab3719-0180-4163-9c85-011f0ad3f8ac": 1,
             "fa6bac1a-aa15-48cd-ba17-e49e6056597d": 1,
             "8ff8f72d-70ea-479a-ab71-44efc3f3706e": 1,
-            "9e75d42b-d455-4edd-9589-2c173638a4c2": 1
+            "9e75d42b-d455-4edd-9589-2c173638a4c2": 1,
+            "474850a2-5250-4d48-8a69-67eab56ef0fd": 1
           }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 11,
+        "pv": 14,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10274,7 +10277,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-21T05:29:03.157Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "474850a2-5250-4d48-8a69-67eab56ef0fd"
+      ]
     },
     "reddit-watch": {
       "url": "https://reddit-watch-rho.vercel.app",
@@ -20187,6 +20193,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "474850a2-5250-4d48-8a69-67eab56ef0fd",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-07-21T10:32:09.063Z",
+      "lastSeen": "2026-07-21T10:32:09.063Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "bb394307-1347-4911-9176-ad8d592351cb",
       "siteId": "seo-rank-tracker",
