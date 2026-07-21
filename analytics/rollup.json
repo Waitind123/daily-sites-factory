@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T10:32:16.619Z",
+  "updatedAt": "2026-07-21T11:23:52.206Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -11473,54 +11473,57 @@
           }
         },
         "2026-07-21": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "b3c7f3eb-1fb6-4482-acc5-888eafffaba3",
             "ca614ca0-ffc8-413b-9e54-f19ec7fc9cb9",
-            "bb394307-1347-4911-9176-ad8d592351cb"
+            "bb394307-1347-4911-9176-ad8d592351cb",
+            "5a35490b-8d01-4aee-abe7-dcb07144d47b"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "desktop": 2,
+              "desktop": 3,
               "mobile": 1
             },
             "locales": {
-              "en": 2,
+              "en": 3,
               "tr": 1
             },
             "timezones": {
               "Europe/Moscow": 2,
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 3
+              "18": 3,
+              "19": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "b3c7f3eb-1fb6-4482-acc5-888eafffaba3": 1,
             "ca614ca0-ffc8-413b-9e54-f19ec7fc9cb9": 1,
-            "bb394307-1347-4911-9176-ad8d592351cb": 1
+            "bb394307-1347-4911-9176-ad8d592351cb": 1,
+            "5a35490b-8d01-4aee-abe7-dcb07144d47b": 1
           }
         }
       },
       "totals": {
-        "pv": 18,
-        "uv": 14,
+        "pv": 19,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11541,7 +11544,8 @@
       "knownVisitors": [
         "b3c7f3eb-1fb6-4482-acc5-888eafffaba3",
         "ca614ca0-ffc8-413b-9e54-f19ec7fc9cb9",
-        "bb394307-1347-4911-9176-ad8d592351cb"
+        "bb394307-1347-4911-9176-ad8d592351cb",
+        "5a35490b-8d01-4aee-abe7-dcb07144d47b"
       ]
     },
     "sign-pulse": {
@@ -20196,6 +20200,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5a35490b-8d01-4aee-abe7-dcb07144d47b",
+      "siteId": "seo-rank-tracker",
+      "firstSeen": "2026-07-21T11:23:51.853Z",
+      "lastSeen": "2026-07-21T11:23:51.853Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "26701e6d-4683-433c-9be2-f46bfb1d02c2",
       "siteId": "reddit-pulse",
