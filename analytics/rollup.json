@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T12:19:05.178Z",
+  "updatedAt": "2026-07-21T12:53:44.211Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18085,50 +18085,53 @@
           }
         },
         "2026-07-21": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "8f73b8e8-2b8b-4c38-ba7b-3954cabec753",
-            "bb682792-d77c-4e72-a11b-29acea448174"
+            "bb682792-d77c-4e72-a11b-29acea448174",
+            "2c197e3e-44e9-4406-8852-1fd9a11b5464"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "en": 1,
+              "en": 2,
               "ru": 1
             },
             "timezones": {
-              "Europe/Moscow": 2
+              "Europe/Moscow": 2,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "20": 2
+              "20": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "8f73b8e8-2b8b-4c38-ba7b-3954cabec753": 1,
-            "bb682792-d77c-4e72-a11b-29acea448174": 1
+            "bb682792-d77c-4e72-a11b-29acea448174": 1,
+            "2c197e3e-44e9-4406-8852-1fd9a11b5464": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 6,
+        "pv": 7,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18148,7 +18151,8 @@
       },
       "knownVisitors": [
         "8f73b8e8-2b8b-4c38-ba7b-3954cabec753",
-        "bb682792-d77c-4e72-a11b-29acea448174"
+        "bb682792-d77c-4e72-a11b-29acea448174",
+        "2c197e3e-44e9-4406-8852-1fd9a11b5464"
       ]
     },
     "ai-contract-review": {
@@ -20252,6 +20256,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2c197e3e-44e9-4406-8852-1fd9a11b5464",
+      "siteId": "scope3-commute-pulse",
+      "firstSeen": "2026-07-21T12:53:43.887Z",
+      "lastSeen": "2026-07-21T12:53:43.887Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bb682792-d77c-4e72-a11b-29acea448174",
       "siteId": "scope3-commute-pulse",
