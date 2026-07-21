@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T14:21:02.866Z",
+  "updatedAt": "2026-07-21T14:23:11.710Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1672,11 +1672,49 @@
           "visitorHits": {
             "d9fd6c51-b096-4e6b-9dd7-9d3d524c5975": 1
           }
+        },
+        "2026-07-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7046b3fd-11a1-452e-911c-c6e52960729f"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7046b3fd-11a1-452e-911c-c6e52960729f": 1
+          }
         }
       },
       "totals": {
-        "pv": 18,
-        "uv": 15,
+        "pv": 19,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1693,7 +1731,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-21T05:28:36.486Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7046b3fd-11a1-452e-911c-c6e52960729f"
+      ]
     },
     "changelog-hub": {
       "url": "https://changelog-hub-henna.vercel.app",
@@ -20266,6 +20307,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7046b3fd-11a1-452e-911c-c6e52960729f",
+      "siteId": "carbon-calculator",
+      "firstSeen": "2026-07-21T14:23:11.352Z",
+      "lastSeen": "2026-07-21T14:23:11.352Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://yandex.ru/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1784643662524",
       "siteId": "feature-vote",
