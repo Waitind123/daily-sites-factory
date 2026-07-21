@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T11:59:03.930Z",
+  "updatedAt": "2026-07-21T12:18:54.921Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18083,11 +18083,49 @@
           "visitorHits": {
             "8a01a7bd-96c2-4391-924f-85a2d6a4146a": 1
           }
+        },
+        "2026-07-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8f73b8e8-2b8b-4c38-ba7b-3954cabec753"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8f73b8e8-2b8b-4c38-ba7b-3954cabec753": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18104,7 +18142,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-21T05:29:07.185Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "8f73b8e8-2b8b-4c38-ba7b-3954cabec753"
+      ]
     },
     "ai-contract-review": {
       "url": "https://ai-contract-review-three.vercel.app",
@@ -20207,6 +20248,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8f73b8e8-2b8b-4c38-ba7b-3954cabec753",
+      "siteId": "scope3-commute-pulse",
+      "firstSeen": "2026-07-21T12:18:54.544Z",
+      "lastSeen": "2026-07-21T12:18:54.544Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1784635143686",
       "siteId": "feature-vote",
