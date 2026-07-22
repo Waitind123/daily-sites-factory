@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T00:07:46.256Z",
+  "updatedAt": "2026-07-22T00:56:28.012Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16867,11 +16867,49 @@
             "0e81c1a3-1e46-4cb9-b1e7-410a4429093d": 1,
             "366d9a98-c1b4-4456-99b3-678ac49bdc61": 1
           }
+        },
+        "2026-07-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9": 1
+          }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 9,
+        "pv": 11,
+        "uv": 10,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16888,7 +16926,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-21T05:28:43.327Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9"
+      ]
     },
     "pricing-intel": {
       "url": "https://pricing-intel-vert.vercel.app",
@@ -20417,6 +20458,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-07-22T00:56:27.658Z",
+      "lastSeen": "2026-07-22T00:56:27.658Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "99b28bd9-cd32-4eed-b620-de5f61dd8ab4",
       "siteId": "intercom-pulse",
