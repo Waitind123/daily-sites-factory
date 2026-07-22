@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T00:56:28.012Z",
+  "updatedAt": "2026-07-22T00:56:29.950Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16869,47 +16869,49 @@
           }
         },
         "2026-07-22": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9"
+            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9",
+            "1055f016-043d-48d2-8670-de17c457876e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9": 1
+            "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9": 1,
+            "1055f016-043d-48d2-8670-de17c457876e": 1
           }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 10,
+        "pv": 12,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16928,7 +16930,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9"
+        "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9",
+        "1055f016-043d-48d2-8670-de17c457876e"
       ]
     },
     "pricing-intel": {
@@ -20458,6 +20461,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1055f016-043d-48d2-8670-de17c457876e",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-07-22T00:56:29.766Z",
+      "lastSeen": "2026-07-22T00:56:29.766Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "7409a6e4-ad05-4c76-abaa-f50d0df1a7e9",
       "siteId": "dunning-pulse",
