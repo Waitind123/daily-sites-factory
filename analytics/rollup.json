@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T01:23:42.906Z",
+  "updatedAt": "2026-07-22T03:37:30.429Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -20145,11 +20145,49 @@
           "visitorHits": {
             "d7d8124d-e2f5-4694-afb5-4fb3ef33f75a": 1
           }
+        },
+        "2026-07-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a14449f7-771f-49ec-b603-69698f46104c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a14449f7-771f-49ec-b603-69698f46104c": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20166,7 +20204,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-21T05:28:52.904Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "a14449f7-771f-49ec-b603-69698f46104c"
+      ]
     },
     "pricing-heatmap": {
       "url": "https://pricing-heatmap-zeta.vercel.app",
@@ -20468,6 +20509,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a14449f7-771f-49ec-b603-69698f46104c",
+      "siteId": "library-cowork",
+      "firstSeen": "2026-07-22T03:37:30.077Z",
+      "lastSeen": "2026-07-22T03:37:30.077Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "00240425-9877-4f7c-ba15-f75db65bce18",
       "siteId": "dunning-pulse",
