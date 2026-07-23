@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T02:16:21.194Z",
+  "updatedAt": "2026-07-23T02:50:53.020Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12408,11 +12408,49 @@
           "visitorHits": {
             "13b75c8e-9109-4037-98cd-33f168b42859": 1
           }
+        },
+        "2026-07-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12429,7 +12467,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-22T05:27:58.632Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e"
+      ]
     },
     "stripe-pulse": {
       "url": "https://stripe-pulse-two.vercel.app",
@@ -20756,6 +20797,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e",
+      "siteId": "status-pulse",
+      "firstSeen": "2026-07-23T02:50:52.683Z",
+      "lastSeen": "2026-07-23T02:50:52.683Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "b0d99261-e215-4dd6-a425-a48f711dfeb0",
       "siteId": "meetup-alt",
