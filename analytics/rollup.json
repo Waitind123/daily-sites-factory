@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T09:35:34.464Z",
+  "updatedAt": "2026-07-23T11:32:38.953Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3243,47 +3243,54 @@
           }
         },
         "2026-07-23": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4"
+            "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4",
+            "ee45b0c0-bef6-45ae-82ac-2d9647a001ea"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 1,
+              "搜索引擎": 1
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 1,
+              "ru": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 1,
+              "Europe/Moscow": 1
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 1,
+              "19": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4": 1
+            "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4": 1,
+            "ee45b0c0-bef6-45ae-82ac-2d9647a001ea": 1
           }
         }
       },
       "totals": {
-        "pv": 50,
-        "uv": 38,
+        "pv": 51,
+        "uv": 39,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3302,7 +3309,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4"
+        "f9dcf704-fda8-4c01-bbf8-beedfca7d0b4",
+        "ee45b0c0-bef6-45ae-82ac-2d9647a001ea"
       ]
     },
     "coworking-pass": {
@@ -21100,6 +21108,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ee45b0c0-bef6-45ae-82ac-2d9647a001ea",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-07-23T11:32:38.502Z",
+      "lastSeen": "2026-07-23T11:32:38.502Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://yandex.ru/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1784799334224",
       "siteId": "feature-vote",
