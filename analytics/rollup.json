@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T04:13:28.725Z",
+  "updatedAt": "2026-07-23T04:48:12.470Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -20585,11 +20585,49 @@
           "visitorHits": {
             "a14449f7-771f-49ec-b603-69698f46104c": 1
           }
+        },
+        "2026-07-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20606,7 +20644,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-22T05:27:37.839Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2"
+      ]
     },
     "pricing-heatmap": {
       "url": "https://pricing-heatmap-zeta.vercel.app",
@@ -20908,6 +20949,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2",
+      "siteId": "library-cowork",
+      "firstSeen": "2026-07-23T04:48:12.101Z",
+      "lastSeen": "2026-07-23T04:48:12.101Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "2f87e5f5-f805-4fe1-95c7-92609cde9036",
       "siteId": "waitlist-email-verify",
