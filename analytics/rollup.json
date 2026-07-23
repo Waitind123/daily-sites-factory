@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T03:20:20.617Z",
+  "updatedAt": "2026-07-23T03:33:12.562Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18903,47 +18903,52 @@
           }
         },
         "2026-07-23": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "b44821d8-cf9b-4082-97dd-0106271feeb7"
+            "b44821d8-cf9b-4082-97dd-0106271feeb7",
+            "c20f21a1-b083-4ad5-a72d-41183c8a6705"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/guide/waitlist-email-validation-indie-hackers": 1
+              "/guide/waitlist-email-validation-indie-hackers": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "b44821d8-cf9b-4082-97dd-0106271feeb7": 1
+            "b44821d8-cf9b-4082-97dd-0106271feeb7": 1,
+            "c20f21a1-b083-4ad5-a72d-41183c8a6705": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 6,
+        "pv": 7,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18962,7 +18967,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "b44821d8-cf9b-4082-97dd-0106271feeb7"
+        "b44821d8-cf9b-4082-97dd-0106271feeb7",
+        "c20f21a1-b083-4ad5-a72d-41183c8a6705"
       ]
     },
     "应用商店差评挖痛点": {
@@ -20892,6 +20898,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c20f21a1-b083-4ad5-a72d-41183c8a6705",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-23T03:33:12.205Z",
+      "lastSeen": "2026-07-23T03:33:12.205Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "698577c7-c92b-4214-9721-177c582ff8d0",
       "siteId": "meetup-alt",
