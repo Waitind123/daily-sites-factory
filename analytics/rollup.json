@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T03:12:25.385Z",
+  "updatedAt": "2026-07-23T03:13:19.906Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7889,11 +7889,49 @@
             "ec104545-c8df-4313-b1cb-bf910841dc2c": 1,
             "ac787fdc-6fac-486a-8c5b-48c58b745721": 1
           }
+        },
+        "2026-07-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b0d6e136-802e-4623-8a12-8436956748e4"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b0d6e136-802e-4623-8a12-8436956748e4": 1
+          }
         }
       },
       "totals": {
-        "pv": 119,
-        "uv": 92,
+        "pv": 120,
+        "uv": 93,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7913,7 +7951,8 @@
       },
       "knownVisitors": [
         "ec104545-c8df-4313-b1cb-bf910841dc2c",
-        "ac787fdc-6fac-486a-8c5b-48c58b745721"
+        "ac787fdc-6fac-486a-8c5b-48c58b745721",
+        "b0d6e136-802e-4623-8a12-8436956748e4"
       ]
     },
     "invoice-desk": {
@@ -20846,6 +20885,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b0d6e136-802e-4623-8a12-8436956748e4",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-23T03:13:19.522Z",
+      "lastSeen": "2026-07-23T03:13:19.522Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "b44821d8-cf9b-4082-97dd-0106271feeb7",
       "siteId": "waitlist-email-verify",
