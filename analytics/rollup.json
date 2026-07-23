@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T02:51:06.257Z",
+  "updatedAt": "2026-07-23T03:12:25.385Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18855,11 +18855,49 @@
             "ea58b24c-a67a-4671-bfa2-e376bc18c23c": 1,
             "5e604f3f-305a-4999-bd48-a247148b329d": 1
           }
+        },
+        "2026-07-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b44821d8-cf9b-4082-97dd-0106271feeb7"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/waitlist-email-validation-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b44821d8-cf9b-4082-97dd-0106271feeb7": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18876,7 +18914,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-22T05:28:08.017Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b44821d8-cf9b-4082-97dd-0106271feeb7"
+      ]
     },
     "应用商店差评挖痛点": {
       "url": "",
@@ -20805,6 +20846,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b44821d8-cf9b-4082-97dd-0106271feeb7",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-23T03:12:25.030Z",
+      "lastSeen": "2026-07-23T03:12:25.030Z",
+      "pageviews": 1,
+      "path": "/guide/waitlist-email-validation-indie-hackers",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "dde88c85-623b-4dd7-8428-72e17b4669e8",
       "siteId": "status-pulse",
