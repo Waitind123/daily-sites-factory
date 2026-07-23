@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T04:48:12.470Z",
+  "updatedAt": "2026-07-23T05:20:31.808Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -20587,47 +20587,52 @@
           }
         },
         "2026-07-23": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2"
+            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2",
+            "412a9b62-8be0-4110-a1a6-7c43c1ff5ebe"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "12": 1
+              "12": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2": 1
+            "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2": 1,
+            "412a9b62-8be0-4110-a1a6-7c43c1ff5ebe": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20646,7 +20651,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2"
+        "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2",
+        "412a9b62-8be0-4110-a1a6-7c43c1ff5ebe"
       ]
     },
     "pricing-heatmap": {
@@ -20949,6 +20955,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "412a9b62-8be0-4110-a1a6-7c43c1ff5ebe",
+      "siteId": "library-cowork",
+      "firstSeen": "2026-07-23T05:20:31.433Z",
+      "lastSeen": "2026-07-23T05:20:31.433Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "7dd7bcfc-4e98-4a2a-8dcd-ba413f80a7b2",
       "siteId": "library-cowork",
