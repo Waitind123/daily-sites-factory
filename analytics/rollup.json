@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T03:45:40.199Z",
+  "updatedAt": "2026-07-23T04:13:28.725Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18907,52 +18907,57 @@
           }
         },
         "2026-07-23": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "b44821d8-cf9b-4082-97dd-0106271feeb7",
-            "c20f21a1-b083-4ad5-a72d-41183c8a6705"
+            "c20f21a1-b083-4ad5-a72d-41183c8a6705",
+            "2f87e5f5-f805-4fe1-95c7-92609cde9036"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/guide/waitlist-email-validation-indie-hackers": 1,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
               "ru": 1,
-              "en": 1
+              "en": 2
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "11": 2
+              "11": 2,
+              "12": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "b44821d8-cf9b-4082-97dd-0106271feeb7": 1,
-            "c20f21a1-b083-4ad5-a72d-41183c8a6705": 1
+            "c20f21a1-b083-4ad5-a72d-41183c8a6705": 1,
+            "2f87e5f5-f805-4fe1-95c7-92609cde9036": 1
           }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 7,
+        "pv": 8,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18972,7 +18977,8 @@
       },
       "knownVisitors": [
         "b44821d8-cf9b-4082-97dd-0106271feeb7",
-        "c20f21a1-b083-4ad5-a72d-41183c8a6705"
+        "c20f21a1-b083-4ad5-a72d-41183c8a6705",
+        "2f87e5f5-f805-4fe1-95c7-92609cde9036"
       ]
     },
     "应用商店差评挖痛点": {
@@ -20902,6 +20908,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2f87e5f5-f805-4fe1-95c7-92609cde9036",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-07-23T04:13:28.328Z",
+      "lastSeen": "2026-07-23T04:13:28.328Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1784778339961",
       "siteId": "feature-vote",
