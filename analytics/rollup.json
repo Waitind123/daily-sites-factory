@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-23T02:50:54.426Z",
+  "updatedAt": "2026-07-23T02:51:06.257Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12410,50 +12410,53 @@
           }
         },
         "2026-07-23": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e",
-            "87696d63-155f-4eeb-a06f-8ac895d4c90d"
+            "87696d63-155f-4eeb-a06f-8ac895d4c90d",
+            "dde88c85-623b-4dd7-8428-72e17b4669e8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "en": 1,
-              "ru": 1
+              "ru": 1,
+              "tr": 1
             },
             "timezones": {
-              "Europe/Moscow": 2
+              "Europe/Moscow": 3
             },
             "utmSources": {},
             "hours": {
-              "10": 2
+              "10": 3
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e": 1,
-            "87696d63-155f-4eeb-a06f-8ac895d4c90d": 1
+            "87696d63-155f-4eeb-a06f-8ac895d4c90d": 1,
+            "dde88c85-623b-4dd7-8428-72e17b4669e8": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12473,7 +12476,8 @@
       },
       "knownVisitors": [
         "5b25caff-c1a9-4769-a6fa-c7c3f1b22b5e",
-        "87696d63-155f-4eeb-a06f-8ac895d4c90d"
+        "87696d63-155f-4eeb-a06f-8ac895d4c90d",
+        "dde88c85-623b-4dd7-8428-72e17b4669e8"
       ]
     },
     "stripe-pulse": {
@@ -20801,6 +20805,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "dde88c85-623b-4dd7-8428-72e17b4669e8",
+      "siteId": "status-pulse",
+      "firstSeen": "2026-07-23T02:51:06.069Z",
+      "lastSeen": "2026-07-23T02:51:06.069Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "tr",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "87696d63-155f-4eeb-a06f-8ac895d4c90d",
       "siteId": "status-pulse",
