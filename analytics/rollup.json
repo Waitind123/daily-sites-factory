@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-24T23:30:36.932Z",
+  "updatedAt": "2026-07-24T23:54:16.175Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8254,8 +8254,8 @@
           }
         },
         "2026-07-24": {
-          "pv": 4,
-          "uv": 4,
+          "pv": 5,
+          "uv": 5,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -8263,35 +8263,37 @@
             "8bea40a9-e81d-45bd-a83c-31774f1ff9a9",
             "aa412472-ae8f-438c-96a8-917ffa773a5b",
             "821fa73e-cb68-4d29-9634-b82c23816406",
-            "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6"
+            "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6",
+            "148bd388-88a9-4f8c-9bb2-1c4f1de03566"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
               "/guide/intercom-alternative-indie-hackers": 1,
               "/inbox": 2,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
-              "ru": 2,
+              "ru": 3,
               "zh": 2
             },
             "timezones": {
-              "Europe/Moscow": 2,
+              "Europe/Moscow": 3,
               "UTC": 2
             },
             "utmSources": {},
             "hours": {
+              "7": 1,
               "11": 1,
               "17": 3
             },
             "visitorTypes": {
-              "new": 4,
+              "new": 5,
               "returning": 0
             }
           },
@@ -8299,13 +8301,14 @@
             "8bea40a9-e81d-45bd-a83c-31774f1ff9a9": 1,
             "aa412472-ae8f-438c-96a8-917ffa773a5b": 1,
             "821fa73e-cb68-4d29-9634-b82c23816406": 1,
-            "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6": 1
+            "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6": 1,
+            "148bd388-88a9-4f8c-9bb2-1c4f1de03566": 1
           }
         }
       },
       "totals": {
-        "pv": 126,
-        "uv": 99,
+        "pv": 127,
+        "uv": 100,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8326,7 +8329,8 @@
       "knownVisitors": [
         "aa412472-ae8f-438c-96a8-917ffa773a5b",
         "821fa73e-cb68-4d29-9634-b82c23816406",
-        "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6"
+        "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6",
+        "148bd388-88a9-4f8c-9bb2-1c4f1de03566"
       ]
     },
     "invoice-desk": {
@@ -21516,6 +21520,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "148bd388-88a9-4f8c-9bb2-1c4f1de03566",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-24T23:54:15.813Z",
+      "lastSeen": "2026-07-24T23:54:15.813Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "3f838241-054d-4cd6-8c51-7030b77f6af8",
       "siteId": "startup-ideas",
