@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-24T23:15:30.718Z",
+  "updatedAt": "2026-07-24T23:16:35.457Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12820,47 +12820,51 @@
           }
         },
         "2026-07-24": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "6f73f155-8329-48e1-9de3-c4ca79b74961"
+            "6f73f155-8329-48e1-9de3-c4ca79b74961",
+            "fe3fe28f-d60c-4ed9-a6db-0851e302811e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "de": 1
+              "de": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Zurich": 1
+              "Europe/Zurich": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "7": 1
+              "7": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "6f73f155-8329-48e1-9de3-c4ca79b74961": 1
+            "6f73f155-8329-48e1-9de3-c4ca79b74961": 1,
+            "fe3fe28f-d60c-4ed9-a6db-0851e302811e": 1
           }
         }
       },
       "totals": {
-        "pv": 24,
-        "uv": 16,
+        "pv": 25,
+        "uv": 17,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12879,7 +12883,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "6f73f155-8329-48e1-9de3-c4ca79b74961"
+        "6f73f155-8329-48e1-9de3-c4ca79b74961",
+        "fe3fe28f-d60c-4ed9-a6db-0851e302811e"
       ]
     },
     "status-pulse": {
@@ -21500,6 +21505,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fe3fe28f-d60c-4ed9-a6db-0851e302811e",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-24T23:16:35.282Z",
+      "lastSeen": "2026-07-24T23:16:35.282Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1784934930520",
       "siteId": "feature-vote",
