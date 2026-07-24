@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-24T22:38:58.797Z",
+  "updatedAt": "2026-07-24T23:14:25.062Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12814,11 +12814,49 @@
             "ccb185d2-799b-43e4-b921-cc2b56bf773e": 1,
             "ef1a6b48-fa22-4336-8f44-dd64427499f7": 1
           }
+        },
+        "2026-07-24": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6f73f155-8329-48e1-9de3-c4ca79b74961"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "de": 1
+            },
+            "timezones": {
+              "Europe/Zurich": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "7": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6f73f155-8329-48e1-9de3-c4ca79b74961": 1
+          }
         }
       },
       "totals": {
-        "pv": 23,
-        "uv": 15,
+        "pv": 24,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12835,7 +12873,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-24T05:28:41.541Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "6f73f155-8329-48e1-9de3-c4ca79b74961"
+      ]
     },
     "status-pulse": {
       "url": "https://status-pulse-chi.vercel.app",
@@ -21455,6 +21496,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6f73f155-8329-48e1-9de3-c4ca79b74961",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-24T23:14:24.687Z",
+      "lastSeen": "2026-07-24T23:14:24.687Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "de",
+      "device": "desktop",
+      "timezone": "Europe/Zurich"
+    },
     {
       "visitorId": "71a6efd5-04d3-4ee6-8006-7283dba5cd4b",
       "siteId": "meetup-host",
