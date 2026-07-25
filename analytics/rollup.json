@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-25T00:18:12.548Z",
+  "updatedAt": "2026-07-25T00:22:45.418Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12913,53 +12913,56 @@
           }
         },
         "2026-07-25": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "d2c12a34-b9b7-4b3b-8228-3055a9ff10cd",
             "958096a2-b5e6-48dc-83e7-15340af5f934",
-            "139067b3-f62a-4d4c-9eea-13aa7d504600"
+            "139067b3-f62a-4d4c-9eea-13aa7d504600",
+            "1c5d901f-7317-4395-9d7f-fef08dbb552c"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "desktop": 2,
+              "desktop": 3,
               "mobile": 1
             },
             "locales": {
-              "en": 3
+              "en": 4
             },
             "timezones": {
               "UTC": 2,
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 1,
+              "America/Chicago": 1
             },
             "utmSources": {},
             "hours": {
-              "8": 3
+              "8": 4
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "d2c12a34-b9b7-4b3b-8228-3055a9ff10cd": 1,
             "958096a2-b5e6-48dc-83e7-15340af5f934": 1,
-            "139067b3-f62a-4d4c-9eea-13aa7d504600": 1
+            "139067b3-f62a-4d4c-9eea-13aa7d504600": 1,
+            "1c5d901f-7317-4395-9d7f-fef08dbb552c": 1
           }
         }
       },
       "totals": {
-        "pv": 31,
-        "uv": 23,
+        "pv": 32,
+        "uv": 24,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12985,7 +12988,8 @@
         "3f838241-054d-4cd6-8c51-7030b77f6af8",
         "d2c12a34-b9b7-4b3b-8228-3055a9ff10cd",
         "958096a2-b5e6-48dc-83e7-15340af5f934",
-        "139067b3-f62a-4d4c-9eea-13aa7d504600"
+        "139067b3-f62a-4d4c-9eea-13aa7d504600",
+        "1c5d901f-7317-4395-9d7f-fef08dbb552c"
       ]
     },
     "status-pulse": {
@@ -21606,6 +21610,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1c5d901f-7317-4395-9d7f-fef08dbb552c",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-25T00:22:45.218Z",
+      "lastSeen": "2026-07-25T00:22:45.218Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Chicago"
+    },
     {
       "visitorId": "139067b3-f62a-4d4c-9eea-13aa7d504600",
       "siteId": "startup-ideas",
