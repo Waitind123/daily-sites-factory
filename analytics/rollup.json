@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-25T01:02:38.691Z",
+  "updatedAt": "2026-07-25T02:17:17.202Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -17942,11 +17942,49 @@
             "1055f016-043d-48d2-8670-de17c457876e": 1,
             "00240425-9877-4f7c-ba15-f75db65bce18": 1
           }
+        },
+        "2026-07-25": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b4ac49b7-398d-436b-8914-4fe71f0cc1b8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b4ac49b7-398d-436b-8914-4fe71f0cc1b8": 1
+          }
         }
       },
       "totals": {
-        "pv": 13,
-        "uv": 12,
+        "pv": 14,
+        "uv": 13,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17963,7 +18001,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-24T05:28:14.035Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b4ac49b7-398d-436b-8914-4fe71f0cc1b8"
+      ]
     },
     "pricing-intel": {
       "url": "https://pricing-intel-vert.vercel.app",
@@ -21615,6 +21656,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b4ac49b7-398d-436b-8914-4fe71f0cc1b8",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-07-25T02:17:16.860Z",
+      "lastSeen": "2026-07-25T02:17:16.860Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "ad3cff2f-9b13-4729-919a-c82bb6f83abf",
       "siteId": "startup-ideas",
