@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-25T08:27:57.107Z",
+  "updatedAt": "2026-07-25T09:05:51.369Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8328,11 +8328,49 @@
             "c4cab2d8-0bb0-41d6-aecc-6cf65992aad6": 1,
             "148bd388-88a9-4f8c-9bb2-1c4f1de03566": 1
           }
+        },
+        "2026-07-25": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d1d7845c-de2b-4d8c-92bc-1d04305823e6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d1d7845c-de2b-4d8c-92bc-1d04305823e6": 1
+          }
         }
       },
       "totals": {
-        "pv": 127,
-        "uv": 100,
+        "pv": 128,
+        "uv": 101,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8349,7 +8387,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-25T05:22:28.607Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "d1d7845c-de2b-4d8c-92bc-1d04305823e6"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -21702,6 +21743,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d1d7845c-de2b-4d8c-92bc-1d04305823e6",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-25T09:05:51.021Z",
+      "lastSeen": "2026-07-25T09:05:51.021Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "402ee0b3-4339-4a6e-9e5c-3642f626cdbb",
       "siteId": "uptime-pulse",
