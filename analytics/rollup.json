@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-25T12:23:15.264Z",
+  "updatedAt": "2026-07-25T12:23:41.378Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13078,8 +13078,8 @@
           }
         },
         "2026-07-25": {
-          "pv": 7,
-          "uv": 7,
+          "pv": 8,
+          "uv": 8,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -13090,25 +13090,27 @@
             "1c5d901f-7317-4395-9d7f-fef08dbb552c",
             "ad3cff2f-9b13-4729-919a-c82bb6f83abf",
             "b1766aa6-904e-4a82-a777-d682c12860b3",
-            "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6"
+            "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6",
+            "ae9ab5b6-8008-4b10-958c-96f843ecd1d3"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 7
+              "直接访问": 8
             },
             "paths": {
-              "/": 7
+              "/": 7,
+              "/ideas": 1
             },
             "devices": {
-              "desktop": 6,
+              "desktop": 7,
               "mobile": 1
             },
             "locales": {
-              "en": 7
+              "en": 8
             },
             "timezones": {
               "UTC": 3,
-              "America/Los_Angeles": 2,
+              "America/Los_Angeles": 3,
               "America/Chicago": 1,
               "America/New_York": 1
             },
@@ -13117,10 +13119,10 @@
               "8": 4,
               "9": 1,
               "13": 1,
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
-              "new": 7,
+              "new": 8,
               "returning": 0
             }
           },
@@ -13131,13 +13133,14 @@
             "1c5d901f-7317-4395-9d7f-fef08dbb552c": 1,
             "ad3cff2f-9b13-4729-919a-c82bb6f83abf": 1,
             "b1766aa6-904e-4a82-a777-d682c12860b3": 1,
-            "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6": 1
+            "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6": 1,
+            "ae9ab5b6-8008-4b10-958c-96f843ecd1d3": 1
           }
         }
       },
       "totals": {
-        "pv": 35,
-        "uv": 27,
+        "pv": 36,
+        "uv": 28,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13157,7 +13160,8 @@
       },
       "knownVisitors": [
         "b1766aa6-904e-4a82-a777-d682c12860b3",
-        "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6"
+        "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6",
+        "ae9ab5b6-8008-4b10-958c-96f843ecd1d3"
       ]
     },
     "status-pulse": {
@@ -21939,6 +21943,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ae9ab5b6-8008-4b10-958c-96f843ecd1d3",
+      "siteId": "startup-ideas",
+      "firstSeen": "2026-07-25T12:23:41.168Z",
+      "lastSeen": "2026-07-25T12:23:41.168Z",
+      "pageviews": 1,
+      "path": "/ideas",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "a7bb3e4f-2ef0-44f1-b58d-6482257aa6d6",
       "siteId": "startup-ideas",
