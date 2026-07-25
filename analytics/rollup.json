@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-25T00:11:08.182Z",
+  "updatedAt": "2026-07-25T00:15:38.773Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -5889,11 +5889,49 @@
             "health-watch-1784928010403": 1,
             "health-watch-1784934930520": 1
           }
+        },
+        "2026-07-25": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1784938538589"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1784938538589": 1
+          }
         }
       },
       "totals": {
-        "pv": 342,
-        "uv": 327,
+        "pv": 343,
+        "uv": 328,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5922,7 +5960,8 @@
         "health-watch-1784915448324",
         "health-watch-1784922352708",
         "health-watch-1784928010403",
-        "health-watch-1784934930520"
+        "health-watch-1784934930520",
+        "health-watch-1784938538589"
       ]
     },
     "form-pulse": {
@@ -21562,6 +21601,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1784938538589",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-25T00:15:38.621Z",
+      "lastSeen": "2026-07-25T00:15:38.621Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "958096a2-b5e6-48dc-83e7-15340af5f934",
       "siteId": "startup-ideas",
