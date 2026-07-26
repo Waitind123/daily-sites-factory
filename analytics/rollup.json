@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T09:18:56.279Z",
+  "updatedAt": "2026-07-26T09:19:06.972Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3488,11 +3488,49 @@
           "visitorHits": {
             "d1b74466-f433-4ef8-8a93-bbf2c13d8f24": 1
           }
+        },
+        "2026-07-26": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fac83a37-1c72-4855-9ea5-c274c5342031"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fac83a37-1c72-4855-9ea5-c274c5342031": 1
+          }
         }
       },
       "totals": {
-        "pv": 54,
-        "uv": 41,
+        "pv": 55,
+        "uv": 42,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3511,7 +3549,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "d1b74466-f433-4ef8-8a93-bbf2c13d8f24"
+        "d1b74466-f433-4ef8-8a93-bbf2c13d8f24",
+        "fac83a37-1c72-4855-9ea5-c274c5342031"
       ]
     },
     "coworking-pass": {
@@ -22447,6 +22486,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fac83a37-1c72-4855-9ea5-c274c5342031",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-07-26T09:19:06.790Z",
+      "lastSeen": "2026-07-26T09:19:06.790Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "6f7d477f-d4f9-497a-9a56-55bd7f6ea277",
       "siteId": "remote-jobs",
