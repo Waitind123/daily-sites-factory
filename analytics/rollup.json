@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T05:19:23.333Z",
+  "updatedAt": "2026-07-26T05:36:10.122Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6235,47 +6235,51 @@
           }
         },
         "2026-07-26": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b"
+            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b",
+            "ae14ee75-b3ec-425b-a42a-b316e071ae68"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "de": 1
+              "de": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Berlin": 1
+              "Europe/Berlin": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b": 1
+            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b": 1,
+            "ae14ee75-b3ec-425b-a42a-b316e071ae68": 1
           }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 5,
+        "pv": 7,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6294,7 +6298,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b"
+        "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b",
+        "ae14ee75-b3ec-425b-a42a-b316e071ae68"
       ]
     },
     "freelance-proposal": {
@@ -22294,6 +22299,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ae14ee75-b3ec-425b-a42a-b316e071ae68",
+      "siteId": "form-pulse",
+      "firstSeen": "2026-07-26T05:36:09.787Z",
+      "lastSeen": "2026-07-26T05:36:09.787Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b",
       "siteId": "form-pulse",
