@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T04:20:14.812Z",
+  "updatedAt": "2026-07-26T05:19:23.333Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6233,11 +6233,49 @@
           "visitorHits": {
             "e0dfcd22-1899-4054-a101-96585b4f6a69": 1
           }
+        },
+        "2026-07-26": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "de": 1
+            },
+            "timezones": {
+              "Europe/Berlin": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6254,7 +6292,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-25T05:22:22.747Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b"
+      ]
     },
     "freelance-proposal": {
       "url": "https://freelance-proposal-one.vercel.app",
@@ -22253,6 +22294,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4bbf3ee5-5b30-43c9-b14d-1b1a65a91a9b",
+      "siteId": "form-pulse",
+      "firstSeen": "2026-07-26T05:19:22.986Z",
+      "lastSeen": "2026-07-26T05:19:22.986Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "de",
+      "device": "desktop",
+      "timezone": "Europe/Berlin"
+    },
     {
       "visitorId": "42c5d222-0642-4e91-a143-2eb0558424ea",
       "siteId": "status-pulse",
