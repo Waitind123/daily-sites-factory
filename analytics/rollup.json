@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-26T09:15:23.327Z",
+  "updatedAt": "2026-07-26T09:15:26.893Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8690,57 +8690,61 @@
           }
         },
         "2026-07-26": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "9e3809f9-8700-48a5-b74e-e8bb5da26f5a",
             "5d50cf2e-3c0b-4088-bf10-c06744c90181",
-            "dce2d75b-822c-499b-a26d-77fe3fb62dbb"
+            "dce2d75b-822c-499b-a26d-77fe3fb62dbb",
+            "5d0cda54-6aa6-447f-8c4a-42ee10e43405"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
               "/guide/intercom-alternative-indie-hackers": 1,
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2,
+              "desktop": 3,
               "mobile": 1
             },
             "locales": {
               "ru": 1,
-              "en": 2
+              "en": 2,
+              "zh": 1
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1,
+              "UTC": 2,
               "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
               "9": 1,
-              "10": 2
+              "10": 2,
+              "17": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "9e3809f9-8700-48a5-b74e-e8bb5da26f5a": 1,
             "5d50cf2e-3c0b-4088-bf10-c06744c90181": 1,
-            "dce2d75b-822c-499b-a26d-77fe3fb62dbb": 1
+            "dce2d75b-822c-499b-a26d-77fe3fb62dbb": 1,
+            "5d0cda54-6aa6-447f-8c4a-42ee10e43405": 1
           }
         }
       },
       "totals": {
-        "pv": 133,
-        "uv": 106,
+        "pv": 134,
+        "uv": 107,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8764,7 +8768,8 @@
         "c72c97c0-c8e7-4c43-9a1b-2dc4d519e275",
         "9e3809f9-8700-48a5-b74e-e8bb5da26f5a",
         "5d50cf2e-3c0b-4088-bf10-c06744c90181",
-        "dce2d75b-822c-499b-a26d-77fe3fb62dbb"
+        "dce2d75b-822c-499b-a26d-77fe3fb62dbb",
+        "5d0cda54-6aa6-447f-8c4a-42ee10e43405"
       ]
     },
     "invoice-desk": {
@@ -22345,6 +22350,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5d0cda54-6aa6-447f-8c4a-42ee10e43405",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-26T09:15:26.658Z",
+      "lastSeen": "2026-07-26T09:15:26.658Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ce77e303-44d5-4205-90cc-6e43def1f734",
       "siteId": "ai-headshots",
