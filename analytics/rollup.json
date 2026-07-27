@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27T10:49:26.647Z",
+  "updatedAt": "2026-07-27T10:49:27.871Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -3574,7 +3574,7 @@
           }
         },
         "2026-07-27": {
-          "pv": 2,
+          "pv": 1,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -3584,37 +3584,36 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 1
             },
             "paths": {
-              "/": 1,
-              "/spaces": 1
+              "/": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "18": 2
+              "18": 1
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 1
+              "returning": 0
             }
           },
           "visitorHits": {
-            "35181bde-2498-48ac-b246-f5c48ee19dd4": 2
+            "35181bde-2498-48ac-b246-f5c48ee19dd4": 1
           }
         }
       },
       "totals": {
-        "pv": 57,
+        "pv": 56,
         "uv": 43,
         "trial": 0,
         "checkout": 0,
@@ -6302,53 +6301,59 @@
           }
         },
         "2026-07-27": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1785111102453",
             "health-watch-1785124930724",
-            "health-watch-1785138566401"
+            "health-watch-1785138566401",
+            "77cffcd0-6e7d-46c8-abd9-52c330ad220d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "unknown": 3
+              "unknown": 3,
+              "desktop": 1
             },
             "locales": {
-              "unknown": 3
+              "unknown": 3,
+              "zh": 1
             },
             "timezones": {
-              "unknown": 3
+              "unknown": 3,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "8": 1,
               "12": 1,
-              "15": 1
+              "15": 1,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1785111102453": 1,
             "health-watch-1785124930724": 1,
-            "health-watch-1785138566401": 1
+            "health-watch-1785138566401": 1,
+            "77cffcd0-6e7d-46c8-abd9-52c330ad220d": 1
           }
         }
       },
       "totals": {
-        "pv": 377,
-        "uv": 361,
+        "pv": 378,
+        "uv": 362,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6367,7 +6372,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "health-watch-1785138566401"
+        "health-watch-1785138566401",
+        "77cffcd0-6e7d-46c8-abd9-52c330ad220d"
       ]
     },
     "form-pulse": {
@@ -22832,12 +22838,23 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "77cffcd0-6e7d-46c8-abd9-52c330ad220d",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-27T10:49:27.710Z",
+      "lastSeen": "2026-07-27T10:49:27.710Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
       "visitorId": "35181bde-2498-48ac-b246-f5c48ee19dd4",
       "siteId": "coworking-finder",
       "firstSeen": "2026-07-27T10:49:25.247Z",
-      "lastSeen": "2026-07-27T10:49:26.470Z",
-      "pageviews": 2,
-      "path": "/spaces",
+      "lastSeen": "2026-07-27T10:49:25.247Z",
+      "pageviews": 1,
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
