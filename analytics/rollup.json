@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27T05:58:28.024Z",
+  "updatedAt": "2026-07-27T06:24:02.138Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1193,11 +1193,51 @@
             "ce77e303-44d5-4205-90cc-6e43def1f734": 1,
             "c37c8aa2-0964-4a5d-ab67-8a19fedfde87": 1
           }
+        },
+        "2026-07-27": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c0c13e75-bfef-4e90-bc7e-eaaf6ec8ad0a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {
+              "mastodon": 1
+            },
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c0c13e75-bfef-4e90-bc7e-eaaf6ec8ad0a": 1
+          }
         }
       },
       "totals": {
-        "pv": 126,
-        "uv": 92,
+        "pv": 127,
+        "uv": 93,
         "trial": 0,
         "checkout": 7,
         "purchase": 2
@@ -1214,7 +1254,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-27T05:57:50.427Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "c0c13e75-bfef-4e90-bc7e-eaaf6ec8ad0a"
+      ]
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -22682,6 +22725,20 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c0c13e75-bfef-4e90-bc7e-eaaf6ec8ad0a",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-27T06:24:01.886Z",
+      "lastSeen": "2026-07-27T06:24:01.886Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai",
+      "utmSource": "mastodon",
+      "utmMedium": "public",
+      "utmCampaign": "auto_re9zz"
+    },
     {
       "visitorId": "a7fe4696-f77c-4979-b412-d339880c90e5",
       "siteId": "waitlist-pulse",
