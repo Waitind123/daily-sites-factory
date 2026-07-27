@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27T04:45:42.612Z",
+  "updatedAt": "2026-07-27T05:19:40.871Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -16402,47 +16402,53 @@
           }
         },
         "2026-07-27": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "271a2c2f-636c-4532-9fcc-fcdf18044fa1"
+            "271a2c2f-636c-4532-9fcc-fcdf18044fa1",
+            "a7fe4696-f77c-4979-b412-d339880c90e5"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/guide/prefinery-alternative-indie-hackers": 1
+              "/guide/prefinery-alternative-indie-hackers": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "271a2c2f-636c-4532-9fcc-fcdf18044fa1": 1
+            "271a2c2f-636c-4532-9fcc-fcdf18044fa1": 1,
+            "a7fe4696-f77c-4979-b412-d339880c90e5": 1
           }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 6,
+        "pv": 9,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16461,7 +16467,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "271a2c2f-636c-4532-9fcc-fcdf18044fa1"
+        "271a2c2f-636c-4532-9fcc-fcdf18044fa1",
+        "a7fe4696-f77c-4979-b412-d339880c90e5"
       ]
     },
     "wcag-alt-text": {
@@ -22782,6 +22789,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a7fe4696-f77c-4979-b412-d339880c90e5",
+      "siteId": "waitlist-pulse",
+      "firstSeen": "2026-07-27T05:19:40.493Z",
+      "lastSeen": "2026-07-27T05:19:40.493Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "dc95500c-2590-482f-b32c-96f900f5c346",
       "siteId": "startup-ideas",
