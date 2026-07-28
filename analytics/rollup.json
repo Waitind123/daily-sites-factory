@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-27T22:17:23.074Z",
+  "updatedAt": "2026-07-28T00:10:58.488Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6368,11 +6368,49 @@
             "health-watch-1785184952554": 1,
             "health-watch-1785190642850": 1
           }
+        },
+        "2026-07-28": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1785197458230"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1785197458230": 1
+          }
         }
       },
       "totals": {
-        "pv": 385,
-        "uv": 368,
+        "pv": 386,
+        "uv": 369,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6398,7 +6436,8 @@
         "health-watch-1785172046457",
         "health-watch-1785177992365",
         "health-watch-1785184952554",
-        "health-watch-1785190642850"
+        "health-watch-1785190642850",
+        "health-watch-1785197458230"
       ]
     },
     "form-pulse": {
@@ -22955,6 +22994,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1785197458230",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-28T00:10:58.303Z",
+      "lastSeen": "2026-07-28T00:10:58.303Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1785190642850",
       "siteId": "feature-vote",
