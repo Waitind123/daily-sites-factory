@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T21:17:21.730Z",
+  "updatedAt": "2026-07-28T21:19:21.472Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9433,11 +9433,49 @@
             "29207706-bae1-42f0-b168-e46d4a26c974": 1,
             "a25d539f-db8a-4a4c-acd7-9e4cfc3da7c9": 1
           }
+        },
+        "2026-07-28": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "89c66404-85f8-48a2-861f-532d7d79d8a6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "89c66404-85f8-48a2-861f-532d7d79d8a6": 1
+          }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 7,
+        "pv": 9,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9454,7 +9492,10 @@
         "guideCount": 1,
         "lastChecked": "2026-07-28T05:22:22.676Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "89c66404-85f8-48a2-861f-532d7d79d8a6"
+      ]
     },
     "landing-generator": {
       "url": "https://landing-generator-opal.vercel.app",
@@ -23316,6 +23357,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "89c66404-85f8-48a2-861f-532d7d79d8a6",
+      "siteId": "invoice-desk",
+      "firstSeen": "2026-07-28T21:19:21.251Z",
+      "lastSeen": "2026-07-28T21:19:21.251Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "50fce28e-62d7-49e7-853b-af14be40aa90",
       "siteId": "intercom-pulse",
