@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T06:38:03.239Z",
+  "updatedAt": "2026-07-28T06:38:07.330Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9079,47 +9079,50 @@
           }
         },
         "2026-07-28": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "9e13e3d4-6496-478a-b4a8-a1782ca1531f"
+            "9e13e3d4-6496-478a-b4a8-a1782ca1531f",
+            "86e9579f-8c40-4241-9f6b-2449429ac81f"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/guide/intercom-alternative-indie-hackers": 1
+              "/guide/intercom-alternative-indie-hackers": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "14": 1
+              "14": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "9e13e3d4-6496-478a-b4a8-a1782ca1531f": 1
+            "9e13e3d4-6496-478a-b4a8-a1782ca1531f": 1,
+            "86e9579f-8c40-4241-9f6b-2449429ac81f": 1
           }
         }
       },
       "totals": {
-        "pv": 143,
-        "uv": 116,
+        "pv": 144,
+        "uv": 117,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9138,7 +9141,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "9e13e3d4-6496-478a-b4a8-a1782ca1531f"
+        "9e13e3d4-6496-478a-b4a8-a1782ca1531f",
+        "86e9579f-8c40-4241-9f6b-2449429ac81f"
       ]
     },
     "invoice-desk": {
@@ -23042,6 +23046,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "86e9579f-8c40-4241-9f6b-2449429ac81f",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-28T06:38:07.128Z",
+      "lastSeen": "2026-07-28T06:38:07.128Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "9e13e3d4-6496-478a-b4a8-a1782ca1531f",
       "siteId": "intercom-pulse",
