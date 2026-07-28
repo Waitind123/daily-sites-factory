@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-28T20:48:06.636Z",
+  "updatedAt": "2026-07-28T20:48:23.337Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -19201,47 +19201,50 @@
           }
         },
         "2026-07-28": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "f50a568a-fac7-45bd-bc67-dc4505300873"
+            "f50a568a-fac7-45bd-bc67-dc4505300873",
+            "930802d2-3c75-4d3e-85ca-86dddcb2fbb6"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "tr": 1
+              "tr": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "4": 1
+              "4": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "f50a568a-fac7-45bd-bc67-dc4505300873": 1
+            "f50a568a-fac7-45bd-bc67-dc4505300873": 1,
+            "930802d2-3c75-4d3e-85ca-86dddcb2fbb6": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -19260,7 +19263,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "f50a568a-fac7-45bd-bc67-dc4505300873"
+        "f50a568a-fac7-45bd-bc67-dc4505300873",
+        "930802d2-3c75-4d3e-85ca-86dddcb2fbb6"
       ]
     },
     "affiliate-pulse": {
@@ -23304,6 +23308,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "930802d2-3c75-4d3e-85ca-86dddcb2fbb6",
+      "siteId": "stripe-pulse-lite",
+      "firstSeen": "2026-07-28T20:48:23.094Z",
+      "lastSeen": "2026-07-28T20:48:23.094Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "f50a568a-fac7-45bd-bc67-dc4505300873",
       "siteId": "stripe-pulse-lite",
