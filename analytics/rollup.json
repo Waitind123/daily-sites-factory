@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T02:53:02.162Z",
+  "updatedAt": "2026-07-30T03:18:13.172Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9505,11 +9505,49 @@
             "5e074a84-d06b-4036-930e-ac511858515b": 1,
             "2b5c08b8-ec59-4a69-9128-6d6337b0be6b": 1
           }
+        },
+        "2026-07-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "95c64735-8380-4aac-8b93-757084f60834"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "95c64735-8380-4aac-8b93-757084f60834": 1
+          }
         }
       },
       "totals": {
-        "pv": 150,
-        "uv": 123,
+        "pv": 151,
+        "uv": 124,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9530,7 +9568,8 @@
       "knownVisitors": [
         "267b42ce-1aea-4acb-bcfd-07856ad93b0d",
         "5e074a84-d06b-4036-930e-ac511858515b",
-        "2b5c08b8-ec59-4a69-9128-6d6337b0be6b"
+        "2b5c08b8-ec59-4a69-9128-6d6337b0be6b",
+        "95c64735-8380-4aac-8b93-757084f60834"
       ]
     },
     "invoice-desk": {
@@ -23750,6 +23789,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "95c64735-8380-4aac-8b93-757084f60834",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-07-30T03:18:12.825Z",
+      "lastSeen": "2026-07-30T03:18:12.825Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "27622f79-8492-476c-8c5e-115a32c35690",
       "siteId": "visa-guide",
