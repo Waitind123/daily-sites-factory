@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T09:32:54.956Z",
+  "updatedAt": "2026-07-30T09:36:09.349Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1324,47 +1324,50 @@
           }
         },
         "2026-07-30": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "03fa5c0a-7b51-426e-bbc0-871742d2eb22"
+            "03fa5c0a-7b51-426e-bbc0-871742d2eb22",
+            "6d805395-e8fc-4d1c-96c3-5b0c823499ae"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "17": 1
+              "17": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "03fa5c0a-7b51-426e-bbc0-871742d2eb22": 1
+            "03fa5c0a-7b51-426e-bbc0-871742d2eb22": 1,
+            "6d805395-e8fc-4d1c-96c3-5b0c823499ae": 1
           }
         }
       },
       "totals": {
-        "pv": 134,
-        "uv": 100,
+        "pv": 135,
+        "uv": 101,
         "trial": 0,
         "checkout": 8,
         "purchase": 2
@@ -1383,7 +1386,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "03fa5c0a-7b51-426e-bbc0-871742d2eb22"
+        "03fa5c0a-7b51-426e-bbc0-871742d2eb22",
+        "6d805395-e8fc-4d1c-96c3-5b0c823499ae"
       ]
     },
     "ai-waitlist": {
@@ -23914,6 +23918,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6d805395-e8fc-4d1c-96c3-5b0c823499ae",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-07-30T09:36:09.084Z",
+      "lastSeen": "2026-07-30T09:36:09.084Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "47ad5353-5beb-4755-b0ab-b949caf929fc",
       "siteId": "team-headshots",
