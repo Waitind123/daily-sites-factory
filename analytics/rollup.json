@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T06:11:16.883Z",
+  "updatedAt": "2026-07-30T06:11:23.972Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -2598,55 +2598,57 @@
           }
         },
         "2026-07-30": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "342b727a-f85c-4957-8c68-cdd739760816",
             "467d2b98-b5f5-4229-8413-c70936b7c108",
-            "252f5b23-2f8d-4bfa-9321-848647529aee"
+            "252f5b23-2f8d-4bfa-9321-848647529aee",
+            "9aebf1a0-784a-4d96-a13f-d0e7f90d2531"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
               "desktop": 2,
-              "mobile": 1
+              "mobile": 2
             },
             "locales": {
-              "en": 3
+              "en": 4
             },
             "timezones": {
               "Europe/Moscow": 1,
               "UTC": 1,
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 2
             },
             "utmSources": {},
             "hours": {
               "13": 2,
-              "14": 1
+              "14": 2
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "342b727a-f85c-4957-8c68-cdd739760816": 1,
             "467d2b98-b5f5-4229-8413-c70936b7c108": 1,
-            "252f5b23-2f8d-4bfa-9321-848647529aee": 1
+            "252f5b23-2f8d-4bfa-9321-848647529aee": 1,
+            "9aebf1a0-784a-4d96-a13f-d0e7f90d2531": 1
           }
         }
       },
       "totals": {
-        "pv": 8,
-        "uv": 6,
+        "pv": 9,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2667,7 +2669,8 @@
       "knownVisitors": [
         "342b727a-f85c-4957-8c68-cdd739760816",
         "467d2b98-b5f5-4229-8413-c70936b7c108",
-        "252f5b23-2f8d-4bfa-9321-848647529aee"
+        "252f5b23-2f8d-4bfa-9321-848647529aee",
+        "9aebf1a0-784a-4d96-a13f-d0e7f90d2531"
       ]
     },
     "coworking-finder": {
@@ -23807,6 +23810,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9aebf1a0-784a-4d96-a13f-d0e7f90d2531",
+      "siteId": "coworking-daypass",
+      "firstSeen": "2026-07-30T06:11:23.754Z",
+      "lastSeen": "2026-07-30T06:11:23.754Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "252f5b23-2f8d-4bfa-9321-848647529aee",
       "siteId": "coworking-daypass",
