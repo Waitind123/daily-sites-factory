@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-30T22:24:16.816Z",
+  "updatedAt": "2026-07-31T00:15:21.911Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -6922,11 +6922,49 @@
             "health-watch-1785443673208": 1,
             "health-watch-1785449934467": 1
           }
+        },
+        "2026-07-31": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1785456921649"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1785456921649": 1
+          }
         }
       },
       "totals": {
-        "pv": 423,
-        "uv": 406,
+        "pv": 424,
+        "uv": 407,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6954,7 +6992,8 @@
         "health-watch-1785430146201",
         "health-watch-1785437090087",
         "health-watch-1785443673208",
-        "health-watch-1785449934467"
+        "health-watch-1785449934467",
+        "health-watch-1785456921649"
       ]
     },
     "form-pulse": {
@@ -24181,6 +24220,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1785456921649",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-07-31T00:15:21.693Z",
+      "lastSeen": "2026-07-31T00:15:21.693Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "3dd8d70a-a888-460a-bc62-bc752baf8a51",
       "siteId": "coworking-pass",
