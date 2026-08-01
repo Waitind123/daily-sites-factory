@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-01T09:08:46.352Z",
+  "updatedAt": "2026-08-01T09:08:57.305Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10064,47 +10064,52 @@
           }
         },
         "2026-08-01": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "f54408cc-1837-4565-8a4a-bfb50c498127"
+            "f54408cc-1837-4565-8a4a-bfb50c498127",
+            "24830636-cd74-468c-8541-b03541805398"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "zh": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "11": 1
+              "11": 1,
+              "17": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "f54408cc-1837-4565-8a4a-bfb50c498127": 1
+            "f54408cc-1837-4565-8a4a-bfb50c498127": 1,
+            "24830636-cd74-468c-8541-b03541805398": 1
           }
         }
       },
       "totals": {
-        "pv": 160,
-        "uv": 133,
+        "pv": 161,
+        "uv": 134,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10121,7 +10126,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-01T05:36:32.311Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "24830636-cd74-468c-8541-b03541805398"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -24577,6 +24585,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "24830636-cd74-468c-8541-b03541805398",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-01T09:08:57.122Z",
+      "lastSeen": "2026-08-01T09:08:57.122Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ed60b9cd-6865-4d5c-b520-a2a299f58f46",
       "siteId": "ai-headshots",
