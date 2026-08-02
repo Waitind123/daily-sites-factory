@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-02T15:21:19.087Z",
+  "updatedAt": "2026-08-02T15:21:43.688Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -20489,47 +20489,53 @@
           }
         },
         "2026-08-02": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a"
+            "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a",
+            "2450c9ad-6277-4869-b5b3-61c698b4f2b1"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 1,
+              "23": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a": 1
+            "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a": 1,
+            "2450c9ad-6277-4869-b5b3-61c698b4f2b1": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 4,
+        "pv": 6,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20548,7 +20554,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a"
+        "c25bdb4f-fe4e-4a1a-8540-e89b16a4575a",
+        "2450c9ad-6277-4869-b5b3-61c698b4f2b1"
       ]
     },
     "状态页极简替代品": {
@@ -25132,6 +25139,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2450c9ad-6277-4869-b5b3-61c698b4f2b1",
+      "siteId": "ai-pricing-optimizer",
+      "firstSeen": "2026-08-02T15:21:43.485Z",
+      "lastSeen": "2026-08-02T15:21:43.485Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "5efe2272-af9e-4961-8529-f524716dd73c",
       "siteId": "intercom-pulse",
