@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-02T15:21:43.688Z",
+  "updatedAt": "2026-08-02T15:28:57.961Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -21912,11 +21912,49 @@
           "visitorHits": {
             "e75d7cf9-8923-40a8-ae5c-771284c3b80d": 1
           }
+        },
+        "2026-08-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b4d22a3d-5c92-48ab-a637-01773e35fc73"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "23": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b4d22a3d-5c92-48ab-a637-01773e35fc73": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -21933,7 +21971,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-01T05:36:50.177Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "b4d22a3d-5c92-48ab-a637-01773e35fc73"
+      ]
     },
     "freelance-local-kit": {
       "url": "https://freelance-local-kit.vercel.app",
@@ -25139,6 +25180,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b4d22a3d-5c92-48ab-a637-01773e35fc73",
+      "siteId": "visa-live",
+      "firstSeen": "2026-08-02T15:28:57.599Z",
+      "lastSeen": "2026-08-02T15:28:57.599Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "2450c9ad-6277-4869-b5b3-61c698b4f2b1",
       "siteId": "ai-pricing-optimizer",
