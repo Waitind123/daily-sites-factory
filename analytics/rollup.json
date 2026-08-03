@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-03T03:53:25.371Z",
+  "updatedAt": "2026-08-03T04:33:29.403Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -18313,11 +18313,49 @@
             "501adff5-a15e-4ae9-b04b-9b1b82e3eafd": 1,
             "1f8fd5cc-3ee0-4749-b898-67ad9f3c7c54": 1
           }
+        },
+        "2026-08-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5ffcaed4-ee1d-469b-8acb-5a2e71a227e8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5ffcaed4-ee1d-469b-8acb-5a2e71a227e8": 1
+          }
         }
       },
       "totals": {
-        "pv": 30,
-        "uv": 25,
+        "pv": 31,
+        "uv": 26,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18334,7 +18372,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-01T05:36:49.822Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5ffcaed4-ee1d-469b-8acb-5a2e71a227e8"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -25251,6 +25292,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5ffcaed4-ee1d-469b-8acb-5a2e71a227e8",
+      "siteId": "visa-guide",
+      "firstSeen": "2026-08-03T04:33:29.024Z",
+      "lastSeen": "2026-08-03T04:33:29.024Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1785729205099",
       "siteId": "feature-vote",
