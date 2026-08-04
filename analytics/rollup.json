@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-04T09:41:41.778Z",
+  "updatedAt": "2026-08-04T09:44:48.556Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1520,11 +1520,49 @@
           "visitorHits": {
             "e8702fbb-fb6a-464e-a6b0-6b09bf46c2df": 1
           }
+        },
+        "2026-08-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6ec25d12-4a52-439e-b3e0-8f1fbefb6f3a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6ec25d12-4a52-439e-b3e0-8f1fbefb6f3a": 1
+          }
         }
       },
       "totals": {
-        "pv": 141,
-        "uv": 107,
+        "pv": 142,
+        "uv": 108,
         "trial": 0,
         "checkout": 8,
         "purchase": 2
@@ -1541,7 +1579,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-04T05:22:05.845Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "6ec25d12-4a52-439e-b3e0-8f1fbefb6f3a"
+      ]
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -25536,6 +25577,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6ec25d12-4a52-439e-b3e0-8f1fbefb6f3a",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-08-04T09:44:48.381Z",
+      "lastSeen": "2026-08-04T09:44:48.381Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "17ce14ba-d77d-44ac-b583-90e9af81818d",
       "siteId": "team-headshots",
