@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-04T09:41:32.678Z",
+  "updatedAt": "2026-08-04T09:41:34.536Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -7522,50 +7522,56 @@
           }
         },
         "2026-08-04": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1785814540324",
-            "health-watch-1785825588293"
+            "health-watch-1785825588293",
+            "33bf9de9-200f-4e7a-8204-5dea8f8cd0a0"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "unknown": 2
+              "unknown": 2,
+              "desktop": 1
             },
             "locales": {
-              "unknown": 2
+              "unknown": 2,
+              "zh": 1
             },
             "timezones": {
-              "unknown": 2
+              "unknown": 2,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "11": 1,
-              "14": 1
+              "14": 1,
+              "17": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1785814540324": 1,
-            "health-watch-1785825588293": 1
+            "health-watch-1785825588293": 1,
+            "33bf9de9-200f-4e7a-8204-5dea8f8cd0a0": 1
           }
         }
       },
       "totals": {
-        "pv": 477,
-        "uv": 460,
+        "pv": 478,
+        "uv": 461,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7584,7 +7590,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "health-watch-1785825588293"
+        "health-watch-1785825588293",
+        "33bf9de9-200f-4e7a-8204-5dea8f8cd0a0"
       ]
     },
     "form-pulse": {
@@ -10628,49 +10635,11 @@
             "181c9e64-ad99-4525-96a1-b1d97093efcf": 1,
             "bae6c0b0-0f73-4978-846a-990e2967cce2": 1
           }
-        },
-        "2026-08-04": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "b7e6f60b-e1a8-4dcc-9220-ef12a06721fc"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "17": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "b7e6f60b-e1a8-4dcc-9220-ef12a06721fc": 1
-          }
         }
       },
       "totals": {
-        "pv": 172,
-        "uv": 145,
+        "pv": 171,
+        "uv": 144,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10687,10 +10656,7 @@
         "guideCount": 1,
         "lastChecked": "2026-08-04T05:22:25.350Z",
         "score": 90
-      },
-      "knownVisitors": [
-        "b7e6f60b-e1a8-4dcc-9220-ef12a06721fc"
-      ]
+      }
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -25530,10 +25496,10 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "b7e6f60b-e1a8-4dcc-9220-ef12a06721fc",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-08-04T09:41:32.306Z",
-      "lastSeen": "2026-08-04T09:41:32.306Z",
+      "visitorId": "33bf9de9-200f-4e7a-8204-5dea8f8cd0a0",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-04T09:41:34.351Z",
+      "lastSeen": "2026-08-04T09:41:34.351Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
