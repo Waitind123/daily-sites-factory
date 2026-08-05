@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-05T15:22:49.295Z",
+  "updatedAt": "2026-08-05T15:27:26.475Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10928,8 +10928,8 @@
           }
         },
         "2026-08-05": {
-          "pv": 4,
-          "uv": 4,
+          "pv": 5,
+          "uv": 5,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -10937,35 +10937,37 @@
             "b84ef858-7412-4471-8d10-49aa686289c7",
             "a12e725f-ee45-49c4-be1c-e5bad03a5e1f",
             "3491f38c-e224-473b-a352-5c962c3fc5a1",
-            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c"
+            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c",
+            "5572edf4-dde4-4132-89e4-7f2935aceda3"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
               "/": 3,
-              "/guide/intercom-alternative-indie-hackers": 1
+              "/guide/intercom-alternative-indie-hackers": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
               "zh": 2,
-              "ru": 2
+              "ru": 3
             },
             "timezones": {
               "UTC": 2,
-              "Europe/Moscow": 2
+              "Europe/Moscow": 3
             },
             "utmSources": {},
             "hours": {
               "17": 2,
               "20": 1,
-              "23": 1
+              "23": 2
             },
             "visitorTypes": {
-              "new": 4,
+              "new": 5,
               "returning": 0
             }
           },
@@ -10973,13 +10975,14 @@
             "b84ef858-7412-4471-8d10-49aa686289c7": 1,
             "a12e725f-ee45-49c4-be1c-e5bad03a5e1f": 1,
             "3491f38c-e224-473b-a352-5c962c3fc5a1": 1,
-            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c": 1
+            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c": 1,
+            "5572edf4-dde4-4132-89e4-7f2935aceda3": 1
           }
         }
       },
       "totals": {
-        "pv": 177,
-        "uv": 150,
+        "pv": 178,
+        "uv": 151,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11001,7 +11004,8 @@
         "b84ef858-7412-4471-8d10-49aa686289c7",
         "a12e725f-ee45-49c4-be1c-e5bad03a5e1f",
         "3491f38c-e224-473b-a352-5c962c3fc5a1",
-        "a7381a21-75c9-40ef-a3ec-14e60fb77f1c"
+        "a7381a21-75c9-40ef-a3ec-14e60fb77f1c",
+        "5572edf4-dde4-4132-89e4-7f2935aceda3"
       ]
     },
     "invoice-desk": {
@@ -25999,6 +26003,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5572edf4-dde4-4132-89e4-7f2935aceda3",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-05T15:27:26.175Z",
+      "lastSeen": "2026-08-05T15:27:26.175Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "a7381a21-75c9-40ef-a3ec-14e60fb77f1c",
       "siteId": "intercom-pulse",
