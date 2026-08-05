@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-05T14:34:27.834Z",
+  "updatedAt": "2026-08-05T15:22:49.295Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -10928,54 +10928,58 @@
           }
         },
         "2026-08-05": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "b84ef858-7412-4471-8d10-49aa686289c7",
             "a12e725f-ee45-49c4-be1c-e5bad03a5e1f",
-            "3491f38c-e224-473b-a352-5c962c3fc5a1"
+            "3491f38c-e224-473b-a352-5c962c3fc5a1",
+            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 3,
+              "/guide/intercom-alternative-indie-hackers": 1
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
               "zh": 2,
-              "ru": 1
+              "ru": 2
             },
             "timezones": {
               "UTC": 2,
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
               "17": 2,
-              "20": 1
+              "20": 1,
+              "23": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "b84ef858-7412-4471-8d10-49aa686289c7": 1,
             "a12e725f-ee45-49c4-be1c-e5bad03a5e1f": 1,
-            "3491f38c-e224-473b-a352-5c962c3fc5a1": 1
+            "3491f38c-e224-473b-a352-5c962c3fc5a1": 1,
+            "a7381a21-75c9-40ef-a3ec-14e60fb77f1c": 1
           }
         }
       },
       "totals": {
-        "pv": 176,
-        "uv": 149,
+        "pv": 177,
+        "uv": 150,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10996,7 +11000,8 @@
       "knownVisitors": [
         "b84ef858-7412-4471-8d10-49aa686289c7",
         "a12e725f-ee45-49c4-be1c-e5bad03a5e1f",
-        "3491f38c-e224-473b-a352-5c962c3fc5a1"
+        "3491f38c-e224-473b-a352-5c962c3fc5a1",
+        "a7381a21-75c9-40ef-a3ec-14e60fb77f1c"
       ]
     },
     "invoice-desk": {
@@ -25994,6 +25999,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a7381a21-75c9-40ef-a3ec-14e60fb77f1c",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-05T15:22:48.791Z",
+      "lastSeen": "2026-08-05T15:22:48.791Z",
+      "pageviews": 1,
+      "path": "/guide/intercom-alternative-indie-hackers",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1785940467504",
       "siteId": "feature-vote",
