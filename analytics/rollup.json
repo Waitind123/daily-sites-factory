@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-06T09:45:39.437Z",
+  "updatedAt": "2026-08-06T09:45:46.852Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4357,49 +4357,11 @@
           "visitorHits": {
             "0bfa7309-ab1b-42f5-9afc-b505b0068291": 1
           }
-        },
-        "2026-08-06": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "f2676765-c582-4db2-b66f-7c4792a89056"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/join": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "17": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "f2676765-c582-4db2-b66f-7c4792a89056": 1
-          }
         }
       },
       "totals": {
-        "pv": 67,
-        "uv": 53,
+        "pv": 66,
+        "uv": 52,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4416,10 +4378,7 @@
         "guideCount": 1,
         "lastChecked": "2026-08-06T05:24:04.487Z",
         "score": 90
-      },
-      "knownVisitors": [
-        "f2676765-c582-4db2-b66f-7c4792a89056"
-      ]
+      }
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -15553,11 +15512,49 @@
           "visitorHits": {
             "be179380-6ec3-4807-9633-1e5254e57354": 1
           }
+        },
+        "2026-08-06": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "2ec75458-a61c-44ae-a33d-9c8e6d0824c2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "2ec75458-a61c-44ae-a33d-9c8e6d0824c2": 1
+          }
         }
       },
       "totals": {
-        "pv": 68,
-        "uv": 55,
+        "pv": 69,
+        "uv": 56,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15574,7 +15571,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-06T05:24:19.670Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "2ec75458-a61c-44ae-a33d-9c8e6d0824c2"
+      ]
     },
     "seo-rank-tracker": {
       "url": "https://seo-rank-tracker-lemon.vercel.app",
@@ -26172,12 +26172,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "f2676765-c582-4db2-b66f-7c4792a89056",
-      "siteId": "coworking-finder",
-      "firstSeen": "2026-08-06T09:45:39.237Z",
-      "lastSeen": "2026-08-06T09:45:39.237Z",
+      "visitorId": "2ec75458-a61c-44ae-a33d-9c8e6d0824c2",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-08-06T09:45:46.652Z",
+      "lastSeen": "2026-08-06T09:45:46.652Z",
       "pageviews": 1,
-      "path": "/join",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
