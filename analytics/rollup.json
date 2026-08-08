@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-08T14:09:19.231Z",
+  "updatedAt": "2026-08-08T14:12:13.692Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -9563,52 +9563,54 @@
           }
         },
         "2026-08-08": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "e180e091-ad52-4457-be3e-64442a1a4ad0",
-            "5a538254-b47a-4a6e-b893-332719c78cd1"
+            "5a538254-b47a-4a6e-b893-332719c78cd1",
+            "8f148eca-10d9-4901-ab8f-ccb047e217e3"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
               "desktop": 1,
-              "mobile": 1
+              "mobile": 2
             },
             "locales": {
-              "en": 2
+              "en": 3
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 2
             },
             "utmSources": {},
             "hours": {
               "21": 1,
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "e180e091-ad52-4457-be3e-64442a1a4ad0": 1,
-            "5a538254-b47a-4a6e-b893-332719c78cd1": 1
+            "5a538254-b47a-4a6e-b893-332719c78cd1": 1,
+            "8f148eca-10d9-4901-ab8f-ccb047e217e3": 1
           }
         }
       },
       "totals": {
-        "pv": 22,
-        "uv": 15,
+        "pv": 23,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9628,7 +9630,8 @@
       },
       "knownVisitors": [
         "e180e091-ad52-4457-be3e-64442a1a4ad0",
-        "5a538254-b47a-4a6e-b893-332719c78cd1"
+        "5a538254-b47a-4a6e-b893-332719c78cd1",
+        "8f148eca-10d9-4901-ab8f-ccb047e217e3"
       ]
     },
     "intercom-pulse": {
@@ -26923,6 +26926,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8f148eca-10d9-4901-ab8f-ccb047e217e3",
+      "siteId": "indie-tools",
+      "firstSeen": "2026-08-08T14:12:13.166Z",
+      "lastSeen": "2026-08-08T14:12:13.166Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "5a538254-b47a-4a6e-b893-332719c78cd1",
       "siteId": "indie-tools",
