@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-08T00:05:28.130Z",
+  "updatedAt": "2026-08-08T02:20:46.936Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8047,11 +8047,49 @@
             "health-watch-1786143296767": 1,
             "health-watch-1786146465052": 1
           }
+        },
+        "2026-08-08": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1786155646695"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1786155646695": 1
+          }
         }
       },
       "totals": {
-        "pv": 523,
-        "uv": 506,
+        "pv": 524,
+        "uv": 507,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8093,7 +8131,8 @@
         "health-watch-1786136257349",
         "health-watch-1786139696935",
         "health-watch-1786143296767",
-        "health-watch-1786146465052"
+        "health-watch-1786146465052",
+        "health-watch-1786155646695"
       ]
     },
     "form-pulse": {
@@ -26693,6 +26732,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1786155646695",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-08T02:20:46.768Z",
+      "lastSeen": "2026-08-08T02:20:46.768Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "b6fb30b2-d4ba-4fff-9687-dd1b0df0ceb3",
       "siteId": "bulk-landing-gen",
