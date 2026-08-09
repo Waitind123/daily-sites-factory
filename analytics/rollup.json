@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-09T08:00:08.484Z",
+  "updatedAt": "2026-08-09T08:00:17.803Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4474,11 +4474,49 @@
           "visitorHits": {
             "5ed63a9f-a013-4784-b989-a5109e1fbe6f": 1
           }
+        },
+        "2026-08-09": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "301cbf5b-b35f-444c-b603-900b73efb2d9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "301cbf5b-b35f-444c-b603-900b73efb2d9": 1
+          }
         }
       },
       "totals": {
-        "pv": 67,
-        "uv": 53,
+        "pv": 68,
+        "uv": 54,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4495,7 +4533,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-09T03:50:03.947Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "301cbf5b-b35f-444c-b603-900b73efb2d9"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -11623,53 +11664,47 @@
           }
         },
         "2026-08-09": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 1,
+          "uv": 1,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "bfa0fc11-f60c-449e-be0c-24bacc935647",
-            "9f89f6a5-7f73-4acc-a0f8-dd5796dac731"
+            "bfa0fc11-f60c-449e-be0c-24bacc935647"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 1
             },
             "paths": {
-              "/": 1,
-              "/inbox": 1
+              "/": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
-              "ru": 1,
-              "zh": 1
+              "ru": 1
             },
             "timezones": {
-              "Europe/Moscow": 1,
-              "UTC": 1
+              "Europe/Moscow": 1
             },
             "utmSources": {},
             "hours": {
-              "15": 1,
-              "16": 1
+              "15": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 1,
               "returning": 0
             }
           },
           "visitorHits": {
-            "bfa0fc11-f60c-449e-be0c-24bacc935647": 1,
-            "9f89f6a5-7f73-4acc-a0f8-dd5796dac731": 1
+            "bfa0fc11-f60c-449e-be0c-24bacc935647": 1
           }
         }
       },
       "totals": {
-        "pv": 190,
-        "uv": 163,
+        "pv": 189,
+        "uv": 162,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11688,8 +11723,7 @@
         "score": 90
       },
       "knownVisitors": [
-        "bfa0fc11-f60c-449e-be0c-24bacc935647",
-        "9f89f6a5-7f73-4acc-a0f8-dd5796dac731"
+        "bfa0fc11-f60c-449e-be0c-24bacc935647"
       ]
     },
     "invoice-desk": {
@@ -27116,12 +27150,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "9f89f6a5-7f73-4acc-a0f8-dd5796dac731",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-08-09T08:00:08.346Z",
-      "lastSeen": "2026-08-09T08:00:08.346Z",
+      "visitorId": "301cbf5b-b35f-444c-b603-900b73efb2d9",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-08-09T08:00:17.572Z",
+      "lastSeen": "2026-08-09T08:00:17.572Z",
       "pageviews": 1,
-      "path": "/inbox",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
