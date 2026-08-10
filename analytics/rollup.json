@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T08:50:28.104Z",
+  "updatedAt": "2026-08-10T10:28:24.544Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -24078,11 +24078,49 @@
           "visitorHits": {
             "b4d22a3d-5c92-48ab-a637-01773e35fc73": 1
           }
+        },
+        "2026-08-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e3ef3750-5d66-4ebb-8aee-1c7b3d22e7bf"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/digital-nomad-visa-realtime-tracking": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e3ef3750-5d66-4ebb-8aee-1c7b3d22e7bf": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -24099,7 +24137,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-10T04:04:55.885Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e3ef3750-5d66-4ebb-8aee-1c7b3d22e7bf"
+      ]
     },
     "freelance-local-kit": {
       "url": "https://freelance-local-kit.vercel.app",
@@ -27340,6 +27381,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e3ef3750-5d66-4ebb-8aee-1c7b3d22e7bf",
+      "siteId": "visa-live",
+      "firstSeen": "2026-08-10T10:28:23.972Z",
+      "lastSeen": "2026-08-10T10:28:23.972Z",
+      "pageviews": 1,
+      "path": "/guide/digital-nomad-visa-realtime-tracking",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1786351827869",
       "siteId": "feature-vote",
