@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-10T18:02:47.488Z",
+  "updatedAt": "2026-08-10T18:14:10.323Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -23298,11 +23298,49 @@
             "1c2d5d45-c6b4-4965-a616-6591e957aa39": 1,
             "ba73e39e-121e-4375-96e9-c2596025d842": 1
           }
+        },
+        "2026-08-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4a586f6b-8db3-4922-91f3-89cb8aefbc89"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Ljubljana": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4a586f6b-8db3-4922-91f3-89cb8aefbc89": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -23319,7 +23357,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-10T04:03:57.666Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "4a586f6b-8db3-4922-91f3-89cb8aefbc89"
+      ]
     },
     "dunning-失败支付恢复": {
       "url": "",
@@ -27450,6 +27491,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4a586f6b-8db3-4922-91f3-89cb8aefbc89",
+      "siteId": "affiliate-pulse",
+      "firstSeen": "2026-08-10T18:14:09.508Z",
+      "lastSeen": "2026-08-10T18:14:09.508Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://duckduckgo.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Ljubljana"
+    },
     {
       "visitorId": "health-watch-1786384967271",
       "siteId": "feature-vote",
