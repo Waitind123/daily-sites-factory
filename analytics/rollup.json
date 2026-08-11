@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T08:15:50.389Z",
+  "updatedAt": "2026-08-11T08:15:58.656Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4553,11 +4553,49 @@
           "visitorHits": {
             "47f1c83e-6637-4eba-9a9f-213af9311195": 1
           }
+        },
+        "2026-08-11": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "185309d3-eba9-485b-9ee7-888678a24eca"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "185309d3-eba9-485b-9ee7-888678a24eca": 1
+          }
         }
       },
       "totals": {
-        "pv": 68,
-        "uv": 54,
+        "pv": 69,
+        "uv": 55,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4574,7 +4612,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-11T03:52:09.891Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "185309d3-eba9-485b-9ee7-888678a24eca"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -11986,49 +12027,47 @@
           }
         },
         "2026-08-11": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 1,
+          "uv": 1,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e6321aa9-cf2a-495e-ab82-c5f4543d0444",
-            "1c4e0e81-1f31-4213-9432-bd087d79c75e"
+            "e6321aa9-cf2a-495e-ab82-c5f4543d0444"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 1
             },
             "paths": {
-              "/inbox": 2
+              "/inbox": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "16": 2
+              "16": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 1,
               "returning": 0
             }
           },
           "visitorHits": {
-            "e6321aa9-cf2a-495e-ab82-c5f4543d0444": 1,
-            "1c4e0e81-1f31-4213-9432-bd087d79c75e": 1
+            "e6321aa9-cf2a-495e-ab82-c5f4543d0444": 1
           }
         }
       },
       "totals": {
-        "pv": 198,
-        "uv": 171,
+        "pv": 197,
+        "uv": 170,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12047,8 +12086,7 @@
         "score": 90
       },
       "knownVisitors": [
-        "e6321aa9-cf2a-495e-ab82-c5f4543d0444",
-        "1c4e0e81-1f31-4213-9432-bd087d79c75e"
+        "e6321aa9-cf2a-495e-ab82-c5f4543d0444"
       ]
     },
     "invoice-desk": {
@@ -27662,12 +27700,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "1c4e0e81-1f31-4213-9432-bd087d79c75e",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-08-11T08:15:50.221Z",
-      "lastSeen": "2026-08-11T08:15:50.221Z",
+      "visitorId": "185309d3-eba9-485b-9ee7-888678a24eca",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-08-11T08:15:58.463Z",
+      "lastSeen": "2026-08-11T08:15:58.463Z",
       "pageviews": 1,
-      "path": "/inbox",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
