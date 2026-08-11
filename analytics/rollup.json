@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T08:15:58.656Z",
+  "updatedAt": "2026-08-11T08:16:03.091Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1682,47 +1682,50 @@
           }
         },
         "2026-08-11": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "6921d46b-1cfe-4617-ba01-fdc5fcd57e17"
+            "6921d46b-1cfe-4617-ba01-fdc5fcd57e17",
+            "ce05b817-2dab-4381-8e73-436ef71b0b40"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "16": 1
+              "16": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "6921d46b-1cfe-4617-ba01-fdc5fcd57e17": 1
+            "6921d46b-1cfe-4617-ba01-fdc5fcd57e17": 1,
+            "ce05b817-2dab-4381-8e73-436ef71b0b40": 1
           }
         }
       },
       "totals": {
-        "pv": 149,
-        "uv": 115,
+        "pv": 150,
+        "uv": 116,
         "trial": 0,
         "checkout": 8,
         "purchase": 2
@@ -1741,7 +1744,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "6921d46b-1cfe-4617-ba01-fdc5fcd57e17"
+        "6921d46b-1cfe-4617-ba01-fdc5fcd57e17",
+        "ce05b817-2dab-4381-8e73-436ef71b0b40"
       ]
     },
     "ai-waitlist": {
@@ -27699,6 +27703,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ce05b817-2dab-4381-8e73-436ef71b0b40",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-08-11T08:16:02.613Z",
+      "lastSeen": "2026-08-11T08:16:02.613Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "185309d3-eba9-485b-9ee7-888678a24eca",
       "siteId": "coworking-finder",
