@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-12T08:19:37.572Z",
+  "updatedAt": "2026-08-12T08:19:39.034Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12189,56 +12189,51 @@
           }
         },
         "2026-08-12": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "e0fb9d60-3960-4ed2-b4cb-52913a9d1865",
-            "40eb02d6-7bc7-488b-8c49-5032e18f56aa",
-            "639bfe85-3524-47fe-a169-e895db255d6d"
+            "40eb02d6-7bc7-488b-8c49-5032e18f56aa"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 2
             },
             "paths": {
-              "/": 2,
-              "/inbox": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 2,
+              "desktop": 1,
               "mobile": 1
             },
             "locales": {
-              "en": 2,
-              "zh": 1
+              "en": 2
             },
             "timezones": {
-              "UTC": 2,
+              "UTC": 1,
               "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "14": 2,
-              "16": 1
+              "14": 2
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
             "e0fb9d60-3960-4ed2-b4cb-52913a9d1865": 1,
-            "40eb02d6-7bc7-488b-8c49-5032e18f56aa": 1,
-            "639bfe85-3524-47fe-a169-e895db255d6d": 1
+            "40eb02d6-7bc7-488b-8c49-5032e18f56aa": 1
           }
         }
       },
       "totals": {
-        "pv": 202,
-        "uv": 175,
+        "pv": 201,
+        "uv": 174,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12258,8 +12253,7 @@
       },
       "knownVisitors": [
         "e0fb9d60-3960-4ed2-b4cb-52913a9d1865",
-        "40eb02d6-7bc7-488b-8c49-5032e18f56aa",
-        "639bfe85-3524-47fe-a169-e895db255d6d"
+        "40eb02d6-7bc7-488b-8c49-5032e18f56aa"
       ]
     },
     "invoice-desk": {
@@ -19472,11 +19466,49 @@
           "visitorHits": {
             "6ee5cb1d-c3f6-49fb-bead-86050a3005e0": 1
           }
+        },
+        "2026-08-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "51993212-4ed8-4209-a601-ae42e12a0f89"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "51993212-4ed8-4209-a601-ae42e12a0f89": 1
+          }
         }
       },
       "totals": {
-        "pv": 49,
-        "uv": 46,
+        "pv": 50,
+        "uv": 47,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -19493,7 +19525,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-12T04:16:03.171Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "51993212-4ed8-4209-a601-ae42e12a0f89"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -27908,12 +27943,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "639bfe85-3524-47fe-a169-e895db255d6d",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-08-12T08:19:37.427Z",
-      "lastSeen": "2026-08-12T08:19:37.427Z",
+      "visitorId": "51993212-4ed8-4209-a601-ae42e12a0f89",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-08-12T08:19:38.873Z",
+      "lastSeen": "2026-08-12T08:19:38.873Z",
       "pageviews": 1,
-      "path": "/inbox",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
