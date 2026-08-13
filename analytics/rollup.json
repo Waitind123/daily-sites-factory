@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13T08:26:20.186Z",
+  "updatedAt": "2026-08-13T08:26:22.169Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1756,49 +1756,11 @@
           "visitorHits": {
             "8136b902-ba2a-4124-bc98-fe45dbcdc194": 1
           }
-        },
-        "2026-08-13": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "960cbd3c-a0ce-4799-8fd1-0b3aedae27d6"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "16": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "960cbd3c-a0ce-4799-8fd1-0b3aedae27d6": 1
-          }
         }
       },
       "totals": {
-        "pv": 151,
-        "uv": 117,
+        "pv": 150,
+        "uv": 116,
         "trial": 0,
         "checkout": 8,
         "purchase": 2
@@ -1815,10 +1777,7 @@
         "guideCount": 1,
         "lastChecked": "2026-08-13T04:19:44.506Z",
         "score": 90
-      },
-      "knownVisitors": [
-        "960cbd3c-a0ce-4799-8fd1-0b3aedae27d6"
-      ]
+      }
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -12436,47 +12395,51 @@
           }
         },
         "2026-08-13": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "1c003443-39e1-49fb-985b-e3c86988057f"
+            "1c003443-39e1-49fb-985b-e3c86988057f",
+            "a7cbdb4b-6073-4e0c-9513-10fa4511e197"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 1,
+              "16": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "1c003443-39e1-49fb-985b-e3c86988057f": 1
+            "1c003443-39e1-49fb-985b-e3c86988057f": 1,
+            "a7cbdb4b-6073-4e0c-9513-10fa4511e197": 1
           }
         }
       },
       "totals": {
-        "pv": 204,
-        "uv": 177,
+        "pv": 205,
+        "uv": 178,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12495,7 +12458,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "1c003443-39e1-49fb-985b-e3c86988057f"
+        "1c003443-39e1-49fb-985b-e3c86988057f",
+        "a7cbdb4b-6073-4e0c-9513-10fa4511e197"
       ]
     },
     "invoice-desk": {
@@ -28304,10 +28268,10 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "960cbd3c-a0ce-4799-8fd1-0b3aedae27d6",
-      "siteId": "ai-headshots",
-      "firstSeen": "2026-08-13T08:26:19.674Z",
-      "lastSeen": "2026-08-13T08:26:19.674Z",
+      "visitorId": "a7cbdb4b-6073-4e0c-9513-10fa4511e197",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-13T08:26:21.971Z",
+      "lastSeen": "2026-08-13T08:26:21.971Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
