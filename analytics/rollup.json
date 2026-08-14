@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-14T02:36:26.224Z",
+  "updatedAt": "2026-08-14T02:45:00.173Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -8895,11 +8895,49 @@
             "health-watch-1786662098842": 1,
             "health-watch-1786665453867": 1
           }
+        },
+        "2026-08-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1786675499899"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1786675499899": 1
+          }
         }
       },
       "totals": {
-        "pv": 635,
-        "uv": 618,
+        "pv": 636,
+        "uv": 619,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8933,7 +8971,8 @@
         "health-watch-1786654927158",
         "health-watch-1786658532864",
         "health-watch-1786662098842",
-        "health-watch-1786665453867"
+        "health-watch-1786665453867",
+        "health-watch-1786675499899"
       ]
     },
     "form-pulse": {
@@ -28406,6 +28445,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1786675499899",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-14T02:44:59.955Z",
+      "lastSeen": "2026-08-14T02:44:59.955Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "b24a6a55-61ef-41b3-8d43-21c50166a110",
       "siteId": "intercom-pulse",
