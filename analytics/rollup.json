@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-14T08:21:47.000Z",
+  "updatedAt": "2026-08-14T08:21:49.040Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4702,11 +4702,49 @@
           "visitorHits": {
             "4517b744-5938-48de-8022-a8218a667dfa": 1
           }
+        },
+        "2026-08-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ae991ea6-b9ba-408e-b549-4cc259fb4571"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ae991ea6-b9ba-408e-b549-4cc259fb4571": 1
+          }
         }
       },
       "totals": {
-        "pv": 71,
-        "uv": 57,
+        "pv": 72,
+        "uv": 58,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4723,7 +4761,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-14T04:15:21.572Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "ae991ea6-b9ba-408e-b549-4cc259fb4571"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -12564,54 +12605,52 @@
           }
         },
         "2026-08-14": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "b24a6a55-61ef-41b3-8d43-21c50166a110",
-            "de233fb3-3390-4744-8ae1-b79f2167150d",
-            "5396a794-eaff-493f-ad84-3d9403e8802c"
+            "de233fb3-3390-4744-8ae1-b79f2167150d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 2
             },
             "paths": {
-              "/": 3
+              "/": 2
             },
             "devices": {
-              "desktop": 3
+              "desktop": 2
             },
             "locales": {
               "ru": 1,
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "10": 1,
-              "16": 2
+              "16": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
             "b24a6a55-61ef-41b3-8d43-21c50166a110": 1,
-            "de233fb3-3390-4744-8ae1-b79f2167150d": 1,
-            "5396a794-eaff-493f-ad84-3d9403e8802c": 1
+            "de233fb3-3390-4744-8ae1-b79f2167150d": 1
           }
         }
       },
       "totals": {
-        "pv": 208,
-        "uv": 181,
+        "pv": 207,
+        "uv": 180,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12630,8 +12669,7 @@
         "score": 90
       },
       "knownVisitors": [
-        "de233fb3-3390-4744-8ae1-b79f2167150d",
-        "5396a794-eaff-493f-ad84-3d9403e8802c"
+        "de233fb3-3390-4744-8ae1-b79f2167150d"
       ]
     },
     "invoice-desk": {
@@ -28478,10 +28516,10 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "5396a794-eaff-493f-ad84-3d9403e8802c",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-08-14T08:21:46.798Z",
-      "lastSeen": "2026-08-14T08:21:46.798Z",
+      "visitorId": "ae991ea6-b9ba-408e-b549-4cc259fb4571",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-08-14T08:21:48.871Z",
+      "lastSeen": "2026-08-14T08:21:48.871Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
