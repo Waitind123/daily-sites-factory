@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-16T07:33:07.542Z",
+  "updatedAt": "2026-08-16T07:33:18.456Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -1794,49 +1794,11 @@
           "visitorHits": {
             "c4c93970-5d20-44c8-843c-63db726d7f5c": 1
           }
-        },
-        "2026-08-16": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "e90fe8e6-d455-46cf-ae95-2d644d7b6522"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/join": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "15": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "e90fe8e6-d455-46cf-ae95-2d644d7b6522": 1
-          }
         }
       },
       "totals": {
-        "pv": 152,
-        "uv": 118,
+        "pv": 151,
+        "uv": 117,
         "trial": 0,
         "checkout": 8,
         "purchase": 2
@@ -1853,10 +1815,7 @@
         "guideCount": 1,
         "lastChecked": "2026-08-16T03:07:14.471Z",
         "score": 90
-      },
-      "knownVisitors": [
-        "e90fe8e6-d455-46cf-ae95-2d644d7b6522"
-      ]
+      }
     },
     "ai-waitlist": {
       "url": "https://ai-waitlist-orpin.vercel.app",
@@ -20500,11 +20459,49 @@
           "visitorHits": {
             "ce4fd752-a7a7-419a-a5c2-f73821219b0d": 1
           }
+        },
+        "2026-08-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e4465804-e8c7-4556-aa4c-56c159bf2cf4"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e4465804-e8c7-4556-aa4c-56c159bf2cf4": 1
+          }
         }
       },
       "totals": {
-        "pv": 53,
-        "uv": 50,
+        "pv": 54,
+        "uv": 51,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20521,7 +20518,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-16T03:07:55.253Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "e4465804-e8c7-4556-aa4c-56c159bf2cf4"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -29145,12 +29145,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "e90fe8e6-d455-46cf-ae95-2d644d7b6522",
-      "siteId": "ai-headshots",
-      "firstSeen": "2026-08-16T07:33:07.378Z",
-      "lastSeen": "2026-08-16T07:33:07.378Z",
+      "visitorId": "e4465804-e8c7-4556-aa4c-56c159bf2cf4",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-08-16T07:33:18.270Z",
+      "lastSeen": "2026-08-16T07:33:18.270Z",
       "pageviews": 1,
-      "path": "/join",
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
