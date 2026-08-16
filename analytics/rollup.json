@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-16T07:22:30.732Z",
+  "updatedAt": "2026-08-16T07:32:54.505Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -12957,11 +12957,49 @@
             "ad9e2d7c-b45f-4564-a6fa-a25c87e7070b": 1,
             "29c2ad3b-ec67-48d8-be2d-5daceb98a4f9": 1
           }
+        },
+        "2026-08-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "3b8167cf-aae6-472c-94da-14c2c107a6fd"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "3b8167cf-aae6-472c-94da-14c2c107a6fd": 1
+          }
         }
       },
       "totals": {
-        "pv": 215,
-        "uv": 188,
+        "pv": 216,
+        "uv": 189,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12978,7 +13016,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-16T03:07:34.510Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "3b8167cf-aae6-472c-94da-14c2c107a6fd"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -29062,6 +29103,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3b8167cf-aae6-472c-94da-14c2c107a6fd",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-16T07:32:53.897Z",
+      "lastSeen": "2026-08-16T07:32:53.897Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "8a00937a-1006-4c46-8ca6-53e63bc7fb43",
       "siteId": "visa-tracker",
