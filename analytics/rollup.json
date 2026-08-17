@@ -1,49 +1,52 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T16:44:42.475Z",
+  "updatedAt": "2026-08-17T18:56:42.269Z",
   "sites": {
     "feature-vote": {
       "url": "",
       "daily": {
         "2026-08-17": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1786981093729",
-            "health-watch-1786985082307"
+            "health-watch-1786985082307",
+            "health-watch-1786993002109"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "unknown": 2
+              "unknown": 3
             },
             "locales": {
-              "unknown": 2
+              "unknown": 3
             },
             "timezones": {
-              "unknown": 2
+              "unknown": 3
             },
             "utmSources": {},
             "hours": {
               "0": 1,
+              "2": 1,
               "23": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1786981093729": 1,
-            "health-watch-1786985082307": 1
+            "health-watch-1786985082307": 1,
+            "health-watch-1786993002109": 1
           }
         }
       },
@@ -61,19 +64,27 @@
         "score": 0
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
       },
       "knownVisitors": [
         "health-watch-1786981093729",
-        "health-watch-1786985082307"
+        "health-watch-1786985082307",
+        "health-watch-1786993002109"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1786993002109",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-17T18:56:42.163Z",
+      "lastSeen": "2026-08-17T18:56:42.163Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1786985082307",
       "siteId": "feature-vote",
