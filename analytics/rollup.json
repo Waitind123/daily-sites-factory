@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T09:56:31.936Z",
+  "updatedAt": "2026-08-17T10:40:47.208Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -13230,53 +13230,56 @@
           }
         },
         "2026-08-17": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "a27d718c-b702-4fe7-bac0-6fbbf10b0a77",
-            "a1691aa9-7794-47b2-8c21-efb59ae8dc15"
+            "a1691aa9-7794-47b2-8c21-efb59ae8dc15",
+            "8526c404-5cea-4670-8fd7-dba3c3c98680"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/": 1,
-              "/inbox": 1
+              "/inbox": 2
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "ru": 1,
+              "ru": 2,
               "zh": 1
             },
             "timezones": {
-              "Europe/Moscow": 1,
+              "Europe/Moscow": 2,
               "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "11": 1,
-              "15": 1
+              "15": 1,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "a27d718c-b702-4fe7-bac0-6fbbf10b0a77": 1,
-            "a1691aa9-7794-47b2-8c21-efb59ae8dc15": 1
+            "a1691aa9-7794-47b2-8c21-efb59ae8dc15": 1,
+            "8526c404-5cea-4670-8fd7-dba3c3c98680": 1
           }
         }
       },
       "totals": {
-        "pv": 219,
-        "uv": 192,
+        "pv": 220,
+        "uv": 193,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13298,7 +13301,8 @@
         "82d63807-5c0b-4885-81d2-0c3384f427d3",
         "bac5f7bf-7e33-4c2b-9f9b-6468a86848ba",
         "a27d718c-b702-4fe7-bac0-6fbbf10b0a77",
-        "a1691aa9-7794-47b2-8c21-efb59ae8dc15"
+        "a1691aa9-7794-47b2-8c21-efb59ae8dc15",
+        "8526c404-5cea-4670-8fd7-dba3c3c98680"
       ]
     },
     "invoice-desk": {
@@ -29465,6 +29469,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8526c404-5cea-4670-8fd7-dba3c3c98680",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-17T10:40:46.515Z",
+      "lastSeen": "2026-08-17T10:40:46.515Z",
+      "pageviews": 1,
+      "path": "/inbox",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1786960591449",
       "siteId": "feature-vote",
