@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T07:58:44.540Z",
+  "updatedAt": "2026-08-17T07:58:53.832Z",
   "sites": {
     "ai-headshots": {
       "url": "https://ai-headshots-navy.vercel.app",
@@ -4781,11 +4781,49 @@
           "visitorHits": {
             "4517b744-5938-48de-8022-a8218a667dfa": 1
           }
+        },
+        "2026-08-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "10a3ba16-8349-456f-bdda-90ead092d4d6"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "10a3ba16-8349-456f-bdda-90ead092d4d6": 1
+          }
         }
       },
       "totals": {
-        "pv": 71,
-        "uv": 57,
+        "pv": 72,
+        "uv": 58,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4802,7 +4840,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-16T03:07:23.654Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "10a3ba16-8349-456f-bdda-90ead092d4d6"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -9314,8 +9355,8 @@
           }
         },
         "2026-08-17": {
-          "pv": 7,
-          "uv": 7,
+          "pv": 8,
+          "uv": 8,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -9326,26 +9367,27 @@
             "health-watch-1786942616660",
             "health-watch-1786945769564",
             "health-watch-1786950917033",
-            "35816236-9157-4da0-a4c6-0583923e49c9"
+            "35816236-9157-4da0-a4c6-0583923e49c9",
+            "a9f3ed8d-311b-4f83-a6dc-db443d22e9fc"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 7
+              "直接访问": 8
             },
             "paths": {
-              "/": 7
+              "/": 8
             },
             "devices": {
               "unknown": 6,
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
               "unknown": 6,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
               "unknown": 6,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
@@ -9353,10 +9395,10 @@
               "11": 1,
               "12": 2,
               "13": 1,
-              "15": 2
+              "15": 3
             },
             "visitorTypes": {
-              "new": 7,
+              "new": 8,
               "returning": 0
             }
           },
@@ -9367,13 +9409,14 @@
             "health-watch-1786942616660": 1,
             "health-watch-1786945769564": 1,
             "health-watch-1786950917033": 1,
-            "35816236-9157-4da0-a4c6-0583923e49c9": 1
+            "35816236-9157-4da0-a4c6-0583923e49c9": 1,
+            "a9f3ed8d-311b-4f83-a6dc-db443d22e9fc": 1
           }
         }
       },
       "totals": {
-        "pv": 708,
-        "uv": 691,
+        "pv": 709,
+        "uv": 692,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9420,7 +9463,8 @@
         "health-watch-1786942616660",
         "health-watch-1786945769564",
         "health-watch-1786950917033",
-        "35816236-9157-4da0-a4c6-0583923e49c9"
+        "35816236-9157-4da0-a4c6-0583923e49c9",
+        "a9f3ed8d-311b-4f83-a6dc-db443d22e9fc"
       ]
     },
     "form-pulse": {
@@ -17883,49 +17927,11 @@
           "visitorHits": {
             "befc2aad-21f3-40df-9318-46c837fc1093": 1
           }
-        },
-        "2026-08-17": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "1cdeeca0-39a1-450e-9cf5-647b20d99d9f"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "15": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "1cdeeca0-39a1-450e-9cf5-647b20d99d9f": 1
-          }
         }
       },
       "totals": {
-        "pv": 76,
-        "uv": 63,
+        "pv": 75,
+        "uv": 62,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17944,8 +17950,7 @@
         "score": 100
       },
       "knownVisitors": [
-        "befc2aad-21f3-40df-9318-46c837fc1093",
-        "1cdeeca0-39a1-450e-9cf5-647b20d99d9f"
+        "befc2aad-21f3-40df-9318-46c837fc1093"
       ]
     },
     "seo-rank-tracker": {
@@ -29450,10 +29455,21 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "1cdeeca0-39a1-450e-9cf5-647b20d99d9f",
-      "siteId": "remote-jobs",
-      "firstSeen": "2026-08-17T07:58:44.347Z",
-      "lastSeen": "2026-08-17T07:58:44.347Z",
+      "visitorId": "10a3ba16-8349-456f-bdda-90ead092d4d6",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-08-17T07:58:53.639Z",
+      "lastSeen": "2026-08-17T07:58:53.639Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "a9f3ed8d-311b-4f83-a6dc-db443d22e9fc",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-17T07:58:38.102Z",
+      "lastSeen": "2026-08-17T07:58:38.102Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
