@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-18T15:45:14.676Z",
+  "updatedAt": "2026-08-18T16:42:34.115Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1254,56 +1254,59 @@
       "name": "intercom-pulse",
       "daily": {
         "2026-08-18": {
-          "pv": 4,
-          "uv": 3,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "a44f31de-636a-4a43-a2ec-97e28a39efbd",
             "fed4851e-f886-416b-8c59-047209a0c1c1",
-            "ec1bf7d1-7f91-419a-9b95-be1307115f68"
+            "ec1bf7d1-7f91-419a-9b95-be1307115f68",
+            "878fa78b-1f4c-4fa6-83a0-c672ce5f84d7"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
-              "/": 2,
+              "/": 3,
               "/join": 1,
               "/inbox": 1
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
-              "ru": 1,
+              "ru": 2,
               "zh": 3
             },
             "timezones": {
-              "Europe/Moscow": 1,
+              "Europe/Moscow": 2,
               "UTC": 3
             },
             "utmSources": {},
             "hours": {
+              "0": 1,
               "11": 1,
               "15": 3
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 1
             }
           },
           "visitorHits": {
             "a44f31de-636a-4a43-a2ec-97e28a39efbd": 1,
             "fed4851e-f886-416b-8c59-047209a0c1c1": 1,
-            "ec1bf7d1-7f91-419a-9b95-be1307115f68": 2
+            "ec1bf7d1-7f91-419a-9b95-be1307115f68": 2,
+            "878fa78b-1f4c-4fa6-83a0-c672ce5f84d7": 1
           }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 3,
+        "pv": 5,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1324,7 +1327,8 @@
       "knownVisitors": [
         "a44f31de-636a-4a43-a2ec-97e28a39efbd",
         "fed4851e-f886-416b-8c59-047209a0c1c1",
-        "ec1bf7d1-7f91-419a-9b95-be1307115f68"
+        "ec1bf7d1-7f91-419a-9b95-be1307115f68",
+        "878fa78b-1f4c-4fa6-83a0-c672ce5f84d7"
       ]
     },
     "invoice-desk": {
@@ -2788,6 +2792,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "878fa78b-1f4c-4fa6-83a0-c672ce5f84d7",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-18T16:42:33.872Z",
+      "lastSeen": "2026-08-18T16:42:33.872Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1787067914424",
       "siteId": "feature-vote",
