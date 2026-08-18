@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-18T07:43:06.579Z",
+  "updatedAt": "2026-08-18T07:43:18.808Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -233,47 +233,50 @@
       "name": "AI 证件照",
       "daily": {
         "2026-08-18": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "3447e99e-d2a3-4b79-8160-28bcae085996"
+            "3447e99e-d2a3-4b79-8160-28bcae085996",
+            "e11f8436-7cad-4d4e-bac3-636df01b53eb"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "3447e99e-d2a3-4b79-8160-28bcae085996": 1
+            "3447e99e-d2a3-4b79-8160-28bcae085996": 1,
+            "e11f8436-7cad-4d4e-bac3-636df01b53eb": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -292,7 +295,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "3447e99e-d2a3-4b79-8160-28bcae085996"
+        "3447e99e-d2a3-4b79-8160-28bcae085996",
+        "e11f8436-7cad-4d4e-bac3-636df01b53eb"
       ]
     },
     "ai-overview-rank": {
@@ -2667,6 +2671,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e11f8436-7cad-4d4e-bac3-636df01b53eb",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-08-18T07:43:18.654Z",
+      "lastSeen": "2026-08-18T07:43:18.654Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "ec1bf7d1-7f91-419a-9b95-be1307115f68",
       "siteId": "intercom-pulse",
