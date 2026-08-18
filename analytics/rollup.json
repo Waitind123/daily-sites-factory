@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-18T07:43:21.486Z",
+  "updatedAt": "2026-08-18T07:43:22.169Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -66,8 +66,8 @@
           }
         },
         "2026-08-18": {
-          "pv": 9,
-          "uv": 8,
+          "pv": 8,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -78,28 +78,27 @@
             "health-watch-1787028643224",
             "health-watch-1787031852045",
             "health-watch-1787036580885",
-            "5589fe2e-f9a5-4275-b334-0b785a3217ae",
-            "7ae17f91-7919-4b48-addd-834e4f4eb02c"
+            "5589fe2e-f9a5-4275-b334-0b785a3217ae"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 9
+              "直接访问": 8
             },
             "paths": {
-              "/": 8,
+              "/": 7,
               "/boards": 1
             },
             "devices": {
               "unknown": 6,
-              "desktop": 3
+              "desktop": 2
             },
             "locales": {
               "unknown": 6,
-              "zh": 3
+              "zh": 2
             },
             "timezones": {
               "unknown": 6,
-              "UTC": 3
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
@@ -107,10 +106,10 @@
               "11": 2,
               "12": 1,
               "13": 1,
-              "15": 4
+              "15": 3
             },
             "visitorTypes": {
-              "new": 8,
+              "new": 7,
               "returning": 1
             }
           },
@@ -121,14 +120,13 @@
             "health-watch-1787028643224": 1,
             "health-watch-1787031852045": 1,
             "health-watch-1787036580885": 1,
-            "5589fe2e-f9a5-4275-b334-0b785a3217ae": 2,
-            "7ae17f91-7919-4b48-addd-834e4f4eb02c": 1
+            "5589fe2e-f9a5-4275-b334-0b785a3217ae": 2
           }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 16,
+        "pv": 16,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -152,8 +150,7 @@
         "health-watch-1787028643224",
         "health-watch-1787031852045",
         "health-watch-1787036580885",
-        "5589fe2e-f9a5-4275-b334-0b785a3217ae",
-        "7ae17f91-7919-4b48-addd-834e4f4eb02c"
+        "5589fe2e-f9a5-4275-b334-0b785a3217ae"
       ]
     },
     "affiliate-pulse": {
@@ -1882,10 +1879,49 @@
     "remote-jobs": {
       "url": "https://remote-jobs-azure.vercel.app",
       "name": "远程工作板",
-      "daily": {},
+      "daily": {
+        "2026-08-18": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "53688d9b-6f67-4570-aad6-7647e00794dd"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "53688d9b-6f67-4570-aad6-7647e00794dd": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1902,7 +1938,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-18T03:03:25.859Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "53688d9b-6f67-4570-aad6-7647e00794dd"
+      ]
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
@@ -2674,12 +2713,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "7ae17f91-7919-4b48-addd-834e4f4eb02c",
-      "siteId": "feature-vote",
-      "firstSeen": "2026-08-18T07:43:21.357Z",
-      "lastSeen": "2026-08-18T07:43:21.357Z",
+      "visitorId": "53688d9b-6f67-4570-aad6-7647e00794dd",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-08-18T07:43:22.073Z",
+      "lastSeen": "2026-08-18T07:43:22.073Z",
       "pageviews": 1,
-      "path": "/",
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
