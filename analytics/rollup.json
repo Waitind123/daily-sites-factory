@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T23:35:09.703Z",
+  "updatedAt": "2026-08-18T01:49:54.476Z",
   "sites": {
     "feature-vote": {
       "url": "",
@@ -63,6 +63,44 @@
             "health-watch-1787006382982": 1,
             "health-watch-1787009709553": 1
           }
+        },
+        "2026-08-18": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1787017794287"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1787017794287": 1
+          }
         }
       },
       "seo": {
@@ -79,8 +117,8 @@
         "score": 0
       },
       "totals": {
-        "pv": 8,
-        "uv": 8,
+        "pv": 9,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -93,11 +131,19 @@
         "health-watch-1786999378758",
         "health-watch-1787002763645",
         "health-watch-1787006382982",
-        "health-watch-1787009709553"
+        "health-watch-1787009709553",
+        "health-watch-1787017794287"
       ]
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1787017794287",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-18T01:49:54.360Z",
+      "lastSeen": "2026-08-18T01:49:54.360Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1787009709553",
       "siteId": "feature-vote",
