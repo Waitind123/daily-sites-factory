@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T16:04:11.408Z",
+  "updatedAt": "2026-08-19T16:04:20.219Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1954,47 +1954,50 @@
       "name": "pricing-heatmap",
       "daily": {
         "2026-08-19": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ac26a696-42e4-4d48-894c-e5d1e18d90c0"
+            "ac26a696-42e4-4d48-894c-e5d1e18d90c0",
+            "923fe78d-3ce0-400d-8b8f-78c2d73f2551"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "0": 1
+              "0": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ac26a696-42e4-4d48-894c-e5d1e18d90c0": 1
+            "ac26a696-42e4-4d48-894c-e5d1e18d90c0": 1,
+            "923fe78d-3ce0-400d-8b8f-78c2d73f2551": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2013,7 +2016,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "ac26a696-42e4-4d48-894c-e5d1e18d90c0"
+        "ac26a696-42e4-4d48-894c-e5d1e18d90c0",
+        "923fe78d-3ce0-400d-8b8f-78c2d73f2551"
       ]
     },
     "pricing-intel": {
@@ -3193,6 +3197,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "923fe78d-3ce0-400d-8b8f-78c2d73f2551",
+      "siteId": "pricing-heatmap",
+      "firstSeen": "2026-08-19T16:04:20.037Z",
+      "lastSeen": "2026-08-19T16:04:20.037Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "ac26a696-42e4-4d48-894c-e5d1e18d90c0",
       "siteId": "pricing-heatmap",
