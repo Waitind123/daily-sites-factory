@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T07:44:34.919Z",
+  "updatedAt": "2026-08-19T07:44:35.887Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -173,7 +173,7 @@
           }
         },
         "2026-08-19": {
-          "pv": 8,
+          "pv": 9,
           "uv": 8,
           "trial": 0,
           "checkout": 0,
@@ -190,22 +190,23 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 8
+              "直接访问": 9
             },
             "paths": {
-              "/": 8
+              "/": 8,
+              "/boards": 1
             },
             "devices": {
               "unknown": 6,
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "unknown": 6,
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
               "unknown": 6,
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
@@ -213,11 +214,11 @@
               "11": 2,
               "12": 1,
               "13": 1,
-              "15": 3
+              "15": 4
             },
             "visitorTypes": {
               "new": 8,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
@@ -228,12 +229,12 @@
             "health-watch-1787118348168": 1,
             "health-watch-1787123070879": 1,
             "d8ac08e4-0a16-4560-b342-2665de9b9e94": 1,
-            "0e015a39-8093-43be-b36d-e6d93a90438e": 1
+            "0e015a39-8093-43be-b36d-e6d93a90438e": 2
           }
         }
       },
       "totals": {
-        "pv": 41,
+        "pv": 42,
         "uv": 40,
         "trial": 0,
         "checkout": 0,
@@ -3028,9 +3029,9 @@
       "visitorId": "0e015a39-8093-43be-b36d-e6d93a90438e",
       "siteId": "feature-vote",
       "firstSeen": "2026-08-19T07:44:34.700Z",
-      "lastSeen": "2026-08-19T07:44:34.700Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-19T07:44:35.758Z",
+      "pageviews": 2,
+      "path": "/boards",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
