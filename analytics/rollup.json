@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T07:44:49.063Z",
+  "updatedAt": "2026-08-19T07:45:23.478Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1465,51 +1465,55 @@
           }
         },
         "2026-08-19": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "c9773800-251e-4113-82ba-8d57fe1e5ec9",
-            "5ddf1541-f856-43cc-b157-71480c0fa475"
+            "5ddf1541-f856-43cc-b157-71480c0fa475",
+            "e0445c1d-6667-457b-861b-7c11ab154781"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 1,
+              "/": 2,
               "/inbox": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "ru": 2
+              "ru": 2,
+              "zh": 1
             },
             "timezones": {
-              "Europe/Moscow": 2
+              "Europe/Moscow": 2,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "13": 1,
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "c9773800-251e-4113-82ba-8d57fe1e5ec9": 1,
-            "5ddf1541-f856-43cc-b157-71480c0fa475": 1
+            "5ddf1541-f856-43cc-b157-71480c0fa475": 1,
+            "e0445c1d-6667-457b-861b-7c11ab154781": 1
           }
         }
       },
       "totals": {
-        "pv": 9,
-        "uv": 8,
+        "pv": 10,
+        "uv": 9,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1529,7 +1533,8 @@
       },
       "knownVisitors": [
         "c9773800-251e-4113-82ba-8d57fe1e5ec9",
-        "5ddf1541-f856-43cc-b157-71480c0fa475"
+        "5ddf1541-f856-43cc-b157-71480c0fa475",
+        "e0445c1d-6667-457b-861b-7c11ab154781"
       ]
     },
     "invoice-desk": {
@@ -3067,6 +3072,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e0445c1d-6667-457b-861b-7c11ab154781",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-19T07:45:23.338Z",
+      "lastSeen": "2026-08-19T07:45:23.338Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "20b93d41-0fe0-494d-98c5-ddcc87514dfd",
       "siteId": "coworking-finder",
