@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T11:38:44.067Z",
+  "updatedAt": "2026-08-19T12:03:39.273Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2456,10 +2456,49 @@
     "sign-pulse": {
       "url": "https://sign-pulse.vercel.app",
       "name": "PandaDocs 替代品",
-      "daily": {},
+      "daily": {
+        "2026-08-19": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9a33d54d-b978-4b97-996a-a8a29ffb1e04"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Calcutta": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9a33d54d-b978-4b97-996a-a8a29ffb1e04": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2476,7 +2515,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-19T03:04:20.692Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9a33d54d-b978-4b97-996a-a8a29ffb1e04"
+      ]
     },
     "social-listen-alt": {
       "url": "https://social-listen-alt.vercel.app",
@@ -3094,6 +3136,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9a33d54d-b978-4b97-996a-a8a29ffb1e04",
+      "siteId": "sign-pulse",
+      "firstSeen": "2026-08-19T12:03:39.027Z",
+      "lastSeen": "2026-08-19T12:03:39.027Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://www.bing.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Calcutta"
+    },
     {
       "visitorId": "health-watch-1787139523877",
       "siteId": "feature-vote",
