@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T15:45:19.815Z",
+  "updatedAt": "2026-08-19T16:04:11.408Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1952,10 +1952,49 @@
     "pricing-heatmap": {
       "url": "https://pricing-heatmap-zeta.vercel.app",
       "name": "pricing-heatmap",
-      "daily": {},
+      "daily": {
+        "2026-08-19": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ac26a696-42e4-4d48-894c-e5d1e18d90c0"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "0": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ac26a696-42e4-4d48-894c-e5d1e18d90c0": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1972,7 +2011,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-19T03:04:14.204Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "ac26a696-42e4-4d48-894c-e5d1e18d90c0"
+      ]
     },
     "pricing-intel": {
       "url": "https://pricing-intel-vert.vercel.app",
@@ -3151,6 +3193,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ac26a696-42e4-4d48-894c-e5d1e18d90c0",
+      "siteId": "pricing-heatmap",
+      "firstSeen": "2026-08-19T16:04:11.120Z",
+      "lastSeen": "2026-08-19T16:04:11.120Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1787154319579",
       "siteId": "feature-vote",
