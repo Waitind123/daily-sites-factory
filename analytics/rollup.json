@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T09:49:06.672Z",
+  "updatedAt": "2026-08-20T10:01:06.937Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1381,10 +1381,49 @@
     "freelance-local-kit": {
       "url": "https://freelance-local-kit.vercel.app",
       "name": "本地优先自由职业套件",
-      "daily": {},
+      "daily": {
+        "2026-08-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9cc819db-524c-49eb-84e8-39fe6e2329e0"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9cc819db-524c-49eb-84e8-39fe6e2329e0": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1401,7 +1440,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-20T03:04:20.443Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9cc819db-524c-49eb-84e8-39fe6e2329e0"
+      ]
     },
     "freelance-proposal": {
       "url": "https://freelance-proposal-one.vercel.app",
@@ -3530,6 +3572,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9cc819db-524c-49eb-84e8-39fe6e2329e0",
+      "siteId": "freelance-local-kit",
+      "firstSeen": "2026-08-20T10:01:06.579Z",
+      "lastSeen": "2026-08-20T10:01:06.579Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1787219346479",
       "siteId": "feature-vote",
