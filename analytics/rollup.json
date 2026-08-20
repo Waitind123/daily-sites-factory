@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T07:05:09.685Z",
+  "updatedAt": "2026-08-20T07:38:18.484Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1849,10 +1849,49 @@
     "nomad-cities": {
       "url": "https://nomad-cities.vercel.app",
       "name": "数字游民城市榜",
-      "daily": {},
+      "daily": {
+        "2026-08-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0c9af23f-72a7-4601-a340-ed2871924476"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "tablet": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Etc/Unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0c9af23f-72a7-4601-a340-ed2871924476": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1869,7 +1908,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-20T03:04:31.655Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0c9af23f-72a7-4601-a340-ed2871924476"
+      ]
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
@@ -3287,6 +3329,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0c9af23f-72a7-4601-a340-ed2871924476",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-08-20T07:38:18.196Z",
+      "lastSeen": "2026-08-20T07:38:18.196Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "tablet",
+      "timezone": "Etc/Unknown"
+    },
     {
       "visitorId": "health-watch-1787209509461",
       "siteId": "feature-vote",
