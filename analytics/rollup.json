@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T07:46:24.569Z",
+  "updatedAt": "2026-08-20T07:46:25.527Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -282,7 +282,7 @@
           }
         },
         "2026-08-20": {
-          "pv": 10,
+          "pv": 9,
           "uv": 8,
           "trial": 0,
           "checkout": 0,
@@ -299,23 +299,23 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 10
+              "直接访问": 9
             },
             "paths": {
               "/": 8,
-              "/boards": 2
+              "/boards": 1
             },
             "devices": {
               "unknown": 6,
-              "desktop": 4
+              "desktop": 3
             },
             "locales": {
               "unknown": 6,
-              "zh": 4
+              "zh": 3
             },
             "timezones": {
               "unknown": 6,
-              "UTC": 4
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
@@ -323,11 +323,11 @@
               "11": 2,
               "12": 1,
               "13": 1,
-              "15": 5
+              "15": 4
             },
             "visitorTypes": {
               "new": 8,
-              "returning": 2
+              "returning": 1
             }
           },
           "visitorHits": {
@@ -338,12 +338,12 @@
             "health-watch-1787204715548": 1,
             "health-watch-1787209509461": 1,
             "3e523e5f-c909-4017-965e-db9d5eb1447e": 2,
-            "f9439d6c-37f6-43e7-ac86-a7896868087a": 2
+            "f9439d6c-37f6-43e7-ac86-a7896868087a": 1
           }
         }
       },
       "totals": {
-        "pv": 69,
+        "pv": 68,
         "uv": 65,
         "trial": 0,
         "checkout": 0,
@@ -1078,11 +1078,49 @@
           "visitorHits": {
             "20b93d41-0fe0-494d-98c5-ddcc87514dfd": 2
           }
+        },
+        "2026-08-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "24ebb93e-0e30-4161-abca-16da5e62b565"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "24ebb93e-0e30-4161-abca-16da5e62b565": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 2,
+        "pv": 4,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1099,7 +1137,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-20T03:04:13.100Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "24ebb93e-0e30-4161-abca-16da5e62b565"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -3438,12 +3479,23 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "24ebb93e-0e30-4161-abca-16da5e62b565",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-08-20T07:46:25.427Z",
+      "lastSeen": "2026-08-20T07:46:25.427Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
       "visitorId": "f9439d6c-37f6-43e7-ac86-a7896868087a",
       "siteId": "feature-vote",
       "firstSeen": "2026-08-20T07:46:23.329Z",
-      "lastSeen": "2026-08-20T07:46:24.426Z",
-      "pageviews": 2,
-      "path": "/boards",
+      "lastSeen": "2026-08-20T07:46:23.329Z",
+      "pageviews": 1,
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
