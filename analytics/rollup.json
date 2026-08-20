@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T07:43:34.562Z",
+  "updatedAt": "2026-08-20T07:45:21.610Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1905,47 +1905,52 @@
       "name": "数字游民城市榜",
       "daily": {
         "2026-08-20": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "0c9af23f-72a7-4601-a340-ed2871924476"
+            "0c9af23f-72a7-4601-a340-ed2871924476",
+            "087fd17b-d0c6-41e6-a314-44ce596a011e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 1,
+              "搜索引擎": 1
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "tablet": 1
+              "tablet": 1,
+              "desktop": 1
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Etc/Unknown": 1
+              "Etc/Unknown": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "0c9af23f-72a7-4601-a340-ed2871924476": 1
+            "0c9af23f-72a7-4601-a340-ed2871924476": 1,
+            "087fd17b-d0c6-41e6-a314-44ce596a011e": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1964,7 +1969,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "0c9af23f-72a7-4601-a340-ed2871924476"
+        "0c9af23f-72a7-4601-a340-ed2871924476",
+        "087fd17b-d0c6-41e6-a314-44ce596a011e"
       ]
     },
     "og-image-studio": {
@@ -3424,6 +3430,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "087fd17b-d0c6-41e6-a314-44ce596a011e",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-08-20T07:45:21.460Z",
+      "lastSeen": "2026-08-20T07:45:21.460Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://bing.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "6c1a3e62-41a8-427a-bc00-5db121adfc85",
       "siteId": "ai-headshots",
