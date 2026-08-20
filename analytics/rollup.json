@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T07:46:25.527Z",
+  "updatedAt": "2026-08-20T07:46:26.178Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -282,7 +282,7 @@
           }
         },
         "2026-08-20": {
-          "pv": 9,
+          "pv": 10,
           "uv": 8,
           "trial": 0,
           "checkout": 0,
@@ -299,23 +299,23 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 9
+              "直接访问": 10
             },
             "paths": {
               "/": 8,
-              "/boards": 1
+              "/boards": 2
             },
             "devices": {
               "unknown": 6,
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
               "unknown": 6,
-              "zh": 3
+              "zh": 4
             },
             "timezones": {
               "unknown": 6,
-              "UTC": 3
+              "UTC": 4
             },
             "utmSources": {},
             "hours": {
@@ -323,11 +323,11 @@
               "11": 2,
               "12": 1,
               "13": 1,
-              "15": 4
+              "15": 5
             },
             "visitorTypes": {
               "new": 8,
-              "returning": 1
+              "returning": 2
             }
           },
           "visitorHits": {
@@ -338,12 +338,12 @@
             "health-watch-1787204715548": 1,
             "health-watch-1787209509461": 1,
             "3e523e5f-c909-4017-965e-db9d5eb1447e": 2,
-            "f9439d6c-37f6-43e7-ac86-a7896868087a": 1
+            "f9439d6c-37f6-43e7-ac86-a7896868087a": 2
           }
         }
       },
       "totals": {
-        "pv": 68,
+        "pv": 69,
         "uv": 65,
         "trial": 0,
         "checkout": 0,
@@ -1093,7 +1093,7 @@
               "直接访问": 1
             },
             "paths": {
-              "/": 1
+              "/join": 1
             },
             "devices": {
               "desktop": 1
@@ -3481,10 +3481,10 @@
     {
       "visitorId": "24ebb93e-0e30-4161-abca-16da5e62b565",
       "siteId": "coworking-finder",
-      "firstSeen": "2026-08-20T07:46:25.427Z",
-      "lastSeen": "2026-08-20T07:46:25.427Z",
+      "firstSeen": "2026-08-20T07:46:26.070Z",
+      "lastSeen": "2026-08-20T07:46:26.070Z",
       "pageviews": 1,
-      "path": "/",
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
@@ -3493,9 +3493,9 @@
       "visitorId": "f9439d6c-37f6-43e7-ac86-a7896868087a",
       "siteId": "feature-vote",
       "firstSeen": "2026-08-20T07:46:23.329Z",
-      "lastSeen": "2026-08-20T07:46:23.329Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-20T07:46:24.426Z",
+      "pageviews": 2,
+      "path": "/boards",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
