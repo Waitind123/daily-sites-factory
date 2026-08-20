@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T05:45:15.762Z",
+  "updatedAt": "2026-08-20T06:59:24.330Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1603,11 +1603,49 @@
             "e0445c1d-6667-457b-861b-7c11ab154781": 1,
             "8417bc07-7dc6-435f-afca-061dcde6927b": 1
           }
+        },
+        "2026-08-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "189de7b9-903a-4119-b6e9-83ba757b323b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "189de7b9-903a-4119-b6e9-83ba757b323b": 1
+          }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 10,
+        "pv": 12,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1624,7 +1662,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-20T03:04:25.827Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "189de7b9-903a-4119-b6e9-83ba757b323b"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -3242,6 +3283,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "189de7b9-903a-4119-b6e9-83ba757b323b",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-20T06:59:24.080Z",
+      "lastSeen": "2026-08-20T06:59:24.080Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1787204715548",
       "siteId": "feature-vote",
