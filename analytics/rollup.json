@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T07:48:06.649Z",
+  "updatedAt": "2026-08-21T07:48:07.854Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1267,7 +1267,7 @@
           }
         },
         "2026-08-21": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -1277,36 +1277,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/spaces": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "b7b969c2-ec31-4154-bae3-1b2fcbee641e": 1
+            "b7b969c2-ec31-4154-bae3-1b2fcbee641e": 2
           }
         }
       },
       "totals": {
-        "pv": 5,
+        "pv": 6,
         "uv": 4,
         "trial": 0,
         "checkout": 0,
@@ -3899,9 +3900,9 @@
       "visitorId": "b7b969c2-ec31-4154-bae3-1b2fcbee641e",
       "siteId": "coworking-finder",
       "firstSeen": "2026-08-21T07:48:06.499Z",
-      "lastSeen": "2026-08-21T07:48:06.499Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-21T07:48:07.709Z",
+      "pageviews": 2,
+      "path": "/spaces",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
