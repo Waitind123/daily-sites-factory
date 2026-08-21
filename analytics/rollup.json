@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T09:51:23.650Z",
+  "updatedAt": "2026-08-21T10:42:29.519Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1710,11 +1710,49 @@
           "visitorHits": {
             "4d3e1264-363d-4382-80b4-49c0fe1566a3": 1
           }
+        },
+        "2026-08-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7b3a5fb5-acd6-441b-bbbb-740c36bb0066"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7b3a5fb5-acd6-441b-bbbb-740c36bb0066": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1731,7 +1769,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-21T03:09:55.900Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7b3a5fb5-acd6-441b-bbbb-740c36bb0066"
+      ]
     },
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
@@ -3948,6 +3989,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7b3a5fb5-acd6-441b-bbbb-740c36bb0066",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-08-21T10:42:29.253Z",
+      "lastSeen": "2026-08-21T10:42:29.253Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1787305883465",
       "siteId": "feature-vote",
