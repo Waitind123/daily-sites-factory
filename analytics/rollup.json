@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T07:44:16.631Z",
+  "updatedAt": "2026-08-21T07:44:25.365Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3397,11 +3397,49 @@
           "visitorHits": {
             "86eec03e-9989-4df4-95ed-565f1f175c3f": 1
           }
+        },
+        "2026-08-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5873722e-63e3-4e8d-a0d6-67a95d71da43"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5873722e-63e3-4e8d-a0d6-67a95d71da43": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3418,7 +3456,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-21T03:10:14.310Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "5873722e-63e3-4e8d-a0d6-67a95d71da43"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -3797,6 +3838,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5873722e-63e3-4e8d-a0d6-67a95d71da43",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-08-21T07:44:25.213Z",
+      "lastSeen": "2026-08-21T07:44:25.213Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5327199b-0967-43c8-99f2-35c990ac38fd",
       "siteId": "intercom-pulse",
