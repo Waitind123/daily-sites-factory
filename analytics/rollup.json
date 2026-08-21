@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T23:57:15.404Z",
+  "updatedAt": "2026-08-21T01:56:33.576Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -389,11 +389,49 @@
             "health-watch-1787265857802": 1,
             "health-watch-1787269154005": 1
           }
+        },
+        "2026-08-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1787277393377"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1787277393377": 1
+          }
         }
       },
       "totals": {
-        "pv": 86,
-        "uv": 82,
+        "pv": 87,
+        "uv": 83,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -435,7 +473,8 @@
         "health-watch-1787258733495",
         "health-watch-1787262160526",
         "health-watch-1787265857802",
-        "health-watch-1787269154005"
+        "health-watch-1787269154005",
+        "health-watch-1787277393377"
       ]
     },
     "affiliate-pulse": {
@@ -3711,6 +3750,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1787277393377",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-21T01:56:33.436Z",
+      "lastSeen": "2026-08-21T01:56:33.436Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "4d3e1264-363d-4382-80b4-49c0fe1566a3",
       "siteId": "freelance-proposal",
