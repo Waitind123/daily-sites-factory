@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T23:56:24.332Z",
+  "updatedAt": "2026-08-22T00:12:15.349Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2265,11 +2265,49 @@
             "1474ee6a-52c5-4fce-869e-5daeee23415c": 1,
             "360130dc-c05b-4d24-9c92-4fecfe47410c": 1
           }
+        },
+        "2026-08-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4f25bbe1-4455-4d40-833d-2b8f31340a01"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4f25bbe1-4455-4d40-833d-2b8f31340a01": 1
+          }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 16,
+        "pv": 20,
+        "uv": 17,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2291,7 +2329,8 @@
         "5327199b-0967-43c8-99f2-35c990ac38fd",
         "7c22afd8-4e18-4ee1-8a0d-3868e1e52e01",
         "1474ee6a-52c5-4fce-869e-5daeee23415c",
-        "360130dc-c05b-4d24-9c92-4fecfe47410c"
+        "360130dc-c05b-4d24-9c92-4fecfe47410c",
+        "4f25bbe1-4455-4d40-833d-2b8f31340a01"
       ]
     },
     "invoice-desk": {
@@ -4112,6 +4151,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4f25bbe1-4455-4d40-833d-2b8f31340a01",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-22T00:12:15.053Z",
+      "lastSeen": "2026-08-22T00:12:15.053Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "adcc9ceb-7f24-4b2f-aa3a-4ed52e3c9ff0",
       "siteId": "cron-heartbeat",
