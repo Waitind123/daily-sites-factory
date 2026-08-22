@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T00:22:13.856Z",
+  "updatedAt": "2026-08-22T01:49:21.499Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -498,11 +498,49 @@
             "health-watch-1787352034675": 1,
             "health-watch-1787355431335": 1
           }
+        },
+        "2026-08-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1787363361289"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1787363361289": 1
+          }
         }
       },
       "totals": {
-        "pv": 113,
-        "uv": 107,
+        "pv": 114,
+        "uv": 108,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -544,7 +582,8 @@
         "health-watch-1787344817821",
         "health-watch-1787348232699",
         "health-watch-1787352034675",
-        "health-watch-1787355431335"
+        "health-watch-1787355431335",
+        "health-watch-1787363361289"
       ]
     },
     "affiliate-pulse": {
@@ -4190,6 +4229,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1787363361289",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-22T01:49:21.360Z",
+      "lastSeen": "2026-08-22T01:49:21.360Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "c197ba0f-1333-43d2-808a-94c6790ef261",
       "siteId": "cron-heartbeat",
