@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-22T07:33:46.243Z",
+  "updatedAt": "2026-08-22T07:33:47.426Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2363,7 +2363,7 @@
           }
         },
         "2026-08-22": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -2374,41 +2374,42 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/inbox": 1
             },
             "devices": {
               "mobile": 1,
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
               "en": 1,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
               "America/Los_Angeles": 1,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
               "8": 1,
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "4f25bbe1-4455-4d40-833d-2b8f31340a01": 1,
-            "21c7a31f-5448-4387-be45-1672aa6fef94": 1
+            "21c7a31f-5448-4387-be45-1672aa6fef94": 2
           }
         }
       },
       "totals": {
-        "pv": 21,
+        "pv": 22,
         "uv": 18,
         "trial": 0,
         "checkout": 0,
@@ -4247,9 +4248,9 @@
       "visitorId": "21c7a31f-5448-4387-be45-1672aa6fef94",
       "siteId": "intercom-pulse",
       "firstSeen": "2026-08-22T07:33:46.112Z",
-      "lastSeen": "2026-08-22T07:33:46.112Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-22T07:33:47.292Z",
+      "pageviews": 2,
+      "path": "/inbox",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
