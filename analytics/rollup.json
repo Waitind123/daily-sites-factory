@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-23T07:34:47.237Z",
+  "updatedAt": "2026-08-23T07:35:22.838Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4322,11 +4322,49 @@
           "visitorHits": {
             "41a63910-f026-4e13-9af8-d02db851a6de": 1
           }
+        },
+        "2026-08-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ecf5471c-a16a-4c56-b71c-fba948172ca1"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ecf5471c-a16a-4c56-b71c-fba948172ca1": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4345,7 +4383,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "41a63910-f026-4e13-9af8-d02db851a6de"
+        "41a63910-f026-4e13-9af8-d02db851a6de",
+        "ecf5471c-a16a-4c56-b71c-fba948172ca1"
       ]
     },
     "testimonial-wall": {
@@ -4809,6 +4848,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ecf5471c-a16a-4c56-b71c-fba948172ca1",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-08-23T07:35:22.686Z",
+      "lastSeen": "2026-08-23T07:35:22.686Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "de982281-c817-4096-a671-902c366eb97a",
       "siteId": "ai-headshots",
