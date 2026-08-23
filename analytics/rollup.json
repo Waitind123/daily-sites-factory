@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-23T05:04:17.698Z",
+  "updatedAt": "2026-08-23T05:44:11.761Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4621,10 +4621,49 @@
     "waitlist-pulse": {
       "url": "https://waitlist-pulse.vercel.app",
       "name": "waitlist-pulse",
-      "daily": {},
+      "daily": {
+        "2026-08-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "754b2a91-2aa1-46c6-b359-fd7f7d4074c0"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "754b2a91-2aa1-46c6-b359-fd7f7d4074c0": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4641,7 +4680,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-22T03:01:02.094Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "754b2a91-2aa1-46c6-b359-fd7f7d4074c0"
+      ]
     },
     "wcag-alt-text": {
       "url": "https://wcag-alt-text.vercel.app",
@@ -4720,6 +4762,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "754b2a91-2aa1-46c6-b359-fd7f7d4074c0",
+      "siteId": "waitlist-pulse",
+      "firstSeen": "2026-08-23T05:44:11.491Z",
+      "lastSeen": "2026-08-23T05:44:11.491Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "c3137fcd-c00d-4a9c-94ff-0cd85ded2276",
       "siteId": "visa-live",
