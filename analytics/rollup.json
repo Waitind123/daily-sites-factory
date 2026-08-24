@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T04:07:05.838Z",
+  "updatedAt": "2026-08-24T04:58:38.938Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1790,10 +1790,49 @@
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
       "name": "coworking-pass",
-      "daily": {},
+      "daily": {
+        "2026-08-24": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b313e7c2-a168-446b-ada7-fa8a04c15129"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/coworking-day-pass-alternative-digital-nomads": 1
+            },
+            "devices": {
+              "tablet": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/New_York": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b313e7c2-a168-446b-ada7-fa8a04c15129": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1810,7 +1849,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-24T03:11:48.231Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "b313e7c2-a168-446b-ada7-fa8a04c15129"
+      ]
     },
     "cron-heartbeat": {
       "url": "https://cron-heartbeat.vercel.app",
@@ -4992,6 +5034,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b313e7c2-a168-446b-ada7-fa8a04c15129",
+      "siteId": "coworking-pass",
+      "firstSeen": "2026-08-24T04:58:38.665Z",
+      "lastSeen": "2026-08-24T04:58:38.665Z",
+      "pageviews": 1,
+      "path": "/guide/coworking-day-pass-alternative-digital-nomads",
+      "locale": "en",
+      "device": "tablet",
+      "timezone": "America/New_York"
+    },
     {
       "visitorId": "health-watch-1787544425664",
       "siteId": "feature-vote",
