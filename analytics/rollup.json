@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T07:45:20.876Z",
+  "updatedAt": "2026-08-25T07:48:46.105Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1269,47 +1269,49 @@
           }
         },
         "2026-08-25": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "908ad57a-de8c-41f0-99be-93140a61c069"
+            "908ad57a-de8c-41f0-99be-93140a61c069",
+            "03496835-da2c-4391-80c2-181d641aefb8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "15": 1
+              "15": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "908ad57a-de8c-41f0-99be-93140a61c069": 1
+            "908ad57a-de8c-41f0-99be-93140a61c069": 1,
+            "03496835-da2c-4391-80c2-181d641aefb8": 1
           }
         }
       },
       "totals": {
-        "pv": 15,
-        "uv": 14,
+        "pv": 16,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1328,7 +1330,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "908ad57a-de8c-41f0-99be-93140a61c069"
+        "908ad57a-de8c-41f0-99be-93140a61c069",
+        "03496835-da2c-4391-80c2-181d641aefb8"
       ]
     },
     "ai-overview-rank": {
@@ -5471,6 +5474,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "03496835-da2c-4391-80c2-181d641aefb8",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-08-25T07:48:45.924Z",
+      "lastSeen": "2026-08-25T07:48:45.924Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f0fbdefd-ff32-4487-87fe-b853db52af97",
       "siteId": "team-headshots",
