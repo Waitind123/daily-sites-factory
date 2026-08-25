@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T03:58:27.065Z",
+  "updatedAt": "2026-08-25T04:52:53.387Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -822,52 +822,55 @@
           }
         },
         "2026-08-25": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1787622687838",
             "health-watch-1787627513948",
-            "health-watch-1787630306885"
+            "health-watch-1787630306885",
+            "health-watch-1787633573165"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "unknown": 3
+              "unknown": 4
             },
             "locales": {
-              "unknown": 3
+              "unknown": 4
             },
             "timezones": {
-              "unknown": 3
+              "unknown": 4
             },
             "utmSources": {},
             "hours": {
               "9": 1,
-              "11": 2
+              "11": 2,
+              "12": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1787622687838": 1,
             "health-watch-1787627513948": 1,
-            "health-watch-1787630306885": 1
+            "health-watch-1787630306885": 1,
+            "health-watch-1787633573165": 1
           }
         }
       },
       "totals": {
-        "pv": 190,
-        "uv": 182,
+        "pv": 191,
+        "uv": 183,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -887,7 +890,8 @@
       },
       "knownVisitors": [
         "health-watch-1787627513948",
-        "health-watch-1787630306885"
+        "health-watch-1787630306885",
+        "health-watch-1787633573165"
       ]
     },
     "affiliate-pulse": {
@@ -5370,6 +5374,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1787633573165",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-25T04:52:53.231Z",
+      "lastSeen": "2026-08-25T04:52:53.231Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1787630306885",
       "siteId": "feature-vote",
