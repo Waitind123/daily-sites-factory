@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T18:13:10.703Z",
+  "updatedAt": "2026-08-27T18:13:11.900Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3674,47 +3674,50 @@
           }
         },
         "2026-08-27": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c5b2e00b-6563-4e96-b2e2-97429f22e7bf"
+            "c5b2e00b-6563-4e96-b2e2-97429f22e7bf",
+            "e4bc4c76-2acd-48f8-8817-962d9166f5b8"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "2": 1
+              "2": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c5b2e00b-6563-4e96-b2e2-97429f22e7bf": 1
+            "c5b2e00b-6563-4e96-b2e2-97429f22e7bf": 1,
+            "e4bc4c76-2acd-48f8-8817-962d9166f5b8": 1
           }
         }
       },
       "totals": {
-        "pv": 36,
-        "uv": 29,
+        "pv": 37,
+        "uv": 30,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3733,7 +3736,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "c5b2e00b-6563-4e96-b2e2-97429f22e7bf"
+        "c5b2e00b-6563-4e96-b2e2-97429f22e7bf",
+        "e4bc4c76-2acd-48f8-8817-962d9166f5b8"
       ]
     },
     "invoice-desk": {
@@ -6175,6 +6179,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e4bc4c76-2acd-48f8-8817-962d9166f5b8",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-27T18:13:11.750Z",
+      "lastSeen": "2026-08-27T18:13:11.750Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bc2dfa34-355d-4dc2-bb81-25ede1b1646d",
       "siteId": "remote-jobs",
