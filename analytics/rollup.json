@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T18:09:32.185Z",
+  "updatedAt": "2026-08-27T18:09:33.444Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1022,7 +1022,7 @@
           }
         },
         "2026-08-27": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -1033,41 +1033,42 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/boards": 1
             },
             "devices": {
               "unknown": 1,
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
               "unknown": 1,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
               "unknown": 1,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "2": 1,
+              "2": 2,
               "17": 1
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "health-watch-1787823989776": 1,
-            "f88469fd-8552-4930-ab99-82e2f92ffcd8": 1
+            "f88469fd-8552-4930-ab99-82e2f92ffcd8": 2
           }
         }
       },
       "totals": {
-        "pv": 237,
+        "pv": 238,
         "uv": 225,
         "trial": 0,
         "checkout": 0,
@@ -6046,9 +6047,9 @@
       "visitorId": "f88469fd-8552-4930-ab99-82e2f92ffcd8",
       "siteId": "feature-vote",
       "firstSeen": "2026-08-27T18:09:32.007Z",
-      "lastSeen": "2026-08-27T18:09:32.007Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-27T18:09:33.302Z",
+      "pageviews": 2,
+      "path": "/boards",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
