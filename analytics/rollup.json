@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T20:29:29.973Z",
+  "updatedAt": "2026-08-28T05:23:08.231Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1070,11 +1070,49 @@
             "4ff0a150-edd7-41e4-b395-5860e1ad2166": 2,
             "health-watch-1787862569738": 1
           }
+        },
+        "2026-08-28": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1787894588026"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1787894588026": 1
+          }
         }
       },
       "totals": {
-        "pv": 241,
-        "uv": 227,
+        "pv": 242,
+        "uv": 228,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1095,7 +1133,8 @@
       "knownVisitors": [
         "f88469fd-8552-4930-ab99-82e2f92ffcd8",
         "4ff0a150-edd7-41e4-b395-5860e1ad2166",
-        "health-watch-1787862569738"
+        "health-watch-1787862569738",
+        "health-watch-1787894588026"
       ]
     },
     "affiliate-pulse": {
@@ -6184,6 +6223,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1787894588026",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-28T05:23:08.071Z",
+      "lastSeen": "2026-08-28T05:23:08.071Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1787862569738",
       "siteId": "feature-vote",
