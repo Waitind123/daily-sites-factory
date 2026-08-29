@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T21:43:17.884Z",
+  "updatedAt": "2026-08-29T22:49:30.642Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3591,10 +3591,49 @@
     "indie-tools": {
       "url": "https://indie-tools-rho.vercel.app",
       "name": "独立开发者工具箱",
-      "daily": {},
+      "daily": {
+        "2026-08-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4a180d2c-a014-47d3-a86d-f89361827743"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/indie-developer-tool-stack": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "6": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4a180d2c-a014-47d3-a86d-f89361827743": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3611,7 +3650,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-29T08:49:48.959Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "4a180d2c-a014-47d3-a86d-f89361827743"
+      ]
     },
     "intercom-pulse": {
       "url": "https://intercom-pulse.vercel.app",
@@ -6901,6 +6943,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4a180d2c-a014-47d3-a86d-f89361827743",
+      "siteId": "indie-tools",
+      "firstSeen": "2026-08-29T22:49:30.365Z",
+      "lastSeen": "2026-08-29T22:49:30.365Z",
+      "pageviews": 1,
+      "path": "/guide/indie-developer-tool-stack",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1788039797690",
       "siteId": "feature-vote",
