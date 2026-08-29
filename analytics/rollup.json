@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T05:55:09.791Z",
+  "updatedAt": "2026-08-29T06:11:21.214Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2847,50 +2847,55 @@
           }
         },
         "2026-08-29": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
-            "a1defd57-9be9-4093-ac47-4b59d209af1c"
+            "a1defd57-9be9-4093-ac47-4b59d209af1c",
+            "25273ed6-bf32-4393-9c62-ee2f20e7eb61"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
-              "en": 2
+              "en": 3
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "13": 2
+              "13": 2,
+              "14": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8": 1,
-            "a1defd57-9be9-4093-ac47-4b59d209af1c": 1
+            "a1defd57-9be9-4093-ac47-4b59d209af1c": 1,
+            "25273ed6-bf32-4393-9c62-ee2f20e7eb61": 1
           }
         }
       },
       "totals": {
-        "pv": 21,
-        "uv": 21,
+        "pv": 22,
+        "uv": 22,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2910,7 +2915,8 @@
       },
       "knownVisitors": [
         "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
-        "a1defd57-9be9-4093-ac47-4b59d209af1c"
+        "a1defd57-9be9-4093-ac47-4b59d209af1c",
+        "25273ed6-bf32-4393-9c62-ee2f20e7eb61"
       ]
     },
     "desk-pulse": {
@@ -6675,6 +6681,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "25273ed6-bf32-4393-9c62-ee2f20e7eb61",
+      "siteId": "cron-heartbeat",
+      "firstSeen": "2026-08-29T06:11:20.943Z",
+      "lastSeen": "2026-08-29T06:11:20.943Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "a1defd57-9be9-4093-ac47-4b59d209af1c",
       "siteId": "cron-heartbeat",
