@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T09:01:44.513Z",
+  "updatedAt": "2026-08-29T11:59:51.852Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2031,10 +2031,49 @@
     "churn-pulse": {
       "url": "https://churn-pulse-pi.vercel.app",
       "name": "churn-pulse",
-      "daily": {},
+      "daily": {
+        "2026-08-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "50c37770-a248-4afb-82ae-f398bd8e64dc"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/baremetrics-churn-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "50c37770-a248-4afb-82ae-f398bd8e64dc": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2051,7 +2090,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-29T08:49:35.217Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "50c37770-a248-4afb-82ae-f398bd8e64dc"
+      ]
     },
     "churn-reason-pulse": {
       "url": "https://churn-reason-pulse.vercel.app",
@@ -6655,6 +6697,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "50c37770-a248-4afb-82ae-f398bd8e64dc",
+      "siteId": "churn-pulse",
+      "firstSeen": "2026-08-29T11:59:51.568Z",
+      "lastSeen": "2026-08-29T11:59:51.568Z",
+      "pageviews": 1,
+      "path": "/guide/baremetrics-churn-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1787994104334",
       "siteId": "feature-vote",
