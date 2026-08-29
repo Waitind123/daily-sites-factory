@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T05:20:08.409Z",
+  "updatedAt": "2026-08-29T05:53:23.946Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3964,11 +3964,49 @@
             "6d878ece-13a5-4282-9ed6-e0eae27f80bd": 2,
             "c49714c9-505c-4e89-94b9-ed1f73585b4a": 2
           }
+        },
+        "2026-08-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "3cb276c2-8481-47ea-8a31-e2508f64450b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "3cb276c2-8481-47ea-8a31-e2508f64450b": 1
+          }
         }
       },
       "totals": {
-        "pv": 42,
-        "uv": 32,
+        "pv": 43,
+        "uv": 33,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3988,7 +4026,8 @@
       },
       "knownVisitors": [
         "6d878ece-13a5-4282-9ed6-e0eae27f80bd",
-        "c49714c9-505c-4e89-94b9-ed1f73585b4a"
+        "c49714c9-505c-4e89-94b9-ed1f73585b4a",
+        "3cb276c2-8481-47ea-8a31-e2508f64450b"
       ]
     },
     "invoice-desk": {
@@ -6632,6 +6671,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3cb276c2-8481-47ea-8a31-e2508f64450b",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-29T05:53:23.676Z",
+      "lastSeen": "2026-08-29T05:53:23.676Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
       "siteId": "cron-heartbeat",
