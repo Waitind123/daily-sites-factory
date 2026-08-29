@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T03:45:32.919Z",
+  "updatedAt": "2026-08-29T05:20:08.409Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2845,11 +2845,49 @@
           "visitorHits": {
             "6da6373a-b179-4248-bc60-61db8a996615": 1
           }
+        },
+        "2026-08-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8": 1
+          }
         }
       },
       "totals": {
-        "pv": 19,
-        "uv": 19,
+        "pv": 20,
+        "uv": 20,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2866,7 +2904,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-28T14:11:17.627Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8"
+      ]
     },
     "desk-pulse": {
       "url": "https://desk-pulse.vercel.app",
@@ -6591,6 +6632,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
+      "siteId": "cron-heartbeat",
+      "firstSeen": "2026-08-29T05:20:08.119Z",
+      "lastSeen": "2026-08-29T05:20:08.119Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "b4da2aed-6053-4039-8c32-d2a3bf7c4e33",
       "siteId": "visa-guide",
