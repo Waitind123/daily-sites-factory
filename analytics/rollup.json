@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T05:53:23.946Z",
+  "updatedAt": "2026-08-29T05:55:09.791Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2847,47 +2847,50 @@
           }
         },
         "2026-08-29": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8"
+            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
+            "a1defd57-9be9-4093-ac47-4b59d209af1c"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8": 1
+            "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8": 1,
+            "a1defd57-9be9-4093-ac47-4b59d209af1c": 1
           }
         }
       },
       "totals": {
-        "pv": 20,
-        "uv": 20,
+        "pv": 21,
+        "uv": 21,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2906,7 +2909,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8"
+        "8eeb5274-0f64-42e3-a94a-2d0b8fdcd0a8",
+        "a1defd57-9be9-4093-ac47-4b59d209af1c"
       ]
     },
     "desk-pulse": {
@@ -6671,6 +6675,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a1defd57-9be9-4093-ac47-4b59d209af1c",
+      "siteId": "cron-heartbeat",
+      "firstSeen": "2026-08-29T05:55:09.635Z",
+      "lastSeen": "2026-08-29T05:55:09.635Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3cb276c2-8481-47ea-8a31-e2508f64450b",
       "siteId": "intercom-pulse",
