@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T13:04:36.365Z",
+  "updatedAt": "2026-08-29T13:04:37.366Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5441,11 +5441,49 @@
           "visitorHits": {
             "98cf4232-7031-44ee-bcdf-e1c1f25cd676": 2
           }
+        },
+        "2026-08-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "46b64362-142c-4c61-83f9-705eda4efb2d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "46b64362-142c-4c61-83f9-705eda4efb2d": 1
+          }
         }
       },
       "totals": {
-        "pv": 17,
-        "uv": 11,
+        "pv": 18,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5462,7 +5500,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-29T08:50:05.051Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "46b64362-142c-4c61-83f9-705eda4efb2d"
+      ]
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
@@ -6847,6 +6888,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "46b64362-142c-4c61-83f9-705eda4efb2d",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-08-29T13:04:37.237Z",
+      "lastSeen": "2026-08-29T13:04:37.237Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "14095fd1-615a-40ef-8677-fac978fea3bb",
       "siteId": "coworking-finder",
