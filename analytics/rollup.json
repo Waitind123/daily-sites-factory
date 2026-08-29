@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T13:00:50.441Z",
+  "updatedAt": "2026-08-29T13:00:51.417Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4048,7 +4048,7 @@
           }
         },
         "2026-08-29": {
-          "pv": 3,
+          "pv": 4,
           "uv": 3,
           "trial": 0,
           "checkout": 0,
@@ -4060,43 +4060,44 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 3,
+              "/inbox": 1
             },
             "devices": {
-              "desktop": 2,
+              "desktop": 3,
               "mobile": 1
             },
             "locales": {
               "en": 2,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 2,
+              "UTC": 3,
               "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
               "13": 1,
               "14": 1,
-              "21": 1
+              "21": 2
             },
             "visitorTypes": {
               "new": 3,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "3cb276c2-8481-47ea-8a31-e2508f64450b": 1,
             "66841950-c779-4d44-9567-aeb1ccd47795": 1,
-            "988246b6-a62c-44f1-9705-1ac1b44ed51a": 1
+            "988246b6-a62c-44f1-9705-1ac1b44ed51a": 2
           }
         }
       },
       "totals": {
-        "pv": 45,
+        "pv": 46,
         "uv": 35,
         "trial": 0,
         "checkout": 0,
@@ -6749,9 +6750,9 @@
       "visitorId": "988246b6-a62c-44f1-9705-1ac1b44ed51a",
       "siteId": "intercom-pulse",
       "firstSeen": "2026-08-29T13:00:50.249Z",
-      "lastSeen": "2026-08-29T13:00:50.249Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-29T13:00:51.263Z",
+      "pageviews": 2,
+      "path": "/inbox",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
