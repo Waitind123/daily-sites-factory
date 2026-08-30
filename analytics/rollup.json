@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30T02:11:18.024Z",
+  "updatedAt": "2026-08-30T04:32:34.681Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6929,11 +6929,49 @@
           "visitorHits": {
             "754b2a91-2aa1-46c6-b359-fd7f7d4074c0": 1
           }
+        },
+        "2026-08-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "83e888bd-30f7-4f79-9ce2-41687561cd67"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/prefinery-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "83e888bd-30f7-4f79-9ce2-41687561cd67": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6950,7 +6988,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-29T08:50:20.958Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "83e888bd-30f7-4f79-9ce2-41687561cd67"
+      ]
     },
     "wcag-alt-text": {
       "url": "https://wcag-alt-text.vercel.app",
@@ -7029,6 +7070,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "83e888bd-30f7-4f79-9ce2-41687561cd67",
+      "siteId": "waitlist-pulse",
+      "firstSeen": "2026-08-30T04:32:34.341Z",
+      "lastSeen": "2026-08-30T04:32:34.341Z",
+      "pageviews": 1,
+      "path": "/guide/prefinery-alternative-indie-hackers",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "78b88ca2-64d3-4e07-b47c-6ed78b5eae1c",
       "siteId": "intercom-pulse",
