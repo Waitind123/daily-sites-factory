@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30T08:06:37.326Z",
+  "updatedAt": "2026-08-30T08:38:56.503Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4398,10 +4398,49 @@
     "meetup-alt": {
       "url": "https://meetup-alt.vercel.app",
       "name": "meetup-alt",
-      "daily": {},
+      "daily": {
+        "2026-08-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "cc672af5-771c-4845-baf0-108047358871"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Chicago": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "16": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "cc672af5-771c-4845-baf0-108047358871": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4418,7 +4457,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-30T08:06:16.655Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "cc672af5-771c-4845-baf0-108047358871"
+      ]
     },
     "meetup-host": {
       "url": "https://meetup-host.vercel.app",
@@ -7046,6 +7088,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "cc672af5-771c-4845-baf0-108047358871",
+      "siteId": "meetup-alt",
+      "firstSeen": "2026-08-30T08:38:56.223Z",
+      "lastSeen": "2026-08-30T08:38:56.223Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://yandex.com/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Chicago"
+    },
     {
       "visitorId": "health-watch-1788071914701",
       "siteId": "feature-vote",
