@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-29T22:49:30.642Z",
+  "updatedAt": "2026-08-30T00:19:02.567Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1179,11 +1179,49 @@
             "health-watch-1788028068958": 1,
             "health-watch-1788039797690": 1
           }
+        },
+        "2026-08-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1788049142371"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1788049142371": 1
+          }
         }
       },
       "totals": {
-        "pv": 256,
-        "uv": 238,
+        "pv": 257,
+        "uv": 239,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1207,7 +1245,8 @@
         "6522f702-66c9-4f68-aac5-eb3995cbd256",
         "health-watch-1788013663658",
         "health-watch-1788028068958",
-        "health-watch-1788039797690"
+        "health-watch-1788039797690",
+        "health-watch-1788049142371"
       ]
     },
     "affiliate-pulse": {
@@ -6943,6 +6982,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1788049142371",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-08-30T00:19:02.412Z",
+      "lastSeen": "2026-08-30T00:19:02.412Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "4a180d2c-a014-47d3-a86d-f89361827743",
       "siteId": "indie-tools",
