@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-30T05:07:25.523Z",
+  "updatedAt": "2026-08-30T05:13:16.008Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6931,53 +6931,57 @@
           }
         },
         "2026-08-30": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "83e888bd-30f7-4f79-9ce2-41687561cd67",
-            "938aaaff-92a9-4770-8eca-c112f74a40a7"
+            "938aaaff-92a9-4770-8eca-c112f74a40a7",
+            "2b495259-98c6-4460-b732-1d9f3ba15791"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/guide/prefinery-alternative-indie-hackers": 1,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 2
+              "desktop": 2,
+              "mobile": 1
             },
             "locales": {
               "ru": 1,
-              "en": 1
+              "en": 2
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
               "12": 1,
-              "13": 1
+              "13": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "83e888bd-30f7-4f79-9ce2-41687561cd67": 1,
-            "938aaaff-92a9-4770-8eca-c112f74a40a7": 1
+            "938aaaff-92a9-4770-8eca-c112f74a40a7": 1,
+            "2b495259-98c6-4460-b732-1d9f3ba15791": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6997,7 +7001,8 @@
       },
       "knownVisitors": [
         "83e888bd-30f7-4f79-9ce2-41687561cd67",
-        "938aaaff-92a9-4770-8eca-c112f74a40a7"
+        "938aaaff-92a9-4770-8eca-c112f74a40a7",
+        "2b495259-98c6-4460-b732-1d9f3ba15791"
       ]
     },
     "wcag-alt-text": {
@@ -7077,6 +7082,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2b495259-98c6-4460-b732-1d9f3ba15791",
+      "siteId": "waitlist-pulse",
+      "firstSeen": "2026-08-30T05:13:15.747Z",
+      "lastSeen": "2026-08-30T05:13:15.747Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "938aaaff-92a9-4770-8eca-c112f74a40a7",
       "siteId": "waitlist-pulse",
