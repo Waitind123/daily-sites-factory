@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T13:47:26.976Z",
+  "updatedAt": "2026-08-31T14:54:35.543Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4383,11 +4383,49 @@
             "21917f07-b35d-4c1f-bf9e-0ebf9616376b": 2,
             "a4e40d4b-e68a-467e-86e3-4c8a1d5244b9": 1
           }
+        },
+        "2026-08-31": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bf0cb6dc-7be4-44d5-87db-83f79d8c3424"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "bf0cb6dc-7be4-44d5-87db-83f79d8c3424": 1
+          }
         }
       },
       "totals": {
-        "pv": 52,
-        "uv": 40,
+        "pv": 53,
+        "uv": 41,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4404,7 +4442,10 @@
         "guideCount": 1,
         "lastChecked": "2026-08-31T08:24:13.390Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "bf0cb6dc-7be4-44d5-87db-83f79d8c3424"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -7273,6 +7314,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bf0cb6dc-7be4-44d5-87db-83f79d8c3424",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-08-31T14:54:35.222Z",
+      "lastSeen": "2026-08-31T14:54:35.222Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1788184046719",
       "siteId": "feature-vote",
