@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T14:58:36.491Z",
+  "updatedAt": "2026-08-31T14:58:37.590Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5923,7 +5923,7 @@
           }
         },
         "2026-08-31": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -5933,36 +5933,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/jobs": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "03f38909-0ae6-48d4-9360-9e6c21647560": 1
+            "03f38909-0ae6-48d4-9360-9e6c21647560": 2
           }
         }
       },
       "totals": {
-        "pv": 22,
+        "pv": 23,
         "uv": 14,
         "trial": 0,
         "checkout": 0,
@@ -7496,9 +7497,9 @@
       "visitorId": "03f38909-0ae6-48d4-9360-9e6c21647560",
       "siteId": "remote-jobs",
       "firstSeen": "2026-08-31T14:58:36.339Z",
-      "lastSeen": "2026-08-31T14:58:36.339Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-08-31T14:58:37.437Z",
+      "pageviews": 2,
+      "path": "/jobs",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
