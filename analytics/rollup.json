@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T23:50:11.526Z",
+  "updatedAt": "2026-09-01T05:06:06.913Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1296,11 +1296,49 @@
             "health-watch-1788206613217": 1,
             "health-watch-1788220211287": 1
           }
+        },
+        "2026-09-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1788239166696"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1788239166696": 1
+          }
         }
       },
       "totals": {
-        "pv": 271,
-        "uv": 252,
+        "pv": 272,
+        "uv": 253,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1323,7 +1361,8 @@
         "2ce911d3-f072-4f7a-b437-c816dc888e38",
         "e91f07dc-3c9e-48e4-867a-d72daf6d8309",
         "health-watch-1788206613217",
-        "health-watch-1788220211287"
+        "health-watch-1788220211287",
+        "health-watch-1788239166696"
       ]
     },
     "affiliate-pulse": {
@@ -7504,6 +7543,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1788239166696",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-01T05:06:06.744Z",
+      "lastSeen": "2026-09-01T05:06:06.744Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1788220211287",
       "siteId": "feature-vote",
