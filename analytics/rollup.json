@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T10:38:06.765Z",
+  "updatedAt": "2026-09-01T12:25:21.587Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4558,11 +4558,49 @@
             "bf0cb6dc-7be4-44d5-87db-83f79d8c3424": 1,
             "b74669ac-28aa-4efc-a003-2912067fa2d0": 2
           }
+        },
+        "2026-09-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5b51904c-81a3-4fcf-9a96-a0e913222028"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5b51904c-81a3-4fcf-9a96-a0e913222028": 1
+          }
         }
       },
       "totals": {
-        "pv": 55,
-        "uv": 42,
+        "pv": 56,
+        "uv": 43,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4579,7 +4617,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-01T07:33:04.355Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "5b51904c-81a3-4fcf-9a96-a0e913222028"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -7608,6 +7649,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5b51904c-81a3-4fcf-9a96-a0e913222028",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-01T12:25:21.262Z",
+      "lastSeen": "2026-09-01T12:25:21.262Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "bac95e7d-8354-41f8-8d99-59f324ac5035",
       "siteId": "wiki-pulse",
