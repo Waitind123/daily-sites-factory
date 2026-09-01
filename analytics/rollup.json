@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T10:05:08.298Z",
+  "updatedAt": "2026-09-01T10:38:06.765Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -7517,10 +7517,49 @@
     "wiki-pulse": {
       "url": "https://wiki-pulse-coral.vercel.app",
       "name": "wiki-pulse",
-      "daily": {},
+      "daily": {
+        "2026-09-01": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bac95e7d-8354-41f8-8d99-59f324ac5035"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/notion-obsidian-team-wiki-alternative": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "bac95e7d-8354-41f8-8d99-59f324ac5035": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7537,7 +7576,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-01T07:33:37.554Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "bac95e7d-8354-41f8-8d99-59f324ac5035"
+      ]
     },
     "zapier-pulse": {
       "url": "https://zapier-pulse.vercel.app",
@@ -7566,6 +7608,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bac95e7d-8354-41f8-8d99-59f324ac5035",
+      "siteId": "wiki-pulse",
+      "firstSeen": "2026-09-01T10:38:06.386Z",
+      "lastSeen": "2026-09-01T10:38:06.386Z",
+      "pageviews": 1,
+      "path": "/guide/notion-obsidian-team-wiki-alternative",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1788257108020",
       "siteId": "feature-vote",
