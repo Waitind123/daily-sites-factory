@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T18:41:23.396Z",
+  "updatedAt": "2026-09-02T21:05:26.133Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5181,10 +5181,49 @@
     "newsletter-stack": {
       "url": "https://newsletter-stack.vercel.app",
       "name": "Newsletter 工具对比",
-      "daily": {},
+      "daily": {
+        "2026-09-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5c8e1875-6a14-4f03-b687-64689799bff5"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/newsletter-tool-comparison-indie": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5c8e1875-6a14-4f03-b687-64689799bff5": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5201,7 +5240,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-02T07:01:50.655Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5c8e1875-6a14-4f03-b687-64689799bff5"
+      ]
     },
     "nomad-cities": {
       "url": "https://nomad-cities.vercel.app",
@@ -8130,6 +8172,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5c8e1875-6a14-4f03-b687-64689799bff5",
+      "siteId": "newsletter-stack",
+      "firstSeen": "2026-09-02T21:05:25.810Z",
+      "lastSeen": "2026-09-02T21:05:25.810Z",
+      "pageviews": 1,
+      "path": "/guide/newsletter-tool-comparison-indie",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1788374483103",
       "siteId": "feature-vote",
