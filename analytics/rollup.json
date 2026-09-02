@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:00:15.358Z",
+  "updatedAt": "2026-09-02T12:00:36.556Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4782,11 +4782,49 @@
             "5b51904c-81a3-4fcf-9a96-a0e913222028": 1,
             "abe3174d-00b2-45cd-8da8-65d48b719dc7": 2
           }
+        },
+        "2026-09-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0acbafeb-7b9f-4f82-882e-0954495e383b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0acbafeb-7b9f-4f82-882e-0954495e383b": 1
+          }
         }
       },
       "totals": {
-        "pv": 58,
-        "uv": 44,
+        "pv": 59,
+        "uv": 45,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4803,7 +4841,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-02T07:01:46.400Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "0acbafeb-7b9f-4f82-882e-0954495e383b"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -7902,6 +7943,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0acbafeb-7b9f-4f82-882e-0954495e383b",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-02T12:00:36.444Z",
+      "lastSeen": "2026-09-02T12:00:36.444Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "11cf78a6-2554-4e36-b88d-a3a447ab920b",
       "siteId": "churn-pulse",
