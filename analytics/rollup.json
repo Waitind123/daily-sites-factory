@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T12:04:04.856Z",
+  "updatedAt": "2026-09-02T12:04:16.834Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3160,11 +3160,49 @@
           "visitorHits": {
             "b55fe050-8d23-4164-a84c-b5219f12feea": 2
           }
+        },
+        "2026-09-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4579f12d-0ccf-4bbb-88c2-81fe6f399a37"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4579f12d-0ccf-4bbb-88c2-81fe6f399a37": 1
+          }
         }
       },
       "totals": {
-        "pv": 24,
-        "uv": 14,
+        "pv": 25,
+        "uv": 15,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3181,7 +3219,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-02T07:01:32.680Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "4579f12d-0ccf-4bbb-88c2-81fe6f399a37"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -8033,6 +8074,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4579f12d-0ccf-4bbb-88c2-81fe6f399a37",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-09-02T12:04:16.642Z",
+      "lastSeen": "2026-09-02T12:04:16.642Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "2939e9dc-3bdb-4265-8300-e69f3e0872be",
       "siteId": "ai-headshots",
