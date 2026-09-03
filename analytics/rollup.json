@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-02T23:04:35.896Z",
+  "updatedAt": "2026-09-03T00:14:48.426Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1417,11 +1417,49 @@
             "health-watch-1788374483103": 1,
             "health-watch-1788385720669": 1
           }
+        },
+        "2026-09-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1788394488188"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1788394488188": 1
+          }
         }
       },
       "totals": {
-        "pv": 287,
-        "uv": 267,
+        "pv": 288,
+        "uv": 268,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1445,7 +1483,8 @@
         "3defe525-023a-4ede-9de0-160bc13c5a06",
         "health-watch-1788359320810",
         "health-watch-1788374483103",
-        "health-watch-1788385720669"
+        "health-watch-1788385720669",
+        "health-watch-1788394488188"
       ]
     },
     "affiliate-pulse": {
@@ -8218,6 +8257,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1788394488188",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-03T00:14:48.253Z",
+      "lastSeen": "2026-09-03T00:14:48.253Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "95f80738-9990-46e6-b5c0-140a2b7fbd33",
       "siteId": "page-split",
