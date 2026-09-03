@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:02:56.750Z",
+  "updatedAt": "2026-09-03T12:02:57.507Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5054,47 +5054,51 @@
           }
         },
         "2026-09-03": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4040871f-f3b1-4a21-99f3-8ccc56fccbd0"
+            "4040871f-f3b1-4a21-99f3-8ccc56fccbd0",
+            "10037f59-ee72-4dc4-abb0-4c409b94f9ff"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "19": 1
+              "19": 1,
+              "20": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "4040871f-f3b1-4a21-99f3-8ccc56fccbd0": 1
+            "4040871f-f3b1-4a21-99f3-8ccc56fccbd0": 1,
+            "10037f59-ee72-4dc4-abb0-4c409b94f9ff": 1
           }
         }
       },
       "totals": {
-        "pv": 62,
-        "uv": 47,
+        "pv": 63,
+        "uv": 48,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5113,7 +5117,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "4040871f-f3b1-4a21-99f3-8ccc56fccbd0"
+        "4040871f-f3b1-4a21-99f3-8ccc56fccbd0",
+        "10037f59-ee72-4dc4-abb0-4c409b94f9ff"
       ]
     },
     "invoice-desk": {
@@ -6725,49 +6730,11 @@
           "visitorHits": {
             "c6ef1c1d-43db-4963-b2f2-2e5c41bfc764": 1
           }
-        },
-        "2026-09-03": {
-          "pv": 1,
-          "uv": 1,
-          "trial": 0,
-          "checkout": 0,
-          "purchase": 0,
-          "visitors": [
-            "962eb98b-c631-49fd-88c4-bfbc79e30a95"
-          ],
-          "audience": {
-            "referrers": {
-              "直接访问": 1
-            },
-            "paths": {
-              "/": 1
-            },
-            "devices": {
-              "desktop": 1
-            },
-            "locales": {
-              "zh": 1
-            },
-            "timezones": {
-              "UTC": 1
-            },
-            "utmSources": {},
-            "hours": {
-              "20": 1
-            },
-            "visitorTypes": {
-              "new": 1,
-              "returning": 0
-            }
-          },
-          "visitorHits": {
-            "962eb98b-c631-49fd-88c4-bfbc79e30a95": 1
-          }
         }
       },
       "totals": {
-        "pv": 26,
-        "uv": 17,
+        "pv": 25,
+        "uv": 16,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6784,10 +6751,7 @@
         "guideCount": 1,
         "lastChecked": "2026-09-03T07:06:03.624Z",
         "score": 100
-      },
-      "knownVisitors": [
-        "962eb98b-c631-49fd-88c4-bfbc79e30a95"
-      ]
+      }
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
@@ -8450,12 +8414,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "962eb98b-c631-49fd-88c4-bfbc79e30a95",
-      "siteId": "remote-jobs",
-      "firstSeen": "2026-09-03T12:02:56.593Z",
-      "lastSeen": "2026-09-03T12:02:56.593Z",
+      "visitorId": "10037f59-ee72-4dc4-abb0-4c409b94f9ff",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-03T12:02:57.374Z",
+      "lastSeen": "2026-09-03T12:02:57.374Z",
       "pageviews": 1,
-      "path": "/",
+      "path": "/join",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
