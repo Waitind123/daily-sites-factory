@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:47:56.939Z",
+  "updatedAt": "2026-09-03T12:50:13.580Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6015,47 +6015,51 @@
       "name": "reddit-pulse",
       "daily": {
         "2026-09-03": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "9594963b-6e68-41f6-94ca-217e7ccdcfb1"
+            "9594963b-6e68-41f6-94ca-217e7ccdcfb1",
+            "591d424e-b9b4-4472-ac0a-ea2bc0506ef2"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "mobile": 1
+              "mobile": 1,
+              "desktop": 1
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 1,
+              "America/New_York": 1
             },
             "utmSources": {},
             "hours": {
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "9594963b-6e68-41f6-94ca-217e7ccdcfb1": 1
+            "9594963b-6e68-41f6-94ca-217e7ccdcfb1": 1,
+            "591d424e-b9b4-4472-ac0a-ea2bc0506ef2": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6074,7 +6078,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "9594963b-6e68-41f6-94ca-217e7ccdcfb1"
+        "9594963b-6e68-41f6-94ca-217e7ccdcfb1",
+        "591d424e-b9b4-4472-ac0a-ea2bc0506ef2"
       ]
     },
     "reddit-radar": {
@@ -8455,6 +8460,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "591d424e-b9b4-4472-ac0a-ea2bc0506ef2",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-09-03T12:50:13.372Z",
+      "lastSeen": "2026-09-03T12:50:13.372Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/New_York"
+    },
     {
       "visitorId": "9594963b-6e68-41f6-94ca-217e7ccdcfb1",
       "siteId": "reddit-pulse",
