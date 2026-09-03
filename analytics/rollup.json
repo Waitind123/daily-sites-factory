@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T18:37:39.868Z",
+  "updatedAt": "2026-09-03T21:18:47.039Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2652,10 +2652,49 @@
     "churn-reason-pulse": {
       "url": "https://churn-reason-pulse.vercel.app",
       "name": "churn-reason-pulse",
-      "daily": {},
+      "daily": {
+        "2026-09-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7cc69e63-d9d3-4e29-980d-c32dd2471f0c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/saas-churn-reason-tracking-chartmogul-alternative": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7cc69e63-d9d3-4e29-980d-c32dd2471f0c": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2672,7 +2711,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-03T07:05:10.988Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "7cc69e63-d9d3-4e29-980d-c32dd2471f0c"
+      ]
     },
     "content-pulse": {
       "url": "https://content-pulse-murex.vercel.app",
@@ -8516,6 +8558,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7cc69e63-d9d3-4e29-980d-c32dd2471f0c",
+      "siteId": "churn-reason-pulse",
+      "firstSeen": "2026-09-03T21:18:46.682Z",
+      "lastSeen": "2026-09-03T21:18:46.682Z",
+      "pageviews": 1,
+      "path": "/guide/saas-churn-reason-tracking-chartmogul-alternative",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1788460659630",
       "siteId": "feature-vote",
