@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:50:13.580Z",
+  "updatedAt": "2026-09-03T13:01:14.610Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6942,10 +6942,49 @@
     "seo-rank-tracker": {
       "url": "https://seo-rank-tracker-lemon.vercel.app",
       "name": "seo-rank-tracker",
-      "daily": {},
+      "daily": {
+        "2026-09-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5530fb88-c5fd-490f-a654-1d8f57962752"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5530fb88-c5fd-490f-a654-1d8f57962752": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6962,7 +7001,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-03T07:06:08.908Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5530fb88-c5fd-490f-a654-1d8f57962752"
+      ]
     },
     "sign-pulse": {
       "url": "https://sign-pulse.vercel.app",
@@ -8460,6 +8502,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5530fb88-c5fd-490f-a654-1d8f57962752",
+      "siteId": "seo-rank-tracker",
+      "firstSeen": "2026-09-03T13:01:14.264Z",
+      "lastSeen": "2026-09-03T13:01:14.264Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "591d424e-b9b4-4472-ac0a-ea2bc0506ef2",
       "siteId": "reddit-pulse",
