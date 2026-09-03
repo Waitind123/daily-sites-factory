@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T12:02:57.507Z",
+  "updatedAt": "2026-09-03T12:47:56.939Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6013,10 +6013,49 @@
     "reddit-pulse": {
       "url": "https://reddit-pulse-six.vercel.app",
       "name": "reddit-pulse",
-      "daily": {},
+      "daily": {
+        "2026-09-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "9594963b-6e68-41f6-94ca-217e7ccdcfb1"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "9594963b-6e68-41f6-94ca-217e7ccdcfb1": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6033,7 +6072,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-03T07:05:59.382Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "9594963b-6e68-41f6-94ca-217e7ccdcfb1"
+      ]
     },
     "reddit-radar": {
       "url": "https://reddit-radar-eta.vercel.app",
@@ -8413,6 +8455,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9594963b-6e68-41f6-94ca-217e7ccdcfb1",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-09-03T12:47:56.579Z",
+      "lastSeen": "2026-09-03T12:47:56.579Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "10037f59-ee72-4dc4-abb0-4c409b94f9ff",
       "siteId": "intercom-pulse",
