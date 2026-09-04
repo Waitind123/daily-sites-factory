@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T04:30:57.276Z",
+  "updatedAt": "2026-09-04T04:31:57.058Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4209,10 +4209,49 @@
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
       "name": "funnel-pulse",
-      "daily": {},
+      "daily": {
+        "2026-09-04": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "932f27d6-7c53-4422-a723-8e22dd44ed7e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/mixpanel-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "932f27d6-7c53-4422-a723-8e22dd44ed7e": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4229,7 +4268,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-03T07:05:28.246Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "932f27d6-7c53-4422-a723-8e22dd44ed7e"
+      ]
     },
     "gdpr-pulse": {
       "url": "https://gdpr-pulse.vercel.app",
@@ -8605,6 +8647,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "932f27d6-7c53-4422-a723-8e22dd44ed7e",
+      "siteId": "funnel-pulse",
+      "firstSeen": "2026-09-04T04:31:56.903Z",
+      "lastSeen": "2026-09-04T04:31:56.903Z",
+      "pageviews": 1,
+      "path": "/guide/mixpanel-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1788496256972",
       "siteId": "feature-vote",
