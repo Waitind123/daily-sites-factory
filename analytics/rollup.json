@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-05T00:04:33.543Z",
+  "updatedAt": "2026-09-05T03:06:18.755Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6369,11 +6369,49 @@
             "591d424e-b9b4-4472-ac0a-ea2bc0506ef2": 1,
             "1267d184-7423-493f-8ee6-187d087ea7a6": 1
           }
+        },
+        "2026-09-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5de5e99a-7057-444a-8ab6-2105300b82d0"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5de5e99a-7057-444a-8ab6-2105300b82d0": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6390,7 +6428,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-04T07:08:37.188Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5de5e99a-7057-444a-8ab6-2105300b82d0"
+      ]
     },
     "reddit-radar": {
       "url": "https://reddit-radar-eta.vercel.app",
@@ -8847,6 +8888,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5de5e99a-7057-444a-8ab6-2105300b82d0",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-09-05T03:06:18.466Z",
+      "lastSeen": "2026-09-05T03:06:18.466Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1788566673333",
       "siteId": "feature-vote",
