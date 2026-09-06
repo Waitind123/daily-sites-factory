@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-06T00:40:29.543Z",
+  "updatedAt": "2026-09-06T00:56:03.733Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1611,11 +1611,49 @@
             "health-watch-1788640001330": 1,
             "health-watch-1788648895739": 1
           }
+        },
+        "2026-09-06": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1788656163511"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1788656163511": 1
+          }
         }
       },
       "totals": {
-        "pv": 315,
-        "uv": 293,
+        "pv": 316,
+        "uv": 294,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1641,7 +1679,8 @@
         "health-watch-1788624235516",
         "health-watch-1788632230293",
         "health-watch-1788640001330",
-        "health-watch-1788648895739"
+        "health-watch-1788648895739",
+        "health-watch-1788656163511"
       ]
     },
     "affiliate-pulse": {
@@ -9159,6 +9198,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1788656163511",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-06T00:56:03.585Z",
+      "lastSeen": "2026-09-06T00:56:03.585Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "ba2c3ef7-3e05-49f5-974f-751615b18f54",
       "siteId": "ai-headshots",
