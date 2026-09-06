@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-06T10:54:46.301Z",
+  "updatedAt": "2026-09-06T11:34:18.063Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2475,47 +2475,52 @@
           }
         },
         "2026-09-06": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ba2c3ef7-3e05-49f5-974f-751615b18f54"
+            "ba2c3ef7-3e05-49f5-974f-751615b18f54",
+            "b879b046-ada8-4c13-9110-90cc7da512de"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/success": 1
+              "/success": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 1,
+              "19": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ba2c3ef7-3e05-49f5-974f-751615b18f54": 1
+            "ba2c3ef7-3e05-49f5-974f-751615b18f54": 1,
+            "b879b046-ada8-4c13-9110-90cc7da512de": 1
           }
         }
       },
       "totals": {
-        "pv": 33,
-        "uv": 31,
+        "pv": 34,
+        "uv": 32,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2532,7 +2537,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-06T07:02:36.665Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b879b046-ada8-4c13-9110-90cc7da512de"
+      ]
     },
     "ai-overview-rank": {
       "url": "https://ai-overview-rank.vercel.app",
@@ -9223,6 +9231,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b879b046-ada8-4c13-9110-90cc7da512de",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-09-06T11:34:17.877Z",
+      "lastSeen": "2026-09-06T11:34:17.877Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1788692086094",
       "siteId": "feature-vote",
