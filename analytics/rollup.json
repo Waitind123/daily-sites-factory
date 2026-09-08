@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T05:31:18.153Z",
+  "updatedAt": "2026-09-08T05:32:04.330Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1738,47 +1738,53 @@
           }
         },
         "2026-09-08": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "health-watch-1788829924321"
+            "health-watch-1788829924321",
+            "6a836165-67ab-48e7-b164-c5fcf6c5e390"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "unknown": 1
+              "unknown": 1,
+              "desktop": 1
             },
             "locales": {
-              "unknown": 1
+              "unknown": 1,
+              "zh": 1
             },
             "timezones": {
-              "unknown": 1
+              "unknown": 1,
+              "Asia/Shanghai": 1
             },
             "utmSources": {},
             "hours": {
-              "9": 1
+              "9": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "health-watch-1788829924321": 1
+            "health-watch-1788829924321": 1,
+            "6a836165-67ab-48e7-b164-c5fcf6c5e390": 1
           }
         }
       },
       "totals": {
-        "pv": 333,
-        "uv": 310,
+        "pv": 334,
+        "uv": 311,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1803,7 +1809,8 @@
         "health-watch-1788796415449",
         "health-watch-1788811038814",
         "health-watch-1788821397080",
-        "health-watch-1788829924321"
+        "health-watch-1788829924321",
+        "6a836165-67ab-48e7-b164-c5fcf6c5e390"
       ]
     },
     "affiliate-pulse": {
@@ -9689,6 +9696,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6a836165-67ab-48e7-b164-c5fcf6c5e390",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-08T05:32:04.176Z",
+      "lastSeen": "2026-09-08T05:32:04.176Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "d5da4856-d0fc-4d28-a789-7210ca63b9a5",
       "siteId": "visa-live",
