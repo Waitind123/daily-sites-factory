@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T12:06:51.208Z",
+  "updatedAt": "2026-09-08T15:07:50.467Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6512,11 +6512,49 @@
           "visitorHits": {
             "db8a83e7-1f82-484d-8ada-9cccf944575b": 1
           }
+        },
+        "2026-09-08": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0d3189e5-ea29-4213-887d-9e74cd0f5e5b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/best-digital-nomad-cities": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "23": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0d3189e5-ea29-4213-887d-9e74cd0f5e5b": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6533,7 +6571,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-08T07:07:27.874Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0d3189e5-ea29-4213-887d-9e74cd0f5e5b"
+      ]
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
@@ -9904,6 +9945,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0d3189e5-ea29-4213-887d-9e74cd0f5e5b",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-09-08T15:07:50.107Z",
+      "lastSeen": "2026-09-08T15:07:50.107Z",
+      "pageviews": 1,
+      "path": "/guide/best-digital-nomad-cities",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "3dbc289b-3c70-4d75-9cb7-7b67110a0cf6",
       "siteId": "feature-vote",
