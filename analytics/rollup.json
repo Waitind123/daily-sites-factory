@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T12:06:46.876Z",
+  "updatedAt": "2026-09-08T12:06:48.600Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2697,47 +2697,49 @@
           }
         },
         "2026-09-08": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "366faf9d-7fd6-474e-90fe-c0755c7eeb44"
+            "366faf9d-7fd6-474e-90fe-c0755c7eeb44",
+            "d0bed2d2-07de-4e2c-97ca-fb06aafe0516"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "366faf9d-7fd6-474e-90fe-c0755c7eeb44": 1
+            "366faf9d-7fd6-474e-90fe-c0755c7eeb44": 1,
+            "d0bed2d2-07de-4e2c-97ca-fb06aafe0516": 1
           }
         }
       },
       "totals": {
-        "pv": 38,
-        "uv": 36,
+        "pv": 39,
+        "uv": 37,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2756,7 +2758,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "366faf9d-7fd6-474e-90fe-c0755c7eeb44"
+        "366faf9d-7fd6-474e-90fe-c0755c7eeb44",
+        "d0bed2d2-07de-4e2c-97ca-fb06aafe0516"
       ]
     },
     "ai-overview-rank": {
@@ -9898,6 +9901,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d0bed2d2-07de-4e2c-97ca-fb06aafe0516",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-09-08T12:06:48.461Z",
+      "lastSeen": "2026-09-08T12:06:48.461Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f123f4c1-743d-4724-8fd1-88ab10d5e0ea",
       "siteId": "remote-jobs",
