@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T05:46:04.100Z",
+  "updatedAt": "2026-09-08T05:57:44.215Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -1738,53 +1738,55 @@
           }
         },
         "2026-09-08": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1788829924321",
-            "6a836165-67ab-48e7-b164-c5fcf6c5e390"
+            "6a836165-67ab-48e7-b164-c5fcf6c5e390",
+            "health-watch-1788847063974"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "unknown": 1,
+              "unknown": 2,
               "desktop": 1
             },
             "locales": {
-              "unknown": 1,
+              "unknown": 2,
               "zh": 1
             },
             "timezones": {
-              "unknown": 1,
+              "unknown": 2,
               "Asia/Shanghai": 1
             },
             "utmSources": {},
             "hours": {
               "9": 1,
-              "13": 1
+              "13": 2
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1788829924321": 1,
-            "6a836165-67ab-48e7-b164-c5fcf6c5e390": 1
+            "6a836165-67ab-48e7-b164-c5fcf6c5e390": 1,
+            "health-watch-1788847063974": 1
           }
         }
       },
       "totals": {
-        "pv": 334,
-        "uv": 311,
+        "pv": 335,
+        "uv": 312,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -1810,7 +1812,8 @@
         "health-watch-1788811038814",
         "health-watch-1788821397080",
         "health-watch-1788829924321",
-        "6a836165-67ab-48e7-b164-c5fcf6c5e390"
+        "6a836165-67ab-48e7-b164-c5fcf6c5e390",
+        "health-watch-1788847063974"
       ]
     },
     "affiliate-pulse": {
@@ -9696,6 +9699,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1788847063974",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-08T05:57:44.061Z",
+      "lastSeen": "2026-09-08T05:57:44.061Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "d5da4856-d0fc-4d28-a789-7210ca63b9a5",
       "siteId": "visa-live",
