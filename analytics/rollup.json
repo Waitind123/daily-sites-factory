@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T01:12:04.528Z",
+  "updatedAt": "2026-09-08T05:17:25.939Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9347,11 +9347,49 @@
           "visitorHits": {
             "c3137fcd-c00d-4a9c-94ff-0cd85ded2276": 1
           }
+        },
+        "2026-09-08": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d5da4856-d0fc-4d28-a789-7210ca63b9a5"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Australia/Sydney": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d5da4856-d0fc-4d28-a789-7210ca63b9a5": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9368,7 +9406,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-07T07:13:28.241Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d5da4856-d0fc-4d28-a789-7210ca63b9a5"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -9648,6 +9689,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d5da4856-d0fc-4d28-a789-7210ca63b9a5",
+      "siteId": "visa-live",
+      "firstSeen": "2026-09-08T05:17:25.624Z",
+      "lastSeen": "2026-09-08T05:17:25.624Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://www.bing.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Australia/Sydney"
+    },
     {
       "visitorId": "health-watch-1788829924321",
       "siteId": "feature-vote",
