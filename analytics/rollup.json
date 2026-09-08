@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T05:32:04.330Z",
+  "updatedAt": "2026-09-08T05:46:04.100Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9356,7 +9356,7 @@
           }
         },
         "2026-09-08": {
-          "pv": 3,
+          "pv": 4,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -9366,36 +9366,36 @@
           ],
           "audience": {
             "referrers": {
-              "搜索引擎": 3
+              "搜索引擎": 4
             },
             "paths": {
-              "/": 3
+              "/": 4
             },
             "devices": {
-              "desktop": 3
+              "desktop": 4
             },
             "locales": {
-              "en": 3
+              "en": 4
             },
             "timezones": {
-              "Australia/Sydney": 3
+              "Australia/Sydney": 4
             },
             "utmSources": {},
             "hours": {
-              "13": 3
+              "13": 4
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 2
+              "returning": 3
             }
           },
           "visitorHits": {
-            "d5da4856-d0fc-4d28-a789-7210ca63b9a5": 3
+            "d5da4856-d0fc-4d28-a789-7210ca63b9a5": 4
           }
         }
       },
       "totals": {
-        "pv": 4,
+        "pv": 5,
         "uv": 2,
         "trial": 0,
         "checkout": 0,
@@ -9697,6 +9697,18 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "d5da4856-d0fc-4d28-a789-7210ca63b9a5",
+      "siteId": "visa-live",
+      "firstSeen": "2026-09-08T05:17:25.624Z",
+      "lastSeen": "2026-09-08T05:46:03.799Z",
+      "pageviews": 4,
+      "path": "/",
+      "referrer": "https://www.bing.com/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Australia/Sydney"
+    },
+    {
       "visitorId": "6a836165-67ab-48e7-b164-c5fcf6c5e390",
       "siteId": "feature-vote",
       "firstSeen": "2026-09-08T05:32:04.176Z",
@@ -9706,18 +9718,6 @@
       "locale": "zh",
       "device": "desktop",
       "timezone": "Asia/Shanghai"
-    },
-    {
-      "visitorId": "d5da4856-d0fc-4d28-a789-7210ca63b9a5",
-      "siteId": "visa-live",
-      "firstSeen": "2026-09-08T05:17:25.624Z",
-      "lastSeen": "2026-09-08T05:31:18.011Z",
-      "pageviews": 3,
-      "path": "/",
-      "referrer": "https://www.bing.com/",
-      "locale": "en",
-      "device": "desktop",
-      "timezone": "Australia/Sydney"
     },
     {
       "visitorId": "health-watch-1788829924321",
