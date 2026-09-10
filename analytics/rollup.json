@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T09:18:06.378Z",
+  "updatedAt": "2026-09-10T09:38:11.443Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6326,11 +6326,49 @@
             "e3669c8d-ba0c-4605-8f56-1ef5107c5f44": 1,
             "090d9a42-4860-4180-871f-c314602a1f86": 1
           }
+        },
+        "2026-09-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a0c0b23d-a76b-423a-bdd7-adb6b03da2fb"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "mobile": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a0c0b23d-a76b-423a-bdd7-adb6b03da2fb": 1
+          }
         }
       },
       "totals": {
-        "pv": 82,
-        "uv": 62,
+        "pv": 83,
+        "uv": 63,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6347,7 +6385,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-10T07:13:05.419Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a0c0b23d-a76b-423a-bdd7-adb6b03da2fb"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -10321,6 +10362,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a0c0b23d-a76b-423a-bdd7-adb6b03da2fb",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-10T09:38:11.111Z",
+      "lastSeen": "2026-09-10T09:38:11.111Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "02af52be-e9fd-450e-959a-3a088fbdc8a5",
       "siteId": "pain-radar",
