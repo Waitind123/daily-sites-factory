@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T07:13:39.124Z",
+  "updatedAt": "2026-09-10T08:38:25.532Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6917,47 +6917,54 @@
           }
         },
         "2026-09-10": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "aa42055f-9539-499a-809b-f1e65fb860fe"
+            "aa42055f-9539-499a-809b-f1e65fb860fe",
+            "1e705d46-0c82-49de-8824-345d426d114d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 1,
+              "搜索引擎": 1
             },
             "paths": {
-              "/guide/cross-platform-pain-radar-indie-hackers": 1
+              "/guide/cross-platform-pain-radar-indie-hackers": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "ru": 1
             },
             "timezones": {
-              "Asia/Shanghai": 1
+              "Asia/Shanghai": 1,
+              "Europe/Moscow": 1
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 1,
+              "16": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "aa42055f-9539-499a-809b-f1e65fb860fe": 1
+            "aa42055f-9539-499a-809b-f1e65fb860fe": 1,
+            "1e705d46-0c82-49de-8824-345d426d114d": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6974,7 +6981,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-10T07:13:11.970Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "1e705d46-0c82-49de-8824-345d426d114d"
+      ]
     },
     "pay-once-pulse": {
       "url": "https://pay-once-pulse.vercel.app",
@@ -10301,6 +10311,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1e705d46-0c82-49de-8824-345d426d114d",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-09-10T08:38:25.233Z",
+      "lastSeen": "2026-09-10T08:38:25.233Z",
+      "pageviews": 1,
+      "path": "/",
+      "referrer": "https://yandex.ru/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "aa42055f-9539-499a-809b-f1e65fb860fe",
       "siteId": "pain-radar",
