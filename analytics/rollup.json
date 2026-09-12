@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-12T11:34:46.475Z",
+  "updatedAt": "2026-09-12T11:34:47.650Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6756,7 +6756,7 @@
           }
         },
         "2026-09-12": {
-          "pv": 2,
+          "pv": 3,
           "uv": 2,
           "trial": 0,
           "checkout": 0,
@@ -6767,37 +6767,38 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/inbox": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 3
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "19": 2
+              "19": 3
             },
             "visitorTypes": {
               "new": 2,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "38ce1c99-33c7-4631-97c4-8f2c029bb02f": 1,
-            "6102bc87-f60c-44cd-94fa-74e3cc605344": 1
+            "6102bc87-f60c-44cd-94fa-74e3cc605344": 2
           }
         }
       },
       "totals": {
-        "pv": 90,
+        "pv": 91,
         "uv": 69,
         "trial": 0,
         "checkout": 0,
@@ -10986,9 +10987,9 @@
       "visitorId": "6102bc87-f60c-44cd-94fa-74e3cc605344",
       "siteId": "intercom-pulse",
       "firstSeen": "2026-09-12T11:34:46.324Z",
-      "lastSeen": "2026-09-12T11:34:46.324Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-09-12T11:34:47.510Z",
+      "pageviews": 2,
+      "path": "/inbox",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
