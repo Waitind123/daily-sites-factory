@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T13:46:22.044Z",
+  "updatedAt": "2026-09-14T14:07:45.096Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4971,11 +4971,49 @@
           "visitorHits": {
             "b313e7c2-a168-446b-ada7-fa8a04c15129": 1
           }
+        },
+        "2026-09-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "20d261bd-9597-4242-9a8a-74bd6109bd80"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "20d261bd-9597-4242-9a8a-74bd6109bd80": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4992,7 +5030,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-14T07:46:11.108Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "20d261bd-9597-4242-9a8a-74bd6109bd80"
+      ]
     },
     "cron-heartbeat": {
       "url": "https://cron-heartbeat.vercel.app",
@@ -11552,6 +11593,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "20d261bd-9597-4242-9a8a-74bd6109bd80",
+      "siteId": "coworking-pass",
+      "firstSeen": "2026-09-14T14:07:44.742Z",
+      "lastSeen": "2026-09-14T14:07:44.742Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "1418a68d-f708-4e69-a3a9-d42c6f948263",
       "siteId": "remote-jobs",
