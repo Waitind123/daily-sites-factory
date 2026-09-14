@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T18:37:41.845Z",
+  "updatedAt": "2026-09-14T19:45:44.629Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9800,10 +9800,49 @@
     "status-embed-lite": {
       "url": "https://status-embed-lite.vercel.app",
       "name": "极简状态页",
-      "daily": {},
+      "daily": {
+        "2026-09-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "739c6105-ee59-45ea-8ef7-a07a3a5f3d84"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "3": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "739c6105-ee59-45ea-8ef7-a07a3a5f3d84": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9820,7 +9859,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-14T07:46:44.721Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "739c6105-ee59-45ea-8ef7-a07a3a5f3d84"
+      ]
     },
     "status-lite-alt": {
       "url": "https://status-lite-alt.vercel.app",
@@ -11597,6 +11639,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "739c6105-ee59-45ea-8ef7-a07a3a5f3d84",
+      "siteId": "status-embed-lite",
+      "firstSeen": "2026-09-14T19:45:44.283Z",
+      "lastSeen": "2026-09-14T19:45:44.283Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1789411061606",
       "siteId": "feature-vote",
