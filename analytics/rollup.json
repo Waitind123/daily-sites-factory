@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T21:07:26.432Z",
+  "updatedAt": "2026-09-16T21:45:41.975Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5736,47 +5736,50 @@
       "name": "dunning-pulse",
       "daily": {
         "2026-09-16": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "ba3cd319-8701-420f-bc51-76163c722132"
+            "ba3cd319-8701-420f-bc51-76163c722132",
+            "47c2fda7-0b57-4b2f-842d-706941c8f328"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/legal/privacy": 1
+              "/legal/privacy": 1,
+              "/legal/terms": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 2
             },
             "utmSources": {},
             "hours": {
-              "5": 1
+              "5": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "ba3cd319-8701-420f-bc51-76163c722132": 1
+            "ba3cd319-8701-420f-bc51-76163c722132": 1,
+            "47c2fda7-0b57-4b2f-842d-706941c8f328": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5795,7 +5798,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "ba3cd319-8701-420f-bc51-76163c722132"
+        "ba3cd319-8701-420f-bc51-76163c722132",
+        "47c2fda7-0b57-4b2f-842d-706941c8f328"
       ]
     },
     "email-pulse": {
@@ -12282,6 +12286,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "47c2fda7-0b57-4b2f-842d-706941c8f328",
+      "siteId": "dunning-pulse",
+      "firstSeen": "2026-09-16T21:45:41.611Z",
+      "lastSeen": "2026-09-16T21:45:41.611Z",
+      "pageviews": 1,
+      "path": "/legal/terms",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "ba3cd319-8701-420f-bc51-76163c722132",
       "siteId": "dunning-pulse",
