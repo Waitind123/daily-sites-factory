@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T16:53:45.146Z",
+  "updatedAt": "2026-09-16T17:26:26.479Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -10415,10 +10415,49 @@
     "stripe-pulse-lite": {
       "url": "https://stripe-pulse-lite.vercel.app",
       "name": "stripe-pulse-lite",
-      "daily": {},
+      "daily": {
+        "2026-09-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5df1bb18-8998-442c-b097-9bd61787b69c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/baremetrics-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "1": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5df1bb18-8998-442c-b097-9bd61787b69c": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10435,7 +10474,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-16T07:28:29.152Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "5df1bb18-8998-442c-b097-9bd61787b69c"
+      ]
     },
     "team-headshots": {
       "url": "https://team-headshots-phi.vercel.app",
@@ -12147,6 +12189,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5df1bb18-8998-442c-b097-9bd61787b69c",
+      "siteId": "stripe-pulse-lite",
+      "firstSeen": "2026-09-16T17:26:26.125Z",
+      "lastSeen": "2026-09-16T17:26:26.125Z",
+      "pageviews": 1,
+      "path": "/guide/baremetrics-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1789577624943",
       "siteId": "feature-vote",
