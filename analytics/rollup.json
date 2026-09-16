@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T21:19:30.787Z",
+  "updatedAt": "2026-09-16T00:18:36.571Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2236,11 +2236,49 @@
             "health-watch-1789495915580": 1,
             "health-watch-1789507170586": 1
           }
+        },
+        "2026-09-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1789517916341"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1789517916341": 1
+          }
         }
       },
       "totals": {
-        "pv": 406,
-        "uv": 374,
+        "pv": 407,
+        "uv": 375,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2264,7 +2302,8 @@
         "d33b6a80-2fc2-407a-89f9-c8a12c833286",
         "health-watch-1789479143835",
         "health-watch-1789495915580",
-        "health-watch-1789507170586"
+        "health-watch-1789507170586",
+        "health-watch-1789517916341"
       ]
     },
     "affiliate-pulse": {
@@ -11898,6 +11937,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1789517916341",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-16T00:18:36.391Z",
+      "lastSeen": "2026-09-16T00:18:36.391Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1789507170586",
       "siteId": "feature-vote",
