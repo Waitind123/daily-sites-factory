@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T01:24:27.816Z",
+  "updatedAt": "2026-09-17T05:22:42.754Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3603,11 +3603,51 @@
             "055f0b48-af81-41d3-9c73-794107ceb814": 1,
             "b1c6358d-c216-4c19-a8a8-9299cbd16d3d": 1
           }
+        },
+        "2026-09-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "8a06fc2a-eb3a-4d71-b16f-e0415acee405"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/join": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {
+              "dunning-pulse": 1
+            },
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "8a06fc2a-eb3a-4d71-b16f-e0415acee405": 1
+          }
         }
       },
       "totals": {
-        "pv": 53,
-        "uv": 51,
+        "pv": 54,
+        "uv": 52,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3627,7 +3667,8 @@
       },
       "knownVisitors": [
         "055f0b48-af81-41d3-9c73-794107ceb814",
-        "b1c6358d-c216-4c19-a8a8-9299cbd16d3d"
+        "b1c6358d-c216-4c19-a8a8-9299cbd16d3d",
+        "8a06fc2a-eb3a-4d71-b16f-e0415acee405"
       ]
     },
     "ai-overview-rank": {
@@ -12329,6 +12370,19 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8a06fc2a-eb3a-4d71-b16f-e0415acee405",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-09-17T05:22:42.442Z",
+      "lastSeen": "2026-09-17T05:22:42.442Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles",
+      "utmSource": "dunning-pulse",
+      "utmMedium": "crosssell"
+    },
     {
       "visitorId": "health-watch-1789608267586",
       "siteId": "feature-vote",
