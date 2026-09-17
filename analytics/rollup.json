@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T12:28:55.007Z",
+  "updatedAt": "2026-09-17T12:29:05.042Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -7738,11 +7738,49 @@
             "f20cb5d5-7c25-4fd3-a815-46a2e460ad92": 1,
             "c7457494-3b1d-4ccd-a94c-745979ee5710": 1
           }
+        },
+        "2026-09-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "51e9d77f-ecc8-497d-bb2e-196b17556685"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "51e9d77f-ecc8-497d-bb2e-196b17556685": 1
+          }
         }
       },
       "totals": {
-        "pv": 100,
-        "uv": 78,
+        "pv": 101,
+        "uv": 79,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7759,7 +7797,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-17T07:25:33.526Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "51e9d77f-ecc8-497d-bb2e-196b17556685"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -12350,6 +12391,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "51e9d77f-ecc8-497d-bb2e-196b17556685",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-17T12:29:04.520Z",
+      "lastSeen": "2026-09-17T12:29:04.520Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "c47682a0-9115-43a1-b48f-b9d1bc243d66",
       "siteId": "ai-headshots",
