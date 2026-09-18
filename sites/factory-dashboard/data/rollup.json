@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T07:26:05.437Z",
+  "updatedAt": "2026-09-18T07:17:46.148Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2300,47 +2300,109 @@
           }
         },
         "2026-09-17": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 7,
+          "uv": 7,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "health-watch-1789608267586"
+            "health-watch-1789608267586",
+            "health-watch-1789630678506",
+            "f35cfb8e-a1ae-457f-b20c-f0977311b52d",
+            "7b8f878a-d068-43a7-bba1-682c6e0ade7a",
+            "health-watch-1789651568464",
+            "health-watch-1789668725771",
+            "health-watch-1789680064974"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 7
             },
             "paths": {
-              "/": 1
+              "/": 6,
+              "/boards": 1
             },
             "devices": {
-              "unknown": 1
+              "unknown": 5,
+              "desktop": 2
             },
             "locales": {
-              "unknown": 1
+              "unknown": 5,
+              "zh": 2
             },
             "timezones": {
-              "unknown": 1
+              "unknown": 5,
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "9": 1
+              "2": 1,
+              "5": 1,
+              "9": 1,
+              "15": 1,
+              "20": 2,
+              "21": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 7,
               "returning": 0
             }
           },
           "visitorHits": {
-            "health-watch-1789608267586": 1
+            "health-watch-1789608267586": 1,
+            "health-watch-1789630678506": 1,
+            "f35cfb8e-a1ae-457f-b20c-f0977311b52d": 1,
+            "7b8f878a-d068-43a7-bba1-682c6e0ade7a": 1,
+            "health-watch-1789651568464": 1,
+            "health-watch-1789668725771": 1,
+            "health-watch-1789680064974": 1
+          }
+        },
+        "2026-09-18": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1789690640810",
+            "health-watch-1789710850469"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 2
+            },
+            "paths": {
+              "/": 2
+            },
+            "devices": {
+              "unknown": 2
+            },
+            "locales": {
+              "unknown": 2
+            },
+            "timezones": {
+              "unknown": 2
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1,
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 2,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1789690640810": 1,
+            "health-watch-1789710850469": 1
           }
         }
       },
       "totals": {
-        "pv": 415,
-        "uv": 383,
+        "pv": 423,
+        "uv": 391,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2355,7 +2417,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:27.688Z",
+        "lastChecked": "2026-09-18T07:17:19.350Z",
         "score": 100
       }
     },
@@ -2380,7 +2442,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:11.989Z",
+        "lastChecked": "2026-09-18T07:17:08.048Z",
         "score": 90
       }
     },
@@ -2405,7 +2467,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:12.485Z",
+        "lastChecked": "2026-09-18T07:17:08.484Z",
         "score": 90
       }
     },
@@ -2430,7 +2492,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:12.957Z",
+        "lastChecked": "2026-09-18T07:17:08.849Z",
         "score": 90
       }
     },
@@ -3596,49 +3658,55 @@
           }
         },
         "2026-09-17": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "8a06fc2a-eb3a-4d71-b16f-e0415acee405"
+            "8a06fc2a-eb3a-4d71-b16f-e0415acee405",
+            "c47682a0-9115-43a1-b48f-b9d1bc243d66"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/join": 1
+              "/join": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 1,
+              "UTC": 1
             },
             "utmSources": {
               "dunning-pulse": 1
             },
             "hours": {
-              "13": 1
+              "13": 1,
+              "20": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "8a06fc2a-eb3a-4d71-b16f-e0415acee405": 1
+            "8a06fc2a-eb3a-4d71-b16f-e0415acee405": 1,
+            "c47682a0-9115-43a1-b48f-b9d1bc243d66": 1
           }
         }
       },
       "totals": {
-        "pv": 54,
-        "uv": 52,
+        "pv": 55,
+        "uv": 53,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3653,7 +3721,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:13.486Z",
+        "lastChecked": "2026-09-18T07:17:09.267Z",
         "score": 90
       }
     },
@@ -3678,7 +3746,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:14.040Z",
+        "lastChecked": "2026-09-18T07:17:09.667Z",
         "score": 90
       }
     },
@@ -3703,7 +3771,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:14.568Z",
+        "lastChecked": "2026-09-18T07:17:09.972Z",
         "score": 90
       }
     },
@@ -3728,7 +3796,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:15.002Z",
+        "lastChecked": "2026-09-18T07:17:10.285Z",
         "score": 90
       }
     },
@@ -3753,7 +3821,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:15.479Z",
+        "lastChecked": "2026-09-18T07:17:10.749Z",
         "score": 90
       }
     },
@@ -3778,7 +3846,7 @@
         "hasOg": true,
         "hasJsonLd": false,
         "guideCount": 0,
-        "lastChecked": "2026-09-17T07:25:15.567Z",
+        "lastChecked": "2026-09-18T07:17:10.977Z",
         "score": 25
       }
     },
@@ -3803,7 +3871,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:16.140Z",
+        "lastChecked": "2026-09-18T07:17:11.456Z",
         "score": 90
       }
     },
@@ -3828,7 +3896,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:16.664Z",
+        "lastChecked": "2026-09-18T07:17:11.821Z",
         "score": 100
       }
     },
@@ -3853,7 +3921,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:17.172Z",
+        "lastChecked": "2026-09-18T07:17:12.217Z",
         "score": 90
       }
     },
@@ -3917,7 +3985,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:17.784Z",
+        "lastChecked": "2026-09-18T07:17:12.650Z",
         "score": 90
       }
     },
@@ -3942,7 +4010,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:18.296Z",
+        "lastChecked": "2026-09-18T07:17:13.035Z",
         "score": 90
       }
     },
@@ -3967,7 +4035,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:18.924Z",
+        "lastChecked": "2026-09-18T07:17:13.432Z",
         "score": 100
       }
     },
@@ -3992,7 +4060,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:19.433Z",
+        "lastChecked": "2026-09-18T07:17:13.789Z",
         "score": 100
       }
     },
@@ -4094,7 +4162,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:19.967Z",
+        "lastChecked": "2026-09-18T07:17:14.129Z",
         "score": 90
       }
     },
@@ -4158,7 +4226,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:20.510Z",
+        "lastChecked": "2026-09-18T07:17:14.468Z",
         "score": 90
       }
     },
@@ -4183,7 +4251,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:21.203Z",
+        "lastChecked": "2026-09-18T07:17:14.809Z",
         "score": 100
       }
     },
@@ -4208,7 +4276,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:21.789Z",
+        "lastChecked": "2026-09-18T07:17:15.173Z",
         "score": 100
       }
     },
@@ -5295,11 +5363,50 @@
           "visitorHits": {
             "fec7dbc4-296a-40f2-a6d2-05c65eacb215": 2
           }
+        },
+        "2026-09-17": {
+          "pv": 2,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "dce3df7c-1294-453f-ab3b-7d1b4fbf5f03"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 2
+            },
+            "paths": {
+              "/": 1,
+              "/spaces": 1
+            },
+            "devices": {
+              "desktop": 2
+            },
+            "locales": {
+              "zh": 2
+            },
+            "timezones": {
+              "UTC": 2
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 2
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 1
+            }
+          },
+          "visitorHits": {
+            "dce3df7c-1294-453f-ab3b-7d1b4fbf5f03": 2
+          }
         }
       },
       "totals": {
-        "pv": 44,
-        "uv": 28,
+        "pv": 46,
+        "uv": 29,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5314,7 +5421,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:22.373Z",
+        "lastChecked": "2026-09-18T07:17:15.516Z",
         "score": 90
       }
     },
@@ -5416,7 +5523,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:22.836Z",
+        "lastChecked": "2026-09-18T07:17:15.974Z",
         "score": 100
       }
     },
@@ -5719,7 +5826,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:23.298Z",
+        "lastChecked": "2026-09-18T07:17:16.534Z",
         "score": 90
       }
     },
@@ -5744,7 +5851,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:23.977Z",
+        "lastChecked": "2026-09-18T07:17:16.849Z",
         "score": 100
       }
     },
@@ -5769,7 +5876,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:24.472Z",
+        "lastChecked": "2026-09-18T07:17:17.362Z",
         "score": 100
       }
     },
@@ -5794,7 +5901,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:25.046Z",
+        "lastChecked": "2026-09-18T07:17:17.793Z",
         "score": 100
       }
     },
@@ -5861,7 +5968,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:25.695Z",
+        "lastChecked": "2026-09-18T07:17:18.174Z",
         "score": 90
       }
     },
@@ -5886,7 +5993,7 @@
         "hasOg": false,
         "hasJsonLd": false,
         "guideCount": 0,
-        "lastChecked": "2026-09-17T07:25:26.136Z",
+        "lastChecked": "2026-09-18T07:17:18.520Z",
         "score": 0
       }
     },
@@ -5911,7 +6018,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:27.005Z",
+        "lastChecked": "2026-09-18T07:17:18.935Z",
         "score": 100
       }
     },
@@ -5936,7 +6043,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:28.200Z",
+        "lastChecked": "2026-09-18T07:17:19.841Z",
         "score": 100
       }
     },
@@ -6000,7 +6107,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:28.697Z",
+        "lastChecked": "2026-09-18T07:17:20.327Z",
         "score": 100
       }
     },
@@ -6140,7 +6247,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:29.376Z",
+        "lastChecked": "2026-09-18T07:17:20.637Z",
         "score": 100
       }
     },
@@ -6204,7 +6311,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:29.926Z",
+        "lastChecked": "2026-09-18T07:17:20.919Z",
         "score": 90
       }
     },
@@ -6229,7 +6336,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:30.444Z",
+        "lastChecked": "2026-09-18T07:17:21.548Z",
         "score": 100
       }
     },
@@ -6254,7 +6361,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:30.871Z",
+        "lastChecked": "2026-09-18T07:17:21.791Z",
         "score": 100
       }
     },
@@ -6279,7 +6386,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:31.383Z",
+        "lastChecked": "2026-09-18T07:17:22.135Z",
         "score": 90
       }
     },
@@ -6304,7 +6411,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:31.938Z",
+        "lastChecked": "2026-09-18T07:17:22.617Z",
         "score": 100
       }
     },
@@ -6329,7 +6436,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:32.428Z",
+        "lastChecked": "2026-09-18T07:17:22.819Z",
         "score": 100
       }
     },
@@ -6393,7 +6500,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:33.006Z",
+        "lastChecked": "2026-09-18T07:17:23.249Z",
         "score": 90
       }
     },
@@ -7723,11 +7830,51 @@
             "f20cb5d5-7c25-4fd3-a815-46a2e460ad92": 1,
             "c7457494-3b1d-4ccd-a94c-745979ee5710": 1
           }
+        },
+        "2026-09-17": {
+          "pv": 2,
+          "uv": 2,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "51e9d77f-ecc8-497d-bb2e-196b17556685",
+            "69293ed2-d0f8-4c73-a3e3-860a2dda3163"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 2
+            },
+            "paths": {
+              "/": 2
+            },
+            "devices": {
+              "desktop": 2
+            },
+            "locales": {
+              "zh": 2
+            },
+            "timezones": {
+              "UTC": 2
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 2
+            },
+            "visitorTypes": {
+              "new": 2,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "51e9d77f-ecc8-497d-bb2e-196b17556685": 1,
+            "69293ed2-d0f8-4c73-a3e3-860a2dda3163": 1
+          }
         }
       },
       "totals": {
-        "pv": 100,
-        "uv": 78,
+        "pv": 102,
+        "uv": 80,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7742,7 +7889,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:33.526Z",
+        "lastChecked": "2026-09-18T07:17:23.627Z",
         "score": 90
       }
     },
@@ -7767,7 +7914,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:34.040Z",
+        "lastChecked": "2026-09-18T07:17:23.974Z",
         "score": 100
       }
     },
@@ -7792,7 +7939,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:34.611Z",
+        "lastChecked": "2026-09-18T07:17:24.485Z",
         "score": 100
       }
     },
@@ -7817,7 +7964,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:35.339Z",
+        "lastChecked": "2026-09-18T07:17:24.796Z",
         "score": 100
       }
     },
@@ -7842,7 +7989,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:35.794Z",
+        "lastChecked": "2026-09-18T07:17:25.172Z",
         "score": 100
       }
     },
@@ -7944,7 +8091,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:36.314Z",
+        "lastChecked": "2026-09-18T07:17:25.510Z",
         "score": 100
       }
     },
@@ -7969,7 +8116,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:37.032Z",
+        "lastChecked": "2026-09-18T07:17:25.923Z",
         "score": 100
       }
     },
@@ -8033,7 +8180,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:37.528Z",
+        "lastChecked": "2026-09-18T07:17:26.281Z",
         "score": 100
       }
     },
@@ -8178,7 +8325,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:38.090Z",
+        "lastChecked": "2026-09-18T07:17:26.697Z",
         "score": 100
       }
     },
@@ -8203,7 +8350,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:38.703Z",
+        "lastChecked": "2026-09-18T07:17:27.088Z",
         "score": 100
       }
     },
@@ -8267,7 +8414,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:39.199Z",
+        "lastChecked": "2026-09-18T07:17:28.004Z",
         "score": 100
       }
     },
@@ -8384,7 +8531,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:39.766Z",
+        "lastChecked": "2026-09-18T07:17:28.392Z",
         "score": 90
       }
     },
@@ -8409,7 +8556,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:40.492Z",
+        "lastChecked": "2026-09-18T07:17:28.790Z",
         "score": 90
       }
     },
@@ -8434,7 +8581,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:41.034Z",
+        "lastChecked": "2026-09-18T07:17:29.353Z",
         "score": 90
       }
     },
@@ -8459,7 +8606,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:41.687Z",
+        "lastChecked": "2026-09-18T07:17:29.683Z",
         "score": 90
       }
     },
@@ -8527,7 +8674,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:42.217Z",
+        "lastChecked": "2026-09-18T07:17:30.022Z",
         "score": 90
       }
     },
@@ -8597,7 +8744,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:42.682Z",
+        "lastChecked": "2026-09-18T07:17:30.340Z",
         "score": 90
       }
     },
@@ -8622,7 +8769,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:43.288Z",
+        "lastChecked": "2026-09-18T07:17:30.671Z",
         "score": 90
       }
     },
@@ -8647,7 +8794,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:43.752Z",
+        "lastChecked": "2026-09-18T07:17:30.997Z",
         "score": 90
       }
     },
@@ -8672,7 +8819,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:44.248Z",
+        "lastChecked": "2026-09-18T07:17:31.288Z",
         "score": 100
       }
     },
@@ -8697,7 +8844,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:44.768Z",
+        "lastChecked": "2026-09-18T07:17:31.632Z",
         "score": 80
       }
     },
@@ -8722,7 +8869,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:45.186Z",
+        "lastChecked": "2026-09-18T07:17:31.877Z",
         "score": 80
       }
     },
@@ -8917,7 +9064,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:45.870Z",
+        "lastChecked": "2026-09-18T07:17:32.317Z",
         "score": 100
       }
     },
@@ -8942,7 +9089,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:46.418Z",
+        "lastChecked": "2026-09-18T07:17:32.710Z",
         "score": 90
       }
     },
@@ -8967,7 +9114,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:46.842Z",
+        "lastChecked": "2026-09-18T07:17:33.006Z",
         "score": 90
       }
     },
@@ -8992,7 +9139,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:47.457Z",
+        "lastChecked": "2026-09-18T07:17:33.318Z",
         "score": 100
       }
     },
@@ -10078,11 +10225,49 @@
           "visitorHits": {
             "e353a473-1550-44f1-a98b-363537528362": 1
           }
+        },
+        "2026-09-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "01d6359b-2ad1-4aad-b81d-6b51f7be2db8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "01d6359b-2ad1-4aad-b81d-6b51f7be2db8": 1
+          }
         }
       },
       "totals": {
-        "pv": 43,
-        "uv": 28,
+        "pv": 44,
+        "uv": 29,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10097,7 +10282,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:47.951Z",
+        "lastChecked": "2026-09-18T07:17:33.683Z",
         "score": 100
       }
     },
@@ -10122,7 +10307,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:48.414Z",
+        "lastChecked": "2026-09-18T07:17:34.051Z",
         "score": 90
       }
     },
@@ -10147,7 +10332,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:49.055Z",
+        "lastChecked": "2026-09-18T07:17:34.379Z",
         "score": 90
       }
     },
@@ -10172,7 +10357,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:49.567Z",
+        "lastChecked": "2026-09-18T07:17:34.711Z",
         "score": 100
       }
     },
@@ -10236,7 +10421,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:50.043Z",
+        "lastChecked": "2026-09-18T07:17:35.055Z",
         "score": 90
       }
     },
@@ -10300,7 +10485,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:50.575Z",
+        "lastChecked": "2026-09-18T07:17:35.415Z",
         "score": 100
       }
     },
@@ -10364,7 +10549,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:51.169Z",
+        "lastChecked": "2026-09-18T07:17:36.001Z",
         "score": 100
       }
     },
@@ -10389,7 +10574,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:51.640Z",
+        "lastChecked": "2026-09-18T07:17:36.589Z",
         "score": 80
       }
     },
@@ -10414,7 +10599,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:52.185Z",
+        "lastChecked": "2026-09-18T07:17:36.976Z",
         "score": 100
       }
     },
@@ -10482,7 +10667,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:52.755Z",
+        "lastChecked": "2026-09-18T07:17:37.324Z",
         "score": 100
       }
     },
@@ -10507,7 +10692,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:53.340Z",
+        "lastChecked": "2026-09-18T07:17:37.762Z",
         "score": 90
       }
     },
@@ -10532,7 +10717,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:54.157Z",
+        "lastChecked": "2026-09-18T07:17:38.172Z",
         "score": 90
       }
     },
@@ -10557,7 +10742,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:54.777Z",
+        "lastChecked": "2026-09-18T07:17:38.584Z",
         "score": 100
       }
     },
@@ -10621,7 +10806,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:55.294Z",
+        "lastChecked": "2026-09-18T07:17:39.068Z",
         "score": 90
       }
     },
@@ -11616,11 +11801,49 @@
           "visitorHits": {
             "e7f9e9ad-96b2-4c54-9d32-abc7de963248": 1
           }
+        },
+        "2026-09-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "de2e64d5-3563-4a2e-b1cf-eb18a93c9c9b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "de2e64d5-3563-4a2e-b1cf-eb18a93c9c9b": 1
+          }
         }
       },
       "totals": {
-        "pv": 26,
-        "uv": 26,
+        "pv": 27,
+        "uv": 27,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11635,7 +11858,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:56.095Z",
+        "lastChecked": "2026-09-18T07:17:39.454Z",
         "score": 90
       }
     },
@@ -11660,7 +11883,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:56.690Z",
+        "lastChecked": "2026-09-18T07:17:39.910Z",
         "score": 100
       }
     },
@@ -11685,7 +11908,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:57.155Z",
+        "lastChecked": "2026-09-18T07:17:40.312Z",
         "score": 100
       }
     },
@@ -11710,7 +11933,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:57.809Z",
+        "lastChecked": "2026-09-18T07:17:40.571Z",
         "score": 100
       }
     },
@@ -11735,7 +11958,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:58.325Z",
+        "lastChecked": "2026-09-18T07:17:40.881Z",
         "score": 100
       }
     },
@@ -11760,7 +11983,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:25:58.845Z",
+        "lastChecked": "2026-09-18T07:17:41.207Z",
         "score": 90
       }
     },
@@ -11824,7 +12047,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:00.135Z",
+        "lastChecked": "2026-09-18T07:17:41.681Z",
         "score": 100
       }
     },
@@ -11849,7 +12072,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:00.751Z",
+        "lastChecked": "2026-09-18T07:17:42.131Z",
         "score": 90
       }
     },
@@ -11913,7 +12136,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:01.273Z",
+        "lastChecked": "2026-09-18T07:17:42.622Z",
         "score": 100
       }
     },
@@ -12015,7 +12238,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:01.861Z",
+        "lastChecked": "2026-09-18T07:17:42.994Z",
         "score": 100
       }
     },
@@ -12040,7 +12263,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:02.525Z",
+        "lastChecked": "2026-09-18T07:17:43.388Z",
         "score": 90
       }
     },
@@ -12065,7 +12288,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:03.056Z",
+        "lastChecked": "2026-09-18T07:17:43.812Z",
         "score": 90
       }
     },
@@ -12215,7 +12438,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:03.717Z",
+        "lastChecked": "2026-09-18T07:17:44.275Z",
         "score": 90
       }
     },
@@ -12240,7 +12463,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:04.404Z",
+        "lastChecked": "2026-09-18T07:17:45.353Z",
         "score": 100
       }
     },
@@ -12304,7 +12527,7 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:04.843Z",
+        "lastChecked": "2026-09-18T07:17:45.799Z",
         "score": 100
       }
     },
@@ -12329,12 +12552,142 @@
         "hasOg": true,
         "hasJsonLd": true,
         "guideCount": 1,
-        "lastChecked": "2026-09-17T07:26:05.437Z",
+        "lastChecked": "2026-09-18T07:17:46.148Z",
         "score": 100
       }
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1789710850469",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-18T05:54:10.522Z",
+      "lastSeen": "2026-09-18T05:54:10.522Z",
+      "pageviews": 1
+    },
+    {
+      "visitorId": "health-watch-1789690640810",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-18T00:17:20.888Z",
+      "lastSeen": "2026-09-18T00:17:20.888Z",
+      "pageviews": 1
+    },
+    {
+      "visitorId": "health-watch-1789680064974",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T21:21:05.013Z",
+      "lastSeen": "2026-09-17T21:21:05.013Z",
+      "pageviews": 1
+    },
+    {
+      "visitorId": "health-watch-1789668725771",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T18:12:05.799Z",
+      "lastSeen": "2026-09-17T18:12:05.799Z",
+      "pageviews": 1
+    },
+    {
+      "visitorId": "health-watch-1789651568464",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T13:26:08.531Z",
+      "lastSeen": "2026-09-17T13:26:08.531Z",
+      "pageviews": 1
+    },
+    {
+      "visitorId": "01d6359b-2ad1-4aad-b81d-6b51f7be2db8",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-09-17T12:33:07.621Z",
+      "lastSeen": "2026-09-17T12:33:07.621Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "dce3df7c-1294-453f-ab3b-7d1b4fbf5f03",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-09-17T12:33:02.639Z",
+      "lastSeen": "2026-09-17T12:33:03.993Z",
+      "pageviews": 2,
+      "path": "/spaces",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "7b8f878a-d068-43a7-bba1-682c6e0ade7a",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T12:33:00.376Z",
+      "lastSeen": "2026-09-17T12:33:00.376Z",
+      "pageviews": 1,
+      "path": "/boards",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "69293ed2-d0f8-4c73-a3e3-860a2dda3163",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-17T12:32:52.487Z",
+      "lastSeen": "2026-09-17T12:32:52.487Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "de2e64d5-3563-4a2e-b1cf-eb18a93c9c9b",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-09-17T12:29:20.481Z",
+      "lastSeen": "2026-09-17T12:29:20.481Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "f35cfb8e-a1ae-457f-b20c-f0977311b52d",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T12:29:06.839Z",
+      "lastSeen": "2026-09-17T12:29:06.839Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "51e9d77f-ecc8-497d-bb2e-196b17556685",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-17T12:29:04.520Z",
+      "lastSeen": "2026-09-17T12:29:04.520Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "c47682a0-9115-43a1-b48f-b9d1bc243d66",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-09-17T12:28:54.802Z",
+      "lastSeen": "2026-09-17T12:28:54.802Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
+      "visitorId": "health-watch-1789630678506",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-17T07:37:58.540Z",
+      "lastSeen": "2026-09-17T07:37:58.540Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "8a06fc2a-eb3a-4d71-b16f-e0415acee405",
       "siteId": "ai-headshots",
