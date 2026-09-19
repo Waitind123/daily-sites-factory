@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T11:53:59.200Z",
+  "updatedAt": "2026-09-19T13:03:49.337Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -8837,11 +8837,49 @@
             "4e2063b9-1688-4820-99cb-28bd108c2cde": 1,
             "02af52be-e9fd-450e-959a-3a088fbdc8a5": 1
           }
+        },
+        "2026-09-19": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "f797c3cc-6393-4cd2-b6fc-86d25504b462"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "tr": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "21": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "f797c3cc-6393-4cd2-b6fc-86d25504b462": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8858,7 +8896,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-19T07:14:15.177Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "f797c3cc-6393-4cd2-b6fc-86d25504b462"
+      ]
     },
     "pay-once-pulse": {
       "url": "https://pay-once-pulse.vercel.app",
@@ -13001,6 +13042,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "f797c3cc-6393-4cd2-b6fc-86d25504b462",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-09-19T13:03:49.021Z",
+      "lastSeen": "2026-09-19T13:03:49.021Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "tr",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "7525329b-d761-47e8-a732-b715418639f8",
       "siteId": "coworking-finder",
