@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T13:03:56.971Z",
+  "updatedAt": "2026-09-19T13:41:46.680Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -8153,49 +8153,53 @@
           }
         },
         "2026-09-19": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "c0f123f8-75e5-4b8d-9427-58f3293622a0",
-            "18904e5f-dd26-4d75-98b9-f2941927aaf9"
+            "18904e5f-dd26-4d75-98b9-f2941927aaf9",
+            "10a01b96-01bd-4e11-8a03-227f092fb1d0"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "zh": 2
+              "zh": 2,
+              "en": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 3
             },
             "utmSources": {},
             "hours": {
-              "19": 2
+              "19": 2,
+              "21": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "c0f123f8-75e5-4b8d-9427-58f3293622a0": 1,
-            "18904e5f-dd26-4d75-98b9-f2941927aaf9": 1
+            "18904e5f-dd26-4d75-98b9-f2941927aaf9": 1,
+            "10a01b96-01bd-4e11-8a03-227f092fb1d0": 1
           }
         }
       },
       "totals": {
-        "pv": 106,
-        "uv": 84,
+        "pv": 107,
+        "uv": 85,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8215,7 +8219,8 @@
       },
       "knownVisitors": [
         "c0f123f8-75e5-4b8d-9427-58f3293622a0",
-        "18904e5f-dd26-4d75-98b9-f2941927aaf9"
+        "18904e5f-dd26-4d75-98b9-f2941927aaf9",
+        "10a01b96-01bd-4e11-8a03-227f092fb1d0"
       ]
     },
     "invoice-desk": {
@@ -13046,6 +13051,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "10a01b96-01bd-4e11-8a03-227f092fb1d0",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-19T13:41:46.376Z",
+      "lastSeen": "2026-09-19T13:41:46.376Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "3572c8a1-527a-477d-bda3-043606ed049e",
       "siteId": "pain-radar",
