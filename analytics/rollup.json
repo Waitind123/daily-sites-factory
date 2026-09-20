@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T01:07:26.951Z",
+  "updatedAt": "2026-09-20T01:19:43.429Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4184,47 +4184,54 @@
           }
         },
         "2026-09-20": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "bd358b12-a0d6-4d4a-a356-e7b76aa99769"
+            "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
+            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/guide/pocket-alternative-indie-hackers": 1
+              "/guide/pocket-alternative-indie-hackers": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 1,
+              "mobile": 1
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "America/Los_Angeles": 1
             },
             "utmSources": {},
             "hours": {
-              "8": 1
+              "8": 1,
+              "9": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "bd358b12-a0d6-4d4a-a356-e7b76aa99769": 1
+            "bd358b12-a0d6-4d4a-a356-e7b76aa99769": 1,
+            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4243,7 +4250,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "bd358b12-a0d6-4d4a-a356-e7b76aa99769"
+        "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
+        "66ab7028-b163-4393-a29e-3c3bfc6c1cb4"
       ]
     },
     "bulk-landing-gen": {
@@ -13147,6 +13155,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "66ab7028-b163-4393-a29e-3c3bfc6c1cb4",
+      "siteId": "bookmark-pulse",
+      "firstSeen": "2026-09-20T01:19:43.100Z",
+      "lastSeen": "2026-09-20T01:19:43.100Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "mobile",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1789866446658",
       "siteId": "feature-vote",
