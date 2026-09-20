@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T23:03:05.437Z",
+  "updatedAt": "2026-09-20T00:11:13.794Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4143,11 +4143,49 @@
           "visitorHits": {
             "97d12acc-dc83-43e2-a876-a28f50514bbd": 1
           }
+        },
+        "2026-09-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "bd358b12-a0d6-4d4a-a356-e7b76aa99769"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/pocket-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "bd358b12-a0d6-4d4a-a356-e7b76aa99769": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4164,7 +4202,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-19T07:13:47.593Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "bd358b12-a0d6-4d4a-a356-e7b76aa99769"
+      ]
     },
     "bulk-landing-gen": {
       "url": "https://bulk-landing-gen.vercel.app",
@@ -13067,6 +13108,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
+      "siteId": "bookmark-pulse",
+      "firstSeen": "2026-09-20T00:11:13.501Z",
+      "lastSeen": "2026-09-20T00:11:13.501Z",
+      "pageviews": 1,
+      "path": "/guide/pocket-alternative-indie-hackers",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1789858985222",
       "siteId": "feature-vote",
