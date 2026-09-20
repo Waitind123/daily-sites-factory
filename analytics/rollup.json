@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T01:19:43.429Z",
+  "updatedAt": "2026-09-20T03:38:34.420Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4184,54 +4184,58 @@
           }
         },
         "2026-09-20": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
-            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4"
+            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4",
+            "ba37a305-351b-4829-ad63-983fc5f56689"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/guide/pocket-alternative-indie-hackers": 1,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1,
+              "desktop": 2,
               "mobile": 1
             },
             "locales": {
               "ru": 1,
-              "en": 1
+              "en": 2
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "8": 1,
-              "9": 1
+              "9": 1,
+              "11": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "bd358b12-a0d6-4d4a-a356-e7b76aa99769": 1,
-            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4": 1
+            "66ab7028-b163-4393-a29e-3c3bfc6c1cb4": 1,
+            "ba37a305-351b-4829-ad63-983fc5f56689": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4251,7 +4255,8 @@
       },
       "knownVisitors": [
         "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
-        "66ab7028-b163-4393-a29e-3c3bfc6c1cb4"
+        "66ab7028-b163-4393-a29e-3c3bfc6c1cb4",
+        "ba37a305-351b-4829-ad63-983fc5f56689"
       ]
     },
     "bulk-landing-gen": {
@@ -13155,6 +13160,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ba37a305-351b-4829-ad63-983fc5f56689",
+      "siteId": "bookmark-pulse",
+      "firstSeen": "2026-09-20T03:38:34.082Z",
+      "lastSeen": "2026-09-20T03:38:34.082Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "66ab7028-b163-4393-a29e-3c3bfc6c1cb4",
       "siteId": "bookmark-pulse",
