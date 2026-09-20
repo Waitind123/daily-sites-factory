@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T00:11:13.794Z",
+  "updatedAt": "2026-09-20T01:07:26.951Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2483,11 +2483,49 @@
             "health-watch-1789850327809": 1,
             "health-watch-1789858985222": 1
           }
+        },
+        "2026-09-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1789866446658"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1789866446658": 1
+          }
         }
       },
       "totals": {
-        "pv": 438,
-        "uv": 405,
+        "pv": 439,
+        "uv": 406,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2511,7 +2549,8 @@
         "health-watch-1789827850693",
         "health-watch-1789840808271",
         "health-watch-1789850327809",
-        "health-watch-1789858985222"
+        "health-watch-1789858985222",
+        "health-watch-1789866446658"
       ]
     },
     "affiliate-pulse": {
@@ -13108,6 +13147,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1789866446658",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-20T01:07:26.769Z",
+      "lastSeen": "2026-09-20T01:07:26.769Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "bd358b12-a0d6-4d4a-a356-e7b76aa99769",
       "siteId": "bookmark-pulse",
