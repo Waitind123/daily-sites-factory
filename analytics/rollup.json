@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T12:05:02.276Z",
+  "updatedAt": "2026-09-20T12:05:03.068Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2485,7 +2485,7 @@
           }
         },
         "2026-09-20": {
-          "pv": 5,
+          "pv": 4,
           "uv": 4,
           "trial": 0,
           "checkout": 0,
@@ -2498,46 +2498,45 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 5
+              "直接访问": 4
             },
             "paths": {
-              "/": 4,
-              "/boards": 1
+              "/": 4
             },
             "devices": {
               "unknown": 3,
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
               "unknown": 3,
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
               "unknown": 3,
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "9": 1,
               "14": 1,
               "19": 1,
-              "20": 2
+              "20": 1
             },
             "visitorTypes": {
               "new": 4,
-              "returning": 1
+              "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1789866446658": 1,
             "health-watch-1789884888637": 1,
             "health-watch-1789903606475": 1,
-            "fd24829d-8254-40d8-b8c1-08269dfb1a67": 2
+            "fd24829d-8254-40d8-b8c1-08269dfb1a67": 1
           }
         }
       },
       "totals": {
-        "pv": 443,
+        "pv": 442,
         "uv": 409,
         "trial": 0,
         "checkout": 0,
@@ -12507,11 +12506,49 @@
           "visitorHits": {
             "f18e95e3-5811-42e4-8d9d-d76357feae4c": 1
           }
+        },
+        "2026-09-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b8aeec24-4d25-4598-be9e-dbb0a5c72f6a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b8aeec24-4d25-4598-be9e-dbb0a5c72f6a": 1
+          }
         }
       },
       "totals": {
-        "pv": 29,
-        "uv": 29,
+        "pv": 30,
+        "uv": 30,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12528,7 +12565,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-20T07:38:37.816Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "b8aeec24-4d25-4598-be9e-dbb0a5c72f6a"
+      ]
     },
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
@@ -13227,12 +13267,23 @@
   },
   "visitorRegistry": [
     {
+      "visitorId": "b8aeec24-4d25-4598-be9e-dbb0a5c72f6a",
+      "siteId": "team-headshots",
+      "firstSeen": "2026-09-20T12:05:02.949Z",
+      "lastSeen": "2026-09-20T12:05:02.949Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
+    {
       "visitorId": "fd24829d-8254-40d8-b8c1-08269dfb1a67",
       "siteId": "feature-vote",
       "firstSeen": "2026-09-20T12:05:01.086Z",
-      "lastSeen": "2026-09-20T12:05:02.122Z",
-      "pageviews": 2,
-      "path": "/boards",
+      "lastSeen": "2026-09-20T12:05:01.086Z",
+      "pageviews": 1,
+      "path": "/",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
