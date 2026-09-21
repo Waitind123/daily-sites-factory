@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T23:46:18.827Z",
+  "updatedAt": "2026-09-21T00:15:47.441Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2545,11 +2545,49 @@
             "health-watch-1789930017686": 1,
             "health-watch-1789939947324": 1
           }
+        },
+        "2026-09-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1789949747210"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1789949747210": 1
+          }
         }
       },
       "totals": {
-        "pv": 446,
-        "uv": 413,
+        "pv": 447,
+        "uv": 414,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2573,7 +2611,8 @@
         "53b20cf5-37ed-4b29-ae5e-5c5e0f316bef",
         "health-watch-1789920268678",
         "health-watch-1789930017686",
-        "health-watch-1789939947324"
+        "health-watch-1789939947324",
+        "health-watch-1789949747210"
       ]
     },
     "affiliate-pulse": {
@@ -13414,6 +13453,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1789949747210",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-21T00:15:47.264Z",
+      "lastSeen": "2026-09-21T00:15:47.264Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "4043b32b-ce08-4205-92b8-7dec94f54cb1",
       "siteId": "nomad-cities",
