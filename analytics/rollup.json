@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T14:05:44.571Z",
+  "updatedAt": "2026-09-21T14:06:11.285Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -11601,47 +11601,50 @@
           }
         },
         "2026-09-21": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "cf0a30b5-ac4f-44de-95ea-72c9695f974b"
+            "cf0a30b5-ac4f-44de-95ea-72c9695f974b",
+            "a8de43aa-af6e-4579-bbe3-e417fe251892"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "ru": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "cf0a30b5-ac4f-44de-95ea-72c9695f974b": 1
+            "cf0a30b5-ac4f-44de-95ea-72c9695f974b": 1,
+            "a8de43aa-af6e-4579-bbe3-e417fe251892": 1
           }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11660,7 +11663,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "cf0a30b5-ac4f-44de-95ea-72c9695f974b"
+        "cf0a30b5-ac4f-44de-95ea-72c9695f974b",
+        "a8de43aa-af6e-4579-bbe3-e417fe251892"
       ]
     },
     "status-lite-alt": {
@@ -13705,6 +13709,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a8de43aa-af6e-4579-bbe3-e417fe251892",
+      "siteId": "status-embed-lite",
+      "firstSeen": "2026-09-21T14:06:11.095Z",
+      "lastSeen": "2026-09-21T14:06:11.095Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "cf0a30b5-ac4f-44de-95ea-72c9695f974b",
       "siteId": "status-embed-lite",
