@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:42:16.304Z",
+  "updatedAt": "2026-09-21T13:42:25.384Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2547,53 +2547,60 @@
           }
         },
         "2026-09-21": {
-          "pv": 3,
-          "uv": 3,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1789949747210",
             "health-watch-1789966820507",
-            "health-watch-1789987337007"
+            "health-watch-1789987337007",
+            "3744ef78-33c9-4587-ba6a-55d6cfd2873e"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 3,
+              "/join": 1
             },
             "devices": {
-              "unknown": 3
+              "unknown": 3,
+              "desktop": 1
             },
             "locales": {
-              "unknown": 3
+              "unknown": 3,
+              "zh": 1
             },
             "timezones": {
-              "unknown": 3
+              "unknown": 3,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "8": 1,
               "13": 1,
-              "18": 1
+              "18": 1,
+              "21": 1
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1789949747210": 1,
             "health-watch-1789966820507": 1,
-            "health-watch-1789987337007": 1
+            "health-watch-1789987337007": 1,
+            "3744ef78-33c9-4587-ba6a-55d6cfd2873e": 1
           }
         }
       },
       "totals": {
-        "pv": 449,
-        "uv": 416,
+        "pv": 450,
+        "uv": 417,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -2612,7 +2619,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "health-watch-1789987337007"
+        "health-watch-1789987337007",
+        "3744ef78-33c9-4587-ba6a-55d6cfd2873e"
       ]
     },
     "affiliate-pulse": {
@@ -13484,6 +13492,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "3744ef78-33c9-4587-ba6a-55d6cfd2873e",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-21T13:42:25.194Z",
+      "lastSeen": "2026-09-21T13:42:25.194Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "8c4d1086-6f1a-42c0-8092-7cf33fac7415",
       "siteId": "intercom-pulse",
