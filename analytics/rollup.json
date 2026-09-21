@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T10:42:17.217Z",
+  "updatedAt": "2026-09-21T13:42:16.304Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -8476,53 +8476,57 @@
           }
         },
         "2026-09-21": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "fc142baa-0346-47d8-98ed-156f46139cb5",
-            "b14c6057-86d5-4161-aa30-0a397345f8d6"
+            "b14c6057-86d5-4161-aa30-0a397345f8d6",
+            "8c4d1086-6f1a-42c0-8092-7cf33fac7415"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
               "/guide/intercom-alternative-indie-hackers": 1,
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
               "ru": 1,
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
               "Europe/Moscow": 1,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
               "11": 1,
-              "12": 1
+              "12": 1,
+              "21": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "fc142baa-0346-47d8-98ed-156f46139cb5": 1,
-            "b14c6057-86d5-4161-aa30-0a397345f8d6": 1
+            "b14c6057-86d5-4161-aa30-0a397345f8d6": 1,
+            "8c4d1086-6f1a-42c0-8092-7cf33fac7415": 1
           }
         }
       },
       "totals": {
-        "pv": 112,
-        "uv": 89,
+        "pv": 113,
+        "uv": 90,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8539,7 +8543,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-21T07:50:41.843Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "8c4d1086-6f1a-42c0-8092-7cf33fac7415"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -13477,6 +13484,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "8c4d1086-6f1a-42c0-8092-7cf33fac7415",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-21T13:42:16.080Z",
+      "lastSeen": "2026-09-21T13:42:16.080Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1789987337007",
       "siteId": "feature-vote",
