@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T13:45:58.439Z",
+  "updatedAt": "2026-09-21T14:05:44.571Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -11599,11 +11599,49 @@
             "739c6105-ee59-45ea-8ef7-a07a3a5f3d84": 1,
             "22d0f978-f60d-4ab7-aa5c-61eee6c9af67": 1
           }
+        },
+        "2026-09-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "cf0a30b5-ac4f-44de-95ea-72c9695f974b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "cf0a30b5-ac4f-44de-95ea-72c9695f974b": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11620,7 +11658,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-21T07:50:59.097Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "cf0a30b5-ac4f-44de-95ea-72c9695f974b"
+      ]
     },
     "status-lite-alt": {
       "url": "https://status-lite-alt.vercel.app",
@@ -13664,6 +13705,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "cf0a30b5-ac4f-44de-95ea-72c9695f974b",
+      "siteId": "status-embed-lite",
+      "firstSeen": "2026-09-21T14:05:44.131Z",
+      "lastSeen": "2026-09-21T14:05:44.131Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "1016ef79-5f1c-4f94-90b6-ebe31594f5dc",
       "siteId": "remote-jobs",
