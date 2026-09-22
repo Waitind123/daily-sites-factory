@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T12:29:06.087Z",
+  "updatedAt": "2026-09-22T12:29:41.457Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6067,11 +6067,49 @@
           "visitorHits": {
             "707872e5-2454-4555-a40a-43095c4a8123": 1
           }
+        },
+        "2026-09-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ab63b0c7-2cd1-4287-85c1-913daea05cbb"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ab63b0c7-2cd1-4287-85c1-913daea05cbb": 1
+          }
         }
       },
       "totals": {
-        "pv": 51,
-        "uv": 33,
+        "pv": 52,
+        "uv": 34,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6088,7 +6126,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-22T07:32:53.350Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "ab63b0c7-2cd1-4287-85c1-913daea05cbb"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -14047,6 +14088,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ab63b0c7-2cd1-4287-85c1-913daea05cbb",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-09-22T12:29:41.278Z",
+      "lastSeen": "2026-09-22T12:29:41.278Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5a3f03a7-056f-4432-9bba-3e8e5862a073",
       "siteId": "intercom-pulse",
