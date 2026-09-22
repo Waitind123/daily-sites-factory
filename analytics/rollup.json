@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T00:06:07.687Z",
+  "updatedAt": "2026-09-22T01:04:11.440Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -13119,10 +13119,49 @@
     "testimonial-wall": {
       "url": "https://testimonial-wall-sepia.vercel.app",
       "name": "testimonial-wall",
-      "daily": {},
+      "daily": {
+        "2026-09-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "978e4383-17b0-4727-8dfd-5099007fc794"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/testimonial-to-alternative-indie-hacker": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "978e4383-17b0-4727-8dfd-5099007fc794": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13139,7 +13178,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-21T07:51:01.701Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "978e4383-17b0-4727-8dfd-5099007fc794"
+      ]
     },
     "timezone-planner": {
       "url": "https://timezone-planner-delta.vercel.app",
@@ -13812,6 +13854,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "978e4383-17b0-4727-8dfd-5099007fc794",
+      "siteId": "testimonial-wall",
+      "firstSeen": "2026-09-22T01:04:11.087Z",
+      "lastSeen": "2026-09-22T01:04:11.087Z",
+      "pageviews": 1,
+      "path": "/guide/testimonial-to-alternative-indie-hacker",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1790035567355",
       "siteId": "feature-vote",
