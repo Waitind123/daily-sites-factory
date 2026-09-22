@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T01:25:56.473Z",
+  "updatedAt": "2026-09-22T03:14:20.432Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -13608,10 +13608,49 @@
     "waitlist-email-verify": {
       "url": "https://waitlist-email-verify.vercel.app",
       "name": "waitlist-email-verify",
-      "daily": {},
+      "daily": {
+        "2026-09-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "6776a1d8-cb6d-4bc9-a823-a196a75ea037"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "6776a1d8-cb6d-4bc9-a823-a196a75ea037": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13628,7 +13667,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-21T07:51:06.450Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "6776a1d8-cb6d-4bc9-a823-a196a75ea037"
+      ]
     },
     "waitlist-pulse": {
       "url": "https://waitlist-pulse.vercel.app",
@@ -13896,6 +13938,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "6776a1d8-cb6d-4bc9-a823-a196a75ea037",
+      "siteId": "waitlist-email-verify",
+      "firstSeen": "2026-09-22T03:14:20.017Z",
+      "lastSeen": "2026-09-22T03:14:20.017Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "5e1c0226-d45c-4d42-a789-ada422598463",
       "siteId": "habit-tracker",
