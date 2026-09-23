@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T04:42:39.636Z",
+  "updatedAt": "2026-09-23T05:28:06.693Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9505,47 +9505,53 @@
           }
         },
         "2026-09-23": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "b1f6cb64-34f1-49fb-bc60-2b5a266c609a"
+            "b1f6cb64-34f1-49fb-bc60-2b5a266c609a",
+            "1075632c-0a6d-43d6-9666-93d5f945dfc7"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/guide/vwo-alternative-indie-hackers": 1
+              "/guide/vwo-alternative-indie-hackers": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "ru": 1
+              "ru": 1,
+              "en": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "12": 1
+              "12": 1,
+              "13": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "b1f6cb64-34f1-49fb-bc60-2b5a266c609a": 1
+            "b1f6cb64-34f1-49fb-bc60-2b5a266c609a": 1,
+            "1075632c-0a6d-43d6-9666-93d5f945dfc7": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9564,7 +9570,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "b1f6cb64-34f1-49fb-bc60-2b5a266c609a"
+        "b1f6cb64-34f1-49fb-bc60-2b5a266c609a",
+        "1075632c-0a6d-43d6-9666-93d5f945dfc7"
       ]
     },
     "pain-radar": {
@@ -14225,6 +14232,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "1075632c-0a6d-43d6-9666-93d5f945dfc7",
+      "siteId": "page-split",
+      "firstSeen": "2026-09-23T05:28:06.274Z",
+      "lastSeen": "2026-09-23T05:28:06.274Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "b1f6cb64-34f1-49fb-bc60-2b5a266c609a",
       "siteId": "page-split",
