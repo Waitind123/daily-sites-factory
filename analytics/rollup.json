@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T10:35:45.793Z",
+  "updatedAt": "2026-09-23T11:03:57.162Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -8885,11 +8885,49 @@
             "8aec865d-ba6e-40db-bd29-035d0368daae": 1,
             "5a3f03a7-056f-4432-9bba-3e8e5862a073": 2
           }
+        },
+        "2026-09-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7e62ff2c-0e2f-473e-927e-f2716d22a5d2"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/intercom-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7e62ff2c-0e2f-473e-927e-f2716d22a5d2": 1
+          }
         }
       },
       "totals": {
-        "pv": 119,
-        "uv": 95,
+        "pv": 120,
+        "uv": 96,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -8906,7 +8944,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-23T07:35:46.170Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "7e62ff2c-0e2f-473e-927e-f2716d22a5d2"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -14246,6 +14287,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7e62ff2c-0e2f-473e-927e-f2716d22a5d2",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-23T11:03:56.749Z",
+      "lastSeen": "2026-09-23T11:03:56.749Z",
+      "pageviews": 1,
+      "path": "/guide/intercom-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "21cbceef-7a8c-4371-b45b-8e7ab0e84680",
       "siteId": "nomad-cities",
