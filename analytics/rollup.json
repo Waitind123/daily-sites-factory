@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T23:40:49.041Z",
+  "updatedAt": "2026-09-23T23:45:14.372Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9049,56 +9049,59 @@
           }
         },
         "2026-09-23": {
-          "pv": 4,
-          "uv": 3,
+          "pv": 5,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "7e62ff2c-0e2f-473e-927e-f2716d22a5d2",
             "32fee4e7-32f8-40ce-9cdd-fdab658794c3",
-            "b31f8e2b-52de-4988-bf94-a005d0196244"
+            "b31f8e2b-52de-4988-bf94-a005d0196244",
+            "9324da38-fe42-4184-98a5-5958f8bb8e4d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 4
+              "直接访问": 5
             },
             "paths": {
               "/guide/intercom-alternative-indie-hackers": 1,
               "/": 1,
-              "/inbox": 2
+              "/inbox": 3
             },
             "devices": {
-              "desktop": 4
+              "desktop": 5
             },
             "locales": {
-              "en": 1,
+              "en": 2,
               "zh": 3
             },
             "timezones": {
-              "America/Los_Angeles": 1,
+              "America/Los_Angeles": 2,
               "UTC": 3
             },
             "utmSources": {},
             "hours": {
+              "7": 1,
               "19": 1,
               "20": 3
             },
             "visitorTypes": {
-              "new": 3,
+              "new": 4,
               "returning": 1
             }
           },
           "visitorHits": {
             "7e62ff2c-0e2f-473e-927e-f2716d22a5d2": 1,
             "32fee4e7-32f8-40ce-9cdd-fdab658794c3": 2,
-            "b31f8e2b-52de-4988-bf94-a005d0196244": 1
+            "b31f8e2b-52de-4988-bf94-a005d0196244": 1,
+            "9324da38-fe42-4184-98a5-5958f8bb8e4d": 1
           }
         }
       },
       "totals": {
-        "pv": 123,
-        "uv": 98,
+        "pv": 124,
+        "uv": 99,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9119,7 +9122,8 @@
       "knownVisitors": [
         "7e62ff2c-0e2f-473e-927e-f2716d22a5d2",
         "32fee4e7-32f8-40ce-9cdd-fdab658794c3",
-        "b31f8e2b-52de-4988-bf94-a005d0196244"
+        "b31f8e2b-52de-4988-bf94-a005d0196244",
+        "9324da38-fe42-4184-98a5-5958f8bb8e4d"
       ]
     },
     "invoice-desk": {
@@ -14542,6 +14546,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "9324da38-fe42-4184-98a5-5958f8bb8e4d",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-23T23:45:14.172Z",
+      "lastSeen": "2026-09-23T23:45:14.172Z",
+      "pageviews": 1,
+      "path": "/inbox",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1790206848824",
       "siteId": "feature-vote",
