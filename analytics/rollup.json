@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T07:36:09.524Z",
+  "updatedAt": "2026-09-23T10:35:45.793Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9397,11 +9397,49 @@
           "visitorHits": {
             "e5e3cd61-63e2-424c-ad55-020dbfc93a12": 1
           }
+        },
+        "2026-09-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "21cbceef-7a8c-4371-b45b-8e7ab0e84680"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/best-digital-nomad-cities": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Madrid": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "21cbceef-7a8c-4371-b45b-8e7ab0e84680": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 6,
+        "pv": 7,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9418,7 +9456,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-23T07:35:49.681Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "21cbceef-7a8c-4371-b45b-8e7ab0e84680"
+      ]
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
@@ -14205,6 +14246,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "21cbceef-7a8c-4371-b45b-8e7ab0e84680",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-09-23T10:35:45.451Z",
+      "lastSeen": "2026-09-23T10:35:45.451Z",
+      "pageviews": 1,
+      "path": "/guide/best-digital-nomad-cities",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Madrid"
+    },
     {
       "visitorId": "health-watch-1790143057801",
       "siteId": "feature-vote",
