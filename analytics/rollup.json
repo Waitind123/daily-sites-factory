@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T04:48:25.923Z",
+  "updatedAt": "2026-09-24T06:59:30.673Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4323,11 +4323,49 @@
             "d87cab12-c4cd-4681-86a1-32daee1e22bd": 1,
             "59344728-1e61-4c64-8277-4b44624221d9": 1
           }
+        },
+        "2026-09-24": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "97c9ea66-b665-45c1-965d-d25a89488608"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/linkedin-headshot": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/Los_Angeles": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "97c9ea66-b665-45c1-965d-d25a89488608": 1
+          }
         }
       },
       "totals": {
-        "pv": 67,
-        "uv": 65,
+        "pv": 68,
+        "uv": 66,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4348,7 +4386,8 @@
       "knownVisitors": [
         "fdb2ab4a-f0b3-420e-bc6f-c1f0a69edd50",
         "d87cab12-c4cd-4681-86a1-32daee1e22bd",
-        "59344728-1e61-4c64-8277-4b44624221d9"
+        "59344728-1e61-4c64-8277-4b44624221d9",
+        "97c9ea66-b665-45c1-965d-d25a89488608"
       ]
     },
     "ai-overview-rank": {
@@ -14585,6 +14624,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "97c9ea66-b665-45c1-965d-d25a89488608",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-09-24T06:59:30.354Z",
+      "lastSeen": "2026-09-24T06:59:30.354Z",
+      "pageviews": 1,
+      "path": "/guide/linkedin-headshot",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/Los_Angeles"
+    },
     {
       "visitorId": "health-watch-1790225305712",
       "siteId": "feature-vote",
