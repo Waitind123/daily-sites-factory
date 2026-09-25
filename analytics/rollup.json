@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T12:38:12.317Z",
+  "updatedAt": "2026-09-25T12:38:13.555Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -2789,7 +2789,7 @@
           }
         },
         "2026-09-25": {
-          "pv": 3,
+          "pv": 4,
           "uv": 3,
           "trial": 0,
           "checkout": 0,
@@ -2801,43 +2801,44 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 3
+              "直接访问": 4
             },
             "paths": {
-              "/": 3
+              "/": 3,
+              "/boards": 1
             },
             "devices": {
               "unknown": 2,
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
               "unknown": 2,
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
               "unknown": 2,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
               "9": 1,
               "15": 1,
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
               "new": 3,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
             "health-watch-1790299754482": 1,
             "health-watch-1790322413616": 1,
-            "084125ed-6171-40e4-bbf2-bbf27516e252": 1
+            "084125ed-6171-40e4-bbf2-bbf27516e252": 2
           }
         }
       },
       "totals": {
-        "pv": 482,
+        "pv": 483,
         "uv": 446,
         "trial": 0,
         "checkout": 0,
@@ -14960,9 +14961,9 @@
       "visitorId": "084125ed-6171-40e4-bbf2-bbf27516e252",
       "siteId": "feature-vote",
       "firstSeen": "2026-09-25T12:38:12.146Z",
-      "lastSeen": "2026-09-25T12:38:12.146Z",
-      "pageviews": 1,
-      "path": "/",
+      "lastSeen": "2026-09-25T12:38:13.322Z",
+      "pageviews": 2,
+      "path": "/boards",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
