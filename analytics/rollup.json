@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-27T12:53:28.560Z",
+  "updatedAt": "2026-09-27T12:53:31.934Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9818,47 +9818,50 @@
           }
         },
         "2026-09-27": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f"
+            "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f",
+            "c719731f-dfc2-461f-8676-43b57b726171"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "20": 1
+              "20": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f": 1
+            "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f": 1,
+            "c719731f-dfc2-461f-8676-43b57b726171": 1
           }
         }
       },
       "totals": {
-        "pv": 136,
-        "uv": 109,
+        "pv": 137,
+        "uv": 110,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9877,7 +9880,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f"
+        "e6c1361e-3f3d-438a-96a8-d4f24fff8d0f",
+        "c719731f-dfc2-461f-8676-43b57b726171"
       ]
     },
     "invoice-desk": {
@@ -15640,6 +15644,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c719731f-dfc2-461f-8676-43b57b726171",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-09-27T12:53:31.762Z",
+      "lastSeen": "2026-09-27T12:53:31.762Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "614e8939-b557-4e4c-bfb9-05ed5004cde3",
       "siteId": "coworking-finder",
