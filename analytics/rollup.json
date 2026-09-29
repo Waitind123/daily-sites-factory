@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T16:47:08.861Z",
+  "updatedAt": "2026-09-29T16:47:10.318Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -15776,7 +15776,7 @@
           }
         },
         "2026-09-29": {
-          "pv": 1,
+          "pv": 2,
           "uv": 1,
           "trial": 0,
           "checkout": 0,
@@ -15786,36 +15786,37 @@
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/alerts": 1
+              "/alerts": 1,
+              "/join": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "America/Los_Angeles": 1
+              "America/Los_Angeles": 2
             },
             "utmSources": {},
             "hours": {
-              "0": 1
+              "0": 2
             },
             "visitorTypes": {
               "new": 1,
-              "returning": 0
+              "returning": 1
             }
           },
           "visitorHits": {
-            "4bf587cd-2cea-4d42-a1e4-61b23e3e9286": 1
+            "4bf587cd-2cea-4d42-a1e4-61b23e3e9286": 2
           }
         }
       },
       "totals": {
-        "pv": 6,
+        "pv": 7,
         "uv": 3,
         "trial": 0,
         "checkout": 0,
@@ -16197,9 +16198,9 @@
       "visitorId": "4bf587cd-2cea-4d42-a1e4-61b23e3e9286",
       "siteId": "visa-live",
       "firstSeen": "2026-09-29T16:47:08.528Z",
-      "lastSeen": "2026-09-29T16:47:08.528Z",
-      "pageviews": 1,
-      "path": "/alerts",
+      "lastSeen": "2026-09-29T16:47:10.026Z",
+      "pageviews": 2,
+      "path": "/join",
       "locale": "en",
       "device": "desktop",
       "timezone": "America/Los_Angeles"
