@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T21:59:41.483Z",
+  "updatedAt": "2026-09-29T01:56:17.632Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3023,11 +3023,49 @@
             "health-watch-1790609172014": 1,
             "health-watch-1790632781220": 1
           }
+        },
+        "2026-09-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1790646977411"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "9": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1790646977411": 1
+          }
         }
       },
       "totals": {
-        "pv": 508,
-        "uv": 471,
+        "pv": 509,
+        "uv": 472,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3049,7 +3087,8 @@
         "cc6cd249-684e-401b-aee8-4a9ed8125af8",
         "a73d1c0f-0a7b-4f27-b77c-da683f158a9d",
         "health-watch-1790609172014",
-        "health-watch-1790632781220"
+        "health-watch-1790632781220",
+        "health-watch-1790646977411"
       ]
     },
     "affiliate-pulse": {
@@ -15907,6 +15946,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1790646977411",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-09-29T01:56:17.450Z",
+      "lastSeen": "2026-09-29T01:56:17.450Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1790632781220",
       "siteId": "feature-vote",
