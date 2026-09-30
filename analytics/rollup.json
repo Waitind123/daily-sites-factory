@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T06:41:53.789Z",
+  "updatedAt": "2026-09-30T07:22:50.357Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -10837,10 +10837,49 @@
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
       "name": "og-image-studio",
-      "daily": {},
+      "daily": {
+        "2026-09-30": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e7c1be75-d705-49be-8740-7606270f9ac8"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/legal/terms": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e7c1be75-d705-49be-8740-7606270f9ac8": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10857,7 +10896,10 @@
         "guideCount": 1,
         "lastChecked": "2026-09-29T08:09:33.791Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "e7c1be75-d705-49be-8740-7606270f9ac8"
+      ]
     },
     "page-split": {
       "url": "https://page-split-pi.vercel.app",
@@ -16241,6 +16283,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e7c1be75-d705-49be-8740-7606270f9ac8",
+      "siteId": "og-image-studio",
+      "firstSeen": "2026-09-30T07:22:49.971Z",
+      "lastSeen": "2026-09-30T07:22:49.971Z",
+      "pageviews": 1,
+      "path": "/legal/terms",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1790750513562",
       "siteId": "feature-vote",
