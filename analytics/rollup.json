@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T13:43:01.311Z",
+  "updatedAt": "2026-10-02T14:35:06.370Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -12222,11 +12222,49 @@
             "eaa9847b-5416-46d8-bc50-c05ebabf573d": 1,
             "8e575a5f-e24f-422a-9c7b-069c1b5f7e73": 1
           }
+        },
+        "2026-10-02": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d54abfc7-40cb-4901-aebe-2f6a46a6a587"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/New_York": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d54abfc7-40cb-4901-aebe-2f6a46a6a587": 1
+          }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 11,
+        "pv": 12,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12243,7 +12281,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-02T08:12:15.217Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d54abfc7-40cb-4901-aebe-2f6a46a6a587"
+      ]
     },
     "reddit-radar": {
       "url": "https://reddit-radar-eta.vercel.app",
@@ -16974,6 +17015,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d54abfc7-40cb-4901-aebe-2f6a46a6a587",
+      "siteId": "reddit-pulse",
+      "firstSeen": "2026-10-02T14:35:05.950Z",
+      "lastSeen": "2026-10-02T14:35:05.950Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/New_York"
+    },
     {
       "visitorId": "23bcb73d-49f1-45f8-ba1f-2254d24dd97a",
       "siteId": "remote-jobs",
