@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T23:26:47.120Z",
+  "updatedAt": "2026-10-03T00:29:13.501Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3239,11 +3239,49 @@
             "health-watch-1790956069843": 1,
             "health-watch-1790973822129": 1
           }
+        },
+        "2026-10-03": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1790987353243"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1790987353243": 1
+          }
         }
       },
       "totals": {
-        "pv": 531,
-        "uv": 494,
+        "pv": 532,
+        "uv": 495,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3266,7 +3304,8 @@
         "07d11873-abd4-431d-a954-dcb0b8050cb2",
         "972d36dc-0eb9-4c5c-890f-69a075091255",
         "health-watch-1790956069843",
-        "health-watch-1790973822129"
+        "health-watch-1790973822129",
+        "health-watch-1790987353243"
       ]
     },
     "affiliate-pulse": {
@@ -17118,6 +17157,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1790987353243",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-03T00:29:13.329Z",
+      "lastSeen": "2026-10-03T00:29:13.329Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "ea0606bf-0f12-4d5b-ae8b-a9fb12de2c1e",
       "siteId": "coworking-finder",
