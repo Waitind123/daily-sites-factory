@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03T12:18:21.156Z",
+  "updatedAt": "2026-10-03T12:18:24.848Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3241,50 +3241,57 @@
           }
         },
         "2026-10-03": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "health-watch-1790987353243",
-            "health-watch-1791009085871"
+            "health-watch-1791009085871",
+            "2814493d-54c0-4dc3-905f-d90fab3b1176"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 2,
+              "/join": 1
             },
             "devices": {
-              "unknown": 2
+              "unknown": 2,
+              "desktop": 1
             },
             "locales": {
-              "unknown": 2
+              "unknown": 2,
+              "zh": 1
             },
             "timezones": {
-              "unknown": 2
+              "unknown": 2,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "8": 1,
-              "14": 1
+              "14": 1,
+              "20": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "health-watch-1790987353243": 1,
-            "health-watch-1791009085871": 1
+            "health-watch-1791009085871": 1,
+            "2814493d-54c0-4dc3-905f-d90fab3b1176": 1
           }
         }
       },
       "totals": {
-        "pv": 533,
-        "uv": 496,
+        "pv": 534,
+        "uv": 497,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3301,7 +3308,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-03T07:51:41.060Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "2814493d-54c0-4dc3-905f-d90fab3b1176"
+      ]
     },
     "affiliate-pulse": {
       "url": "https://affiliate-pulse.vercel.app",
@@ -17247,6 +17257,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2814493d-54c0-4dc3-905f-d90fab3b1176",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-03T12:18:24.689Z",
+      "lastSeen": "2026-10-03T12:18:24.689Z",
+      "pageviews": 1,
+      "path": "/join",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f0ac2eab-9ea0-40fd-9317-38d0586d7318",
       "siteId": "team-headshots",
