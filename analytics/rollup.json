@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T01:59:43.222Z",
+  "updatedAt": "2026-10-05T02:56:50.503Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -14591,10 +14591,49 @@
     "scope3-commute-pulse": {
       "url": "https://scope3-commute-pulse.vercel.app",
       "name": "scope3-commute-pulse",
-      "daily": {},
+      "daily": {
+        "2026-10-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7d11490e-6b3c-4742-9212-6d4e630f0e85"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/guide/csrd-scope3-employee-commuting": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "Asia/Taipei": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7d11490e-6b3c-4742-9212-6d4e630f0e85": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -14611,7 +14650,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-04T08:00:21.249Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7d11490e-6b3c-4742-9212-6d4e630f0e85"
+      ]
     },
     "sec-quest-pulse": {
       "url": "https://sec-quest-pulse.vercel.app",
@@ -17628,6 +17670,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7d11490e-6b3c-4742-9212-6d4e630f0e85",
+      "siteId": "scope3-commute-pulse",
+      "firstSeen": "2026-10-05T02:56:50.086Z",
+      "lastSeen": "2026-10-05T02:56:50.086Z",
+      "pageviews": 1,
+      "path": "/guide/csrd-scope3-employee-commuting",
+      "referrer": "https://www.bing.com/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "Asia/Taipei"
+    },
     {
       "visitorId": "health-watch-1791165582886",
       "siteId": "feature-vote",
