@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T15:38:11.821Z",
+  "updatedAt": "2026-10-05T15:41:13.045Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -11146,47 +11146,50 @@
           }
         },
         "2026-10-05": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "c5df0f71-8559-435c-ad49-7d8692e38285"
+            "c5df0f71-8559-435c-ad49-7d8692e38285",
+            "44070294-ad5e-4201-b556-f848f5898ca0"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/inbox": 1
+              "/inbox": 1,
+              "/": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "23": 1
+              "23": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "c5df0f71-8559-435c-ad49-7d8692e38285": 1
+            "c5df0f71-8559-435c-ad49-7d8692e38285": 1,
+            "44070294-ad5e-4201-b556-f848f5898ca0": 1
           }
         }
       },
       "totals": {
-        "pv": 152,
-        "uv": 125,
+        "pv": 153,
+        "uv": 126,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11205,7 +11208,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "c5df0f71-8559-435c-ad49-7d8692e38285"
+        "c5df0f71-8559-435c-ad49-7d8692e38285",
+        "44070294-ad5e-4201-b556-f848f5898ca0"
       ]
     },
     "invoice-desk": {
@@ -17777,6 +17781,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "44070294-ad5e-4201-b556-f848f5898ca0",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-10-05T15:41:12.827Z",
+      "lastSeen": "2026-10-05T15:41:12.827Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "e530761f-abdb-4ed7-a3d9-cd43a7d851a1",
       "siteId": "team-headshots",
