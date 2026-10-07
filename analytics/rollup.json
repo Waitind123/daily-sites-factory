@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T14:20:31.501Z",
+  "updatedAt": "2026-10-07T14:20:33.271Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -15145,47 +15145,53 @@
           }
         },
         "2026-10-07": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "a3141c49-5029-45ce-9210-f82c1e310899"
+            "a3141c49-5029-45ce-9210-f82c1e310899",
+            "7e50d068-7de1-478a-b108-ce4b4203b733"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 1,
+              "/jobs": 1
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "zh": 1
             },
             "timezones": {
-              "America/New_York": 1
+              "America/New_York": 1,
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "14": 1
+              "14": 1,
+              "22": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "a3141c49-5029-45ce-9210-f82c1e310899": 1
+            "a3141c49-5029-45ce-9210-f82c1e310899": 1,
+            "7e50d068-7de1-478a-b108-ce4b4203b733": 1
           }
         }
       },
       "totals": {
-        "pv": 67,
-        "uv": 48,
+        "pv": 68,
+        "uv": 49,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15202,7 +15208,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-07T08:24:04.455Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7e50d068-7de1-478a-b108-ce4b4203b733"
+      ]
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
@@ -18447,6 +18456,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7e50d068-7de1-478a-b108-ce4b4203b733",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-10-07T14:20:33.087Z",
+      "lastSeen": "2026-10-07T14:20:33.087Z",
+      "pageviews": 1,
+      "path": "/jobs",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1d8b1768-3e9a-46e8-8e6f-fa8863794cee",
       "siteId": "coworking-finder",
