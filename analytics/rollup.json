@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T12:24:19.273Z",
+  "updatedAt": "2026-10-07T14:17:00.527Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -11488,11 +11488,49 @@
             "6e54d47a-71c0-4e8d-83d4-44644c54ddc6": 1,
             "4d369f05-5a6b-444b-b3e2-40b9a9a48c57": 1
           }
+        },
+        "2026-10-07": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "fedb68cb-eb60-4260-a3ef-a57f8dce153e"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "22": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "fedb68cb-eb60-4260-a3ef-a57f8dce153e": 1
+          }
         }
       },
       "totals": {
-        "pv": 156,
-        "uv": 129,
+        "pv": 157,
+        "uv": 130,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11509,7 +11547,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-07T08:23:50.766Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "fedb68cb-eb60-4260-a3ef-a57f8dce153e"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -18267,6 +18308,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "fedb68cb-eb60-4260-a3ef-a57f8dce153e",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-10-07T14:17:00.293Z",
+      "lastSeen": "2026-10-07T14:17:00.293Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "1659393c-203b-4de7-89e5-5e7dd9bb6915",
       "siteId": "freelance-proposal",
