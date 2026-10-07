@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:41:12.180Z",
+  "updatedAt": "2026-10-07T06:17:31.939Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -14979,11 +14979,49 @@
           "visitorHits": {
             "ee52ba76-e19a-41d6-9db8-6b118b28a5e4": 1
           }
+        },
+        "2026-10-07": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a3141c49-5029-45ce-9210-f82c1e310899"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "America/New_York": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "14": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a3141c49-5029-45ce-9210-f82c1e310899": 1
+          }
         }
       },
       "totals": {
-        "pv": 66,
-        "uv": 47,
+        "pv": 67,
+        "uv": 48,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15002,7 +15040,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "ee52ba76-e19a-41d6-9db8-6b118b28a5e4"
+        "ee52ba76-e19a-41d6-9db8-6b118b28a5e4",
+        "a3141c49-5029-45ce-9210-f82c1e310899"
       ]
     },
     "review-pulse": {
@@ -18210,6 +18249,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a3141c49-5029-45ce-9210-f82c1e310899",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-10-07T06:17:31.590Z",
+      "lastSeen": "2026-10-07T06:17:31.590Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "America/New_York"
+    },
     {
       "visitorId": "health-watch-1791333671855",
       "siteId": "feature-vote",
