@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T21:14:37.306Z",
+  "updatedAt": "2026-10-09T23:55:49.388Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -18439,11 +18439,49 @@
           "visitorHits": {
             "a81804df-d03c-4a70-827c-ba9413e30406": 1
           }
+        },
+        "2026-10-09": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "82fe0fa9-6034-4fde-8c69-f2f107dc8f47"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/remote-work-loneliness": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "7": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "82fe0fa9-6034-4fde-8c69-f2f107dc8f47": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -18460,7 +18498,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-09T08:43:50.805Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "82fe0fa9-6034-4fde-8c69-f2f107dc8f47"
+      ]
     },
     "visa-alert": {
       "url": "https://visa-alert-one.vercel.app",
@@ -19047,6 +19088,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "82fe0fa9-6034-4fde-8c69-f2f107dc8f47",
+      "siteId": "virtual-cowork-room",
+      "firstSeen": "2026-10-09T23:55:49.018Z",
+      "lastSeen": "2026-10-09T23:55:49.018Z",
+      "pageviews": 1,
+      "path": "/guide/remote-work-loneliness",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "2ff4114d-4ccb-438c-a0a9-27460f63f8ba",
       "siteId": "pain-radar",
