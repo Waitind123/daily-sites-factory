@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T21:14:33.124Z",
+  "updatedAt": "2026-10-09T21:14:37.306Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -12982,47 +12982,50 @@
           }
         },
         "2026-10-09": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "4360c395-2243-4627-b2c2-011f7f1096ff"
+            "4360c395-2243-4627-b2c2-011f7f1096ff",
+            "2ff4114d-4ccb-438c-a0a9-27460f63f8ba"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "tr": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "5": 1
+              "5": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "4360c395-2243-4627-b2c2-011f7f1096ff": 1
+            "4360c395-2243-4627-b2c2-011f7f1096ff": 1,
+            "2ff4114d-4ccb-438c-a0a9-27460f63f8ba": 1
           }
         }
       },
       "totals": {
-        "pv": 10,
-        "uv": 10,
+        "pv": 11,
+        "uv": 11,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13041,7 +13044,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "4360c395-2243-4627-b2c2-011f7f1096ff"
+        "4360c395-2243-4627-b2c2-011f7f1096ff",
+        "2ff4114d-4ccb-438c-a0a9-27460f63f8ba"
       ]
     },
     "pay-once-pulse": {
@@ -19043,6 +19047,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "2ff4114d-4ccb-438c-a0a9-27460f63f8ba",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-10-09T21:14:37.027Z",
+      "lastSeen": "2026-10-09T21:14:37.027Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "tr",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "4360c395-2243-4627-b2c2-011f7f1096ff",
       "siteId": "pain-radar",
