@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T14:12:22.792Z",
+  "updatedAt": "2026-10-09T14:15:31.754Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5757,47 +5757,49 @@
           }
         },
         "2026-10-09": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "e0534785-dd2a-4613-b343-73a88066016b"
+            "e0534785-dd2a-4613-b343-73a88066016b",
+            "88cb8245-b182-4a40-9f86-82ad1f0b1f42"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "22": 1
+              "22": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "e0534785-dd2a-4613-b343-73a88066016b": 1
+            "e0534785-dd2a-4613-b343-73a88066016b": 1,
+            "88cb8245-b182-4a40-9f86-82ad1f0b1f42": 1
           }
         }
       },
       "totals": {
-        "pv": 94,
-        "uv": 92,
+        "pv": 95,
+        "uv": 93,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5816,7 +5818,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "e0534785-dd2a-4613-b343-73a88066016b"
+        "e0534785-dd2a-4613-b343-73a88066016b",
+        "88cb8245-b182-4a40-9f86-82ad1f0b1f42"
       ]
     },
     "ai-overview-rank": {
@@ -18824,6 +18827,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "88cb8245-b182-4a40-9f86-82ad1f0b1f42",
+      "siteId": "ai-headshots",
+      "firstSeen": "2026-10-09T14:15:31.531Z",
+      "lastSeen": "2026-10-09T14:15:31.531Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "805bedd0-516e-4f21-9797-f279ce041993",
       "siteId": "team-headshots",
