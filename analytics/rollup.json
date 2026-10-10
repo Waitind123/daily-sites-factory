@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T23:55:49.388Z",
+  "updatedAt": "2026-10-10T00:49:20.547Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3636,11 +3636,49 @@
             "health-watch-1791562261515": 1,
             "health-watch-1791579192914": 1
           }
+        },
+        "2026-10-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1791593360161"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "8": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1791593360161": 1
+          }
         }
       },
       "totals": {
-        "pv": 575,
-        "uv": 538,
+        "pv": 576,
+        "uv": 539,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3663,7 +3701,8 @@
         "10d76653-eeaf-4ba8-a7b5-9ee9987385a0",
         "8fe52d62-9f2d-40bf-a34d-2b20c3ef4fa5",
         "health-watch-1791562261515",
-        "health-watch-1791579192914"
+        "health-watch-1791579192914",
+        "health-watch-1791593360161"
       ]
     },
     "affiliate-pulse": {
@@ -19088,6 +19127,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1791593360161",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-10T00:49:20.351Z",
+      "lastSeen": "2026-10-10T00:49:20.351Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "82fe0fa9-6034-4fde-8c69-f2f107dc8f47",
       "siteId": "virtual-cowork-room",
