@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-10T20:01:20.146Z",
+  "updatedAt": "2026-10-10T21:04:06.584Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -16279,10 +16279,49 @@
     "social-listen-alt": {
       "url": "https://social-listen-alt.vercel.app",
       "name": "社交监听替代品",
-      "daily": {},
+      "daily": {
+        "2026-10-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e3eec692-15fd-46be-8d73-ab69287f9e65"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/brand24-mention-alternative-indie": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "5": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e3eec692-15fd-46be-8d73-ab69287f9e65": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16299,7 +16338,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-10T08:19:35.700Z",
         "score": 80
-      }
+      },
+      "knownVisitors": [
+        "e3eec692-15fd-46be-8d73-ab69287f9e65"
+      ]
     },
     "startup-ideas": {
       "url": "https://startup-ideas-five.vercel.app",
@@ -19415,6 +19457,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e3eec692-15fd-46be-8d73-ab69287f9e65",
+      "siteId": "social-listen-alt",
+      "firstSeen": "2026-10-10T21:04:06.194Z",
+      "lastSeen": "2026-10-10T21:04:06.194Z",
+      "pageviews": 1,
+      "path": "/guide/brand24-mention-alternative-indie",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "498917da-f69e-48dd-bca6-12cbe90205c5",
       "siteId": "status-embed-lite",
