@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-12T02:56:01.530Z",
+  "updatedAt": "2026-10-12T05:55:12.023Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3752,11 +3752,49 @@
             "health-watch-1791749719026": 1,
             "health-watch-1791762079296": 1
           }
+        },
+        "2026-10-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1791784511753"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "13": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1791784511753": 1
+          }
         }
       },
       "totals": {
-        "pv": 590,
-        "uv": 552,
+        "pv": 591,
+        "uv": 553,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3780,7 +3818,8 @@
         "5f298819-2fda-4c1c-a562-c259baad5a6f",
         "health-watch-1791733157639",
         "health-watch-1791749719026",
-        "health-watch-1791762079296"
+        "health-watch-1791762079296",
+        "health-watch-1791784511753"
       ]
     },
     "affiliate-pulse": {
@@ -19786,6 +19825,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1791784511753",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-12T05:55:11.823Z",
+      "lastSeen": "2026-10-12T05:55:11.823Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "89f60d88-8b94-441d-a24b-8652dd00ae0f",
       "siteId": "wiki-pulse",
