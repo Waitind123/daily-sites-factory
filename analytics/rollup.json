@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T14:55:38.009Z",
+  "updatedAt": "2026-10-13T15:31:46.902Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -17017,11 +17017,49 @@
           "visitorHits": {
             "e3eec692-15fd-46be-8d73-ab69287f9e65": 1
           }
+        },
+        "2026-10-13": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e2cb4815-0f22-4a1a-98da-702e2ff7ba85"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/brand24-mention-alternative-indie": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "23": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e2cb4815-0f22-4a1a-98da-702e2ff7ba85": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17038,7 +17076,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-13T09:11:30.837Z",
         "score": 80
-      }
+      },
+      "knownVisitors": [
+        "e2cb4815-0f22-4a1a-98da-702e2ff7ba85"
+      ]
     },
     "startup-ideas": {
       "url": "https://startup-ideas-five.vercel.app",
@@ -20263,6 +20304,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e2cb4815-0f22-4a1a-98da-702e2ff7ba85",
+      "siteId": "social-listen-alt",
+      "firstSeen": "2026-10-13T15:31:46.423Z",
+      "lastSeen": "2026-10-13T15:31:46.423Z",
+      "pageviews": 1,
+      "path": "/guide/brand24-mention-alternative-indie",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "05689033-062c-4bbd-92d7-84ab061eadbe",
       "siteId": "remote-jobs",
