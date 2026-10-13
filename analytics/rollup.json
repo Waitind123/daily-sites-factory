@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T01:17:21.406Z",
+  "updatedAt": "2026-10-13T03:32:59.163Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3806,11 +3806,49 @@
             "1b348991-d92b-4353-a0f2-c6fbeaeaeb59": 1,
             "health-watch-1791845877488": 1
           }
+        },
+        "2026-10-13": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1791862378898"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1791862378898": 1
+          }
         }
       },
       "totals": {
-        "pv": 595,
-        "uv": 557,
+        "pv": 596,
+        "uv": 558,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3832,7 +3870,8 @@
         "health-watch-1791818495754",
         "9573c68e-9c52-4c6d-aac8-fe2f20b8d602",
         "1b348991-d92b-4353-a0f2-c6fbeaeaeb59",
-        "health-watch-1791845877488"
+        "health-watch-1791845877488",
+        "health-watch-1791862378898"
       ]
     },
     "affiliate-pulse": {
@@ -20072,6 +20111,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1791862378898",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-13T03:32:58.965Z",
+      "lastSeen": "2026-10-13T03:32:58.965Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "22493748-2762-40bc-bbba-4419d3bcf578",
       "siteId": "page-split",
