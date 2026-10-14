@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:10:55.094Z",
+  "updatedAt": "2026-10-14T11:39:08.760Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -13324,11 +13324,49 @@
           "visitorHits": {
             "21cbceef-7a8c-4371-b45b-8e7ab0e84680": 1
           }
+        },
+        "2026-10-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d1ed51da-6591-4e73-ad02-9bc72614dbdd"
+          ],
+          "audience": {
+            "referrers": {
+              "搜索引擎": 1
+            },
+            "paths": {
+              "/guide/best-digital-nomad-cities": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Asia/Tbilisi": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d1ed51da-6591-4e73-ad02-9bc72614dbdd": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 7,
+        "pv": 8,
+        "uv": 8,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13345,7 +13383,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-14T07:22:35.859Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d1ed51da-6591-4e73-ad02-9bc72614dbdd"
+      ]
     },
     "og-image-studio": {
       "url": "https://og-image-studio-cyan.vercel.app",
@@ -20334,6 +20375,18 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d1ed51da-6591-4e73-ad02-9bc72614dbdd",
+      "siteId": "nomad-cities",
+      "firstSeen": "2026-10-14T11:39:08.283Z",
+      "lastSeen": "2026-10-14T11:39:08.283Z",
+      "pageviews": 1,
+      "path": "/guide/best-digital-nomad-cities",
+      "referrer": "https://yandex.ru/",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Asia/Tbilisi"
+    },
     {
       "visitorId": "health-watch-1791972654740",
       "siteId": "feature-vote",
