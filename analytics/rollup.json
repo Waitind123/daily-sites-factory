@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T20:45:52.226Z",
+  "updatedAt": "2026-10-14T22:40:46.736Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -12908,10 +12908,49 @@
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
       "name": "invoice-desk",
-      "daily": {},
+      "daily": {
+        "2026-10-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4e2de466-1630-414c-8a37-c93b6bb3d8a9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/honeybook-invoice-alternative-freelancer": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "6": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4e2de466-1630-414c-8a37-c93b6bb3d8a9": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -12928,7 +12967,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-14T07:22:30.227Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "4e2de466-1630-414c-8a37-c93b6bb3d8a9"
+      ]
     },
     "landing-generator": {
       "url": "https://landing-generator-opal.vercel.app",
@@ -20604,6 +20646,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4e2de466-1630-414c-8a37-c93b6bb3d8a9",
+      "siteId": "invoice-desk",
+      "firstSeen": "2026-10-14T22:40:46.379Z",
+      "lastSeen": "2026-10-14T22:40:46.379Z",
+      "pageviews": 1,
+      "path": "/guide/honeybook-invoice-alternative-freelancer",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "62f988a8-8987-4e44-82c1-6cb6e5e36117",
       "siteId": "guilt-free-habits",
