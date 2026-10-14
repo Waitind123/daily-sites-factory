@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T23:17:17.608Z",
+  "updatedAt": "2026-10-14T04:51:31.535Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3862,11 +3862,49 @@
             "health-watch-1791918942986": 1,
             "health-watch-1791933437302": 1
           }
+        },
+        "2026-10-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1791953491144"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1791953491144": 1
+          }
         }
       },
       "totals": {
-        "pv": 601,
-        "uv": 563,
+        "pv": 602,
+        "uv": 564,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -3889,7 +3927,8 @@
         "f74d4bdc-67d2-4c0d-9935-0a799d193db7",
         "7bdf5372-ee80-49e8-b323-0da2abec8dba",
         "health-watch-1791918942986",
-        "health-watch-1791933437302"
+        "health-watch-1791933437302",
+        "health-watch-1791953491144"
       ]
     },
     "affiliate-pulse": {
@@ -20312,6 +20351,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1791953491144",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-14T04:51:31.222Z",
+      "lastSeen": "2026-10-14T04:51:31.222Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "health-watch-1791933437302",
       "siteId": "feature-vote",
