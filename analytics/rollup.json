@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T19:21:46.659Z",
+  "updatedAt": "2026-10-14T20:45:52.226Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -10086,10 +10086,49 @@
     "guilt-free-habits": {
       "url": "https://guilt-free-habits.vercel.app",
       "name": "guilt-free-habits",
-      "daily": {},
+      "daily": {
+        "2026-10-14": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "62f988a8-8987-4e44-82c1-6cb6e5e36117"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/streak-anxiety-habit-tracker-alternative": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "4": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "62f988a8-8987-4e44-82c1-6cb6e5e36117": 1
+          }
+        }
+      },
       "totals": {
-        "pv": 0,
-        "uv": 0,
+        "pv": 1,
+        "uv": 1,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -10106,7 +10145,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-14T07:22:23.605Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "62f988a8-8987-4e44-82c1-6cb6e5e36117"
+      ]
     },
     "gummyspy": {
       "url": "https://gummyspy.vercel.app",
@@ -20562,6 +20604,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "62f988a8-8987-4e44-82c1-6cb6e5e36117",
+      "siteId": "guilt-free-habits",
+      "firstSeen": "2026-10-14T20:45:51.781Z",
+      "lastSeen": "2026-10-14T20:45:51.781Z",
+      "pageviews": 1,
+      "path": "/guide/streak-anxiety-habit-tracker-alternative",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1792005706339",
       "siteId": "feature-vote",
