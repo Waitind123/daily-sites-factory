@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T21:28:33.217Z",
+  "updatedAt": "2026-10-15T22:14:18.625Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -17468,11 +17468,49 @@
           "visitorHits": {
             "9a33d54d-b978-4b97-996a-a8a29ffb1e04": 1
           }
+        },
+        "2026-10-15": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7977e2c0-272d-48eb-9ebe-9656a7baff32"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/pandadoc-alternative-small-teams": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "6": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7977e2c0-272d-48eb-9ebe-9656a7baff32": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17489,7 +17527,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-15T07:14:37.799Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "7977e2c0-272d-48eb-9ebe-9656a7baff32"
+      ]
     },
     "social-listen-alt": {
       "url": "https://social-listen-alt.vercel.app",
@@ -20933,6 +20974,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7977e2c0-272d-48eb-9ebe-9656a7baff32",
+      "siteId": "sign-pulse",
+      "firstSeen": "2026-10-15T22:14:18.170Z",
+      "lastSeen": "2026-10-15T22:14:18.170Z",
+      "pageviews": 1,
+      "path": "/guide/pandadoc-alternative-small-teams",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1792099712966",
       "siteId": "feature-vote",
