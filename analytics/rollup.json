@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T06:58:59.580Z",
+  "updatedAt": "2026-10-16T10:37:37.399Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -20099,11 +20099,49 @@
           "visitorHits": {
             "978e4383-17b0-4727-8dfd-5099007fc794": 1
           }
+        },
+        "2026-10-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "18": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20120,7 +20158,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-16T06:58:46.753Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47"
+      ]
     },
     "timezone-planner": {
       "url": "https://timezone-planner-delta.vercel.app",
@@ -20988,6 +21029,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47",
+      "siteId": "testimonial-wall",
+      "firstSeen": "2026-10-16T10:37:36.976Z",
+      "lastSeen": "2026-10-16T10:37:36.976Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1792129856256",
       "siteId": "feature-vote",
