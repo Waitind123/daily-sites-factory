@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T12:13:20.734Z",
+  "updatedAt": "2026-10-16T12:13:22.174Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -3982,8 +3982,8 @@
           }
         },
         "2026-10-16": {
-          "pv": 5,
-          "uv": 5,
+          "pv": 4,
+          "uv": 4,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
@@ -3991,37 +3991,36 @@
             "health-watch-1792110223477",
             "health-watch-1792129856256",
             "health-watch-1792149677252",
-            "8c45280a-950d-4439-948c-986206232092",
-            "8e2c8229-7f65-4a34-b2e9-0cdf50a0b609"
+            "8c45280a-950d-4439-948c-986206232092"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 5
+              "直接访问": 4
             },
             "paths": {
-              "/": 5
+              "/": 4
             },
             "devices": {
               "unknown": 3,
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
               "unknown": 3,
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
               "unknown": 3,
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
               "8": 1,
               "13": 1,
               "19": 1,
-              "20": 2
+              "20": 1
             },
             "visitorTypes": {
-              "new": 5,
+              "new": 4,
               "returning": 0
             }
           },
@@ -4029,14 +4028,13 @@
             "health-watch-1792110223477": 1,
             "health-watch-1792129856256": 1,
             "health-watch-1792149677252": 1,
-            "8c45280a-950d-4439-948c-986206232092": 1,
-            "8e2c8229-7f65-4a34-b2e9-0cdf50a0b609": 1
+            "8c45280a-950d-4439-948c-986206232092": 1
           }
         }
       },
       "totals": {
-        "pv": 620,
-        "uv": 582,
+        "pv": 619,
+        "uv": 581,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4056,8 +4054,7 @@
       },
       "knownVisitors": [
         "health-watch-1792149677252",
-        "8c45280a-950d-4439-948c-986206232092",
-        "8e2c8229-7f65-4a34-b2e9-0cdf50a0b609"
+        "8c45280a-950d-4439-948c-986206232092"
       ]
     },
     "affiliate-pulse": {
@@ -9298,11 +9295,49 @@
           "visitorHits": {
             "e81f1847-d869-42fa-a24d-5be350922fc0": 1
           }
+        },
+        "2026-10-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "861f1fdc-16e9-477b-bca2-4c9c5a0d7e0b"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/spaces": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "861f1fdc-16e9-477b-bca2-4c9c5a0d7e0b": 1
+          }
         }
       },
       "totals": {
-        "pv": 79,
-        "uv": 57,
+        "pv": 80,
+        "uv": 58,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9319,7 +9354,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-16T06:57:49.292Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "861f1fdc-16e9-477b-bca2-4c9c5a0d7e0b"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -21200,12 +21238,12 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "8e2c8229-7f65-4a34-b2e9-0cdf50a0b609",
-      "siteId": "feature-vote",
-      "firstSeen": "2026-10-16T12:13:20.482Z",
-      "lastSeen": "2026-10-16T12:13:20.482Z",
+      "visitorId": "861f1fdc-16e9-477b-bca2-4c9c5a0d7e0b",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-10-16T12:13:21.972Z",
+      "lastSeen": "2026-10-16T12:13:21.972Z",
       "pageviews": 1,
-      "path": "/",
+      "path": "/spaces",
       "locale": "zh",
       "device": "desktop",
       "timezone": "UTC"
