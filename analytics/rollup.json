@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T18:18:04.494Z",
+  "updatedAt": "2026-10-16T18:33:35.830Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -6816,47 +6816,49 @@
       "name": "bulk-landing-gen",
       "daily": {
         "2026-10-16": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "70d138d7-8978-4fae-bdeb-a505204be5db"
+            "70d138d7-8978-4fae-bdeb-a505204be5db",
+            "824f6599-5882-4471-aea0-ba7492d56262"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "2": 1
+              "2": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "70d138d7-8978-4fae-bdeb-a505204be5db": 1
+            "70d138d7-8978-4fae-bdeb-a505204be5db": 1,
+            "824f6599-5882-4471-aea0-ba7492d56262": 1
           }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -6875,7 +6877,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "70d138d7-8978-4fae-bdeb-a505204be5db"
+        "70d138d7-8978-4fae-bdeb-a505204be5db",
+        "824f6599-5882-4471-aea0-ba7492d56262"
       ]
     },
     "carbon-calculator": {
@@ -21372,6 +21375,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "824f6599-5882-4471-aea0-ba7492d56262",
+      "siteId": "bulk-landing-gen",
+      "firstSeen": "2026-10-16T18:33:35.451Z",
+      "lastSeen": "2026-10-16T18:33:35.451Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "70d138d7-8978-4fae-bdeb-a505204be5db",
       "siteId": "bulk-landing-gen",
