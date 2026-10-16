@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T12:22:16.720Z",
+  "updatedAt": "2026-10-16T15:50:18.616Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -20866,11 +20866,49 @@
           "visitorHits": {
             "4bf587cd-2cea-4d42-a1e4-61b23e3e9286": 2
           }
+        },
+        "2026-10-16": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "5a36bfa5-2a55-4fbf-9e75-176449e0c314"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "23": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "5a36bfa5-2a55-4fbf-9e75-176449e0c314": 1
+          }
         }
       },
       "totals": {
-        "pv": 7,
-        "uv": 3,
+        "pv": 8,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20887,7 +20925,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-16T06:58:53.861Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "5a36bfa5-2a55-4fbf-9e75-176449e0c314"
+      ]
     },
     "visa-tracker": {
       "url": "https://visa-tracker-lilac.vercel.app",
@@ -21285,6 +21326,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "5a36bfa5-2a55-4fbf-9e75-176449e0c314",
+      "siteId": "visa-live",
+      "firstSeen": "2026-10-16T15:50:18.260Z",
+      "lastSeen": "2026-10-16T15:50:18.260Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "73292f7d-46b8-4501-a0f6-0f3cd0813998",
       "siteId": "testimonial-wall",
