@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T10:37:37.399Z",
+  "updatedAt": "2026-10-16T10:42:51.007Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -20101,47 +20101,50 @@
           }
         },
         "2026-10-16": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47"
+            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47",
+            "7cb04a17-ad16-4c39-9797-07dcf374055d"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "en": 1
+              "en": 1,
+              "kk": 1
             },
             "timezones": {
-              "Europe/Moscow": 1
+              "Europe/Moscow": 2
             },
             "utmSources": {},
             "hours": {
-              "18": 1
+              "18": 2
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47": 1
+            "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47": 1,
+            "7cb04a17-ad16-4c39-9797-07dcf374055d": 1
           }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -20160,7 +20163,8 @@
         "score": 100
       },
       "knownVisitors": [
-        "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47"
+        "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47",
+        "7cb04a17-ad16-4c39-9797-07dcf374055d"
       ]
     },
     "timezone-planner": {
@@ -21029,6 +21033,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7cb04a17-ad16-4c39-9797-07dcf374055d",
+      "siteId": "testimonial-wall",
+      "firstSeen": "2026-10-16T10:42:50.792Z",
+      "lastSeen": "2026-10-16T10:42:50.792Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "kk",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "d5e3b37e-eb0d-42cc-a1b4-420d86a38b47",
       "siteId": "testimonial-wall",
