@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T11:30:36.005Z",
+  "updatedAt": "2026-10-17T11:30:41.661Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -17585,11 +17585,49 @@
           "visitorHits": {
             "a396b7f1-db5f-4fd8-af42-7c45ad12b84c": 1
           }
+        },
+        "2026-10-17": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "0bddc2ec-83d1-4ccb-97ec-39145e7aad6c"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "0bddc2ec-83d1-4ccb-97ec-39145e7aad6c": 1
+          }
         }
       },
       "totals": {
-        "pv": 79,
-        "uv": 58,
+        "pv": 80,
+        "uv": 59,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17606,7 +17644,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-17T06:49:29.986Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "0bddc2ec-83d1-4ccb-97ec-39145e7aad6c"
+      ]
     },
     "review-pulse": {
       "url": "https://review-pulse-two.vercel.app",
@@ -21562,6 +21603,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "0bddc2ec-83d1-4ccb-97ec-39145e7aad6c",
+      "siteId": "remote-jobs",
+      "firstSeen": "2026-10-17T11:30:41.456Z",
+      "lastSeen": "2026-10-17T11:30:41.456Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "95a78b67-b191-4f29-8bec-8b2d60b56687",
       "siteId": "feature-vote",
