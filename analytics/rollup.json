@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T12:02:55.158Z",
+  "updatedAt": "2026-10-18T12:02:57.918Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -13668,47 +13668,50 @@
           }
         },
         "2026-10-18": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "7a0bc825-6fb6-4475-b6d0-37631c729e44"
+            "7a0bc825-6fb6-4475-b6d0-37631c729e44",
+            "80409610-cafd-4e61-8146-963da5568f30"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "desktop": 1
+              "desktop": 2
             },
             "locales": {
-              "zh": 1
+              "zh": 2
             },
             "timezones": {
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
-              "19": 1
+              "19": 1,
+              "20": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "7a0bc825-6fb6-4475-b6d0-37631c729e44": 1
+            "7a0bc825-6fb6-4475-b6d0-37631c729e44": 1,
+            "80409610-cafd-4e61-8146-963da5568f30": 1
           }
         }
       },
       "totals": {
-        "pv": 180,
-        "uv": 152,
+        "pv": 181,
+        "uv": 153,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -13727,7 +13730,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "7a0bc825-6fb6-4475-b6d0-37631c729e44"
+        "7a0bc825-6fb6-4475-b6d0-37631c729e44",
+        "80409610-cafd-4e61-8146-963da5568f30"
       ]
     },
     "invoice-desk": {
@@ -21896,6 +21900,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "80409610-cafd-4e61-8146-963da5568f30",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-10-18T12:02:57.694Z",
+      "lastSeen": "2026-10-18T12:02:57.694Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "zh",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "f95bc610-2ca2-4412-b653-478d36c6f9cc",
       "siteId": "coworking-finder",
