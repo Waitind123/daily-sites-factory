@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T04:48:20.298Z",
+  "updatedAt": "2026-10-20T04:55:04.860Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -15131,11 +15131,49 @@
             "4360c395-2243-4627-b2c2-011f7f1096ff": 1,
             "2ff4114d-4ccb-438c-a0a9-27460f63f8ba": 1
           }
+        },
+        "2026-10-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c80527ef-bb45-4430-9fe8-b0c9fd8f3a78"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/cross-platform-pain-radar-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c80527ef-bb45-4430-9fe8-b0c9fd8f3a78": 1
+          }
         }
       },
       "totals": {
-        "pv": 11,
-        "uv": 11,
+        "pv": 12,
+        "uv": 12,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15152,7 +15190,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-19T07:32:42.025Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "c80527ef-bb45-4430-9fe8-b0c9fd8f3a78"
+      ]
     },
     "pay-once-pulse": {
       "url": "https://pay-once-pulse.vercel.app",
@@ -22364,6 +22405,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c80527ef-bb45-4430-9fe8-b0c9fd8f3a78",
+      "siteId": "pain-radar",
+      "firstSeen": "2026-10-20T04:55:04.414Z",
+      "lastSeen": "2026-10-20T04:55:04.414Z",
+      "pageviews": 1,
+      "path": "/guide/cross-platform-pain-radar-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1792471700014",
       "siteId": "feature-vote",
