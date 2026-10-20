@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T12:39:39.922Z",
+  "updatedAt": "2026-10-20T12:39:41.332Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -9919,11 +9919,49 @@
           "visitorHits": {
             "5dc6eb5d-76dd-48f5-8536-c6cca63a4795": 1
           }
+        },
+        "2026-10-20": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "80598170-3565-4560-a821-3a2484467536"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "zh": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "20": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "80598170-3565-4560-a821-3a2484467536": 1
+          }
         }
       },
       "totals": {
-        "pv": 84,
-        "uv": 61,
+        "pv": 85,
+        "uv": 62,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -9940,7 +9978,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-20T07:22:47.140Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "80598170-3565-4560-a821-3a2484467536"
+      ]
     },
     "coworking-pass": {
       "url": "https://coworking-pass-five.vercel.app",
@@ -13976,49 +14017,47 @@
           }
         },
         "2026-10-20": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 1,
+          "uv": 1,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "21ed0be3-20a1-4040-a980-c37777498141",
-            "3fd7ab4b-4d0e-429b-b49a-f456bb4f62e0"
+            "21ed0be3-20a1-4040-a980-c37777498141"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 1
             },
             "paths": {
-              "/": 2
+              "/": 1
             },
             "devices": {
-              "desktop": 2
+              "desktop": 1
             },
             "locales": {
-              "zh": 2
+              "zh": 1
             },
             "timezones": {
-              "UTC": 2
+              "UTC": 1
             },
             "utmSources": {},
             "hours": {
-              "20": 2
+              "20": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 1,
               "returning": 0
             }
           },
           "visitorHits": {
-            "21ed0be3-20a1-4040-a980-c37777498141": 1,
-            "3fd7ab4b-4d0e-429b-b49a-f456bb4f62e0": 1
+            "21ed0be3-20a1-4040-a980-c37777498141": 1
           }
         }
       },
       "totals": {
-        "pv": 185,
-        "uv": 157,
+        "pv": 184,
+        "uv": 156,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -14037,8 +14076,7 @@
         "score": 90
       },
       "knownVisitors": [
-        "21ed0be3-20a1-4040-a980-c37777498141",
-        "3fd7ab4b-4d0e-429b-b49a-f456bb4f62e0"
+        "21ed0be3-20a1-4040-a980-c37777498141"
       ]
     },
     "invoice-desk": {
@@ -22476,10 +22514,10 @@
   },
   "visitorRegistry": [
     {
-      "visitorId": "3fd7ab4b-4d0e-429b-b49a-f456bb4f62e0",
-      "siteId": "intercom-pulse",
-      "firstSeen": "2026-10-20T12:39:39.590Z",
-      "lastSeen": "2026-10-20T12:39:39.590Z",
+      "visitorId": "80598170-3565-4560-a821-3a2484467536",
+      "siteId": "coworking-finder",
+      "firstSeen": "2026-10-20T12:39:41.092Z",
+      "lastSeen": "2026-10-20T12:39:41.092Z",
       "pageviews": 1,
       "path": "/",
       "locale": "zh",
