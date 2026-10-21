@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T18:37:20.641Z",
+  "updatedAt": "2026-10-21T18:51:59.323Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -11016,11 +11016,49 @@
           "visitorHits": {
             "1659393c-203b-4de7-89e5-5e7dd9bb6915": 1
           }
+        },
+        "2026-10-21": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "c4d14681-71c6-4353-a32d-b6327b9e8ce3"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/honeybook-alternative-freelancer": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "c4d14681-71c6-4353-a32d-b6327b9e8ce3": 1
+          }
         }
       },
       "totals": {
-        "pv": 4,
-        "uv": 4,
+        "pv": 5,
+        "uv": 5,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -11037,7 +11075,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-21T07:21:04.400Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "c4d14681-71c6-4353-a32d-b6327b9e8ce3"
+      ]
     },
     "funnel-pulse": {
       "url": "https://funnel-pulse-lyart.vercel.app",
@@ -22865,6 +22906,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "c4d14681-71c6-4353-a32d-b6327b9e8ce3",
+      "siteId": "freelance-proposal",
+      "firstSeen": "2026-10-21T18:51:58.886Z",
+      "lastSeen": "2026-10-21T18:51:58.886Z",
+      "pageviews": 1,
+      "path": "/guide/honeybook-alternative-freelancer",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1792607840418",
       "siteId": "feature-vote",
