@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T13:46:35.603Z",
+  "updatedAt": "2026-10-22T18:25:44.331Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -7408,11 +7408,49 @@
             "70d138d7-8978-4fae-bdeb-a505204be5db": 1,
             "824f6599-5882-4471-aea0-ba7492d56262": 1
           }
+        },
+        "2026-10-22": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "7b69b421-df4d-40bb-9635-b8da7bd3344d"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "UTC": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "2": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "7b69b421-df4d-40bb-9635-b8da7bd3344d": 1
+          }
         }
       },
       "totals": {
-        "pv": 2,
-        "uv": 2,
+        "pv": 3,
+        "uv": 3,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7429,7 +7467,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-22T07:22:27.236Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "7b69b421-df4d-40bb-9635-b8da7bd3344d"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -23070,6 +23111,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "7b69b421-df4d-40bb-9635-b8da7bd3344d",
+      "siteId": "bulk-landing-gen",
+      "firstSeen": "2026-10-22T18:25:43.897Z",
+      "lastSeen": "2026-10-22T18:25:43.897Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1792676795260",
       "siteId": "feature-vote",
