@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T01:29:51.616Z",
+  "updatedAt": "2026-10-23T02:08:13.107Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -7493,11 +7493,49 @@
           "visitorHits": {
             "7b69b421-df4d-40bb-9635-b8da7bd3344d": 1
           }
+        },
+        "2026-10-23": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "ec887bde-7637-4944-85dd-7ffaab9aede4"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "ec887bde-7637-4944-85dd-7ffaab9aede4": 1
+          }
         }
       },
       "totals": {
-        "pv": 3,
-        "uv": 3,
+        "pv": 4,
+        "uv": 4,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7516,7 +7554,8 @@
         "score": 90
       },
       "knownVisitors": [
-        "7b69b421-df4d-40bb-9635-b8da7bd3344d"
+        "7b69b421-df4d-40bb-9635-b8da7bd3344d",
+        "ec887bde-7637-4944-85dd-7ffaab9aede4"
       ]
     },
     "carbon-calculator": {
@@ -23158,6 +23197,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "ec887bde-7637-4944-85dd-7ffaab9aede4",
+      "siteId": "bulk-landing-gen",
+      "firstSeen": "2026-10-23T02:08:12.685Z",
+      "lastSeen": "2026-10-23T02:08:12.685Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1792718991327",
       "siteId": "feature-vote",
