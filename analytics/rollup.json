@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T18:19:35.709Z",
+  "updatedAt": "2026-10-23T18:27:51.803Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -7557,51 +7557,54 @@
           }
         },
         "2026-10-23": {
-          "pv": 2,
-          "uv": 2,
+          "pv": 3,
+          "uv": 3,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
             "ec887bde-7637-4944-85dd-7ffaab9aede4",
-            "2e8ab0d2-523d-421a-914b-41ad86a0e8d6"
+            "2e8ab0d2-523d-421a-914b-41ad86a0e8d6",
+            "a7a275a7-ac6c-4360-a1aa-d8f09c6b3dda"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 2
+              "直接访问": 3
             },
             "paths": {
-              "/": 2
+              "/": 3
             },
             "devices": {
-              "desktop": 2
+              "desktop": 3
             },
             "locales": {
-              "en": 2
+              "en": 3
             },
             "timezones": {
               "Asia/Shanghai": 1,
-              "UTC": 1
+              "UTC": 2
             },
             "utmSources": {},
             "hours": {
+              "2": 1,
               "10": 1,
               "14": 1
             },
             "visitorTypes": {
-              "new": 2,
+              "new": 3,
               "returning": 0
             }
           },
           "visitorHits": {
             "ec887bde-7637-4944-85dd-7ffaab9aede4": 1,
-            "2e8ab0d2-523d-421a-914b-41ad86a0e8d6": 1
+            "2e8ab0d2-523d-421a-914b-41ad86a0e8d6": 1,
+            "a7a275a7-ac6c-4360-a1aa-d8f09c6b3dda": 1
           }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -7618,7 +7621,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-23T07:14:25.545Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "a7a275a7-ac6c-4360-a1aa-d8f09c6b3dda"
+      ]
     },
     "carbon-calculator": {
       "url": "https://carbon-calculator-wine.vercel.app",
@@ -23415,6 +23421,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a7a275a7-ac6c-4360-a1aa-d8f09c6b3dda",
+      "siteId": "bulk-landing-gen",
+      "firstSeen": "2026-10-23T18:27:51.412Z",
+      "lastSeen": "2026-10-23T18:27:51.412Z",
+      "pageviews": 1,
+      "path": "/",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "UTC"
+    },
     {
       "visitorId": "health-watch-1792779575308",
       "siteId": "feature-vote",
