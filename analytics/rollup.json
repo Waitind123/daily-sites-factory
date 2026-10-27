@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T05:01:28.469Z",
+  "updatedAt": "2026-10-27T07:34:26.971Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -23390,11 +23390,49 @@
           "visitorHits": {
             "faa91e8e-26b1-4935-ae42-61e9720dddcd": 1
           }
+        },
+        "2026-10-27": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "e163a2ef-4192-48b5-ab8e-4259ac3e3f1a"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/nomad-visa-policy-change-alerts": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "15": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "e163a2ef-4192-48b5-ab8e-4259ac3e3f1a": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -23411,7 +23449,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-26T07:38:00.068Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "e163a2ef-4192-48b5-ab8e-4259ac3e3f1a"
+      ]
     },
     "visa-guide": {
       "url": "https://visa-guide-tau.vercel.app",
@@ -24052,6 +24093,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "e163a2ef-4192-48b5-ab8e-4259ac3e3f1a",
+      "siteId": "visa-alert",
+      "firstSeen": "2026-10-27T07:34:26.515Z",
+      "lastSeen": "2026-10-27T07:34:26.515Z",
+      "pageviews": 1,
+      "path": "/guide/nomad-visa-policy-change-alerts",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1793077288063",
       "siteId": "feature-vote",
