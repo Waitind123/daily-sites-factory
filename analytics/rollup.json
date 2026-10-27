@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T08:40:00.932Z",
+  "updatedAt": "2026-10-27T10:32:04.163Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -4634,47 +4634,50 @@
           }
         },
         "2026-10-27": {
-          "pv": 1,
-          "uv": 1,
+          "pv": 2,
+          "uv": 2,
           "trial": 0,
           "checkout": 0,
           "purchase": 0,
           "visitors": [
-            "health-watch-1793077288063"
+            "health-watch-1793077288063",
+            "health-watch-1793097123795"
           ],
           "audience": {
             "referrers": {
-              "直接访问": 1
+              "直接访问": 2
             },
             "paths": {
-              "/": 1
+              "/": 2
             },
             "devices": {
-              "unknown": 1
+              "unknown": 2
             },
             "locales": {
-              "unknown": 1
+              "unknown": 2
             },
             "timezones": {
-              "unknown": 1
+              "unknown": 2
             },
             "utmSources": {},
             "hours": {
-              "13": 1
+              "13": 1,
+              "18": 1
             },
             "visitorTypes": {
-              "new": 1,
+              "new": 2,
               "returning": 0
             }
           },
           "visitorHits": {
-            "health-watch-1793077288063": 1
+            "health-watch-1793077288063": 1,
+            "health-watch-1793097123795": 1
           }
         }
       },
       "totals": {
-        "pv": 695,
-        "uv": 657,
+        "pv": 696,
+        "uv": 658,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -4696,7 +4699,8 @@
         "health-watch-1793019560276",
         "health-watch-1793042260774",
         "health-watch-1793058704889",
-        "health-watch-1793077288063"
+        "health-watch-1793077288063",
+        "health-watch-1793097123795"
       ]
     },
     "affiliate-pulse": {
@@ -24134,6 +24138,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1793097123795",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-10-27T10:32:03.840Z",
+      "lastSeen": "2026-10-27T10:32:03.840Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "68a7e5a2-d5b0-45be-98bf-1a5097ee90b7",
       "siteId": "guilt-free-habits",
