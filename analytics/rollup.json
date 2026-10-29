@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-29T00:54:14.293Z",
+  "updatedAt": "2026-10-29T03:55:21.627Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -24042,11 +24042,49 @@
           "visitorHits": {
             "cab1dea3-649b-4a57-9028-4e234edbd04b": 1
           }
+        },
+        "2026-10-29": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "4adca7b7-b795-41aa-bbb0-c9a3c53cbfdf"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/prefinery-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "11": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "4adca7b7-b795-41aa-bbb0-c9a3c53cbfdf": 1
+          }
         }
       },
       "totals": {
-        "pv": 5,
-        "uv": 5,
+        "pv": 6,
+        "uv": 6,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -24063,7 +24101,10 @@
         "guideCount": 1,
         "lastChecked": "2026-10-28T08:08:12.330Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "4adca7b7-b795-41aa-bbb0-c9a3c53cbfdf"
+      ]
     },
     "wcag-alt-text": {
       "url": "https://wcag-alt-text.vercel.app",
@@ -24222,6 +24263,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "4adca7b7-b795-41aa-bbb0-c9a3c53cbfdf",
+      "siteId": "waitlist-pulse",
+      "firstSeen": "2026-10-29T03:55:21.240Z",
+      "lastSeen": "2026-10-29T03:55:21.240Z",
+      "pageviews": 1,
+      "path": "/guide/prefinery-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1793235254039",
       "siteId": "feature-vote",
