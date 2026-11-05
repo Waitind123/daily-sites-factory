@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T01:32:15.923Z",
+  "updatedAt": "2026-11-05T02:26:48.947Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5055,11 +5055,49 @@
             "health-watch-1793805845091": 1,
             "health-watch-1793829115928": 1
           }
+        },
+        "2026-11-05": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1793845608663"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1793845608663": 1
+          }
         }
       },
       "totals": {
-        "pv": 730,
-        "uv": 692,
+        "pv": 731,
+        "uv": 693,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5079,7 +5117,8 @@
       },
       "knownVisitors": [
         "health-watch-1793805845091",
-        "health-watch-1793829115928"
+        "health-watch-1793829115928",
+        "health-watch-1793845608663"
       ]
     },
     "affiliate-pulse": {
@@ -24704,6 +24743,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1793845608663",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-11-05T02:26:48.742Z",
+      "lastSeen": "2026-11-05T02:26:48.742Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "057c872f-5454-4190-b587-2608281905ae",
       "siteId": "remote-jobs",
