@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T00:53:03.526Z",
+  "updatedAt": "2026-11-09T04:37:45.547Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -16037,11 +16037,49 @@
           "visitorHits": {
             "5abe11f2-f8e9-4d6f-a9e0-ddbb349dfc83": 1
           }
+        },
+        "2026-11-09": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "b43e5823-7745-4094-bb51-0d5768e47c14"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/bitly-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "12": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "b43e5823-7745-4094-bb51-0d5768e47c14": 1
+          }
         }
       },
       "totals": {
-        "pv": 1,
-        "uv": 1,
+        "pv": 2,
+        "uv": 2,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -16058,7 +16096,10 @@
         "guideCount": 1,
         "lastChecked": "2026-11-08T08:48:42.475Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "b43e5823-7745-4094-bb51-0d5768e47c14"
+      ]
     },
     "meetup-alt": {
       "url": "https://meetup-alt.vercel.app",
@@ -24929,6 +24970,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "b43e5823-7745-4094-bb51-0d5768e47c14",
+      "siteId": "link-pulse",
+      "firstSeen": "2026-11-09T04:37:45.160Z",
+      "lastSeen": "2026-11-09T04:37:45.160Z",
+      "pageviews": 1,
+      "path": "/guide/bitly-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1794185583050",
       "siteId": "feature-vote",
