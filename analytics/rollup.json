@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T02:05:53.115Z",
+  "updatedAt": "2026-11-10T09:34:03.368Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -15901,11 +15901,49 @@
             "339acaca-8736-4268-ad60-1e9fa4cdccd8": 1,
             "e43397e6-9417-4a3a-8752-c5f4cf9118fe": 1
           }
+        },
+        "2026-11-10": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "21e165db-43f9-4669-9359-18145f1995f9"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/intercom-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "ru": 1
+            },
+            "timezones": {
+              "Europe/Moscow": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "17": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "21e165db-43f9-4669-9359-18145f1995f9": 1
+          }
         }
       },
       "totals": {
-        "pv": 195,
-        "uv": 167,
+        "pv": 196,
+        "uv": 168,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -15922,7 +15960,10 @@
         "guideCount": 1,
         "lastChecked": "2026-11-09T09:28:57.623Z",
         "score": 90
-      }
+      },
+      "knownVisitors": [
+        "21e165db-43f9-4669-9359-18145f1995f9"
+      ]
     },
     "invoice-desk": {
       "url": "https://invoice-desk-three.vercel.app",
@@ -25009,6 +25050,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "21e165db-43f9-4669-9359-18145f1995f9",
+      "siteId": "intercom-pulse",
+      "firstSeen": "2026-11-10T09:34:02.641Z",
+      "lastSeen": "2026-11-10T09:34:02.641Z",
+      "pageviews": 1,
+      "path": "/guide/intercom-alternative-indie-hackers",
+      "locale": "ru",
+      "device": "desktop",
+      "timezone": "Europe/Moscow"
+    },
     {
       "visitorId": "health-watch-1794276352749",
       "siteId": "feature-vote",
