@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T01:34:35.007Z",
+  "updatedAt": "2026-11-12T02:57:37.014Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -5378,11 +5378,49 @@
             "health-watch-1794407052236": 1,
             "health-watch-1794434158880": 1
           }
+        },
+        "2026-11-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "health-watch-1794452256723"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/": 1
+            },
+            "devices": {
+              "unknown": 1
+            },
+            "locales": {
+              "unknown": 1
+            },
+            "timezones": {
+              "unknown": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "10": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "health-watch-1794452256723": 1
+          }
         }
       },
       "totals": {
-        "pv": 756,
-        "uv": 718,
+        "pv": 757,
+        "uv": 719,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -5402,7 +5440,8 @@
       },
       "knownVisitors": [
         "health-watch-1794407052236",
-        "health-watch-1794434158880"
+        "health-watch-1794434158880",
+        "health-watch-1794452256723"
       ]
     },
     "affiliate-pulse": {
@@ -25184,6 +25223,13 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "health-watch-1794452256723",
+      "siteId": "feature-vote",
+      "firstSeen": "2026-11-12T02:57:36.775Z",
+      "lastSeen": "2026-11-12T02:57:36.775Z",
+      "pageviews": 1
+    },
     {
       "visitorId": "eba33b44-054e-4994-bcd5-3459f8c26a16",
       "siteId": "visa-live",
