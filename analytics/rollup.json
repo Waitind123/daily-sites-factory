@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T11:03:27.911Z",
+  "updatedAt": "2026-11-12T11:24:47.161Z",
   "sites": {
     "feature-vote": {
       "url": "https://feature-vote-ten.vercel.app",
@@ -17062,11 +17062,49 @@
           "visitorHits": {
             "8274701e-a440-46f7-b2a5-ef6973216fac": 1
           }
+        },
+        "2026-11-12": {
+          "pv": 1,
+          "uv": 1,
+          "trial": 0,
+          "checkout": 0,
+          "purchase": 0,
+          "visitors": [
+            "a6a6d721-86c9-4959-819e-026d6f2fc407"
+          ],
+          "audience": {
+            "referrers": {
+              "直接访问": 1
+            },
+            "paths": {
+              "/guide/vwo-alternative-indie-hackers": 1
+            },
+            "devices": {
+              "desktop": 1
+            },
+            "locales": {
+              "en": 1
+            },
+            "timezones": {
+              "Asia/Shanghai": 1
+            },
+            "utmSources": {},
+            "hours": {
+              "19": 1
+            },
+            "visitorTypes": {
+              "new": 1,
+              "returning": 0
+            }
+          },
+          "visitorHits": {
+            "a6a6d721-86c9-4959-819e-026d6f2fc407": 1
+          }
         }
       },
       "totals": {
-        "pv": 6,
-        "uv": 6,
+        "pv": 7,
+        "uv": 7,
         "trial": 0,
         "checkout": 0,
         "purchase": 0
@@ -17083,7 +17121,10 @@
         "guideCount": 1,
         "lastChecked": "2026-11-12T09:34:34.888Z",
         "score": 100
-      }
+      },
+      "knownVisitors": [
+        "a6a6d721-86c9-4959-819e-026d6f2fc407"
+      ]
     },
     "pain-radar": {
       "url": "https://pain-radar-lyart.vercel.app",
@@ -25218,6 +25259,17 @@
     }
   },
   "visitorRegistry": [
+    {
+      "visitorId": "a6a6d721-86c9-4959-819e-026d6f2fc407",
+      "siteId": "page-split",
+      "firstSeen": "2026-11-12T11:24:46.665Z",
+      "lastSeen": "2026-11-12T11:24:46.665Z",
+      "pageviews": 1,
+      "path": "/guide/vwo-alternative-indie-hackers",
+      "locale": "en",
+      "device": "desktop",
+      "timezone": "Asia/Shanghai"
+    },
     {
       "visitorId": "health-watch-1794481407617",
       "siteId": "feature-vote",
